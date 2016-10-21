@@ -4,7 +4,7 @@ To get started, <a href="https://www.clahub.com/agreements/pumasecurity/puma-pre
 
 # Clone
 
-Clone the repo and document your rules!
+Clone the repo and write some insecure code to help benchmark your rules!
 
 # Pull Request
 
