@@ -40,13 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ado\AdoDataContext.cs" />
+    <Compile Include="Ef\EfDataContext.cs" />
+    <Compile Include="Linq\LinqDataContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Ado\" />
-    <Folder Include="Ef\" />
-    <Folder Include="Linq\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="README.md" />
   </ItemGroup>
