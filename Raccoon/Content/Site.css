@@ -1,6 +1,447 @@
-﻿body {
+﻿html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+    margin: 0;
+	background-color:#000
+}
+
+ #background 
+{
+	left: 0px;
+	top: 0px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	height: 2350px;
+	overflow: hidden;
+	z-index: 0;
+	background-color: #000;
+	font-size: 24;
+}  
+
+ #socialiconfb 
+{
+	left: 1078px;
+	top: 2285px;
+	position: absolute;
+	width: 30px;
+	height: 29px;
+	z-index: 2;
+} 
+
+ #socialiconin 
+{
+	left: 1027px;
+	top: 2285px;
+	position: absolute;
+	width: 29px;
+	height: 29px;
+	z-index: 3;
+} 
+
+ #socialicontw 
+{
+	left: 972px;
+	top: 2285px;
+	position: absolute;
+	width: 36px;
+	height: 29px;
+	z-index: 4;
+} 
+
+ #FOLLOWUSONLINE 
+{
+	left: 652px;
+	top: 2275px;
+	position: absolute;
+	width: 275px;
+	height: 16px;
+	z-index: 5;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	color: #FBB146;
+	text-transform: uppercase;
+	line-height: 0px;
+	font-style: normal;
+	font-weight: lighter;
+	font-variant: normal;
+} 
+
+ #copyright 
+{
+	left: 140px;
+	top: 2250px;
+	position: absolute;
+	width: 305px;
+	height: 15px;
+	z-index: 6;
+	color: #FBB146;
+	font-size: 12px;
+} 
+
+ #linksbackg 
+{
+	left: 0px;
+	top: 1378px;
+	position: absolute;
+	width: 1200px;
+	height: 462px;
+	z-index: 7;
+} 
+
+ #links 
+{
+	left: 654px;
+	top: 1950px;
+	position: absolute;
+	width: 400px;
+	height: 22px;
+	z-index: 13;
+	font-size: 21px;
+	text-align: right;
+	font-family: Verdana, Geneva, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #FBB146;
+	line-height: 22px;
+} 
+
+ #logosm 
+{
+	left: 160px;
+	top: 2000px;
+	position: absolute;
+	width: 221px;
+	height: 220px;
+	z-index: 14;
+} 
+
+ #contentbackg 
+{
+	left: 0px;
+	top: 707px;
+	position: absolute;
+	width: 1200px;
+	height: 723px;
+	z-index: 15;
+} 
+
+ #textbox3 
+{
+	align-content: center;
+	left: 250px;
+	top: 1740px;
+	position: absolute;
+	width: 650px;
+	height: 48px;
+	z-index: 16;
+	font-size: 17px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-style: normal;
+	line-height: 21px;
+	font-weight: normal;
+	font-variant: normal;
+	color: #000;
+} 
+
+ #textbox2 
+{
+	left: 143px;
+	top: 988px;
+	position: absolute;
+	width: 912px;
+	height: 290px;
+	z-index: 17;
+	font-family: Verdana, Geneva, sans-serif;
+} 
+
+ #title2
+{
+	left: 75px;
+	top: 892px;
+	position: absolute;
+	width: 1050px;
+	z-index: 18;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 50px;
+	font-style: normal;
+	line-height: 0px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	color: #000;
+} 
+
+ #box3 
+{
+	left: 782px;
+	top: 582px;
+	position: absolute;
+	width: 328px;
+	height: 248px;
+	z-index: 20;
+} 
+
+ #CONTACTUS 
+{
+	left: 822px;
+	top: 729px;
+	position: absolute;
+	width: 250px;
+	height: 43px;
+	z-index: 21;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	color: #FFF;
+	text-align: center;
+} 
+
+ #icon3 
+{
+	left: 200px;
+	top: 907px;
+	position: absolute;
+	width: 104px;
+	height: 105px;
+	z-index: 22;
+} 
+
+ #box2 
+{
+	left: 435px;
+	top: 582px;
+	position: absolute;
+	width: 328px;
+	height: 248px;
+	z-index: 23;
+} 
+
+ #RULEDOCUMENTATION 
+{
+	left: 474px;
+	top: 728px;
+	position: absolute;
+	width: 250px;
+	height: 43px;
+	z-index: 24;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	color: #FFF;
+	text-align: center;
+} 
+
+ #icon2 
+{
+	left: 884px;
+	top: 623px;
+	position: absolute;
+	width: 129px;
+	height: 105px;
+	z-index: 25;
+} 
+
+ #box1 
+{
+	left: 88px;
+	top: 582px;
+	position: absolute;
+	width: 328px;
+	height: 248px;
+	z-index: 26;
+} 
+
+ #INSTALLATIONGUIDE 
+{
+	left: 124px;
+	top: 728px;
+	position: absolute;
+	width: 250px;
+	height: 43px;
+	z-index: 27;
+	text-align: center;
+	font-size: 24px;
+	font-family: Verdana, Geneva, sans-serif;
+	text-transform: uppercase;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #FFF;
+} 
+
+ #icon1 
+{
+	left: 564px;
+	top: 623px;
+	position: absolute;
+	width: 68px;
+	height: 105px;
+	z-index: 28;
+} 
+
+ #icon5 
+{
+	left: 192px;
+	top: 616px;
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	z-index: 28;
+} 
+
+ #logolg 
+{
+	left: 762px;
+	top: 92px;
+	position: absolute;
+	width: 379px;
+	height: 379px;
+	z-index: 29;
+} 
+
+ #textbox1 
+{
+	left: 91px;
+	top: 272px;
+	position: absolute;
+	width: 550px;
+	height: 100px;
+	z-index: 32;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 17px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #FFF;
+	text-align: left;
+} 
+
+ #title 
+{
+	left: 88px;
+	top: 140px;
+	position: absolute;
+	width: 1000px;
+	height: 94px;
+	z-index: 33;
+}
+ 
+#background #title h1 {
+	font-size: 57px;
+	color: #FBB146;
+	font-family: Verdana, Geneva, sans-serif;
+	font-style: normal;
+	line-height: 0px;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: uppercase;
+	text-align: left;
+}
+#background #title h2 {
+	font-size: 42px;
+	color: #FFF;
+	font-family: Verdana, Geneva, sans-serif;
+	font-style: normal;
+	line-height: 30px;
+	font-weight: lighter;
+	font-variant: normal;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+#background #textbox2 p {
+	font-size: 16px;
+}
+#background #textbox2 p {
+	font-family: Verdana, Geneva, sans-serif;
+}
+#background #textbox2 p {
+	font-size: 17px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-style: normal;
+	line-height: 25px;
+	font-weight: normal;
+	font-variant: normal;
+}
+#background #title2 {
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+#background #title2 h1 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 55px;
+	font-style: normal;
+	line-height: 0px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	color: #000;
+}
+#background #copyright p {
+	font-size: 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	vertical-align: top;
+	color: #FFF;
+	line-height: 0px;
+}
+#background #title {
+	font-size: 10px;
+	text-align: left;
+}
+#background #links p {
+	font-size: 24;
+}
+
+ #buttonlogin 
+{
+	left: 265px;
+	top: 409px;
+	position: absolute;
+	width: 153px;
+	height: 57px;
+	z-index: 30;
+} 
+
+ #buttonregister 
+{
+	left: 91px;
+	top: 409px;
+	position: absolute;
+	width: 154px;
+	height: 57px;
+	z-index: 31;
+}
+
+ #buttondownload
+{
+	left: 500px;
+	top: 1800px;
+	position: absolute;
+	width: 154px;
+	height: 57px;
+	z-index: 31;
 }
 
 /* Set padding to keep content from hitting the edges */
