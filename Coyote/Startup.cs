@@ -25,7 +25,7 @@ namespace Puma.Prey.Coyote
 
             if (env.IsDevelopment())
             {
-                // For more details on using the user secret store see http://go.microsoft.com/fwlink/?LinkID=532709
+                // For more details on using the user secret store see https://go.microsoft.com/fwlink/?LinkID=532709
                 builder.AddUserSecrets();
             }
 
@@ -38,7 +38,7 @@ namespace Puma.Prey.Coyote
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //TODO: ADD DATA FROM RABBIT LAYER HERE
+             //TODO: ADD DATA FROM RABBIT LAYER HERE
             /*
             // Add framework services.
             services.AddDbContext<ApplicationDbContext>(options =>
@@ -75,9 +75,9 @@ namespace Puma.Prey.Coyote
 
             app.UseStaticFiles();
 
-            app.UseIdentity();
+            //app.UseIdentity();
 
-            // Add external authentication middleware below. To configure them please see http://go.microsoft.com/fwlink/?LinkID=532715
+            // Add external authentication middleware below. To configure them please see https://go.microsoft.com/fwlink/?LinkID=532715
 
             app.UseMvc(routes =>
             {
