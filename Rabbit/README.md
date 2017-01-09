@@ -1,3 +1,6 @@
-﻿# Puma Prey - Rabbit
 
-The Rabbit project is the data access tier for the Puma Prey vulnerable application suite. This project performs all reads / writes to the embedded database using methods such as ADO, LINQ, or EF.
+Adding Migrations
+-----------------
+From within the EF directory:
+dotnet ef --startup-project ../RabbitTest/ migrations add <name>
+dotnet ef --startup-project ../RabbitTest/ database update
