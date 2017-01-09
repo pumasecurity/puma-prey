@@ -12,7 +12,7 @@ namespace Puma.Prey.Rabbit.EF
     public class EFDataContext : IdentityDbContext<ApplicationUser>
     {
         public EFDataContext() : base(new DbContextOptions<EFDataContext>()) { }
-        
+
         public EFDataContext(DbContextOptions<EFDataContext> options) : base(options) { }
 
         public DbSet<Hunt> Hunts { get; set; }
@@ -22,7 +22,8 @@ namespace Puma.Prey.Rabbit.EF
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
             base.OnConfiguring(builder);
-            builder.UseSqlite("Data Source=Rabbit.db");
+            if (builder.Options.Extensions == null || builder.Options.Extensions.Count() == 0)
+                builder.UseSqlite("Data Source=Rabbit.db");
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
