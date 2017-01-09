@@ -22,7 +22,7 @@ namespace RabbitTest
             context.Animals.Add(animal);
             context.Hunts.Add(hunt);
             context.SaveChanges();
-            var test = context.Hunts.Where(h => h.Id == 1).Include(h => h.Animals).FirstOrDefault();
+            var test = context.Hunts.Include(h => h.Animals).FirstOrDefault();
             Console.WriteLine(test.PhoneNumber);
             Console.WriteLine(test.Animals.Count());
         }
