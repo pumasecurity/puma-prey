@@ -62,16 +62,16 @@ namespace Rabbit.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Tests",
+                name: "Hunts",
                 columns: table => new
                 {
-                    TestId = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     PhoneNumber = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Tests", x => x.TestId);
+                    table.PrimaryKey("PK_Hunts", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -160,6 +160,26 @@ namespace Rabbit.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Animals",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    HuntId = table.Column<int>(nullable: true),
+                    Name = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Animals", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Animals_Hunts_HuntId",
+                        column: x => x.HuntId,
+                        principalTable: "Hunts",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "RoleNameIndex",
                 table: "AspNetRoles",
@@ -185,6 +205,11 @@ namespace Rabbit.Migrations
                 name: "IX_AspNetUserRoles_RoleId",
                 table: "AspNetUserRoles",
                 column: "RoleId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Animals_HuntId",
+                table: "Animals",
+                column: "HuntId");
 
             migrationBuilder.CreateIndex(
                 name: "EmailIndex",
@@ -216,13 +241,16 @@ namespace Rabbit.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Tests");
+                name: "Animals");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "Hunts");
         }
     }
 }

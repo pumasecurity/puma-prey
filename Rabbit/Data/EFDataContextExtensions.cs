@@ -13,16 +13,11 @@ namespace Puma.Prey.Rabbit.EF
         {
             if (context.AllMigrationsApplied())
             {
-                if (!context.Tests.Any())
-                {
-                    //var user = new ApplicationUser();
-                    //user.UserName = "test.test";
-                    //user.Email = "test@test.com";
-                    //context.Add(user);
-                    context.Tests.Add(new TestModel { TestId = 1, PhoneNumber = "(720) 588-8133" });
-
-                    context.SaveChanges();
-                }
+                //if (!context.Hunts.Any())
+                //{
+                //    context.Hunts.Add(new Hunt { Id = 1, PhoneNumber = "(720) 588-8133" });
+                //}
+                context.SaveChanges();
             }
         }
 

@@ -122,6 +122,22 @@ namespace Rabbit.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("Puma.Prey.Rabbit.Models.Animal", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int?>("HuntId");
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("HuntId");
+
+                    b.ToTable("Animals");
+                });
+
             modelBuilder.Entity("Puma.Prey.Rabbit.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
@@ -172,17 +188,17 @@ namespace Rabbit.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("Puma.Prey.Rabbit.Models.TestModel", b =>
+            modelBuilder.Entity("Puma.Prey.Rabbit.Models.Hunt", b =>
                 {
-                    b.Property<int>("TestId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired();
 
-                    b.HasKey("TestId");
+                    b.HasKey("Id");
 
-                    b.ToTable("Tests");
+                    b.ToTable("Hunts");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRoleClaim<string>", b =>
@@ -220,6 +236,13 @@ namespace Rabbit.Migrations
                         .WithMany("Roles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Puma.Prey.Rabbit.Models.Animal", b =>
+                {
+                    b.HasOne("Puma.Prey.Rabbit.Models.Hunt", "Hunt")
+                        .WithMany("Animals")
+                        .HasForeignKey("HuntId");
                 });
         }
     }

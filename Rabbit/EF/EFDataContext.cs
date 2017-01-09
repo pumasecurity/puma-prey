@@ -15,7 +15,9 @@ namespace Puma.Prey.Rabbit.EF
         
         public EFDataContext(DbContextOptions<EFDataContext> options) : base(options) { }
 
-        public DbSet<TestModel> Tests { get; set; }
+        public DbSet<Hunt> Hunts { get; set; }
+
+        public DbSet<Animal> Animals { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {

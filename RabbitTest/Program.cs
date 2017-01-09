@@ -16,8 +16,15 @@ namespace RabbitTest
             if (!context.AllMigrationsApplied())
                 context.Database.Migrate();
             context.EnsureSeedData();
-            var lst = context.Tests.FirstOrDefault();
-            Console.Write(lst.PhoneNumber);
+            Hunt hunt = new Hunt { PhoneNumber = "720-588-8133" };
+            Animal animal = new Animal { Name = "Rabbit", Hunt = hunt };
+            hunt.Animals.Add(animal);
+            context.Animals.Add(animal);
+            context.Hunts.Add(hunt);
+            context.SaveChanges();
+            var test = context.Hunts.Where(h => h.Id == 1).Include(h => h.Animals).FirstOrDefault();
+            Console.WriteLine(test.PhoneNumber);
+            Console.WriteLine(test.Animals.Count());
         }
     }
 }

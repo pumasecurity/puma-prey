@@ -6,14 +6,21 @@ using System.Threading.Tasks;
 
 namespace Puma.Prey.Rabbit.Models
 {
-    public class TestModel
+    public class Hunt
     {
+        public Hunt()
+        {
+            this.Animals = new List<Animal>();
+        }
+
         [Key]
-        public int TestId { get; set; }
+        public int Id { get; set; }
 
         [Required]
         [Phone]
         [Display(Name = "Phone number")]
         public string PhoneNumber { get; set; }
+
+        public virtual List<Animal> Animals { get; set; }
     }
 }
