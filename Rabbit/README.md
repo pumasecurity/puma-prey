@@ -11,6 +11,7 @@ Adding Migrations
 Once you have completed your model changes you need to create a migration to allow EF to automatically upgrade the database.
 
 From within the EF directory:
+
 dotnet ef --startup-project ../RabbitTest/ migrations add <name>
 
 dotnet ef --startup-project ../RabbitTest/ database update
