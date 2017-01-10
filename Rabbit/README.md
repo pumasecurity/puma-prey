@@ -4,7 +4,7 @@ Rabbit is a multi-targeted data tier with data access accomplished via EF, ADO.N
 
 Adding/Updating Models
 ----------------------
-The database models are contained in the Models folder. Adding a new model consists of creating the associated C# class, decorating the Id property with the DataAnnotation __[key]__ and adding a __DBSet<clss>__ collection to the EFDataContext.cs file.
+The database models are contained in the Models folder. Adding a new model consists of creating the associated C# class, decorating the __Id__ property with the DataAnnotation __[key]__ and adding a __DBSet<clss>__ collection to the EFDataContext.cs file.
 
 Adding Migrations
 -----------------
