@@ -16,10 +16,7 @@ namespace Puma.Prey.Rabbit.Models
         [Key]
         public int Id { get; set; }
 
-        [Required]
-        [Phone]
-        [Display(Name = "Phone number")]
-        public string PhoneNumber { get; set; }
+        public virtual ApplicationUser PrimaryContact { get; set; }
 
         public virtual List<Animal> Animals { get; set; }
     }

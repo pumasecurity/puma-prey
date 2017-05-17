@@ -26,7 +26,7 @@ namespace Puma.Prey.Coyote
             if (env.IsDevelopment())
             {
                 // For more details on using the user secret store see https://go.microsoft.com/fwlink/?LinkID=532709
-                builder.AddUserSecrets();
+                builder.AddUserSecrets("ThePumasTail");
             }
 
             builder.AddEnvironmentVariables();
