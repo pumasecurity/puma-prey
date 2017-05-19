@@ -138,7 +138,8 @@ namespace Puma.Prey.Common.Cryptography
                 byte[] inputBytes = Encoding.ASCII.GetBytes(plainText);
 
                 //Stand up AES algorithm
-                DESCryptoServiceProvider des = new DESCryptoServiceProvider(); ;
+                DESCryptoServiceProvider des = new DESCryptoServiceProvider();
+                SymmetricAlgorithm sym = new DESCryptoServiceProvider();
 
                 //Set key and iv
                 des.Key = DEFAULT_KEY.GetBytesFromHexString();
@@ -171,10 +172,10 @@ namespace Puma.Prey.Common.Cryptography
             using (MemoryStream mStream = new MemoryStream())
             {
                 DESCryptoServiceProvider des = new DESCryptoServiceProvider();
-                
+
                 //Set key and iv
                 des.Key = DEFAULT_KEY.GetBytesFromHexString();
-                des.IV =DEFAULT_IV.GetBytesFromHexString();
+                des.IV = DEFAULT_IV.GetBytesFromHexString();
 
                 CryptoStream cStream = new CryptoStream(mStream
                     , des.CreateDecryptor(), CryptoStreamMode.Write);
@@ -203,7 +204,7 @@ namespace Puma.Prey.Common.Cryptography
             {
                 //Input bytes
                 byte[] inputBytes = Encoding.ASCII.GetBytes(plainText);
-                
+
                 //Stand up AES algorithm
                 AesManaged aes = new AesManaged();
                 aes.Mode = CipherMode.ECB;
@@ -267,5 +268,61 @@ namespace Puma.Prey.Common.Cryptography
             return Encoding.ASCII.GetString(output);
         }
 
+        public static byte[] EncryptRSA(byte[] DataToEncrypt, RSAParameters RSAKeyInfo, bool DoOAEPPadding)
+        {
+            try
+            {
+                byte[] encryptedData;
+                //Create a new instance of RSACryptoServiceProvider.
+                using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
+                {
+                    //TODO: Data flow and inspect the key size for < 1024
+                    RSA.ImportParameters(RSAKeyInfo);
+
+                    //TODO: Data flow and find where this is called. Check the parameter for true / false.
+                    encryptedData = RSA.Encrypt(DataToEncrypt, DoOAEPPadding);
+                }
+                return encryptedData;
+            }
+            //Catch and display a CryptographicException  
+            //to the console.
+            catch (CryptographicException e)
+            {
+                Console.WriteLine(e.Message);
+
+                return null;
+            }
+
+        }
+
+        static public byte[] DecryptRSA(byte[] DataToDecrypt, RSAParameters RSAKeyInfo, bool DoOAEPPadding)
+        {
+            try
+            {
+                byte[] decryptedData;
+                //Create a new instance of RSACryptoServiceProvider.
+                using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
+                {
+                    //Import the RSA Key information. This needs
+                    //to include the private key information.
+                    RSA.ImportParameters(RSAKeyInfo);
+
+                    //Decrypt the passed byte array and specify OAEP padding.  
+                    //OAEP padding is only available on Microsoft Windows XP or
+                    //later.  
+                    decryptedData = RSA.Decrypt(DataToDecrypt, DoOAEPPadding);
+                }
+                return decryptedData;
+            }
+            //Catch and display a CryptographicException  
+            //to the console.
+            catch (CryptographicException e)
+            {
+                Console.WriteLine(e.ToString());
+
+                return null;
+            }
+
+        }
     }
 }

@@ -72,6 +72,8 @@ namespace Puma.Prey.Common.Cryptography
 
             //Hash the value for the first iteration
             HashAlgorithm hash = new MD5CryptoServiceProvider();
+            MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
+
             byte[] hashBytes = hash.ComputeHash(inputBytes);
 
             //Return the bytes
