@@ -45,18 +45,19 @@ namespace Puma.Prey.Common.Cryptography
             using (MemoryStream mStream = new MemoryStream())
             {
                 //Input bytes
-                byte[] inputBytes = Encoding.ASCII.GetBytes(plainText);
+                byte[] inputBytes = Encoding.UTF8.GetBytes(plainText);
 
                 //Stand up AES algorithm
-                AesManaged aes = new AesManaged();
+                DESCryptoServiceProvider crypto = new DESCryptoServiceProvider();
+                
 
                 //Set key and iv
-                aes.Key = key;
-                aes.IV = iv;
+                crypto.Key = DEFAULT_KEY.GetBytesFromHexString();
+                crypto.IV = DEFAULT_IV.GetBytesFromHexString();
 
                 //Create the crypto stream
                 CryptoStream cStream = new CryptoStream(mStream
-                    , aes.CreateEncryptor(), CryptoStreamMode.Write);
+                    , crypto.CreateEncryptor(), CryptoStreamMode.Write);
                 cStream.Write(inputBytes, 0, inputBytes.Length);
                 cStream.FlushFinalBlock();
                 cStream.Close();
@@ -66,7 +67,7 @@ namespace Puma.Prey.Common.Cryptography
 
                 //Close other resources
                 mStream.Close();
-                aes.Clear();
+                crypto.Clear();
             }
 
             //Return the array
@@ -102,75 +103,6 @@ namespace Puma.Prey.Common.Cryptography
             //Create memory stream from the input bytes
             using (MemoryStream mStream = new MemoryStream())
             {
-                //Stand up AES algorithms  
-                AesManaged aes = new AesManaged();
-
-                //Set key and iv
-                aes.Key = key;
-                aes.IV = iv;
-
-                CryptoStream cStream = new CryptoStream(mStream
-                    , aes.CreateDecryptor(), CryptoStreamMode.Write);
-                cStream.Write(cipherText, 0, cipherText.Length);
-                cStream.FlushFinalBlock();
-                cStream.Close();
-
-                output = mStream.ToArray();
-
-                //Close resources
-                mStream.Close();
-                aes.Clear();
-            }
-
-            //Return base 64 encoded string
-            return Encoding.ASCII.GetString(output);
-        }
-
-        public static byte[] EncryptDes(string plainText)
-        {
-            //Return value
-            byte[] output = null;
-
-            //Create memory steam
-            using (MemoryStream mStream = new MemoryStream())
-            {
-                //Input bytes
-                byte[] inputBytes = Encoding.ASCII.GetBytes(plainText);
-
-                //Stand up AES algorithm
-                DESCryptoServiceProvider des = new DESCryptoServiceProvider();
-                SymmetricAlgorithm sym = new DESCryptoServiceProvider();
-
-                //Set key and iv
-                des.Key = DEFAULT_KEY.GetBytesFromHexString();
-                des.IV = DEFAULT_IV.GetBytesFromHexString();
-
-                //Create the crypto stream
-                CryptoStream cStream = new CryptoStream(mStream
-                    , des.CreateEncryptor(), CryptoStreamMode.Write);
-                cStream.Write(inputBytes, 0, inputBytes.Length);
-                cStream.FlushFinalBlock();
-                cStream.Close();
-
-                //Get the output
-                output = mStream.ToArray();
-
-                //Close other resources
-                mStream.Close();
-                des.Clear();
-            }
-
-            //Return the array
-            return output;
-        }
-
-        public static string DecryptDes(byte[] cipherText)
-        {
-            byte[] output;
-
-            //Create memory stream from the input bytes
-            using (MemoryStream mStream = new MemoryStream())
-            {
                 DESCryptoServiceProvider des = new DESCryptoServiceProvider();
 
                 //Set key and iv
@@ -191,83 +123,9 @@ namespace Puma.Prey.Common.Cryptography
             }
 
             //Return encoded string
-            return Encoding.ASCII.GetString(output);
+            return Encoding.UTF8.GetString(output);
         }
-
-        public static byte[] EncryptAesEcb(string plainText)
-        {
-            //Return value
-            byte[] output = null;
-
-            //Create memory steam
-            using (MemoryStream mStream = new MemoryStream())
-            {
-                //Input bytes
-                byte[] inputBytes = Encoding.ASCII.GetBytes(plainText);
-
-                //Stand up AES algorithm
-                AesManaged aes = new AesManaged();
-                aes.Mode = CipherMode.ECB;
-
-                RijndaelManaged rijMan = new RijndaelManaged();
-                rijMan.Mode = CipherMode.ECB;
-
-                AesCryptoServiceProvider aesUnmanged = new AesCryptoServiceProvider();
-                aesUnmanged.Mode = CipherMode.ECB;
-
-                //Set key and iv
-                aes.Key = DEFAULT_KEY.GetBytesFromHexString();
-
-                //Create the crypto stream
-                CryptoStream cStream = new CryptoStream(mStream
-                    , aes.CreateEncryptor(), CryptoStreamMode.Write);
-                cStream.Write(inputBytes, 0, inputBytes.Length);
-                cStream.FlushFinalBlock();
-                cStream.Close();
-
-                //Get the output
-                output = mStream.ToArray();
-
-                //Close other resources
-                mStream.Close();
-                aes.Clear();
-            }
-
-            //Return the array
-            return output;
-        }
-
-        public static string DecryptAesEcb(byte[] cipherText)
-        {
-            byte[] output;
-
-            //Create memory stream from the input bytes
-            using (MemoryStream mStream = new MemoryStream())
-            {
-                //Stand up AES algorithms  
-                AesManaged aes = new AesManaged();
-                aes.Mode = CipherMode.ECB;
-
-                //Set key and iv
-                aes.Key = DEFAULT_KEY.GetBytesFromHexString();
-
-                CryptoStream cStream = new CryptoStream(mStream
-                    , aes.CreateDecryptor(), CryptoStreamMode.Write);
-                cStream.Write(cipherText, 0, cipherText.Length);
-                cStream.FlushFinalBlock();
-                cStream.Close();
-
-                output = mStream.ToArray();
-
-                //Close resources
-                mStream.Close();
-                aes.Clear();
-            }
-
-            //Return base 64 encoded string
-            return Encoding.ASCII.GetString(output);
-        }
-
+        
         public static byte[] EncryptRSA(byte[] DataToEncrypt, RSAParameters RSAKeyInfo, bool DoOAEPPadding)
         {
             try
@@ -295,7 +153,7 @@ namespace Puma.Prey.Common.Cryptography
 
         }
 
-        static public byte[] DecryptRSA(byte[] DataToDecrypt, RSAParameters RSAKeyInfo, bool DoOAEPPadding)
+        public static byte[] DecryptRSA(byte[] DataToDecrypt, RSAParameters RSAKeyInfo, bool DoOAEPPadding)
         {
             try
             {

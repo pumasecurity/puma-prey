@@ -31,7 +31,7 @@ namespace Puma.Prey.Common.Cryptography
                 throw new ArgumentException(string.Format("Salt must be at least {0} bytes in length.", _MIN_SALT_LENGTH));
 
             //Get the bytes from the cleartext input
-            byte[] pwd = Encoding.ASCII.GetBytes(input);
+            byte[] pwd = Encoding.UTF8.GetBytes(input);
 
             //Final input bytes will be the lengh of the password plus any salt bytes added to the end
             byte[] inputBytes = new byte[pwd.Length + (salt != null ? salt.Length : 0)];
@@ -44,63 +44,12 @@ namespace Puma.Prey.Common.Cryptography
                 salt.CopyTo(inputBytes, pwd.Length);
 
             //Hash the value for the first iteration
-            HashAlgorithm sha512 = new SHA512Managed();
-            byte[] hashBytes = sha512.ComputeHash(inputBytes);
+            HashAlgorithm hash = new MD5CryptoServiceProvider();
+            byte[] hashBytes = hash.ComputeHash(inputBytes);
 
             //Perform multiple iterations if requested
             for (int i = 1; i < iterations; i++)
-                hashBytes = sha512.ComputeHash(hashBytes);
-
-            //Return the bytes
-            return hashBytes;
-        }
-
-        public static byte[] GenerateHashMd5(string input, byte[] salt = null)
-        {
-            //Get the bytes from the cleartext input
-            byte[] pwd = Encoding.ASCII.GetBytes(input);
-
-            //Final input bytes will be the lengh of the password plus any salt bytes added to the end
-            byte[] inputBytes = new byte[pwd.Length + (salt != null ? salt.Length : 0)];
-
-            //Copy the password bytes to the into the input arrary
-            pwd.CopyTo(inputBytes, 0);
-
-            //Append the optional salt value if one is supplied
-            if (salt != null)
-                salt.CopyTo(inputBytes, pwd.Length);
-
-            //Hash the value for the first iteration
-            HashAlgorithm hash = new MD5CryptoServiceProvider();
-            MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
-
-            byte[] hashBytes = hash.ComputeHash(inputBytes);
-
-            //Return the bytes
-            return hashBytes;
-        }
-
-        public static byte[] GenerateHashSha1(string input, byte[] salt = null)
-        {
-            //Get the bytes from the cleartext input
-            byte[] pwd = Encoding.ASCII.GetBytes(input);
-
-            //Final input bytes will be the lengh of the password plus any salt bytes added to the end
-            byte[] inputBytes = new byte[pwd.Length + (salt != null ? salt.Length : 0)];
-
-            //Copy the password bytes to the into the input arrary
-            pwd.CopyTo(inputBytes, 0);
-
-            //Append the optional salt value if one is supplied
-            if (salt != null)
-                salt.CopyTo(inputBytes, pwd.Length);
-
-            //Hash the value for the first iteration
-            HashAlgorithm hash = new SHA1CryptoServiceProvider();
-            byte[] hashBytes = hash.ComputeHash(inputBytes);
-
-            HashAlgorithm hash2 = new SHA1Managed();
-            byte[] hashBytes2 = hash.ComputeHash(inputBytes);
+                hashBytes = hash.ComputeHash(hashBytes);
 
             //Return the bytes
             return hashBytes;

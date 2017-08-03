@@ -1,5 +1,5 @@
-﻿using Newtonsoft.Json;
-using System.Net.Http;
+﻿using System.Net.Http;
+using Puma.Prey.Common.Deserialize;
 
 namespace Puma.Prey.Common.Rest
 {
@@ -23,7 +23,7 @@ namespace Puma.Prey.Common.Rest
                             var result = response.Result;
                             var json = result.Content.ReadAsStringAsync();
                             json.Wait();
-                            item = JsonConvert.DeserializeObject<T>(json.Result);
+                            item = DeserializeJson.GetObject<T>(json.Result);
                         }
                     );
                     request.Wait();
