@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace Puma.Prey.Coyote.Models.ManageViewModels
+namespace Coyote.Models.ManageViewModels
 {
     public class ConfigureTwoFactorViewModel
     {

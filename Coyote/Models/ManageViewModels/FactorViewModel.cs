@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Puma.Prey.Coyote.Models.ManageViewModels
+namespace Coyote.Models.ManageViewModels
 {
     public class FactorViewModel
     {

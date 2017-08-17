@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -9,10 +10,17 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Puma.Prey.Coyote.Models;
-using Puma.Prey.Coyote.Services;
+using Microsoft.IdentityModel.Tokens;
 
-namespace Puma.Prey.Coyote
+using AutoMapper;
+
+using Coyote.Data;
+using Coyote.Models;
+using Coyote.Services;
+
+using Puma.Prey.Rabbit.EF;
+
+namespace Coyote
 {
     public class Startup
     {
@@ -20,13 +28,13 @@ namespace Puma.Prey.Coyote
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
 
             if (env.IsDevelopment())
             {
                 // For more details on using the user secret store see https://go.microsoft.com/fwlink/?LinkID=532709
-                builder.AddUserSecrets("ThePumasTail");
+                builder.AddUserSecrets<Startup>();
             }
 
             builder.AddEnvironmentVariables();
@@ -38,18 +46,20 @@ namespace Puma.Prey.Coyote
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-             //TODO: ADD DATA FROM RABBIT LAYER HERE
-            /*
             // Add framework services.
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddDbContext<RabbitDBContext>(options =>
+            options.UseSqlite(Configuration.GetConnectionString("EFDataConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
-            */
 
             services.AddMvc();
+
+            services.AddAutoMapper();
 
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
@@ -57,7 +67,7 @@ namespace Puma.Prey.Coyote
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, RabbitDBContext serverContext)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
@@ -75,9 +85,28 @@ namespace Puma.Prey.Coyote
 
             app.UseStaticFiles();
 
-            //app.UseIdentity();
+            if (!serverContext.AllMigrationsApplied())
+                serverContext.Database.Migrate();
+            serverContext.EnsureSeedData();
+
+            app.UseIdentity();
 
             // Add external authentication middleware below. To configure them please see https://go.microsoft.com/fwlink/?LinkID=532715
+            app.UseJwtBearerAuthentication(new JwtBearerOptions
+            {
+                AutomaticAuthenticate = true,
+                AutomaticChallenge = true,
+                TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidIssuer = "https://issuer.example.com",
+
+                    ValidateAudience = true,
+                    ValidAudience = "https://yourapplication.example.com",
+
+                    ValidateLifetime = true,
+                }
+            });
 
             app.UseMvc(routes =>
             {

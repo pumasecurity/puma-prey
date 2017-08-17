@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -6,44 +6,165 @@
     <title>@ViewData["Title"] - Coyote</title>
 
     <environment names="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment names="Staging,Production">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+    <style type="text/css">
+        body,
+        td,
+        th {
+        font-family: Verdana, Geneva, sans-serif;
+        color: #000;
+        font-size: 10px;
+        text-align: left;
+        line-height: 17px;
+            }
+            
+        a:link {
+            color: #FBB146;
+            text-decoration: none;
+        }
+            
+        a:visited {
+            text-decoration: none;
+            color: #FBB146;
+        }
+            
+        a:hover {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+            
+        a:active {
+            text-decoration: none;
+        }
+        h1 {
+        font-size: 57px;
+        color: #000;
+        font-style: normal;
+        line-height: 0px;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: uppercase;
+        text-align: center;
+        }
+        h2 {
+        font-size: 42px;
+        color: #FFF;
+        font-style: normal;
+        line-height: 30px;
+        font-weight: lighter;
+        font-variant: normal;
+        text-transform: uppercase;
+        }
+        h3 {
+        font-size: 16px;
+        color: #000;
+        font-style: normal;
+        line-height: 0px;
+        font-weight: bold;
+        font-variant: normal;
+        text-transform: uppercase;
+        text-align: left;
+        }
+        h4 {
+        font-size: 16px;
+        color: #000;
+        line-height: 0px;
+        font-style: normal;
+        font-weight: lighter;
+        font-variant: normal;
+        text-transform: none;
+        text-align: left;
+        }
+    </style>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+    <div id="background">
+            <div class="block_content -black edge--bottom">
+                <div id="logolg_content">
+                    <a href="https://pumascan.com/index.html"><img src="~/images/logo-horiz.png"></a>
+                </div>
+                <div id="button_guide_content">
+                    <section class="flat">
+                        <a href="https://pumascan.com/installation.html">
+                            <button>
+                        <img src="~/images/icon4.png" alt="" width="120" height="120" class="icon_guide">
+                        <div id="INSTALLATIONGUIDE">
+                            <p>INSTALLATION<br>
+                                GUIDE</p>
+                        </div>
+                    </button>
+                        </a>
+                    </section>
+                </div>
+
+                <div id="button_rules_content">
+                    <section class="flat">
+                        <a href="https://pumascan.com/rules.html">
+                            <button>
+                        <img src="~/images/icon1.png" alt="" width="78" height="120" class="icon_rules">
+                        <div id="RULESDOCUMENTATION">
+                            <p>RULES<br>
+                        DOCUMENTATION</p>
+                    </div>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Coyote</a>
+                        </a>
+                    </section>
+                </div>
+
+                <div id="button_proserv_content">
+                    <section class="flat">
+                        <a href="https://pumascan.com/pro.html">
+                            <button>
+                        <img src="~/images/icon7.png" alt="" width="120" height="120" class="icon_proserv">
+                        <div id="PROFESSIONALED">
+                            <p>PROFESSIONAL<br>
+                            EDITION</p>
+                        </div>                          
+                </button>
+                        </a>
+                    </section>
+                </div>
+
+                <div id="button_about_content">
+                    <section class="flat">
+                        <a href="https://pumascan.com/about.html">
+                            <button><img src="~/images/icon5.png" alt="" width="120" height="120" class="icon_about">
+                        <div id="ABOUTUS">
+                            <p>AbOUT<br>
+                            US</p>
+                        </div>
+                </button>
+                        </a>
+                    </section>
+                </div>
+
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-                @await Html.PartialAsync("_LoginPartial")
+
+            <div class="block -gray edge--both3">
+            @RenderBody()
+            
+    </div>
+
+        <div class="block -black edge--top--reverse">            
+            <!--Footer Section-->
+            <div id="copyright">
+                <p>Puma Security, LLC © 2016&nbsp;-&nbsp;<span id="currentYear">2017</span></p>
+                <p>All Rights Reserved</p>
+            </div>
+            <div id="FOLLOWUSONLINE">
+                <p>Follow Us Online:</p>
+            </div>
+            <div id="socialicontw">
+                <a href="https://twitter.com/puma_scan" target="new"><img src="~/images/socialicontw.png"></a>
+            </div>
+            <div id="socialiconin">
+                <a href="https://www.linkedin.com/company-beta/18206191/" target="new"><img src="~/images/socialiconin.png"></a>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2016 - Coyote</p>
-        </footer>
     </div>
 
     <environment names="Development">
@@ -54,15 +175,19 @@
     <environment names="Staging,Production">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
                 asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery">
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
         </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
                 asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 
-    @RenderSection("scripts", required: false)
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

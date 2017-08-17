@@ -1,72 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A3874967-2F09-4878-83CC-BB105D2D11AA}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>Rabbit</RootNamespace>
-    <AssemblyName>Rabbit</AssemblyName>
-    <DefaultLanguage>en-US</DefaultLanguage>
-    <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>Puma.Prey.Rabbit</AssemblyName>
+    <PackageId>Puma.Prey.Rabbit</PackageId>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50;portable-net451+win8</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <None Include="project.json" />
-    <!-- A reference to the entire .NET Framework is automatically included -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="System.Linq.Expressions" Version="4.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.1.1" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="Data\EFDataContextExtensions.cs" />
-    <Compile Include="EF\EFDataContext.cs" />
-    <Compile Include="EF\MigrationsContextFactory.cs" />
-    <Compile Include="Migrations\20170109220203_Init.cs" />
-    <Compile Include="Migrations\20170109220203_Init.Designer.cs">
-      <DependentUpon>20170109220203_Init.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\EFDataContextModelSnapshot.cs" />
-    <Compile Include="Models\AccountViewModels\ExternalLoginConfirmationViewModel.cs" />
-    <Compile Include="Models\AccountViewModels\ForgotPasswordViewModel.cs" />
-    <Compile Include="Models\AccountViewModels\LoginViewModel.cs" />
-    <Compile Include="Models\AccountViewModels\RegisterViewModel.cs" />
-    <Compile Include="Models\AccountViewModels\ResetPasswordViewModel.cs" />
-    <Compile Include="Models\AccountViewModels\SendCodeViewModel.cs" />
-    <Compile Include="Models\AccountViewModels\VerifyCodeViewModel.cs" />
-    <Compile Include="Models\Animal.cs" />
-    <Compile Include="Models\ApplicationUser.cs" />
-    <Compile Include="Models\Hunt.cs" />
-    <Compile Include="Models\ManageViewModels\AddPhoneNumberViewModel.cs" />
-    <Compile Include="Models\ManageViewModels\ChangePasswordViewModel.cs" />
-    <Compile Include="Models\ManageViewModels\ConfigureTwoFactorViewModel.cs" />
-    <Compile Include="Models\ManageViewModels\FactorViewModel.cs" />
-    <Compile Include="Models\ManageViewModels\IndexViewModel.cs" />
-    <Compile Include="Models\ManageViewModels\ManageLoginsViewModel.cs" />
-    <Compile Include="Models\ManageViewModels\RemoveLoginViewModel.cs" />
-    <Compile Include="Models\ManageViewModels\SetPasswordViewModel.cs" />
-    <Compile Include="Models\ManageViewModels\VerifyPhoneNumberViewModel.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
   </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+
 </Project>

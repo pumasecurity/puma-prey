@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http.Authentication;
 using Microsoft.AspNetCore.Identity;
 
-namespace Puma.Prey.Coyote.Models.ManageViewModels
+namespace Coyote.Models.ManageViewModels
 {
     public class ManageLoginsViewModel
     {
