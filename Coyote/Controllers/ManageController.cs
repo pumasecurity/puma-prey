@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+
+using Puma.Prey.Rabbit.Models;
 using Coyote.Models;
 using Coyote.Models.ManageViewModels;
 using Coyote.Services;

@@ -8,9 +8,10 @@ using Puma.Prey.Rabbit.EF;
 namespace Rabbit.Migrations
 {
     [DbContext(typeof(RabbitDBContext))]
-    partial class RabbitDBContextModelSnapshot : ModelSnapshot
+    [Migration("20170817152445_Init")]
+    partial class Init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.1");

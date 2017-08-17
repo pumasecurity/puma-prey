@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+
+using Puma.Prey.Rabbit.Models;
 using Coyote.Models;
 using Coyote.Models.AccountViewModels;
 using Coyote.Services;

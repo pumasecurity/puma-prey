@@ -14,7 +14,7 @@ using Microsoft.IdentityModel.Tokens;
 
 using AutoMapper;
 
-using Coyote.Data;
+using Puma.Prey.Rabbit.Models;
 using Coyote.Models;
 using Coyote.Services;
 
@@ -46,15 +46,11 @@ namespace Coyote
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add framework services.
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
-
             services.AddDbContext<RabbitDBContext>(options =>
-            options.UseSqlite(Configuration.GetConnectionString("EFDataConnection")));
+            options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddEntityFrameworkStores<RabbitDBContext>()
                 .AddDefaultTokenProviders();
 
             services.AddMvc();

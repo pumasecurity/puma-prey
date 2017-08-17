@@ -7,12 +7,13 @@ using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 using Puma.Prey.Rabbit.Models;
 
 namespace Puma.Prey.Rabbit.EF
 {
-    public class RabbitDBContext : DbContext
+    public class RabbitDBContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Hunt> Hunts { get; set; }
         public DbSet<Animal> Animals { get; set; }
@@ -61,7 +62,7 @@ namespace Puma.Prey.Rabbit.EF
         {
             base.OnConfiguring(builder);
             if (builder.Options.Extensions.FirstOrDefault(e => e is Microsoft.EntityFrameworkCore.Infrastructure.Internal.SqliteOptionsExtension) == null)
-                SqliteDbContextOptionsBuilderExtensions.UseSqlite(builder, "DataSource=Rabbit.EF.db", null);
+                SqliteDbContextOptionsBuilderExtensions.UseSqlite(builder, "DataSource=Rabbit.db", null);
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
