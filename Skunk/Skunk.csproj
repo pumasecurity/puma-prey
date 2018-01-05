@@ -575,6 +575,10 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{b991cac4-087c-4754-b7cc-6ef984f8858f}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Rabbit\Rabbit.csproj">
       <Project>{a3874967-2f09-4878-83cc-bb105d2d11aa}</Project>
       <Name>Rabbit</Name>
