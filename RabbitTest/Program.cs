@@ -12,7 +12,7 @@ namespace RabbitTest
     {
         public static void Main(string[] args)
         {
-            RabbitDBContext context = new RabbitDBContext();
+            var context = new RabbitDBContext();
             if (!context.AllMigrationsApplied())
                 context.Database.Migrate();
             context.EnsureSeedData();
