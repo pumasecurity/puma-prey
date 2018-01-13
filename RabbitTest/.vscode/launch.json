@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "version": "0.2.0",
     "configurations": [
@@ -20,4 +21,28 @@
             "processId": "${command.pickProcess}"
         }
     ]
+=======
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/bin/Debug/netcoreapp1.1/RabbitTest.dll",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "externalConsole": false,
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command.pickProcess}"
+        }
+    ]
+>>>>>>> 0244145489d1a5a74921927ccc798ecb16b27460
 }

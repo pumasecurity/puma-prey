@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
@@ -17,3 +18,28 @@
   </ItemGroup>
 
 </Project>
+=======
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyName>RabbitTest</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>RabbitTest</PackageId>
+    <RuntimeFrameworkVersion>1.1.1</RuntimeFrameworkVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../Rabbit/Rabbit.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="1.1.1" />
+  </ItemGroup>
+
+</Project>
+>>>>>>> 0244145489d1a5a74921927ccc798ecb16b27460

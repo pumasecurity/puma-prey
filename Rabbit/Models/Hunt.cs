@@ -18,6 +18,12 @@ namespace Puma.Prey.Rabbit.Models
         [Display(Name = "Phone number")]
         public string PhoneNumber { get; set; }
 
+		public string Name { get; set; }
+
+		public string Description { get; set; }
+
+		public double Price { get; set; }
+
         public virtual List<Animal> Animals { get; set; }
     }
 }

@@ -7,8 +7,8 @@
     <ProjectGuid>{B991CAC4-087C-4754-B7CC-6EF984F8858F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Common</RootNamespace>
-    <AssemblyName>Common</AssemblyName>
+    <RootNamespace>Puma.Prey.Common</RootNamespace>
+    <AssemblyName>Puma.Prey.Common</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

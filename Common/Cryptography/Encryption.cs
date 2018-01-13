@@ -47,16 +47,16 @@ namespace Puma.Prey.Common.Cryptography
                 //Input bytes
                 byte[] inputBytes = Encoding.UTF8.GetBytes(plainText);
 
-                //Stand up AES algorithm
-                DESCryptoServiceProvider crypto = new DESCryptoServiceProvider();
-                
+				//Stand up AES algorithm
+				DESCryptoServiceProvider crypto = new DESCryptoServiceProvider
+				{
+					//Set key and iv
+					Key = DEFAULT_KEY.GetBytesFromHexString(),
+					IV = DEFAULT_IV.GetBytesFromHexString()
+				};
 
-                //Set key and iv
-                crypto.Key = DEFAULT_KEY.GetBytesFromHexString();
-                crypto.IV = DEFAULT_IV.GetBytesFromHexString();
-
-                //Create the crypto stream
-                CryptoStream cStream = new CryptoStream(mStream
+				//Create the crypto stream
+				CryptoStream cStream = new CryptoStream(mStream
                     , crypto.CreateEncryptor(), CryptoStreamMode.Write);
                 cStream.Write(inputBytes, 0, inputBytes.Length);
                 cStream.FlushFinalBlock();
@@ -103,13 +103,14 @@ namespace Puma.Prey.Common.Cryptography
             //Create memory stream from the input bytes
             using (MemoryStream mStream = new MemoryStream())
             {
-                DESCryptoServiceProvider des = new DESCryptoServiceProvider();
+				DESCryptoServiceProvider des = new DESCryptoServiceProvider
+				{
+					//Set key and iv
+					Key = DEFAULT_KEY.GetBytesFromHexString(),
+					IV = DEFAULT_IV.GetBytesFromHexString()
+				};
 
-                //Set key and iv
-                des.Key = DEFAULT_KEY.GetBytesFromHexString();
-                des.IV = DEFAULT_IV.GetBytesFromHexString();
-
-                CryptoStream cStream = new CryptoStream(mStream
+				CryptoStream cStream = new CryptoStream(mStream
                     , des.CreateDecryptor(), CryptoStreamMode.Write);
                 cStream.Write(cipherText, 0, cipherText.Length);
                 cStream.FlushFinalBlock();

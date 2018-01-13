@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
@@ -11,6 +12,34 @@
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0"/>
+=======
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>Rabbit</AssemblyName>
+    <PackageId>Rabbit</PackageId>
+    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.0.0" />
+    <PackageReference Include="System.Linq.Expressions" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
+>>>>>>> 0244145489d1a5a74921927ccc798ecb16b27460
   </ItemGroup>
 
 </Project>
