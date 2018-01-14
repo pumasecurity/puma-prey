@@ -7,13 +7,12 @@ using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 using Puma.Prey.Rabbit.Models;
 
 namespace Puma.Prey.Rabbit.EF
 {
-    public class RabbitDBContext : IdentityDbContext<ApplicationUser>
+    public class RabbitDBContext : DbContext//IdentityDbContext<ApplicationUser>
     {
         public DbSet<Hunt> Hunts { get; set; }
         public DbSet<Animal> Animals { get; set; }
