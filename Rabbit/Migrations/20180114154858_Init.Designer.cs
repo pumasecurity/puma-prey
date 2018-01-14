@@ -11,9 +11,10 @@ using System;
 namespace Rabbit.Migrations
 {
     [DbContext(typeof(RabbitDBContext))]
-    partial class RabbitDBContextModelSnapshot : ModelSnapshot
+    [Migration("20180114154858_Init")]
+    partial class Init
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
