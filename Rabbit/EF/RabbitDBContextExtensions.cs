@@ -18,7 +18,7 @@ namespace Puma.Prey.Rabbit.EF
 
                 if (!context.Hunts.Any())
                 {
-                    hunt = new Hunt { Id = 1, PhoneNumber = "(720) 588-8133" };
+                    hunt = new Hunt { Id = 1, Name="Early Hunt", PhoneNumber = "(720) 588-8133" };
                     context.Hunts.Add(hunt);
                 }
 

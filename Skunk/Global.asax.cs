@@ -7,15 +7,24 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 
-namespace Puma.Prey.Skunk
+using Microsoft.EntityFrameworkCore;
+
+using Puma.Prey.Rabbit.EF;
+
+namespace Skunk
 {
-    public class Global : HttpApplication
-    {
-        void Application_Start(object sender, EventArgs e)
-        {
-            // Code that runs on application startup
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
-        }
-    }
+	public class Global : HttpApplication
+	{
+		void Application_Start(object sender, EventArgs e)
+		{
+			// Code that runs on application startup
+			RouteConfig.RegisterRoutes(RouteTable.Routes);
+			BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+			var context = new RabbitDBContext();
+			if (!context.AllMigrationsApplied())
+				context.Database.Migrate();
+			context.EnsureSeedData();
+		}
+	}
 }

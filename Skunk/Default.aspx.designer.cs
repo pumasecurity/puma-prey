@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Puma.Prey.Skunk
+namespace Skunk
 {
 
 
-    public partial class _Default
-    {
-    }
+	public partial class _Default
+	{
+	}
 }

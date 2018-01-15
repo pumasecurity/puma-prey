@@ -8,6 +8,7 @@ namespace Puma.Prey.Fox
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+			/* ABC - no bundles defined
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
@@ -23,6 +24,7 @@ namespace Puma.Prey.Fox
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+			*/
         }
     }
 }

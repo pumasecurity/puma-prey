@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Puma.Prey.Skunk {
+namespace Skunk {
     
     
     public partial class Site_Mobile {
