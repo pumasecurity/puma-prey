@@ -19,8 +19,7 @@ namespace Puma.Prey.Raccoon
             var cn = new SqliteConnection(((DbContext)context).Database.GetDbConnection().ConnectionString);
             try
             {
-                if (!Int32.TryParse(id, out hId))
-                { return false; }
+                if (!Int32.TryParse(id, out hId)) return false;
 
                 cn.Open();
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace Puma.Prey.Common.Validation
 {
@@ -13,6 +14,12 @@ namespace Puma.Prey.Common.Validation
         {
             throw new NotImplementedException();
             
+        }
+
+        public static bool IsValidFilePath(string input)
+        {
+            Regex r = new Regex(@"[A-Za-z0-9]+\.[a-z]{3}");
+            return r.IsMatch(input);
         }
 
     }

@@ -7,7 +7,7 @@ namespace Puma.Prey.Common.Rest
     {
         private const string BASE_URL = "https://services.pumaprey.org/api/";
 
-        public static T Get<T>(string endpoint) where T : new()
+        public static T Get<T>(string endpoint, params object[] args) where T : new()
         {
             T item = new T();
 
