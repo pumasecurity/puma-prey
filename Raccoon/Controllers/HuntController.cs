@@ -13,11 +13,25 @@ using Puma.Prey.Rabbit.EF;
 using Puma.Prey.Raccoon.Models;
 using Puma.Prey.Common;
 using Puma.Prey.Common.Validation;
+using Puma.Prey.Common.Data;
 
 namespace Puma.Prey.Raccoon.Controllers
 {
     public class HuntController : Controller
     {
+        private ApplicationUserManager _userManager;
+        private Ldap _ldap;
+
+        public HuntController()
+        {
+        }
+
+        public HuntController(ApplicationUserManager userManager)
+        {
+            _userManager = userManager;
+            _ldap = new Ldap();
+        }
+
         public ActionResult Index()
         {
             using (var context = new RabbitDBContext())
@@ -72,7 +86,8 @@ namespace Puma.Prey.Raccoon.Controllers
         {
             //Get report data for the current user
             Guid userId = new Guid(User.Identity.GetUserId());
-            Report report = Report.GetReport(userId);
+            //Report report = Report.GetReport(userId);
+            Report report = Report.GetReportFromProvider(userId);
 
             //Mark the report as generated
             using (var context = new RabbitDBContext())
