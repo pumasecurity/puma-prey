@@ -1,0 +1,345 @@
+{
+  "Findings": [
+    {
+      "Id": "SEC0001",
+      "Category": "Debug Build Enabled",
+      "Message": "Debug compilation is enabled. C:\\Users\\Eric\\Documents\\github\\puma-prey\\Fox\\Areas\\HelpPage\\Views\\Web.config(28): <compilation debug=\"true\">  <assemblies>    <add assembly=\"System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\" />  </assemblies></compilation>",
+      "Description": "Binaries compiled in debug mode can leak detailed stack traces and debugging messages to attackers. Disable debug builds by setting the debug attribute to false.\r\n \r\nSeverity: Low",
+      "Severity": "Warning",
+      "Instances": [
+        {
+          "ProjectId": "b941378b-09f7-4096-af8a-c6e14bf9551f",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Fox\\Fox.csproj",
+          "ProjectName": "Fox.csproj",
+          "FilePath": "Areas\\HelpPage\\Views\\Web.config",
+          "LineNumberStart": 28,
+          "LineNumberEnd": 28,
+          "ColumnNumber": 0,
+          "Sink": "<compilation debug=\"true\">\r\n  <assemblies>\r\n    <add assembly=\"System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\" />\r\n  </assemblies>\r\n</compilation>",
+          "Source": null,
+          "RiskRating": "Low"
+        }
+      ],
+      "DefaultRiskRating": "Low"
+    },
+    {
+      "Id": "SEC0009",
+      "Category": "Version HTTP Response Header Enabled",
+      "Message": "The Version HTTP response header is enabled. C:\\Users\\Eric\\Documents\\github\\puma-prey\\Raccoon\\Web.config(31): <httpRuntime targetFramework=\"4.6.1\" />",
+      "Description": "The Version HTTP response header sends the ASP.NET framework version to the client's browser. This information can help an attacker identify vulnerabilities in the server's framework version and should be disabled in production. Disable the version response header by setting the httpRuntime element's enableVersionHeader attribute to false.\r\n \r\nSeverity: Low",
+      "Severity": "Warning",
+      "Instances": [
+        {
+          "ProjectId": "7a0c18d4-7f21-4a6e-b7f8-6696fc79a1d0",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Raccoon\\Raccoon.csproj",
+          "ProjectName": "Raccoon.csproj",
+          "FilePath": "Web.config",
+          "LineNumberStart": 31,
+          "LineNumberEnd": 31,
+          "ColumnNumber": 0,
+          "Sink": "<httpRuntime targetFramework=\"4.6.1\" />",
+          "Source": null,
+          "RiskRating": "Low"
+        },
+        {
+          "ProjectId": "3f329783-353f-4017-a23a-604f57e4fe99",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Skunk\\Skunk.csproj",
+          "ProjectName": "Skunk.csproj",
+          "FilePath": "Web.config",
+          "LineNumberStart": 9,
+          "LineNumberEnd": 9,
+          "ColumnNumber": 0,
+          "Sink": "<httpRuntime targetFramework=\"4.6.1\" />",
+          "Source": null,
+          "RiskRating": "Low"
+        },
+        {
+          "ProjectId": "b941378b-09f7-4096-af8a-c6e14bf9551f",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Fox\\Fox.csproj",
+          "ProjectName": "Fox.csproj",
+          "FilePath": "Web.config",
+          "LineNumberStart": 25,
+          "LineNumberEnd": 25,
+          "ColumnNumber": 0,
+          "Sink": "<httpRuntime targetFramework=\"4.6.2\" />",
+          "Source": null,
+          "RiskRating": "Low"
+        }
+      ],
+      "DefaultRiskRating": "Low"
+    },
+    {
+      "Id": "SEC0013",
+      "Category": "Pages ViewStateEncryptionMode Disabled",
+      "Message": "Pages ViewStateEncryptionMode disabled. C:\\Users\\Eric\\Documents\\github\\puma-prey\\Skunk\\Web.config(10): <pages>  <namespaces>    <add namespace=\"System.Web.Optimization\" />  </namespaces>  <controls>    <add assembly=\"Microsoft.AspNet.Web.Optimization.WebForms\" namespace=\"Microsoft.AspNet.Web.Optimization.WebForms\" tagPrefix=\"webopt\" />  </controls></pages>",
+      "Description": "The web forms view state hidden field is base64 encoded by default, which can be easily decoded. Applications placing sensitive data into the view state are vulnerable to information leakage issues via the view state parameter.  The pages ViewStateEncryptionMode attribute allows an application encrypt the view state data with the .NET machine key.\r\n \r\nSeverity: Low",
+      "Severity": "Warning",
+      "Instances": [
+        {
+          "ProjectId": "3f329783-353f-4017-a23a-604f57e4fe99",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Skunk\\Skunk.csproj",
+          "ProjectName": "Skunk.csproj",
+          "FilePath": "Web.config",
+          "LineNumberStart": 10,
+          "LineNumberEnd": 10,
+          "ColumnNumber": 0,
+          "Sink": "<pages>\r\n  <namespaces>\r\n    <add namespace=\"System.Web.Optimization\" />\r\n  </namespaces>\r\n  <controls>\r\n    <add assembly=\"Microsoft.AspNet.Web.Optimization.WebForms\" namespace=\"Microsoft.AspNet.Web.Optimization.WebForms\" tagPrefix=\"webopt\" />\r\n  </controls>\r\n</pages>",
+          "Source": null,
+          "RiskRating": "Low"
+        }
+      ],
+      "DefaultRiskRating": "Low"
+    },
+    {
+      "Id": "SEC0017",
+      "Category": "Weak Password Complexity",
+      "Message": "Password validator settings do not meet the requirements - Minimum Length (10), Numeric Character (True), Lowercase Character (True), Uppercase Character (True), Special Character (True)",
+      "Description": "The Identity PasswordValidator settings do not meet the password complexity requirements. Weak passwords can be cracked much faster than complex passwords with sufficient length and complexity requirements.\r\n \r\nSeverity: Medium",
+      "Severity": "Warning",
+      "Instances": [
+        {
+          "ProjectId": "b941378b-09f7-4096-af8a-c6e14bf9551f",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Fox\\Fox.csproj",
+          "ProjectName": "Fox.csproj",
+          "FilePath": "App_Start\\IdentityConfig.cs",
+          "LineNumberStart": 29,
+          "LineNumberEnd": 29,
+          "ColumnNumber": 0,
+          "Sink": "manager.PasswordValidator = new PasswordValidator",
+          "Source": null,
+          "RiskRating": "Medium"
+        },
+        {
+          "ProjectId": "7a0c18d4-7f21-4a6e-b7f8-6696fc79a1d0",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Raccoon\\Raccoon.csproj",
+          "ProjectName": "Raccoon.csproj",
+          "FilePath": "App_Start\\IdentityConfig.cs",
+          "LineNumberStart": 54,
+          "LineNumberEnd": 54,
+          "ColumnNumber": 0,
+          "Sink": "manager.PasswordValidator = new PasswordValidator",
+          "Source": null,
+          "RiskRating": "Medium"
+        }
+      ],
+      "DefaultRiskRating": "Medium"
+    },
+    {
+      "Id": "SEC0018",
+      "Category": "Identity Password Lockout Disabled",
+      "Message": "Password lockout is disabled. To protect accounts from brute force attacks, set the shouldLockout parameter to true.",
+      "Description": "The Identity password lockout feature is disabled. This can allow brute force and dictionary attacks against user accounts. To enable the password lockout feature, set the shouldLockout parameter to true.\r\n \r\nSeverity: Medium",
+      "Severity": "Warning",
+      "Instances": [
+        {
+          "ProjectId": "7a0c18d4-7f21-4a6e-b7f8-6696fc79a1d0",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Raccoon\\Raccoon.csproj",
+          "ProjectName": "Raccoon.csproj",
+          "FilePath": "Controllers\\AccountController.cs",
+          "LineNumberStart": 79,
+          "LineNumberEnd": 79,
+          "ColumnNumber": 0,
+          "Sink": "model.Password, model.RememberMe, shouldLockout: false);",
+          "Source": null,
+          "RiskRating": "Medium"
+        }
+      ],
+      "DefaultRiskRating": "Medium"
+    },
+    {
+      "Id": "SEC0019",
+      "Category": "Missing AntiForgeryToken Attribute",
+      "Message": "The Action is missing the AntiForgeryToken attribute. If this action modifies data on the backend, it could be vulnerable to Cross-Site Request Forgery attacks.",
+      "Description": "The AntiForgeryToken attribute protects applications using authentication cookies from CSRF attacks. Without the AntiForgeryToken attribute, attackers can submit forged requests on behalf of another authenticated user.\r\n \r\nSeverity: Medium",
+      "Severity": "Warning",
+      "Instances": [
+        {
+          "ProjectId": "7a0c18d4-7f21-4a6e-b7f8-6696fc79a1d0",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Raccoon\\Raccoon.csproj",
+          "ProjectName": "Raccoon.csproj",
+          "FilePath": "Controllers\\HuntController.cs",
+          "LineNumberStart": 43,
+          "LineNumberEnd": 43,
+          "ColumnNumber": 0,
+          "Sink": "public ActionResult Enter(int id, HuntModel model)",
+          "Source": null,
+          "RiskRating": "Medium"
+        },
+        {
+          "ProjectId": "7a0c18d4-7f21-4a6e-b7f8-6696fc79a1d0",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Raccoon\\Raccoon.csproj",
+          "ProjectName": "Raccoon.csproj",
+          "FilePath": "Controllers\\HuntController.cs",
+          "LineNumberStart": 62,
+          "LineNumberEnd": 62,
+          "ColumnNumber": 0,
+          "Sink": "public ActionResult Download(string fileName)",
+          "Source": null,
+          "RiskRating": "Medium"
+        }
+      ],
+      "DefaultRiskRating": "Medium"
+    },
+    {
+      "Id": "SEC0023",
+      "Category": "Action Request Validation Disabled",
+      "Message": "Setting the ValidateInput method's first parameter to false disables the validate request security feature.",
+      "Description": "The request validation protection performs blacklist input validation for XSS payloads found in form and URL request parameters. Request validation has known bypass issues and does not prevent all XSS attacks, but it does provide a strong countermeasure for most payloads targeting a HTML context. Request validation is disabled when using the [ValidateInput(false)] attribute. This action should have strict white list validation in place to restrict user input.\r\n \r\nSeverity: Low",
+      "Severity": "Warning",
+      "Instances": [
+        {
+          "ProjectId": "7a0c18d4-7f21-4a6e-b7f8-6696fc79a1d0",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Raccoon\\Raccoon.csproj",
+          "ProjectName": "Raccoon.csproj",
+          "FilePath": "Controllers\\HuntController.cs",
+          "LineNumberStart": 42,
+          "LineNumberEnd": 42,
+          "ColumnNumber": 0,
+          "Sink": "[ValidateInput(false)]",
+          "Source": null,
+          "RiskRating": "Low"
+        }
+      ],
+      "DefaultRiskRating": "Low"
+    },
+    {
+      "Id": "SEC0025",
+      "Category": "Weak Cryptography Algorithm (DES)",
+      "Message": "The DES algorithm is a weak encryption algorithm and not considered secure for protecting sensitive information.",
+      "Description": "The DESCryptoServiceProvider class uses the weak DES algorithm and is not an approved encryption algorithm. Use the AesManaged or AesCryptoServiceProvider algorithm for symmetric encryption.\r\n \r\nSeverity: High",
+      "Severity": "Warning",
+      "Instances": [
+        {
+          "ProjectId": "f904fbdd-cff9-4fa7-b3ca-a6221c9132ff",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Common\\Common.csproj",
+          "ProjectName": "Common.csproj",
+          "FilePath": "Cryptography\\Encryption.cs",
+          "LineNumberStart": 51,
+          "LineNumberEnd": 51,
+          "ColumnNumber": 0,
+          "Sink": "DESCryptoServiceProvider crypto = new DESCryptoServiceProvider",
+          "Source": null,
+          "RiskRating": "High"
+        },
+        {
+          "ProjectId": "f904fbdd-cff9-4fa7-b3ca-a6221c9132ff",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Common\\Common.csproj",
+          "ProjectName": "Common.csproj",
+          "FilePath": "Cryptography\\Encryption.cs",
+          "LineNumberStart": 106,
+          "LineNumberEnd": 106,
+          "ColumnNumber": 0,
+          "Sink": "DESCryptoServiceProvider des = new DESCryptoServiceProvider",
+          "Source": null,
+          "RiskRating": "High"
+        }
+      ],
+      "DefaultRiskRating": "High"
+    },
+    {
+      "Id": "SEC0027",
+      "Category": "Weak Cryptography Algorithm (MD5)",
+      "Message": "The MD5CryptoServiceProvider class uses the weak MD5 algorithm and is not an approved hashing algorithm.",
+      "Description": "Use the SHA256Managed (at least) preferably SHA512Managed for hashing operations. NOTE: SHA2 is still not sufficient for password hashing, which requires a unique salt and adaptive hashing algorithm. See the documentation for secure password hashing advice.\r\n \r\nSeverity: High",
+      "Severity": "Warning",
+      "Instances": [
+        {
+          "ProjectId": "f904fbdd-cff9-4fa7-b3ca-a6221c9132ff",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Common\\Common.csproj",
+          "ProjectName": "Common.csproj",
+          "FilePath": "Cryptography\\Hashing.cs",
+          "LineNumberStart": 47,
+          "LineNumberEnd": 47,
+          "ColumnNumber": 0,
+          "Sink": "HashAlgorithm hash = new MD5CryptoServiceProvider();",
+          "Source": null,
+          "RiskRating": "High"
+        }
+      ],
+      "DefaultRiskRating": "High"
+    },
+    {
+      "Id": "SEC0105",
+      "Category": "Unencoded Label Text",
+      "Message": "Unencoded Label.Text property value.",
+      "Description": "Data is written to the browser using the raw Label.Text method. This can result in Cross-Site Scripting (XSS) vulnerabilities if the data source is considered untrusted or dynamic (request parameters, database, web service, etc.).\r\n\r\nLabel controls are often found in HTML contexts, but can also appear in other contexts such as JavaScript, HTML Attribute, or URL. Fixing the vulnerability requires the appropriate Web Protection Library (aka AntiXSS) context-specific method to encode the data before setting the Label.Text property.\r\n \r\nSeverity: High",
+      "Severity": "Warning",
+      "Instances": [
+        {
+          "ProjectId": "3f329783-353f-4017-a23a-604f57e4fe99",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Skunk\\Skunk.csproj",
+          "ProjectName": "Skunk.csproj",
+          "FilePath": "Hunt.aspx.cs",
+          "LineNumberStart": 23,
+          "LineNumberEnd": 23,
+          "ColumnNumber": 0,
+          "Sink": "lblProductName.Text = hunt.Name;",
+          "Source": null,
+          "RiskRating": "High"
+        },
+        {
+          "ProjectId": "3f329783-353f-4017-a23a-604f57e4fe99",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Skunk\\Skunk.csproj",
+          "ProjectName": "Skunk.csproj",
+          "FilePath": "Hunt.aspx.cs",
+          "LineNumberStart": 24,
+          "LineNumberEnd": 24,
+          "ColumnNumber": 0,
+          "Sink": "lblPrice.Text = hunt.Price.ToString(\"C\");",
+          "Source": null,
+          "RiskRating": "High"
+        }
+      ],
+      "DefaultRiskRating": "High"
+    },
+    {
+      "Id": "SEC0112",
+      "Category": "Path Tampering Unvalidated File Path",
+      "Message": "Unvalidated file paths are passed to a FileStream API, which can allow unauthorized file system operations (e.g. read, write, delete) to be performed on unintended server files.",
+      "Description": "Path traversal vulnerabilities occur when an application does not properly validate file paths for directory traversal (../) and other malicious characters. This can allow attackers to download, overwrite, or delete unauthorized files from the server. Ensure file paths are read from a trusted location, such as a static resource or configuration file. Do not send file paths in request parameters, which can be modified by an attacker.\r\n \r\nSeverity: High",
+      "Severity": "Warning",
+      "Instances": [
+        {
+          "ProjectId": "3f329783-353f-4017-a23a-604f57e4fe99",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Skunk\\Skunk.csproj",
+          "ProjectName": "Skunk.csproj",
+          "FilePath": "Contact.aspx.cs",
+          "LineNumberStart": 17,
+          "LineNumberEnd": 17,
+          "ColumnNumber": 0,
+          "Sink": "using (Stream stream2 = new FileStream(fileName, FileMode.Open))",
+          "Source": null,
+          "RiskRating": "High"
+        }
+      ],
+      "DefaultRiskRating": "High"
+    },
+    {
+      "Id": "SEC0113",
+      "Category": "Certificate Validation Disabled",
+      "Message": "The ServerCertificateValidationCallback method fails to properly validate the server's certificate.",
+      "Description": "Overriding the default framework certificate validation method can allow man-in-the middle attacks against user’s running the application on insecure network connections.\r\n \r\nSeverity: High",
+      "Severity": "Warning",
+      "Instances": [
+        {
+          "ProjectId": "f904fbdd-cff9-4fa7-b3ca-a6221c9132ff",
+          "Project": "C:\\Users\\Eric\\Documents\\github\\puma-prey\\Common\\Common.csproj",
+          "ProjectName": "Common.csproj",
+          "FilePath": "Rest\\RestClient.cs",
+          "LineNumberStart": 17,
+          "LineNumberEnd": 17,
+          "ColumnNumber": 0,
+          "Sink": "handler.ServerCertificateValidationCallback += (sender, cert, chain, sslPolicyErrors) => true;",
+          "Source": null,
+          "RiskRating": "High"
+        }
+      ],
+      "DefaultRiskRating": "High"
+    }
+  ],
+  "Solution": "PumaPrey-Scan.sln",
+  "Project": null,
+  "Timestamp": "2018-04-25T12:24:44.8792014-05:00",
+  "ScanTime": "0:10.15",
+  "Version": null
+}
