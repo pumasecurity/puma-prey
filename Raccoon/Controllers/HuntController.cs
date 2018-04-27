@@ -86,18 +86,9 @@ namespace Puma.Prey.Raccoon.Controllers
         {
             //Get report data for the current user
             Guid userId = new Guid(User.Identity.GetUserId());
-            //Report report = Report.GetReport(userId);
             Report report = Report.GetReportFromProvider(userId);
 
-            //Mark the report as generated
-            using (var context = new RabbitDBContext())
-            {
-                    string query = string.Format("UPDATE Report SET Status = 1 WHERE Name = {0}", report.Name);
-                    context.Database.ExecuteSqlCommand(query);
-            }
-
-            //Return report data to the view
-            return View(report);
+            return new FilePathResult("C:\\share\\reports\\" + report.Name, "application/octet-stream");
         }
     }
 }
