@@ -17,7 +17,7 @@ namespace Puma.Prey.Fox.Controllers
     {
         public IEnumerable<Hunt> Get()
         {
-            var hunts= new List<Hunt>();
+            var hunts = new List<Hunt>();
 
             using (var context = new RabbitDBContext())
             {
