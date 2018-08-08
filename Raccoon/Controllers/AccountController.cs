@@ -446,11 +446,7 @@ namespace Puma.Prey.Raccoon.Controllers
 
         private ActionResult RedirectToLocal(string returnUrl)
         {
-            if (Url.IsLocalUrl(returnUrl))
-            {
-                return Redirect(returnUrl);
-            }
-            return RedirectToAction("Index", "Home");
+            return Redirect(returnUrl);
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult

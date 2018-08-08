@@ -13,8 +13,8 @@ namespace Puma.Prey.Common.Cryptography
         public static byte[] GenerateCrytpoRandomBytes(int bytes)
         {
             byte[] numbers = new byte[bytes];
-            RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
-            rng.GetNonZeroBytes(numbers);
+            System.Random random = new System.Random();
+            random.NextBytes(numbers);
             return numbers;
         }
     }

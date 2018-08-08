@@ -13,14 +13,6 @@ namespace Skunk
 		protected void Page_Load(object sender, EventArgs e)
 		{
             string fileName = Request["fileName"];
-
-            using (Stream stream2 = new FileStream(fileName, FileMode.Open))
-            {
-                //Do some stuff
-            }
-
-            FileStream stream = File.Open(fileName, FileMode.Open);
-
             Response.WriteFile(fileName);
 		}
 	}
