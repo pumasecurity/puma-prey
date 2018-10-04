@@ -1,0 +1,332 @@
+{
+  "Version": "1.2",
+  "GeneralSettings": {
+    "DataflowAnalysisEnabled": true,
+    "DataflowAnalysisReportIndeterminates": false,
+    "ProductionConfigurationTransform": "Release"
+  },
+  "RuleOptions": [
+    {
+      "Id": "SEC0001",
+      "RiskRating": "Low",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0002",
+      "RiskRating": "Low",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0003",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0004",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0005",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0006",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0007",
+      "TimeoutMax": 30,
+      "RiskRating": "Low",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0008",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0009",
+      "RiskRating": "Low",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0010",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0011",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0012",
+      "RiskRating": "Low",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0013",
+      "RiskRating": "Low",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0014",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0015",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0016",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0017",
+      "Length": 10,
+      "RequireNumber": true,
+      "RequireLowerCase": true,
+      "RequireUpperCase": true,
+      "RequireSpecialCharacter": true,
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0018",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0019",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0020",
+      "TimeoutMax": 30,
+      "RiskRating": "Low",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0021",
+      "RiskRating": "Low",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0022",
+      "RiskRating": "Low",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0023",
+      "RiskRating": "Low",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0024",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0025",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0026",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0027",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0028",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0029",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0030",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0031",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0100",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0101",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0102",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0103",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0104",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0105",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0106",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0107",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0108",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0109",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0110",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0111",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0112",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0113",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0114",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0115",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0116",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0117",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0118",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0119",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0032",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    }
+  ],
+  "CustomTaintedSources": [],
+  "CustomCleanseMethods": [],
+  "LogLevel": "None"
+}
