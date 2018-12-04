@@ -328,5 +328,6 @@
   ],
   "CustomTaintedSources": [],
   "CustomCleanseMethods": [],
+  "Exceptions": [],
   "LogLevel": "None"
 }
