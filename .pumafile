@@ -1,11 +1,11 @@
 {
-  "Version": "1.2",
+  "Version": "1.2.1",
+  "LogLevel": "Error",
   "GeneralSettings": {
     "DataflowAnalysisEnabled": true,
     "DataflowAnalysisReportIndeterminates": false,
     "ProductionConfigurationTransform": "Release"
   },
-  "LogLevel": "Error",
   "RuleOptions": [
     {
       "Id": "SEC0001",
@@ -69,7 +69,7 @@
       "Name": "Version HTTP Response Header Enabled",
       "RiskRating": "Low",
       "Severity": "Warning",
-      "Enabled": false
+      "Enabled": true
     },
     {
       "Id": "SEC0010",
@@ -235,6 +235,20 @@
       "Id": "SEC0032",
       "Name": "Command Injection Process Start Info",
       "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0033",
+      "Name": "Insecure HTTP Cookie Transport",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0034",
+      "Name": "HTTP Cookie Accessible via Script",
+      "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
