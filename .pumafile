@@ -1,5 +1,5 @@
 {
-  "Version": "1.2.1",
+  "Version": "1.2.3",
   "LogLevel": "Error",
   "GeneralSettings": {
     "DataflowAnalysisEnabled": true,
@@ -51,11 +51,11 @@
     },
     {
       "Id": "SEC0007",
-      "TimeoutMax": 30,
       "Name": "Forms Authentication Weak Timeout",
       "RiskRating": "Low",
       "Severity": "Warning",
-      "Enabled": true
+      "Enabled": true,
+      "TimeoutMax": 30
     },
     {
       "Id": "SEC0008",
@@ -122,15 +122,15 @@
     },
     {
       "Id": "SEC0017",
+      "Name": "Weak Password Complexity",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true,
       "Length": 10,
       "RequireNumber": true,
       "RequireLowerCase": true,
       "RequireUpperCase": true,
-      "RequireSpecialCharacter": true,
-      "Name": "Weak Password Complexity",
-      "RiskRating": "Medium",
-      "Severity": "Warning",
-      "Enabled": true
+      "RequireSpecialCharacter": true
     },
     {
       "Id": "SEC0018",
@@ -148,11 +148,11 @@
     },
     {
       "Id": "SEC0020",
-      "TimeoutMax": 30,
       "Name": "Weak Session Timeout",
       "RiskRating": "Low",
       "Severity": "Warning",
-      "Enabled": true
+      "Enabled": true,
+      "TimeoutMax": 30
     },
     {
       "Id": "SEC0021",
@@ -249,6 +249,27 @@
       "Id": "SEC0034",
       "Name": "HTTP Cookie Accessible via Script",
       "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0035",
+      "Name": "XPathDocument External Entity Expansion (XXE)",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0036",
+      "Name": "XML Reader External Entity Expansion (XXE)",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0037",
+      "Name": "XmlDocument External Entity Expansion (XXE)",
+      "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
@@ -389,6 +410,13 @@
       "Id": "SEC0119",
       "Name": "LDAP Injection Filter Assignment",
       "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC0120",
+      "Name": "Missing Authorization Attribute",
+      "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     }
