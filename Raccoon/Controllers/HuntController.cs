@@ -17,6 +17,7 @@ using Puma.Prey.Common.Data;
 
 namespace Puma.Prey.Raccoon.Controllers
 {
+    [Authorize]
     public class HuntController : Controller
     {
         private ApplicationUserManager _userManager;
