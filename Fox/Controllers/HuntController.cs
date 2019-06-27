@@ -10,11 +10,13 @@ using Microsoft.EntityFrameworkCore;
 
 using Puma.Prey.Rabbit.EF;
 using Puma.Prey.Rabbit.Models;
+using AllowAnonymousAttribute = System.Web.Http.AllowAnonymousAttribute;
 
 namespace Puma.Prey.Fox.Controllers
 {
     public class HuntController : ApiController
     {
+        [AllowAnonymous]
         public IEnumerable<Hunt> Get()
         {
             var hunts = new List<Hunt>();
@@ -30,6 +32,7 @@ namespace Puma.Prey.Fox.Controllers
         }
 
         // GET api/hunt/5
+        [AllowAnonymous]
         public Hunt Get(int id)
         {
             Hunt hunt = null;

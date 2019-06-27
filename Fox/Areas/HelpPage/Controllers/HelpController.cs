@@ -3,12 +3,11 @@ using System.Web.Http;
 using System.Web.Mvc;
 using Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions;
 using Puma.Prey.Fox.Areas.HelpPage.Models;
+using AllowAnonymousAttribute = System.Web.Mvc.AllowAnonymousAttribute;
 
 namespace Puma.Prey.Fox.Areas.HelpPage.Controllers
 {
-    /// <summary>
-    /// The controller that will handle requests for the help page.
-    /// </summary>
+    [AllowAnonymous]
     public class HelpController : Controller
     {
         private const string ErrorViewName = "Error";
