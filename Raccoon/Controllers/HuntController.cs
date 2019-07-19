@@ -9,11 +9,11 @@ using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNet.Identity;
 using Puma.Prey.Common.Rest;
-using Puma.Prey.Rabbit.EF;
 using Puma.Prey.Raccoon.Models;
 using Puma.Prey.Common;
 using Puma.Prey.Common.Validation;
 using Puma.Prey.Common.Data;
+using Puma.Prey.Rabbit.Context;
 
 namespace Puma.Prey.Raccoon.Controllers
 {
@@ -32,7 +32,7 @@ namespace Puma.Prey.Raccoon.Controllers
             _userManager = userManager;
             _ldap = new Ldap();
         }
-
+        /*
         public ActionResult Index()
         {
             using (var context = new RabbitDBContext())
@@ -40,13 +40,13 @@ namespace Puma.Prey.Raccoon.Controllers
                 return View(context.Hunts.OrderByDescending(c => c.Id).ToList());
             }
         }
-
+        
         public ActionResult Contest(int id)
         {
             var model = RestClient.Get<Rabbit.Models.Hunt>(string.Format("hunt/{0}", id));
             return View(model);
         }
-
+        */
         public ActionResult Enter(int id)
         {
             var model = new HuntModel();

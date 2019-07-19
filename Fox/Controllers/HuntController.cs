@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 using Microsoft.EntityFrameworkCore;
 
-using Puma.Prey.Rabbit.EF;
+using Puma.Prey.Rabbit.Context;
 using Puma.Prey.Rabbit.Models;
 using AllowAnonymousAttribute = System.Web.Http.AllowAnonymousAttribute;
 
@@ -17,6 +17,7 @@ namespace Puma.Prey.Fox.Controllers
     public class HuntController : ApiController
     {
         [AllowAnonymous]
+        /*
         public IEnumerable<Hunt> Get()
         {
             var hunts = new List<Hunt>();
@@ -30,9 +31,11 @@ namespace Puma.Prey.Fox.Controllers
 
             return hunts;
         }
+        */
 
         // GET api/hunt/5
-        [AllowAnonymous]
+        //[AllowAnonymous]
+        /*
         public Hunt Get(int id)
         {
             Hunt hunt = null;
@@ -52,12 +55,12 @@ namespace Puma.Prey.Fox.Controllers
         public void Post([FromBody]string value)
         {
         }
-
+        */
         // PUT api/hunt/5
         public void Put(int id, [FromBody]string value)
         {
         }
-
+        /*
         // DELETE api/hunt/5
         public void Delete(string id)
         {
@@ -66,6 +69,6 @@ namespace Puma.Prey.Fox.Controllers
                 string q = string.Format("DELETE FROM Hunt WHERE Id = {0}", id);
                 context.Database.ExecuteSqlCommand(q);
             }
-        }
+        }*/
     }
 }

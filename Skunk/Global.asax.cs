@@ -9,7 +9,7 @@ using System.Web.SessionState;
 
 using Microsoft.EntityFrameworkCore;
 
-using Puma.Prey.Rabbit.EF;
+using Puma.Prey.Rabbit.Context;
 
 namespace Skunk
 {
@@ -22,9 +22,11 @@ namespace Skunk
 			BundleConfig.RegisterBundles(BundleTable.Bundles);
 
 			var context = new RabbitDBContext();
+            /*
 			if (!context.AllMigrationsApplied())
 				context.Database.Migrate();
 			context.EnsureSeedData();
+            */
 		}
 	}
 }

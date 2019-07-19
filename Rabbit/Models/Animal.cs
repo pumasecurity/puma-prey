@@ -1,9 +1,18 @@
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Puma.Prey.Rabbit.Models
 {
-    public class Animal : BaseEntity
+    public class Animal
     {
-        public string Name { get; set; }
+        public int Id { get; set; }
+        public int SafariId { get; set; }
+        public string AnimalName { get; set; }
+        public string Species { get; set; }
+        public string Weight { get; set; }
+        public string Color { get; set; }
+        public DateTime? DateOfBirth { get; set; }
+        public Safari Safari { get; set; }
     }
 }

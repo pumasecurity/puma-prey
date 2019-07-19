@@ -6,7 +6,7 @@ using System.Web;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
-using Puma.Prey.Rabbit.EF;
+using Puma.Prey.Rabbit.Context;
 
 namespace Puma.Prey.Raccoon
 {
@@ -16,25 +16,25 @@ namespace Puma.Prey.Raccoon
         {
             Int32 hId;
             var context = new RabbitDBContext();
-            var cn = new SqliteConnection(((DbContext)context).Database.GetDbConnection().ConnectionString);
+            //var cn = new SqliteConnection(((DbContext)context).Database.GetDbConnection().ConnectionString);
             try
             {
                 if (!Int32.TryParse(id, out hId)) return false;
 
-                cn.Open();
+                //cn.Open();
 
-                var cmd = new SqliteCommand("select count(*) from Contests where ID = " + hId.ToString() + " and Closed = 0", cn);
-                string result = cmd.ExecuteScalar().ToString();
+                //var cmd = new SqliteCommand("select count(*) from Contests where ID = " + hId.ToString() + " and Closed = 0", cn);
+                //string result = cmd.ExecuteScalar().ToString();
 
                 Int32 count;
-                if (Int32.TryParse(result, out count) && count > 0)
-                { return true; }
+               // if (Int32.TryParse(result, out count) && count > 0)
+               // { return true; }
 
                 return false;
             }
             finally
             {
-                if (cn.State != System.Data.ConnectionState.Closed) { cn.Close(); }
+                //if (cn.State != System.Data.ConnectionState.Closed) { cn.Close(); }
             }
         }
     }
