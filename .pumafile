@@ -540,7 +540,7 @@
       "Syntax": "InvocationExpressionSyntax",
       "Namespace": "Puma.Prey.Common.Validation",
       "Type": "Validator",
-      "Method": "IsValidFilePath"
+      "Method": "IsValidFileName"
     }
   ]
 }
