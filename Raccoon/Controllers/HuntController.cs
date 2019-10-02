@@ -76,7 +76,7 @@ namespace Puma.Prey.Raccoon.Controllers
         [HttpPost]
         public ActionResult Download(string fileName)
         {
-            if (!Validator.IsValidFilePath(fileName))
+            if (!Validator.IsValidFileName(fileName))
                 return new HttpNotFoundResult();
 
             return new FilePathResult("C:\\temp\\downloads\\" + fileName, "application/octet-stream");
