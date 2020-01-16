@@ -1,5 +1,5 @@
 {
-  "Version": "1.3.0",
+  "Version": "1.4.1",
   "LogLevel": "Error",
   "GeneralSettings": {
     "DataflowAnalysisEnabled": true,
@@ -275,6 +275,13 @@
       "Enabled": true
     },
     {
+      "Id": "SEC0038",
+      "Name": "Directory Listing Enabled",
+      "RiskRating": "Low",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
       "Id": "SEC0100",
       "Name": "Raw Inline Expression",
       "RiskRating": "High",
@@ -304,14 +311,7 @@
     },
     {
       "Id": "SEC0104",
-      "Name": "Unencoded Literal Text",
-      "RiskRating": "High",
-      "Severity": "Warning",
-      "Enabled": true
-    },
-    {
-      "Id": "SEC0105",
-      "Name": "Unencoded Label Text",
+      "Name": "Unencoded WebForms Property",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
@@ -500,7 +500,7 @@
       "Patterns": [
         "^[Ky][Ee][Yy]$",
         "^[Ii][Vv]$",
-        "^[Pp][Aa][Ss][Ww][Oo][Rr][Dd]$"
+        "^[Pp][Aa][Ss][Ss][Ww][Oo][Rr][Dd]$"
       ]
     }
   ],
@@ -531,6 +531,7 @@
       "Method": "*"
     }
   ],
+  "CustomSinks": [],
   "CustomCleanseMethods": [
     {
       "RuleIds": [
