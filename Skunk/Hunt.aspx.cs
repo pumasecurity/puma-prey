@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using System.Security.AccessControl;
+using Microsoft.CodeAnalysis;
 using Microsoft.Security.Application;
 
 using Puma.Prey.Rabbit.EF;
@@ -20,12 +21,15 @@ namespace Skunk
 
 			if (hunt != null)
 			{
-				lblProductName.Text = hunt.Name;
+				lblProductName.Text = Encoder.HtmlEncode(hunt.Name);
 				lblPrice.Text = hunt.Price.ToString("C");
-				lDetails.Text = Encoder.HtmlEncode(hunt.Description);
+
 				hlRate.NavigateUrl = "~/Hunts/Feedback?p=" + hunt.Id.ToString();
 				hProdID.Value = hunt.Id.ToString();
 			}
+
+			var untrustedClass = new Puma.Prey.Common.UntrustedLibrary.UntrustedClass();
+			lDetails.Text = untrustedClass.GetDangerousValue(); 
 		}
 	}
 }
