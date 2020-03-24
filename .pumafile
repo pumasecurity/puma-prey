@@ -449,15 +449,6 @@
       "ApprovedBy": "Eric Johnson",
       "Reason": "Sensitive data is not stored in the ViewState object.",
       "Timestamp": "2018-10-25T22:27:58.6444584Z"
-    },
-    {
-      "RuleIds": [
-        "SEC0025"
-      ],
-      "Path": "Common\\*",
-      "ApprovedBy": "pumasecuritydev\\eric.mead",
-      "Reason": "",
-      "Timestamp": "2020-03-20T08:07:26.6720918-07:00"
     }
   ],
   "CustomTaintedSources": [
