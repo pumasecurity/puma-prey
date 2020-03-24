@@ -449,6 +449,20 @@
       "ApprovedBy": "Eric Johnson",
       "Reason": "Sensitive data is not stored in the ViewState object.",
       "Timestamp": "2018-10-25T22:27:58.6444584Z"
+    },
+    {
+      "RuleIds": [
+        "SEC0027"
+      ],
+      "Path": "\\Common\\Cryptography\\Hashing.cs",
+      "StartLine": "47",
+      "EndLine": "47",
+      "Pattern": "",
+      "Expires": null,
+      "Checksum": "",
+      "ApprovedBy": "pumasecuritydev\\eric.mead",
+      "Reason": "",
+      "Timestamp": "2020-03-24T15:39:22.8383477-05:00"
     }
   ],
   "CustomTaintedSources": [
