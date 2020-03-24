@@ -1,5 +1,5 @@
 {
-  "Version": "1.3.0",
+  "Version": "1.4.1",
   "LogLevel": "Error",
   "GeneralSettings": {
     "DataflowAnalysisEnabled": true,
@@ -10,49 +10,42 @@
   "RuleOptions": [
     {
       "Id": "SEC0001",
-      "Name": "Debug Build Enabled",
       "RiskRating": "Low",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0002",
-      "Name": "Custom Errors Disabled",
       "RiskRating": "Low",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0003",
-      "Name": "Forms Authentication Secure Cookie Disabled",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0004",
-      "Name": "Forms Authentication Cookieless Session Enabled",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0005",
-      "Name": "Forms Authentication CrossAppRedirects Enabled",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0006",
-      "Name": "Forms Authentication Weak Cookie Protection",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0007",
-      "Name": "Forms Authentication Weak Timeout",
       "RiskRating": "Low",
       "Severity": "Warning",
       "Enabled": true,
@@ -60,70 +53,60 @@
     },
     {
       "Id": "SEC0008",
-      "Name": "HTTP Header Checking Disabled",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0009",
-      "Name": "Version HTTP Response Header Enabled",
       "RiskRating": "Low",
       "Severity": "Warning",
       "Enabled": false
     },
     {
       "Id": "SEC0010",
-      "Name": "Pages EventValidation Disabled",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0011",
-      "Name": "Pages ViewStateMac Disabled",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0012",
-      "Name": "Pages ValidateRequest Disabled",
       "RiskRating": "Low",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0013",
-      "Name": "Pages ViewStateEncryptionMode Disabled",
       "RiskRating": "Low",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0014",
-      "Name": "Insecure HTTP Cookie Transport",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0015",
-      "Name": "Cookie Accessible via Script",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0016",
-      "Name": "Cleartext Machine Key",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0017",
-      "Name": "Weak Password Complexity",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true,
@@ -135,21 +118,18 @@
     },
     {
       "Id": "SEC0018",
-      "Name": "Identity Password Lockout Disabled",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0019",
-      "Name": "Missing AntiForgeryToken Attribute",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0020",
-      "Name": "Weak Session Timeout",
       "RiskRating": "Low",
       "Severity": "Warning",
       "Enabled": true,
@@ -157,350 +137,301 @@
     },
     {
       "Id": "SEC0021",
-      "Name": "Session State Server Mode",
       "RiskRating": "Low",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0022",
-      "Name": "Model Request Validation Disabled",
       "RiskRating": "Low",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0023",
-      "Name": "Action Request Validation Disabled",
       "RiskRating": "Low",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0024",
-      "Name": "Unencoded Response Write",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0025",
-      "Name": "Weak Symmetric Algorithm",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0026",
-      "Name": "Weak Cipher Mode",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0027",
-      "Name": "Weak Cryptography Algorithm (MD5)",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0028",
-      "Name": "Weak Cryptography Algorithm (SHA1)",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0029",
-      "Name": "Insecure Deserialization",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0030",
-      "Name": "Insecure Deserialization - Newtonsoft JSON",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0031",
-      "Name": "Command Injection Process Start",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0032",
-      "Name": "Command Injection Process Start Info",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0033",
-      "Name": "Insecure HTTP Cookie Transport",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0034",
-      "Name": "HTTP Cookie Accessible via Script",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0035",
-      "Name": "XPathDocument External Entity Expansion (XXE)",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0036",
-      "Name": "XML Reader External Entity Expansion (XXE)",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0037",
-      "Name": "XmlDocument External Entity Expansion (XXE)",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
+      "Id": "SEC0038",
+      "RiskRating": "Low",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
       "Id": "SEC0100",
-      "Name": "Raw Inline Expression",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0101",
-      "Name": "Raw Binding Expression",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0102",
-      "Name": "Raw Razor Method",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0103",
-      "Name": "Raw WriteLiteral Method",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0104",
-      "Name": "Unencoded Literal Text",
-      "RiskRating": "High",
-      "Severity": "Warning",
-      "Enabled": true
-    },
-    {
-      "Id": "SEC0105",
-      "Name": "Unencoded Label Text",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0106",
-      "Name": "SQL Injection Dynamic LINQ Query",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0107",
-      "Name": "SQL Injection ADO .NET",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0108",
-      "Name": "SQL Injection Dynamic EF Query",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0109",
-      "Name": "Unvalidated MVC Redirect",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0110",
-      "Name": "Unvalidated WebForms Redirect",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0111",
-      "Name": "Path Tampering File Path Result",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0112",
-      "Name": "Path Tampering Unvalidated File Path",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0113",
-      "Name": "Certificate Validation Disabled",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0114",
-      "Name": "LDAP Injection Directory Entry",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0115",
-      "Name": "Insecure Random Number Generator",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0116",
-      "Name": "Path Tampering Unvalidated File Path",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0117",
-      "Name": "LDAP Injection Path Assignment",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0118",
-      "Name": "LDAP Injection Directory Searcher",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0119",
-      "Name": "LDAP Injection Filter Assignment",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0120",
-      "Name": "Missing Authorization Attribute",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0121",
-      "Name": "CORS Allow Origin Wildcard",
       "RiskRating": "Low",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0122",
-      "Name": "JWT Signature Validation Disabled",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0123",
-      "Name": "JWT Expiration Disabled",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0124",
-      "Name": "Weak Cipher Mode Padding",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0125",
-      "Name": "Weak RSA Key Length",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0126",
-      "Name": "SQL Injection: Dynamic NHibernate Query",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0127",
-      "Name": "XPath Injection",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0128",
-      "Name": "LDAP Authentication Disabled",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0129",
-      "Name": "Server-side Request Forgery",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0130",
-      "Name": "Hard-coded Credential",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0131",
-      "Name": "Hard-coded Secret",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true,
       "Patterns": [
         "^[Ky][Ee][Yy]$",
         "^[Ii][Vv]$",
-        "^[Pp][Aa][Ss][Ww][Oo][Rr][Dd]$"
+        "^[Pp][Aa][Ss][Ss][Ww][Oo][Rr][Dd]$"
       ]
     }
   ],
@@ -518,6 +449,15 @@
       "ApprovedBy": "Eric Johnson",
       "Reason": "Sensitive data is not stored in the ViewState object.",
       "Timestamp": "2018-10-25T22:27:58.6444584Z"
+    },
+    {
+      "RuleIds": [
+        "SEC0025"
+      ],
+      "Path": "\\puma-prey\\*",
+      "ApprovedBy": "pumasecuritydev\\eric.mead",
+      "Reason": "",
+      "Timestamp": "2020-03-20T08:07:26.6720918-07:00"
     }
   ],
   "CustomTaintedSources": [
@@ -531,6 +471,7 @@
       "Method": "*"
     }
   ],
+  "CustomSinks": [],
   "CustomCleanseMethods": [
     {
       "RuleIds": [
