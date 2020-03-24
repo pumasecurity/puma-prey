@@ -454,7 +454,7 @@
       "RuleIds": [
         "SEC0025"
       ],
-      "Path": "\\puma-prey\\*",
+      "Path": "Common\\*",
       "ApprovedBy": "pumasecuritydev\\eric.mead",
       "Reason": "",
       "Timestamp": "2020-03-20T08:07:26.6720918-07:00"
