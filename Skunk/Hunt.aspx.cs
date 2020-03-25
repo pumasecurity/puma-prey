@@ -16,7 +16,7 @@ namespace Skunk
 		{
 			var hunt = (from p in _db.Hunts
 						where p.Id == Convert.ToInt32(Request.QueryString["h"])
-						select p).SingleOrDefault();
+						select p).SingleOrDefault()
 
 			if (hunt != null)
 			{
