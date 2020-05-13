@@ -239,6 +239,7 @@
     },
     {
       "Id": "SEC0038",
+      "Name": "Directory Listing Enabled",
       "RiskRating": "Low",
       "Severity": "Warning",
       "Enabled": true
@@ -269,6 +270,7 @@
     },
     {
       "Id": "SEC0104",
+      "Name": "Unencoded WebForms Property",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
