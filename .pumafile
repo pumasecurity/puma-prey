@@ -3,7 +3,7 @@
   "LogLevel": "Error",
   "GeneralSettings": {
     "DataflowAnalysisEnabled": true,
-    "DataflowAnalysisEngineVersion": "1.0",
+    "DataflowAnalysisEngineVersion": "2.0",
     "DataflowAnalysisReportIndeterminates": false,
     "DataflowAnalysisNodeMaxDepth": 9,
     "ProductionConfigurationTransform": "Release"
