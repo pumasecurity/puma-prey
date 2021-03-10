@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
 using Microsoft.Security.Application;
@@ -15,9 +14,8 @@ namespace Skunk
 		protected void Page_Load(object sender, EventArgs e)
 		{
 			var hunt = (from p in _db.Hunts
-						where p.Id == Convert.ToInt32(Request.QueryString["h"])
-						select p).SingleOrDefault();
-                       
+				where p.Id == Convert.ToInt32(Request.QueryString["h"])
+				select p).SingleOrDefault();
 
 			if (hunt != null)
 			{

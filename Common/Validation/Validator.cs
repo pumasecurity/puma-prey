@@ -16,7 +16,7 @@ namespace Puma.Prey.Common.Validation
             
         }
 
-        public static bool IsValidFilePath(string input)
+        public static bool IsValidFileName(string input)
         {
             Regex r = new Regex(@"[A-Za-z0-9]+\.[a-z]{3}");
             return r.IsMatch(input);

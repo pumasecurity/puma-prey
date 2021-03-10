@@ -48,8 +48,8 @@ namespace Puma.Prey.Common.Cryptography
                 byte[] inputBytes = Encoding.UTF8.GetBytes(plainText);
 
 				//Stand up AES algorithm
-				DESCryptoServiceProvider crypto = new DESCryptoServiceProvider
-				{
+				var crypto = new DESCryptoServiceProvider
+                {
 					//Set key and iv
 					Key = DEFAULT_KEY.GetBytesFromHexString(),
 					IV = DEFAULT_IV.GetBytesFromHexString()
@@ -103,15 +103,15 @@ namespace Puma.Prey.Common.Cryptography
             //Create memory stream from the input bytes
             using (MemoryStream mStream = new MemoryStream())
             {
-				DESCryptoServiceProvider des = new DESCryptoServiceProvider
-				{
+				var crypto = new DESCryptoServiceProvider
+                {
 					//Set key and iv
 					Key = DEFAULT_KEY.GetBytesFromHexString(),
 					IV = DEFAULT_IV.GetBytesFromHexString()
 				};
 
 				CryptoStream cStream = new CryptoStream(mStream
-                    , des.CreateDecryptor(), CryptoStreamMode.Write);
+                    , crypto.CreateDecryptor(), CryptoStreamMode.Write);
                 cStream.Write(cipherText, 0, cipherText.Length);
                 cStream.FlushFinalBlock();
                 cStream.Close();
@@ -120,7 +120,7 @@ namespace Puma.Prey.Common.Cryptography
 
                 //Close resources
                 mStream.Close();
-                des.Clear();
+                crypto.Clear();
             }
 
             //Return encoded string
