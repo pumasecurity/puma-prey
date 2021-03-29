@@ -10,10 +10,13 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  group: PumaLicense
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
+- group: PumaLicense
+- name: 'solution'
+  value: '**/*.sln'
+- name: 'buildPlatform'
+  value: 'Any CPU'
+- name: 'buildConfiguration'
+  value: 'Release'
 
 steps:
 - task: NuGetToolInstaller@1
@@ -30,6 +33,7 @@ steps:
     configuration: '$(buildConfiguration)'
 
 - task: puma-scan-pro-build-task@1
+  displayName: 'Puma Scan Professional'
   inputs:
     projectPath: 'PumaPrey.sln'
     settingsFilename: '.pumafile'
