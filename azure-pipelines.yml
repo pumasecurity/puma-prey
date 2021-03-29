@@ -29,7 +29,7 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: puma-scan-pro-build-task-dev@1
+- task: puma-scan-pro-build-task@1
   inputs:
     projectPath: 'PumaPrey.sln'
     settingsFilename: '.pumafile'
