@@ -10,6 +10,7 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
+  group: PumaLicense
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
@@ -27,6 +28,14 @@ steps:
     msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)"'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: puma-scan-pro-build-task-dev@1
+  inputs:
+    projectPath: 'PumaPrey.sln'
+    settingsFilename: '.pumafile'
+    scanResultsFormat: 'json'
+    outputFilename: '/PumaResults/pumaprey'
+    verboseMode: false
 
 - task: VSTest@2
   inputs:
