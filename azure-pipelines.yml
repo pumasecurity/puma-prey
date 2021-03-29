@@ -37,11 +37,17 @@ steps:
   inputs:
     projectPath: 'PumaPrey.sln'
     settingsFilename: '.pumafile'
-    scanResultsFormat: 'json'
-    outputFilename: '/PumaResults/pumaprey'
+    scanResultsFormat: 'json, sarif'
+    outputFilename: '$(Common.TestResultsDirectory)/PumaResults/pumaprey'
     verboseMode: false
 
 - task: VSTest@2
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: CodeAnalysisLogs'
+  inputs:
+    PathtoPublish: '$(Common.TestResultsDirectory)/PumaResults/pumaprey.sarif'
+    ArtifactName: CodeAnalysisLogs
