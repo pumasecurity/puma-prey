@@ -37,7 +37,7 @@ steps:
   inputs:
     projectPath: 'PumaPrey.sln'
     settingsFilename: '.pumafile'
-    scanResultsFormat: 'json, sarif'
+    scanResultsFormat: 'json,sarif'
     outputFilename: '$(Common.TestResultsDirectory)/PumaResults/pumaprey'
     verboseMode: false
 
