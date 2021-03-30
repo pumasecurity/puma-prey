@@ -36,9 +36,26 @@ steps:
 
 
 - task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: CodeAnalysisLogs'
+  displayName: 'Publish Artifact: PumaScan CodeAnalysisLogs'
   inputs:
     PathtoPublish: '/PumaResults/pumaprey.sarif'
+    ArtifactName: CodeAnalysisLogs
+
+- task: dependency-check-build-task@5
+  displayName: 'Dependency Check Analysis'
+  inputs:
+    projectName: '$(repositoryname)'
+    scanPath: '$(Build.StagingDirectory)/**/*.csproj'
+    format: 'SARIF'    
+    enableExperimental: true
+    additionalArguments: '--scan "$(Build.SourcesDirectory)\**\packages.config"'
+    dependencyCheckVersion: '6.1.2'
+    enableVerbose: false
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: Dependency Check CodeAnalysisLogs'
+  inputs:
+    PathtoPublish: '$(Common.TestResultsDirectory)'
     ArtifactName: CodeAnalysisLogs
 
 - task: VSBuild@1
