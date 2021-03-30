@@ -55,7 +55,7 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: Dependency Check SARIF to CodeAnalysisLogs'
   inputs:
-    PathtoPublish: '$(Common.TestResultsDirectory)/dependency-check/dependency-check-report.sarif'
+    PathtoPublish: '$(Common.TestResultsDirectory)/dependency-check-report.sarif'
     ArtifactName: CodeAnalysisLogs
 
 - task: VSBuild@1
