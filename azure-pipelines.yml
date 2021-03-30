@@ -36,7 +36,7 @@ steps:
 
 
 - task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: PumaScan CodeAnalysisLogs'
+  displayName: 'Publish Artifact: PumaScan SARIF to CodeAnalysisLogs'
   inputs:
     PathtoPublish: '/PumaResults/pumaprey.sarif'
     ArtifactName: CodeAnalysisLogs
@@ -53,9 +53,9 @@ steps:
     enableVerbose: false
 
 - task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: Dependency Check CodeAnalysisLogs'
+  displayName: 'Publish Artifact: Dependency Check SARIF to CodeAnalysisLogs'
   inputs:
-    PathtoPublish: '$(Common.TestResultsDirectory)'
+    PathtoPublish: '$(Common.TestResultsDirectory)/dependency-check/dependency-check-report.sarif'
     ArtifactName: CodeAnalysisLogs
 
 - task: VSBuild@1
