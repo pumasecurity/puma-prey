@@ -46,7 +46,8 @@ steps:
   inputs:
     projectName: '$(repositoryname)'
     scanPath: '$(Build.StagingDirectory)/**/*.csproj'
-    format: 'SARIF'    
+    format: 'SARIF'
+    reportsDirectory: '$(Build.StagingDirectory)/depcheck'
     enableExperimental: true
     additionalArguments: '--scan "$(Build.SourcesDirectory)\**\packages.config"'
     dependencyCheckVersion: '6.1.2'
@@ -55,7 +56,7 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: Dependency Check SARIF to CodeAnalysisLogs'
   inputs:
-    PathtoPublish: '$(Common.TestResultsDirectory)/dependency-check-report.sarif'
+    PathtoPublish: '$(Build.StagingDirectory)/depcheck/dependency-check.sarif'
     ArtifactName: CodeAnalysisLogs
 
 - task: VSBuild@1
