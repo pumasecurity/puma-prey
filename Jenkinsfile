@@ -4,7 +4,7 @@ pipeline {
     disableConcurrentBuilds()
     timestamps()
   }
-  agent { 'master' }
+  agent { label 'master' }
   environment {
     SOLUTION = "PumaPrey.sln"
 
