@@ -6,8 +6,8 @@ pipeline {
   }
   agent { label 'master' }
   environment {
-    SOLUTION = "PumaPrey.sln"
-
+    SOLUTION = "./PumaPrey.sln"
+    CONFIGURATION = "Release"
   }
   stages {
     stage('Initialization') {
@@ -21,15 +21,18 @@ pipeline {
     stage('Build') {
       steps {
         powershell """
-          echo "TODO: RESTORE AND BUILD"
+          nuget restore ${env.SOLUTION}
+          msbuild ${env.SOLUTION} /p:Configuration=${env.CONFIGURATION}
         """
       }
     }
     stage('Test') {
       steps {
         powershell """
-          echo "TODO: RUN PUMA"
+          pumascan scan -p ${env.SOLUTION} -s ./.pumafile -o ./pumascan -f msbuild,json,html
         """
+        recordIssues(tools: [msBuild(pattern: 'pumascan.msbuild')])
+        archiveArtifacts "pumascan*"
       }
     }
     stage('Deploy') {
