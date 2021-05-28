@@ -12,76 +12,31 @@ pipeline {
   stages {
     stage('Initialization') {
       steps {
-        script {
-          try {
-            // check tool installation locations
-            powershell """
-              msbuild --version
-              pumascan --version
-            """
-          }
-          catch(Exception e) {
-            powershell "echo 'Init failure.'"
-            currentBuild.currentResult = "FAILURE"
-          }
-          finally {
-          }
-        }
+        // check tool installation locations
+        powershell """
+          msbuild --version
+        """
       }
     }
     stage('Build') {
       steps {
-        script {
-          try {
-            powershell """
-              echo "TODO: RESTORE AND BUILD"
-            """
-          }
-          catch(Exception e) {
-            powershell "echo 'Build failure.'"
-            currentBuild.currentResult = "FAILURE"
-          }
-          finally {
-          }
-        }
+        powershell """
+          echo "TODO: RESTORE AND BUILD"
+        """
       }
     }
     stage('Test') {
       steps {
-        script {
-          try {
-            powershell """
-              echo "TODO: RUN PUMA"
-            """
-          }
-          catch(Exception ex) {
-            powershell "echo 'Test failure.'"
-            currentBuild.currentResult = "FAILURE"
-          }
-          finally {
-          }
-        }
+        powershell """
+          echo "TODO: RUN PUMA"
+        """
       }
     }
     stage('Deploy') {
-      when {
-        beforeAgent true
-        not { equals expected: "FAILURE", actual: currentBuild.currentResult }
-      }
       steps {
-        script {
-          try {
-            powershell """
-              echo "Build and deploy container"
-            """
-          }
-          catch(Exception e) {
-            powershell "echo 'Deploy failure.'"
-            currentBuild.currentResult = "FAILURE"
-          }
-          finally {
-          }
-        }
+        powershell """
+          echo "Build and deploy container"
+        """
       }
     }
   }
