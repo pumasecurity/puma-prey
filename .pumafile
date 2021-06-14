@@ -8,6 +8,9 @@
     "DataflowAnalysisNodeMaxDepth": 9,
     "ProductionConfigurationTransform": "Release"
   },
+  "ExperimentalSettings": {
+    "EnableJavascriptRules": true
+  },
   "RuleOptions": [
     {
       "Id": "SEC0001",
