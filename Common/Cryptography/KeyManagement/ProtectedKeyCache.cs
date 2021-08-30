@@ -58,7 +58,7 @@ namespace Puma.Prey.Common.Cryptography.KeyManagement
                 }
             }
         }
-        
+
         /// <summary>
         ///  Clear the cache.
         /// </summary>

@@ -1,9 +1,6 @@
 ﻿using Coyote.Controllers.Authentication.Model;
 using Puma.Prey.Rabbit.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Coyote.Services.Interface
 {

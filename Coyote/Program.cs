@@ -1,11 +1,11 @@
-﻿using System;
-using System.Linq;
-using Microsoft.AspNetCore;
+﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Puma.Prey.Rabbit.Context;
+using System;
+using System.Linq;
 
 namespace Coyote
 {
@@ -24,7 +24,7 @@ namespace Coyote
                         context.Database.Migrate();
                     context.Seed(services);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     var logger = services.GetRequiredService<ILogger<Program>>();
                     logger.LogError(ex, "Error Occured>");

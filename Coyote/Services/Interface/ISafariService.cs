@@ -1,11 +1,8 @@
 ﻿using Coyote.Controllers.Authentication.Model;
-using Microsoft.AspNetCore.Mvc;
 using Puma.Prey.Rabbit.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
-using System.Threading.Tasks;
 
 namespace Coyote.Services.Interface
 {

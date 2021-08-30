@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Microsoft.Security.Application;
-
+﻿
 using Puma.Prey.Rabbit.Context;
 
 namespace Skunk
 {
-	public partial class Hunt : System.Web.UI.Page
-	{
-		private RabbitDBContext _db = new RabbitDBContext();
+    public partial class Hunt : System.Web.UI.Page
+    {
+        private RabbitDBContext _db = new RabbitDBContext();
         /*
 		protected void Page_Load(object sender, EventArgs e)
 		{
@@ -29,5 +24,5 @@ namespace Skunk
 			}
 		}
         */
-	}
+    }
 }

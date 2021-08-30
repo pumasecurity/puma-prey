@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Security.Cryptography;
-using Puma.Prey.Common.Cryptography;
 
 namespace Puma.Prey.Common.Cryptography.KeyManagement
 {
@@ -12,7 +11,7 @@ namespace Puma.Prey.Common.Cryptography.KeyManagement
     {
         internal const int versionNumber = 4321;
         internal const int versionNumberLength = 4;
-        
+
         /// <summary>
         /// Reads a DPAPI-protected key from the given <see cref="T:System.IO.Stream" />.
         /// </summary>
@@ -24,7 +23,7 @@ namespace Puma.Prey.Common.Cryptography.KeyManagement
             this.ValidateKeyVersion(protectedKeyStream);
             return ProtectedKey.CreateFromEncryptedKey(this.ReadEncryptedKey(protectedKeyStream), protectionScope);
         }
-        
+
         /// <overloads>
         /// Restores a cryptographic key from a <see cref="T:System.IO.Stream" />. This method is intended for use in
         /// transferring a key between machines.
@@ -41,7 +40,7 @@ namespace Puma.Prey.Common.Cryptography.KeyManagement
         {
             return this.ProtectKey(this.Restore(protectedKeyStream, passphrase), protectionScope);
         }
-        
+
         /// <summary>
         /// Restores a cryptographic key from a <see cref="T:System.IO.Stream" />. This method is intended for use in
         /// transferring a key between machines.
@@ -59,7 +58,7 @@ namespace Puma.Prey.Common.Cryptography.KeyManagement
             protectedKeyStream.Read(array2, 0, array2.Length);
             return this.DecryptKeyForRestore(passphrase, array2, array);
         }
-        
+
         /// <summary>
         /// Writes an encrypted key to an output stream. This method is not intended to allow the keys to be 
         /// moved from machine to machine.
@@ -71,7 +70,7 @@ namespace Puma.Prey.Common.Cryptography.KeyManagement
             this.WriteVersionNumber(outputStream, 4321);
             this.WriteEncryptedKey(outputStream, key);
         }
-        
+
         /// <summary>
         /// Archives a cryptographic key to a <see cref="T:System.IO.Stream" />. This method is intended for use in 
         /// transferring a key between machines.

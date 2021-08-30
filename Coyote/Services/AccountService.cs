@@ -4,8 +4,6 @@ using Microsoft.AspNetCore.Identity;
 using Puma.Prey.Rabbit.Context;
 using Puma.Prey.Rabbit.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
@@ -40,7 +38,7 @@ namespace Coyote.Services
                 BillingZip = model.BillingZip
             };
 
-            IdentityResult result= _userManager.CreateAsync(pumaUser, model.Password).GetAwaiter().GetResult();
+            IdentityResult result = _userManager.CreateAsync(pumaUser, model.Password).GetAwaiter().GetResult();
             return result;
         }
 

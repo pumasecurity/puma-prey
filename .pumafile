@@ -3,7 +3,7 @@
   "LogLevel": "Error",
   "GeneralSettings": {
     "DataflowAnalysisEnabled": true,
-    "DataflowAnalysisEngineVersion": "1.0",
+    "DataflowAnalysisEngineVersion": "2.0",
     "DataflowAnalysisReportIndeterminates": false,
     "DataflowAnalysisNodeMaxDepth": 9,
     "ProductionConfigurationTransform": "Release"
@@ -118,7 +118,7 @@
     {
       "Id": "SEC0016",
       "Name": "Cleartext Machine Key",
-      "RiskRating": "Medium",
+      "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
@@ -277,14 +277,14 @@
     },
     {
       "Id": "SEC0038",
-      "Name": "Security Misconfiguration",
+      "Name": "Directory Listing Enabled",
       "RiskRating": "Low",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0039",
-      "Name": "Open Source Security",
+      "Name": "Vulnerable Package Reference",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
@@ -431,77 +431,77 @@
     },
     {
       "Id": "SEC0121",
-      "Name": "Access Control",
+      "Name": "CORS Allow Origin Wildcard",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0122",
-      "Name": "Access Control",
+      "Name": "JWT Signature Validation Disabled",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0123",
-      "Name": "Security Misconfiguration",
+      "Name": "JWT Expiration Disabled",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0124",
-      "Name": "Insecure Cryptography",
+      "Name": "Weak Cipher Mode Padding",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0125",
-      "Name": "Insecure Cryptography",
+      "Name": "Weak RSA Key Length",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0126",
-      "Name": "Injection",
+      "Name": "SQL Injection: Dynamic NHibernate Query",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0127",
-      "Name": "Injection",
+      "Name": "XPath Injection",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0128",
-      "Name": "Security Misconfiguration",
+      "Name": "LDAP Authentication Disabled",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0129",
-      "Name": "Validation",
+      "Name": "Server-side Request Forgery",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0130",
-      "Name": "Secrets Management",
+      "Name": "Hard-Coded Credential",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC0131",
-      "Name": "Secrets Management",
+      "Name": "Hard-Coded Secret",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true,
@@ -510,46 +510,52 @@
         "^[Ii][Vv]$",
         "^[Pp][Aa][Ss][Ss][Ww][Oo][Rr][Dd]$"
       ]
-    }
-  ],
-  "Exceptions": [
+    },
     {
-      "RuleIds": [
-        "SEC0013"
-      ],
-      "Path": "Skunk\\Web.config",
-      "StartLine": "10",
-      "EndLine": "10",
-      "Pattern": "",
-      "Expires": null,
-      "Checksum": "",
-      "ApprovedBy": "Eric Johnson",
-      "Reason": "Sensitive data is not stored in the ViewState object.",
-      "Timestamp": "2018-10-25T22:27:58.6444584Z"
-    }
-  ],
-  "CustomTaintedSources": [
+      "Id": "SEC1000",
+      "Name": "JavaScript Injection: Unsafe Eval",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
     {
-      "RuleIds": [],
-      "Flag": "Web",
-      "Syntax": "InvocationExpressionSyntax",
-      "Namespace": "unirest_net.http",
-      "Type": "Unirest",
-      "Property": "*",
-      "Method": "*"
+      "Id": "SEC1001",
+      "Name": "JavaScript Injection: setTimeout",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC1002",
+      "Name": "JavaScript Injection: setInterval",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC1003",
+      "Name": "JavaScript: Raw Write InnerHtml",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC1004",
+      "Name": "React: Dangerously Set Inner HTML",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC1005",
+      "Name": "Angular: Bypass Security Trust",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
     }
   ],
+  "Exceptions": [],
+  "CustomTaintedSources": [],
   "CustomSinks": [],
-  "CustomCleanseMethods": [
-    {
-      "RuleIds": [
-        "SEC0111"
-      ],
-      "Flag": "Web",
-      "Syntax": "InvocationExpressionSyntax",
-      "Namespace": "Puma.Prey.Common.Validation",
-      "Type": "Validator",
-      "Method": "IsValidFilePath"
-    }
-  ]
+  "CustomCleanseMethods": []
 }

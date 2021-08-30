@@ -1,21 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Threading.Tasks;
-using Coyote.Constants;
+﻿using Coyote.Constants;
 using Coyote.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -26,7 +19,9 @@ using NSwag;
 using NSwag.Generation.Processors.Security;
 using Puma.Prey.Rabbit.Context;
 using Puma.Prey.Rabbit.Models;
-using Rabbit.Models;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
 
 namespace Coyote
 {
@@ -61,7 +56,7 @@ namespace Coyote
                .AddEntityFrameworkStores<RabbitDBContext>()
                .AddDefaultTokenProviders()
                .AddSignInManager<SignInManager<PumaUser>>();
-          
+
             services.Scan(scanner => scanner
                .FromAssemblyOf<AuthenticationService>()
                .AddClasses(classes => classes.InNamespaceOf(typeof(AuthenticationService)))

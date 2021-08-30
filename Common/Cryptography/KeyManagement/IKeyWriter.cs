@@ -15,7 +15,7 @@ namespace Puma.Prey.Common.Cryptography.KeyManagement
         /// <param name="outputStream"><see cref="T:System.IO.Stream" /> to which key is to be written.</param>
         /// <param name="key">Key to be written.</param>
         void Write(Stream outputStream, ProtectedKey key);
-        
+
         /// <summary>
         /// Creates an archived version of the given <paramref name="key" />	written to the <paramref name="outputStream" />.
         /// </summary>

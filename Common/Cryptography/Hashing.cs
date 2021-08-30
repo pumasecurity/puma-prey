@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Security.Cryptography;
-using System.Runtime.Remoting.Metadata.W3cXsd2001;
+using System.Text;
 
 namespace Puma.Prey.Common.Cryptography
 {
@@ -35,7 +31,7 @@ namespace Puma.Prey.Common.Cryptography
 
             //Final input bytes will be the lengh of the password plus any salt bytes added to the end
             byte[] inputBytes = new byte[pwd.Length + (salt != null ? salt.Length : 0)];
-            
+
             //Copy the password bytes to the into the input arrary
             pwd.CopyTo(inputBytes, 0);
 

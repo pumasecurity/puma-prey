@@ -3,9 +3,6 @@ using Coyote.Services.Interface;
 using Microsoft.AspNetCore.Identity;
 using Puma.Prey.Rabbit.Context;
 using Puma.Prey.Rabbit.Models;
-using Rabbit.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -43,9 +40,9 @@ namespace Coyote.Services
 
             return new CheckPasswordResult(result, user);
         }
-  
+
 
     }
 
-    
+
 }

@@ -1,15 +1,9 @@
 ﻿using Coyote.Controllers.Authentication.Model;
 using Coyote.Services.Interface;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Puma.Prey.Rabbit.Context;
 using Puma.Prey.Rabbit.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace Coyote.Controllers.Safaris
 {
@@ -20,13 +14,13 @@ namespace Coyote.Controllers.Safaris
 
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly ISafariService _safariService;
-        
+
 
         public SafarisController(ISafariService safariService, IHttpContextAccessor httpContextAccessor)
         {
             _safariService = safariService;
             _httpContextAccessor = httpContextAccessor;
-            
+
         }
 
         [HttpGet]
@@ -55,12 +49,12 @@ namespace Coyote.Controllers.Safaris
             return Ok();
         }
 
-      
+
         [HttpPost]
         public ActionResult<Safari> AddSafari([FromBody] SafariRequest model)
         {
             var safari = _safariService.CreateSafari(model.Name, model.Address, model.StartDate, model.EndDate);
-            
+
             return safari;
         }
 

@@ -1,8 +1,7 @@
-﻿using System;
-using System.Linq;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Puma.Prey.Rabbit.Models;
-using Rabbit.Models;
+using System;
+using System.Linq;
 
 namespace Puma.Prey.Rabbit.Context
 {
@@ -16,7 +15,7 @@ namespace Puma.Prey.Rabbit.Context
             CreateSafariUsers(context, serviceProvider);
         }
 
-       
+
         private const int Member1Id = 1001;
         private const string Member1Email = "admin@pumascan.com";
         private const string user1Id = "85D2C08B-750B-4DA9-B55F-ABB8BA6E9634";
@@ -60,10 +59,10 @@ namespace Puma.Prey.Rabbit.Context
             {
                 Id = user3Id,
                 MemberId = Member3Id,
-                Email = Member3Email,   
+                Email = Member3Email,
                 UserName = Member3Email,
             };
-          
+
             var dbUser = userManager.FindByIdAsync(u1.Id).GetAwaiter().GetResult();
 
             if (dbUser == null)
@@ -136,11 +135,11 @@ namespace Puma.Prey.Rabbit.Context
                 s3,
             };
 
-            foreach(Safari safari in Safaris)
+            foreach (Safari safari in Safaris)
             {
                 var item = context.Safaris.FirstOrDefault(i => i.Id == safari.Id);
 
-                if(item == null)
+                if (item == null)
                     context.Add(safari);
             }
             context.SaveChanges();
@@ -260,49 +259,48 @@ namespace Puma.Prey.Rabbit.Context
 
 
 
-        /*
-        private static void CreateUserPrivate(RabbitDBContext context, IServiceProvider serviceProvider)
+/*
+private static void CreateUserPrivate(RabbitDBContext context, IServiceProvider serviceProvider)
+{
+    var userManager = serviceProvider.GetService(typeof(UserManager<>)) as UserManager<PumaUser>;
+
+    var anaInformation = new UserPrivateInformation()
+    {
+        //Id = 1,
+        MemberId = Member2Id,
+        Address = "PO Box 924095",
+        Zipcode = "33092",
+        PumaUsers = new PumaUser() { Email = Member2Email },
+
+    };
+
+    var seyInformation = new UserPrivateInformation()
+    {
+        //Id = 2,
+        MemberId = Member3Id,
+        Address = "PO Box 122395",
+        Zipcode = "31231",
+        PumaUsers = new PumaUser() { Email = Member3Email },
+    };
+
+    var privateInformations = new UserPrivateInformation[]
+    {
+        anaInformation,
+        seyInformation,
+    };
+
+    foreach (var privateInformation in privateInformations)
+    {
+        var dbUser = userManager.FindByIdAsync(privateInformation.Email).GetAwaiter().GetResult();
+
+        if (dbUser != null)
         {
-            var userManager = serviceProvider.GetService(typeof(UserManager<>)) as UserManager<PumaUser>;
-
-            var anaInformation = new UserPrivateInformation()
-            {
-                //Id = 1,
-                MemberId = Member2Id,
-                Address = "PO Box 924095",
-                Zipcode = "33092",
-                PumaUsers = new PumaUser() { Email = Member2Email },
-               
-            };
-
-            var seyInformation = new UserPrivateInformation()
-            {
-                //Id = 2,
-                MemberId = Member3Id,
-                Address = "PO Box 122395",
-                Zipcode = "31231",
-                PumaUsers = new PumaUser() { Email = Member3Email },
-            };
-
-            var privateInformations = new UserPrivateInformation[]
-            {
-                anaInformation,
-                seyInformation,
-            };
-
-            foreach (var privateInformation in privateInformations)
-            {
-                var dbUser = userManager.FindByIdAsync(privateInformation.Email).GetAwaiter().GetResult();
-
-                if (dbUser != null)
-                {
-                    context.Add(privateInformation);
-                }
-            }
-
-            context.SaveChanges();
+            context.Add(privateInformation);
         }
-        */
+    }
 
-        
-   
+    context.SaveChanges();
+}
+*/
+
+

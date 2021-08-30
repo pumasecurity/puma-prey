@@ -13,7 +13,7 @@ namespace Puma.Prey.Common.Validation
         public static string ValidateNameWhiteList(string input)
         {
             throw new NotImplementedException();
-            
+
         }
 
         public static bool IsValidFilePath(string input)

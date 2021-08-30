@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 using System.Security.Cryptography;
-using System.IO;
 
 namespace Puma.Prey.Common.Cryptography.KeyManagement
 {
     public class KeyManager
     {
         private static readonly ProtectedKeyCache cache = new ProtectedKeyCache();
-        
+
         /// <summary>
         /// Archives a cryptographic key to a <see cref="T:System.IO.Stream" />. This method is intended for use in 
         /// transferring a key between machines.
@@ -24,7 +19,7 @@ namespace Puma.Prey.Common.Cryptography.KeyManagement
             IKeyWriter keyWriter = new KeyReaderWriter();
             keyWriter.Archive(outputStream, keyToArchive, passphrase);
         }
-        
+
         /// <summary>
         /// Clear the key manager cache.
         /// </summary>
@@ -32,7 +27,7 @@ namespace Puma.Prey.Common.Cryptography.KeyManagement
         {
             KeyManager.cache.Clear();
         }
-        
+
         /// <overloads>
         /// Reads an encrypted key from an input stream. This method is not intended to allow keys to be transferred
         /// from another machine.
@@ -49,7 +44,7 @@ namespace Puma.Prey.Common.Cryptography.KeyManagement
             IKeyReader keyReader = new KeyReaderWriter();
             return keyReader.Read(inputStream, dpapiProtectionScope);
         }
-        
+
         /// <summary>
         /// Reads an encrypted key from an input file. This method is not intended to allow keys to be transferred
         /// from another machine.
@@ -73,7 +68,7 @@ namespace Puma.Prey.Common.Cryptography.KeyManagement
             }
             return result;
         }
-        
+
         /// <summary>
         /// Restores a cryptogrpahic key from a <see cref="T:System.IO.Stream" />. This method is intended for use in
         /// transferring a key between machines.
@@ -87,7 +82,7 @@ namespace Puma.Prey.Common.Cryptography.KeyManagement
             IKeyReader keyReader = new KeyReaderWriter();
             return keyReader.Restore(inputStream, passphrase, protectionScope);
         }
-        
+
         /// <overloads>
         /// Writes an encrypted key to an output stream. This method is not intended to allow the keys to be 
         /// moved from machine to machine.
@@ -104,7 +99,7 @@ namespace Puma.Prey.Common.Cryptography.KeyManagement
             ProtectedKey key = ProtectedKey.CreateFromEncryptedKey(encryptedKey, dpapiProtectionScope);
             KeyManager.Write(outputStream, key);
         }
-        
+
         /// <summary>
         /// Writes an encrypted key to an output stream. This method is not intended to allow the keys to be 
         /// moved from machine to machine.

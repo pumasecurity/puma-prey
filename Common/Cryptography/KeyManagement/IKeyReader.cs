@@ -12,7 +12,7 @@ namespace Puma.Prey.Common.Cryptography.KeyManagement
         /// <param name="protectionScope"><see cref="T:System.Security.Cryptography.DataProtectionScope"></see> used to encrypt the generated key.</param>
         /// <returns>Key read from stream, encapsulated in a <see cref="T:Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.ProtectedKey"></see>.</returns>
         ProtectedKey Read(Stream protectedKeyContents, DataProtectionScope protectionScope);
-        
+
         /// <summary>
         /// Restores a key from an encrypted key archive <see cref="T:System.IO.Stream"></see>.
         /// </summary>
@@ -21,7 +21,7 @@ namespace Puma.Prey.Common.Cryptography.KeyManagement
         /// <param name="protectionScope"><see cref="T:System.Security.Cryptography.DataProtectionScope"></see> used to encrypt the generated key.</param>
         /// <returns>Key read from stream, encapsulated in a <see cref="T:Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.ProtectedKey"></see>.</returns>
         ProtectedKey Restore(Stream protectedKeyContents, string passphrase, DataProtectionScope protectionScope);
-        
+
         /// <summary>
         /// Restores a key from an encrypted key archive <see cref="T:System.IO.Stream"></see>.
         /// </summary>

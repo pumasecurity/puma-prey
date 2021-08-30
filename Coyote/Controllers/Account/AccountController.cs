@@ -7,8 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using Puma.Prey.Rabbit.Context;
 using Puma.Prey.Rabbit.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Coyote.Controllers.Authentication
@@ -86,7 +84,7 @@ namespace Coyote.Controllers.Authentication
                 ModelState.AddIdentityErrorsToModelState(result);
                 return BadRequest(ModelState);
             }
-            return Ok();  
+            return Ok();
         }
     }
 }

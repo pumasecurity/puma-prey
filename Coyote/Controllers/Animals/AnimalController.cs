@@ -2,9 +2,6 @@
 using Coyote.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Puma.Prey.Rabbit.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Coyote.Controllers.Animals
@@ -21,7 +18,7 @@ namespace Coyote.Controllers.Animals
         [HttpPost]
         public async Task<ActionResult<Animal>> CreateAnimal([FromBody] AnimalRequest model)
         {
-            var success = _animalService.CreateAnimal(model.Id,model.SafariId, model.AnimalName, model.Species, model.Weight, model.Color, model.DateOfBirth);
+            var success = _animalService.CreateAnimal(model.Id, model.SafariId, model.AnimalName, model.Species, model.Weight, model.Color, model.DateOfBirth);
             return success;
 
         }
