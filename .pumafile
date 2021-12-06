@@ -1,9 +1,9 @@
 {
-  "Version": "1.4.2",
+  "Version": "1.4.4",
   "LogLevel": "Error",
   "GeneralSettings": {
     "DataflowAnalysisEnabled": true,
-    "DataflowAnalysisEngineVersion": "1.0",
+    "DataflowAnalysisEngineVersion": "2.0",
     "DataflowAnalysisReportIndeterminates": false,
     "DataflowAnalysisNodeMaxDepth": 9,
     "ProductionConfigurationTransform": "Release"
@@ -283,6 +283,13 @@
       "Enabled": true
     },
     {
+      "Id": "SEC0039",
+      "Name": "Vulnerable Package Reference",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
       "Id": "SEC0100",
       "Name": "Raw Inline Expression",
       "RiskRating": "High",
@@ -503,6 +510,48 @@
         "^[Ii][Vv]$",
         "^[Pp][Aa][Ss][Ss][Ww][Oo][Rr][Dd]$"
       ]
+    },
+    {
+      "Id": "SEC1000",
+      "Name": "Injection",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC1001",
+      "Name": "Injection",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC1002",
+      "Name": "Injection",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC1003",
+      "Name": "Cross-Site Scripting",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC1004",
+      "Name": "Cross-Site Scripting",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC1005",
+      "Name": "Cross-Site Scripting",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
     }
   ],
   "Exceptions": [
