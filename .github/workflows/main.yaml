@@ -26,7 +26,7 @@ jobs:
           Write-Host "MSBuild version: "
           Write-Host "$MSBuildVersion"
           Write-Host "Nuget version: "
-          nuget --version
+          nuget help
       - name: Build
         shell: powershell
         run: |
