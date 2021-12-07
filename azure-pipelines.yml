@@ -30,7 +30,7 @@ steps:
   inputs:
     projectPath: 'PumaPrey.sln'
     settingsFilename: '.pumafile'
-    scanResultsFormat: 'json,sarif'
+    scanResultsFormat: 'html,json,sarif'
     outputFilename: '/PumaResults/pumaprey'
     verboseMode: false
 
