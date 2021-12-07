@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  id-token: write # write jwt token
   actions: read # read gh actions
   contents: read # read access to the repo
+  security-events: write # write access to advanced security
 
 env:
   SOLUTION: "./PumaPrey.sln"
