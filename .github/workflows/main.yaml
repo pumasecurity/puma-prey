@@ -1,4 +1,4 @@
-name: Puma Security Puma Prey
+name: Puma Prey
 
 on:
   workflow_dispatch:
@@ -22,7 +22,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Initialization
         shell: powershell
-        run: msbuild --version
+        run: |
+          $MSBuildPath = & "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe" -latest -requires Microsoft.Component.MSBuild -find "MSBuild\**\Bin\MSBuild.exe" | Select-Object -first 1
+          $MSBuildVersion = & $MSBuildPath -Version
+          Write-Host $MSBuildVersion
       - name: Build
         shell: powershell
         run: |
