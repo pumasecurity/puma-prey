@@ -1,0 +1,30 @@
+name: Puma Security Puma Prey
+
+on:
+  workflow_dispatch:
+
+permissions:
+  id-token: write # write jwt token
+  actions: read # read gh actions
+  contents: read # read access to the repo
+
+env:
+  SOLUTION: "./PumaPrey.sln"
+  CONFIGURATION: "Release"
+
+concurrency: puma-scan-operations
+
+jobs:
+  build:
+    name: Build Puma Prey
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Initialization
+        shell: powershell
+        run: msbuild --version
+      - name: Build
+        shell: powershell
+        run: |
+          nuget restore ${{ env.SOLUTION }}
+          msbuild ${env.SOLUTION} /p:Configuration=${{ env.CONFIGURATION }}
