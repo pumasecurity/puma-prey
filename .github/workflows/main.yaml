@@ -33,7 +33,7 @@ jobs:
           New-Item ./tools -Type Directory
           [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
           $ProgressPreference = 'SilentlyContinue'
-          Invoke-WebRequest ${{ secrets.PUMA_SCAN_INSTALLER_PACKAGE }} -OutFile "./tools/puma-scan-server-edition.zip"
+          Invoke-WebRequest "${{ secrets.PUMA_SCAN_INSTALLER_PACKAGE }}" -OutFile "./tools/puma-scan-server-edition.zip"
           Expand-Archive -Path ./tools/puma-scan-server-edition.zip -DestinationPath ./tools/pumascan -Force
           ./tools/pumascan/PumaScan.exe --version
       - name: Build
