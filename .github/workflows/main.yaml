@@ -25,9 +25,13 @@ jobs:
         run: |
           $MSBuildPath = & "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe" -latest -requires Microsoft.Component.MSBuild -find "MSBuild\**\Bin\MSBuild.exe" | Select-Object -first 1
           $MSBuildVersion = & $MSBuildPath -Version
-          Write-Host $MSBuildVersion
+          Write-Host "MSBuild version: "
+          Write-Host "$MSBuildVersion"
+          Write-Host "Nuget version: "
+          nuget --version
       - name: Build
         shell: powershell
         run: |
+          $MSBuildPath = & "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe" -latest -requires Microsoft.Component.MSBuild -find "MSBuild\**\Bin\MSBuild.exe" | Select-Object -first 1  
           nuget restore ${{ env.SOLUTION }}
-          msbuild ${env.SOLUTION} /p:Configuration=${{ env.CONFIGURATION }}
+          & $MSBuildPath ${env.SOLUTION} /p:Configuration=${{ env.CONFIGURATION }}
