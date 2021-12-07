@@ -12,8 +12,6 @@ env:
   SOLUTION: "./PumaPrey.sln"
   CONFIGURATION: "Release"
 
-concurrency: puma-scan-operations
-
 jobs:
   build:
     name: Build Puma Prey
