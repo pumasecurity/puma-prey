@@ -45,7 +45,7 @@ jobs:
       - name: Run Puma Scan
         shell: powershell
         run: |
-          ./tools/pumascan/PumaScan.exe scan -p ${env.SOLUTION} -s ./.pumafile -o ./pumascan/results -f sarif,json,html --license ${{ secrets.PUMA_SCAN_LICENSE }}
+          ./tools/pumascan/PumaScan.exe scan -p "${env.SOLUTION}" -s "./.pumafile" -o "./pumascan/results" -f "sarif,json,html" --license ${{ secrets.PUMA_SCAN_LICENSE }}
       - name: Publish Puma Scan Results
         uses: actions/upload-artifact@v2
         with:
