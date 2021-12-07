@@ -41,11 +41,11 @@ jobs:
         run: |
           $MSBuildPath = & "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe" -latest -requires Microsoft.Component.MSBuild -find "MSBuild\**\Bin\MSBuild.exe" | Select-Object -first 1  
           nuget restore ${{ env.SOLUTION }}
-          & $MSBuildPath ${env.SOLUTION} /p:Configuration=${{ env.CONFIGURATION }}
+          & $MSBuildPath ${{ env.SOLUTION }} /p:Configuration=${{ env.CONFIGURATION }}
       - name: Run Puma Scan
         shell: powershell
         run: |
-          ./tools/pumascan/PumaScan.exe scan -p "${env.SOLUTION}" -s "./.pumafile" -o "./pumascan/results" -f "sarif,json,html" --license ${{ secrets.PUMA_SCAN_LICENSE }}
+          ./tools/pumascan/PumaScan.exe scan -p "${{ env.SOLUTION }}" -s "./.pumafile" -o "./pumascan/results" -f "sarif,json,html" --license ${{ secrets.PUMA_SCAN_LICENSE }}
       - name: Publish Puma Scan Results
         uses: actions/upload-artifact@v2
         with:
