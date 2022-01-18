@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
-using System.Threading.Tasks;
 
 namespace Coyote.Extensions
 {
@@ -19,13 +18,12 @@ namespace Coyote.Extensions
             var claim = principal.FindFirst(c => c.Type == JwtClaimTypes.safaris)?.Value;
 
             List<int> safaris = new List<int>();
-            
-            if(!string.IsNullOrEmpty(claim))
+
+            if (!string.IsNullOrEmpty(claim))
             {
                 safaris.AddRange(claim.Split(",").ToList().Select(i => Convert.ToInt32(i)));
             }
             return safaris;
         }
-        
     }
 }

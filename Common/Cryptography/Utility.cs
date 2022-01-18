@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Puma.Prey.Common.Cryptography
 {
@@ -50,7 +46,7 @@ namespace Puma.Prey.Common.Cryptography
         /// <para>The string containing a valid hexidecimal number.</para>
         /// </param>
         /// <returns><para>The byte array representing the hexidecimal.</para></returns>
-        
+
         /// <summary>
         /// <para>Combines two byte arrays into one.</para>
         /// </summary>
@@ -72,7 +68,7 @@ namespace Puma.Prey.Common.Cryptography
             Buffer.BlockCopy(buffer2, 0, array, buffer1.Length, buffer2.Length);
             return array;
         }
-        
+
         /// <summary>
         /// <para>Fills <paramref name="bytes" /> zeros.</para>
         /// </summary>
@@ -87,7 +83,7 @@ namespace Puma.Prey.Common.Cryptography
             }
             Array.Clear(bytes, 0, bytes.Length);
         }
-        
+
         /// <summary>
         /// Transforms an array of bytes according to the given cryptographic transform.
         /// </summary>

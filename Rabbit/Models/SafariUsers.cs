@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Puma.Prey.Rabbit.Models
+﻿namespace Puma.Prey.Rabbit.Models
 {
     public class SafariUser
     {

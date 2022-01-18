@@ -1,18 +1,19 @@
 ﻿using Coyote.Controllers.Authentication.Model;
 using Coyote.Extensions;
 using Coyote.Services.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Puma.Prey.Rabbit.Context;
 using Puma.Prey.Rabbit.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Coyote.Controllers.Authentication
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class AccountController : Controller
@@ -34,42 +35,54 @@ namespace Coyote.Controllers.Authentication
         }
 
         [HttpPost("Users")]
-        public ActionResult<User> CreateUser([FromBody] AccountRequest model)
+        public async Task<ActionResult<User>> CreateUser([FromBody] AccountRequest model)
         {
-
-            var exists = _accountService.DoesUserExist(model.Email);
+            var exists = await _accountService.DoesUserExist(model.Email);
             if (exists)
             {
                 return BadRequest();
             }
 
             //Create user
-            var result = _accountService.CreateUser(model);
+            var result = await _accountService.CreateUser(model);
 
             if (!result.Succeeded)
                 return BadRequest(new { message = result.Errors });
-            var user = _accountService.ShowUsers(model.Email);
+            var user = await _accountService.ShowUsers(model.Email);
             return user;
         }
 
-
         [HttpPut("Users")]
-        public ActionResult<User> UpdateUsers([FromBody] AccountUpdate model)
+        public async Task<ActionResult<User>> UpdateUsers([FromBody] AccountUpdate model)
         {
-            var exists = _accountService.DoesUserExist(model.Email);
+            var exists = await _accountService.DoesUserExist(model.Email);
             if (exists)
             {
-                _accountService.UpdateUser(model);
+                await _accountService.UpdateUser(model);
 
                 return Ok();
             }
             return NotFound();
         }
 
-        [HttpGet("Users/{email}")]
-        public ActionResult<User> GetAccount(string email)
+        [HttpGet("Users/Me")]
+        public async Task<ActionResult<PumaUser>> GetMe()
         {
-            var account = _accountService.ShowUsers(email);
+            var user = await this._accountService.GetUserAsync(this.HttpContext.User);
+
+            if (user is null)
+            {
+                return Unauthorized();
+            }
+            else
+                return user;
+
+        }
+
+        [HttpGet("Users/{email}")]
+        public async Task<ActionResult<User>> GetAccount(string email)
+        {
+            var account = await _accountService.ShowUsers(email);
             if (account == null)
                 return NotFound();
 
@@ -86,7 +99,7 @@ namespace Coyote.Controllers.Authentication
                 ModelState.AddIdentityErrorsToModelState(result);
                 return BadRequest(ModelState);
             }
-            return Ok();  
+            return Ok();
         }
     }
 }

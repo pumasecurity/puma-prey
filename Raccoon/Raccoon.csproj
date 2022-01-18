@@ -15,7 +15,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Puma.Prey.Raccoon</RootNamespace>
     <AssemblyName>Puma.Prey.Raccoon</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -204,6 +204,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.2.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
@@ -285,6 +286,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4-preview1\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
@@ -507,10 +509,6 @@
       <Project>{b991cac4-087c-4754-b7cc-6ef984f8858f}</Project>
       <Name>Common</Name>
       <Properties>SkipValidatePackageReferences=true</Properties>
-    </ProjectReference>
-    <ProjectReference Include="..\Rabbit\Rabbit.csproj">
-      <Project>{a3874967-2f09-4878-83cc-bb105d2d11aa}</Project>
-      <Name>Rabbit</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

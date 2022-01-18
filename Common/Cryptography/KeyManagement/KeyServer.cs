@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Puma.Prey.Common.Cryptography.KeyManagement
 {
@@ -32,7 +29,7 @@ namespace Puma.Prey.Common.Cryptography.KeyManagement
             {
                 throw ex;
             }
-                finally
+            finally
             {
                 if (request != null)
                     request = null;

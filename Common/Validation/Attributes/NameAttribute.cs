@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Puma.Prey.Common.Validation
 {
@@ -21,9 +17,9 @@ namespace Puma.Prey.Common.Validation
             if (value != null)
             {
                 bool isValid = false;
-                
+
                 if (!isValid)
-                   return new ValidationResult(FormatErrorMessage(validationContext.DisplayName));
+                    return new ValidationResult(FormatErrorMessage(validationContext.DisplayName));
             }
 
             return ValidationResult.Success;

@@ -186,7 +186,6 @@ namespace Puma.Prey.Rabbit.Migrations
                     b.HasKey("LoginProvider", "ProviderKey");
 
                     b.HasIndex("UserId");
-
                     b.ToTable("PumaUserLogins");
                 });
 

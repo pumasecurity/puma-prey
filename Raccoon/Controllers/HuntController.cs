@@ -1,27 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity.Infrastructure;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.Mvc;
-using Microsoft.Data.Sqlite;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNet.Identity;
-using Puma.Prey.Common.Rest;
-using Puma.Prey.Raccoon.Models;
+﻿using Microsoft.AspNet.Identity;
 using Puma.Prey.Common;
-using Puma.Prey.Common.Validation;
 using Puma.Prey.Common.Data;
-using Puma.Prey.Rabbit.Context;
+using Puma.Prey.Common.Validation;
+using Puma.Prey.Raccoon.Models;
+using System;
+using System.Web.Mvc;
 
 namespace Puma.Prey.Raccoon.Controllers
 {
     [Authorize]
     public class HuntController : Controller
     {
-        private ApplicationUserManager _userManager;
-        private Ldap _ldap;
+        private readonly ApplicationUserManager _userManager;
+        private readonly Ldap _ldap;
 
         public HuntController()
         {

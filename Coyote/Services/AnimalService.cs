@@ -3,7 +3,6 @@ using Coyote.Services.Interface;
 using Puma.Prey.Rabbit.Context;
 using Puma.Prey.Rabbit.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -17,9 +16,9 @@ namespace Coyote.Services
         {
             _dbContext = dbContext;
         }
-        public Animal CreateAnimal(int id, int safariId, string animalName, string species, string weight, string color, DateTime? dateOfBirth)
-        {
 
+        public async Task<Animal> CreateAnimal(int id, int safariId, string animalName, string species, string weight, string color, DateTime? dateOfBirth)
+        {
             var animals = new Animal()
             {
                 Id = id,
@@ -30,16 +29,16 @@ namespace Coyote.Services
                 DateOfBirth = dateOfBirth,
             };
             _dbContext.Animals.Add(animals);
-            _dbContext.SaveChanges();
+            await _dbContext.SaveChangesAsync();
             return animals;
         }
 
-        public Animal GetAnimal(int Id)
+        public async Task<Animal> GetAnimal(int Id)
         {
-            return _dbContext.Animals
-                .SingleOrDefault(i => i.Id == Id);
+            return await _dbContext.Animals.FindAsync(Id);
         }
-        public Animal UpdateSafari(AnimalRequest model)
+
+        public async Task<Animal> UpdateSafari(AnimalRequest model)
         {
             var animal = _dbContext.Animals.SingleOrDefault(i => i.Id == model.Id);
             animal.Species = model.Species;
@@ -47,13 +46,14 @@ namespace Coyote.Services
             animal.Color = model.Color;
             animal.AnimalName = model.AnimalName;
             animal.DateOfBirth = model.DateOfBirth;
-            _dbContext.SaveChanges();
+            await _dbContext.SaveChangesAsync();
             return animal;
         }
-        public bool DeleteAnimal(int Id)
+
+        public async Task<bool> DeleteAnimal(int Id)
         {
-            var animal = _dbContext.Animals
-                .SingleOrDefault(i => i.Id == Id);
+            var animal = await _dbContext.Animals.FindAsync(Id);
+
             if (animal == null)
             {
                 return false;
@@ -62,6 +62,5 @@ namespace Coyote.Services
             _dbContext.SaveChanges();
             return true;
         }
-
     }
 }

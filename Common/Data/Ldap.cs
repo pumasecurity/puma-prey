@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.DirectoryServices;
+﻿using System.DirectoryServices;
 
 namespace Puma.Prey.Common.Data
 {

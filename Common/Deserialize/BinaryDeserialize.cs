@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Puma.Prey.Common.Deserialize
 {
@@ -15,7 +10,7 @@ namespace Puma.Prey.Common.Deserialize
             using (MemoryStream stream = new MemoryStream())
             {
                 stream.Write(bytes, 0, bytes.Length);
-                
+
                 BinaryFormatter formatter = new BinaryFormatter();
                 return (T)formatter.Deserialize(stream);
             }

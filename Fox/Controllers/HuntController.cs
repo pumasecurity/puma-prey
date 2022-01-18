@@ -1,15 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
-using System.Web.Mvc;
-
-using Microsoft.EntityFrameworkCore;
-
-using Puma.Prey.Rabbit.Context;
-using Puma.Prey.Rabbit.Models;
+﻿using System.Web.Http;
 using AllowAnonymousAttribute = System.Web.Http.AllowAnonymousAttribute;
 
 namespace Puma.Prey.Fox.Controllers
@@ -57,7 +46,7 @@ namespace Puma.Prey.Fox.Controllers
         }
         */
         // PUT api/hunt/5
-        public void Put(int id, [FromBody]string value)
+        public void Put(int id, [FromBody] string value)
         {
         }
         /*

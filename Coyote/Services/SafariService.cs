@@ -1,16 +1,14 @@
-﻿using Coyote.Services.Interface;
+﻿using Coyote.Controllers.Authentication.Model;
+using Coyote.Extensions;
+using Coyote.Services.Interface;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Puma.Prey.Rabbit.Context;
 using Puma.Prey.Rabbit.Models;
 using System;
-using System.Linq;
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using System.Linq;
 using System.Security.Claims;
-using Coyote.Extensions;
-using MySql.Data.MySqlClient;
-using Coyote.Controllers.Authentication.Model;
-using Microsoft.AspNetCore.Identity;
 
 namespace Coyote.Services
 {
@@ -24,12 +22,14 @@ namespace Coyote.Services
             _dbContext = dbContext;
             _userManager = userManager;
         }
+
         public Safari GetSafari(int Id)
         {
             return _dbContext.Safaris
                 .Include(a => a.Animals)
                 .SingleOrDefault(i => i.Id == Id);
         }
+
         public List<Safari> GetSafaris(ClaimsPrincipal principal)
         {
             var safariIds = principal.GetSafariId();
@@ -57,7 +57,6 @@ namespace Coyote.Services
             var safari = _dbContext.Safaris
                 .SingleOrDefault(i => i.Id == id);
 
-
             if (safari == null)
             {
                 return false;
@@ -76,6 +75,7 @@ namespace Coyote.Services
             _dbContext.SaveChanges();
             return safari;
         }
+
         public Safari UpdateSafari(SafariRequest model)
         {
             var safari = _dbContext.Safaris.SingleOrDefault(i => i.Id == model.Id);
@@ -100,14 +100,11 @@ namespace Coyote.Services
             var safariUser = new SafariUser()
             {
                 PumaUserId = pumauser.Id,
-                SafariId = model.SafariId,      
+                SafariId = model.SafariId,
             };
             _dbContext.SafariUsers.Add(safariUser);
             _dbContext.SaveChanges();
             return true;
-            
         }
-
-
     }
 }

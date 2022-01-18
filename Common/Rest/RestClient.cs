@@ -1,5 +1,5 @@
-﻿using System.Net.Http;
-using Puma.Prey.Common.Deserialize;
+﻿using Puma.Prey.Common.Deserialize;
+using System.Net.Http;
 
 namespace Puma.Prey.Common.Rest
 {

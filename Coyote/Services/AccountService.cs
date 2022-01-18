@@ -4,8 +4,6 @@ using Microsoft.AspNetCore.Identity;
 using Puma.Prey.Rabbit.Context;
 using Puma.Prey.Rabbit.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
@@ -23,7 +21,7 @@ namespace Coyote.Services
             _dbContext = rabbitdbContext;
         }
 
-        public IdentityResult CreateUser(AccountRequest model)
+        public async Task<IdentityResult> CreateUser(AccountRequest model)
         {
             var pumaUser = new PumaUser
             {
@@ -40,19 +38,18 @@ namespace Coyote.Services
                 BillingZip = model.BillingZip
             };
 
-            IdentityResult result= _userManager.CreateAsync(pumaUser, model.Password).GetAwaiter().GetResult();
-            return result;
+            return await _userManager.CreateAsync(pumaUser, model.Password);
         }
 
-        public bool DoesUserExist(string email)
+        public async Task<bool> DoesUserExist(string email)
         {
-            var user = _userManager.FindByEmailAsync(email).GetAwaiter().GetResult();
+            var user = await _userManager.FindByEmailAsync(email);
             return user != null;
-
         }
-        public User ShowUsers(string email)
+
+        public async Task<User> ShowUsers(string email)
         {
-            var user = _userManager.FindByEmailAsync(email).GetAwaiter().GetResult();
+            var user = await _userManager.FindByEmailAsync(email);
 
             var user1 = new User
             {
@@ -65,14 +62,13 @@ namespace Coyote.Services
                 BillingCity = user.BillingCity,
                 BillingState = user.BillingState,
                 BillingZip = user.BillingZip,
-
             };
             return user1;
         }
 
-        public IdentityResult UpdateUser(AccountUpdate model)
+        public async Task<IdentityResult> UpdateUser(AccountUpdate model)
         {
-            var users = _userManager.FindByEmailAsync(model.Email).GetAwaiter().GetResult();
+            var users = await _userManager.FindByEmailAsync(model.Email);
 
             users.PhoneNumber = model.PhoneNumber;
             users.CreditCardNumber = model.CreditCardNumber;
@@ -83,11 +79,9 @@ namespace Coyote.Services
             users.BillingState = model.BillingState;
             users.BillingZip = model.BillingZip;
 
-
             IdentityResult result = _userManager.UpdateAsync(users).GetAwaiter().GetResult();
             return result;
         }
-
 
         public async Task<IdentityResult> ChangePassword(ChangePasswordRequest request, PumaUser user)
         {
@@ -98,6 +92,5 @@ namespace Coyote.Services
         {
             return await _userManager.GetUserAsync(principal);
         }
-
     }
 }

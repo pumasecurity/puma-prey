@@ -1,8 +1,8 @@
+using Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions;
+using Puma.Prey.Fox.Areas.HelpPage.Models;
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions;
-using Puma.Prey.Fox.Areas.HelpPage.Models;
 using AllowAnonymousAttribute = System.Web.Mvc.AllowAnonymousAttribute;
 
 namespace Puma.Prey.Fox.Areas.HelpPage.Controllers

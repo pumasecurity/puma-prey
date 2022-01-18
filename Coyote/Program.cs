@@ -1,11 +1,12 @@
-﻿using System;
-using System.Linq;
-using Microsoft.AspNetCore;
+﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Puma.Prey.Rabbit.Context;
+using System;
+using System.Linq;
 
 namespace Coyote
 {
@@ -13,28 +14,31 @@ namespace Coyote
     {
         public static void Main(string[] args)
         {
-            var host = CreateWebHostBuilder(args).Build();
+            var host = CreateHostBuilder(args).Build();
             using (var scope = host.Services.CreateScope())
             {
-                var services = scope.ServiceProvider;
-                try
-                {
-                    var context = services.GetRequiredService<RabbitDBContext>();
-                    if (context.Database.GetPendingMigrations().Any())
-                        context.Database.Migrate();
-                    context.Seed(services);
-                }
-                catch(Exception ex)
-                {
-                    var logger = services.GetRequiredService<ILogger<Program>>();
-                    logger.LogError(ex, "Error Occured>");
-                }
+                //var services = scope.ServiceProvider;
+                //try
+                //{
+                //    var context = services.GetRequiredService<RabbitDBContext>();
+                //    if (context.Database.GetPendingMigrations().Any())
+                //        context.Database.Migrate();
+                //    context.Seed(services);
+                //}
+                //catch (Exception ex)
+                //{
+                //    var logger = services.GetRequiredService<ILogger<Program>>();
+                //    logger.LogError(ex, "Error Occurred");
+                //}
             }
             host.Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
     }
 }
