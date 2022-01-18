@@ -41,7 +41,7 @@ namespace Coyote.Controllers.Animals
             if (animal == null)
                 return NotFound();
 
-            return animal;
+            return Ok(animal);
         }
 
         [HttpDelete("{Id}")]

@@ -42,7 +42,7 @@ namespace Coyote
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHttpContextAccessor();
-
+            
             if (Configuration.GetValue<bool>("UseInMemoryDB"))
                 services.AddDbContext<RabbitDBContext>(options =>
                     options.UseInMemoryDatabase(databaseName: "InMemoryDb"), ServiceLifetime.Singleton, ServiceLifetime.Singleton);  //TODO valid scoping           
@@ -94,9 +94,11 @@ namespace Coyote
                     ValidateLifetime = false,
                 };
             });
-            
 
-            services.AddControllers();
+
+            services.AddControllers().AddJsonOptions(x =>
+                x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve);
+
 
             services.AddCors(options =>
             {
@@ -174,9 +176,7 @@ namespace Coyote
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-            });
-
-            //app.UseMvc();
+            });            
         }
     }
 }
