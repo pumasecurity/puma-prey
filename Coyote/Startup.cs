@@ -43,15 +43,13 @@ namespace Coyote
         {
             services.AddHttpContextAccessor();
 
-            services.AddDbContext<RabbitDBContext>(options =>
-            {
-                options.UseMySql(Configuration.GetConnectionString("DefaultConnection"), ServerVersion.AutoDetect(Configuration.GetConnectionString("DefaultConnection")));
-                //options.UseInMemoryDatabase($"Puma-Prey-{Guid.NewGuid()}"), ServiceLifetime.Singleton); //TODO: remove singleton for non in memory db
-                /*
-                services.AddDbContext<RabbitDBContext>(opt =>
-                    opt.UseInMemoryDatabase("Sign in informations"));
-                */
-            });
+            if (Configuration.GetValue<bool>("UseInMemoryDB"))
+                services.AddDbContext<RabbitDBContext>(options =>
+                    options.UseInMemoryDatabase(databaseName: "InMemoryDb"), ServiceLifetime.Singleton, ServiceLifetime.Singleton);  //TODO valid scoping           
+            else
+                services.AddDbContext<RabbitDBContext>(options =>
+                    options.UseMySql(Configuration.GetConnectionString("DefaultConnection"), ServerVersion.AutoDetect(Configuration.GetConnectionString("DefaultConnection"))));                
+                    
 
             services.AddIdentityCore<PumaUser>(options =>
             {
@@ -69,12 +67,7 @@ namespace Coyote
             services.AddScoped<ISafariService, SafariService>();
             services.AddScoped<IAccountService, AccountService>();
             services.AddScoped<IAnimalService, AnimalService>();
-
-            //services.Scan(scanner => scanner
-            //   .FromAssemblyOf<AuthenticationService>()
-            //   .AddClasses(classes => classes.InNamespaceOf(typeof(AuthenticationService)))
-            //   .AsImplementedInterfaces()
-            //   .WithScopedLifetime());
+            
 
             services.AddAuthentication(options =>
             {
@@ -105,7 +98,13 @@ namespace Coyote
 
             services.AddControllers();
 
-            services.AddCors();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
+            });
 
             services.AddOpenApiDocument(document =>
             {
@@ -126,31 +125,14 @@ namespace Coyote
                     In = OpenApiSecurityApiKeyLocation.Header,
                     Description = "Enter the Authorization header: Bearer {your JWT token}.",
                     BearerFormat = "JWT",
-                    //Scheme = JwtBearerDefaults.AuthenticationScheme                    
                 });
 
                 
                 document.OperationProcessors.Add(
                     new AspNetCoreOperationSecurityScopeProcessor("JWT")
                 );
-            });
+            });         
 
-            //services.AddMvc(config =>
-            //  {
-            //    // Secure by default - add Authorize Attribute to every endpoint.  Opt-out via [AllowAnonymous] attribute.
-            //    var policy = new AuthorizationPolicyBuilder()
-            //           .RequireAuthenticatedUser()
-            //           .Build();
-
-            //      config.Filters.Add(new AuthorizeFilter(policy));
-            //  })
-            //.AddJsonOptions(options =>
-            //{
-            //    //options.SerializerSettings.Resolver = new CamelCasePropertyNamesContractResolver();
-            //    //options.SerializerSettings.Converters = new List<JsonConverter>() { new StringEnumConverter() };
-            //    //options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
-            //})
-            //.SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -164,8 +146,7 @@ namespace Coyote
             app.UseOpenApi();
             app.UseSwaggerUi3();
 
-            //TODO: fix cors
-            //app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().AllowCredentials());
+            app.UseCors("CorsPolicy");
 
 
             var supportedCultures = new[]
