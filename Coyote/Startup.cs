@@ -96,9 +96,16 @@ namespace Coyote
             });
 
 
-            services.AddControllers().AddJsonOptions(x =>
-                x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve);
+            JsonConvert.DefaultSettings = () =>
+            {
+                return new JsonSerializerSettings()
+                {
+                    NullValueHandling = NullValueHandling.Ignore
+                };
+            };
 
+            services.AddControllers();
+            
 
             services.AddCors(options =>
             {
