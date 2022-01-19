@@ -1,6 +1,6 @@
 {
   "Version": "1.4.4",
-  "LogLevel": "Error",
+  "LogLevel": "Info",
   "GeneralSettings": {
     "DataflowAnalysisEnabled": true,
     "DataflowAnalysisEngineVersion": "2.0",

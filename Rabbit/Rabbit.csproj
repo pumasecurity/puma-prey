@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <RootNamespace>Puma.Prey.Rabbit</RootNamespace>
+	<AdditionalFileItemNames>$(AdditionalFileItemNames);Content</AdditionalFileItemNames>  
   </PropertyGroup>
 
   <ItemGroup>

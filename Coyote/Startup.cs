@@ -104,8 +104,7 @@ namespace Coyote
                 };
             };
 
-            services.AddControllers();
-            
+            services.AddControllers();            
 
             services.AddCors(options =>
             {
@@ -135,7 +134,6 @@ namespace Coyote
                     Description = "Enter the Authorization header: Bearer {your JWT token}.",
                     BearerFormat = "JWT",
                 });
-
                 
                 document.OperationProcessors.Add(
                     new AspNetCoreOperationSecurityScopeProcessor("JWT")
