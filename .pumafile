@@ -513,42 +513,42 @@
     },
     {
       "Id": "SEC1000",
-      "Name": "JavaScript Injection: Unsafe Eval",
+      "Name": "Injection",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC1001",
-      "Name": "JavaScript Injection: setTimeout",
+      "Name": "Injection",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC1002",
-      "Name": "JavaScript Injection: setInterval",
+      "Name": "Injection",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC1003",
-      "Name": "JavaScript: Raw Write InnerHtml",
+      "Name": "Cross-Site Scripting",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC1004",
-      "Name": "React: Dangerously Set Inner HTML",
+      "Name": "Cross-Site Scripting",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
     },
     {
       "Id": "SEC1005",
-      "Name": "Angular: Bypass Security Trust",
+      "Name": "Cross-Site Scripting",
       "RiskRating": "Medium",
       "Severity": "Warning",
       "Enabled": true
