@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Coyote.Controllers.Authentication.Model
+namespace Coyote.Models.User
 {
     public class ChangePasswordRequest
     {

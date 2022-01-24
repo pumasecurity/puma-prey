@@ -6,13 +6,13 @@ namespace Puma.Prey.Common.Cryptography
     {
         public static string ToHexString(this byte[] bytes)
         {
-            SoapHexBinary shb = new SoapHexBinary(bytes);
+            var shb = new SoapHexBinary(bytes);
             return shb.ToString();
         }
 
         public static byte[] GetBytesFromHexString(this string hexString)
         {
-            SoapHexBinary shb = SoapHexBinary.Parse(hexString);
+            var shb = SoapHexBinary.Parse(hexString);
             return shb.Value;
         }
     }

@@ -1,4 +1,4 @@
-﻿using Coyote.Controllers.Authentication.Model;
+﻿using Coyote.Models.Animal;
 using Puma.Prey.Rabbit.Models;
 using System;
 using System.Threading.Tasks;

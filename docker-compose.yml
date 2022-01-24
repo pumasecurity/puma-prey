@@ -10,7 +10,7 @@ services:
       - "3306:3306"
     volumes: 
       - datafiles:/var/lib/mysql
-      - ./sql-scripts/setup.sql:/docker-entrypoint-initdb.d/01.sql
+      #- ./sql-scripts/setup.sql:/docker-entrypoint-initdb.d/01.sql
     environment: 
       MYSQL_RANDOM_ROOT_PASSWORD: 1
       MYSQL_USER: pumauser

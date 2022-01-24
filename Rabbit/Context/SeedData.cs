@@ -9,7 +9,7 @@ namespace Puma.Prey.Rabbit.Context
     {
         public static void Seed(this RabbitDBContext context, IServiceProvider serviceProvider)
         {
-            CreateUsers(context, serviceProvider);
+            CreateUsers(serviceProvider);
             CreateSafari(context, serviceProvider);
             CreateAnimals(context, serviceProvider);
             CreateSafariUsers(context, serviceProvider);
@@ -34,7 +34,7 @@ namespace Puma.Prey.Rabbit.Context
         private const string UserPassword3 = "PumaScan3";
 
 
-        private static void CreateUsers(RabbitDBContext context, IServiceProvider serviceProvider)
+        private static void CreateUsers(IServiceProvider serviceProvider)
         {
             var userManager = serviceProvider.GetService(typeof(UserManager<PumaUser>)) as UserManager<PumaUser>;
 
@@ -44,7 +44,6 @@ namespace Puma.Prey.Rabbit.Context
                 MemberId = Member1Id,
                 Email = Member1Email,
                 UserName = Member1Email,
-
             };
 
             var u2 = new PumaUser

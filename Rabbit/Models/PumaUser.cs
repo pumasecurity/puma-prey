@@ -6,6 +6,8 @@ namespace Puma.Prey.Rabbit.Models
     public class PumaUser : IdentityUser
     {
         public int MemberId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public string CreditCardNumber { get; set; }
         public string CreditCardExpiration { get; set; }
         public string BillingAddress1 { get; set; }
@@ -14,5 +16,6 @@ namespace Puma.Prey.Rabbit.Models
         public string BillingState { get; set; }
         public string BillingZip { get; set; }
         public List<SafariUser> SafariUsers { get; set; }
+        public List<RefreshToken> RefreshTokens { get; set; }
     }
 }

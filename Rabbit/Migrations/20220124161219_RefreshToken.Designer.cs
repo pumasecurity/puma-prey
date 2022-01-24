@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Puma.Prey.Rabbit.Context;
 
 namespace Puma.Prey.Rabbit.Migrations
 {
     [DbContext(typeof(RabbitDBContext))]
-    partial class RabbitDBContextModelSnapshot : ModelSnapshot
+    [Migration("20220124161219_RefreshToken")]
+    partial class RefreshToken
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

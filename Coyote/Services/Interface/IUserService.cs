@@ -1,4 +1,5 @@
-﻿using Coyote.Controllers.Authentication.Model;
+﻿using Coyote.Models.User;
+using Coyote.Models.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Puma.Prey.Rabbit.Models;
 using System.Security.Claims;
@@ -6,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Coyote.Services.Interface
 {
-    public interface IAccountService
+    public interface IUserService
     {
         Task<bool> DoesUserExist(string email);
 
-        Task<IdentityResult> CreateUser(AccountRequest model);
+        Task<IdentityResult> CreateUser(UserRequest model);
 
-        Task<IdentityResult> UpdateUser(AccountUpdate model);
+        Task<IdentityResult> UpdateUser(UserUpdate model);
 
         Task<User> ShowUsers(string email);
 

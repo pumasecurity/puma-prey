@@ -1,4 +1,4 @@
-﻿using Coyote.Controllers.Authentication.Model;
+﻿using Coyote.Models.Safari;
 using Puma.Prey.Rabbit.Models;
 using System;
 using System.Collections.Generic;

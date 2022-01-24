@@ -1,7 +1,7 @@
-﻿using Coyote.Controllers.Authentication.Model;
+﻿using Coyote.Models.User;
+using Coyote.Models.Authentication;
 using Coyote.Services.Interface;
 using Microsoft.AspNetCore.Identity;
-using Puma.Prey.Rabbit.Context;
 using Puma.Prey.Rabbit.Models;
 using System;
 using System.Security.Claims;
@@ -9,19 +9,16 @@ using System.Threading.Tasks;
 
 namespace Coyote.Services
 {
-    public class AccountService : IAccountService
+    public class UserService : IUserService
     {
         private readonly UserManager<PumaUser> _userManager;
-        private readonly RabbitDBContext _dbContext;
 
-        public AccountService(UserManager<PumaUser> userManager,
-            RabbitDBContext rabbitdbContext)
+        public UserService(UserManager<PumaUser> userManager)
         {
             _userManager = userManager;
-            _dbContext = rabbitdbContext;
         }
 
-        public async Task<IdentityResult> CreateUser(AccountRequest model)
+        public async Task<IdentityResult> CreateUser(UserRequest model)
         {
             var pumaUser = new PumaUser
             {
@@ -66,7 +63,7 @@ namespace Coyote.Services
             return user1;
         }
 
-        public async Task<IdentityResult> UpdateUser(AccountUpdate model)
+        public async Task<IdentityResult> UpdateUser(UserUpdate model)
         {
             var users = await _userManager.FindByEmailAsync(model.Email);
 
@@ -79,7 +76,7 @@ namespace Coyote.Services
             users.BillingState = model.BillingState;
             users.BillingZip = model.BillingZip;
 
-            IdentityResult result = _userManager.UpdateAsync(users).GetAwaiter().GetResult();
+            var result = await _userManager.UpdateAsync(users);
             return result;
         }
 

@@ -1,4 +1,4 @@
-﻿using Coyote.Controllers.Authentication.Model;
+﻿using Coyote.Models.Animal;
 using Coyote.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Puma.Prey.Rabbit.Models;

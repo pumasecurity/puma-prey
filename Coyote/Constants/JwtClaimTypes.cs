@@ -2,7 +2,7 @@
 {
     public class JwtClaimTypes
     {
-        public const string safaris = "safaris";
+        public const string Safaris = "safaris";
         public const string MemberId = "memberId";
     }
 }

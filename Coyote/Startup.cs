@@ -1,31 +1,24 @@
 ﻿using Coyote.Constants;
+using Coyote.Helpers;
 using Coyote.Services;
 using Coyote.Services.Interface;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using Newtonsoft.Json.Serialization;
-using NSwag;
-using NSwag.Generation.Processors.Security;
+using Microsoft.OpenApi.Models;
 using Puma.Prey.Rabbit.Context;
 using Puma.Prey.Rabbit.Models;
 using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Coyote
 {
@@ -42,14 +35,13 @@ namespace Coyote
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHttpContextAccessor();
-            
+
             if (Configuration.GetValue<bool>("UseInMemoryDB"))
                 services.AddDbContext<RabbitDBContext>(options =>
-                    options.UseInMemoryDatabase(databaseName: "InMemoryDb"), ServiceLifetime.Singleton, ServiceLifetime.Singleton);  //TODO valid scoping           
+                    options.UseInMemoryDatabase(databaseName: "InMemoryDb"), ServiceLifetime.Singleton, ServiceLifetime.Singleton);  //TODO valid scoping
             else
                 services.AddDbContext<RabbitDBContext>(options =>
-                    options.UseMySql(Configuration.GetConnectionString("DefaultConnection"), ServerVersion.AutoDetect(Configuration.GetConnectionString("DefaultConnection"))));                
-                    
+                    options.UseMySql(Configuration.GetConnectionString("DefaultConnection"), ServerVersion.AutoDetect(Configuration.GetConnectionString("DefaultConnection"))));
 
             services.AddIdentityCore<PumaUser>(options =>
             {
@@ -58,53 +50,83 @@ namespace Coyote
                 options.SignIn = PasswordConfigurationOptions.PasswordOptions.SignIn;
                 options.User = PasswordConfigurationOptions.PasswordOptions.User;
             })
-               .AddEntityFrameworkStores<RabbitDBContext>()
-               .AddDefaultTokenProviders()
-               .AddSignInManager<SignInManager<PumaUser>>();
-            
-            
-            services.AddScoped<IAuthenticationService, AuthenticationService>();
-            services.AddScoped<ISafariService, SafariService>();
-            services.AddScoped<IAccountService, AccountService>();
-            services.AddScoped<IAnimalService, AnimalService>();
-            
+             .AddEntityFrameworkStores<RabbitDBContext>()
+             .AddDefaultTokenProviders()
+             .AddSignInManager<SignInManager<PumaUser>>();
 
-            services.AddAuthentication(options =>
+            services.AddAuthentication(x =>
             {
-                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-            })
-
-            // Adding Jwt Bearer  
-            .AddJwtBearer(options =>
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(o =>
             {
-                options.SaveToken = true;
-                options.RequireHttpsMetadata = false;
-                options.TokenValidationParameters = new TokenValidationParameters()
+                var Key = Encoding.UTF8.GetBytes(Configuration["JWT:Key"]);
+                o.SaveToken = true;
+                o.TokenValidationParameters = new TokenValidationParameters
                 {
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidAudience = Configuration["JWT:Audience"],
+                    ValidateIssuer = false, // on production make it true
+                    ValidateAudience = false, // on production make it true
                     ValidIssuer = Configuration["JWT:Issuer"],
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Key"])),
+                    ValidAudience = Configuration["JWT:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Key),
+                    ClockSkew = TimeSpan.Zero,
                     RequireSignedTokens = false,
                     ValidateIssuerSigningKey = false,
                     RequireExpirationTime = false,
                     ValidateLifetime = false,
                 };
+                o.Events = new JwtBearerEvents
+                {
+                    OnAuthenticationFailed = context =>
+                    {
+                        if (context.Exception.GetType() == typeof(SecurityTokenExpiredException))
+                        {
+                            context.Response.Headers.Add("IS-TOKEN-EXPIRED", "true");
+                        }
+                        return Task.CompletedTask;
+                    }
+                };
             });
 
+            services.AddScoped<IJwtUtils, JwtUtils>();
+            services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<ISafariService, SafariService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IAnimalService, AnimalService>();
 
-            JsonConvert.DefaultSettings = () =>
+            services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.IgnoreNullValues = true);
+
+            // configure strongly typed settings object
+            services.Configure<JWTOptions>(Configuration.GetSection("JWT"));
+
+            services.AddSwaggerGen(swagger =>
             {
-                return new JsonSerializerSettings()
+                swagger.SwaggerDoc("v1", new OpenApiInfo { Title = "Puma Prey APIs", Version = "v1" });
+                swagger.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
                 {
-                    NullValueHandling = NullValueHandling.Ignore
-                };
-            };
-
-            services.AddControllers();            
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer 12345abcdef\"",
+                });
+                swagger.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                          new OpenApiSecurityScheme
+                            {
+                                Reference = new OpenApiReference
+                                {
+                                    Type = ReferenceType.SecurityScheme,
+                                    Id = "Bearer"
+                                }
+                            },
+                            new string[] {}
+                    }
+                });
+            });
 
             services.AddCors(options =>
             {
@@ -113,33 +135,6 @@ namespace Coyote
                         .AllowAnyMethod()
                         .AllowAnyHeader());
             });
-
-            services.AddOpenApiDocument(document =>
-            {
-                document.Title = "Puma Prey API";
-                document.Version = "1.0";
-                document.Description = "Puma Prey API documentation.";
-
-                document.SerializerSettings = new JsonSerializerSettings()
-                {
-                    ContractResolver = new CamelCasePropertyNamesContractResolver(),
-                    Converters = new List<JsonConverter>() { new StringEnumConverter() },
-                };
-
-                document.AddSecurity("JWT", Enumerable.Empty<string>(), new OpenApiSecurityScheme
-                {
-                    Type = OpenApiSecuritySchemeType.ApiKey,
-                    Name = "Authorization",
-                    In = OpenApiSecurityApiKeyLocation.Header,
-                    Description = "Enter the Authorization header: Bearer {your JWT token}.",
-                    BearerFormat = "JWT",
-                });
-                
-                document.OperationProcessors.Add(
-                    new AspNetCoreOperationSecurityScopeProcessor("JWT")
-                );
-            });         
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -150,11 +145,10 @@ namespace Coyote
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseOpenApi();
-            app.UseSwaggerUi3();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Coyote v1"));
 
             app.UseCors("CorsPolicy");
-
 
             var supportedCultures = new[]
             {
@@ -178,10 +172,13 @@ namespace Coyote
             app.UseAuthentication();
             app.UseAuthorization();
 
+            // global error handler
+            app.UseMiddleware<ErrorHandlerMiddleware>();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-            });            
+            });
         }
     }
 }

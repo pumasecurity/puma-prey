@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Puma.Prey.Rabbit.Models;
 
-namespace Coyote.Models
+namespace Coyote.Models.User
 {
     public class CheckPasswordResult
     {

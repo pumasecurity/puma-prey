@@ -11,8 +11,7 @@ namespace Puma.Prey.Rabbit.Context
 
         public DbSet<Animal> Animals { get; set; }
         public DbSet<Safari> Safaris { get; set; }
-        public DbSet<SafariUser> SafariUsers { get; set; }
-
+        public DbSet<SafariUser> SafariUsers { get; set; }        
         public RabbitDBContext() : base(new DbContextOptions<RabbitDBContext>()) { }
 
         public RabbitDBContext(DbContextOptions<RabbitDBContext> options) : base(options) { }

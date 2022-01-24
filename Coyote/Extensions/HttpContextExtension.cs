@@ -15,7 +15,7 @@ namespace Coyote.Extensions
 
         public static List<int> GetSafariId(this ClaimsPrincipal principal)
         {
-            var claim = principal.FindFirst(c => c.Type == JwtClaimTypes.safaris)?.Value;
+            var claim = principal.FindFirst(c => c.Type == JwtClaimTypes.Safaris)?.Value;
 
             List<int> safaris = new List<int>();
 

@@ -1,4 +1,5 @@
-﻿using Coyote.Controllers.Authentication.Model;
+﻿using Coyote.Models.Authentication;
+using Coyote.Models.Safari;
 using Coyote.Services.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

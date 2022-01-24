@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Coyote.Controllers.Authentication.Model
+namespace Coyote.Models.User
 {
-    public class AccountRequest
+    public class UserRequest
     {
         [Required]
         public string Email { get; set; }

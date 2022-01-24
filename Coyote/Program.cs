@@ -20,19 +20,21 @@ namespace Coyote
 
             using (var scope = host.Services.CreateScope())
             {
-
                 var services = scope.ServiceProvider;
                 try
                 {
                     var context = services.GetRequiredService<RabbitDBContext>();
-                    if (context.Database.IsInMemory())                    
-                        context.Seed(services);
+                    if (context.Database.GetPendingMigrations().Any())
+                        context.Database.Migrate();
+                    context.Seed(services);
+                    // TODO: add out of band hook
+                    //context.Database.ExecuteSqlRaw()
                 }
                 catch (Exception ex)
                 {
                     var logger = services.GetRequiredService<ILogger<Program>>();
                     logger.LogError(ex, "Error Occurred");
-                }
+                }                
             }        
             
             host.Run();

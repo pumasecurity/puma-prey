@@ -1,34 +1,21 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Puma.Prey.Rabbit.Models;
+using System.Collections.Generic;
 
-namespace Coyote.Controllers.Authentication.Model
-{
-    public class AccountUpdate
+namespace Coyote.Models.Authentication
+{ 
+    public class User
     {
-        [Required]
+        public int MemberId { get; set; }
         public string Email { get; set; }
-
-        [Required]
         public string PhoneNumber { get; set; }
-
-        [Required]
         public string CreditCardNumber { get; set; }
-
-        [Required]
         public string CreditCardExpiration { get; set; }
-
-        [Required]
         public string BillingAddress1 { get; set; }
-
-        [Required]
         public string BillingAddress2 { get; set; }
-
-        [Required]
         public string BillingCity { get; set; }
-
-        [Required]
         public string BillingState { get; set; }
-
-        [Required]
         public string BillingZip { get; set; }
+        public List<int> SafariIds { get; set; }
+        public List<RefreshToken> RefreshTokens { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Coyote.Controllers.Authentication.Model
+namespace Coyote.Models.Animal
 {
     public class AnimalRequest
     {

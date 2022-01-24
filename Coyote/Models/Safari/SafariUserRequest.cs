@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Coyote.Controllers.Authentication.Model
-{
+namespace Coyote.Models.Safari
+{ 
     public class SafariUserRequest
     {
         [Required]

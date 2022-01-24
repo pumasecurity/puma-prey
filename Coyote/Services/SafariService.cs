@@ -1,7 +1,6 @@
-﻿using Coyote.Controllers.Authentication.Model;
-using Coyote.Extensions;
+﻿using Coyote.Extensions;
+using Coyote.Models.Safari;
 using Coyote.Services.Interface;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Puma.Prey.Rabbit.Context;
 using Puma.Prey.Rabbit.Models;
@@ -15,12 +14,10 @@ namespace Coyote.Services
     public class SafariService : ISafariService
     {
         private readonly RabbitDBContext _dbContext;
-        private readonly UserManager<PumaUser> _userManager;
 
-        public SafariService(RabbitDBContext dbContext, UserManager<PumaUser> userManager)
+        public SafariService(RabbitDBContext dbContext)
         {
             _dbContext = dbContext;
-            _userManager = userManager;
         }
 
         public Safari GetSafari(int Id)
