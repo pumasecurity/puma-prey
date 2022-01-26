@@ -40,7 +40,8 @@
             var result = await userManager.CheckPasswordAsync(user, model.Password); //not using CheckPasswordSignInAsync
 
             if (user is null || !result)
-                throw new AppException("Username or password is incorrect");
+                throw new UnauthorizedAccessException("Username or password is incorrect");
+                //throw new AppException("Username or password is incorrect");
 
             // authentication successful so generate jwt and refresh tokens
             var jwtToken = jwtUtils.GenerateJwtToken(user);

@@ -22,6 +22,8 @@ services:
     depends_on:
       - databases
     image: ${DOCKER_REGISTRY-}coyote
+    ports:
+      - "80:80"
     build:
       context: .
-      dockerfile: Coyote/Dockerfile       
+      dockerfile: Coyote/Dockerfile           
