@@ -6,7 +6,7 @@ This project contains Web Forms, MVC5, and Core web applications that communicat
 ## Projects
 
 ### Coyote
-ASP.NET Core / Identity web app for testing the Puma Scan rules engine.
+ASP.NET Core .Net 5 / Identity web app for testing the Puma Scan rules engine.
 
 ### Raccoon
 ASP.NET 4.6 MVC 5 / Identity web app for testing the Puma Scan rules engine.
@@ -23,3 +23,6 @@ ASP.NET 4.6 Web API services project for testing the Puma Scan rules engine.
 
 ### Rabbit
 Database tier with ADO, LINQ, and EF context classes for querying data using the main .NET data access frameworks.
+
+### Squirrel
+Angular Typescript standalone web app for testing Coyotoe web api.

@@ -1,15 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpResponse } from '@angular/common/http';
-import { TokenService, AuthenticateRequest } from 'projects/coyote-swagger-client/src';
+import { TokenService, AuthenticateRequest, Configuration } from 'projects/coyote-swagger-client/src';
 import { map } from 'rxjs/operators';
+import { isNull } from '@angular/compiler/src/output/output_ast';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthenticationService {
-  
-  constructor(private tokenService: TokenService) { }
+
+  constructor(
+    private tokenService: TokenService,
+    private configuration: Configuration) { }
 
   login(username: string, password: string): Observable<any> {
     var authRequest: AuthenticateRequest = { password : password, userName : username };
@@ -22,6 +25,10 @@ export class AuthenticationService {
       .pipe(
         map(res => {
           localStorage.setItem('access_token', res.jwtToken);
+          if (this.tokenService.configuration.apiKeys) {
+            this.tokenService.configuration.apiKeys["Authorization"] = 'Bearer '+ res.jwtToken;
+          }
+          
           return res;
         })
     );
@@ -51,4 +58,9 @@ export class AuthenticationService {
     }
     return false;
   }
+
+  getToken() {
+    return localStorage.getItem('access_token');
+  }
+
 }

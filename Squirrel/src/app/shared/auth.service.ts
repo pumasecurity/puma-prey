@@ -4,10 +4,19 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { Configuration } from '../../../projects/coyote-swagger-client/src/configuration';
 
 @Injectable({
   providedIn: 'root'
 })
+
+export const apiConfig = new Configuration({
+  apiKeys: {},
+});
+
+export function getApiConfig() {
+  return apiConfig;
+}
 
 export class AuthService {
   endpoint: string = 'http://localhost:4000/api';
@@ -58,8 +67,8 @@ export class AuthService {
   }
 
   // User profile
-  getUserProfile(id): Observable<any> {
-    //let api = `${this.endpoint}/user-profile/${id}`;
+  getUserProfile(id: any): Observable<any> {
+    let api = `${this.endpoint}/user-profile/${id}`;
     return this.http.get(api, { headers: this.headers }).pipe(
       map((res: Response) => {
         return res || {}
