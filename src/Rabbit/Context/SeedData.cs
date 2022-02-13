@@ -17,21 +17,26 @@ namespace Puma.Prey.Rabbit.Context
 
 
         private const int Member1Id = 1001;
-        private const string Member1Email = "admin@pumascan.com";
+        private const string Member1Email = "admin@pumasecurity.io";
+        private const string Member1FName = "Admin";
+        private const string Member1LName = "User";
         private const string user1Id = "85D2C08B-750B-4DA9-B55F-ABB8BA6E9634";
-        private const string UserPassword1 = "PumaScan1";
+        private const string UserPassword1 = "PreyAdmin@!";
 
 
         private const int Member2Id = 1002;
-        private const string Member2Email = "eric@pumascancom";
+        private const string Member2Email = "eric@pumasecurity.io";
+        private const string Member2FName = "Eric";
+        private const string Member2LName = "Johnson";
         private const string user2Id = "43535D28-1C14-4D17-BD0B-5E8A7778049E";
-        private const string UserPassword2 = "PumaScan2";
-
+        private const string UserPassword2 = "PreyUser1@!";
 
         private const int Member3Id = 1003;
-        private const string Member3Email = "qiwei@pumascan.com";
+        private const string Member3Email = "qiwei@pumasecurity.io";
+        private const string Member3FName = "Qiwei";
+        private const string Member3LName = "Zhu";
         private const string user3Id = "6450D269-AA4B-44C4-B49F-486DF151BB52";
-        private const string UserPassword3 = "PumaScan3";
+        private const string UserPassword3 = "PreyUser2@!";
 
 
         private static void CreateUsers(IServiceProvider serviceProvider)
@@ -44,6 +49,8 @@ namespace Puma.Prey.Rabbit.Context
                 MemberId = Member1Id,
                 Email = Member1Email,
                 UserName = Member1Email,
+                FirstName = Member1FName,
+                LastName = Member1LName,
             };
 
             var u2 = new PumaUser
@@ -52,6 +59,8 @@ namespace Puma.Prey.Rabbit.Context
                 MemberId = Member2Id,
                 Email = Member2Email,
                 UserName = Member2Email,
+                FirstName = Member2FName,
+                LastName = Member2LName,
             };
 
             var u3 = new PumaUser
@@ -60,6 +69,8 @@ namespace Puma.Prey.Rabbit.Context
                 MemberId = Member3Id,
                 Email = Member3Email,
                 UserName = Member3Email,
+                FirstName = Member3FName,
+                LastName = Member3LName,
             };
 
             var dbUser = userManager.FindByIdAsync(u1.Id).GetAwaiter().GetResult();
@@ -85,7 +96,7 @@ namespace Puma.Prey.Rabbit.Context
         }
         private const int s1Id = 1995;
         private const string s1Name = "puma";
-        private const string s1Address = "Sugar Creek DR";
+        private const string s1Address = "Sugar Plum Dr";
         private static readonly DateTime s1StartDate = new DateTime(1991, 01, 01);
         private static readonly DateTime s1EndDate = new DateTime(1994, 01, 20);
 

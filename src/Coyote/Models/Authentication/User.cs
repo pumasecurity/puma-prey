@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 namespace Coyote.Models.Authentication
-{ 
+{
     public class User
     {
         public int MemberId { get; set; }

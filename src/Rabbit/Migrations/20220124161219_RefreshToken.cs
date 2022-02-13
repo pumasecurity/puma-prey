@@ -8,9 +8,6 @@ namespace Puma.Prey.Rabbit.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "UserRefreshTokens");
-
             migrationBuilder.AlterColumn<string>(
                 name: "Email",
                 table: "PumaUsers",
@@ -103,24 +100,6 @@ namespace Puma.Prey.Rabbit.Migrations
                 oldMaxLength: 256)
                 .Annotation("MySql:CharSet", "utf8mb4")
                 .OldAnnotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.CreateTable(
-                name: "UserRefreshTokens",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    IsActive = table.Column<bool>(type: "tinyint(1)", nullable: false),
-                    RefreshToken = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    UserName = table.Column<string>(type: "longtext", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4")
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_UserRefreshTokens", x => x.Id);
-                })
-                .Annotation("MySql:CharSet", "utf8mb4");
         }
     }
 }

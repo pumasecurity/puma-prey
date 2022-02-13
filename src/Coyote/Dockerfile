@@ -6,9 +6,9 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["Coyote/Coyote.csproj", "Coyote/"]
+COPY ["src/Coyote/Coyote.csproj", "Coyote/"]
 COPY ["Rabbit/Rabbit.csproj", "Rabbit/"]
-RUN dotnet restore "Coyote/Coyote.csproj"
+RUN dotnet restore "src/Coyote/Coyote.csproj"
 COPY . .
 WORKDIR "/src/Coyote"
 RUN dotnet build "Coyote.csproj" -c Release -o /app/build

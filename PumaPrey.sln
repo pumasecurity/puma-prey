@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solutio
 	ProjectSection(SolutionItems) = preProject
 		.pumafile = .pumafile
 		CONTRIBUTING.md = CONTRIBUTING.md
-		sql-scripts\init.sql = sql-scripts\init.sql
+		src\Database\setup.sql = Database\setup.sql
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
@@ -18,23 +18,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{C6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{3341405D-92BF-4A92-AF33-9F23B74EB871}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raccoon", "Raccoon\Raccoon.csproj", "{45211BCB-EFD1-461C-9F40-F0ACBABD1C85}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raccoon", "src\Raccoon\Raccoon.csproj", "{45211BCB-EFD1-461C-9F40-F0ACBABD1C85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fox", "Fox\Fox.csproj", "{61F47798-FB6C-494D-8EC8-DE0D6A452FFC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fox", "src\Fox\Fox.csproj", "{61F47798-FB6C-494D-8EC8-DE0D6A452FFC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rabbit", "Rabbit\Rabbit.csproj", "{A3874967-2F09-4878-83CC-BB105D2D11AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rabbit", "src\Rabbit\Rabbit.csproj", "{A3874967-2F09-4878-83CC-BB105D2D11AA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{9782ADA9-818C-40D3-9306-FBB19056151B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{B991CAC4-087C-4754-B7CC-6EF984F8858F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "src\Common\Common.csproj", "{B991CAC4-087C-4754-B7CC-6EF984F8858F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skunk", "Skunk\Skunk.csproj", "{4C81A99F-DEEA-43AC-8326-A1089F465AD2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skunk", "src\Skunk\Skunk.csproj", "{4C81A99F-DEEA-43AC-8326-A1089F465AD2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coyote", "Coyote\Coyote.csproj", "{500B8309-A9E2-4AC6-881E-D05BE625C537}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coyote", "src\Coyote\Coyote.csproj", "{500B8309-A9E2-4AC6-881E-D05BE625C537}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{312CEF80-62A4-4B0B-841A-5BB29F1AEFDB}"
 EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Squirrel", "Squirrel\Squirrel.esproj", "{1A8E871D-27F7-40D4-9DC9-D66BDA167295}"
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Squirrel", "src\Squirrel\Squirrel.esproj", "{1A8E871D-27F7-40D4-9DC9-D66BDA167295}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
