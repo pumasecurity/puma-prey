@@ -38,7 +38,7 @@ namespace Coyote
 
             if (Configuration.GetValue<bool>("UseInMemoryDB"))
                 services.AddDbContext<RabbitDBContext>(options =>
-                    options.UseInMemoryDatabase(databaseName: "InMemoryDb"), ServiceLifetime.Singleton, ServiceLifetime.Singleton);  //TODO valid scoping
+                    options.UseInMemoryDatabase(databaseName: $"InMemoryDb-{Guid.NewGuid()}"), ServiceLifetime.Singleton, ServiceLifetime.Singleton);  //TODO valid scoping
             else
                 services.AddDbContext<RabbitDBContext>(options =>
                     options.UseMySql(Configuration.GetConnectionString("DefaultConnection"), ServerVersion.AutoDetect(Configuration.GetConnectionString("DefaultConnection"))));

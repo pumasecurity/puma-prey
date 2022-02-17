@@ -15,14 +15,21 @@
         [JsonIgnore] // refresh token is returned in http only cookie
         public string RefreshToken { get; set; }
 
-        public AuthenticateResponse(PumaUser user, string jwtToken, string refreshToken)
+        public AuthenticateResponse() { }
+        
+        public AuthenticateResponse(string id, string firstName, string lastName, string userName, string email, string jwtToken, string refreshToken)
         {
-            Id = user.Id;
-            FirstName = user.FirstName;
-            LastName = user.LastName;
-            Email = user.Email;
+            Id = id;
+            FirstName = firstName;
+            LastName = lastName;
+            Username = userName;
+            Email = email;
             JwtToken = jwtToken;
             RefreshToken = refreshToken;
+        }
+
+        public AuthenticateResponse(PumaUser user, string jwtToken, string refreshToken) : this(user.Id, user.FirstName, user.LastName, user.UserName, user.Email, jwtToken, refreshToken) 
+        { 
         }
     }
 }

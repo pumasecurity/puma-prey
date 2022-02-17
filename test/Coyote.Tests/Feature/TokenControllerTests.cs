@@ -46,7 +46,7 @@ namespace Coyote.Tests.Feature
             var response = await Client.SendAuthenticationPostRequestAsync(SeedData.Member1Email, SeedData.User1Password);
 
             // Assert
-            response.StatusCode.Should().Be(HttpStatusCode.Unauthorized);
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
 
             var authenticationResponse = await response.Content.ReadFromJsonAsync<AuthenticateResponse>();
             authenticationResponse.JwtToken.Should().NotBeNull();
