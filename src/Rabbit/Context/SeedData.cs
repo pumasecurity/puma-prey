@@ -16,27 +16,28 @@ namespace Puma.Prey.Rabbit.Context
         }
 
 
-        private const int Member1Id = 1001;
-        private const string Member1Email = "admin@pumasecurity.io";
-        private const string Member1FName = "Admin";
-        private const string Member1LName = "User";
-        private const string user1Id = "85D2C08B-750B-4DA9-B55F-ABB8BA6E9634";
-        private const string UserPassword1 = "PreyAdmin@!";
+        public const int Member1Id = 1001;
+        public const string Member1Email = "admin@pumasecurity.io";
+        public const string Member1FName = "Admin";
+        public const string Member1LName = "User";
+        public const string User1Id = "85D2C08B-750B-4DA9-B55F-ABB8BA6E9634";
+        public const string User1Password = "PreyAdmin@!";
+        public const string InvalidPassword = "NotGoingT0Work!";
 
 
-        private const int Member2Id = 1002;
-        private const string Member2Email = "eric@pumasecurity.io";
-        private const string Member2FName = "Eric";
-        private const string Member2LName = "Johnson";
-        private const string user2Id = "43535D28-1C14-4D17-BD0B-5E8A7778049E";
-        private const string UserPassword2 = "PreyUser1@!";
+        public const int Member2Id = 1002;
+        public const string Member2Email = "eric@pumasecurity.io";
+        public const string Member2FName = "Eric";
+        public const string Member2LName = "Johnson";
+        public const string User2Id = "43535D28-1C14-4D17-BD0B-5E8A7778049E";
+        public const string User2Password = "PreyUser1@!";
 
-        private const int Member3Id = 1003;
-        private const string Member3Email = "qiwei@pumasecurity.io";
-        private const string Member3FName = "Qiwei";
-        private const string Member3LName = "Zhu";
-        private const string user3Id = "6450D269-AA4B-44C4-B49F-486DF151BB52";
-        private const string UserPassword3 = "PreyUser2@!";
+        public const int Member3Id = 1003;
+        public const string Member3Email = "qiwei@pumasecurity.io";
+        public const string Member3FName = "Qiwei";
+        public const string Member3LName = "Zhu";
+        public const string User3Id = "6450D269-AA4B-44C4-B49F-486DF151BB52";
+        public const string User3Password = "PreyUser2@!";
 
 
         private static void CreateUsers(IServiceProvider serviceProvider)
@@ -45,7 +46,7 @@ namespace Puma.Prey.Rabbit.Context
 
             var u1 = new PumaUser
             {
-                Id = user1Id,
+                Id = User1Id,
                 MemberId = Member1Id,
                 Email = Member1Email,
                 UserName = Member1Email,
@@ -55,7 +56,7 @@ namespace Puma.Prey.Rabbit.Context
 
             var u2 = new PumaUser
             {
-                Id = user2Id,
+                Id = User2Id,
                 MemberId = Member2Id,
                 Email = Member2Email,
                 UserName = Member2Email,
@@ -65,7 +66,7 @@ namespace Puma.Prey.Rabbit.Context
 
             var u3 = new PumaUser
             {
-                Id = user3Id,
+                Id = User3Id,
                 MemberId = Member3Id,
                 Email = Member3Email,
                 UserName = Member3Email,
@@ -77,66 +78,66 @@ namespace Puma.Prey.Rabbit.Context
 
             if (dbUser == null)
             {
-                userManager.CreateAsync(u1, UserPassword1).GetAwaiter().GetResult();
+                userManager.CreateAsync(u1, User1Password).GetAwaiter().GetResult();
             }
             var dbUser2 = userManager.FindByIdAsync(u2.Id).GetAwaiter().GetResult();
 
             if (dbUser2 == null)
             {
-                userManager.CreateAsync(u2, UserPassword2).GetAwaiter().GetResult();
+                userManager.CreateAsync(u2, User2Password).GetAwaiter().GetResult();
             }
 
             var dbUser3 = userManager.FindByIdAsync(u3.Id).GetAwaiter().GetResult();
 
             if (dbUser3 == null)
             {
-                userManager.CreateAsync(u3, UserPassword3).GetAwaiter().GetResult();
+                userManager.CreateAsync(u3, User3Password).GetAwaiter().GetResult();
             }
 
         }
-        private const int s1Id = 1995;
-        private const string s1Name = "puma";
-        private const string s1Address = "Sugar Plum Dr";
-        private static readonly DateTime s1StartDate = new DateTime(1991, 01, 01);
-        private static readonly DateTime s1EndDate = new DateTime(1994, 01, 20);
+        public static int Safari1Id = 1995;
+        public static string Safari1Name = "Chocolate Factory";
+        public static string Safari1Address = "Sugar Plum Dr";
+        private static readonly DateTime Safari1StartDate = new DateTime(1991, 01, 01);
+        private static readonly DateTime Safari1EndDate = new DateTime(1994, 01, 20);
 
-        private const int s2Id = 1996;
-        private const string s2Name = "pumaScan";
-        private const string s2Address = "Delaware ave";
-        private static readonly DateTime s2StartDate = new DateTime(1993, 02, 01);
-        private static readonly DateTime s2EndDate = new DateTime(1992, 02, 15);
+        public static int Safari2Id = 1996;
+        public static string Safari2Name = "Dogfish";
+        public static string Safari2Address = "Delaware Ave";
+        private static readonly DateTime Safari2StartDate = new DateTime(1993, 02, 01);
+        private static readonly DateTime Safari2EndDate = new DateTime(1992, 02, 15);
 
-        private const int s3Id = 1997;
-        private const string s3Name = "pumaSecurity";
-        private const string s3Address = "Lincoln Ave";
-        private static readonly DateTime s3StartDate = new DateTime(2011, 03, 01);
-        private static readonly DateTime s3EndDate = new DateTime(2019, 03, 16);
+        public static int Safari3Id = 1997;
+        public static string Safari3Name = "Reflecting Pool";
+        public static string Safari3Address = "Lincoln Ave";
+        private static readonly DateTime Safari3StartDate = new DateTime(2011, 03, 01);
+        private static readonly DateTime Safari3EndDate = new DateTime(2019, 03, 16);
         private static void CreateSafari(RabbitDBContext context, IServiceProvider serviceProvider)
         {
 
             var s1 = new Safari()
             {
-                Id = s1Id,
-                Name = s1Name,
-                Address = s1Address,
-                StartDate = s1StartDate,
-                EndDate = s1EndDate,
+                Id = Safari1Id,
+                Name = Safari1Name,
+                Address = Safari1Address,
+                StartDate = Safari1StartDate,
+                EndDate = Safari1EndDate,
             };
             var s2 = new Safari()
             {
-                Id = s2Id,
-                Name = s2Name,
-                Address = s2Address,
-                StartDate = s2StartDate,
-                EndDate = s2EndDate,
+                Id = Safari2Id,
+                Name = Safari2Name,
+                Address = Safari2Address,
+                StartDate = Safari2StartDate,
+                EndDate = Safari2EndDate,
             };
             var s3 = new Safari()
             {
-                Id = s3Id,
-                Name = s3Name,
-                Address = s3Address,
-                StartDate = s3StartDate,
-                EndDate = s3EndDate,
+                Id = Safari3Id,
+                Name = Safari3Name,
+                Address = Safari3Address,
+                StartDate = Safari3StartDate,
+                EndDate = Safari3EndDate,
             };
             var Safaris = new Safari[]
             {
@@ -155,32 +156,32 @@ namespace Puma.Prey.Rabbit.Context
             context.SaveChanges();
         }
 
-        private const int a1Id = 1234;
-        private const string a1AnimalName = "Jeff";
-        private const string a1Species = "Tiger";
-        private const string a1Weight = "250lb";
-        private const string a1Color = "yellow";
+        private static int a1Id = 1234;
+        private static string a1AnimalName = "Jeff";
+        private static string a1Species = "Tiger";
+        private static string a1Weight = "250lb";
+        private static string a1Color = "yellow";
         private static readonly DateTime a1Birthday = new DateTime(1997, 03, 01);
 
-        private const int a2Id = 1342;
-        private const string a2AnimalName = "Duff";
-        private const string a2Species = "Lion";
-        private const string a2Weight = "260lb";
-        private const string a2Color = "Grey";
+        private static int a2Id = 1342;
+        private static string a2AnimalName = "Duff";
+        private static string a2Species = "Lion";
+        private static string a2Weight = "260lb";
+        private static string a2Color = "Grey";
         private static readonly DateTime a2Birthday = new DateTime(1999, 04, 13);
 
-        private const int a3Id = 1096;
-        private const string a3AnimalName = "Jerry";
-        private const string a3Species = "Wolf";
-        private const string a3Weight = "110lb";
-        private const string a3Color = "White";
+        private static int a3Id = 1096;
+        private static string a3AnimalName = "Jerry";
+        private static string a3Species = "Wolf";
+        private static string a3Weight = "110lb";
+        private static string a3Color = "White";
         private static readonly DateTime a3Birthday = new DateTime(1994, 02, 13);
         private static void CreateAnimals(RabbitDBContext context, IServiceProvider serviceProvider)
         {
             var a1 = new Animal()
             {
                 Id = a1Id,
-                SafariId = s1Id,
+                SafariId = Safari1Id,
                 AnimalName = a1AnimalName,
                 Species = a1Species,
                 Weight = a1Weight,
@@ -190,7 +191,7 @@ namespace Puma.Prey.Rabbit.Context
             var a2 = new Animal()
             {
                 Id = a2Id,
-                SafariId = s2Id,
+                SafariId = Safari2Id,
                 AnimalName = a2AnimalName,
                 Species = a2Species,
                 Weight = a2Weight,
@@ -200,7 +201,7 @@ namespace Puma.Prey.Rabbit.Context
             var a3 = new Animal()
             {
                 Id = a3Id,
-                SafariId = s3Id,
+                SafariId = Safari3Id,
                 AnimalName = a3AnimalName,
                 Species = a3Species,
                 Weight = a3Weight,
@@ -224,28 +225,28 @@ namespace Puma.Prey.Rabbit.Context
             context.SaveChanges();
         }
 
-        private const int su1Id = 21311;
-        private const int su2Id = 13312;
-        private const int su3Id = 14721;
+        private static int su1Id = 21311;
+        private static int su2Id = 13312;
+        private static int su3Id = 14721;
         private static void CreateSafariUsers(RabbitDBContext context, IServiceProvider serviceProvider)
         {
             var su1 = new SafariUser()
             {
                 Id = su1Id,
-                PumaUserId = user1Id,
-                SafariId = s1Id,
+                PumaUserId = User1Id,
+                SafariId = Safari1Id,
             };
             var su2 = new SafariUser()
             {
                 Id = su2Id,
-                PumaUserId = user2Id,
-                SafariId = s2Id,
+                PumaUserId = User2Id,
+                SafariId = Safari2Id,
             };
             var su3 = new SafariUser()
             {
                 Id = su3Id,
-                PumaUserId = user3Id,
-                SafariId = s3Id,
+                PumaUserId = User3Id,
+                SafariId = Safari3Id,
             };
             var SafariUsers = new SafariUser[]
             {
@@ -266,51 +267,3 @@ namespace Puma.Prey.Rabbit.Context
 
     }
 }
-
-
-
-/*
-private static void CreateUserPrivate(RabbitDBContext context, IServiceProvider serviceProvider)
-{
-    var userManager = serviceProvider.GetService(typeof(UserManager<>)) as UserManager<PumaUser>;
-
-    var anaInformation = new UserPrivateInformation()
-    {
-        //Id = 1,
-        MemberId = Member2Id,
-        Address = "PO Box 924095",
-        Zipcode = "33092",
-        PumaUsers = new PumaUser() { Email = Member2Email },
-
-    };
-
-    var seyInformation = new UserPrivateInformation()
-    {
-        //Id = 2,
-        MemberId = Member3Id,
-        Address = "PO Box 122395",
-        Zipcode = "31231",
-        PumaUsers = new PumaUser() { Email = Member3Email },
-    };
-
-    var privateInformations = new UserPrivateInformation[]
-    {
-        anaInformation,
-        seyInformation,
-    };
-
-    foreach (var privateInformation in privateInformations)
-    {
-        var dbUser = userManager.FindByIdAsync(privateInformation.Email).GetAwaiter().GetResult();
-
-        if (dbUser != null)
-        {
-            context.Add(privateInformation);
-        }
-    }
-
-    context.SaveChanges();
-}
-*/
-
-

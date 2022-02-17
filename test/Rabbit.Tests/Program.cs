@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Puma.Prey.Rabbit.EF;
 using Puma.Prey.Rabbit.Models;
 
-namespace RabbitTest
+namespace RabbitTests
 {
     public class Program
     {
