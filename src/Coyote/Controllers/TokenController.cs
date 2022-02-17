@@ -89,8 +89,10 @@ namespace Coyote.Controllers.Users
         {
             if (Request.Headers.ContainsKey("X-Forwarded-For"))
                 return Request.Headers["X-Forwarded-For"];
-            else
+            else if (HttpContext.Connection.RemoteIpAddress != null)
                 return HttpContext.Connection.RemoteIpAddress.MapToIPv4().ToString();
+            else
+                return "127.0.0.1";
         }
 
         #endregion private methods
