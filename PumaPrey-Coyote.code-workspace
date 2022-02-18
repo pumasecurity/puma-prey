@@ -4,10 +4,10 @@
 			"path": "src/Coyote"
 		},
 		{
-			"path": "src/Database"
+			"path": "test/Coyote.Tests"
 		},
 		{
-			"path": "test/Coyote.Tests"
+			"path": "src/Rabbit"
 		}
 	]
 }

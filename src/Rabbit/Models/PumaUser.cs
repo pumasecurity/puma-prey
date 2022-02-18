@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace Puma.Prey.Rabbit.Models
 {
@@ -15,6 +16,7 @@ namespace Puma.Prey.Rabbit.Models
         public string BillingCity { get; set; }
         public string BillingState { get; set; }
         public string BillingZip { get; set; }
+        [JsonIgnore]
         public List<SafariUser> SafariUsers { get; set; }
         public List<RefreshToken> RefreshTokens { get; set; }
     }

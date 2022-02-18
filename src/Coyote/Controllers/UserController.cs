@@ -42,7 +42,7 @@ namespace Coyote.Controllers
 
             if (!result.Succeeded)
                 return BadRequest(new { message = result.Errors });
-            var user = await userService.ShowUsers(model.Email);
+            var user = await userService.GetUserByEmail(model.Email);
             return user;
         }
 
@@ -72,10 +72,10 @@ namespace Coyote.Controllers
                 return user;
         }
 
-        [HttpGet("{email}")]
-        public async Task<ActionResult<User>> GetAccount(string email)
+        [HttpGet("{id}")]
+        public ActionResult<User> GetAccount(int id)
         {
-            var account = await userService.ShowUsers(email);
+            var account = userService.GetUserByMemberId(id);
             if (account == null)
                 return NotFound();
 

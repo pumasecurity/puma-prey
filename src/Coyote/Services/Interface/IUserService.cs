@@ -15,7 +15,9 @@ namespace Coyote.Services.Interface
 
         Task<IdentityResult> UpdateUser(UserUpdate model);
 
-        Task<User> ShowUsers(string email);
+        User GetUserByMemberId(int id);
+
+        Task<User> GetUserByEmail(string email);
 
         Task<PumaUser> GetUserAsync(ClaimsPrincipal principal);
 

@@ -5,6 +5,8 @@ namespace Coyote.Models.Authentication
 {
     public class User
     {
+        public User() { }
+
         public int MemberId { get; set; }
         public string Email { get; set; }
         public string PhoneNumber { get; set; }

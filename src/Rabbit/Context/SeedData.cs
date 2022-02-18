@@ -52,6 +52,14 @@ namespace Puma.Prey.Rabbit.Context
                 UserName = Member1Email,
                 FirstName = Member1FName,
                 LastName = Member1LName,
+                PhoneNumber = "515-555-4323",
+                CreditCardNumber = "4111111111111111",
+                CreditCardExpiration = "04/23",
+                BillingAddress1 = "1208 Lion Circle",
+                BillingAddress2 = string.Empty,
+                BillingCity = "Pride Rock",
+                BillingState = "CO",
+                BillingZip = "80221",
             };
 
             var u2 = new PumaUser

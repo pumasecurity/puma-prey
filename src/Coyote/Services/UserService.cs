@@ -6,16 +6,20 @@ using Puma.Prey.Rabbit.Models;
 using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Puma.Prey.Rabbit.Context;
+using System.Linq;
 
 namespace Coyote.Services
 {
     public class UserService : IUserService
     {
         private readonly UserManager<PumaUser> _userManager;
+        private readonly RabbitDBContext _dbContext;
 
-        public UserService(UserManager<PumaUser> userManager)
+        public UserService(UserManager<PumaUser> userManager, RabbitDBContext dbContext)
         {
             _userManager = userManager;
+            _dbContext = dbContext;
         }
 
         public async Task<IdentityResult> CreateUser(UserRequest model)
@@ -44,23 +48,47 @@ namespace Coyote.Services
             return user != null;
         }
 
-        public async Task<User> ShowUsers(string email)
+        public User GetUserByMemberId(int id)
         {
-            var user = await _userManager.FindByEmailAsync(email);
+            var response = _dbContext.Users.Where(i => i.MemberId == id).FirstOrDefault();
 
-            var user1 = new User
+            if (response == null)
+                return null;
+
+            var user = new User
             {
-                Email = user.Email,
-                CreditCardNumber = user.CreditCardNumber,
-                CreditCardExpiration = user.CreditCardExpiration,
-                PhoneNumber = user.PhoneNumber,
-                BillingAddress1 = user.BillingAddress1,
-                BillingAddress2 = user.BillingAddress2,
-                BillingCity = user.BillingCity,
-                BillingState = user.BillingState,
-                BillingZip = user.BillingZip,
+                Email = response.Email,
+                CreditCardNumber = response.CreditCardNumber,
+                CreditCardExpiration = response.CreditCardExpiration,
+                PhoneNumber = response.PhoneNumber,
+                BillingAddress1 = response.BillingAddress1,
+                BillingAddress2 = response.BillingAddress2,
+                BillingCity = response.BillingCity,
+                BillingState = response.BillingState,
+                BillingZip = response.BillingZip,
             };
-            return user1;
+            return user;
+        }
+
+        public async Task<User> GetUserByEmail(string email)
+        {
+            var response = await _userManager.FindByEmailAsync(email);
+            if (response == null)
+                return null;
+
+            var user = new User
+            {
+                Email = response.Email,
+                CreditCardNumber = response.CreditCardNumber,
+                CreditCardExpiration = response.CreditCardExpiration,
+                PhoneNumber = response.PhoneNumber,
+                BillingAddress1 = response.BillingAddress1,
+                BillingAddress2 = response.BillingAddress2,
+                BillingCity = response.BillingCity,
+                BillingState = response.BillingState,
+                BillingZip = response.BillingZip,
+            };
+            return user;
         }
 
         public async Task<IdentityResult> UpdateUser(UserUpdate model)
