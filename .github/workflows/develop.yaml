@@ -40,6 +40,6 @@ jobs:
         uses: dorny/test-reporter@v1
         if: success() || failure()
         with:
-          name: Coyote
-          path: ./test/Coyote.Tests/TestResults/*.trx
-          reporter: dotnet-trx
+          name: "Coyote"
+          path: "test/Coyote.Tests/TestResults/*.trx"
+          reporter: "dotnet-trx"
