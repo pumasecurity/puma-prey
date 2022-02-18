@@ -35,14 +35,13 @@ namespace Coyote.Helpers
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new[] {
-                     new Claim(ClaimTypes.Name, user.UserName),
-                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                     new Claim(JwtRegisteredClaimNames.Aud, jwtOptions.Audience),
+                     new Claim(JwtRegisteredClaimNames.Iss, jwtOptions.Issuer),
                      new Claim(JwtRegisteredClaimNames.Sub, user.Id),
-                     new Claim(JwtRegisteredClaimNames.Email, user.Email),
                      new Claim(JwtClaimTypes.MemberId, user.MemberId.ToString()),
-                     new Claim(JwtClaimTypes.Safaris, string.Join(",", user.SafariUsers.Select(i => i.SafariId.ToString().ToArray()))),
+                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 }),
-                Expires = DateTime.UtcNow.AddMinutes(15),
+                Expires = DateTime.UtcNow.AddMinutes(jwtOptions.Lifetime),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);

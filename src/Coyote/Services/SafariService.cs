@@ -29,10 +29,12 @@ namespace Coyote.Services
 
         public List<Safari> GetSafaris(ClaimsPrincipal principal)
         {
-            var safariIds = principal.GetSafariId();
+            var user = principal.GetUserId();
+
             return _dbContext.Safaris
                 .Include(f => f.Animals)
-                .Where(i => safariIds.Contains(i.Id)).ToList();
+                .Where(i => i.SafariUsers.Any(i => i.PumaUserId == user))
+                .ToList();
         }
 
         public bool DeleteSafari(int Id)
