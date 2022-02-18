@@ -41,5 +41,5 @@ jobs:
         if: success() || failure()
         with:
           name: Coyote
-          path: ./TestResults/*.trx
+          path: ./test/Coyote.Tests/TestResults/*.trx
           reporter: dotnet-trx
