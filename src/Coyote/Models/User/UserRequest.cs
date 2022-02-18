@@ -22,7 +22,6 @@ namespace Coyote.Models.User
         [Required]
         public string BillingAddress1 { get; set; }
 
-        [Required]
         public string BillingAddress2 { get; set; }
 
         [Required]

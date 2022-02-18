@@ -14,11 +14,27 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using Coyote.Constants;
 using System;
+using Coyote.Models.User;
+using Coyote.Models.Authentication;
 
 namespace Coyote.Tests.Feature
 {
     public class UserControllerTests : BaseTestHarness
     {
+        public UserRequest CreateUserRequest = new UserRequest
+        {
+            Email = "new.user@pumasecurity.io",
+            Password = "Password1!",
+            PhoneNumber = "5158675309",
+            CreditCardNumber = "4111111111111111",
+            CreditCardExpiration = "04/25",
+            BillingAddress1 = "12 Address St",
+            BillingAddress2 = string.Empty,
+            BillingCity = "Ankeny",
+            BillingState = "IA",
+            BillingZip = "50311",
+        };
+
         public UserControllerTests()
         {
             //Set up any required mock data on the db context
@@ -56,6 +72,24 @@ namespace Coyote.Tests.Feature
             {
                 var user = await response.Content.ReadFromJsonAsync<PumaUser>();
                 user.Email.Should().Be(SeedData.Member2Email);
+            }
+        }
+
+        [Theory]
+        [InlineData(HttpStatusCode.OK)]
+        public async Task User_CreateUser(HttpStatusCode statusCode)
+        {
+            // Act
+            var response = await Client.CreateUser(CreateUserRequest);
+
+            // Assert
+            response.StatusCode.Should().Be(statusCode);
+
+            // Check data matches logged in user
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+                var user = await response.Content.ReadFromJsonAsync<User>();
+                user.Email.Should().Be(CreateUserRequest.Email);
             }
         }
     }

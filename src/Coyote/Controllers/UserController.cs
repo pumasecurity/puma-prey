@@ -29,6 +29,7 @@ namespace Coyote.Controllers
         }
 
         [HttpPost()]
+        [AllowAnonymous]
         public async Task<ActionResult<User>> Create([FromBody] UserRequest model)
         {
             var exists = await userService.DoesUserExist(model.Email);

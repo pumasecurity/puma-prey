@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Net.Http.Json;
 using System.Net;
 using Puma.Prey.Rabbit.Models;
+using Coyote.Models.User;
 
 namespace Coyote.Tests.Core.Functional
 {
@@ -28,6 +29,12 @@ namespace Coyote.Tests.Core.Functional
         public static async Task<HttpResponseMessage> GetUserByMemberId(this HttpClient httpClient, int memberId)
         {
             var response = await httpClient.GetAsync($"{baseEndpoint}/{memberId}");
+            return response;
+        }
+
+        public static async Task<HttpResponseMessage> CreateUser(this HttpClient httpClient, UserRequest request)
+        {
+            var response = await httpClient.PostAsJsonAsync($"{baseEndpoint}", request);
             return response;
         }
     }
