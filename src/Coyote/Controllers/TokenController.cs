@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
 
-namespace Coyote.Controllers.Users
+namespace Coyote.Controllers
 {
     [Authorize]
     [ApiController]

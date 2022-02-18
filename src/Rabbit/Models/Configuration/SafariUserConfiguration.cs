@@ -16,7 +16,7 @@ namespace Puma.Prey.Rabbit.Models.Configuration
                 .HasForeignKey(su => su.PumaUserId);
 
             builder.HasOne(su => su.Safaris)
-                .WithMany(s => s.SafariUsers)
+                .WithMany(s => s.Users)
                 .HasForeignKey(su => su.SafariId);
         }
     }

@@ -10,6 +10,10 @@ using Puma.Prey.Rabbit.Context;
 using Coyote.Models.Token;
 using Microsoft.AspNetCore.Http;
 using Puma.Prey.Rabbit.Models;
+using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
+using Coyote.Constants;
+using System;
 
 namespace Coyote.Tests.Feature
 {
@@ -34,13 +38,15 @@ namespace Coyote.Tests.Feature
         }
 
         [Theory]
-        [InlineData(SeedData.Member2Id, HttpStatusCode.OK)]
-        public async Task User_GetUserById(int id, HttpStatusCode statusCode)
+        [InlineData(HttpStatusCode.OK)]
+        public async Task User_GetUserById(HttpStatusCode statusCode)
         {
             // Act
             var token = await Client.GetJwtAsync(SeedData.Member2Email, SeedData.User2Password);
             Client.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
-            var response = await Client.GetUserByMemberId(id);
+            JwtSecurityToken jwt = new JwtSecurityToken(token);
+            var memberId = jwt.Claims.First(i => i.Type == JwtClaimTypes.MemberId).Value;
+            var response = await Client.GetUserByMemberId(Convert.ToInt32(memberId));
 
             // Assert
             response.StatusCode.Should().Be(statusCode);

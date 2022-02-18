@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.TestHost;
 using System;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using Microsoft.AspNetCore.Identity;
+using Puma.Prey.Rabbit.Models;
 
 namespace Coyote.Tests.Core
 {
@@ -29,7 +31,7 @@ namespace Coyote.Tests.Core
                 .UseStartup<Startup>();
 
             var server = new TestServer(builder);
-            server.BaseAddress = new Uri("https://localhost:8443");
+            server.BaseAddress = new Uri("https://localhost:8843");
 
             //Create HTTP client for the API calls
             Client = server.CreateClient();

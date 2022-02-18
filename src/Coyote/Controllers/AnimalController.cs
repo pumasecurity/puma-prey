@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Puma.Prey.Rabbit.Models;
 using System.Threading.Tasks;
 
-namespace Coyote.Controllers.Animals
+namespace Coyote.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -20,8 +20,8 @@ namespace Coyote.Controllers.Animals
         [HttpPost]
         public async Task<ActionResult<Animal>> CreateAnimal([FromBody] AnimalRequest model)
         {
-            var success = await _animalService.CreateAnimal(model.Id, model.SafariId, model.AnimalName, model.Species, model.Weight, model.Color, model.DateOfBirth);
-            return success;
+            var animal = await _animalService.CreateAnimal(model.SafariId, model.Name, model.Species, model.Weight, model.Color, model.DateOfBirth);
+            return Ok(animal);
         }
 
         [HttpPut]
@@ -35,7 +35,7 @@ namespace Coyote.Controllers.Animals
         }
 
         [HttpGet("{Id}")]
-        public async Task<ActionResult<Animal>> GetAnimals(int Id)
+        public async Task<ActionResult<Animal>> GetAnimal(int Id)
         {
             var animal = await _animalService.GetAnimal(Id);
             if (animal == null)

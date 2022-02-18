@@ -7,7 +7,7 @@ namespace Coyote.Services.Interface
 {
     public interface IAnimalService
     {
-        Task<Animal> CreateAnimal(int id, int safariId, string animalName, string species, string weight, string color, DateTime? dateOfBirth);
+        Task<Animal> CreateAnimal(int safariId, string animalName, string species, string weight, string color, DateTime? dateOfBirth);
 
         Task<Animal> GetAnimal(int Id);
 

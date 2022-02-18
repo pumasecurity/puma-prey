@@ -17,11 +17,10 @@ namespace Coyote.Services
             _dbContext = dbContext;
         }
 
-        public async Task<Animal> CreateAnimal(int id, int safariId, string animalName, string species, string weight, string color, DateTime? dateOfBirth)
+        public async Task<Animal> CreateAnimal(int safariId, string animalName, string species, string weight, string color, DateTime? dateOfBirth)
         {
             var animals = new Animal()
             {
-                Id = id,
                 SafariId = safariId,
                 Species = species,
                 Weight = weight,
@@ -44,7 +43,7 @@ namespace Coyote.Services
             animal.Species = model.Species;
             animal.Weight = model.Weight;
             animal.Color = model.Color;
-            animal.AnimalName = model.AnimalName;
+            animal.Name = model.Name;
             animal.DateOfBirth = model.DateOfBirth;
             await _dbContext.SaveChangesAsync();
             return animal;

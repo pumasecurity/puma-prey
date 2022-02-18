@@ -6,16 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 using Puma.Prey.Rabbit.Models;
 using System.Collections.Generic;
 
-namespace Coyote.Controllers.Safaris
+namespace Coyote.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class SafarisController : Controller
+    public class SafariController : Controller
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly ISafariService _safariService;
 
-        public SafarisController(ISafariService safariService, IHttpContextAccessor httpContextAccessor)
+        public SafariController(ISafariService safariService, IHttpContextAccessor httpContextAccessor)
         {
             _safariService = safariService;
             _httpContextAccessor = httpContextAccessor;
@@ -34,7 +34,7 @@ namespace Coyote.Controllers.Safaris
             if (safari == null)
                 return NotFound();
 
-            return safari;
+            return Ok(safari);
         }
 
         [HttpDelete("{Id}")]

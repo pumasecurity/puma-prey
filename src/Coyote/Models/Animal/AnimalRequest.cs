@@ -5,14 +5,13 @@ namespace Coyote.Models.Animal
 {
     public class AnimalRequest
     {
-        [Required]
         public int Id { get; set; }
 
         [Required]
         public int SafariId { get; set; }
 
         [Required]
-        public string AnimalName { get; set; }
+        public string Name { get; set; }
 
         [Required]
         public string Species { get; set; }

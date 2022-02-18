@@ -23,15 +23,15 @@ namespace Puma.Prey.Rabbit.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("AnimalName")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Color")
                         .HasColumnType("longtext");
 
                     b.Property<DateTime?>("DateOfBirth")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<int>("SafariId")
                         .HasColumnType("int");
@@ -185,6 +185,8 @@ namespace Puma.Prey.Rabbit.Migrations
                         .HasColumnType("varchar(256)");
 
                     b.HasKey("Id");
+
+                    b.HasAlternateKey("MemberId");
 
                     b.HasIndex("MemberId");
 

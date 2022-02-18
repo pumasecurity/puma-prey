@@ -9,8 +9,8 @@ using Puma.Prey.Rabbit.Context;
 namespace Puma.Prey.Rabbit.Migrations
 {
     [DbContext(typeof(RabbitDBContext))]
-    [Migration("20220124161219_RefreshToken")]
-    partial class RefreshToken
+    [Migration("20220218164728_Initialize")]
+    partial class Initialize
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -25,15 +25,15 @@ namespace Puma.Prey.Rabbit.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("AnimalName")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Color")
                         .HasColumnType("longtext");
 
                     b.Property<DateTime?>("DateOfBirth")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<int>("SafariId")
                         .HasColumnType("int");
@@ -187,6 +187,8 @@ namespace Puma.Prey.Rabbit.Migrations
                         .HasColumnType("varchar(256)");
 
                     b.HasKey("Id");
+
+                    b.HasAlternateKey("MemberId");
 
                     b.HasIndex("MemberId");
 

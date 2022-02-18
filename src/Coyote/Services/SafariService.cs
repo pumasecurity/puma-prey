@@ -33,7 +33,8 @@ namespace Coyote.Services
 
             return _dbContext.Safaris
                 .Include(f => f.Animals)
-                .Where(i => i.SafariUsers.Any(i => i.PumaUserId == user))
+                .Include(i => i.Users)
+                .Where(i => i.Users.Any(i => i.PumaUserId == user))
                 .ToList();
         }
 

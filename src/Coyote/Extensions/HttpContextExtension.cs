@@ -11,7 +11,7 @@ namespace Coyote.Extensions
     {
         public static string GetUserId(this ClaimsPrincipal principal)
         {
-            return principal.FindFirst(c => c.Type == JwtRegisteredClaimNames.Sub)?.Value;
+            return principal.FindFirst(c => c.Type == ClaimTypes.NameIdentifier).Value;
         }
     }
 }
