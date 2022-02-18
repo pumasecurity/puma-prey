@@ -44,10 +44,11 @@ namespace Coyote.Tests.Feature
         {
             // Act
             var response = await Client.SendAuthenticationPostRequestAsync(SeedData.Member1Email, SeedData.User1Password);
-            var authenticationResponse = await response.Content.ReadFromJsonAsync<AuthenticateResponse>();
 
             // Assert
-            response.StatusCode.Should().Be(HttpStatusCode.Unauthorized);
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
+
+            var authenticationResponse = await response.Content.ReadFromJsonAsync<AuthenticateResponse>();
             authenticationResponse.JwtToken.Should().NotBeNull();
         }
     }

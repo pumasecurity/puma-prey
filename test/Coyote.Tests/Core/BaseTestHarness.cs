@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Hosting;
 using System.IO;
 using Microsoft.AspNetCore.TestHost;
 using System;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace Coyote.Tests.Core
 {
@@ -34,6 +36,7 @@ namespace Coyote.Tests.Core
 
             //Set DB context for test data
             DbContext = server.Host.Services.GetService(typeof(RabbitDBContext)) as RabbitDBContext;
+            DbContext.Seed(server.Host.Services);
         }
     }
 }
