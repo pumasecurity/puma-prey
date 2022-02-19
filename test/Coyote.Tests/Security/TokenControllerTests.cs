@@ -24,6 +24,18 @@ namespace Coyote.Tests.Security
         }
 
         [Theory]
+        [InlineData(SeedData.Member2Email, SeedData.User2Password)]
+        public async Task ASVS_3_5_2(string username, string password)
+        {
+            // Act
+            var token1 = await Client.GetJwtAsync(username, password);
+            var token2 = await Client.GetJwtAsync(username, password);
+
+            // Assert
+            token1.Should().NotBe(token2);
+        }
+
+        [Theory]
         [InlineData(SeedData.Member2Email, SeedData.User2Password, HttpStatusCode.Unauthorized)]
         public async Task ASVS_3_5_3(string username, string password, HttpStatusCode statusCode)
         {
