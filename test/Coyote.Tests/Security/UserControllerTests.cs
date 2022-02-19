@@ -7,6 +7,7 @@ using Coyote.Models.User;
 using Coyote.Tests.Core;
 using Coyote.Tests.Core.Functional;
 using FluentAssertions;
+using Puma.Prey.Rabbit.Context;
 using Xunit;
 
 namespace Coyote.Tests.Security
@@ -80,6 +81,20 @@ namespace Coyote.Tests.Security
             CreateUserRequest.Email = $"{index}{CreateUserRequest.Email}";
             CreateUserRequest.Password = password;
             var response = await Client.CreateUser(CreateUserRequest);
+
+            // Assert
+            response.StatusCode.Should().Be(statusCode);
+        }
+
+        [Theory]
+        [InlineData(SeedData.Member2Email, SeedData.User2Password, 2, HttpStatusCode.OK)]
+        [InlineData(SeedData.Member2Email, SeedData.User2Password, 1, HttpStatusCode.Unauthorized)]
+        public async Task ASVS_4_2_1(string username, string password, int memberId, HttpStatusCode statusCode)
+        {
+            // Act
+            var token = await Client.GetJwtAsync(username, password);
+            Client.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
+            var response = await Client.GetUserByMemberId(memberId);
 
             // Assert
             response.StatusCode.Should().Be(statusCode);
