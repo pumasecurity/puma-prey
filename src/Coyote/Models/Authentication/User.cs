@@ -9,6 +9,8 @@ namespace Coyote.Models.Authentication
 
         public int MemberId { get; set; }
         public string Email { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public string PhoneNumber { get; set; }
         public string CreditCardNumber { get; set; }
         public string CreditCardExpiration { get; set; }

@@ -29,6 +29,8 @@ namespace Coyote.Services
                 Id = Guid.NewGuid().ToString(),
                 Email = model.Email,
                 UserName = model.Email,
+                FirstName = model.FirstName,
+                LastName = model.LastName,
                 PhoneNumber = model.PhoneNumber,
                 CreditCardNumber = model.CreditCardNumber,
                 CreditCardExpiration = model.CreditCardExpiration,
@@ -58,6 +60,8 @@ namespace Coyote.Services
             var user = new User
             {
                 Email = response.Email,
+                FirstName = response.FirstName,
+                LastName = response.LastName,
                 CreditCardNumber = response.CreditCardNumber,
                 CreditCardExpiration = response.CreditCardExpiration,
                 PhoneNumber = response.PhoneNumber,
@@ -78,6 +82,9 @@ namespace Coyote.Services
 
             var user = new User
             {
+                MemberId = response.MemberId,
+                FirstName = response.FirstName,
+                LastName = response.LastName,
                 Email = response.Email,
                 CreditCardNumber = response.CreditCardNumber,
                 CreditCardExpiration = response.CreditCardExpiration,
@@ -93,18 +100,20 @@ namespace Coyote.Services
 
         public async Task<IdentityResult> UpdateUser(UserUpdate model)
         {
-            var users = await _userManager.FindByEmailAsync(model.Email);
+            var user = await _userManager.FindByEmailAsync(model.Email);
 
-            users.PhoneNumber = model.PhoneNumber;
-            users.CreditCardNumber = model.CreditCardNumber;
-            users.CreditCardExpiration = model.CreditCardExpiration;
-            users.BillingAddress1 = model.BillingAddress1;
-            users.BillingAddress2 = model.BillingAddress2;
-            users.BillingCity = model.BillingCity;
-            users.BillingState = model.BillingState;
-            users.BillingZip = model.BillingZip;
+            user.PhoneNumber = model.PhoneNumber;
+            user.CreditCardNumber = model.CreditCardNumber;
+            user.CreditCardExpiration = model.CreditCardExpiration;
+            user.BillingAddress1 = model.BillingAddress1;
+            user.BillingAddress2 = model.BillingAddress2;
+            user.BillingCity = model.BillingCity;
+            user.BillingState = model.BillingState;
+            user.BillingZip = model.BillingZip;
+            user.FirstName = model.FirstName;
+            user.LastName = model.LastName;
 
-            var result = await _userManager.UpdateAsync(users);
+            var result = await _userManager.UpdateAsync(user);
             return result;
         }
 

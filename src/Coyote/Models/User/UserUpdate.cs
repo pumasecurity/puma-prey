@@ -6,6 +6,10 @@ namespace Coyote.Models.User
     {
         [Required]
         public string Email { get; set; }
+        [Required]
+        public string FirstName { get; set; }
+        [Required]
+        public string LastName { get; set; }
 
         [Required]
         public string PhoneNumber { get; set; }
@@ -19,7 +23,6 @@ namespace Coyote.Models.User
         [Required]
         public string BillingAddress1 { get; set; }
 
-        [Required]
         public string BillingAddress2 { get; set; }
 
         [Required]

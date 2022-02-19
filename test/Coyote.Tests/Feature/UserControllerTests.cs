@@ -25,6 +25,8 @@ namespace Coyote.Tests.Feature
         {
             Email = "new.user@pumasecurity.io",
             Password = "Password1!",
+            FirstName = "Billy",
+            LastName = "Blue",
             PhoneNumber = "5158675309",
             CreditCardNumber = "4111111111111111",
             CreditCardExpiration = "04/25",
@@ -90,6 +92,7 @@ namespace Coyote.Tests.Feature
             {
                 var user = await response.Content.ReadFromJsonAsync<User>();
                 user.Email.Should().Be(CreateUserRequest.Email);
+                user.MemberId.Should().BeGreaterThan(0);
             }
         }
     }

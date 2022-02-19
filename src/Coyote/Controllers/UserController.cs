@@ -43,6 +43,7 @@ namespace Coyote.Controllers
 
             if (!result.Succeeded)
                 return BadRequest(new { message = result.Errors });
+
             var user = await userService.GetUserByEmail(model.Email);
             return user;
         }
