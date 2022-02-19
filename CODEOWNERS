@@ -1,0 +1,7 @@
+# high risk code inventory
+/.github/               @pumasecurity/admin
+CODEOWNERS              @pumasecurity/admin
+.gitallowed             @pumasecurity/admin
+azure-pipelines.yml     @pumasecurity/admin
+Jenkinsfile             @pumasecurity/admin
+.pumafile               @pumasecurity/admin
