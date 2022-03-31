@@ -171,6 +171,9 @@ csx/
 ecf/
 rcf/
 
+# Microsoft Azure ApplicationInsights config file
+ApplicationInsights.config
+
 # Windows Store app package directories and files
 AppPackages/
 BundleArtifacts/
@@ -192,6 +195,7 @@ ClientBin/
 *.pfx
 *.publishsettings
 node_modules/
+/node_modules
 orleans.codegen.cs
 
 # Since there are multiple workflows, uncomment next line to ignore bower_components
@@ -252,5 +256,10 @@ paket-files/
 .idea/
 *.sln.iml
 
-# ABC
+# angular cache
+**/.angular/
+
+# db files
 *.db
+*.db-shm
+*.db-wal
