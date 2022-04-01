@@ -4,6 +4,4 @@ namespace Gopher.Models;
 
 public class ApplicationUser : IdentityUser
 {
-    
 }
-

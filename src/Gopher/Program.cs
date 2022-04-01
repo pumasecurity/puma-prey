@@ -8,6 +8,7 @@ using Gopher.Services;
 using System.Reflection;
 using FluentValidation.AspNetCore;
 using Microsoft.OpenApi.Models;
+using Gopher.Data.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -63,8 +64,17 @@ builder.Services.AddAuthentication()
 //    options.CustomSchemaIds(x => x.FullName);
 //});
 
-builder.Services.AddTransient<ProjectService>();
-builder.Services.AddTransient<ProjectTaskService>();
+builder.Services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddTransient<IProjectRepository, ProjectRepository>();
+builder.Services.AddTransient<IProjectTaskRepository, ProjectTaskRepository>();
+builder.Services.AddTransient<IProjectTaskTagRepository, ProjectTaskTagRepository>();
+builder.Services.AddTransient<ITagRepository, TagRepository>();
+
+builder.Services.AddTransient<IProjectService, ProjectService>();
+builder.Services.AddTransient<IProjectTaskService, ProjectTaskService>();
+builder.Services.AddTransient<IProjectTaskTagService, ProjectTaskTagService>();
+builder.Services.AddTransient<ITagService, TagService>();
+
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();

@@ -6,10 +6,10 @@ using Gopher.Models;
 
 namespace Gopher.ViewModels
 {
-    public class ProjectTaskVM
+    public class ProjectTaskDTO
     {
 
-        public string ID { get; set; }
+        public Guid ID { get; set; }
         public string Description { set; get; }
         public bool IsDone { set; get; }
         public string Name { get; set; }
@@ -18,12 +18,12 @@ namespace Gopher.ViewModels
         public Priority Priority { set; get; }
 
         public int ProjectID { get; set; }
-        public List<string> TagName { get; set; }
+        public List<Guid> TagIDs { get; set; }
     }
 
-    public class ProjectTaskAndTagVM
+    public class ProjectTaskAndTagDto
     {
-        public string ID { get; set; }
+        public Guid ID { get; set; }
         public string Description { set; get; }
         public bool IsDone { set; get; }
         public string Name { get; set; }

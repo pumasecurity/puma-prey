@@ -15,9 +15,14 @@ public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>
     }
 
     public DbSet<Tag> Tags { get; set; }
-
     public DbSet<Project> Projects { get; set; }
     public DbSet<ProjectTask> ProjectTasks { get; set; }
     public DbSet<ProjectTaskTag> ProjectTaskTags { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        builder.Entity<ProjectTaskTag>().HasKey(et => new { et.ProjectTaskID, et.TagID });
+        base.OnModelCreating(builder);
+    }
 }
 

@@ -1,13 +1,8 @@
 ﻿using Gopher.Data;
 using Gopher.Models;
+using Gopher.Services;
 using Gopher.ViewModels;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Gopher.Controllers
 {
@@ -16,75 +11,64 @@ namespace Gopher.Controllers
     [Produces("application/json")]
     public class TagController : ControllerBase
     {
-        private readonly ApplicationDbContext context;
+        private readonly ITagService tagservice;
 
-        public TagController(ApplicationDbContext context)
+        public TagController(ApplicationDbContext context, ITagService tagService)
         {
-            this.context = context;
+            this.tagservice = tagService;
         }
-
 
         [HttpPost]
         [Route("")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult AddProjectTaskWithTags(TagVM tagVM)
+        public async Task<IActionResult> AddTag(TagDto tagVM)
         {
-            var tag = new Tag()
-            {
-                Name = tagVM.Name
-            };
-            context.Tags.Add(tag);
-            context.SaveChanges();
+            await tagservice.AddTag(tagVM.ID, tagVM.Name);
             return Ok(tagVM.Name);
         }
 
-
         [HttpGet]
         [Route("/api/v1/Tag/{id}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        public ActionResult GetById(string id)
+        [ProducesResponseType(typeof(Tag), StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetById(Guid ID)
         {
-            var tag = context.Tags.Where(n => n.ID == id).Select(projectTaskVM => new TagAndProjectTaskVM()
-            {
-                Name = projectTaskVM.Name
-            });
+            var tag =  await tagservice.GetById(ID);
+            if (tag == null)
+                return NotFound();
+            if (tag == null)
+                return NotFound();
 
             return Ok(tag);
         }
 
-
         [HttpGet]
         [Route("")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        public ActionResult<List<Tag>> GetAll()
+        [ProducesResponseType(typeof(List<Tag>), StatusCodes.Status200OK)]
+        public IActionResult GetAll()
         {
-            return Ok(context.Tags.ToList());
+            throw new NotImplementedException(); //TODO insert flag
         }
-
 
         [HttpDelete]
         [Route("/api/v1/Tag/{id}")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public ActionResult Delete(string id)
+        public async Task<IActionResult> Delete(Guid id)
         {
-            var projectTask = context.Tags.FirstOrDefault(p => p.ID == id);
-            if (projectTask == null)
+            var tag = await tagservice.GetById(id);
+            if (tag == null)
                 return BadRequest();
             try
             {
-                context.Tags.Remove(projectTask);
+                await tagservice.DeleteTag(tag);
+                return Ok();
             }
             catch (Exception ex)
             {
                 return BadRequest(ex);
             }
-
-            context.SaveChanges();
-            return Ok();
-
         }
     }
 }

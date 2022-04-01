@@ -1,86 +1,53 @@
 ﻿using Gopher.Data;
+using Gopher.Data.Repositories;
 using Gopher.Models;
 using Gopher.ViewModels;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Gopher.Services
 {
-    public class ProjectTaskService
+    public class ProjectTaskService : IProjectTaskService
     {
-        private readonly ApplicationDbContext context;
+        private readonly IProjectTaskRepository projectTaskRepository;
+        private readonly IProjectTaskTagRepository projectTaskTagRepository;
 
-        public ProjectTaskService(ApplicationDbContext context)
+        public ProjectTaskService(IProjectTaskRepository projectTaskRepository, IProjectTaskTagRepository projectTaskTagRepository)
         {
-            this.context = context;
+            this.projectTaskRepository = projectTaskRepository;
+            this.projectTaskTagRepository = projectTaskTagRepository;
         }
 
-        public async Task AddProjectTaskAsync(ProjectTaskVM projectTaskVM)
+        public async Task AddProjectTaskAsync(ProjectTask projectTask)
         {
-            var projectTask = new ProjectTask()
-            {
-                ID = projectTaskVM.ID,
-                Description = projectTaskVM.Description,
-                ProjectID = projectTaskVM.ProjectID,
-                Name = projectTaskVM.Name,
-                IsDone = projectTaskVM.IsDone,
-                Date = projectTaskVM.Date,
-                Priority = projectTaskVM.Priority,
-
-            };
-
-            context.ProjectTasks.Add(projectTask);
-            await context.SaveChangesAsync();
-
-            foreach (var item in projectTaskVM.TagID)
-            {
-                var projectTasktag = new ProjectTaskTag()
-                {
-                    ProjectTaskID = projectTask.ID,
-                    TagID = item
-                };
-
-                context.ProjectTaskTags.Add(projectTasktag);
-                await context.SaveChangesAsync();
-            }
-
-
+            await projectTaskRepository.AddAsync(projectTask);
+            await projectTaskTagRepository.AddRangeAsync(projectTask.ProjectTaskTags.ToArray());
         }
 
-        public async Task UpdateTagsInProjectTaskList(string projectTaskID, string[] tags)
-        {
-            var list = await context.ProjectTaskTags.Where(x => x.ProjectTaskID == projectTaskID).ToListAsync();
-            context.ProjectTaskTags.RemoveRange(list);
-            context.ProjectTaskTags.AddRange(tags.Select(x => new ProjectTaskTag { ProjectTaskID = projectTaskID, TagID = x }));
-
-            await context.SaveChangesAsync();
-        }
-
-
-
-        public async Task<ProjectTaskAndTagVM> FindProjectTaskListByIdAsync(string ID)
+        public async Task<ProjectTaskAndTagDto?> GetProjectTaskByIdAsync(Guid ID)
         {
             // return await context.ProjectTaskList.Where(x => x.id == id).FirstOrDefaultAsync();
-            var projectTask = await context.ProjectTasks.Where(n => n.ID == ID).Select(projectTaskAndTagVM => new ProjectTaskAndTagVM()
-            {
-                Date = projectTaskAndTagVM.Date,
-                Description = projectTaskAndTagVM.Description,
-                ProjectID = projectTaskAndTagVM.ProjectID,
-                Name = projectTaskAndTagVM.Name,
-                IsDone = projectTaskAndTagVM.IsDone,
-                Priority = projectTaskAndTagVM.Priority,
-                TagName = projectTaskAndTagVM.ProjectTaskTags.Select(n => n.Tag.Name).ToList()
-            }).FirstOrDefaultAsync();
 
-            return projectTask;
+            var projectTask = await projectTaskRepository.GetProjectTaskByIdAsync(ID);
+
+            if (projectTask == null) return null;
+
+            var viewmodel = new ProjectTaskAndTagDto()
+            {
+                Date = projectTask.Date,
+                Description = projectTask.Description,
+                ProjectID = projectTask.ProjectID,
+                Name = projectTask.Name,
+                IsDone = projectTask.IsDone,
+                Priority = projectTask.Priority,
+                TagName = projectTask.ProjectTaskTags.Select(n => n.Tag.Name).ToList()
+            };
+
+            return viewmodel;
         }
 
-        public async Task<List<ProjectTaskAndTagVM>> GetAll()
+        public async Task<List<ProjectTaskAndTagDto>> GetAll()
         {
-            return await context.ProjectTasks.Select(projectTaskAndTagVM => new ProjectTaskAndTagVM()
+            return await projectTaskRepository.GetAll().Select(projectTaskAndTagVM => new ProjectTaskAndTagDto()
             {
                 ID = projectTaskAndTagVM.ID,
                 Date = projectTaskAndTagVM.Date,
@@ -93,45 +60,26 @@ namespace Gopher.Services
             }).ToListAsync();
         }
 
-        public async Task DeleteProjectTaskAsync(string ID)
-        {            
-            var projectTaskTag = context.ProjectTaskTags.FirstOrDefault(p => p.ProjectTaskID == ID);
-            if (projectTaskTag != null)
-            {
-                context.ProjectTaskTags.Remove(projectTaskTag);
-            }
+        public async Task DeleteProjectTaskAsync(Guid ID)
+        {
 
-            var projectTask = context.ProjectTasks.FirstOrDefault(p => p.ID == ID);
-
+            var projectTask = await projectTaskRepository.GetProjectTaskByIdAsync(ID);
             if (projectTask != null)
             {
-                context.ProjectTasks.Remove(projectTask);
-            }               
-
-            await context.SaveChangesAsync();
+                await projectTaskTagRepository.RemoveRangeAsync(projectTask.ProjectTaskTags.ToArray());
+                await projectTaskRepository.RemoveAsync(projectTask);
+            }
         }
 
-        public List<ProjectTask> GetAllByProjectID(int ID)
+        public IQueryable<ProjectTask> GetAllByProjectID(int ID)
         {
-            return context.ProjectTasks.Where(x => x.ProjectID == ID).ToList();
+            return projectTaskRepository.GetAll().Where(x => x.ProjectID == ID);
         }
-        public void Update(string id, ProjectTaskVM projectTaskVM)
+
+        public async Task<ProjectTask> Update(ProjectTask projectTaskUpdate)
         {
-
-            //TODO: fetch project task to update by ID
-            var projectTask = new ProjectTask()
-            {
-                ID = projectTaskVM.ID,
-                Description = projectTaskVM.Description,
-                ProjectID = projectTaskVM.ProjectID,
-                Name = projectTaskVM.Name,
-                IsDone = projectTaskVM.IsDone,
-                Date = projectTaskVM.Date,
-                Priority = projectTaskVM.Priority
-            };
-
-            context.ProjectTasks.Update(projectTask);
-            context.SaveChanges();
+            //TODO: fetch project task to update by ID                
+            return await projectTaskRepository.UpdateAsync(projectTaskUpdate);
         }
     }
 }

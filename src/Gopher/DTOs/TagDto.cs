@@ -5,13 +5,9 @@ using System.Threading.Tasks;
 
 namespace Gopher.ViewModels
 {
-    public class TagVM
+    public class TagDto
     {
+        public Guid ID { get; set; }
         public string Name { get; set; }
-    }
-    public class TagAndProjectTaskVM
-    {
-        public string Name { get; set; }
-        public List<string> ProjectTaskDescription { get; set; }
     }
 }

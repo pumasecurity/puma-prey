@@ -2,12 +2,7 @@
 using Gopher.Services;
 using Gopher.ViewModels;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Gopher.Controllers
 {
@@ -17,13 +12,16 @@ namespace Gopher.Controllers
     [Produces("application/json")]
     public class ProjectTaskController : ControllerBase
     {
-        private readonly ProjectTaskService projectTaskService;
-        public ProjectTaskController(ProjectTaskService projectTaskService)
+        private readonly IProjectTaskService projectTaskService;
+        private readonly ILogger<ProjectTaskController> logger;
+
+        public ProjectTaskController(IProjectTaskService projectTaskService, ILogger<ProjectTaskController> logger)
         {
             this.projectTaskService = projectTaskService;
+            this.logger = logger;
         }
 
-        // GET: api/v1/ProjectTasklist/
+        // GET: api/v1/ProjectTasks/
         [HttpGet]
         [Route("all")]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -32,64 +30,83 @@ namespace Gopher.Controllers
             return Ok(await projectTaskService.GetAll());
         }
 
-        // GET: api/v1/ProjectTasklist/{id}
+        // GET: api/v1/ProjectTasks/{id}
         [HttpGet]
         [Route("{id}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ProjectTaskDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<ProjectTaskVM>> GetById(string id)
+        public async Task<IActionResult> GetById(Guid id)
         {
-            if (string.IsNullOrEmpty(id))
-                return BadRequest();
-            var projectTask = await projectTaskService.FindProjectTaskListByIdAsync(id);
-            if (projectTask == null)
-                return NotFound();
-            return Ok(projectTask);
+            try
+            {
+                //if (string.IsNullOrEmpty(id))
+                //    return BadRequest();
+                var projectTask = await projectTaskService.GetProjectTaskByIdAsync(id);
+                if (projectTask == null)
+                    return NotFound();
+                return Ok(projectTask);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex.ToString());                
+                return BadRequest(ex);
+            }
+            
         }
 
-        // POST: api/v1/ProjectTasklist 
+        // POST: api/v1/ProjectTasks
         [HttpPost]
         [Route("")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult> Create([FromBody] ProjectTaskVM projectTask)
+        [ProducesResponseType(typeof(ProjectTaskDTO), StatusCodes.Status200OK)]
+        public async Task<IActionResult> Create([FromBody] ProjectTaskDTO projectTaskVM)
         {
+            var projectTask = new ProjectTask()
+            {
+                ID = projectTaskVM.ID,
+                Description = projectTaskVM.Description,
+                ProjectID = projectTaskVM.ProjectID,
+                Name = projectTaskVM.Name,
+                IsDone = projectTaskVM.IsDone,
+                Date = projectTaskVM.Date,
+                Priority = projectTaskVM.Priority,
+                ProjectTaskTags = projectTaskVM.TagIDs.Select(x => new ProjectTaskTag() { ProjectTaskID = projectTaskVM.ID, TagID = x})
+            };
+
             await projectTaskService.AddProjectTaskAsync(projectTask);
             return Ok(projectTask);
         }
 
-        // DELETE: api/v1/persons/{id}
+        // DELETE: api/v1/ProjectTask/{id}
         [HttpDelete]
         [Route("{id}")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        public async Task<ActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(Guid id)
         {
-
             try
             {
                 await projectTaskService.DeleteProjectTaskAsync(id);
-
             }
             catch (Exception ex)
             {
+                logger.LogError(ex.ToString());
                 return BadRequest(ex);
             }
             return NoContent();
         }
 
-
         [HttpGet]
         [Route("")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        public ActionResult<List<ProjectTaskVM>> GetAll(int projectID)
+        [ProducesResponseType(typeof(List<ProjectTaskDTO>), StatusCodes.Status200OK)]
+        public IActionResult GetAll(int projectID)
         {
-            var projectTaskVMs = new List<ProjectTaskVM>();
+            var projectTaskVMs = new List<ProjectTaskDTO>();
             var projectTasks = projectTaskService.GetAllByProjectID(projectID);
             foreach (var item in projectTasks)
             {
-                var ProjectTaskVMItem = new ProjectTaskVM()
+                var ProjectTaskVMItem = new ProjectTaskDTO()
                 {
                     ID = item.ID,
                     Description = item.Description,
@@ -98,28 +115,42 @@ namespace Gopher.Controllers
                     IsDone = item.IsDone,
                     Date = item.Date,
                     Priority = item.Priority,
-                    //TagID = "" //TODO
+                    TagIDs = item.ProjectTaskTags.Select(t => t.ID).ToList()
                 };
 
                 projectTaskVMs.Add(ProjectTaskVMItem);
             }
 
-
-
             return Ok(projectTaskVMs);
         }
+
         [HttpPut]
         [Route("{id}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        public ActionResult<ProjectTaskVM> Update(string id, ProjectTaskVM ProjectTask)
+        [ProducesResponseType(typeof(ProjectTaskDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Update(string id, ProjectTaskDTO projectTaskVM)
         {
-            ProjectTaskVM projectTaskUpdate;
             try
             {
-                projectTaskService.Update(id, ProjectTask);
+                if (!Guid.TryParse(id, out var projectTaskID))
+                    return BadRequest("Invalid ID format");
+
+                var projectTask = new ProjectTask()
+                {
+                    ID = projectTaskVM.ID,
+                    Description = projectTaskVM.Description,
+                    ProjectID = projectTaskVM.ProjectID,
+                    Name = projectTaskVM.Name,
+                    IsDone = projectTaskVM.IsDone,
+                    Date = projectTaskVM.Date,
+                    Priority = projectTaskVM.Priority
+                };
+
+                await projectTaskService.Update(projectTask);
             }
             catch (Exception ex)
             {
+                logger.LogError(ex.ToString());
                 return BadRequest(ex);
             }
             return Ok();

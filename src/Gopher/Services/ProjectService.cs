@@ -1,51 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Gopher.Data;
+﻿using Gopher.Data;
+using Gopher.Data.Repositories;
 using Gopher.Models;
 using Gopher.ViewModels;
 
 namespace Gopher.Services
 {
-    public class ProjectService
+    public class ProjectService : IProjectService
     {
-        private readonly ApplicationDbContext context;
+        private readonly IProjectRepository repository;
 
-        public ProjectService(ApplicationDbContext context)
+        public ProjectService(IProjectRepository repository)
         {
-            this.context = context;
+            this.repository = repository;
         }
-        public async Task AddProject(ProjectVM ProjectVM)
+
+        public async Task AddProject(string userID, string title, DateTime date)
         {
-            var Project = new Project()
+            var project = new Project()
             {
-                Title = ProjectVM.Title,
-                UserID = ProjectVM.UserID,
-                Date = ProjectVM.Date
+                Title = title,
+                UserID = userID,
+                Date = date
             };
 
-            context.Projects.Add(Project);
-            await context.SaveChangesAsync();
+            await repository.AddAsync(project);
         }
 
         public async Task UpdateProject(Project project)
         {
-            context.Projects.Update(project);
-            await context.SaveChangesAsync();
+            await repository.UpdateAsync(project);
         }
 
-        public Project? GetById(string id)
+        public async Task<Project?> GetById(int id)
         {
-            var item = context.Projects.Find(id);
-            return item;
+            var project = await repository.GetProjectByIdAsync(id);
+            return project;
         }
 
-        public IEnumerable<Project> GetProjectWithUserId(string ID)
+        public IEnumerable<Project> GetProjectWithUserId(string id)
         {
-            return context.Projects.Where(x => x.UserID == ID).OrderByDescending(x => x.Date).ToList();
-
+            return repository.GetAll().Where(x => x.UserID == id).OrderByDescending(x => x.Date).ToList();
         }
-
     }
 }
