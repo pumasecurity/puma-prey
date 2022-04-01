@@ -263,3 +263,4 @@ paket-files/
 *.db
 *.db-shm
 *.db-wal
+**/logs

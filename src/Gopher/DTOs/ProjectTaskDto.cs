@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Gopher.Models;
+﻿using Gopher.Models;
 
-namespace Gopher.ViewModels
+namespace Gopher.DTOs
 {
-    public class ProjectTaskDTO
+    public class ProjectTaskDto
     {
-
         public Guid ID { get; set; }
         public string Description { set; get; }
         public bool IsDone { set; get; }

@@ -1,7 +1,5 @@
-﻿using Gopher.Data;
-using Gopher.Data.Repositories;
+﻿using Gopher.Data.Repositories;
 using Gopher.Models;
-using Gopher.ViewModels;
 
 namespace Gopher.Services
 {

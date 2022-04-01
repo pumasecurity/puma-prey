@@ -1,5 +1,4 @@
 ﻿using Gopher.Models;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
 namespace Gopher.Data.Repositories
@@ -17,7 +16,7 @@ namespace Gopher.Data.Repositories
 
         public IQueryable<ProjectTaskTag> GetProjectTaskTagsByProjectIdAsync(Guid id)
         {
-            
+
             return GetAll().Where(x => x.ProjectTaskID == id).AsQueryable();
         }
     }

@@ -1,127 +1,130 @@
-﻿using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
-using Microsoft.EntityFrameworkCore;
+﻿using FluentValidation.AspNetCore;
 using Gopher.Data;
+using Gopher.Data.Repositories;
 using Gopher.Models;
 using Gopher.Services;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.EntityFrameworkCore;
 using System.Reflection;
-using FluentValidation.AspNetCore;
-using Microsoft.OpenApi.Models;
-using Gopher.Data.Repositories;
+using NSwag;
+using NSwag.Generation.Processors.Security;
+using Serilog;
 
-var builder = WebApplication.CreateBuilder(args);
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .CreateBootstrapLogger();
 
-// Add services to the container.
-builder.Services.AddControllers()
-                .AddFluentValidation(x => x.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly()))
-                .AddNewtonsoftJson();
+Log.Information("Starting up");
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlite(connectionString));
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-
-builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<ApplicationDbContext>();
-
-builder.Services.AddIdentityServer()
-    .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
-
-builder.Services.AddAuthentication()
-    .AddIdentityServerJwt();
-
-//builder.Services.AddControllers().AddJsonOptions(options =>
-//{
-//    options.JsonSerializerOptions.Converters.Add(new DateTimeConverter());
-//});
-//builder.Services.AddSwaggerGen(options => {
-//    options.SwaggerDoc("v1", new OpenApiInfo { Title = "Gopher API", Description = "Gophe REST API", Version = "v1" });
-//    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-//    {
-//        In = ParameterLocation.Header,
-//        Description = "Please insert JWT with Bearer into field",
-//        Name = "Authorization",
-//        Type = SecuritySchemeType.ApiKey
-//    });
-//    options.AddSecurityRequirement(new OpenApiSecurityRequirement
-//                {
-//                    {
-//                        new OpenApiSecurityScheme
-//                        {
-//                            Reference = new OpenApiReference
-//                            {
-//                                Type = ReferenceType.SecurityScheme,
-//                                Id = "Bearer"
-//                            }
-//                        },
-//                        new string[] { }
-//                    }
-//                });
-//    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-//    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-//    //  options.IncludeXmlComments(xmlPath);
-//    options.CustomSchemaIds(x => x.FullName);
-//});
-
-builder.Services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
-builder.Services.AddTransient<IProjectRepository, ProjectRepository>();
-builder.Services.AddTransient<IProjectTaskRepository, ProjectTaskRepository>();
-builder.Services.AddTransient<IProjectTaskTagRepository, ProjectTaskTagRepository>();
-builder.Services.AddTransient<ITagRepository, TagRepository>();
-
-builder.Services.AddTransient<IProjectService, ProjectService>();
-builder.Services.AddTransient<IProjectTaskService, ProjectTaskService>();
-builder.Services.AddTransient<IProjectTaskTagService, ProjectTaskTagService>();
-builder.Services.AddTransient<ITagService, TagService>();
-
-
-builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
-
-//Add Swagger Support
-builder.Services.AddEndpointsApiExplorer();
-
-builder.Services.AddSwaggerGen(c =>
+try
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Gopher API", Description = "Docs for Gopher API", Version = "v1" });
-});
+    var builder = WebApplication.CreateBuilder(args);
+
+    builder.Host.UseSerilog((ctx, lc) => lc
+        .WriteTo.Console()
+        .ReadFrom.Configuration(ctx.Configuration));
+
+    // Add services to the container.
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    builder.Services.AddDbContext<ApplicationDbContext>(options =>
+        options.UseSqlite(connectionString));
+    builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+    builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+        .AddEntityFrameworkStores<ApplicationDbContext>();
+
+    builder.Services.AddIdentityServer(options =>
+        {
+            options.Events.RaiseSuccessEvents = true;
+            options.Events.RaiseFailureEvents = true;
+            options.Events.RaiseErrorEvents = true;
+        })
+        .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
+
+    builder.Services.AddAuthentication()
+        .AddIdentityServerJwt();
+
+    builder.Services.AddControllersWithViews();
+    builder.Services.AddRazorPages();
 
 
+    builder.Services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
+    builder.Services.AddTransient<IProjectRepository, ProjectRepository>();
+    builder.Services.AddTransient<IProjectTaskRepository, ProjectTaskRepository>();
+    builder.Services.AddTransient<IProjectTaskTagRepository, ProjectTaskTagRepository>();
+    builder.Services.AddTransient<ITagRepository, TagRepository>();
 
-var app = builder.Build();
+    builder.Services.AddTransient<IProjectService, ProjectService>();
+    builder.Services.AddTransient<IProjectTaskService, ProjectTaskService>();
+    builder.Services.AddTransient<IProjectTaskTagService, ProjectTaskTagService>();
+    builder.Services.AddTransient<ITagService, TagService>();
 
+    //Add Swagger Support
+    //builder.Services.AddSwaggerDocument(configure =>
+    //{
+    //    configure.Title = "Gopher API";
+    //});
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{ 
-    app.UseMigrationsEndPoint();
-    app.UseDeveloperExceptionPage();
+    builder.Services.AddOpenApiDocument(document =>
+    {
+        document.Title = "Gopher API";
+        document.AddSecurity("JWT", Enumerable.Empty<string>(), new OpenApiSecurityScheme
+        {
+            Type = OpenApiSecuritySchemeType.ApiKey,
+            Name = "Authorization",
+            In = OpenApiSecurityApiKeyLocation.Header,
+            Description = "Type into the textbox: Bearer {your JWT token}."
+        });
 
-    app.UseSwagger();
-    app.UseSwaggerUI();
+        document.OperationProcessors.Add(
+            new AspNetCoreOperationSecurityScopeProcessor("JWT"));
+    });
+
+    var app = builder.Build();
+
+    //Add logging
+    app.UseSerilogRequestLogging();
+
+    // Configure the HTTP request pipeline.
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseMigrationsEndPoint();
+        app.UseDeveloperExceptionPage();
+
+    }
+    else
+    {
+        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+        app.UseHsts();
+    }
+
+    app.UseOpenApi();
+    app.UseSwaggerUi3();
+
+    app.UseHttpsRedirection();
+    app.UseStaticFiles();
+    app.UseRouting();
+
+    app.UseAuthentication();
+    app.UseIdentityServer();
+    app.UseAuthorization();
+
+    app.MapControllerRoute(
+        name: "default",
+        pattern: "{controller}/{action=Index}/{id?}");
+    app.MapRazorPages();
+
+    app.MapFallbackToFile("index.html"); ;
+
+    app.Run();
+
 }
-else
+catch (Exception ex)
 {
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    Log.Fatal(ex, "Unhandled exception");
 }
-
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-
-app.UseRouting();
-
-app.UseAuthentication();
-app.UseIdentityServer();
-app.UseAuthorization();
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller}/{action=Index}/{id?}");
-app.MapRazorPages();
-
-app.MapFallbackToFile("index.html");;
-
-app.Run();
-
+finally
+{
+    Log.Information("Shut down complete");
+    Log.CloseAndFlush();
+}

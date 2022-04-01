@@ -1,5 +1,4 @@
 ﻿using Gopher.Models;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
 namespace Gopher.Data.Repositories

@@ -1,6 +1,6 @@
-﻿using Gopher.Models;
+﻿using Gopher.DTOs;
+using Gopher.Models;
 using Gopher.Services;
-using Gopher.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -33,7 +33,7 @@ namespace Gopher.Controllers
         // GET: api/v1/ProjectTasks/{id}
         [HttpGet]
         [Route("{id}")]
-        [ProducesResponseType(typeof(ProjectTaskDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ProjectTaskDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetById(Guid id)
@@ -49,17 +49,17 @@ namespace Gopher.Controllers
             }
             catch (Exception ex)
             {
-                logger.LogError(ex.ToString());                
+                logger.LogError(ex.ToString());
                 return BadRequest(ex);
             }
-            
+
         }
 
         // POST: api/v1/ProjectTasks
         [HttpPost]
         [Route("")]
-        [ProducesResponseType(typeof(ProjectTaskDTO), StatusCodes.Status200OK)]
-        public async Task<IActionResult> Create([FromBody] ProjectTaskDTO projectTaskVM)
+        [ProducesResponseType(typeof(ProjectTaskDto), StatusCodes.Status200OK)]
+        public async Task<IActionResult> Create([FromBody] ProjectTaskDto projectTaskVM)
         {
             var projectTask = new ProjectTask()
             {
@@ -70,7 +70,7 @@ namespace Gopher.Controllers
                 IsDone = projectTaskVM.IsDone,
                 Date = projectTaskVM.Date,
                 Priority = projectTaskVM.Priority,
-                ProjectTaskTags = projectTaskVM.TagIDs.Select(x => new ProjectTaskTag() { ProjectTaskID = projectTaskVM.ID, TagID = x})
+                ProjectTaskTags = projectTaskVM.TagIDs.Select(x => new ProjectTaskTag() { ProjectTaskID = projectTaskVM.ID, TagID = x })
             };
 
             await projectTaskService.AddProjectTaskAsync(projectTask);
@@ -99,14 +99,14 @@ namespace Gopher.Controllers
 
         [HttpGet]
         [Route("")]
-        [ProducesResponseType(typeof(List<ProjectTaskDTO>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(List<ProjectTaskDto>), StatusCodes.Status200OK)]
         public IActionResult GetAll(int projectID)
         {
-            var projectTaskVMs = new List<ProjectTaskDTO>();
+            var projectTaskVMs = new List<ProjectTaskDto>();
             var projectTasks = projectTaskService.GetAllByProjectID(projectID);
             foreach (var item in projectTasks)
             {
-                var ProjectTaskVMItem = new ProjectTaskDTO()
+                var ProjectTaskVMItem = new ProjectTaskDto()
                 {
                     ID = item.ID,
                     Description = item.Description,
@@ -126,9 +126,9 @@ namespace Gopher.Controllers
 
         [HttpPut]
         [Route("{id}")]
-        [ProducesResponseType(typeof(ProjectTaskDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ProjectTaskDto), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> Update(string id, ProjectTaskDTO projectTaskVM)
+        public async Task<IActionResult> Update(string id, ProjectTaskDto projectTaskVM)
         {
             try
             {

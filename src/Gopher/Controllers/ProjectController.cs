@@ -1,6 +1,6 @@
-﻿using Gopher.Models;
+﻿using Gopher.DTOs;
+using Gopher.Models;
 using Gopher.Services;
-using Gopher.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -33,7 +33,7 @@ namespace Gopher.Controllers
             try
             {
                 var projects = projectService.GetProjectWithUserId(userId);
-                if (projects == null)
+                if (projects.Any())
                     return NotFound();
                 return Ok(projects);
             }
@@ -41,7 +41,7 @@ namespace Gopher.Controllers
             {
                 logger.LogError(ex.ToString());
                 return BadRequest(ex);
-            }            
+            }
         }
 
         [HttpGet]
@@ -50,15 +50,14 @@ namespace Gopher.Controllers
         [ProducesResponseType(typeof(Project), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
             try
             {
-                var project = projectService.GetById(id);
+                var project = await projectService.GetById(id);
                 if (project == null)
                     return NotFound();
-                else
-                    return Ok();
+                return Ok(project);
             }
             catch (Exception ex)
             {
@@ -86,7 +85,7 @@ namespace Gopher.Controllers
             {
                 logger.LogError(ex.ToString());
                 return BadRequest(ex);
-            }            
+            }
         }
 
         [HttpPut]
@@ -97,9 +96,10 @@ namespace Gopher.Controllers
         {
             if (!ModelState.IsValid)
                 return BadRequest();
-
-            if (id == null || project == null || (int.TryParse(id, out int projectId) && projectId != project.ID))
+             
+            if (id == string.Empty || (int.TryParse(id, out var projectId) && projectId != project.ID))
                 return BadRequest();
+
             try
             {
                 await projectService.UpdateProject(project);
@@ -108,7 +108,7 @@ namespace Gopher.Controllers
             catch (Exception ex)
             {
                 return BadRequest(ex);
-            }            
+            }
         }
     }
 }

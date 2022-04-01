@@ -1,5 +1,5 @@
-﻿using Gopher.Models;
-using Gopher.ViewModels;
+﻿using Gopher.DTOs;
+using Gopher.Models;
 
 namespace Gopher.Services
 {

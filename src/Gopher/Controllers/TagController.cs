@@ -1,7 +1,7 @@
 ﻿using Gopher.Data;
+using Gopher.DTOs;
 using Gopher.Models;
 using Gopher.Services;
-using Gopher.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Gopher.Controllers
@@ -33,7 +33,7 @@ namespace Gopher.Controllers
         [ProducesResponseType(typeof(Tag), StatusCodes.Status200OK)]
         public async Task<IActionResult> GetById(Guid ID)
         {
-            var tag =  await tagservice.GetById(ID);
+            var tag = await tagservice.GetById(ID);
             if (tag == null)
                 return NotFound();
             if (tag == null)

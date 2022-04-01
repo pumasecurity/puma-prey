@@ -1,6 +1,4 @@
-﻿using System.Linq.Expressions;
-
-namespace Gopher.Data.Repositories
+﻿namespace Gopher.Data.Repositories
 {
     public interface IRepository<TEntity> where TEntity : class, new()
     {
