@@ -59,12 +59,6 @@ try
     builder.Services.AddTransient<IProjectTaskTagService, ProjectTaskTagService>();
     builder.Services.AddTransient<ITagService, TagService>();
 
-    //Add Swagger Support
-    //builder.Services.AddSwaggerDocument(configure =>
-    //{
-    //    configure.Title = "Gopher API";
-    //});
-
     builder.Services.AddOpenApiDocument(document =>
     {
         document.Title = "Gopher API";
