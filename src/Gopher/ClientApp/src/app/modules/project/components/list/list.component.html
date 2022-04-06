@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="a-router">
+    <button class="create-btn" (click)="OnCreateClicked()">Create Project</button>
+    </div>
+    
+    <div  class="grid" >
+
+        <app-item  *ngFor="let item of projects" [project]="item"></app-item>
+    </div>
+</div>
+
+<app-create *ngIf="create" (closeCreate)="OnCreation($event)"></app-create>
+

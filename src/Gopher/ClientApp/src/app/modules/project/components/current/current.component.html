@@ -1,0 +1,15 @@
+<div class="container">
+
+    <div class="a-router">
+        <button class="back-btn" (click)="OnBackClicked()"> &larr;</button>
+        <button class="create-btn" (click)="OnCreateClicked()">Create Task</button>
+    </div>
+    <div class="grid">
+        <app-projecttask-item *ngFor="let item of projecttasks" [projecttask]="item" ></app-projecttask-item>
+       
+    </div>
+
+
+    <app-create-projecttask  [projectId]="projectId" *ngIf="create" (closeCreate)="OnCreation($event)"></app-create-projecttask>
+    
+</div>

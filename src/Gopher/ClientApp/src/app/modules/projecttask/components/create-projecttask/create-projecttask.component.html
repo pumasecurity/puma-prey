@@ -1,0 +1,59 @@
+<div class="md-add">
+    <div class="md-container">
+        
+        <div class="md-bg"></div>
+        <div class="md-content">
+            <h2>New Task</h2>
+            <form class="md-form" [formGroup]="createForm" (submit)="OnSubmit()">
+                
+                
+
+                    <div class="form-inner-content">
+                        <input formControlName="name"
+                        placeholder="Project name"
+                        type="text"
+                        class="input"
+                        id="name"
+                        name="name"
+                        maxlength="30">
+                    </div>
+                    
+                    <div class="form-inner-content">
+                        <label>Description</label>
+                        <textarea class="description" formControlName="description" id="description"
+                        name="description"
+                        maxlength="500">
+                        </textarea>
+                    </div>
+                    <div class="form-inner-content">
+                        <label>Date:</label>
+                        <input type="date" 
+                        id="date"
+                        name="date"
+                        formControlName="date">
+                    </div>
+                    <div class="form-inner-content">
+                        <label>Priority</label>
+                        <select formControlName="priority" id="priority" name="priority" [value]="0">
+                            <option value="0">Low</option>
+                            <option value="1">Medium</option>
+                            <option value="2">High</option>
+                        </select>
+                    </div>
+
+                <div class="md-buttons">
+                    <button type="reset"  class="close-btn" (click)="OnClick()">Cancel</button>
+                    <button type="submit" class="submit-btn">Create</button>
+                </div>
+                <div class="errors">
+                    <ng-container *ngIf="name?.touched">
+                        <span *ngIf="name?.errors?.['required']">* Project name is required</span>
+                        <span *ngIf="name?.errors?.['pattern']">* Project name is not valid</span>
+                    </ng-container>
+                </div>
+                
+            </form>
+        </div>
+    
+    </div>
+</div>

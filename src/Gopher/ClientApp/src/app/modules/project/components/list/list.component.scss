@@ -1,0 +1,113 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .a-router{
+        width: auto;
+        height: auto;
+
+        padding: 5px;
+
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        .create-btn {
+          width: 200px;
+          height: 40px;
+
+          padding: 10px 25px;
+          border: 2px solid #000;
+          border-radius: 5px;
+          
+          font-weight: bold;
+          cursor: pointer;
+
+
+          background: #81b29a;
+
+          transition: all 0.3s ease;
+          position: relative;
+          
+          display: inline-block;
+          overflow: hidden;
+          
+          transition: all 0.3s ease;
+          
+        }
+        .create-btn:hover {
+           background: #f07167;
+          color: #fff;
+        }
+        .create-btn:before {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            top: -180px;
+            left: 0;
+            width: 30px;
+            height: 100%;
+            background-color: #f4f1de;
+            animation: shiny-btn1 3s ease-in-out infinite;
+        }
+        .create-btn:active{
+          box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                      -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+            inset -4px -4px 6px 0 rgba(255,255,255,.2),
+            inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+        }
+
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 100px;
+    
+    }
+}
+
+.user-menu {
+    background-color: #fafafa;
+    padding: 4pt;
+    font-size: 10pt;
+    z-index: 1000;
+    box-shadow: 0 0 12pt rgba(0, 0, 0, 0.25);
+    border-radius: 4pt;
+    padding: 0.5em 0 0.5em 0;
+    animation: fadeIn 0.1s ease-out;
+    opacity:1.0;
+    display:block;
+  }
+  
+  
+  .user-menu hr {
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .user-menu div {
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 0.5em 2em 0.5em 0.75em;
+    max-width: 18em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .user-menu div:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  
+  .user-menu div::before {
+    content: '';
+    margin-right: 0.75em;
+    width: 0.5em;
+    height: 1em;
+    display: inline-block;
+  }

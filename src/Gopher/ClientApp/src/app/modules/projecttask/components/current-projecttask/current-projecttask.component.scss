@@ -1,0 +1,122 @@
+.a-router{
+    
+
+   padding: 5px;
+
+   
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   
+   .back-btn{
+       width: 40px;
+       height: 40px;
+       border-radius: 100px;
+       
+       font-size: 28px;
+       
+       text-align: center;
+
+       border: 0 solid black;
+
+       background-color:#fca311;
+       color: #212d40;
+
+       transition: 0.3s;
+       &:hover{
+           color: aliceblue;
+           background-color:#14213d;
+          
+       }
+   }
+
+}
+.container{
+    background:#ffffff;
+    width: auto;
+    height: auto;
+
+    min-width: 350px;
+    max-width: 500px;
+    min-height: 250px;
+
+    padding-bottom: 15px;
+
+    border-radius: 10px;
+    transition: 1s ease-in;
+    
+    
+    &:hover{
+       .hr_red{
+            border: 10px solid #bc4749;
+
+            border-radius: 10px 10px 0 0;
+        }
+    }
+    .hr_red{
+        border: 10px solid #ef233c;
+
+        border-radius: 10px 10px 0 0;
+    }
+    .hr_blue{
+        border: 10px solid #00b4d8;
+        
+        border-radius: 10px 10px 0 0;
+    }
+    .hr_yellow{
+        border: 10px solid #f9c74f;
+        
+        border-radius: 10px 10px 0 0;
+    }
+    h2{
+       padding:15px ;
+    }
+    .md-description{
+        margin: 15px;
+        width: 350px;
+        overflow: hidden;
+        word-wrap: break-word;
+        
+        p{
+            margin: 15px;
+            padding: 15px;
+        }
+        .md-buttons{
+            margin: 10px;
+            height: auto;
+            width: auto;
+            display: flex;
+            justify-content: right;
+
+            .btn_show{
+                background: #20DF7F;
+              
+                border-radius: 10px;
+                border: 0px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+          
+                width: 100px;
+                height: 30px;
+
+                margin: 0 10px;
+                padding: 5px;
+          
+                font-family: 'Lexend Deca', sans-serif;
+                font-weight: 500;
+                
+                transition: 0.2s ease-in;
+                &:hover:enabled{
+                  background: #2ec4b6;
+                }                  
+            }
+        }
+    }
+    span{
+        margin: 15px;
+    }
+    .show {
+        overflow: visible;
+        height: auto;
+   }
+   
+}

@@ -8,7 +8,8 @@ namespace Gopher.Controllers
 {
     [Authorize]
     [ApiController]
-    [Route("api/v1/[controller]")]
+    //[Route("api/v1/[controller]")]
+    [Route("/api/v1/[controller]")]
     [Produces("application/json")]
     public class ProjectController : ControllerBase
     {
@@ -33,7 +34,7 @@ namespace Gopher.Controllers
             try
             {
                 var projects = projectService.GetProjectWithUserId(userId);
-                if (projects.Any())
+                if (!projects.Any())
                     return NotFound();
                 return Ok(projects);
             }

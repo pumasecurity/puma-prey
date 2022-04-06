@@ -1,0 +1,22 @@
+<div class="a-router">
+    <button class="back-btn" (click)="OnBackClicked()"> &larr;</button>
+</div>
+<div class="container">
+    
+    <hr class="hr_red" *ngIf="projecttask.priority==2">
+    <hr class="hr_yellow" *ngIf="projecttask.priority==1">
+    <hr class="hr_blue" *ngIf="projecttask.priority==0">
+   
+    <h2>{{projecttask.name}}</h2>
+    <div class="md-description" >
+
+        {{projecttask.description| slice:sliceOptions.start:sliceOptions.end}}
+        
+        <div class="md-buttons" *ngIf="projecttask.description.length >= sliceOptions.default">
+            <button (click)="onExpandText($event)" class="btn_show">Show More</button>
+         </div>
+    </div>
+   
+    <span>{{projecttask.date | date}}</span>
+
+</div>

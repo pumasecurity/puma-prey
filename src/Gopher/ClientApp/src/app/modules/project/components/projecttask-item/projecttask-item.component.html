@@ -1,0 +1,17 @@
+<div class="container" >
+    <div class="card1" *ngIf="projecttask.priority==0" (clickedOutside)="clickedOutsideMenu()"  (click)="OnClick()" (contextmenu)="onRightClick($event,projecttask)">
+        <p>{{projecttask.name}}</p>
+    </div>
+    <div class="card2" *ngIf="projecttask.priority==1" (clickedOutside)="clickedOutsideMenu()"  (click)="OnClick()" (contextmenu)="onRightClick($event,projecttask)">
+        <p>{{projecttask.name}}</p>
+    </div>
+    <div class="card3" *ngIf="projecttask.priority==2"  (clickedOutside)="clickedOutsideMenu()"  (click)="OnClick()" (contextmenu)="onRightClick($event,projecttask)">
+        <p>{{projecttask.name}}</p>
+    </div>
+</div>
+
+
+
+<div *ngIf="contextmenu==true">
+    <app-contextmenu [projecttask]="projecttaskOut" [x]="contextmenuX" [y]="contextmenuY"></app-contextmenu>
+</div>

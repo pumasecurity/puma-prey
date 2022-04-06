@@ -1,0 +1,7 @@
+<div class="contextmenu" [ngStyle]="{'left.px': x, 'top.px': y}">
+  <button class="btn-delete" (click)="onDeleteClick()">Delete</button>
+  <button class="btn-edit" (click)="OnEditClicked()">Edit</button>
+
+</div>
+<app-update *ngIf="update" [projecttask]="projecttask" (closeUpdate)="OnUpdate($event)"></app-update>  
+  

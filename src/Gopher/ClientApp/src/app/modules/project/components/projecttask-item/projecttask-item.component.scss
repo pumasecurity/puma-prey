@@ -1,0 +1,157 @@
+.card1 {
+    display: block;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+
+
+    width: 250px;
+    height: 50px;
+
+    padding: 8px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+  
+    p{
+      width: 120px;
+      height: 20px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      right: -10px;
+      background: #00b4d8;
+      height: 68px;
+      width: 32px;
+      transform: scale(1);
+      transform-origin: 50% 20%;
+      transition: transform 1s ease-out;
+    }
+  
+    &:hover:before {
+      transform: scale(20);
+    }
+  }
+  
+  .card1:hover {
+    p {
+      transition: all 0.3s ease-out;
+      color: rgb(255, 255, 255);
+    }
+    h3 {
+      transition: all 0.3s ease-out;
+      color: #ffffff;
+    }
+  }
+   
+
+
+  .card2 {
+    display: block;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+
+    
+    width: 250px;
+    height: 50px;
+
+
+    padding: 8px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+  
+
+    p{
+      width: 120px;
+      height: 20px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      right: -10px;
+      background: #f9c74f;
+      height: 68px;
+      width: 32px;
+      transform: scale(1);
+      transform-origin: 50% 20%;
+      transition: transform 1s ease-out;
+    }
+  
+    &:hover:before {
+      transform: scale(20);
+    }
+  }
+  
+  .card2:hover {
+    p {
+      transition: all 0.3s ease-out;
+      color: rgb(255, 255, 255);
+    }
+    h3 {
+      transition: all 0.3s ease-out;
+      color: #ffffff;
+    }
+  }
+   
+  .card3 {
+    display: block;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    height: 50px;
+    padding: 8px 24px;
+
+    
+    width: 250px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+  
+
+    p{
+      width: 100%;
+      height: 20px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      right: -10px;
+      background: #ef233c;
+      height: 68px;
+      width: 32px;
+      transform: scale(1);
+      transform-origin: 50% 20%;
+      transition: transform 1s ease-out;
+    }
+  
+    &:hover:before {
+      transform: scale(20);
+    }
+  }
+  
+  .card3:hover {
+    p {
+      transition: all 0.3s ease-out;
+      color: rgb(255, 255, 255);
+    }
+    h3 {
+      transition: all 0.3s ease-out;
+      color: #ffffff;
+    }
+  }
+   

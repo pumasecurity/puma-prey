@@ -1,0 +1,9 @@
+<div (click)="OnClick()" class="item-container" (contextmenu)="onRightClick($event,project)">
+    <a class="card1" >
+        <h3>{{project.title }}</h3>
+      </a>
+</div>
+
+<div *ngIf="contextmenu==true">
+  <app-project-contextmenu [project]="project" [x]="contextmenuX" [y]="contextmenuY"></app-project-contextmenu>
+</div>

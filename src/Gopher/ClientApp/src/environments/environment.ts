@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  projectTaskApiUrl: 'api/v1/projecttask',
+  projectApiUrl: 'api/v1/project',
+  tagApiUrl: 'api/v1/tag'
 };
 
 /*

@@ -44,7 +44,7 @@ try
     builder.Services.AddAuthentication()
         .AddIdentityServerJwt();
 
-    builder.Services.AddControllersWithViews();
+    builder.Services.AddControllersWithViews().AddNewtonsoftJson();
     builder.Services.AddRazorPages();
 
 
