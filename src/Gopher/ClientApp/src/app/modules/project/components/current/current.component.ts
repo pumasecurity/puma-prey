@@ -21,6 +21,7 @@ export class CurrentComponent  {
   @Output() project : Project = {
     id: '',
     title: '',
+    description: '',
     userId: '',
     date: new Date(),
     projecttask: []

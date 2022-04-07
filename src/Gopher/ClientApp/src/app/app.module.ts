@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { ErrorComponent } from './shared/components/error/error.component';
 import { SharedModule } from './shared/shared.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -28,7 +29,6 @@ import { SharedModule } from './shared/shared.module';
     HttpClientModule,
     FormsModule,
     ApiAuthorizationModule,
-    AppMaterialModule,
     SharedModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -37,7 +37,8 @@ import { SharedModule } from './shared/shared.module';
       { path: 'project', loadChildren: () => import('./modules/project/project.module').then(m => m.ProjectModule), canActivate: [AuthorizeGuard] },
       { path: 'projecttask', loadChildren: () => import('./modules/projecttask/projecttask.module').then(m => m.ProjectTaskModule), canActivate: [AuthorizeGuard] },
       { path: '**', component: ErrorComponent }
-    ])
+    ]),
+    FontAwesomeModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true }

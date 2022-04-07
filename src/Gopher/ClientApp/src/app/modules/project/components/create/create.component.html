@@ -4,28 +4,37 @@
         
         <div class="md-bg"></div>
         <div class="md-content">
-            <h2>New Project</h2>
-            <form class="md-form" [formGroup]="createForm" (submit)="onSubmit()">
-                <input formControlName="title"
-                placeholder="Project name"
-                type="text"
-                class="input"
-                id="title"
-                name="title"
-                maxlength="30">
-                
-                <div class="md-buttons">
-                  <button type="reset" class="close-btn" (click)="onClick()">Cancel</button>
-                  <button type="submit" class="submit-btn">Create</button>
-                </div>
-                <div class="errors">
-                    <ng-container *ngIf="title?.touched">
-                        <span *ngIf="title?.errors?.['required']">* Project name is required</span>
-                        <span *ngIf="title?.errors?.['pattern']">* Project name is not valid</span>
-                    </ng-container>
-                </div>
-            </form>
+          <h2>New Project</h2>
+          <form class="md-form" [formGroup]="createForm" (submit)="onSubmit()">
+            <input formControlName="title"
+                   placeholder="Project name"
+                   type="text"
+                   class="input"
+                   id="title"
+                   name="title"
+                   maxlength="30">
+            <input formControlName="description"
+                   placeholder="Description"
+                   type="text"
+                   class="input"
+                   id="description"
+                   name="description"
+                   maxlength="30">
+            <div class="md-buttons">
+              <button type="reset" class="btn btn-secondary" (click)="onClick()">Cancel</button>
+              <button type="submit" class="btn btn-success">Create</button>
+            </div>
+            <div class="errors">
+              <ng-container *ngIf="title?.touched">
+                <span *ngIf="title?.errors?.['required']">* Project name is required</span>
+                <span *ngIf="title?.errors?.['pattern']">* Project name is not valid</span>
+                <span *ngIf="description?.errors?.['required']">* Project description is required</span>
+                <span *ngIf="description?.errors?.['pattern']">* Project description is not valid</span>
+              </ng-container>
+            </div>
+
+          </form>
+
         </div>
-    
-    </div>
 </div>
+

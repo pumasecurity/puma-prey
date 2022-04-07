@@ -12,32 +12,35 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
-  
-  @Output() projects : Array<Project> = [];
-  @Output() create = false;
+
+  @Output()
+  projects: Array<Project> = [];
+  @Output()
+  create = false;
   public userId: string = "";
 
-  constructor(private projectService : ProjectApiService, private authorizeService: AuthorizeService) { }
+  constructor(private projectService: ProjectApiService, private authorizeService: AuthorizeService) {}
 
   async ngOnInit() {
 
     console.log('onsubmit')
     this.authorizeService.getUser()
       .subscribe(async user => {
-        console.log(user);
-        this.userId = user!.name!;
-        this.projects = await this.projectService.getByUserId(this.userId);
-      }, error => {
-        console.warn(error.responseText)
-        console.log({ error })
-      })
+          console.log(user);
+          this.userId = user!.name!;
+          this.projects = await this.projectService.getByUserId(this.userId);
+        },
+        error => {
+          console.warn(error.responseText)
+          console.log({ error })
+        })
   }
-  
+
   async OnCreateClicked() {
     this.create = true;
-  } 
+  }
 
-  async OnCreation(bool : boolean) {
+  async OnCreation(bool: boolean) {
     this.create = false;
     if (bool) {
       console.log(this.userId);
@@ -45,4 +48,8 @@ export class ListComponent implements OnInit {
     }
   }
 
+  async onDeleteProject(index: string) {
+    await this.projectService.DeleteProject(index);
+    this.projects = await this.projectService.getByUserId(this.userId) as Array<Project>;
+  }
 }

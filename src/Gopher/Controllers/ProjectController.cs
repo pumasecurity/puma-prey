@@ -79,7 +79,7 @@ namespace Gopher.Controllers
 
             try
             {
-                await projectService.AddProject(title: project.Title, userID: project.UserID, date: project.Date);
+                await projectService.AddProject(title: project.Title, description: project.Description, userID: project.UserID, date: project.Date);
                 return Created($"/api/v1/Projects/{project}", project);
             }
             catch (Exception ex)
@@ -108,6 +108,31 @@ namespace Gopher.Controllers
             }
             catch (Exception ex)
             {
+                return BadRequest(ex);
+            }
+        }
+
+
+
+        [Authorize]
+        [HttpDelete]
+        [Route("{id}")]
+        [ProducesResponseType(typeof(Project), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> DeleteById(int id)
+        {
+            try
+            {
+                var project = await projectService.GetById(id);
+                if (project == null)
+                    return NotFound();
+                await projectService.Remove(project);
+                return Ok(project);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex.ToString());
                 return BadRequest(ex);
             }
         }

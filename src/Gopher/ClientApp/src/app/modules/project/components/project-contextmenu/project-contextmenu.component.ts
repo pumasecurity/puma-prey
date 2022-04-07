@@ -15,6 +15,7 @@ export class ProjectContextmenuComponent implements OnInit {
   @Input() project : Project = {
     id: '',
     title: '',
+    description: '',
     userId: '',
     date: new Date(),
     projecttask: []

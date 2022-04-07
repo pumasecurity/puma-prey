@@ -2,7 +2,7 @@
 
     <div class="a-router">
         <button class="back-btn" (click)="OnBackClicked()"> &larr;</button>
-        <button class="create-btn" (click)="OnCreateClicked()">Create Task</button>
+        <button class="btn btn-outline-dark" (click)="OnCreateClicked()">Create Task</button>
     </div>
     <div class="grid">
         <app-projecttask-item *ngFor="let item of projecttasks" [projecttask]="item" ></app-projecttask-item>

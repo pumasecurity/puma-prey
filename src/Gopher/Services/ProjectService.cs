@@ -12,11 +12,12 @@ namespace Gopher.Services
             this.repository = repository;
         }
 
-        public async Task AddProject(string userID, string title, DateTime date)
+        public async Task AddProject(string userID, string title, string description, DateTime date)
         {
             var project = new Project()
             {
                 Title = title,
+                Description = description,
                 UserID = userID,
                 Date = date
             };
@@ -27,6 +28,11 @@ namespace Gopher.Services
         public async Task UpdateProject(Project project)
         {
             await repository.UpdateAsync(project);
+        }
+
+        public async Task Remove(Project project)
+        {
+            await repository.RemoveAsync(project);
         }
 
         public async Task<Project?> GetById(int id)

@@ -19,47 +19,31 @@ export class CreateComponent {
   
   createForm: FormGroup;
   get title() { return this.createForm.get('title'); }
+  get description() { return this.createForm.get('description'); }
   
   constructor(private projectService: ProjectApiService,
     private router: Router, private authorizeService: AuthorizeService) {
     this.createForm = new FormGroup({
-      title: new FormControl(null, [Validators.required])
+      title: new FormControl(null, [Validators.required]),
+      description: new FormControl(null, [Validators.required])
     });
   }
 
   async onSubmit(): Promise<void> {
 
-
-    console.log('onsubmit')
+    console.log('onsubmit');
+    this.onClick(true);
     this.authorizeService.getUser()
       .subscribe(async user => {
-        console.log(user);
-        this.onClick(true);
-        this.createForm.value['userId'] = user!.name!;
-        await this.projectService.CreateProject(this.createForm.value);
-      }, error => {
-        console.warn(error.responseText)
-        console.log({ error })
-      })
-
-
-
-    //this.authorizeService.getUser().
-    //const response = this.authorizeService.getUser().
-    //response.then(val => {
-    //  console.log(val);
-    //  this.createForm.value['userId'] = val && val.name ? val.name : "";
-    //  return this.projectService.CreateProject(this.createForm.value);
-      
-    //}).then(val =>
-    //{
-    //    this.OnClick(true);
-    //});
-    //const response = await this.authorizeService.getUser().toPromise();
-    //console.log(response);
-    //this.createForm.value['userId'] = response && response.name ? response.name : "";
-    //await this.projectService.CreateProject(this.createForm.value);
-    //this.OnClick(true);
+          console.log(user);
+          
+          this.createForm.value['userId'] = user!.name!;
+          await this.projectService.CreateProject(this.createForm.value);
+        },
+        error => {
+          console.warn(error.responseText);
+          console.log({ error });
+        });
   }
 
   async onClick(bool : boolean = false) {

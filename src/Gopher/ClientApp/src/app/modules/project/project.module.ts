@@ -15,6 +15,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { ContextmenuComponent } from './components/contextmenu/contextmenu.component';
 import { UpdateComponent } from '../projecttask/components/update/update.component';
 import { ProjectContextmenuComponent } from './components/project-contextmenu/project-contextmenu.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { ProjectContextmenuComponent } from './components/project-contextmenu/pr
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    MatMenuModule
+    MatMenuModule,
+    FontAwesomeModule
   ]
 })
 export class ProjectModule { }
