@@ -4,6 +4,7 @@ import { ProjectTask } from 'src/app/modules/projecttask/models/projecttask';
 import { ProjectTaskApiService } from 'src/app/modules/projecttask/services/projecttask-api.service';
 import { Project } from '../../models/project';
 import { ProjectApiService } from '../../services/project-api.service';
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-current',
@@ -11,6 +12,7 @@ import { ProjectApiService } from '../../services/project-api.service';
   styleUrls: ['./current.component.scss']
 })
 export class CurrentComponent  {
+  faAngleLeft = faAngleLeft;
   @Output() showCreate : EventEmitter<void> = new EventEmitter<void>();
 
   @Output() create=false;
@@ -35,7 +37,7 @@ export class CurrentComponent  {
               private router : Router) { }
 
   async ngOnInit() {
-   this.projectId = this.routeService.snapshot.paramMap.get('id') as string;
+    this.projectId = this.routeService.snapshot.paramMap.get('id') as string;
    this.project = await this.projectService.getById(this.projectId) as Project;
    this.projecttasks = await this.projecttaskService.getByProjectId(this.projectId) as Array<ProjectTask>
    console.log(this.projecttasks)

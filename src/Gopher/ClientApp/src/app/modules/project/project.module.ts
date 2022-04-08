@@ -11,7 +11,6 @@ import { ProjectTaskItemComponent } from './components/projecttask-item/projectt
 import { DeleteComponent } from './components/delete/delete.component';
 import { DatePipePipe } from './pipes/date-pipe.pipe';
 import { CreateProjectTaskComponent } from '../projecttask/components/create-projecttask/create-projecttask.component';
-import { MatMenuModule } from '@angular/material/menu';
 import { ContextmenuComponent } from './components/contextmenu/contextmenu.component';
 import { UpdateComponent } from '../projecttask/components/update/update.component';
 import { ProjectContextmenuComponent } from './components/project-contextmenu/project-contextmenu.component';
@@ -39,7 +38,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    MatMenuModule,
     FontAwesomeModule
   ]
 })
