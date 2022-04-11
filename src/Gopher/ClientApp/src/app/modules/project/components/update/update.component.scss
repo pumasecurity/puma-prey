@@ -1,0 +1,134 @@
+.md-add{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    .md-container{
+
+        .md-bg{ 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            position: fixed;
+            z-index: 3;
+            background-color: black;
+        }
+        .md-content{
+            left: 42.5%;
+            top: 35%;
+            z-index: 3;
+            min-width: auto;
+            min-height: 10%;
+            position: fixed;
+            
+            
+            
+            opacity: 1;
+            border-radius: 10px;
+            border: 1px solid #888;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            .md-form{
+                
+                text-align: center;
+                margin: 0 20px;
+                .form-inner-content
+                {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 5px;
+                }
+            } 
+            .input{
+                background-color: #224957;
+                
+                
+        
+                padding: 0 10px;
+                margin: 0 0;
+        
+                color:#ffffff;
+        
+                border-radius: 10px;
+        
+                height: 35px;
+                width: 220px;
+                transition: 0.2s;
+                &:hover{
+                    border:2px solid #2ec4b6;
+                }
+              }
+            .input::placeholder{
+        
+                color:#ffffff ;  
+        
+                font-family: 'Lexend Deca', sans-serif;
+        
+                font-weight: 200;
+              }
+              
+            h2{
+                margin: 4px;
+                font-size: 24px;
+                margin: 10px 20px;
+            }
+            p { 
+                font-family: 'Regular';
+            }
+            .md-buttons {
+
+                display: flex;
+                justify-content: right;
+
+                
+                margin: 10px 0;
+                .submit-btn{
+                    background: #20DF7F;
+              
+                    border-radius: 10px;
+                    border: 0px;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+              
+                    width: 80px;
+                    height: 30px;
+
+                    margin: 0 10px;
+                    padding: 5px;
+              
+                    font-family: 'Lexend Deca', sans-serif;
+                    font-weight: 500;
+                    
+                    transition: 0.2s ease-in;
+                    &:hover:enabled{
+                      background: #2ec4b6;
+                    }                    
+                }
+                .close-btn{
+                    background: #ef233c;
+
+              
+                    border-radius: 10px;
+                    border: 0px;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+              
+                    width: 80px;
+                    height: 30px;
+
+              
+                    padding: 2px;
+
+                    font-family: 'Lexend Deca', sans-serif;
+                    font-weight: 500;
+                    
+                    transition: 0.2s ease-in;
+                    &:hover:enabled{
+                      background: #d90429;
+                    }                    
+                }
+            }
+            
+        }
+    }
+    
+}

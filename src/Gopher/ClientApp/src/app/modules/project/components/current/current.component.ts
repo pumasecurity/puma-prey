@@ -19,14 +19,15 @@ export class CurrentComponent  {
   @Output() projecttasks : ProjectTask[] = [];
   
   @Output() projecttask!: ProjectTask;
-  @Output() projectId : string = "";
+  @Output() projectId: string = "";
+  @Output() projecttitle: string = "";
   @Output() project : Project = {
     id: '',
     title: '',
     description: '',
-    userId: '',
+    userID: '',
     date: new Date(),
-    projecttask: []
+    ProjectTasks: []
   };
 
 
@@ -38,7 +39,8 @@ export class CurrentComponent  {
 
   async ngOnInit() {
     this.projectId = this.routeService.snapshot.paramMap.get('id') as string;
-   this.project = await this.projectService.getById(this.projectId) as Project;
+    this.project = await this.projectService.getById(this.projectId) as Project;
+    this.projecttitle = this.project.title;
    this.projecttasks = await this.projecttaskService.getByProjectId(this.projectId) as Array<ProjectTask>
    console.log(this.projecttasks)
   }  

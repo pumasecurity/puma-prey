@@ -1,0 +1,55 @@
+<div class="md-add">
+    <div class="md-container">
+        
+        <div class="md-bg"></div>
+        <div class="md-content">
+            <h2>Update Project</h2>
+            <form class="md-form" [formGroup]="updateForm" (submit)="OnSubmit()">
+                
+                
+
+                    <div class="form-inner-content">
+                        <input formControlName="title"
+                        placeholder="Project Title"
+                        type="text"
+                        class="input"
+                        id="title"
+                        name="title"
+                        maxlength="30">
+                    </div>
+                    
+                    <div class="form-inner-content">
+                        <label>Description</label>
+                        <textarea class="description"
+                         formControlName="description" id="description"
+                        name="description"
+                        maxlength="500">
+                        </textarea>
+                    </div>
+                    <div class="form-inner-content">
+                        <label>Date:</label>
+                        <input type="date" 
+                        id="date"
+                        name="date"
+                        formControlName="date" value="date.value">
+                    </div>                                        
+                <div class="md-buttons">
+                    <button type="reset"  class="btn btn-secondary" (click)="OnClick()">Cancel</button>
+                    <button type="submit" class="btn btn-success">Update</button>
+                </div>
+                <div class="errors">
+                    <ng-container *ngIf="title?.touched">
+                        <span *ngIf="title?.errors?.['required']">* Project title is required</span>
+                        <span *ngIf="title?.errors?.['pattern']">* Project title is not valid</span>
+                    </ng-container>
+                    <ng-container *ngIf="description?.touched">
+                        <span *ngIf="description?.errors?.['required']">* Project description is required</span>
+                        <span *ngIf="description?.errors?.['pattern']">* Project description is not valid</span>
+                    </ng-container>
+                </div>
+                
+            </form>
+        </div>
+    
+    </div>
+</div>

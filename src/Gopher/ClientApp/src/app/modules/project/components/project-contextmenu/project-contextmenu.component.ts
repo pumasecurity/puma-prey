@@ -16,9 +16,9 @@ export class ProjectContextmenuComponent implements OnInit {
     id: '',
     title: '',
     description: '',
-    userId: '',
+    userID: '',
     date: new Date(),
-    projecttask: []
+    ProjectTasks: []
   };
   constructor(private projectApiService:ProjectApiService) { }
 

@@ -12,7 +12,7 @@ import { ProjectTask } from 'src/app/modules/projecttask/models/projecttask';
 export class ProjectTaskItemComponent implements OnInit{
 
 
-
+  @Input() projecttitle: string = '';
   @Output() showCreate : EventEmitter<void> = new EventEmitter<void>();
 
   @Output() create=false;
@@ -24,7 +24,7 @@ export class ProjectTaskItemComponent implements OnInit{
     name:'',
     date:new Date(),
     priority:0,
-    projectId:'',
+    projectID:'',
     tagIds:Array<string>()
   }; 
   
@@ -50,9 +50,12 @@ export class ProjectTaskItemComponent implements OnInit{
   }
   
   onRightClick(event:any,projecttask:ProjectTask) {
-    this.contextmenuX = event.clientX
-    this.contextmenuY = event.clientY
-    this.projecttaskOut=projecttask;
+    //this.contextmenuX = event.clientX
+    //this.contextmenuY = event.clientY
+
+    //TODO: update context menu to have the correct project task
+
+    this.projecttaskOut = projecttask;
     this.contextmenu = true;
     event.preventDefault()
   }

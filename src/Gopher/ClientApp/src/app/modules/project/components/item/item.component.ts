@@ -19,13 +19,18 @@ export class ItemComponent {
     id: '',
     title: '',
     description: '',
-    userId: '',
+    userID: '',
     date: new Date(),
-    projecttask: []
+    ProjectTasks: []
   };
 
   @Output()
   onDelete: EventEmitter<void> = new EventEmitter();
+
+  @Output()
+  onUpdate: EventEmitter<void> = new EventEmitter();
+  @Output()
+  update: boolean = false;
 
   contextmenu = false;
   contextmenuX = 0;
@@ -46,9 +51,6 @@ export class ItemComponent {
     event.preventDefault()
   }
 
-  public deleteProject() {
-    this.onDelete.emit();
-  }
   clickedOutsideMenu() {
     this.disableContextMenu();
   }
@@ -57,7 +59,19 @@ export class ItemComponent {
     this.contextmenu = false;
   }
 
-  public deleteImage() {
+  public deleteProject() {
     this.onDelete.emit();
   }
+
+  public updateProject() {
+    this.update = true;
+    //this.onUpdate.emit();
+  }
+
+  public onUpdateProject(bool: boolean) {
+    console.log("OnCreation:" + bool)
+    this.update = false;
+    this.onUpdate.emit();
+  }
+
 }

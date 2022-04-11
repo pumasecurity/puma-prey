@@ -1,15 +1,15 @@
 <div class="container">
-
+    <h2>{{projecttitle}}</h2>
     <div class="a-router">
         <button class="btn btn-light" (click)="OnBackClicked()"> <fa-icon [icon]="faAngleLeft"></fa-icon></button>
         <button class="btn btn-outline-dark" (click)="OnCreateClicked()">Create Task</button>
     </div>
     <div class="grid">
-        <app-projecttask-item *ngFor="let item of projecttasks" [projecttask]="item" ></app-projecttask-item>
-       
+        <app-projecttask-item *ngFor="let item of projecttasks" [projecttitle]="projecttitle" [projecttask]="item"></app-projecttask-item>
+
     </div>
 
 
-    <app-create-projecttask  [projectId]="projectId" *ngIf="create" (closeCreate)="OnCreation($event)"></app-create-projecttask>
-    
+    <app-create-projecttask [projectId]="projectId" *ngIf="create" (closeCreate)="OnCreation($event)"></app-create-projecttask>
+
 </div>

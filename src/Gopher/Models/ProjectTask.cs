@@ -8,9 +8,18 @@
         public bool IsDone { set; get; }
         public DateTime Date { set; get; }
         public Priority Priority { set; get; }
-        public virtual IEnumerable<ProjectTaskTag> ProjectTaskTags { get; set; }
-
+        
         public int ProjectID { get; set; }
         public virtual Project Project { get; set; }
+
+
+        public virtual ICollection<ProjectTaskTag> ProjectTaskTags { get; set; } = new List<ProjectTaskTag>();
+
+        public ProjectTask() { }
+
+        public ProjectTask(IEnumerable<ProjectTaskTag> projectTaskTags)
+        {
+            ProjectTaskTags = projectTaskTags.ToList();
+        }
     }
 }

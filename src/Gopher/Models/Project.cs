@@ -9,6 +9,13 @@
         public string UserID { get; set; }
 
         //navigation properties
-        public virtual ICollection<ProjectTask> ProjectTasks { get; set; }
+        public virtual ICollection<ProjectTask> ProjectTasks { get; set; } = new List<ProjectTask>();
+
+        public Project() { }
+
+        public Project(IEnumerable<ProjectTask> projectTasks)
+        {
+            ProjectTasks = projectTasks.ToList();
+        }
     }
 }

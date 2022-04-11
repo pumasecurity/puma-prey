@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProjectTask } from '../../models/projecttask';
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-current-projecttask',
@@ -8,6 +9,8 @@ import { ProjectTask } from '../../models/projecttask';
   styleUrls: ['./current-projecttask.component.scss']
 })
 export class CurrentProjectTaskComponent {
+
+  faAngleLeft = faAngleLeft;
 
    sliceOptions = {
     end: 30,
@@ -22,9 +25,11 @@ export class CurrentProjectTaskComponent {
     name:'',
     date:new Date(),
     priority:0,
-    projectId:'',
+    projectID:'',
     tagIds:Array<string>()
   };
+
+  @Input() projecttitle: string = '';
 
   expand:boolean=false;
   constructor(private router:Router) { }
@@ -44,8 +49,10 @@ export class CurrentProjectTaskComponent {
  
    }
 
-   async OnBackClicked(){
-     this.router.navigate([`/project/detail/${this.projecttask.projectId}`]);
+  OnBackClicked() {
+    console.log('onback');
+    console.log(this.projecttask);
+     this.router.navigate([`/project/detail/${this.projecttask.projectID}`]);
   }
 
 }

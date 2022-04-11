@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProjectTaskRoutingModule } from './projecttask-routing.module';
 import { CurrentProjectTaskComponent } from './components/current-projecttask/current-projecttask.component';
 import { ProjectTaskCurrentItemComponent } from './components/projecttask-item/projecttask-item.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ProjectTaskCurrentItemComponent } from './components/projecttask-item/p
     HttpClientModule,
     ProjectTaskRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ]
 })
 export class ProjectTaskModule { }

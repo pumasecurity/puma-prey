@@ -19,7 +19,8 @@ export class CreateProjectTaskComponent {
   get date() { return this.createForm.get('date')}
   get priority() { return this.createForm.get('priority'); }
 
-  tagArray: Array<string> = ['6FB8EFBB-CA6D-44C3-BDF5-6FB7D95FC384'];
+  //tagArray: Array<string> = ['6FB8EFBB-CA6D-44C3-BDF5-6FB7D95FC384'];
+  tagArray: Array<string> = [];
 
   constructor(private projecttaskService: ProjectTaskApiService,
              private router: Router) {
@@ -37,8 +38,10 @@ export class CreateProjectTaskComponent {
     
     this.createForm.value['isDone'] = false;
     this.createForm.value['projectID'] = this.projectId;
-    this.createForm.value['tagIDs'] =this.tagArray;
-    this.createForm.value['tagIDs'][0].replace(/\s/g, "");
+    this.createForm.value['tagIDs'] = this.tagArray;
+    this.createForm.value['tagIDs'].forEach((element: string) => element.replace(/\s/g, ""));
+    //this.createForm.value['tagIDs'][0].replace(/\s/g, "");
+
     await this.projecttaskService.CreateProjectTask(this.createForm.value);
     this.OnClick(true);
   }

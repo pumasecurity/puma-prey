@@ -11,7 +11,24 @@
 </div>
 
 
+<div [ngClass]="{'card1': projecttask.priority==0,
+     'card2' : projecttask.priority==1,
+     'card3': projecttask.priority==2}" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">{{projecttask.name }}</h5>
+        <p class="card-text">{{projecttask.description}}</p>
+        <p class="card-text"><small class="text-muted"> Last updated on {{ projecttask.date | date:'medium' }}</small> </p>
 
-<div *ngIf="contextmenu==true">
+        <!--<ul class="list-inline m-0">
+            <li class="list-inline-item">
+                <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit" (click)="updateProject()"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+            </li>
+            <li class="list-inline-item">
+                <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Delete" (click)="deleteProject()"><fa-icon [icon]="faTrash"></fa-icon></button>
+            </li>
+        </ul>-->
+    </div>
     <app-contextmenu [projecttask]="projecttaskOut" [x]="contextmenuX" [y]="contextmenuY"></app-contextmenu>
 </div>
+
+

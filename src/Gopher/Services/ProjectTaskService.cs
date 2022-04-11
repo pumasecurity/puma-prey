@@ -46,7 +46,7 @@ namespace Gopher.Services
 
         public async Task<List<ProjectTaskAndTagDto>> GetAll()
         {
-            return await projectTaskRepository.GetAll().Select(projectTaskAndTagVM => new ProjectTaskAndTagDto()
+            return await projectTaskRepository.GetAll().Include(x=> x.ProjectTaskTags).Select(projectTaskAndTagVM => new ProjectTaskAndTagDto()
             {
                 ID = projectTaskAndTagVM.ID,
                 Date = projectTaskAndTagVM.Date,

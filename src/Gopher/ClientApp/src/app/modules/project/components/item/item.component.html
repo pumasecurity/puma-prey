@@ -15,7 +15,7 @@
         <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="View Tasks" (click)="OnClick()"><fa-icon [icon]="faListCheck"></fa-icon></button>
       </li>
       <li class="list-inline-item">
-        <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+        <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit" (click)="updateProject()"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
       </li>
       <li class="list-inline-item">
         <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Delete" (click)="deleteProject()"><fa-icon [icon]="faTrash"></fa-icon></button>
@@ -27,3 +27,5 @@
 <div *ngIf="contextmenu==true">
     <app-project-contextmenu [project]="project" [x]="contextmenuX" [y]="contextmenuY"></app-project-contextmenu>
   </div>
+
+<app-project-update *ngIf="update" [project]="project" (closeUpdate)="onUpdateProject($event)"></app-project-update>

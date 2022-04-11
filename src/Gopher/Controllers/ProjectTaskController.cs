@@ -61,7 +61,8 @@ namespace Gopher.Controllers
         [ProducesResponseType(typeof(ProjectTaskDto), StatusCodes.Status200OK)]
         public async Task<IActionResult> Create([FromBody] ProjectTaskDto projectTaskDto)
         {
-            var projectTask = new ProjectTask()
+            var projectTaskTags = projectTaskDto.TagIDs.Select(x => new ProjectTaskTag() { ProjectTaskID = projectTaskDto.ID, TagID = x }).AsEnumerable();
+            var projectTask = new ProjectTask(projectTaskTags)
             {
                 ID = projectTaskDto.ID,
                 Description = projectTaskDto.Description,
@@ -70,7 +71,7 @@ namespace Gopher.Controllers
                 IsDone = projectTaskDto.IsDone,
                 Date = projectTaskDto.Date,
                 Priority = projectTaskDto.Priority,
-                ProjectTaskTags = projectTaskDto.TagIDs.Select(x => new ProjectTaskTag() { ProjectTaskID = projectTaskDto.ID, TagID = x })
+                
             };
 
             await projectTaskService.AddProjectTaskAsync(projectTask);

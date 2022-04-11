@@ -6,6 +6,6 @@ export interface ProjectTask{
     name:string,
     date:Date,
     priority:number,
-    projectId:string,
+    projectID:string,
     tagIds:Array<string>
 }

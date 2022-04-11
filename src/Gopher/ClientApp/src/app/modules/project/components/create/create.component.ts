@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Project } from '../../models/project';
@@ -14,7 +14,11 @@ import { filter, map, mergeMap, take, tap } from 'rxjs/operators';
   styleUrls: ['./create.component.scss']
 })
 export class CreateComponent {
-  @Output() closeCreate : EventEmitter<boolean> = new EventEmitter<boolean>();
+
+  @Output()
+  closeCreate: EventEmitter<boolean> = new EventEmitter<boolean>();
+  @Input()
+  userId: string;
 
   
   createForm: FormGroup;
@@ -23,27 +27,23 @@ export class CreateComponent {
   
   constructor(private projectService: ProjectApiService,
     private router: Router, private authorizeService: AuthorizeService) {
+    this.userId = '';
     this.createForm = new FormGroup({
       title: new FormControl(null, [Validators.required]),
       description: new FormControl(null, [Validators.required])
     });
   }
-
+  
   async onSubmit(): Promise<void> {
 
+    console.log(this.userId);
     console.log('onsubmit');
+    
+    this.createForm.value['userId'] = this.userId;
+    console.log('Creating');
+    var url = await this.projectService.CreateProject(this.createForm.value);
     this.onClick(true);
-    this.authorizeService.getUser()
-      .subscribe(async user => {
-          console.log(user);
-          
-          this.createForm.value['userId'] = user!.name!;
-          await this.projectService.CreateProject(this.createForm.value);
-        },
-        error => {
-          console.warn(error.responseText);
-          console.log({ error });
-        });
+    console.log('Created');
   }
 
   async onClick(bool : boolean = false) {

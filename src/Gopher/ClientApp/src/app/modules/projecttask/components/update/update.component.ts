@@ -19,7 +19,7 @@ export class UpdateComponent implements OnInit {
     name:'',
     date:new Date(),
     priority:0,
-    projectId:'',
+    projectID:'',
     tagIds:Array<string>()
   };
 
@@ -53,7 +53,7 @@ export class UpdateComponent implements OnInit {
 
     this.updateForm.value['id'] = this.projecttask.id;
     
-    this.updateForm.value['projectID'] = this.projecttask.projectId;
+    this.updateForm.value['projectID'] = this.projecttask.projectID;
     
     this.updateForm.value['isDone'] = false;
     

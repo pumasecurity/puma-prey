@@ -20,7 +20,7 @@ export class ContextmenuComponent implements OnInit {
     name:'',
     date:new Date(),
     priority:0,
-    projectId:'',
+    projectID:'',
     tagIds:Array<string>()
   }; 
 
