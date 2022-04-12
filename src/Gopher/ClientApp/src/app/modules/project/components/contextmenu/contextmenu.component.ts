@@ -2,6 +2,7 @@ import { Component, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProjectTask } from 'src/app/modules/projecttask/models/projecttask';
 import { ProjectTaskApiService } from 'src/app/modules/projecttask/services/projecttask-api.service';
+import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-contextmenu',
@@ -9,6 +10,9 @@ import { ProjectTaskApiService } from 'src/app/modules/projecttask/services/proj
   styleUrls: ['./contextmenu.component.scss']
 })
 export class ContextmenuComponent implements OnInit {
+
+  faPenToSquare = faPenToSquare;
+  faTrash = faTrash;
 
   @Output() update : boolean = false;
   @Input() x=0;
@@ -35,7 +39,7 @@ export class ContextmenuComponent implements OnInit {
     await this.projecttaskService.DeleteProjectTask(this.projecttask.id);
     window.location.reload();
   }
-  async OnEditClicked(){
+  async OnEditClicked() {
     this.update=true;
   }
   async OnUpdate(bool : boolean){

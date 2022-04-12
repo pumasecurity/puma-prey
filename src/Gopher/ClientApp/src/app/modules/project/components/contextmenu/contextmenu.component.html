@@ -1,7 +1,10 @@
-<div class="contextmenu" [ngStyle]="{'left.px': x, 'top.px': y}">
-  <button class="btn-delete" (click)="onDeleteClick()">Delete</button>
-  <button class="btn-edit" (click)="OnEditClicked()">Edit</button>
+<ul class="list-inline m-0">
+    <li class="list-inline-item">
+        <button class="btn btn-success btn-sm rounded-0" title="Delete" data-toggle="tooltip" (click)="OnEditClicked()"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-danger btn-sm rounded-0" title="Edit" data-toggle="tooltip" (click)="onDeleteClick()"><fa-icon [icon]="faTrash"></fa-icon></button>
+    </li>
+</ul>
+<app-update *ngIf="update" [projecttask]="projecttask" (closeUpdate)="OnUpdate($event)"></app-update>
 
-</div>
-<app-update *ngIf="update" [projecttask]="projecttask" (closeUpdate)="OnUpdate($event)"></app-update>  
-  

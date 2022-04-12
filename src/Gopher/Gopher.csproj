@@ -38,6 +38,8 @@
     <None Remove="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
     <None Remove="NSwag.AspNetCore" />
     <None Remove="NSwag.Generation.AspNetCore" />
+    <None Remove="ClientApp\.angular\cache\angular-webpack\99f13e15d460eb8a58e8f04819c753b1c7934321\index.pack.old" />
+    <None Remove="ClientApp\.angular\cache\angular-webpack\99f13e15d460eb8a58e8f04819c753b1c7934321\index.pack.old" />
   </ItemGroup>
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->

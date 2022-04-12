@@ -14,7 +14,6 @@ import { CreateProjectTaskComponent } from '../projecttask/components/create-pro
 import { ContextmenuComponent } from './components/contextmenu/contextmenu.component';
 import { UpdateComponent } from '../projecttask/components/update/update.component';
 import { ProjectUpdateComponent } from '../project/components/update/update.component';
-import { ProjectContextmenuComponent } from './components/project-contextmenu/project-contextmenu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
@@ -31,7 +30,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ContextmenuComponent,
     UpdateComponent,
     ProjectUpdateComponent,
-    ProjectContextmenuComponent
     
   ],
   imports: [

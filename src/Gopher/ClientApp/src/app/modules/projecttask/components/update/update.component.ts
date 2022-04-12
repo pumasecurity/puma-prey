@@ -30,14 +30,16 @@ export class UpdateComponent implements OnInit {
   get description() { return this.updateForm.get('description'); }
   get date() { return this.updateForm.get('date')}
   get priority() { return this.updateForm.get('priority'); }
+  get isDone() { return this.updateForm.get('isDone'); }
   
   constructor(private projecttaskService: ProjectTaskApiService,
              private router: Router) {
     this.updateForm = new FormGroup({
       name: new FormControl(null,  [Validators.required]),
       description: new FormControl(null, [Validators.required]),
-      date: new FormControl(null, [Validators.required]),
+      date: new FormControl(this.projecttask.date.toISOString().split("T")[0], [Validators.required]),
       priority: new FormControl(null, [Validators.required]),
+      isDone: new FormControl(null, [Validators.required]),
     })
   }
   ngOnInit(): void {
@@ -45,17 +47,18 @@ export class UpdateComponent implements OnInit {
     this.description?.setValue(this.projecttask.description);
     this.date?.setValue(this.projecttask.date);
     this.priority?.setValue(this.projecttask.priority);
+    this.isDone?.setValue(this.projecttask.isDone);
   }
 
   async OnSubmit(): Promise<void> {
     
-    let tagArray: Array<string> = ["EA62A3E7-CE3E-471B-9C59-05D40A3F3458"]; //TODO
+    let tagArray: Array<string> = []; //TODO
 
     this.updateForm.value['id'] = this.projecttask.id;
     
     this.updateForm.value['projectID'] = this.projecttask.projectID;
     
-    this.updateForm.value['isDone'] = false;
+    //this.updateForm.value['isDone'] = false;
     
     this.updateForm.value['tagIDs'] =tagArray;
 

@@ -5,7 +5,7 @@ import { ProjectTaskApiService } from '../../services/projecttask-api.service';
 import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-projecttask-item',
+  selector: 'app-projecttask-item2',
   templateUrl: './projecttask-item.component.html',
   styleUrls: ['./projecttask-item.component.scss']
 })

@@ -24,8 +24,4 @@
   </div>
 </div>
 
-<div *ngIf="contextmenu==true">
-    <app-project-contextmenu [project]="project" [x]="contextmenuX" [y]="contextmenuY"></app-project-contextmenu>
-  </div>
-
 <app-project-update *ngIf="update" [project]="project" (closeUpdate)="onUpdateProject($event)"></app-project-update>
