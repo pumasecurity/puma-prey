@@ -6,7 +6,7 @@
         <h5 class="card-title">{{projecttask.name }}</h5>
         <p class="card-text">{{projecttask.description}}</p>
         <p class="card-text"><small class="text-muted"> Last updated on {{ projecttask.date | date:'medium' }}</small> </p>
-        <app-contextmenu [projecttask]="projecttaskOut"></app-contextmenu>
+        <app-projecttask-menu [projecttask]="projecttask"></app-projecttask-menu>
     </div>    
 </div>
 

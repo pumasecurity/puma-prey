@@ -11,10 +11,11 @@ import { ProjectTaskItemComponent } from './components/projecttask-item/projectt
 import { DeleteComponent } from './components/delete/delete.component';
 import { DatePipePipe } from './pipes/date-pipe.pipe';
 import { CreateProjectTaskComponent } from '../projecttask/components/create-projecttask/create-projecttask.component';
-import { ContextmenuComponent } from './components/contextmenu/contextmenu.component';
 import { UpdateComponent } from '../projecttask/components/update/update.component';
 import { ProjectUpdateComponent } from '../project/components/update/update.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProjectTaskMenuComponent } from './components/projecttask-menu/menu.component';
+
 
 
 @NgModule({
@@ -27,10 +28,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CreateProjectTaskComponent,
     DeleteComponent,
     DatePipePipe,
-    ContextmenuComponent,
     UpdateComponent,
     ProjectUpdateComponent,
-    
+    ProjectTaskMenuComponent
   ],
   imports: [
     CommonModule,

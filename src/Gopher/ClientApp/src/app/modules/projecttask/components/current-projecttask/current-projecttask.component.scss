@@ -68,55 +68,5 @@
         
         border-radius: 10px 10px 0 0;
     }
-    h2{
-       padding:15px ;
-    }
-    .md-description{
-        margin: 15px;
-        width: 350px;
-        overflow: hidden;
-        word-wrap: break-word;
-        
-        p{
-            margin: 15px;
-            padding: 15px;
-        }
-        .md-buttons{
-            margin: 10px;
-            height: auto;
-            width: auto;
-            display: flex;
-            justify-content: right;
-
-            .btn_show{
-                background: #20DF7F;
-              
-                border-radius: 10px;
-                border: 0px;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-          
-                width: 100px;
-                height: 30px;
-
-                margin: 0 10px;
-                padding: 5px;
-          
-                font-family: 'Lexend Deca', sans-serif;
-                font-weight: 500;
-                
-                transition: 0.2s ease-in;
-                &:hover:enabled{
-                  background: #2ec4b6;
-                }                  
-            }
-        }
-    }
-    span{
-        margin: 15px;
-    }
-    .show {
-        overflow: visible;
-        height: auto;
-   }
-   
+  
 }

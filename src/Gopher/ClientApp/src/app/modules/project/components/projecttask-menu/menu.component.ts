@@ -2,21 +2,20 @@ import { Component, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProjectTask } from 'src/app/modules/projecttask/models/projecttask';
 import { ProjectTaskApiService } from 'src/app/modules/projecttask/services/projecttask-api.service';
-import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faPenToSquare, faTrash, faEye } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-contextmenu',
-  templateUrl: './contextmenu.component.html',
-  styleUrls: ['./contextmenu.component.scss']
+  selector: 'app-projecttask-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.scss']
 })
-export class ContextmenuComponent implements OnInit {
+export class ProjectTaskMenuComponent implements OnInit {
 
   faPenToSquare = faPenToSquare;
   faTrash = faTrash;
+  faEye = faEye;
 
-  @Output() update : boolean = false;
-  @Input() x=0;
-  @Input() y=0;
+  @Output() update: boolean = false;
   @Input() projecttask : ProjectTask = {
     id:'',
     description:'',
@@ -41,6 +40,10 @@ export class ContextmenuComponent implements OnInit {
   }
   async OnEditClicked() {
     this.update=true;
+  }
+  async OnViewClicked() {
+    console.log(this.projecttask)
+    this.router.navigate([`/projecttask/detail/${this.projecttask.id}/`]);
   }
   async OnUpdate(bool : boolean){
     this.update=false;

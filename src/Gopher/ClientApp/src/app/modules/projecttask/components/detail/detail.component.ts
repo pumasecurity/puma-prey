@@ -5,11 +5,11 @@ import { ProjectTaskApiService } from '../../services/projecttask-api.service';
 import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-projecttask-item2',
-  templateUrl: './projecttask-item.component.html',
-  styleUrls: ['./projecttask-item.component.scss']
+  selector: 'app-projecttask-item-detail',
+  templateUrl: './detail.component.html',
+  styleUrls: ['./detail.component.scss']
 })
-export class ProjectTaskCurrentItemComponent implements OnInit {
+export class ProjectTaskDetailItemComponent implements OnInit {
 
   faPenToSquare = faPenToSquare;
   faTrash = faTrash;
@@ -32,12 +32,14 @@ export class ProjectTaskCurrentItemComponent implements OnInit {
   async ngOnInit() {
     this.projecttaskId=this.routeService.snapshot.paramMap.get('id') as string;
 
-    try{
+    try {
+      console.log('detail task load')
       this.projecttask = await this.projecttaskService.getByProjectTaskId(this.projecttaskId) as ProjectTask;
       
     }
     catch{
       this.router.navigate(["/error"]);
+      console.log('detail task load error')
     }
   }
 

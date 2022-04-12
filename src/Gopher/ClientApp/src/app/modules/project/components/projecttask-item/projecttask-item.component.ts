@@ -16,7 +16,6 @@ export class ProjectTaskItemComponent implements OnInit{
   @Output() showCreate : EventEmitter<void> = new EventEmitter<void>();
 
   @Output() create=false;
-  @Output() projecttaskOut!: ProjectTask;
   @Input() projecttask : ProjectTask = {
     id:'',
     description:'',
@@ -31,7 +30,9 @@ export class ProjectTaskItemComponent implements OnInit{
   constructor(private router : Router) { }
 
   ngOnInit(): void {
- 
+    console.log('project task item');
+    console.log('in:');
+    console.log(this.projecttask);
   }
 
   OnClick():void{
@@ -41,6 +42,6 @@ export class ProjectTaskItemComponent implements OnInit{
 
   async OnCreation(bool : boolean) {
     this.create = false;
-  }
 
+  }
 }

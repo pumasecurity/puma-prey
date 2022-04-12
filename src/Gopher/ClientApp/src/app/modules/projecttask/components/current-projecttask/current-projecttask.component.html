@@ -2,21 +2,24 @@
     <button class="btn btn-light" (click)="OnBackClicked()"> <fa-icon [icon]="faAngleLeft"></fa-icon></button>
 </div>
 <div class="container">
-    
-    <hr class="hr_red" *ngIf="projecttask.priority==2">
-    <hr class="hr_yellow" *ngIf="projecttask.priority==1">
-    <hr class="hr_blue" *ngIf="projecttask.priority==0">
-   
-    <h2>{{projecttask.name}}</h2>
-    <div class="md-description" >
 
-        {{projecttask.description| slice:sliceOptions.start:sliceOptions.end}}
-        
-        <div class="md-buttons" *ngIf="projecttask.description.length >= sliceOptions.default">
-            <button (click)="onExpandText($event)" class="btn_show">Show More</button>
-         </div>
+    <div class="card" >
+        <div class="card-header" [ngClass]="{'': projecttask.priority==0,
+     'text-white bg-warning mb-3' : projecttask.priority==1,
+     'text-white bg-danger mb-3': projecttask.priority==2}">
+            {{projecttask.name}}
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">{{projecttask.description| slice:sliceOptions.start:sliceOptions.end}}</p>
+
+            <div class="md-buttons" *ngIf="projecttask.description.length >= sliceOptions.default">
+                <button (click)="onExpandText($event)" class="btn btn-outline-secondary">Show More</button>
+            </div>
+            <span>Last updated {{projecttask.date | date}}.</span>
+        </div>
     </div>
-   
-    <span>{{projecttask.date | date}}</span>
 
 </div>
+
+

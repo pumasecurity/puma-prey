@@ -5,13 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProjectTaskRoutingModule } from './projecttask-routing.module';
 import { CurrentProjectTaskComponent } from './components/current-projecttask/current-projecttask.component';
-import { ProjectTaskCurrentItemComponent } from './components/projecttask-item/projecttask-item.component';
+import { ProjectTaskDetailItemComponent } from './components/detail/detail.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 
 @NgModule({
   declarations: [
-    CurrentProjectTaskComponent,ProjectTaskCurrentItemComponent
+    CurrentProjectTaskComponent, ProjectTaskDetailItemComponent
   ],
   imports: [
     CommonModule,
