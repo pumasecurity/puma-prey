@@ -1,17 +1,42 @@
-<ul class="navbar-nav" *ngIf="isAuthenticated | async">
+﻿<!--<ul class="navbar-nav" *ngIf="isAuthenticated | async">
     <li class="nav-item">
-        <a  class="nav-link text-dark" [routerLink]='["/authentication/profile"]' title="Manage">Hello {{ userName | async }}</a>
+        <a class="nav-link text-dark" [routerLink]='["/authentication/profile"]' title="Manage">Hello {{ userName | async }}</a>
     </li>
     <li class="nav-item">
-        <a  class="nav-link text-dark" [routerLink]='["/authentication/logout"]' [state]='{ local: true }' title="Logout">Logout</a>
+        <a class="nav-link text-dark" [routerLink]='["/authentication/logout"]' [state]='{ local: true }' title="Logout">Logout</a>
     </li>
 </ul>
 <ul class="navbar-nav" *ngIf="(isAuthenticated | async) !== true">
-  <li class="nav-item">
+    <li class="nav-item">
         <a class="nav-link text-dark" [routerLink]='["/authentication/register"]'>Register</a>
     </li>
     <li class="nav-item">
         <a class="nav-link text-dark" [routerLink]='["/authentication/login"]'>Login</a>
     </li>
-</ul>
+</ul>-->
+
+
+
+
+<img class="avatar mat-elevation-z8"
+        src="https://source.unsplash.com/c_GmwfHBDzk/200x200" *ngIf="isAuthenticated | async" />
+
+<h4 class="bame" [routerLink]='["/authentication/profile"]' title="Manage" *ngIf="isAuthenticated | async">{{ userName | async }}</h4>
+<p class="designation" *ngIf="isAuthenticated | async">TODO {{ userEmail | async }}</p>
+
+<button mat-button class="menu-button" [routerLink]='["/authentication/logout"]' *ngIf="isAuthenticated | async" [state]='{ local: true }'>
+    <mat-icon>logout</mat-icon>
+    <span>Logout</span>
+</button>
+
+<button  mat-button class="menu-button" [routerLink]='["/authentication/register"]' *ngIf="(isAuthenticated | async) !== true">
+    <mat-icon>how_to_reg</mat-icon>
+    <span>Register</span>
+</button>
+
+<button mat-button class="menu-button" [routerLink]='["/authentication/login"]' *ngIf="(isAuthenticated | async) !== true">
+    <mat-icon>login</mat-icon>
+    <span>Login</span>
+</button>
+
 
