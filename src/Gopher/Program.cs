@@ -1,4 +1,4 @@
-﻿using FluentValidation.AspNetCore;
+using FluentValidation.AspNetCore;
 using Gopher.Data;
 using Gopher.Data.Repositories;
 using Gopher.Models;
@@ -9,6 +9,7 @@ using System.Reflection;
 using NSwag;
 using NSwag.Generation.Processors.Security;
 using Serilog;
+using Microsoft.AspNetCore.Identity;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
