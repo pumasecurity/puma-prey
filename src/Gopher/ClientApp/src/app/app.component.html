@@ -1,33 +1,4 @@
-﻿<!--<mat-sidenav-container>
-    <mat-sidenav #sidenav>
-        <mat-nav-list>
-
-            <a *ngFor="let route of routes"
-               mat-list-item
-               [routerLink]="route.path"
-               (click)="sidenav.toggle()"> {{route.label}}</a>
-
-        </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
-        <div style="height: 88vh;">
-            <mat-toolbar color="primary">
-                <button mat-icon-button
-                        aria-label="Menu"
-                        (click)="sidenav.open()">
-                    <mat-icon>menu</mat-icon>
-                </button>
-                <mat-nav-list>
-                    <app-login-menu></app-login-menu>
-                </mat-nav-list>
-            </mat-toolbar>
-            <router-outlet></router-outlet>
-        </div>
-    </mat-sidenav-content>
-</mat-sidenav-container>-->
-
-
-<mat-toolbar class="mat-elevation-z8">
+﻿<mat-toolbar class="mat-elevation-z8">
     <button mat-icon-button
             *ngIf="sidenav.mode === 'over'"
             (click)="sidenav.toggle()">
