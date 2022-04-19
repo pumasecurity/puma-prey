@@ -1,27 +1,21 @@
-<!--<div (click)="OnClick()" class="item-container" (contextmenu)="onRightClick($event,project)">
+﻿<!--<div (click)="OnClick()" class="item-container" (contextmenu)="onRightClick($event,project)">
   <a class="card1">
     <h3>{{project.title }}</h3>
   </a>
 </div>-->
 
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">{{project.title }}</h5>
-    <p class="card-text">{{project.description}}</p>
-    <p class="card-text"><small class="text-muted"> Last updated on {{ project.date | date:'medium' }}</small> </p>
-    
-    <ul class="list-inline m-0">
-      <li class="list-inline-item">
-        <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="View Tasks" (click)="OnClick()"><fa-icon [icon]="faListCheck"></fa-icon></button>
-      </li>
-      <li class="list-inline-item">
-        <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit" (click)="updateProject()"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
-      </li>
-      <li class="list-inline-item">
-        <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Delete" (click)="deleteProject()"><fa-icon [icon]="faTrash"></fa-icon></button>
-      </li>
-    </ul>
-  </div>
-</div>
+<mat-card class="mat-elevation-z4">
+        <mat-card-title>{{project.title }}</mat-card-title>
+        <mat-card-subtitle>Last updated on {{ project.date | date:'medium' }}</mat-card-subtitle>
+    <mat-card-content>
+        <p>{{project.description}}</p>
+
+    </mat-card-content>
+    <mat-card-actions fxLayout="row" fxLayoutAlign="end center">
+        <button mat-button type="button" data-toggle="tooltip" data-placement="top" title="View Tasks" (click)="OnClick()"><fa-icon [icon]="faListCheck"></fa-icon></button>
+        <button mat-button type="button" data-toggle="tooltip" data-placement="top" title="Edit" (click)="updateProject()"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+        <button mat-button type="button" data-toggle="tooltip" data-placement="top" title="Delete" (click)="deleteProject()"><fa-icon [icon]="faTrash"></fa-icon></button>
+    </mat-card-actions>
+</mat-card>
 
 <app-project-update *ngIf="update" [project]="project" (closeUpdate)="onUpdateProject($event)"></app-project-update>

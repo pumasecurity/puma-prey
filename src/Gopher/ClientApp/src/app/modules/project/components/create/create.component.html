@@ -1,40 +1,90 @@
+﻿
+<!--<div class="md-add">
+    <div class="md-container">
+
+        <div class="md-bg"></div>
+        <div class="md-content">
+            <h2>New Project</h2>
+            <form class="md-form" [formGroup]="createForm" (submit)="onSubmit()">
+                <input formControlName="title"
+                       placeholder="Project name"
+                       type="text"
+                       class="input"
+                       id="title"
+                       name="title"
+                       maxlength="30">
+                <input formControlName="description"
+                       placeholder="Description"
+                       type="text"
+                       class="input"
+                       id="description"
+                       name="description"
+                       maxlength="30">
+                <div class="md-buttons">
+                    <button type="reset" class="btn btn-secondary" (click)="onClick()">Cancel</button>
+                    <button type="submit" class="btn btn-success">Create</button>
+                </div>
+                <div class="errors">
+                    <ng-container *ngIf="title?.touched">
+                        <span *ngIf="title?.errors?.['required']">* Project name is required</span>
+                        <span *ngIf="title?.errors?.['pattern']">* Project name is not valid</span>
+                        <span *ngIf="description?.errors?.['required']">* Project description is required</span>
+                        <span *ngIf="description?.errors?.['pattern']">* Project description is not valid</span>
+                    </ng-container>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>-->
+
+
 
 <div class="md-add">
     <div class="md-container">
-        
         <div class="md-bg"></div>
         <div class="md-content">
-          <h2>New Project</h2>
-          <form class="md-form" [formGroup]="createForm" (submit)="onSubmit()">
-            <input formControlName="title"
-                   placeholder="Project name"
-                   type="text"
-                   class="input"
-                   id="title"
-                   name="title"
-                   maxlength="30">
-            <input formControlName="description"
-                   placeholder="Description"
-                   type="text"
-                   class="input"
-                   id="description"
-                   name="description"
-                   maxlength="30">
-            <div class="md-buttons">
-              <button type="reset" class="btn btn-secondary" (click)="onClick()">Cancel</button>
-              <button type="submit" class="btn btn-success">Create</button>
-            </div>
-            <div class="errors">
-              <ng-container *ngIf="title?.touched">
-                <span *ngIf="title?.errors?.['required']">* Project name is required</span>
-                <span *ngIf="title?.errors?.['pattern']">* Project name is not valid</span>
-                <span *ngIf="description?.errors?.['required']">* Project description is required</span>
-                <span *ngIf="description?.errors?.['pattern']">* Project description is not valid</span>
-              </ng-container>
-            </div>
+            <h2 mat-dialog-title>New Project</h2>
+            <form class="md-form" [formGroup]="createForm" (submit)="onSubmit()">
+                <div class="form-row">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Title</mat-label>
+                        <input matInput formControlName="title" required>
+                        <mat-error *ngIf="title?.errors?.['required']">* Title is required</mat-error>
+                        <mat-error *ngIf="title?.errors?.['pattern']">* Title is not valid</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="form-row">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Description</mat-label>
+                        <input matInput formControlName="description" required>
+                        <mat-error *ngIf="description?.errors?.['required']">* Description is required</mat-error>
+                        <mat-error *ngIf="description?.errors?.['pattern']">* Description is not valid</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="form-row">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Due Date</mat-label>
 
-          </form>
+                        <input matInput [matDatepicker]="picker" formControlName="date">
+                        <mat-hint>MM/DD/YYYY</mat-hint>
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                        <mat-error *ngIf="date?.errors?.['required']">* Date is required</mat-error>
+                        <mat-error *ngIf="date?.errors?.['pattern']">* Date is not valid</mat-error>
+                    </mat-form-field>
+                </div>
 
+                <div class="form-row">
+                    <div class="md-buttons">
+                        <button *ngIf="isDialog" mat-stroked-button type="button" (click)="onClick()">Cancel</button>
+                        <button mat-flat-button color="primary" type="submit" [disabled]="!createForm.valid">Save</button>
+                    </div>
+                </div>
+            </form>
         </div>
+    </div>
 </div>
+
 

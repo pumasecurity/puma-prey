@@ -1,4 +1,4 @@
-<ul class="list-inline m-0">
+﻿<!--<ul class="list-inline m-0">
     <li class="list-inline-item">
         <button class="btn btn-success btn-sm rounded-0" title="View" data-toggle="tooltip" (click)="OnViewClicked()"><fa-icon [icon]="faEye"></fa-icon></button>
     </li>
@@ -8,6 +8,13 @@
     <li class="list-inline-item">
         <button class="btn btn-danger btn-sm rounded-0" title="Edit" data-toggle="tooltip" (click)="onDeleteClick()"><fa-icon [icon]="faTrash"></fa-icon></button>
     </li>
-</ul>
+</ul>-->
+
+
+<mat-card-actions fxLayout="row" fxLayoutAlign="center">
+    <button mat-button type="button" data-toggle="tooltip" data-placement="top" title="View Task" (click)="OnViewClicked()"><fa-icon [icon]="faEye"></fa-icon></button>
+    <button mat-button type="button" data-toggle="tooltip" data-placement="top" title="Edit" (click)="OnEditClicked()"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+    <button mat-button type="button" data-toggle="tooltip" data-placement="top" title="Delete" (click)="onDeleteClick()"><fa-icon [icon]="faTrash"></fa-icon></button>
+</mat-card-actions>
 <app-update *ngIf="update" [projecttask]="projecttask" (closeUpdate)="OnUpdate($event)"></app-update>
 

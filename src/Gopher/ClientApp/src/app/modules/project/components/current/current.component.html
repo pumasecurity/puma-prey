@@ -1,14 +1,9 @@
-
-<div class="a-router">
+﻿<!--<div class="a-router">
     <button class="btn btn-light" (click)="OnBackClicked()"> <fa-icon [icon]="faAngleLeft"></fa-icon></button>
 </div>
-<div class="container">
-    <button class="btn btn-light" (click)="OnBackClicked()"> <fa-icon [icon]="faAngleLeft"></fa-icon></button>
-
+<section>
     <h2>{{projecttitle}}</h2>
-    <div class="a-router">
-        <button class="btn btn-outline-dark" (click)="OnCreateClicked()">Create Task</button>
-    </div>
+
     <div class="grid">
         <app-projecttask-item *ngFor="let item of projecttasks" [projecttitle]="projecttitle" [projecttask]="item"></app-projecttask-item>
 
@@ -16,5 +11,34 @@
 
 
     <app-create-projecttask [projectId]="projectId" *ngIf="create" (closeCreate)="OnCreation($event)"></app-create-projecttask>
+    <div class="a-router">
+        <button mat-mini-fab color="none" aria-label="Create Task" (click)="OnCreateClicked()">
+            <mat-icon>add</mat-icon>
+        </button>
+    </div>
+</section>
 
+
+<div class="a-router">
+    <button mat-mini-fab color="none" aria-label="Create Task" (click)="OnCreateClicked()">
+        <mat-icon>add</mat-icon>
+    </button>
+</div>-->
+
+<app-create-projecttask [projectId]="projectId" *ngIf="create" (closeCreate)="OnCreation($event)"></app-create-projecttask>
+
+<div class="a-router">
+    <button class="btn btn-light" (click)="OnBackClicked()"> <fa-icon [icon]="faAngleLeft"></fa-icon></button>
+    <span>{{projecttitle | uppercase}}</span>    
+</div>
+
+<button mat-mini-fab color="none" aria-label="Create Task" (click)="OnCreateClicked()">
+    <mat-icon>add</mat-icon>
+</button>
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div *ngFor="let item of projecttasks">
+            <app-projecttask-item [projecttitle]="projecttitle" [projecttask]="item"></app-projecttask-item>
+        </div>
+    </div>
 </div>

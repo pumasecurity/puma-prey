@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+﻿import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Project } from '../../models/project';
@@ -12,6 +12,7 @@ import { ProjectApiService } from '../../services/project-api.service';
 export class ProjectUpdateComponent implements OnInit {
   @Output() closeUpdate : EventEmitter<boolean> = new EventEmitter<boolean>();
 
+  @Input() isDialog: boolean = true;
   @Input() project : Project = {
     id: '',
     userID: '',

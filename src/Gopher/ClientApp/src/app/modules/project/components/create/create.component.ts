@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+﻿import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Project } from '../../models/project';
@@ -17,20 +17,22 @@ export class CreateComponent {
 
   @Output()
   closeCreate: EventEmitter<boolean> = new EventEmitter<boolean>();
-  @Input()
-  userId: string;
 
+  @Input() userId: string;
+  @Input() isDialog: boolean = true;
   
   createForm: FormGroup;
   get title() { return this.createForm.get('title'); }
   get description() { return this.createForm.get('description'); }
+  get date() { return this.createForm.get('date'); }
   
   constructor(private projectService: ProjectApiService,
     private router: Router, private authorizeService: AuthorizeService) {
     this.userId = '';
     this.createForm = new FormGroup({
       title: new FormControl(null, [Validators.required]),
-      description: new FormControl(null, [Validators.required])
+      description: new FormControl(null, [Validators.required]),
+      date: new FormControl(null, [Validators.required])
     });
   }
   

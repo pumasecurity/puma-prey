@@ -1,83 +1,41 @@
-.card1 {
-    display: block;
-    position: relative;
-    max-width: 262px;
-    background-color: #f2f8f9;
-    border-radius: 4px;
+﻿.card1 {
+
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    right: -10px;
+    background: grey;
+    height: 68px;
+    width: 32px;
+    transform: scale(1);
+    transform-origin: 50% 20%;
+    transition: transform 1s ease-out;
+  }
+}
 
 
-    
-    padding: 8px 24px;
-    margin: 12px;
-    text-decoration: none;
-    z-index: 1;
-    overflow: hidden;
+.card2 {
   
-    p{
-      width: 120px;
-      
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      z-index: -1;
-      right: -10px;
-      background: #00b4d8;
-      transform: scale(1);
-      transform-origin: 50% 20%;
-      transition: transform 1s ease-out;
-    }
-  
-    &:hover:before {
-      transform: scale(20);
-    }
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    right: -10px;
+    background: yellow;
+    height: 68px;
+    width: 32px;
+    transform: scale(1);
+    transform-origin: 50% 20%;
+    transition: transform 1s ease-out;
   }
-  
-  .card1:hover {
-    p {
-      transition: all 0.3s ease-out;
-      color: rgb(255, 255, 255);
-    }
-    h3 {
-      transition: all 0.3s ease-out;
-      color: #ffffff;
-    }
-  }
-   
-
-
-  .card2 {
-    position: relative;
-    background-color: #f2f8f9;
-  
-  
-    &:hover:before {
-      transform: scale(20);
-    }
-  }
-  
-  .card2:hover {
-    p {
-      transition: all 0.3s ease-out;
-      color: rgb(255, 255, 255);
-    }
-    h3 {
-      transition: all 0.3s ease-out;
-      color: #ffffff;
-    }
-  }
+}
    
   .card3 {
-    background-color: #f2f8f9;
     
-    
-
-    p{
-      width: 100%;
-      height: 20px;
-    }
-    &:before {
+    :before {
       content: "";
       position: absolute;
       top: 0;
@@ -90,20 +48,5 @@
       transform-origin: 50% 20%;
       transition: transform 1s ease-out;
     }
-  
-    &:hover:before {
-      transform: scale(20);
-    }
   }
   
-  .card3:hover {
-    p {
-      transition: all 0.3s ease-out;
-      color: rgb(255, 255, 255);
-    }
-    h3 {
-      transition: all 0.3s ease-out;
-      color: #ffffff;
-    }
-  }
-   

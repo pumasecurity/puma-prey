@@ -19,7 +19,7 @@
 
 
 <img class="avatar mat-elevation-z8"
-        src="https://source.unsplash.com/c_GmwfHBDzk/200x200" *ngIf="isAuthenticated | async" />
+        src="/assets/logo.png" *ngIf="isAuthenticated | async" />
 
 <h4 class="bame" [routerLink]='["/authentication/profile"]' title="Manage" *ngIf="isAuthenticated | async">{{ userName | async }}</h4>
 <p class="designation" *ngIf="isAuthenticated | async">TODO {{ userEmail | async }}</p>

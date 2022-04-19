@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+﻿import { NgModule } from '@angular/core';
 import { CommonModule, DatePipe } from '@angular/common';
 
 import { HttpClientModule } from '@angular/common/http';
@@ -7,6 +7,8 @@ import { ProjectTaskRoutingModule } from './projecttask-routing.module';
 import { CurrentProjectTaskComponent } from './components/current-projecttask/current-projecttask.component';
 import { ProjectTaskDetailItemComponent } from './components/detail/detail.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MaterialModule } from 'src/app/material/material.module';
 
 
 
@@ -20,7 +22,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ProjectTaskRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FlexLayoutModule,
+    MaterialModule
   ]
 })
 export class ProjectTaskModule { }

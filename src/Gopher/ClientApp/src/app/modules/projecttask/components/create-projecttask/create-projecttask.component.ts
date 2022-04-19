@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+﻿import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ProjectApiService } from 'src/app/modules/project/services/project-api.service';
@@ -12,8 +12,11 @@ import { ProjectTaskApiService } from '../../services/projecttask-api.service';
 export class CreateProjectTaskComponent {
   @Output() closeCreate : EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  @Input() projectId : string = "";
+  @Input() projectId: string = "";
+  @Input() isDialog: boolean = true;
+
   createForm: FormGroup;
+
   get name() { return this.createForm.get('name'); }
   get description() { return this.createForm.get('description'); }
   get date() { return this.createForm.get('date')}
@@ -29,7 +32,8 @@ export class CreateProjectTaskComponent {
       description: new FormControl(null, [Validators.required]),
       date: new FormControl(null, [Validators.required]),
       priority: new FormControl(null, [Validators.required]),
-      tagIds:new FormControl('', [Validators.required, Validators.pattern(/^\S*$/)])
+      //tagIds: new FormControl('', [Validators.required, Validators.pattern(/^\S*$/)])
+      tagIds: new FormControl('', []) //TODO: add tag/chip validators
     })
   }
 

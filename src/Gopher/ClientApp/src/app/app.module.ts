@@ -20,11 +20,11 @@ import { MaterialModule } from './material/material.module';
 
 export const routes = [
   { path: '', component: HomeComponent, pathMatch: 'full', label: 'Home', icon: 'home', hidden: false },
-  { path: 'counter', component: CounterComponent, label: 'Counter' },
-  { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard], label: "Fetch Data"},
-  { path: 'project', loadChildren: () => import('./modules/project/project.module').then(m => m.ProjectModule), canActivate: [AuthorizeGuard], label: 'Projects' },
+  { path: 'project', loadChildren: () => import('./modules/project/project.module').then(m => m.ProjectModule), canActivate: [AuthorizeGuard], label: 'Projects', icon: 'work' },
   { path: 'projecttask', loadChildren: () => import('./modules/projecttask/projecttask.module').then(m => m.ProjectTaskModule), canActivate: [AuthorizeGuard], label: 'Project Tasks', hidden: true },
-  { path: '**', component: ErrorComponent }
+  { path: 'counter', component: CounterComponent, label: 'Counter' },
+  { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard], label: "Fetch Data", icon: 'leaderboard'},
+  { path: '**', component: ErrorComponent, hidden: true }
 ];
 
 @NgModule({

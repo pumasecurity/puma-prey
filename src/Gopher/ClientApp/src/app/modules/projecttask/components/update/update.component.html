@@ -1,6 +1,6 @@
-<div class="md-add">
+﻿<!--<div class="md-add">
     <div class="md-container">
-        
+
         <div class="md-bg"></div>
         <div class="md-content">
             <h2>Update Task</h2>
@@ -31,7 +31,7 @@
                     <input type="date"
                            id="date"
                            name="date"
-                           formControlName="date" >
+                           formControlName="date">
                 </div>
                 <div class="form-inner-content">
                     <label>Priority</label>
@@ -66,6 +66,67 @@
 
             </form>
         </div>
-    
+
+    </div>
+</div>-->
+
+
+
+<div class="md-add">
+    <div class="md-container">
+        <div class="md-bg"></div>
+        <div class="md-content">
+            <h2 mat-dialog-title>Update Task</h2>
+            <form class="md-form" [formGroup]="updateForm" (submit)="OnSubmit()">
+                <div class="form-row">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Name</mat-label>
+                        <input matInput formControlName="name" required>
+                        <mat-error *ngIf="name?.errors?.['required']">* Name is required</mat-error>
+                        <mat-error *ngIf="name?.errors?.['pattern']">* Name is not valid</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="form-row">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Description</mat-label>
+                        <input matInput formControlName="description" required>
+                        <mat-error *ngIf="description?.errors?.['required']">* Description is required</mat-error>
+                        <mat-error *ngIf="description?.errors?.['pattern']">* Description is not valid</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="form-row">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Due Date</mat-label>
+
+                        <input matInput [matDatepicker]="picker" formControlName="date">
+                        <mat-hint>MM/DD/YYYY</mat-hint>
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                        <mat-error *ngIf="date?.errors?.['required']">* Date is required</mat-error>
+                        <mat-error *ngIf="date?.errors?.['pattern']">* Date is not valid</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="form-row">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Priority</mat-label>
+                        <mat-select placeholder="Select task priority" formControlName="priority" >
+                            <mat-option value=0>Low</mat-option>
+                            <mat-option value=1>Medium</mat-option>
+                            <mat-option value=2>High</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="form-row">
+                    <mat-slide-toggle formControlName="isDone">Done</mat-slide-toggle>
+                </div>
+
+                <div class="form-row">
+                    <div class="md-buttons">
+                        <button *ngIf="isDialog" mat-stroked-button type="button" (click)="OnClick()">Cancel</button>
+                        <button mat-flat-button color="primary" type="submit" [disabled]="!updateForm.valid">Apply</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>

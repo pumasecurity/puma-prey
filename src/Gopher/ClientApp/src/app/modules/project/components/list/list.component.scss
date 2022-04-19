@@ -1,4 +1,4 @@
-.container{
+﻿.container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,3 +111,11 @@
     height: 1em;
     display: inline-block;
   }
+
+.content {
+  padding: 16px;
+}
+
+.content > mat-card {
+  width: 200px;
+}

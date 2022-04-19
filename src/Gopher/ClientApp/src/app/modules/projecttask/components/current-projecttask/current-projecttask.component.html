@@ -1,25 +1,16 @@
-<div class="a-router">
+﻿<div class="a-router">
     <button class="btn btn-light" (click)="OnBackClicked()"> <fa-icon [icon]="faAngleLeft"></fa-icon></button>
 </div>
-<div class="container">
-
-    <div class="card" >
-        <div class="card-header" [ngClass]="{'': projecttask.priority==0,
-     'text-white bg-warning mb-3' : projecttask.priority==1,
-     'text-white bg-danger mb-3': projecttask.priority==2}">
-            {{projecttask.name}}
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">{{projecttask.description| slice:sliceOptions.start:sliceOptions.end}}</p>
-
-            <div class="md-buttons" *ngIf="projecttask.description.length >= sliceOptions.default">
-                <button (click)="onExpandText($event)" class="btn btn-outline-secondary">Show More</button>
-            </div>
-            <span>Last updated {{projecttask.date | date}}.</span>
-        </div>
-    </div>
-
-</div>
+    <mat-card class="mat-elevation-z4" [ngClass]="{'card1': projecttask.priority==0,
+     'card2' : projecttask.priority==1,
+     'card3': projecttask.priority==2}">
+        <mat-card-header>
+            <mat-card-title>{{projecttask.description| slice:sliceOptions.start:sliceOptions.end}}</mat-card-title>
+            <mat-card-subtitle>Last updated on {{ projecttask.date | date:'medium' }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>{{projecttask.description}}</p>
+        </mat-card-content>        
+    </mat-card>
 
 

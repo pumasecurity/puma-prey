@@ -3,6 +3,10 @@
   color: white;
 }
 
+.mat-list-item {
+  color:white;
+}
+
 mat-sidenav {
   margin: 16px;
   //width: 200px;

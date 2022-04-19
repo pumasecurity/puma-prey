@@ -1,14 +1,18 @@
-﻿<button mat-button class="menu-button" *ngFor="let route of routes" [routerLink]="route.path" [hidden]="route.hidden">
-    <mat-icon>{{route.icon}}</mat-icon>
-    <span>{{route.label}}</span>
-</button>
+﻿
+<!--<mat-nav-list>
+    <a mat-list-item  *ngFor="let route of routes" [routerLink]="route.path" [hidden]="route.hidden"><mat-icon>{{route.icon}}</mat-icon> {{route.label}} </a>
+</mat-nav-list>-->
 
+    <button mat-button type="button" class="menu-button" *ngFor="let route of routes" [routerLink]="route.path" [hidden]="route.hidden">
+        <mat-icon>{{route.icon}}</mat-icon>
+        {{route.label}}
+    </button>
 
-<!--<button mat-button class="menu-button" routerLink="/profile">
-    <mat-icon>person</mat-icon>
-    <span>Profile</span>
-</button>-->
-<button mat-button class="menu-button" routerLink="/about">
-    <mat-icon>info</mat-icon>
-    <span>About</span>
-</button>
+    <!--<button mat-button class="menu-button" routerLink="/profile">
+        <mat-icon>person</mat-icon>
+        <span>Profile</span>
+    </button>-->
+    <button mat-button class="menu-button" routerLink="/about">
+        <mat-icon>info</mat-icon>
+        <span>About</span>
+    </button>

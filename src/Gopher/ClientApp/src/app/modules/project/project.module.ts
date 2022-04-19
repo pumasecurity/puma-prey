@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+﻿import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListComponent } from './components/list/list.component';
 import { CreateComponent } from './components/create/create.component';
@@ -15,6 +15,9 @@ import { UpdateComponent } from '../projecttask/components/update/update.compone
 import { ProjectUpdateComponent } from '../project/components/update/update.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProjectTaskMenuComponent } from './components/projecttask-menu/menu.component';
+import { MaterialModule } from 'src/app/material/material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';;
+import { CreateDialogComponent } from './components/create-dialog/create-dialog.component'
 
 
 
@@ -31,14 +34,17 @@ import { ProjectTaskMenuComponent } from './components/projecttask-menu/menu.com
     UpdateComponent,
     ProjectUpdateComponent,
     ProjectTaskMenuComponent
-  ],
+,
+    CreateDialogComponent  ],
   imports: [
     CommonModule,
     ProjectRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MaterialModule,
+    FlexLayoutModule
   ]
 })
 export class ProjectModule { }

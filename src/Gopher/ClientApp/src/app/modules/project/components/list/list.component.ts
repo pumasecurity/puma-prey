@@ -1,8 +1,9 @@
-import { Component, OnInit, Output } from '@angular/core';
+﻿import { Component, OnInit, Output } from '@angular/core';
 import { AuthorizeService } from '../../../../../api-authorization/authorize.service';
 import { Project } from '../../models/project';
 import { ProjectApiService } from '../../services/project-api.service';
-
+import { MatSnackBar, } from '@angular/material/snack-bar';
+import { MatDialogRef, MatDialog, } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-list',
@@ -18,7 +19,8 @@ export class ListComponent implements OnInit {
   @Output()
   public userId: string;
 
-  constructor(private projectService: ProjectApiService, private authorizeService: AuthorizeService) {
+  constructor(private projectService: ProjectApiService, private authorizeService: AuthorizeService, private dialog: MatDialog,
+    private snackBar: MatSnackBar) {
     this.userId = '';
   }
 
@@ -67,4 +69,31 @@ export class ListComponent implements OnInit {
     await this.projectService.DeleteProject(index);
     this.projects = await this.projectService.getByUserId(this.userId) as Array<Project>;
   }
+
+  //openDialog() {
+  //  const dialogRef = this.dialog.open(ConfirmationDialog, {
+  //    data: {
+  //      message: 'Are you sure want to delete?',
+  //      buttonText: {
+  //        ok: 'Save',
+  //        cancel: 'No'
+  //      }
+  //    }
+  //  });
+  //  const snack = this.snackBar.open('Snack bar open before dialog');
+
+  //  dialogRef.afterClosed().subscribe((confirmed: boolean) => {
+  //    if (confirmed) {
+  //      snack.dismiss();
+  //      const a = document.createElement('a');
+  //      a.click();
+  //      a.remove();
+  //      snack.dismiss();
+  //      this.snackBar.open('Closing snack bar in a few seconds', 'Fechar', {
+  //        duration: 2000,
+  //      });
+  //    }
+  //  });
+  //}
+
 }

@@ -1,11 +1,16 @@
-<div class="container">
-    <div class="a-router">
-        <button class="btn btn-outline-dark" (click)="OnCreateClicked()">Create Project</button>
-    </div>
+﻿<div class="a-router">
+    <button mat-mini-fab color="none" aria-label="Create Project" (click)="OnCreateClicked()">
+        <mat-icon>add</mat-icon>
+    </button>
+</div>
 
-    <div class="grid">
-        <app-item *ngFor="let project of projects" [project]="project" (onDelete)="onDeleteProject(project.id)" ></app-item>
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div *ngFor="let project of projects">
+            <app-item [project]="project"></app-item>
+        </div>
     </div>
 </div>
+
 
 <app-create *ngIf="create" [userId]="userId" (closeCreate)="OnCreation($event)"></app-create>

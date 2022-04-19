@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+﻿import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { AbstractControl, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ProjectTask } from '../../models/projecttask';
 import { ProjectTaskApiService } from '../../services/projecttask-api.service';
@@ -22,6 +22,7 @@ export class UpdateComponent implements OnInit {
     projectID:'',
     tagIds:Array<string>()
   };
+  @Input() isDialog: boolean = true;
 
   updateForm: FormGroup;
 
@@ -30,16 +31,17 @@ export class UpdateComponent implements OnInit {
   get description() { return this.updateForm.get('description'); }
   get date() { return this.updateForm.get('date')}
   get priority() { return this.updateForm.get('priority'); }
+  //set priority(value: any) { this.updateForm.value['priority'] = value; }
   get isDone() { return this.updateForm.get('isDone'); }
   
   constructor(private projecttaskService: ProjectTaskApiService,
              private router: Router) {
     this.updateForm = new FormGroup({
-      name: new FormControl(null,  [Validators.required]),
-      description: new FormControl(null, [Validators.required]),
+      name: new FormControl(this.projecttask.name, [Validators.required]),
+      description: new FormControl(this.projecttask.description, [Validators.required]),
       date: new FormControl(this.projecttask.date.toISOString().split("T")[0], [Validators.required]),
-      priority: new FormControl(null, [Validators.required]),
-      isDone: new FormControl(null, [Validators.required]),
+      priority: new FormControl(this.projecttask.priority, [Validators.required]),
+      isDone: new FormControl(this.projecttask.isDone, [Validators.required]),
     })
   }
   ngOnInit(): void {
@@ -55,11 +57,7 @@ export class UpdateComponent implements OnInit {
     let tagArray: Array<string> = []; //TODO
 
     this.updateForm.value['id'] = this.projecttask.id;
-    
     this.updateForm.value['projectID'] = this.projecttask.projectID;
-    
-    //this.updateForm.value['isDone'] = false;
-    
     this.updateForm.value['tagIDs'] =tagArray;
 
     await this.projecttaskService.UpdateProjectTask(this.updateForm.value['id'],this.updateForm.value);
