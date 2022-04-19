@@ -17,7 +17,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProjectTaskMenuComponent } from './components/projecttask-menu/menu.component';
 import { MaterialModule } from 'src/app/material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';;
-import { CreateDialogComponent } from './components/create-dialog/create-dialog.component'
 
 
 
@@ -34,8 +33,7 @@ import { CreateDialogComponent } from './components/create-dialog/create-dialog.
     UpdateComponent,
     ProjectUpdateComponent,
     ProjectTaskMenuComponent
-,
-    CreateDialogComponent  ],
+    ],
   imports: [
     CommonModule,
     ProjectRoutingModule,
