@@ -2,15 +2,19 @@
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
+RUN apt-get update && apt-get install -y nodejs
 EXPOSE 80
 EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
+
+
 COPY ["src/Gopher/Gopher.csproj", "src/Gopher/"]
 RUN dotnet restore "src/Gopher/Gopher.csproj"
 COPY . .
 WORKDIR "/src/src/Gopher"
+RUN apt-get update && apt-get install -y nodejs
 RUN dotnet build "Gopher.csproj" -c Release -o /app/build
 
 FROM build AS publish

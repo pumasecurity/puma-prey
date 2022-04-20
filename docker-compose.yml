@@ -18,12 +18,25 @@ services:
   #    MYSQL_DATABASE: pumaprey
   #  restart: always   
 
-  gopher:
+  gopher.web:
+    container_name: app_web
+    image: ${DOCKER_REGISTRY-}gopher.web
     #depends_on:
-    #  - databases
-    image: ${DOCKER_REGISTRY-}gopher
-    ports:
-      - "80:80"
+    #  - gopher.api
     build:
-      context: .
-      dockerfile: Gopher/Dockerfile           
+      context:  /src/Gopher/ClientApp
+      dockerfile: Dockerfile
+    volumes: 
+      - '/src/Gopher/ClientApp:/usr/share/app'
+      - /app/node_modules/
+    ports:
+      - 4200:4200
+    
+  #gopher.api:
+  #  container_name: api_gateway
+  #  image: ${DOCKER_REGISTRY-}gopher.api
+  #  ports:
+  #    - "80:80"    
+  #  build:
+  #    context: .
+  #    dockerfile: /src/Gopher/Dockerfile           

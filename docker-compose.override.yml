@@ -1,8 +1,14 @@
 version: '3.4'
 
 services:
-  gopher:
+  #gopher.api:
+  #  environment:
+  #    - ASPNETCORE_ENVIRONMENT=Development
+  #  ports:
+  #    - "80"
+  gopher.web:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
-      - "80"
+      - 44418:44418
+    command: ["ng", "serve", "--host=0.0.0.0", "--watch", "--poll=2000"]

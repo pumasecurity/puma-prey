@@ -6,7 +6,7 @@
     <ProjectGuid>312cef80-62a4-4b0b-841a-5bb29f1aefdb</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
-    <DockerServiceName>gopher</DockerServiceName>
+    <DockerServiceName>gopher.web</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
