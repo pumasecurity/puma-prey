@@ -79,7 +79,7 @@ namespace Coyote.Controllers
         {
             var cookieOptions = new CookieOptions
             {
-                HttpOnly = true,
+                HttpOnly = false,
                 Expires = DateTime.UtcNow.AddDays(7)
             };
             Response.Cookies.Append("RefreshToken", token, cookieOptions);
