@@ -1,7 +1,4 @@
-﻿using Coyote.Models.Animal;
-using Coyote.Services.Interface;
-using Microsoft.AspNetCore.Mvc;
-using Puma.Prey.Rabbit.Models;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 namespace Coyote.Controllers
@@ -10,11 +7,8 @@ namespace Coyote.Controllers
     [Route("api/[controller]")]
     public class AboutController : Controller
     {
-        private readonly IAnimalService _animalService;
-
-        public AboutController(IAnimalService animalService)
+        public AboutController()
         {
-            _animalService = animalService;
         }
 
         [HttpGet("{aboutFile}")]
