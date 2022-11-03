@@ -17,10 +17,10 @@ namespace Coyote.Controllers
             _animalService = animalService;
         }
 
-        [HttpGet("{aboutFile}")]
-        public async Task<ActionResult> GetAbout(string aboutFile)
+        [HttpGet()]
+        public async Task<ActionResult> GetAbout()
         {
-              return this.Redirect(aboutFile);
+              return this.Redirect("path/to/about");
         }
     }
 }
