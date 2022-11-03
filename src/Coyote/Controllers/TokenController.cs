@@ -24,6 +24,7 @@ namespace Coyote.Controllers
         [HttpPost("Authenticate")]
         public async Task<IActionResult> Authenticate(AuthenticateRequest model)
         {
+            var random = new System.Random();
             var response = await tokenService.Authenticate(model, ipAddress());
             setTokenCookie(response.RefreshToken);
             return Ok(response);
