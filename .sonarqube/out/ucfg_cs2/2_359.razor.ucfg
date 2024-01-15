@@ -1,0 +1,356 @@
+
+?fox/areas/helppage/views/help/displaytemplates/helppageapimodel"0*Ä
+0. b(.≤
+Ø
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (60
+%0*System.Web.Http.Description.ApiDescription"GPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.ApiDescription.get*A?
+=
+Model4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModelÎ
+Ë
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (69
+description*System.Web.Http.Description.ApiDescription"__id*42
+0
+%0*System.Web.Http.Description.ApiDescriptioné
+ã
+m
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml
+ 
+(A 
+%1System.Net.Http.HttpMethod"9System.Web.Http.Description.ApiDescription.HttpMethod.get*=;
+9
+description*System.Web.Http.Description.ApiDescriptionÕ
+ 
+m
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml
+ 
+(A
+%2string"%System.Net.Http.HttpMethod.Method.get*$"
+ 
+%1System.Net.Http.HttpMethod¸
+˘
+m
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml
+ 
+(A
+%3string";System.Web.Http.Description.ApiDescription.RelativePath.get*=;
+9
+description*System.Web.Http.Description.ApiDescriptionˇ
+¸
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (%
+%4string"<System.Web.Http.Description.ApiDescription.Documentation.get*=;
+9
+description*System.Web.Http.Description.ApiDescriptionÙ
+Ò
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (8'
+%5!System.Web.Mvc.HtmlHelper<TModel>"+System.Web.Mvc.WebViewPage<TModel>.Html.get*(&$
+"System.Web.Mvc.WebViewPage<TModel>Ω
+∫
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (8"
+%7System.Web.Mvc.MvcHtmlString"¨System.Web.Mvc.Html.DisplayExtensions.DisplayFor<TModel, TValue>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TValue>>, string)*+)"'
+%System.Web.Mvc.Html.DisplayExtensions*+)
+'
+%5!System.Web.Mvc.HtmlHelper<TModel>*
+""*
+
+Parametersµ
+≤
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (8
+
+%8void"!razor_sink*&$
+"
+%7System.Web.Mvc.MvcHtmlStringî
+ë
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (&
+%9string"MPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.RequestDocumentation.get*A?
+=
+Model4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel—
+Œ
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (/F
+%10?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"PPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.RequestModelDescription.get*A?
+=
+Model4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModelâ
+Ü
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (/
+%11bool""object.operator !=(object, object)*
+"
+object*JH
+F
+%10?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription*
+""*
+1
+2*£
+1k s(/ˆ
+Û
+p
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (î(
+%12!System.Web.Mvc.HtmlHelper<TModel>"+System.Web.Mvc.WebViewPage<TModel>.Html.get*(&$
+"System.Web.Mvc.WebViewPage<TModel>“
+œ
+p
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (îF
+%13?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"PPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.RequestModelDescription.get*A?
+=
+Model4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel‹
+Ÿ
+p
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (î#
+%16System.Web.Mvc.MvcHtmlString"¥System.Web.Mvc.Html.DisplayExtensions.DisplayFor<TModel, TValue>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TValue>>, string, object)*+)"'
+%System.Web.Mvc.Html.DisplayExtensions*,*
+(
+%12!System.Web.Mvc.HtmlHelper<TModel>*
+""*
+ModelDescriptionLink*
+""∏
+µ
+p
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (î
+%17void"!razor_sink*'%
+#
+%16System.Web.Mvc.MvcHtmlString≥
+∞
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (0*
+%18#System.Collections.Generic.IList<T>"NPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.RequestBodyParameters.get*A?
+=
+Model4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModelÌ
+Í
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (0
+%19bool""object.operator !=(object, object)*
+"
+object*.,
+*
+%18#System.Collections.Generic.IList<T>*
+""*
+3
+4*Ü
+3| |(Gı
+Ú
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (H(
+%20!System.Web.Mvc.HtmlHelper<TModel>"+System.Web.Mvc.WebViewPage<TModel>.Html.get*(&$
+"System.Web.Mvc.WebViewPage<TModel>ø
+º
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (H#
+%22System.Web.Mvc.MvcHtmlString"¨System.Web.Mvc.Html.DisplayExtensions.DisplayFor<TModel, TValue>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TValue>>, string)*+)"'
+%System.Web.Mvc.Html.DisplayExtensions*,*
+(
+%20!System.Web.Mvc.HtmlHelper<TModel>*
+""*
+
+Parameters∑
+¥
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml (H
+%23void"!razor_sink*'%
+#
+%22System.Web.Mvc.MvcHtmlString*
+4*
+2
+å å(3*
+4*€
+4
+î ó('Ω
+∫
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml$ $((;
+%244System.Collections.Generic.IDictionary<TKey, TValue>"GPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.SampleRequests.get*A?
+=
+Model4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModelÅ˛
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml$ $((
+
+%25int"3System.Collections.Generic.ICollection<T>.Count.get*?=
+;
+%244System.Collections.Generic.IDictionary<TKey, TValue>2	Count.get*
+5
+6*Ö
+5
+ù †(9ı
+Ú
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml' '(:(
+%26!System.Web.Mvc.HtmlHelper<TModel>"+System.Web.Mvc.WebViewPage<TModel>.Html.get*(&$
+"System.Web.Mvc.WebViewPage<TModel>º
+π
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml' '(:#
+%28System.Web.Mvc.MvcHtmlString"¨System.Web.Mvc.Html.DisplayExtensions.DisplayFor<TModel, TValue>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TValue>>, string)*+)"'
+%System.Web.Mvc.Html.DisplayExtensions*,*
+(
+%26!System.Web.Mvc.HtmlHelper<TModel>*
+""*	
+Samples∑
+¥
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml' '(:
+%29void"!razor_sink*'%
+#
+%28System.Web.Mvc.MvcHtmlString*
+6*™	
+6
+≠ ∏(*Ø
+¨
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml. .(96
+%30/System.Web.Http.Description.ResponseDescription"BSystem.Web.Http.Description.ApiDescription.ResponseDescription.get*=;
+9
+description*System.Web.Http.Description.ApiDescriptionÇ
+ˇ
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml. .(9
+%31string"ASystem.Web.Http.Description.ResponseDescription.Documentation.get*:8
+6
+%30/System.Web.Http.Description.ResponseDescriptionÕ
+ 
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml0 0(+F
+%32?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"LPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.ResourceDescription.get*A?
+=
+Model4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModelâ
+Ü
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml0 0(+
+%33bool""object.operator !=(object, object)*
+"
+object*JH
+F
+%32?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription*
+""*
+7
+8*ü
+7
+¡ …(,ˆ
+Û
+p
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml2 2(å(
+%34!System.Web.Mvc.HtmlHelper<TModel>"+System.Web.Mvc.WebViewPage<TModel>.Html.get*(&$
+"System.Web.Mvc.WebViewPage<TModel>Œ
+À
+p
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml2 2(åF
+%35?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"LPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.ResourceDescription.get*A?
+=
+Model4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel‹
+Ÿ
+p
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml2 2(å#
+%38System.Web.Mvc.MvcHtmlString"¥System.Web.Mvc.Html.DisplayExtensions.DisplayFor<TModel, TValue>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TValue>>, string, object)*+)"'
+%System.Web.Mvc.Html.DisplayExtensions*,*
+(
+%34!System.Web.Mvc.HtmlHelper<TModel>*
+""*
+ModelDescriptionLink*
+""∏
+µ
+p
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml2 2(å
+%39void"!razor_sink*'%
+#
+%38System.Web.Mvc.MvcHtmlString∞
+≠
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml3 3(-*
+%40#System.Collections.Generic.IList<T>"KPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.ResourceProperties.get*A?
+=
+Model4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModelÌ
+Í
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml3 3(-
+%41bool""object.operator !=(object, object)*
+"
+object*.,
+*
+%40#System.Collections.Generic.IList<T>*
+""*
+9
+10*â
+9
+“ “(Dı
+Ú
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml5 5(E(
+%42!System.Web.Mvc.HtmlHelper<TModel>"+System.Web.Mvc.WebViewPage<TModel>.Html.get*(&$
+"System.Web.Mvc.WebViewPage<TModel>ø
+º
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml5 5(E#
+%44System.Web.Mvc.MvcHtmlString"¨System.Web.Mvc.Html.DisplayExtensions.DisplayFor<TModel, TValue>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TValue>>, string)*+)"'
+%System.Web.Mvc.Html.DisplayExtensions*,*
+(
+%42!System.Web.Mvc.HtmlHelper<TModel>*
+""*
+
+Parameters∑
+¥
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml5 5(E
+%45void"!razor_sink*'%
+#
+%44System.Web.Mvc.MvcHtmlString*
+10*
+8
+‚ ‚(3*
+10*ﬂ
+10
+Í Ì((æ
+ª
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml= =();
+%464System.Collections.Generic.IDictionary<TKey, TValue>"HPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.SampleResponses.get*A?
+=
+Model4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModelÅ˛
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml= =()
+
+%47int"3System.Collections.Generic.ICollection<T>.Count.get*?=
+;
+%464System.Collections.Generic.IDictionary<TKey, TValue>2	Count.get*
+11
+12*á
+11
+Û ˆ(:ı
+Ú
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml@ @(;(
+%48!System.Web.Mvc.HtmlHelper<TModel>"+System.Web.Mvc.WebViewPage<TModel>.Html.get*(&$
+"System.Web.Mvc.WebViewPage<TModel>º
+π
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml@ @(;#
+%50System.Web.Mvc.MvcHtmlString"¨System.Web.Mvc.Html.DisplayExtensions.DisplayFor<TModel, TValue>(System.Web.Mvc.HtmlHelper<TModel>, System.Linq.Expressions.Expression<System.Func<TModel, TValue>>, string)*+)"'
+%System.Web.Mvc.Html.DisplayExtensions*,*
+(
+%48!System.Web.Mvc.HtmlHelper<TModel>*
+""*	
+Samples∑
+¥
+o
+eD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml@ @(;
+%51void"!razor_sink*'%
+#
+%50System.Web.Mvc.MvcHtmlString*
+12*
+12
+É É(%*
+13*'
+13
+Ñ	 Ñ(	"
+implicit return:?=
+Model4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel:
+ViewBagDataAllobject:
+ViewBagDataHtmlobject:
+TempDataAllobject:
+TempDataHtmlobject:
+HttpContextItemsAllobject: 
+HttpContextItemsHtmlobjectB 

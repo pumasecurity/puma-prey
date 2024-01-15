@@ -1,0 +1,264 @@
+
+≠Puma.Prey.Raccoon.ApplicationUserManager.Create(Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<Puma.Prey.Raccoon.ApplicationUserManager>, Microsoft.Owin.IOwinContext)L
+BD:\Sources\dotNetLab\puma-prey\Raccoon\App_Start\IdentityConfig.cs+- +(3"0*º<
+0- R(.Ñ
+Å
+-T -(w3
+%0-Puma.Prey.Raccoon.Models.ApplicationDbContext"XMicrosoft.AspNet.Identity.Owin.OwinContextExtensions.Get<T>(Microsoft.Owin.IOwinContext)*:8"6
+4Microsoft.AspNet.Identity.Owin.OwinContextExtensions**(
+&
+contextMicrosoft.Owin.IOwinContextãà
+-5 -(x@
+%1:Microsoft.AspNet.Identity.EntityFramework.UserStore<TUser>":Microsoft.AspNet.Identity.EntityFramework.UserStore<TUser>¸
+˘
+-9 -(S
+
+%2void"bMicrosoft.AspNet.Identity.EntityFramework.UserStore<TUser>.UserStore(System.Data.Entity.DbContext)*DB
+@
+%1:Microsoft.AspNet.Identity.EntityFramework.UserStore<TUser>*75
+3
+%0-Puma.Prey.Raccoon.Models.ApplicationDbContextfd
+- -(y.
+%3(Puma.Prey.Raccoon.ApplicationUserManager"(Puma.Prey.Raccoon.ApplicationUserManager•
+¢
+- -(4
+
+%4void"èPuma.Prey.Raccoon.ApplicationUserManager.ApplicationUserManager(Microsoft.AspNet.Identity.IUserStore<Puma.Prey.Raccoon.Models.ApplicationUser>)*20
+.
+%3(Puma.Prey.Raccoon.ApplicationUserManager*DB
+@
+%1:Microsoft.AspNet.Identity.EntityFramework.UserStore<TUser>{
+y
+- -(y3
+manager(Puma.Prey.Raccoon.ApplicationUserManager"__id*20
+.
+%3(Puma.Prey.Raccoon.ApplicationUserManagerrp
+/$ 3(4
+%5.Microsoft.AspNet.Identity.UserValidator<TUser>".Microsoft.AspNet.Identity.UserValidator<TUser>Ä
+˝
+/( /(F
+
+%6void"rMicrosoft.AspNet.Identity.UserValidator<TUser>.UserValidator(Microsoft.AspNet.Identity.UserManager<TUser, string>)*86
+4
+%5.Microsoft.AspNet.Identity.UserValidator<TUser>*75
+3
+manager(Puma.Prey.Raccoon.ApplicationUserManager∂
+≥
+1 1(6
+
+%7bool"WMicrosoft.AspNet.Identity.UserValidator<TUser, TKey>.AllowOnlyAlphanumericUserNames.set*86
+4
+%5.Microsoft.AspNet.Identity.UserValidator<TUser>*
+""™
+ß
+2 2()
+
+%8bool"KMicrosoft.AspNet.Identity.UserValidator<TUser, TKey>.RequireUniqueEmail.set*86
+4
+%5.Microsoft.AspNet.Identity.UserValidator<TUser>*
+""˝
+˙
+/ 3(5
+%9/Microsoft.AspNet.Identity.IIdentityValidator<T>"DMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.UserValidator.set*75
+3
+manager(Puma.Prey.Raccoon.ApplicationUserManager*86
+4
+%5.Microsoft.AspNet.Identity.UserValidator<TUser>mk
+6( =(2
+%10+Microsoft.AspNet.Identity.PasswordValidator"+Microsoft.AspNet.Identity.PasswordValidatorì
+ê
+6, 6(=
+%11void"?Microsoft.AspNet.Identity.PasswordValidator.PasswordValidator()*64
+2
+%10+Microsoft.AspNet.Identity.PasswordValidatorô
+ñ
+8 8("
+
+%12int">Microsoft.AspNet.Identity.PasswordValidator.RequiredLength.set*64
+2
+%10+Microsoft.AspNet.Identity.PasswordValidator*2•
+¢
+9 9(.
+%13bool"GMicrosoft.AspNet.Identity.PasswordValidator.RequireNonLetterOrDigit.set*64
+2
+%10+Microsoft.AspNet.Identity.PasswordValidator*
+""ö
+ó
+: :(#
+%14bool"<Microsoft.AspNet.Identity.PasswordValidator.RequireDigit.set*64
+2
+%10+Microsoft.AspNet.Identity.PasswordValidator*
+""û
+õ
+; ;('
+%15bool"@Microsoft.AspNet.Identity.PasswordValidator.RequireLowercase.set*64
+2
+%10+Microsoft.AspNet.Identity.PasswordValidator*
+""û
+õ
+< <('
+%16bool"@Microsoft.AspNet.Identity.PasswordValidator.RequireUppercase.set*64
+2
+%10+Microsoft.AspNet.Identity.PasswordValidator*
+""Ä
+˝
+6 =(6
+%17/Microsoft.AspNet.Identity.IIdentityValidator<T>"HMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.PasswordValidator.set*75
+3
+manager(Puma.Prey.Raccoon.ApplicationUserManager*64
+2
+%10+Microsoft.AspNet.Identity.PasswordValidator±
+Æ
+@ @(6
+%18bool"RMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.UserLockoutEnabledByDefault.set*75
+3
+manager(Puma.Prey.Raccoon.ApplicationUserManager*
+""h
+f
+A4 A(K
+%19System.TimeSpan"#System.TimeSpan.FromMinutes(double)*"
+System.TimeSpan*2–
+Õ
+A A(K
+%20System.TimeSpan"TMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.DefaultAccountLockoutTimeSpan.set*75
+3
+manager(Puma.Prey.Raccoon.ApplicationUserManager*
+
+%19System.TimeSpan∑
+¥
+B B(<
+
+%21int"[Microsoft.AspNet.Identity.UserManager<TUser, TKey>.MaxFailedAccessAttemptsBeforeLockout.set*75
+3
+manager(Puma.Prey.Raccoon.ApplicationUserManager*2äá
+F< I(@
+%229Microsoft.AspNet.Identity.PhoneNumberTokenProvider<TUser>"9Microsoft.AspNet.Identity.PhoneNumberTokenProvider<TUser>∂
+≥
+F@ F(i
+%23void"TMicrosoft.AspNet.Identity.PhoneNumberTokenProvider<TUser>.PhoneNumberTokenProvider()*DB
+@
+%229Microsoft.AspNet.Identity.PhoneNumberTokenProvider<TUser>÷
+”
+H H(;
+%24string"QMicrosoft.AspNet.Identity.PhoneNumberTokenProvider<TUser, TKey>.MessageFormat.set*DB
+@
+%229Microsoft.AspNet.Identity.PhoneNumberTokenProvider<TUser>*
+Your security code is {0}õò
+F I(
+%25void"èMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.RegisterTwoFactorProvider(string, Microsoft.AspNet.Identity.IUserTokenProvider<TUser, TKey>)*75
+3
+manager(Puma.Prey.Raccoon.ApplicationUserManager*
+
+Phone Code*DB
+@
+%229Microsoft.AspNet.Identity.PhoneNumberTokenProvider<TUser>2\RegisterTwoFactorProvider(string, Microsoft.AspNet.Identity.IUserTokenProvider<TUser, TKey>)}{
+J< N(:
+%263Microsoft.AspNet.Identity.EmailTokenProvider<TUser>"3Microsoft.AspNet.Identity.EmailTokenProvider<TUser>§
+°
+J@ J(c
+%27void"HMicrosoft.AspNet.Identity.EmailTokenProvider<TUser>.EmailTokenProvider()*><
+:
+%263Microsoft.AspNet.Identity.EmailTokenProvider<TUser>∏
+µ
+L L()
+%28string"EMicrosoft.AspNet.Identity.EmailTokenProvider<TUser, TKey>.Subject.set*><
+:
+%263Microsoft.AspNet.Identity.EmailTokenProvider<TUser>*
+Security Code«
+ƒ
+M M(8
+%29string"HMicrosoft.AspNet.Identity.EmailTokenProvider<TUser, TKey>.BodyFormat.set*><
+:
+%263Microsoft.AspNet.Identity.EmailTokenProvider<TUser>*
+Your security code is {0}ïí
+J N(
+%30void"èMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.RegisterTwoFactorProvider(string, Microsoft.AspNet.Identity.IUserTokenProvider<TUser, TKey>)*75
+3
+manager(Puma.Prey.Raccoon.ApplicationUserManager*
+
+Email Code*><
+:
+%263Microsoft.AspNet.Identity.EmailTokenProvider<TUser>2\RegisterTwoFactorProvider(string, Microsoft.AspNet.Identity.IUserTokenProvider<TUser, TKey>)SQ
+O# O(5%
+%31Puma.Prey.Raccoon.EmailService"Puma.Prey.Raccoon.EmailServices
+q
+O' O(3
+%32void"-Puma.Prey.Raccoon.EmailService.EmailService()*)'
+%
+%31Puma.Prey.Raccoon.EmailService
+Ì
+O O(58
+%331Microsoft.AspNet.Identity.IIdentityMessageService"CMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.EmailService.set*75
+3
+manager(Puma.Prey.Raccoon.ApplicationUserManager*)'
+%
+%31Puma.Prey.Raccoon.EmailServiceOM
+P! P(1#
+%34Puma.Prey.Raccoon.SmsService"Puma.Prey.Raccoon.SmsServicem
+k
+P% P(/
+%35void")Puma.Prey.Raccoon.SmsService.SmsService()*'%
+#
+%34Puma.Prey.Raccoon.SmsServiceÏ
+È
+P P(18
+%361Microsoft.AspNet.Identity.IIdentityMessageService"AMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.SmsService.set*75
+3
+manager(Puma.Prey.Raccoon.ApplicationUserManager*'%
+#
+%34Puma.Prey.Raccoon.SmsServiceÚ
+Ô
+Q) Q(GE
+%37>Microsoft.Owin.Security.DataProtection.IDataProtectionProvider"SMicrosoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>.DataProtectionProvider.get*GE
+C
+options8Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>∏
+µ
+Q Q(GX
+dataProtectionProvider>Microsoft.Owin.Security.DataProtection.IDataProtectionProvider"__id*IG
+E
+%37>Microsoft.Owin.Security.DataProtection.IDataProtectionProvider¥
+±
+R R(.
+%38bool""object.operator !=(object, object)*
+"
+object*\Z
+X
+dataProtectionProvider>Microsoft.Owin.Security.DataProtection.IDataProtectionProvider*
+""*
+1
+2*≈
+1T U(t≤Ø
+UD U(u<
+%395Microsoft.Owin.Security.DataProtection.IDataProtector"VMicrosoft.Owin.Security.DataProtection.IDataProtectionProvider.Create(params string[])*\Z
+X
+dataProtectionProvider>Microsoft.Owin.Security.DataProtection.IDataProtectionProvider*
+ASP.NET Identity2Create(params string[])òï
+U U(vG
+%40@Microsoft.AspNet.Identity.Owin.DataProtectorTokenProvider<TUser>"@Microsoft.AspNet.Identity.Owin.DataProtectorTokenProvider<TUser>æ
+ª
+U U(C
+%41void"íMicrosoft.AspNet.Identity.Owin.DataProtectorTokenProvider<TUser>.DataProtectorTokenProvider(Microsoft.Owin.Security.DataProtection.IDataProtector)*KI
+G
+%40@Microsoft.AspNet.Identity.Owin.DataProtectorTokenProvider<TUser>*@>
+<
+%395Microsoft.Owin.Security.DataProtection.IDataProtectorü
+ú
+T U(v@
+%429Microsoft.AspNet.Identity.IUserTokenProvider<TUser, TKey>"HMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.UserTokenProvider.set*75
+3
+manager(Puma.Prey.Raccoon.ApplicationUserManager*KI
+G
+%40@Microsoft.AspNet.Identity.Owin.DataProtectorTokenProvider<TUser>*
+2*P
+2W W("A
+W W(5
+3
+manager(Puma.Prey.Raccoon.ApplicationUserManager*.
+3X	 X(	"
+X X(	
+implicit return:O
++4 +(jC
+options8Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>:3
+	+l +(Ä&
+contextMicrosoft.Owin.IOwinContextB,"*
+(Puma.Prey.Raccoon.ApplicationUserManager

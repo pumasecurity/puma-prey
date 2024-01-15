@@ -1,0 +1,99 @@
+
+”Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GenerateKeyValuePairModelDescription(System.Type, System.Type, System.Type)l
+`D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs¨- ¨(Q"0*ï
+0
+ª ²(=µ
+²
+
+ª3 ª(WE
+%0?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"qPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GetOrCreateModelDescription(System.Type)*NLJ
+HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator*
+
+keyTypeSystem.Type¸
+µ
+
+ª ª(WV
+keyModelDescription?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"__id*IG
+E
+%0?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription·
+´
+
+«5 «([E
+%1?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"qPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GetOrCreateModelDescription(System.Type)*NLJ
+HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator*
+
+	valueTypeSystem.Typeº
+·
+
+« «([X
+valueModelDescription?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"__id*IG
+E
+%1?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription¯¬
+
+­ ³(Q
+%2KPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription"KPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescriptionÞ
+Û
+
+­ ­(3
+
+%3void"jPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription.KeyValuePairModelDescription()*US
+Q
+%2KPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescriptionÛ
+Ø
+
+¯ ¯(>
+%4string"XPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelNameHelper.GetModelName(System.Type)*DB"@
+>Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelNameHelper*
+
+	modelTypeSystem.TypeÐ
+Í
+
+¯ ¯(>
+%5string"HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription.Name.set*US
+Q
+%2KPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription*
+
+%4stringæ
+ã
+
+° °(%
+%6System.Type"MPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription.ModelType.set*US
+Q
+%2KPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription*
+
+	modelTypeSystem.Typeî
+ë
+
+± ±(9E
+%7?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"cPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription.KeyModelDescription.set*US
+Q
+%2KPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription*ZX
+V
+keyModelDescription?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionò
+ï
+
+² ²(=E
+%8?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"ePuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription.ValueModelDescription.set*US
+Q
+%2KPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription*\Z
+X
+valueModelDescription?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"a
+
+­ ³(S
+Q
+%2KPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription*2
+1
+´	 ´(	"!
+
+´ ´(	
+implicit return:&
+
+¨R ¨(`
+	modelTypeSystem.Type:$
+
+¨b ¨(n
+keyTypeSystem.Type:&
+
+¨p ¨(~
+	valueTypeSystem.TypeBLJ
+HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator

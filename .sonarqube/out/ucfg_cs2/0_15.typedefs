@@ -1,0 +1,13 @@
+§
+Puma.Prey.Common.Reportobject,
+Report() Puma.Prey.Common.Report.Report()(
+Id.getPuma.Prey.Common.Report.Id.get(
+Id.setPuma.Prey.Common.Report.Id.set,
+Name.get Puma.Prey.Common.Report.Name.get,
+Name.set Puma.Prey.Common.Report.Name.set6
+Timestamp.get%Puma.Prey.Common.Report.Timestamp.get6
+Timestamp.set%Puma.Prey.Common.Report.Timestamp.set,
+Cost.get Puma.Prey.Common.Report.Cost.get,
+Cost.set Puma.Prey.Common.Report.Cost.set,
+Size.get Puma.Prey.Common.Report.Size.get,
+Size.set Puma.Prey.Common.Report.Size.set

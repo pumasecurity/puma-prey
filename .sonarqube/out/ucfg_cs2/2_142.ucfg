@@ -1,0 +1,124 @@
+
+aPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetMemberName(System.Reflection.MethodInfo)W
+MD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\XmlDocumentationProvider.csg g(+"0*¯	
+0i k(&î
+ë
+i( i(D&
+%0 System.Globalization.CultureInfo"5System.Globalization.CultureInfo.InvariantCulture.get*&$""
+ System.Globalization.CultureInfoèå
+i] i(q
+%1System.Type".System.Reflection.MemberInfo.DeclaringType.get**(
+&
+methodSystem.Reflection.MethodInfo2DeclaringType.getø
+º
+iQ i(r
+%2string"NPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetTypeName(System.Type)*;9"7
+5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider*
+
+%1System.Typewu
+it i(
+%3string"%System.Reflection.MemberInfo.Name.get**(
+&
+methodSystem.Reflection.MethodInfo2Name.get»
+≈
+	i i(Ä
+%4string"=string.Format(System.IFormatProvider, string, object, object)*
+"
+string**(
+&
+%0 System.Globalization.CultureInfo*	
+{0}.{1}*
+
+%2string*
+
+%3string5
+3
+	i i(Ä
+namestring"__id*
+
+%4string°û
+j) j(?'
+%5!System.Reflection.ParameterInfo[]",System.Reflection.MethodBase.GetParameters()**(
+&
+methodSystem.Reflection.MethodInfo2GetParameters()p
+n
+j j(?/
+
+parameters!System.Reflection.ParameterInfo[]"__id*+)
+'
+%5!System.Reflection.ParameterInfo[]e
+c
+k k(!	
+%6int"System.Array.Length.get*31
+/
+
+parameters!System.Reflection.ParameterInfo[]*
+1
+2*§	
+1m n(pú
+ô
+m. m(j/
+%7)System.Collections.Generic.IEnumerable<T>"System.Linq.Enumerable.Select<TSource, TResult>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, TResult>)*"
+System.Linq.Enumerable*31
+/
+
+parameters!System.Reflection.ParameterInfo[]*
+"" 
+«
+m. m(t
+%8string[]"XSystem.Linq.Enumerable.ToArray<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*31
+/
+%7)System.Collections.Generic.IEnumerable<T>F
+D
+m m(t
+parameterTypeNamesstring[]"__id*
+
+%8string[]î
+ë
+n& n(B&
+%9 System.Globalization.CultureInfo"5System.Globalization.CultureInfo.InvariantCulture.get*&$""
+ System.Globalization.CultureInfo|
+z
+nM n(q
+%10string"$string.Join(string, params string[])*
+"
+string*
+,*" 
+
+parameterTypeNamesstring[]≠
+™
+n n(r
+%11string"5string.Format(System.IFormatProvider, string, object)*
+"
+string**(
+&
+%9 System.Globalization.CultureInfo*	
+({0})*
+
+%10string`
+^
+n n(r
+%12string"__concat*
+n n(
+
+namestring*
+n n(r
+
+%11string5
+3
+n n(r
+namestring"__id*
+
+%12string*
+2*+
+2q q("
+q q(
+
+namestring*.
+3r	 r(	"
+r r(	
+implicit return:2
+g, g(=&
+methodSystem.Reflection.MethodInfoB9"7
+5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider

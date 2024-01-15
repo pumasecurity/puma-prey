@@ -1,0 +1,5 @@
+ó
+)Puma.Prey.Common.Validation.NameAttribute9System.ComponentModel.DataAnnotations.ValidationAttributeSystem.AttributeobjectL
+NameAttribute()9Puma.Prey.Common.Validation.NameAttribute.NameAttribute()¾
+HIsValid(object, System.ComponentModel.DataAnnotations.ValidationContext)rPuma.Prey.Common.Validation.NameAttribute.IsValid(object, System.ComponentModel.DataAnnotations.ValidationContext)b
+FormatErrorMessage(string)DPuma.Prey.Common.Validation.NameAttribute.FormatErrorMessage(string)

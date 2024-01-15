@@ -1,0 +1,236 @@
+
+ePuma.Prey.Fox.Controllers.AccountController.RemoveLogin(Puma.Prey.Fox.Models.RemoveLoginBindingModel)O
+CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.csƒ- ƒ(8"9*«
+0
+∆ ∆(#õ
+ò
+
+∆ ∆(7
+%01System.Web.Http.ModelBinding.ModelStateDictionary",System.Web.Http.ApiController.ModelState.get*#!
+System.Web.Http.ApiControllerè
+å
+
+∆ ∆(#
+
+%1bool"5System.Collections.Generic.ICollection<T>.IsValid.get*;9
+7
+%01System.Web.Http.ModelBinding.ModelStateDictionary*
+1
+2*ª
+1
+» »(,õ
+ò
+
+»" »(,7
+%21System.Web.Http.ModelBinding.ModelStateDictionary",System.Web.Http.ApiController.ModelState.get*#!
+System.Web.Http.ApiControllerƒ¡
+
+» »(-5
+%3/System.Web.Http.Results.InvalidModelStateResult"[System.Web.Http.ApiController.BadRequest(System.Web.Http.ModelBinding.ModelStateDictionary)*#!
+System.Web.Http.ApiController*;9
+7
+%21System.Web.Http.ModelBinding.ModelStateDictionary2=BadRequest(System.Web.Http.ModelBinding.ModelStateDictionary)"E
+
+» »(.7
+5
+%3/System.Web.Http.Results.InvalidModelStateResult*¬
+2
+À Õ(9ò
+ï
+
+Õ Õ(#
+%4string">Puma.Prey.Fox.Models.RemoveLoginBindingModel.LoginProvider.get*97
+5
+model,Puma.Prey.Fox.Models.RemoveLoginBindingModel$
+"
+
+Õ' Õ(9
+%5"__id*
+""h
+f
+
+Õ Õ(9
+
+%6bool""string.operator ==(string, string)*
+"
+string*
+
+%4string*
+
+%5*
+3
+4*õ
+3
+œ œ(X´
+®
+
+œ œ(**
+%7$Puma.Prey.Fox.ApplicationUserManager";Puma.Prey.Fox.Controllers.AccountController.UserManager.get*1/-
++Puma.Prey.Fox.Controllers.AccountControllerà
+Ö
+
+œ? œ(C*
+%8$System.Security.Principal.IPrincipal"&System.Web.Http.ApiController.User.get*#!
+System.Web.Http.ApiController´®
+
+œ? œ(L)
+%9#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
+*
+%8$System.Security.Principal.IPrincipal2Identity.getﬁ
+€
+
+œ? œ(X
+%10string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
+,Microsoft.AspNet.Identity.IdentityExtensions*-+
+)
+%9#System.Security.Principal.IIdentityËÂ
+
+œ œ(Y+
+%11$System.Threading.Tasks.Task<TResult>"LMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.RemovePasswordAsync(TKey)*.,
+*
+%7$Puma.Prey.Fox.ApplicationUserManager*
+
+%10string2RemovePasswordAsync(TKey)R
+P
+
+œ œ(Y2
+result(Microsoft.AspNet.Identity.IdentityResult"__id*
+""*
+5*Ä
+4
+” ‘(L¨
+©
+
+” ”(*+
+%12$Puma.Prey.Fox.ApplicationUserManager";Puma.Prey.Fox.Controllers.AccountController.UserManager.get*1/-
++Puma.Prey.Fox.Controllers.AccountControllerâ
+Ü
+
+”< ”(@+
+%13$System.Security.Principal.IPrincipal"&System.Web.Http.ApiController.User.get*#!
+System.Web.Http.ApiController≠™
+
+”< ”(I*
+%14#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*/-
++
+%13$System.Security.Principal.IPrincipal2Identity.getﬂ
+‹
+
+”< ”(U
+%15string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
+,Microsoft.AspNet.Identity.IdentityExtensions*.,
+*
+%14#System.Security.Principal.IIdentityô
+ñ
+
+‘& ‘(9
+%16string">Puma.Prey.Fox.Models.RemoveLoginBindingModel.LoginProvider.get*97
+5
+model,Puma.Prey.Fox.Models.RemoveLoginBindingModeló
+î
+
+‘; ‘(L
+%17string"<Puma.Prey.Fox.Models.RemoveLoginBindingModel.ProviderKey.get*97
+5
+model,Puma.Prey.Fox.Models.RemoveLoginBindingModelge
+
+‘ ‘(M.
+%18'Microsoft.AspNet.Identity.UserLoginInfo"'Microsoft.AspNet.Identity.UserLoginInfoΩ
+∫
+
+‘ ‘(%
+%19void"EMicrosoft.AspNet.Identity.UserLoginInfo.UserLoginInfo(string, string)*20
+.
+%18'Microsoft.AspNet.Identity.UserLoginInfo*
+
+%16string*
+
+%17stringÈÊ
+
+” ‘(N+
+%20$System.Threading.Tasks.Task<TResult>"rMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.RemoveLoginAsync(TKey, Microsoft.AspNet.Identity.UserLoginInfo)*/-
++
+%12$Puma.Prey.Fox.ApplicationUserManager*
+
+%15string*20
+.
+%18'Microsoft.AspNet.Identity.UserLoginInfo2?RemoveLoginAsync(TKey, Microsoft.AspNet.Identity.UserLoginInfo)R
+P
+
+” ‘(N2
+result(Microsoft.AspNet.Identity.IdentityResult"__id*
+""*
+5*¶
+5
+◊ ◊(!å
+â
+
+◊ ◊(!
+%21bool"6Microsoft.AspNet.Identity.IdentityResult.Succeeded.get*64
+2
+result(Microsoft.AspNet.Identity.IdentityResult*
+6
+7*÷
+6
+Ÿ Ÿ(,ä
+á
+
+Ÿ Ÿ(-(
+%22!System.Web.Http.IHttpActionResult"dPuma.Prey.Fox.Controllers.AccountController.GetErrorResult(Microsoft.AspNet.Identity.IdentityResult)*1/-
++Puma.Prey.Fox.Controllers.AccountController*64
+2
+result(Microsoft.AspNet.Identity.IdentityResult"8
+
+Ÿ Ÿ(.*
+(
+%22!System.Web.Http.IHttpActionResult*“
+7
+‹ ‹(áÑ
+
+‹ ‹('
+%23 System.Web.Http.Results.OkResult""System.Web.Http.ApiController.Ok()*#!
+System.Web.Http.ApiController2Ok()"7
+
+‹ ‹()
+'
+%23 System.Web.Http.Results.OkResult*2
+8
+›	 ›(	"!
+
+› ›(	
+implicit return*ó
+9
+ƒW ƒ(W
+}
+
+ƒ- ƒ(8a
+5
+model,Puma.Prey.Fox.Models.RemoveLoginBindingModel"(
+<LoginProvider>k__BackingFieldstring"__entrypointn
+l
+
+ƒ- ƒ(8P
+5
+model,Puma.Prey.Fox.Models.RemoveLoginBindingModel"
+LoginProviderstring"__entrypoint}
+{
+
+ƒ- ƒ(8_
+5
+model,Puma.Prey.Fox.Models.RemoveLoginBindingModel"&
+<ProviderKey>k__BackingFieldstring"__entrypointl
+j
+
+ƒ- ƒ(8N
+5
+model,Puma.Prey.Fox.Models.RemoveLoginBindingModel"
+ProviderKeystring"__entrypoint#
+!
+
+ƒ- ƒ(8
+%24"__entrypoint*
+0:C
+
+ƒ9 ƒ(V5
+model,Puma.Prey.Fox.Models.RemoveLoginBindingModelB/-
++Puma.Prey.Fox.Controllers.AccountController

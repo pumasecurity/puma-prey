@@ -1,0 +1,55 @@
+
+6Puma.Prey.Fox.Areas.HelpPage.TextSample.Equals(object)Z
+PD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\TextSample.cs (#"0*°
+0 ( 3
+1
+ (0
+%0object"__id*
+
+objobjectV
+T
+ (00
+other'Puma.Prey.Fox.Areas.HelpPage.TextSample"__id*
+
+%0object‹
+ˆ
+ ( 
+
+%1bool""object.operator !=(object, object)*
+"
+object*42
+0
+other'Puma.Prey.Fox.Areas.HelpPage.TextSample*
+""*
+1
+2*…
+1$ (6{
+y
+$ ((
+%2string"0Puma.Prey.Fox.Areas.HelpPage.TextSample.Text.get*-+)
+'Puma.Prey.Fox.Areas.HelpPage.TextSampleƒ
+€
+, (6
+%3string"0Puma.Prey.Fox.Areas.HelpPage.TextSample.Text.get*42
+0
+other'Puma.Prey.Fox.Areas.HelpPage.TextSamplen
+l
+$ (6
+
+%4bool""string.operator ==(string, string)*
+"
+string*
+
+%2string*
+
+%3string*
+2*(
+2	 (	"
+ (7
+	{unknown}*.
+3	 (	"
+ (	
+implicit return:
+$ (.
+objobjectB+)
+'Puma.Prey.Fox.Areas.HelpPage.TextSample

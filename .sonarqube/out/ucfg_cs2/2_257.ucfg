@@ -1,0 +1,146 @@
+
+kPuma.Prey.Fox.Controllers.AccountController.ChangePassword(Puma.Prey.Fox.Models.ChangePasswordBindingModel)M
+CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.csw- w(;"6*¡
+0y y(#ô
+ñ
+y y(7
+%01System.Web.Http.ModelBinding.ModelStateDictionary",System.Web.Http.ApiController.ModelState.get*#!
+System.Web.Http.ApiControllerç
+ä
+y y(#
+
+%1bool"5System.Collections.Generic.ICollection<T>.IsValid.get*;9
+7
+%01System.Web.Http.ModelBinding.ModelStateDictionary*
+1
+2*≥
+1{ {(,ô
+ñ
+{" {(,7
+%21System.Web.Http.ModelBinding.ModelStateDictionary",System.Web.Http.ApiController.ModelState.get*#!
+System.Web.Http.ApiController¬ø
+{ {(-5
+%3/System.Web.Http.Results.InvalidModelStateResult"[System.Web.Http.ApiController.BadRequest(System.Web.Http.ModelBinding.ModelStateDictionary)*#!
+System.Web.Http.ApiController*;9
+7
+%21System.Web.Http.ModelBinding.ModelStateDictionary2=BadRequest(System.Web.Http.ModelBinding.ModelStateDictionary)"C
+{ {(.7
+5
+%3/System.Web.Http.Results.InvalidModelStateResult*ú
+2	~ Å(!©
+¶
+~* ~(5*
+%4$Puma.Prey.Fox.ApplicationUserManager";Puma.Prey.Fox.Controllers.AccountController.UserManager.get*1/-
++Puma.Prey.Fox.Controllers.AccountControllerÜ
+É
+~J ~(N*
+%5$System.Security.Principal.IPrincipal"&System.Web.Http.ApiController.User.get*#!
+System.Web.Http.ApiController©¶
+~J ~(W)
+%6#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
+*
+%5$System.Security.Principal.IPrincipal2Identity.get€
+ÿ
+~J ~(c
+%7string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
+,Microsoft.AspNet.Identity.IdentityExtensions*-+
+)
+%6#System.Security.Principal.IIdentityö
+ó
+~e ~(v
+%8string"?Puma.Prey.Fox.Models.ChangePasswordBindingModel.OldPassword.get*<:
+8
+model/Puma.Prey.Fox.Models.ChangePasswordBindingModelö
+ó
+ (!
+%9string"?Puma.Prey.Fox.Models.ChangePasswordBindingModel.NewPassword.get*<:
+8
+model/Puma.Prey.Fox.Models.ChangePasswordBindingModel©¶
+~* ("+
+%10$System.Threading.Tasks.Task<TResult>"\Microsoft.AspNet.Identity.UserManager<TUser, TKey>.ChangePasswordAsync(TKey, string, string)*.,
+*
+%4$Puma.Prey.Fox.ApplicationUserManager*
+
+%7string*
+
+%8string*
+
+%9string2)ChangePasswordAsync(TKey, string, string)P
+N
+~ ("2
+result(Microsoft.AspNet.Identity.IdentityResult"__id*
+""å
+â
+
+Å Å(!
+%11bool"6Microsoft.AspNet.Identity.IdentityResult.Succeeded.get*64
+2
+result(Microsoft.AspNet.Identity.IdentityResult*
+3
+4*÷
+3
+É É(,ä
+á
+
+É É(-(
+%12!System.Web.Http.IHttpActionResult"dPuma.Prey.Fox.Controllers.AccountController.GetErrorResult(Microsoft.AspNet.Identity.IdentityResult)*1/-
++Puma.Prey.Fox.Controllers.AccountController*64
+2
+result(Microsoft.AspNet.Identity.IdentityResult"8
+
+É É(.*
+(
+%12!System.Web.Http.IHttpActionResult*“
+4
+Ü Ü(áÑ
+
+Ü Ü('
+%13 System.Web.Http.Results.OkResult""System.Web.Http.ApiController.Ok()*#!
+System.Web.Http.ApiController2Ok()"7
+
+Ü Ü()
+'
+%13 System.Web.Http.Results.OkResult*2
+5
+á	 á(	"!
+
+á á(	
+implicit return*å
+6w] w(]~
+|
+w- w(;b
+8
+model/Puma.Prey.Fox.Models.ChangePasswordBindingModel"&
+<OldPassword>k__BackingFieldstring"__entrypointm
+k
+w- w(;Q
+8
+model/Puma.Prey.Fox.Models.ChangePasswordBindingModel"
+OldPasswordstring"__entrypoint~
+|
+w- w(;b
+8
+model/Puma.Prey.Fox.Models.ChangePasswordBindingModel"&
+<NewPassword>k__BackingFieldstring"__entrypointm
+k
+w- w(;Q
+8
+model/Puma.Prey.Fox.Models.ChangePasswordBindingModel"
+NewPasswordstring"__entrypointÉ
+Ä
+w- w(;f
+8
+model/Puma.Prey.Fox.Models.ChangePasswordBindingModel"*
+ <ConfirmPassword>k__BackingFieldstring"__entrypointq
+o
+w- w(;U
+8
+model/Puma.Prey.Fox.Models.ChangePasswordBindingModel"
+ConfirmPasswordstring"__entrypoint!
+
+w- w(;
+%14"__entrypoint*
+0:D
+w< w(\8
+model/Puma.Prey.Fox.Models.ChangePasswordBindingModelB/-
++Puma.Prey.Fox.Controllers.AccountController

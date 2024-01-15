@@ -1,0 +1,23 @@
+
+\Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelNameAttribute.ModelNameAttribute(string)c
+YD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs (!"1*X
+1	 (	D
+B
+
+%0void"System.Attribute.Attribute()*
+System.Attribute*
+0*Ù
+0 (Ä
+Á
+ (
+%1string"JPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelNameAttribute.Name.set*GEC
+APuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelNameAttribute*
+
+namestring*
+2*.
+2	 (	"
+ (	
+implicit return:
+" (-
+namestringBEC
+APuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelNameAttribute

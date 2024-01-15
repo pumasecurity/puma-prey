@@ -1,0 +1,4 @@
+∫
+*Puma.Prey.Raccoon.ApplicationSignInManager9Microsoft.AspNet.Identity.Owin.SignInManager<TUser, TKey>objectî
+rApplicationSignInManager(Puma.Prey.Raccoon.ApplicationUserManager, Microsoft.Owin.Security.IAuthenticationManager)ùPuma.Prey.Raccoon.ApplicationSignInManager.ApplicationSignInManager(Puma.Prey.Raccoon.ApplicationUserManager, Microsoft.Owin.Security.IAuthenticationManager)±
+ACreateUserIdentityAsync(Puma.Prey.Raccoon.Models.ApplicationUser)lPuma.Prey.Raccoon.ApplicationSignInManager.CreateUserIdentityAsync(Puma.Prey.Raccoon.Models.ApplicationUser)

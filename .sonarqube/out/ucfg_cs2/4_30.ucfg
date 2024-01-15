@@ -1,0 +1,45 @@
+
+APuma.Prey.Common.Deserialize.DeserializeJson.GetObject<T>(string)N
+DD:\Sources\dotNetLab\puma-prey\Common\Deserialize\JsonDeserialize.cs (!"0*Ð
+0# (Bb`
+. (,
+%0&Newtonsoft.Json.JsonSerializerSettings"&Newtonsoft.Json.JsonSerializerSettingsŒ
+‰
+2 (H
+
+%1void"?Newtonsoft.Json.JsonSerializerSettings.JsonSerializerSettings()*0.
+,
+%0&Newtonsoft.Json.JsonSerializerSettings"
+ 
+# (7
+%2"__id*
+""®
+«
+ (7&
+%3 Newtonsoft.Json.TypeNameHandling";Newtonsoft.Json.JsonSerializerSettings.TypeNameHandling.set*0.
+,
+%0&Newtonsoft.Json.JsonSerializerSettings*
+
+%2x
+v
+# (2
+settings&Newtonsoft.Json.JsonSerializerSettings"__id*0.
+,
+%0&Newtonsoft.Json.JsonSerializerSettingsç
+ä
+ (C
+%4T"`Newtonsoft.Json.JsonConvert.DeserializeObject<T>(string, Newtonsoft.Json.JsonSerializerSettings)*!"
+Newtonsoft.Json.JsonConvert*
+
+jsonstring*64
+2
+settings&Newtonsoft.Json.JsonSerializerSettings"
+ (D	
+
+%4T*.
+1	 (	"
+ (	
+implicit return:
+% (0
+jsonstringB0".
+,Puma.Prey.Common.Deserialize.DeserializeJson

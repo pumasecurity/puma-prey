@@ -1,0 +1,72 @@
+
+NPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.HelpPageSampleGenerator()g
+]D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs (&"1*
+1#	 #(	*
+0*Ê
+0 !(*|z
+% (N9
+%03System.Collections.Generic.Dictionary<TKey, TValue>"3System.Collections.Generic.Dictionary<TKey, TValue>ö
+ó
+) (L
+
+%1void"@System.Collections.Generic.Dictionary<TKey, TValue>.Dictionary()*=;
+9
+%03System.Collections.Generic.Dictionary<TKey, TValue>ï
+í
+ (N:
+%24System.Collections.Generic.IDictionary<TKey, TValue>"OPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.ActualHttpMessageTypes.set*:86
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*=;
+9
+%03System.Collections.Generic.Dictionary<TKey, TValue>|z
+ (G9
+%33System.Collections.Generic.Dictionary<TKey, TValue>"3System.Collections.Generic.Dictionary<TKey, TValue>ö
+ó
+  (E
+
+%4void"@System.Collections.Generic.Dictionary<TKey, TValue>.Dictionary()*=;
+9
+%33System.Collections.Generic.Dictionary<TKey, TValue>å
+â
+ (G:
+%54System.Collections.Generic.IDictionary<TKey, TValue>"FPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.ActionSamples.set*:86
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*=;
+9
+%33System.Collections.Generic.Dictionary<TKey, TValue>|z
+ (:9
+%63System.Collections.Generic.Dictionary<TKey, TValue>"3System.Collections.Generic.Dictionary<TKey, TValue>ö
+ó
+  (8
+
+%7void"@System.Collections.Generic.Dictionary<TKey, TValue>.Dictionary()*=;
+9
+%63System.Collections.Generic.Dictionary<TKey, TValue>å
+â
+ (::
+%84System.Collections.Generic.IDictionary<TKey, TValue>"FPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.SampleObjects.set*:86
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*=;
+9
+%63System.Collections.Generic.Dictionary<TKey, TValue>ZX
+$ "((
+%9"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>r
+p
+( (Y
+%10void")System.Collections.Generic.List<T>.List()*,*
+(
+%9"System.Collections.Generic.List<T>Ñ
+Å
+! !(*
+%11void"0System.Collections.Generic.ICollection<T>.Add(T)*,*
+(
+%9"System.Collections.Generic.List<T>*
+""Û
+
+ "(*
+%12#System.Collections.Generic.IList<T>"NPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.SampleObjectFactories.set*:86
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*,*
+(
+%9"System.Collections.Generic.List<T>*
+2*.
+2#	 #(	"
+# #(	
+implicit returnB86
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator

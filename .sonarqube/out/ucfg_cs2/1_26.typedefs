@@ -1,0 +1,11 @@
+è
+/Puma.Prey.Raccoon.Models.ResetPasswordViewModelobjectd
+ResetPasswordViewModel()HPuma.Prey.Raccoon.Models.ResetPasswordViewModel.ResetPasswordViewModel()F
+	Email.get9Puma.Prey.Raccoon.Models.ResetPasswordViewModel.Email.getF
+	Email.set9Puma.Prey.Raccoon.Models.ResetPasswordViewModel.Email.setL
+Password.get<Puma.Prey.Raccoon.Models.ResetPasswordViewModel.Password.getL
+Password.set<Puma.Prey.Raccoon.Models.ResetPasswordViewModel.Password.setZ
+ConfirmPassword.getCPuma.Prey.Raccoon.Models.ResetPasswordViewModel.ConfirmPassword.getZ
+ConfirmPassword.setCPuma.Prey.Raccoon.Models.ResetPasswordViewModel.ConfirmPassword.setD
+Code.get8Puma.Prey.Raccoon.Models.ResetPasswordViewModel.Code.getD
+Code.set8Puma.Prey.Raccoon.Models.ResetPasswordViewModel.Code.set

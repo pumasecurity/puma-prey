@@ -1,0 +1,71 @@
+
+¢Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.SetActualRequestType(System.Web.Http.HttpConfiguration, System.Type, string, string, params string[])`
+TD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageConfigurationExtensions.cs (/"0*½
+
+0 («¼
+¹
+
+ (/:
+%04Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator"zPuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.GetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration)*B@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions*/-
++
+config!System.Web.Http.HttpConfigurationÜ
+Ù
+
+ (F:
+%14System.Collections.Generic.IDictionary<TKey, TValue>"OPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.ActualHttpMessageTypes.get*><
+:
+%04Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator$
+"
+
+a (x
+%2"__id*
+""us
+K (¥4
+%3.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey".Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKeyè
+å
+
+O (`
+
+%4void"®Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.HelpPageSampleKey(Puma.Prey.Fox.Areas.HelpPage.SampleDirection, string, string, System.Collections.Generic.IEnumerable<string>)*86
+4
+%3.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*
+
+%2*
+
+controllerNamestring*
+
+
+actionNamestring*
+
+parameterNamesstring[]ÿü
+ (¬
+
+%5void";System.Collections.Generic.ICollection<T>.Add(TKey, TValue)*><
+:
+%14System.Collections.Generic.IDictionary<TKey, TValue>*86
+4
+%3.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*
+
+typeSystem.Type2Add(TKey, TValue)*
+1*2
+1
+‘	 ‘(	"!
+
+‘ ‘(	
+implicit return:9
+
+0 (M+
+config!System.Web.Http.HttpConfiguration:!
+
+O (X
+typeSystem.Type:&
+
+Z (o
+controllerNamestring:#
+q (‚
+
+actionNamestring:*
+„ (¢
+parameterNamesstring[]B@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions

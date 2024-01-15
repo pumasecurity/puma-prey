@@ -1,0 +1,49 @@
+
+:Puma.Prey.Common.Report.GetReportFromProvider(System.Guid)@
+6D:\Sources\dotNetLab\puma-prey\Common\Report\Report.cs (2"0*Ë
+0 ! %($®
+•
+ 0  (e%
+%0unirest_net.request.HttpRequest"%unirest_net.http.Unirest.post(string)*"
+unirest_net.http.Unirest*+)'
+%http://thirdparyservice.org/v1/reportΩ
+∫
+ 0 !(3%
+%1unirest_net.request.HttpRequest"6unirest_net.request.HttpRequest.header(string, object)*)'
+%
+%0unirest_net.request.HttpRequest*
+
+accept*
+application/jsonÆ
+´
+ 0 "(&%
+%2unirest_net.request.HttpRequest"5unirest_net.request.HttpRequest.field(string, object)*)'
+%
+%1unirest_net.request.HttpRequest*
+
+userId*
+""ç
+ä
+ 0 #(&
+%3 unirest_net.http.HttpResponse<T>"+unirest_net.request.HttpRequest.asJson<T>()*)'
+%
+%2unirest_net.request.HttpRequestp
+n
+ ! #(0
+jsonResponse unirest_net.http.HttpResponse<T>"__id**(
+&
+%3 unirest_net.http.HttpResponse<T>ç
+ä
+% %($
+%4Puma.Prey.Common.Report")unirest_net.http.HttpResponse<T>.Body.get*42
+0
+jsonResponse unirest_net.http.HttpResponse<T>"+
+% %(%
+
+%4Puma.Prey.Common.Report*.
+1&	 &(	"
+& &(	
+implicit return:!
+3 (>
+userIdSystem.GuidB"
+Puma.Prey.Common.Report

@@ -1,0 +1,206 @@
+
+’Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.GenerateRequestModelDescription(Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel, Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator, Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator)`
+TD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageConfigurationExtensions.csâ â(;"0*¥
+0
+ä å(aÐ
+Í
+
+ä, ä(C0
+%0*System.Web.Http.Description.ApiDescription"GPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.ApiDescription.get*DB
+@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel‰
+†
+
+ä ä(C<
+apiDescription*System.Web.Http.Description.ApiDescription"__id*42
+0
+%0*System.Web.Http.Description.ApiDescriptionË
+È
+
+å= å(a2
+%1,System.Collections.ObjectModel.Collection<T>"DSystem.Web.Http.Description.ApiDescription.ParameterDescriptions.get*@>
+<
+apiDescription*System.Web.Http.Description.ApiDescriptionÅ
+Â
+
+å- å(99
+%23System.Web.Http.Description.ApiParameterDescription"7System.Collections.Generic.ICollection<T>.this[int].get*64
+2
+%1,System.Collections.ObjectModel.Collection<T>*
+""™
+–
+
+å ÷(C
+apiParameter3System.Web.Http.Description.ApiParameterDescription"__id*=;
+9
+%23System.Web.Http.Description.ApiParameterDescription*
+1*
+1
+ø	 ø(	*
+2
+3*Ž
+2
+ç ç(FÎ
+Ë
+
+ç ç('4
+%3.System.Web.Http.Description.ApiParameterSource">System.Web.Http.Description.ApiParameterDescription.Source.get*GE
+C
+apiParameter3System.Web.Http.Description.ApiParameterDescription$
+"
+
+ç+ ç(F
+%4"__id*
+""*
+4
+5*‚
+4
+é ë(Nà
+Ý
+
+é) é(I9
+%53System.Web.Http.Controllers.HttpParameterDescriptor"KSystem.Web.Http.Description.ApiParameterDescription.ParameterDescriptor.get*GE
+C
+apiParameter3System.Web.Http.Description.ApiParameterDescription»¸
+
+é) é(W
+%6System.Type"ESystem.Web.Http.Controllers.HttpParameterDescriptor.ParameterType.get*=;
+9
+%53System.Web.Http.Controllers.HttpParameterDescriptor2ParameterType.getI
+G
+
+é é(W
+parameterTypeSystem.Type"__id*
+
+%6System.TypeË
+È
+
+ê7 ê(pE
+%7?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"qPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GetOrCreateModelDescription(System.Type)*^\
+Z
+modelGeneratorHPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator* 
+
+parameterTypeSystem.Type¹
+¶
+
+ê ê(pE
+%8?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"PPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.RequestModelDescription.set*DB
+@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel*IG
+E
+%7?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription­
+ª
+
+ë4 ë(N
+%9string"ESystem.Web.Http.Description.ApiParameterDescription.Documentation.get*GE
+C
+apiParameter3System.Web.Http.Description.ApiParameterDescriptionÅ
+Â
+
+ë ë(N
+%10string"MPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.RequestDocumentation.set*DB
+@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel*
+
+%9string*
+1*–
+5
+í í(Aá
+Þ
+
+í í(9:
+%113System.Web.Http.Controllers.HttpParameterDescriptor"KSystem.Web.Http.Description.ApiParameterDescription.ParameterDescriptor.get*GE
+C
+apiParameter3System.Web.Http.Description.ApiParameterDescription˜
+•
+
+í í(A
+%12bool""object.operator !=(object, object)*
+"
+object*><
+:
+%113System.Web.Http.Controllers.HttpParameterDescriptor*
+""*
+6
+1*Â
+6
+î î(`á
+Þ
+
+î î(4:
+%133System.Web.Http.Controllers.HttpParameterDescriptor"KSystem.Web.Http.Description.ApiParameterDescription.ParameterDescriptor.get*GE
+C
+apiParameter3System.Web.Http.Description.ApiParameterDescription½º
+
+î î(B
+%14System.Type"ESystem.Web.Http.Controllers.HttpParameterDescriptor.ParameterType.get*><
+:
+%133System.Web.Http.Controllers.HttpParameterDescriptor2ParameterType.get„
+
+
+î î(`
+%15bool"1System.Type.operator ==(System.Type, System.Type)*"
+System.Type*
+
+%14System.Type*
+""*
+7
+1*ô
+7
+ð ò(-ýú
+
+ð) ð(f
+%16System.Type"~Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.ResolveHttpRequestMessageType(System.Web.Http.Description.ApiDescription)*KI
+G
+sampleGenerator4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*@>
+<
+apiDescription*System.Web.Http.Description.ApiDescription2IResolveHttpRequestMessageType(System.Web.Http.Description.ApiDescription)J
+H
+
+ð ð(f
+parameterTypeSystem.Type"__id*
+
+%16System.TypeŽ
+‹
+
+ò ò(-
+%17bool"1System.Type.operator !=(System.Type, System.Type)*"
+System.Type* 
+
+parameterTypeSystem.Type*
+""*
+8
+1*¡
+8
+ô ô(sÌ
+É
+
+ô; ô(tF
+%18?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"qPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GetOrCreateModelDescription(System.Type)*^\
+Z
+modelGeneratorHPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator* 
+
+parameterTypeSystem.Type»
+¸
+
+ô ô(tF
+%19?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"PPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.RequestModelDescription.set*DB
+@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel*JH
+F
+%18?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription*
+1*2
+3
+ø	 ø(	"!
+
+ø ø(	
+implicit return:N
+
+â< â(U@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel:h
+
+âW â(Z
+modelGeneratorHPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator:W
+â â(¨G
+sampleGenerator4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGeneratorB@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions

@@ -1,0 +1,103 @@
+
+~Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.ResolveHttpRequestMessageType(System.Web.Http.Description.ApiDescription)i
+]D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs× ×(9"0*”
+0
+Ù Ý(w¿
+¼
+
+Ù$ Ù(86
+%00System.Web.Http.Controllers.HttpActionDescriptor"?System.Web.Http.Description.ApiDescription.ActionDescriptor.get*53
+1
+api*System.Web.Http.Description.ApiDescriptionÒ
+Ï
+
+Ù$ Ù(M:
+%14System.Web.Http.Controllers.HttpControllerDescriptor"ISystem.Web.Http.Controllers.HttpActionDescriptor.ControllerDescriptor.get*:8
+6
+%00System.Web.Http.Controllers.HttpActionDescriptor¦
+£
+
+Ù$ Ù(\
+%2string"GSystem.Web.Http.Controllers.HttpControllerDescriptor.ControllerName.get*><
+:
+%14System.Web.Http.Controllers.HttpControllerDescriptor@
+>
+
+Ù Ù(\
+controllerNamestring"__id*
+
+%2string¿
+¼
+
+Ú  Ú(46
+%30System.Web.Http.Controllers.HttpActionDescriptor"?System.Web.Http.Description.ApiDescription.ActionDescriptor.get*53
+1
+api*System.Web.Http.Description.ApiDescriptionª§
+
+Ú  Ú(?
+%4string"?System.Web.Http.Controllers.HttpActionDescriptor.ActionName.get*:8
+6
+%30System.Web.Http.Controllers.HttpActionDescriptor2ActionName.get<
+:
+
+Ú Ú(?
+
+actionNamestring"__id*
+
+%4stringÀ
+½
+
+Û1 Û(J2
+%5,System.Collections.ObjectModel.Collection<T>"DSystem.Web.Http.Description.ApiDescription.ParameterDescriptions.get*53
+1
+api*System.Web.Http.Description.ApiDescription¡
+ž
+
+Û1 Û(^/
+%6)System.Collections.Generic.IEnumerable<T>"System.Linq.Enumerable.Select<TSource, TResult>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, TResult>)*"
+System.Linq.Enumerable*64
+2
+%5,System.Collections.ObjectModel.Collection<T>*
+""‡
+„
+
+Û  Û(^;
+parameterNames)System.Collections.Generic.IEnumerable<T>"__id*31
+/
+%6)System.Collections.Generic.IEnumerable<T>$
+"
+
+ÝP Ý(g
+%7"__id*
+""™–
+
+Ý Ý(x
+%8System.Type"¸Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.ResolveType(System.Web.Http.Description.ApiDescription, string, string, System.Collections.Generic.IEnumerable<string>, Puma.Prey.Fox.Areas.HelpPage.SampleDirection, out System.Collections.ObjectModel.Collection<System.Net.Http.Formatting.MediaTypeFormatter>)*:86
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*53
+1
+api*System.Web.Http.Description.ApiDescription*
+
+controllerNamestring*
+
+
+actionNamestring*?=
+;
+parameterNames)System.Collections.Generic.IEnumerable<T>*
+
+%7*><
+:
+
+formatters,System.Collections.ObjectModel.Collection<T>2ƒResolveType(System.Web.Http.Description.ApiDescription, string, string, System.Collections.Generic.IEnumerable<string>, Puma.Prey.Fox.Areas.HelpPage.SampleDirection, out System.Collections.ObjectModel.Collection<System.Net.Http.Formatting.MediaTypeFormatter>)"!
+
+Ý Ý(y
+
+%8System.Type*2
+1
+Þ	 Þ(	"!
+
+Þ Þ(	
+implicit return:?
+
+×: ×(L1
+api*System.Web.Http.Description.ApiDescriptionB86
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator

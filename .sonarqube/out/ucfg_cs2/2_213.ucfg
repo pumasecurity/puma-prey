@@ -1,0 +1,34 @@
+
+4Puma.Prey.Fox.Controllers.AccountController.Logout()M
+CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.csG! G('"2*Í
+0I J(∂
+≥
+I I(4
+%0.Microsoft.Owin.Security.IAuthenticationManager">Puma.Prey.Fox.Controllers.AccountController.Authentication.get*1/-
++Puma.Prey.Fox.Controllers.AccountController"
+ 
+I# I(R
+%1"__id*
+""¿Ω
+I I(S
+
+%2void"GMicrosoft.Owin.Security.IAuthenticationManager.SignOut(params string[])*86
+4
+%0.Microsoft.Owin.Security.IAuthenticationManager*
+
+%12SignOut(params string[])ÑÅ
+J J(&
+%3 System.Web.Http.Results.OkResult""System.Web.Http.ApiController.Ok()*#!
+System.Web.Http.ApiController2Ok()"4
+J J((
+&
+%3 System.Web.Http.Results.OkResult*.
+1K	 K(	"
+K K(	
+implicit return*4
+2G) G() 
+
+G! G('
+%4"__entrypoint*
+0B/-
++Puma.Prey.Fox.Controllers.AccountController

@@ -1,0 +1,84 @@
+
+nPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.HelpPageSampleKey(System.Net.Http.Headers.MediaTypeHeaderValue)a
+WD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs ( "1*
+1	 (	*
+0*¬
+0 (!”
+‘
+ (!
+
+%0bool""object.operator ==(object, object)*
+"
+object*=;
+9
+	mediaType,System.Net.Http.Headers.MediaTypeHeaderValue*
+""*
+2
+3*ó
+2 (;NL
+ (<"
+%1System.ArgumentNullException"System.ArgumentNullExceptionŽ
+‹
+ (/
+
+%2void":System.ArgumentNullException.ArgumentNullException(string)*&$
+"
+%1System.ArgumentNullException*
+	mediaType*
+4*ë
+
+3 (QA
+?
+ (%
+%3string"__id**
+string"
+Emptystring¢
+Ÿ
+ (%
+%4string"=Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ActionName.set*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*
+
+%3stringA
+?
+ ()
+%5string"__id**
+string"
+Emptystring¦
+£
+ ()
+%6string"APuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ControllerName.set*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*
+
+%5stringô
+ñ
+ (!2
+%7,System.Net.Http.Headers.MediaTypeHeaderValue"<Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.MediaType.set*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*=;
+9
+	mediaType,System.Net.Http.Headers.MediaTypeHeaderValues
+q
+1 (Q
+%8System.StringComparer"+System.StringComparer.OrdinalIgnoreCase.get*"
+System.StringComparer`^
+ (R+
+%9%System.Collections.Generic.HashSet<T>"%System.Collections.Generic.HashSet<T>Ì
+É
+! (0
+%10void"^System.Collections.Generic.HashSet<T>.HashSet(System.Collections.Generic.IEqualityComparer<T>)*/-
++
+%9%System.Collections.Generic.HashSet<T>*
+
+%8System.StringComparerå
+â
+ (R,
+%11%System.Collections.Generic.HashSet<T>"APuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ParameterNames.set*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*/-
++
+%9%System.Collections.Generic.HashSet<T>*
+4*.
+4	 (	"
+ (	
+implicit return:E
+! (?9
+	mediaType,System.Net.Http.Headers.MediaTypeHeaderValueB20
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey

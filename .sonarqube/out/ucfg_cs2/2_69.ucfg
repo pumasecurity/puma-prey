@@ -1,0 +1,62 @@
+
+VPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.XmlDocumentationProvider(string)W
+MD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\XmlDocumentationProvider.cs ('"1*
+1$	 $(	*
+0*á
+0 ($p
+n
+ ($
+
+%0bool""string.operator ==(string, string)*
+"
+string*
+
+documentPathstring*
+""*
+2
+3*ˆ
+2   (>NL
+   (?"
+%1System.ArgumentNullException"System.ArgumentNullExceptionë
+é
+   (/
+
+%2void":System.ArgumentNullException.ArgumentNullException(string)*&$
+"
+%1System.ArgumentNullException*
+documentPath*
+4*Æ
+3" #(8RP
+"" "(A$
+%3System.Xml.XPath.XPathDocument"System.Xml.XPath.XPathDocumentï
+í
+"& "(3
+
+%4void"4System.Xml.XPath.XPathDocument.XPathDocument(string)*(&
+$
+%3System.Xml.XPath.XPathDocument*
+
+documentPathstringe
+c
+" "(A'
+xpathSystem.Xml.XPath.XPathDocument"__id*(&
+$
+%3System.Xml.XPath.XPathDocumentì
+ê
+#! #(8%
+%5System.Xml.XPath.XPathNavigator"0System.Xml.XPath.XPathDocument.CreateNavigator()*+)
+'
+xpathSystem.Xml.XPath.XPathDocument∞
+≠
+# #(8p7
+5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider"5
+_documentNavigatorSystem.Xml.XPath.XPathNavigator"__id*)'
+%
+%5System.Xml.XPath.XPathNavigator*
+4*.
+4$	 $(	"
+$ $(	
+implicit return:"
+( (;
+documentPathstringB97
+5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider

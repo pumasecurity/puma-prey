@@ -1,0 +1,29 @@
+
+DPuma.Prey.Common.Cryptography.KeyManagement.ProtectedKey.Unprotect()Z
+PD:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\ProtectedKey.cs@ @('"0*·
+0B B(Xz
+x
+B+ B(<
+%0byte[]"__id*XV*T:
+8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"
+protectedKeybyte[]"
+ 
+BD B(X
+%1"__id*
+""ë
+è
+B B(Y
+%2byte[]"vSystem.Security.Cryptography.ProtectedData.Unprotect(byte[], byte[], System.Security.Cryptography.DataProtectionScope)*0.",
+*System.Security.Cryptography.ProtectedData*
+
+%0byte[]*
+""*
+
+%1"
+B B(Z
+
+%2byte[]*.
+1C	 C(	"
+C C(	
+implicit returnB<:
+8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey

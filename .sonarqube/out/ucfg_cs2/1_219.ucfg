@@ -1,0 +1,356 @@
+
+oPuma.Prey.Raccoon.Controllers.ManageController.ChangePassword(Puma.Prey.Raccoon.Models.ChangePasswordViewModel)R
+FD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\ManageController.cs„( „(6"8*¢
+0
+Â Â(#Ö
+Ç
+
+Â Â()
+%0#System.Web.Mvc.ModelStateDictionary"(System.Web.Mvc.Controller.ModelState.get*
+System.Web.Mvc.ControllerÄ
+~
+
+Â Â(#
+
+%1bool"5System.Collections.Generic.ICollection<T>.IsValid.get*-+
+)
+%0#System.Web.Mvc.ModelStateDictionary*
+1
+2*Ä
+1
+Á Á(! 
+«
+
+Á Á("
+
+%2void"#raccoon/views/manage/changepassword*
+
+%3*=;
+9
+model0Puma.Prey.Raccoon.Models.ChangePasswordViewModel*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobjectø
+º
+
+Á Á("
+
+%4void"raccoon/views/_viewstart*
+
+%5*=;
+9
+model0Puma.Prey.Raccoon.Models.ChangePasswordViewModel*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject√
+¿
+
+Á Á("
+
+%6void"raccoon/views/shared/_layout*
+
+%7*=;
+9
+model0Puma.Prey.Raccoon.Models.ChangePasswordViewModel*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject"
+
+Á Á(#
+
+
+%6void*Ω
+2
+È Í( µ
+≤
+
+È È(*.
+%8(Puma.Prey.Raccoon.ApplicationUserManager">Puma.Prey.Raccoon.Controllers.ManageController.UserManager.get*420
+.Puma.Prey.Raccoon.Controllers.ManageController
+}
+
+È? È(C*
+%9$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
+System.Web.Mvc.Controller¨©
+
+È? È(L*
+%10#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
+*
+%9$System.Security.Principal.IPrincipal2Identity.getﬂ
+‹
+
+È? È(X
+%11string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
+,Microsoft.AspNet.Identity.IdentityExtensions*.,
+*
+%10#System.Security.Principal.IIdentityü
+ú
+
+ÈZ È(k
+%12string"@Puma.Prey.Raccoon.Models.ChangePasswordViewModel.OldPassword.get*=;
+9
+model0Puma.Prey.Raccoon.Models.ChangePasswordViewModelü
+ú
+
+Èm È(~
+%13string"@Puma.Prey.Raccoon.Models.ChangePasswordViewModel.NewPassword.get*=;
+9
+model0Puma.Prey.Raccoon.Models.ChangePasswordViewModel≤Ø
+
+È È(+
+%14$System.Threading.Tasks.Task<TResult>"\Microsoft.AspNet.Identity.UserManager<TUser, TKey>.ChangePasswordAsync(TKey, string, string)*20
+.
+%8(Puma.Prey.Raccoon.ApplicationUserManager*
+
+%11string*
+
+%12string*
+
+%13string2)ChangePasswordAsync(TKey, string, string)R
+P
+
+È È(2
+result(Microsoft.AspNet.Identity.IdentityResult"__id*
+""å
+â
+
+Í Í( 
+%15bool"6Microsoft.AspNet.Identity.IdentityResult.Succeeded.get*64
+2
+result(Microsoft.AspNet.Identity.IdentityResult*
+3
+4*¨	
+3
+Ï Ì( ∂
+≥
+
+Ï! Ï(,/
+%16(Puma.Prey.Raccoon.ApplicationUserManager">Puma.Prey.Raccoon.Controllers.ManageController.UserManager.get*420
+.Puma.Prey.Raccoon.Controllers.ManageControllerÄ
+~
+
+Ï; Ï(?+
+%17$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
+System.Web.Mvc.Controller≠™
+
+Ï; Ï(H*
+%18#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*/-
++
+%17$System.Security.Principal.IPrincipal2Identity.getﬂ
+‹
+
+Ï; Ï(T
+%19string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
+,Microsoft.AspNet.Identity.IdentityExtensions*.,
+*
+%18#System.Security.Principal.IIdentity·ﬁ
+
+Ï! Ï(U+
+%20$System.Threading.Tasks.Task<TResult>"FMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.FindByIdAsync(TKey)*31
+/
+%16(Puma.Prey.Raccoon.ApplicationUserManager*
+
+%19string2FindByIdAsync(TKey)P
+N
+
+Ï Ï(U0
+user(Puma.Prey.Raccoon.Models.ApplicationUser"__id*
+""é
+ã
+
+Ì Ì( 
+%21bool""object.operator !=(object, object)*
+"
+object*42
+0
+user(Puma.Prey.Raccoon.Models.ApplicationUser*
+""*
+5
+6*Ç
+5
+Ô Ô(e∫
+∑
+
+Ô Ô('1
+%22*Puma.Prey.Raccoon.ApplicationSignInManager"@Puma.Prey.Raccoon.Controllers.ManageController.SignInManager.get*420
+.Puma.Prey.Raccoon.Controllers.ManageControllerÆ´
+
+Ô Ô(f"
+%23System.Threading.Tasks.Task"XMicrosoft.AspNet.Identity.Owin.SignInManager<TUser, TKey>.SignInAsync(TUser, bool, bool)*53
+1
+%22*Puma.Prey.Raccoon.ApplicationSignInManager*42
+0
+user(Puma.Prey.Raccoon.Models.ApplicationUser*
+""*
+""2SignInAsync(TUser, bool, bool)*
+6*¶
+6
+Ò Ò(f%
+#
+
+ÒA Ò(f
+%24"__id*
+""∞
+≠
+
+Ò Ò(i+
+%25$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, object)*
+System.Web.Mvc.Controller*	
+Index*
+""";
+
+Ò Ò(j-
++
+%25$System.Web.Mvc.RedirectToRouteResult*¯	
+4
+Û Ù(Ó
+Î
+
+Û Û(
+%26void"bPuma.Prey.Raccoon.Controllers.ManageController.AddErrors(Microsoft.AspNet.Identity.IdentityResult)*420
+.Puma.Prey.Raccoon.Controllers.ManageController*64
+2
+result(Microsoft.AspNet.Identity.IdentityResultÃ
+…
+
+Ù Ù(
+%27void"#raccoon/views/manage/changepassword*	
+
+%28*=;
+9
+model0Puma.Prey.Raccoon.Models.ChangePasswordViewModel*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject¡
+æ
+
+Ù Ù(
+%29void"raccoon/views/_viewstart*	
+
+%30*=;
+9
+model0Puma.Prey.Raccoon.Models.ChangePasswordViewModel*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject≈
+¬
+
+Ù Ù(
+%31void"raccoon/views/shared/_layout*	
+
+%32*=;
+9
+model0Puma.Prey.Raccoon.Models.ChangePasswordViewModel*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject"
+
+Ù Ù(
+
+%31void*2
+7
+ı	 ı(	"!
+
+ı ı(	
+implicit return*§
+8
+„U „(UÅ
+
+
+„( „(6c
+9
+model0Puma.Prey.Raccoon.Models.ChangePasswordViewModel"&
+<OldPassword>k__BackingFieldstring"__entrypointp
+n
+
+„( „(6R
+9
+model0Puma.Prey.Raccoon.Models.ChangePasswordViewModel"
+OldPasswordstring"__entrypointÅ
+
+
+„( „(6c
+9
+model0Puma.Prey.Raccoon.Models.ChangePasswordViewModel"&
+<NewPassword>k__BackingFieldstring"__entrypointp
+n
+
+„( „(6R
+9
+model0Puma.Prey.Raccoon.Models.ChangePasswordViewModel"
+NewPasswordstring"__entrypointÜ
+É
+
+„( „(6g
+9
+model0Puma.Prey.Raccoon.Models.ChangePasswordViewModel"*
+ <ConfirmPassword>k__BackingFieldstring"__entrypointt
+r
+
+„( „(6V
+9
+model0Puma.Prey.Raccoon.Models.ChangePasswordViewModel"
+ConfirmPasswordstring"__entrypoint#
+!
+
+„( „(6
+%33"__entrypoint*
+0:G
+
+„7 „(T9
+model0Puma.Prey.Raccoon.Models.ChangePasswordViewModelB20
+.Puma.Prey.Raccoon.Controllers.ManageController

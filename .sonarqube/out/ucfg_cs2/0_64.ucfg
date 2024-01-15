@@ -1,0 +1,29 @@
+
+çPuma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.Write(System.IO.Stream, Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey)]
+SD:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyReaderWriter.csE E("0*Ì
+0G H(4Ú
+Ô
+G G(7
+
+%0void"ePuma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.WriteVersionNumber(System.IO.Stream, int)*A?=
+;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter*$"
+ 
+outputStreamSystem.IO.Stream*2·!„
+‡
+H H(5
+
+%1void"ôPuma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.WriteEncryptedKey(System.IO.Stream, Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey)*A?=
+;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter*$"
+ 
+outputStreamSystem.IO.Stream*CA
+?
+key8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*
+1*.
+1I	 I(	"
+I I(	
+implicit return:,
+E E(- 
+outputStreamSystem.IO.Stream:K
+E/ E(??
+key8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyB?=
+;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter

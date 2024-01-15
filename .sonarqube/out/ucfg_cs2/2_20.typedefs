@@ -1,0 +1,8 @@
+˜
+%Puma.Prey.Fox.Results.ChallengeResultobject!System.Web.Http.IHttpActionResult–
+6ChallengeResult(string, System.Web.Http.ApiController)\Puma.Prey.Fox.Results.ChallengeResult.ChallengeResult(string, System.Web.Http.ApiController)Š
+0ExecuteAsync(System.Threading.CancellationToken)VPuma.Prey.Fox.Results.ChallengeResult.ExecuteAsync(System.Threading.CancellationToken)L
+LoginProvider.get7Puma.Prey.Fox.Results.ChallengeResult.LoginProvider.getL
+LoginProvider.set7Puma.Prey.Fox.Results.ChallengeResult.LoginProvider.set@
+Request.get1Puma.Prey.Fox.Results.ChallengeResult.Request.get@
+Request.set1Puma.Prey.Fox.Results.ChallengeResult.Request.set

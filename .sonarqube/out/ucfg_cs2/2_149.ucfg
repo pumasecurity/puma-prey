@@ -1,0 +1,42 @@
+
+<Puma.Prey.Fox.Areas.HelpPage.ImageSample.ImageSample(string)[
+QD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\ImageSample.cs ("1*
+1	 (	*
+0*~
+0 (g
+e
+ (
+
+%0bool""string.operator ==(string, string)*
+"
+string*
+
+srcstring*
+""*
+2
+3*í
+2 (5NL
+ (6"
+%1System.ArgumentNullException"System.ArgumentNullExceptionˆ
+…
+ (/
+
+%2void":System.ArgumentNullException.ArgumentNullException(string)*&$
+"
+%1System.ArgumentNullException*	
+src*
+4*¥
+3 (
+
+ (
+%3string"0Puma.Prey.Fox.Areas.HelpPage.ImageSample.Src.set*.,*
+(Puma.Prey.Fox.Areas.HelpPage.ImageSample*
+
+srcstring*
+4*.
+4	 (	"
+ (	
+implicit return:
+ (%
+srcstringB,*
+(Puma.Prey.Fox.Areas.HelpPage.ImageSample

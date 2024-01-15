@@ -1,0 +1,52 @@
+
+ePuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.IsBindableWithTypeConverter(System.Type)`
+TD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageConfigurationExtensions.csÊ Ê(7"0*§
+0
+Ì Ì(%
+Š
+
+Ì Ì(%
+
+%0bool"1System.Type.operator ==(System.Type, System.Type)*"
+System.Type* 
+
+parameterTypeSystem.Type*
+""*
+1
+2*%
+1
+Î Î("
+
+Î Î(
+""*Ž
+2
+Ñ Ñ([È
+Å
+
+Ñ Ñ(=)
+%1#System.ComponentModel.TypeConverter">System.ComponentModel.TypeDescriptor.GetConverter(System.Type)**("&
+$System.ComponentModel.TypeDescriptor* 
+
+parameterTypeSystem.Type•
+’
+
+Ñ Ñ(\
+
+%2bool"?System.ComponentModel.TypeConverter.CanConvertFrom(System.Type)*-+
+)
+%1#System.ComponentModel.TypeConverter*
+"""
+
+Ñ Ñ(]
+
+
+%2bool*2
+3
+Ò	 Ò(	"!
+
+Ò Ò(	
+implicit return:*
+
+Ê8 Ê(J
+parameterTypeSystem.TypeB@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions

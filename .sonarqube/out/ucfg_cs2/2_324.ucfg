@@ -1,0 +1,257 @@
+
+KPuma.Prey.Fox.Controllers.AccountController.GetExternalLogins(string, bool)O
+CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.csõ3 õ(D"8*‰
+0
+ù3 ¢(∏
+µ
+
+ùB ù(P4
+%0.Microsoft.Owin.Security.IAuthenticationManager">Puma.Prey.Fox.Controllers.AccountController.Authentication.get*1/-
++Puma.Prey.Fox.Controllers.AccountController¬
+ø
+
+ùB ù(q/
+%1)System.Collections.Generic.IEnumerable<T>"ÜMicrosoft.Owin.Security.AuthenticationManagerExtensions.GetExternalAuthenticationTypes(Microsoft.Owin.Security.IAuthenticationManager)*=;"9
+7Microsoft.Owin.Security.AuthenticationManagerExtensions*86
+4
+%0.Microsoft.Owin.Security.IAuthenticationManagerÖ
+Ç
+
+ù3 ù(q9
+descriptions)System.Collections.Generic.IEnumerable<T>"__id*31
+/
+%1)System.Collections.Generic.IEnumerable<T>\Z
+
+û2 û(T(
+%2"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>s
+q
+
+û6 û(R
+
+%3void")System.Collections.Generic.List<T>.List()*,*
+(
+%2"System.Collections.Generic.List<T>p
+n
+
+û) û(T,
+logins"System.Collections.Generic.List<T>"__id*,*
+(
+%2"System.Collections.Generic.List<T>*
+1
+2*‡
+1
+§ •(I4
+2
+
+§ §(.
+strengthInBitsint"__id*2Ä⁄
+◊
+
+• •(J
+%4string"SPuma.Prey.Fox.Controllers.AccountController.RandomOAuthStateGenerator.Generate(int)*KI"G
+EPuma.Prey.Fox.Controllers.AccountController.RandomOAuthStateGenerator*
+
+strengthInBitsint7
+5
+
+• •(J
+statestring"__id*
+
+%4string*
+3*E
+2
+© ©(/
+-
+
+© ©(
+statestring"__id*
+""*
+3*˛
+3
+¨> ¨(J¢
+ü
+
+¨/ ¨(:
+%5	__unknown"7System.Collections.Generic.ICollection<T>.this[int].get*=;
+9
+descriptions)System.Collections.Generic.IEnumerable<T>*
+""C
+A
+
+¨ º(
+description	__unknown"__id*
+
+%5	__unknown*
+4*
+4
+ø	 ø(	*
+5
+6*‰
+5
+Æ' ª( nl
+
+Æ/ ∫(1
+%6+Puma.Prey.Fox.Models.ExternalLoginViewModel"+Puma.Prey.Fox.Models.ExternalLoginViewModelò
+ï
+
+Æ3 Æ(I
+
+%7void"DPuma.Prey.Fox.Models.ExternalLoginViewModel.ExternalLoginViewModel()*53
+1
+%6+Puma.Prey.Fox.Models.ExternalLoginViewModel¢
+ü
+
+∞ ∞(.
+%8string"=Microsoft.Owin.Security.AuthenticationDescription.Caption.get*DB
+@
+description1Microsoft.Owin.Security.AuthenticationDescriptionú
+ô
+
+∞ ∞(.
+%9string"4Puma.Prey.Fox.Models.ExternalLoginViewModel.Name.set*53
+1
+%6+Puma.Prey.Fox.Models.ExternalLoginViewModel*
+
+%8stringÖ
+Ç
+
+± ±((
+%10!System.Web.Http.Routing.UrlHelper"%System.Web.Http.ApiController.Url.get*#!
+System.Web.Http.ApiControllerÆ
+´
+
+≥# ≥(A
+%11string"HMicrosoft.Owin.Security.AuthenticationDescription.AuthenticationType.get*DB
+@
+description1Microsoft.Owin.Security.AuthenticationDescriptiond
+b
+
+µ$ µ(:
+%12string"(Puma.Prey.Fox.Startup.PublicClientId.get*"
+Puma.Prey.Fox.Startupä
+á
+
+∂/ ∂(6)
+%13"System.Net.Http.HttpRequestMessage")System.Web.Http.ApiController.Request.get*#!
+System.Web.Http.ApiControllerÑ
+Å
+
+∂/ ∂(A
+%14
+System.Uri"1System.Net.Http.HttpRequestMessage.RequestUri.get*-+
+)
+%13"System.Net.Http.HttpRequestMessage-+
+
+∂' ∂(M
+%15
+System.Uri"
+System.Uriá
+Ñ
+
+∂+ ∂(.
+%16void""System.Uri.Uri(System.Uri, string)*
+
+%15
+System.Uri*
+
+%14
+System.Uri*
+
+	returnUrlstringP
+N
+
+∂' ∂(Y
+%17string"System.Uri.AbsoluteUri.get*
+
+%15
+System.Uriª∏
+
+± ∏(
+%18string"7System.Web.Http.Routing.UrlHelper.Route(string, object)*,*
+(
+%10!System.Web.Http.Routing.UrlHelper*
+ExternalLogin*
+""2Route(string, object)ù
+ö
+
+± ∏(
+%19string"3Puma.Prey.Fox.Models.ExternalLoginViewModel.Url.set*53
+1
+%6+Puma.Prey.Fox.Models.ExternalLoginViewModel*
+
+%18string°
+û
+
+π π(!
+%20string"5Puma.Prey.Fox.Models.ExternalLoginViewModel.State.set*53
+1
+%6+Puma.Prey.Fox.Models.ExternalLoginViewModel*
+
+statestringÅ
+
+
+Æ' ∫(4
+login+Puma.Prey.Fox.Models.ExternalLoginViewModel"__id*53
+1
+%6+Puma.Prey.Fox.Models.ExternalLoginViewModel∫
+∑
+
+ª ª(!
+%21void"0System.Collections.Generic.ICollection<T>.Add(T)*0.
+,
+logins"System.Collections.Generic.List<T>*86
+4
+login+Puma.Prey.Fox.Models.ExternalLoginViewModel*
+4*M
+6
+æ æ("<
+
+æ æ(.
+,
+logins"System.Collections.Generic.List<T>*2
+7
+ø	 ø(	"!
+
+ø ø(	
+implicit return*•
+8
+õr õ(rF
+D
+
+õ3 õ(D
+%22"__entrypoint*
+
+	returnUrlstring*
+""Ñ
+Å
+
+ô	 ô(
+%23"
+__annotate*GEC
+ASystem.Web.Http.AllowAnonymousAttribute.AllowAnonymousAttribute()*
+
+	returnUrlstringw
+u
+
+ö	 ö( 
+%24"
+__annotate*;97
+5System.Web.Http.RouteAttribute.RouteAttribute(string)*
+
+	returnUrlstringG
+E
+
+õE õ(U
+	returnUrlstring"__annotation*	
+
+%23*	
+
+%24*
+0:!
+
+õE õ(U
+	returnUrlstring:#
+
+õW õ(q
+generateStateboolB/-
++Puma.Prey.Fox.Controllers.AccountController

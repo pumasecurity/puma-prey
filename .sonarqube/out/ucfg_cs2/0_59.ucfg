@@ -1,0 +1,135 @@
+
+uPuma.Prey.Common.Cryptography.KeyManagement.KeyManager.Read(string, System.Security.Cryptography.DataProtectionScope)X
+ND:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyManager.cs<# <('"0*Ì
+0> ?(2x
+v
+> >(D
+%0string""System.IO.Path.GetFullPath(string)*"
+System.IO.Path*" 
+
+protectedKeyFileNamestring8
+6
+> >(D
+fullPathstring"__id*
+
+%0stringã
+à
+? ?( C
+%1=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache"__id*ˆ…*‚8
+6Puma.Prey.Common.Cryptography.KeyManagement.KeyManager"F
+cache=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCacheþ
+û
+? ?(*>
+%28Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"NPuma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache.this[string].get*GE
+C
+%1=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache*
+
+fullPathstring™
+–
+? ?(2
+
+%3bool""object.operator !=(object, object)*
+"
+object*B@
+>
+%28Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*
+""*
+1
+2*Â
+1A A(0ã
+à
+A A('C
+%4=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache"__id*ˆ…*‚8
+6Puma.Prey.Common.Cryptography.KeyManagement.KeyManager"F
+cache=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCacheþ
+û
+A A(1>
+%58Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"NPuma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache.this[string].get*GE
+C
+%4=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache*
+
+fullPathstring"L
+A A(2@
+>
+%58Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*ý
+2C D(~"
+ 
+DP D(]
+%6"__id*
+"""
+ 
+D_ D(n
+%7"__id*
+"""
+ 
+Dp D(~
+%8"__id*
+""><
+D+ D(
+%9System.IO.FileStream"System.IO.FileStreamä
+á
+D/ D(9
+%10void"fSystem.IO.FileStream.FileStream(string, System.IO.FileMode, System.IO.FileAccess, System.IO.FileShare)*
+
+%9System.IO.FileStream*" 
+
+protectedKeyFileNamestring*
+
+%6*
+
+%7*
+
+%8V
+T
+D D("
+
+fileStreamSystem.IO.FileStream"__id*
+
+%9System.IO.FileStream*
+3*Ù	
+3F H(%¿
+¼
+F, F(]?
+%118Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"Puma.Prey.Common.Cryptography.KeyManagement.KeyManager.Read(System.IO.Stream, System.Security.Cryptography.DataProtectionScope)*<:"8
+6Puma.Prey.Common.Cryptography.KeyManagement.KeyManager*&$
+"
+
+fileStreamSystem.IO.FileStream*
+""¢
+Ÿ
+F F(]H
+protectedKey8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"__id*CA
+?
+%118Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyä
+á
+G G( D
+%12=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache"__id*ˆ…*‚8
+6Puma.Prey.Common.Cryptography.KeyManagement.KeyManager"F
+cache=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCacheÎ
+Ë
+G G(9?
+%138Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"NPuma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache.this[string].set*HF
+D
+%12=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache*
+
+fullPathstring*LJ
+H
+protectedKey8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey¥
+¢
+H H(%B
+result8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"__id*LJ
+H
+protectedKey8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*
+4*_
+4J J("P
+J J(D
+B
+result8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*.
+5K	 K(	"
+K K(	
+implicit return:*
+<( <(C
+protectedKeyFileNamestring:T
+<E <(mH
+dpapiProtectionScope0System.Security.Cryptography.DataProtectionScopeB:"8
+6Puma.Prey.Common.Cryptography.KeyManagement.KeyManager

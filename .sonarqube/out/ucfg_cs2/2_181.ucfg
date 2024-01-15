@@ -1,0 +1,156 @@
+
+{Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.GetHelpPageApiModel(System.Web.Http.HttpConfiguration, string)`
+TD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageConfigurationExtensions.cs€' €(:"0*Ó
+0
+› ﬂ(A$
+"
+
+ﬁ ﬁ(+
+%0"__id*
+""`
+^
+
+ﬁ ﬁ(>
+%1"__concat*
+
+ﬁ ﬁ(+
+
+%0**
+
+ﬁ. ﬁ(>
+
+apiDescriptionIdstring1
+/
+
+ﬁ ﬁ(>
+modelIdstring"__id*
+
+%1∫
+∑
+
+ﬂ ﬂ("F
+%2@System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>"0System.Web.Http.HttpConfiguration.Properties.get*/-
++
+config!System.Web.Http.HttpConfiguration‹
+Ÿ
+
+ﬂ ﬂ(B
+
+%3bool"GSystem.Collections.Generic.ICollection<T>.TryGetValue(TKey, out TValue)*JH
+F
+%2@System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>*
+
+modelIdstring*
+
+modelobject*
+1
+2*¸
+
+1
+·+ „(*•
+¢
+
+·= ·(L3
+%4-System.Web.Http.Controllers.ServicesContainer".System.Web.Http.HttpConfiguration.Services.get*/-
++
+config!System.Web.Http.HttpConfigurationÑ
+Å
+
+·= ·(].
+%5(System.Web.Http.Description.IApiExplorer"`System.Web.Http.ServicesExtensions.GetApiExplorer(System.Web.Http.Controllers.ServicesContainer)*(&"$
+"System.Web.Http.ServicesExtensions*75
+3
+%4-System.Web.Http.Controllers.ServicesContainer «
+
+·= ·(m2
+%6,System.Collections.ObjectModel.Collection<T>"<System.Web.Http.Description.IApiExplorer.ApiDescriptions.get*20
+.
+%5(System.Web.Http.Description.IApiExplorer2ApiDescriptions.geté
+ã
+
+·+ ·(m?
+apiDescriptions,System.Collections.ObjectModel.Collection<T>"__id*64
+2
+%6,System.Collections.ObjectModel.Collection<T>¨
+©
+‚0 ‚(Ø0
+%7*System.Web.Http.Description.ApiDescription"{System.Linq.Enumerable.FirstOrDefault<TSource>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, bool>)*"
+System.Linq.Enumerable*CA
+?
+apiDescriptions,System.Collections.ObjectModel.Collection<T>*
+""ä
+á
+‚ ‚(Ø<
+apiDescription*System.Web.Http.Description.ApiDescription"__id*42
+0
+%7*System.Web.Http.Description.ApiDescriptionô
+ñ
+
+„ „(*
+
+%8bool""object.operator !=(object, object)*
+"
+object*@>
+<
+apiDescription*System.Web.Http.Description.ApiDescription*
+""*
+3
+2*µ
+3
+Â Ê(;°
+û
+
+Â Â(D:
+%94Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel"úPuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.GenerateApiModel(System.Web.Http.Description.ApiDescription, System.Web.Http.HttpConfiguration)*B@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions*@>
+<
+apiDescription*System.Web.Http.Description.ApiDescription*/-
++
+config!System.Web.Http.HttpConfiguratione
+c
+
+Â Â(D
+modelobject"__id*><
+:
+%94Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModelª
+∏
+
+Ê Ê(%G
+%10@System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>"0System.Web.Http.HttpConfiguration.Properties.get*/-
++
+config!System.Web.Http.HttpConfiguration’
+“
+
+Ê Ê(<
+%11bool">System.Collections.Generic.ICollection<T>.TryAdd(TKey, TValue)*KI
+G
+%10@System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>*
+
+modelIdstring*
+
+modelobject*
+2*X
+2
+Í Í(*0
+.
+
+Í Í(*
+%12"__id*
+
+modelobject"
+
+Í Í(+
+
+%12*2
+4
+Î	 Î(	"!
+
+Î Î(	
+implicit return:9
+
+€; €(X+
+config!System.Web.Http.HttpConfiguration:(
+
+€Z €(q
+apiDescriptionIdstringB@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions

@@ -1,0 +1,34 @@
+
+ePuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.SimpleTypeObjectGenerator.CanGenerateObject(System.Type)a
+UD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\ObjectGenerator.cs½ ½(0"0*Î
+0
+¿ ¿(9í
+ê
+
+¿ ¿((9
+%03System.Collections.Generic.Dictionary<TKey, TValue>"__id*š—*”H
+FPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.SimpleTypeObjectGenerator"H
+DefaultGenerators3System.Collections.Generic.Dictionary<TKey, TValue>°
+­
+
+¿ ¿(:
+
+%1bool";System.Collections.Generic.ICollection<T>.ContainsKey(TKey)*=;
+9
+%03System.Collections.Generic.Dictionary<TKey, TValue>*
+
+typeSystem.Type"
+
+¿ ¿(;
+
+
+%1bool*2
+1
+À À("!
+
+À À(
+implicit return:!
+
+½1 ½(:
+typeSystem.TypeBJ"H
+FPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.SimpleTypeObjectGenerator

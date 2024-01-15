@@ -1,0 +1,7 @@
+ß
++Puma.Prey.Fox.Models.UserLoginInfoViewModelobject`
+UserLoginInfoViewModel()DPuma.Prey.Fox.Models.UserLoginInfoViewModel.UserLoginInfoViewModel()R
+LoginProvider.get=Puma.Prey.Fox.Models.UserLoginInfoViewModel.LoginProvider.getR
+LoginProvider.set=Puma.Prey.Fox.Models.UserLoginInfoViewModel.LoginProvider.setN
+ProviderKey.get;Puma.Prey.Fox.Models.UserLoginInfoViewModel.ProviderKey.getN
+ProviderKey.set;Puma.Prey.Fox.Models.UserLoginInfoViewModel.ProviderKey.set

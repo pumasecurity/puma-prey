@@ -1,0 +1,5 @@
+Å
+Puma.Prey.Fox.StartupobjectX
+ConfigureAuth(Owin.IAppBuilder)5Puma.Prey.Fox.Startup.ConfigureAuth(Owin.IAppBuilder)X
+Configuration(Owin.IAppBuilder)5Puma.Prey.Fox.Startup.Configuration(Owin.IAppBuilder),
+	Startup()Puma.Prey.Fox.Startup.Startup()

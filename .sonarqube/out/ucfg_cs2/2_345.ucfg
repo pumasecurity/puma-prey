@@ -1,0 +1,62 @@
+
+OPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.WrapSampleIfString(object)i
+]D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs± ±(0"0*…
+0
+³ ´($8
+6
+
+³" ³(2
+%0object"__id*
+
+sampleobject>
+<
+
+³ ³(2
+stringSamplestring"__id*
+
+%0objectr
+p
+
+´ ´($
+
+%1bool""string.operator !=(string, string)*
+"
+string*
+
+stringSamplestring*
+""*
+1
+2*ß
+1
+¶ ¶(2fd
+
+¶ ¶(3-
+%2'Puma.Prey.Fox.Areas.HelpPage.TextSample"'Puma.Prey.Fox.Areas.HelpPage.TextSample¦
+£
+
+¶ ¶(%
+
+%3void":Puma.Prey.Fox.Areas.HelpPage.TextSample.TextSample(string)*1/
+-
+%2'Puma.Prey.Fox.Areas.HelpPage.TextSample*
+
+stringSamplestring"=
+
+¶ ¶(4/
+-
+%2'Puma.Prey.Fox.Areas.HelpPage.TextSample*1
+2
+¹ ¹(" 
+
+¹ ¹(
+
+sampleobject*2
+3
+º	 º(	"!
+
+º º(	
+implicit return:
+
+±1 ±(>
+sampleobjectB8"6
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator

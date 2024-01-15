@@ -420,11 +420,13 @@ namespace Puma.Prey.Fox.Controllers
             return null;
         }
 
+        // TODO: Say hello to SonarLint!
         private class ExternalLoginData
         {
             public string LoginProvider { get; set; }
             public string ProviderKey { get; set; }
             public string UserName { get; set; }
+            public string Organization { get; set; }
 
             public IList<Claim> GetClaims()
             {

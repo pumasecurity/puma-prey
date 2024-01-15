@@ -1,0 +1,61 @@
+
+.Puma.Prey.Fox.Controllers.HuntController.Get()J
+@D:\Sources\dotNetLab\puma-prey\Fox\Controllers\HuntController.cs! ($"4*¡
+0 (6ZX
+ (((
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>q
+o
+ (&
+
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>m
+k
+ ((+
+hunts"System.Collections.Generic.List<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>\Z
+! (6)
+%2#Puma.Prey.Rabbit.EF.RabbitDBContext"#Puma.Prey.Rabbit.EF.RabbitDBContext~
+|
+% (4
+
+%3void"5Puma.Prey.Rabbit.EF.RabbitDBContext.RabbitDBContext()*-+
+)
+%2#Puma.Prey.Rabbit.EF.RabbitDBContextq
+o
+ (6.
+context#Puma.Prey.Rabbit.EF.RabbitDBContext"__id*-+
+)
+%2#Puma.Prey.Rabbit.EF.RabbitDBContext*
+1*”
+1 ("<
+:
+ ( 
+qSystem.Linq.IQueryable<T>"__id*
+""Ò
+Ï
+ ("(
+%4"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*" 
+
+qSystem.Linq.IQueryable<T>m
+k
+ ("+
+hunts"System.Collections.Generic.List<T>"__id*,*
+(
+%4"System.Collections.Generic.List<T>*
+2*H
+2 ("9
+ (-
++
+hunts"System.Collections.Generic.List<T>*.
+3 	  (	"
+   (	
+implicit return*4
+4& (& 
+
+! ($
+%5"__entrypoint*
+0B,*
+(Puma.Prey.Fox.Controllers.HuntController

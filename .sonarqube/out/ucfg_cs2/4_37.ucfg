@@ -1,0 +1,114 @@
+
++Puma.Prey.Common.Data.Ldap.FindUser(string)<
+2D:\Sources\dotNetLab\puma-prey\Common\Data\Ldap.cs ("0*ã
+0 ("
+ 
+_ (j
+%0"__id*
+"""
+ 
+l (x
+%1"__id*
+""db
+# (y-
+%2'System.DirectoryServices.DirectoryEntry"'System.DirectoryServices.DirectoryEntryÝ
+Ú
+' (5
+
+%3void"NSystem.DirectoryServices.DirectoryEntry.DirectoryEntry(string, string, string)*1/
+-
+%2'System.DirectoryServices.DirectoryEntry*+)'
+%LDAP://DC=example.com,DC=COM,CN=Users*
+
+%0*
+
+%1w
+u
+ (y0
+entry'System.DirectoryServices.DirectoryEntry"__id*1/
+-
+%2'System.DirectoryServices.DirectoryEntryjh
+) (E0
+%4*System.DirectoryServices.DirectorySearcher"*System.DirectoryServices.DirectorySearcherì
+é
+- (>
+
+%5void"eSystem.DirectoryServices.DirectorySearcher.DirectorySearcher(System.DirectoryServices.DirectoryEntry)*42
+0
+%4*System.DirectoryServices.DirectorySearcher*42
+0
+entry'System.DirectoryServices.DirectoryEntry€
+~
+ (E6
+searcher*System.DirectoryServices.DirectorySearcher"__id*42
+0
+%4*System.DirectoryServices.DirectorySearcher"
+ 
+# (6
+%6"__id*
+""»
+¸
+ (6*
+%7$System.DirectoryServices.SearchScope":System.DirectoryServices.DirectorySearcher.SearchScope.set*:8
+6
+searcher*System.DirectoryServices.DirectorySearcher*
+
+%6o
+m
+ (D
+%8string"__concat*'
+  (8
+(samaccountname=DOMAIN\* 
+8 (B
+
+usernamestringI
+G
+ (D
+%9string"__concat*
+
+%8string*
+B (C
+)¡
+ž
+ (D
+%10string"5System.DirectoryServices.DirectorySearcher.Filter.set*:8
+6
+searcher*System.DirectoryServices.DirectorySearcher*
+
+%9string­
+ª
+" (4,
+%11%System.DirectoryServices.SearchResult"4System.DirectoryServices.DirectorySearcher.FindOne()*:8
+6
+searcher*System.DirectoryServices.DirectorySearcheru
+s
+ (4/
+result%System.DirectoryServices.SearchResult"__id*0.
+,
+%11%System.DirectoryServices.SearchResult*
+1
+2*Å
+2 (,­
+ª
+ (..
+%12'System.DirectoryServices.DirectoryEntry"9System.DirectoryServices.SearchResult.GetDirectoryEntry()*31
+/
+result%System.DirectoryServices.SearchResult*
+1
+3*›
+3/ (8†
+ƒ
+0 (8
+%13string"4System.DirectoryServices.DirectoryEntry.Username.get*20
+.
+%12'System.DirectoryServices.DirectoryEntry*
+1*(
+1	 (	"
+ (9
+	{unknown}*.
+4	 (	"
+ (	
+implicit return:
+ (.
+usernamestringB
+Puma.Prey.Common.Data.Ldap

@@ -1,0 +1,218 @@
+
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.GetHashCode()c
+WD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\HelpPageSampleKey.csï ï('"0*ﬁ
+0
+ó ò(!ñ
+ì
+
+ó ó()
+%0string"APuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ControllerName.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKeyI
+G
+
+ó ó(<
+%1string"string.ToUpperInvariant()*
+
+%0stringA
+?
+
+ó ó(J	
+%2int"string.GetHashCode()*
+
+%1stringí
+è
+
+óM ó(W
+%3string"=Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ActionName.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKeyI
+G
+
+óM ó(j
+%4string"string.ToUpperInvariant()*
+
+%3stringA
+?
+
+óM ó(x	
+%5int"string.GetHashCode()*
+
+%4string/
+-
+
+ó ó(x
+hashCodeint"__id*
+""∑
+¥
+
+ò ò(2
+%6,System.Net.Http.Headers.MediaTypeHeaderValue"<Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.MediaType.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKeyè
+å
+
+ò ò(!
+
+%7bool""object.operator !=(object, object)*
+"
+object*64
+2
+%6,System.Net.Http.Headers.MediaTypeHeaderValue*
+""*
+1
+2*§
+1
+ö ö(3∑
+¥
+
+ö ö(%2
+%8,System.Net.Http.Headers.MediaTypeHeaderValue"<Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.MediaType.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKeyùö
+
+ö ö(3	
+%9int":System.Net.Http.Headers.MediaTypeHeaderValue.GetHashCode()*64
+2
+%8,System.Net.Http.Headers.MediaTypeHeaderValue2GetHashCode()4
+2
+
+ö ö(3
+hashCodeint"__id*
+	
+%9int*
+2*∂
+2
+ú ú('§
+°
+
+ú ú(
+%10System.Nullable<T>"BPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.SampleDirection.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKeyv
+t
+
+ú ú('
+%11bool""object.operator !=(object, object)*
+"
+object*
+
+%10System.Nullable<T>*
+""*
+3
+4*œ
+3
+û û(9§
+°
+
+û û(+
+%12System.Nullable<T>"BPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.SampleDirection.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey[
+Y
+
+û û(9
+
+%13int" System.Nullable<T>.GetHashCode()*
+
+%12System.Nullable<T>5
+3
+
+û û(9
+hashCodeint"__id*
+
+
+%13int*
+4*º
+4
+† †(%õ
+ò
+
+† †(
+%14System.Type"@Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ParameterType.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKeyÑ
+Å
+
+† †(%
+%15bool"1System.Type.operator !=(System.Type, System.Type)*"
+System.Type*
+
+%14System.Type*
+""*
+5
+6*«
+5
+¢ ¢(7õ
+ò
+
+¢ ¢()
+%16System.Type"@Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ParameterType.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey\Z
+
+¢ ¢(7
+
+%17int"System.Type.GetHashCode()*
+
+%16System.Type2GetHashCode()5
+3
+
+¢ ¢(7
+hashCodeint"__id*
+
+
+%17int*
+6*•
+6
+§- §(;∂
+≥
+
+§- §(;,
+%18%System.Collections.Generic.HashSet<T>"APuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ParameterNames.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKeyì
+ê
+
+§ §()
+%19string"7System.Collections.Generic.ICollection<T>.this[int].get*0.
+,
+%18%System.Collections.Generic.HashSet<T>*
+""@
+>
+
+§ ß(
+parameterNamestring"__id*
+
+%19string*
+7*
+7
+™	 ™(	*
+8
+9*Á
+8
+¶ ¶(JU
+S
+
+¶ ¶(<
+%20string"string.ToUpperInvariant()*
+
+parameterNamestringC
+A
+
+¶ ¶(J
+
+%21int"string.GetHashCode()*
+
+%20string5
+3
+
+¶ ¶(J
+hashCodeint"__id*
+
+
+%21int*
+7*0
+9
+© ©("
+
+© ©(
+
+hashCodeint*3
+10
+™	 ™(	"!
+
+™ ™(	
+implicit returnB20
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey

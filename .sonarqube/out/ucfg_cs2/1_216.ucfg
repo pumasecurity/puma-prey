@@ -1,0 +1,83 @@
+
+?Puma.Prey.Raccoon.Controllers.ManageController.ChangePassword()R
+FD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\ManageController.csÚ Ú(*"2*ö
+0
+Ü Ü(œ
+™
+
+Ü Ü(
+
+%0void"#raccoon/views/manage/changepassword*
+
+%1*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject‘
+Ž
+
+Ü Ü(
+
+%2void"raccoon/views/_viewstart*
+
+%3*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject•
+’
+
+Ü Ü(
+
+%4void"raccoon/views/shared/_layout*
+
+%5*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject"
+
+Ü Ü(
+
+
+%4void*2
+1
+Ý	 Ý(	"!
+
+Ý Ý(	
+implicit return*8
+2
+Ú, Ú(,"
+ 
+
+Ú Ú(*
+%6"__entrypoint*
+0B20
+.Puma.Prey.Raccoon.Controllers.ManageController

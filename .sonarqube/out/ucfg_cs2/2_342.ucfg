@@ -1,0 +1,132 @@
+
+IPuma.Prey.Fox.Controllers.AccountController.ExternalLoginData.GetClaims()O
+CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.cs­  ­()"0*Â
+0
+¯ ´(\Z
+
+¯ ²((
+%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>s
+q
+
+¯ ¯()
+
+%1void")System.Collections.Generic.List<T>.List()*,*
+(
+%0"System.Collections.Generic.List<T>$
+"
+
+± ±((
+%2"__id*
+""±
+®
+
+±* ±(5
+%3string"MPuma.Prey.Fox.Controllers.AccountController.ExternalLoginData.ProviderKey.get*CA?
+=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData³
+°
+
+±= ±(J
+%4string"OPuma.Prey.Fox.Controllers.AccountController.ExternalLoginData.LoginProvider.get*CA?
+=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginDataPN
+
+± ±(K"
+%5System.Security.Claims.Claim"System.Security.Claims.Claim¿
+¼
+
+±	 ±(
+
+%6void"BSystem.Security.Claims.Claim.Claim(string, string, string, string)*&$
+"
+%5System.Security.Claims.Claim*
+
+%2*
+
+%3string*
+""*
+
+%4string£
+ 
+
+± ±(K
+
+%7void"0System.Collections.Generic.ICollection<T>.Add(T)*,*
+(
+%0"System.Collections.Generic.List<T>*&$
+"
+%5System.Security.Claims.Claimq
+o
+
+¯ ²(-
+claims#System.Collections.Generic.IList<T>"__id*,*
+(
+%0"System.Collections.Generic.List<T>®
+«
+
+´ ´(
+%8string"JPuma.Prey.Fox.Controllers.AccountController.ExternalLoginData.UserName.get*CA?
+=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginDatah
+f
+
+´ ´(
+
+%9bool""string.operator !=(string, string)*
+"
+string*
+
+%8string*
+""*
+1
+2*ó
+1
+¶ ¶(W%
+#
+
+¶) ¶(8
+%10"__id*
+""¯
+¬
+
+¶: ¶(B
+%11string"JPuma.Prey.Fox.Controllers.AccountController.ExternalLoginData.UserName.get*CA?
+=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData´
+±
+
+¶J ¶(W
+%12string"OPuma.Prey.Fox.Controllers.AccountController.ExternalLoginData.LoginProvider.get*CA?
+=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginDataQO
+
+¶ ¶(X#
+%13System.Security.Claims.Claim"System.Security.Claims.ClaimÄ
+Á
+
+¶# ¶((
+%14void"BSystem.Security.Claims.Claim.Claim(string, string, string, string)*'%
+#
+%13System.Security.Claims.Claim*	
+
+%10*
+
+%11string*
+""*
+
+%12string²¯
+
+¶ ¶(Y
+%15void"0System.Collections.Generic.ICollection<T>.Add(T)*1/
+-
+claims#System.Collections.Generic.IList<T>*'%
+#
+%13System.Security.Claims.Claim2Add(T)*
+2*N
+2
+¹ ¹("=
+
+¹ ¹(/
+-
+claims#System.Collections.Generic.IList<T>*2
+3
+º º("!
+
+º º(
+implicit returnBA?
+=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData

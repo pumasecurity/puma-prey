@@ -1,0 +1,407 @@
+
+“Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.GenerateUriParameters(Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel, Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator)`
+TD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageConfigurationExtensions.cs˛ ˛(1"0*•
+0
+Ä Å(a–
+Õ
+
+Ä, Ä(C0
+%0*System.Web.Http.Description.ApiDescription"GPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.ApiDescription.get*DB
+@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModelâ
+Ü
+
+Ä Ä(C<
+apiDescription*System.Web.Http.Description.ApiDescription"__id*42
+0
+%0*System.Web.Http.Description.ApiDescriptionÀ
+»
+
+Å= Å(a2
+%1,System.Collections.ObjectModel.Collection<T>"DSystem.Web.Http.Description.ApiDescription.ParameterDescriptions.get*@>
+<
+apiDescription*System.Web.Http.Description.ApiDescription≈
+¬
+
+Å- Å(99
+%23System.Web.Http.Description.ApiParameterDescription"7System.Collections.Generic.ICollection<T>.this[int].get*64
+2
+%1,System.Collections.ObjectModel.Collection<T>*
+""ô
+ñ
+
+Å «(C
+apiParameter3System.Web.Http.Description.ApiParameterDescription"__id*=;
+9
+%23System.Web.Http.Description.ApiParameterDescription*
+1*
+1
+»	 »(	*
+2
+3*é
+2
+É É(EŒ
+À
+
+É É('4
+%3.System.Web.Http.Description.ApiParameterSource">System.Web.Http.Description.ApiParameterDescription.Source.get*GE
+C
+apiParameter3System.Web.Http.Description.ApiParameterDescription$
+"
+
+É+ É(E
+%4"__id*
+""*
+4
+1*Å
+4
+Ö, â(3‡
+›
+
+ÖB Ö(b9
+%53System.Web.Http.Controllers.HttpParameterDescriptor"KSystem.Web.Http.Description.ApiParameterDescription.ParameterDescriptor.get*GE
+C
+apiParameter3System.Web.Http.Description.ApiParameterDescription†
+ù
+
+Ö, Ö(bJ
+parameterDescriptor3System.Web.Http.Controllers.HttpParameterDescriptor"__id*=;
+9
+%53System.Web.Http.Controllers.HttpParameterDescriptor<
+:
+
+Ü Ü(-
+parameterTypeSystem.Type"__id*
+""r
+p
+
+á% á(;R
+typeDescription?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"__id*
+""Ö
+Ç
+
+à0 à(Md
+complexTypeDescriptionJPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription"__id*
+""ß
+§
+
+â â(3
+
+%6bool""object.operator !=(object, object)*
+"
+object*NL
+J
+parameterDescriptor3System.Web.Http.Controllers.HttpParameterDescriptor*
+""*
+5
+6*≥	
+5
+ã ç(_Ã…
+
+ã( ã(I
+%7System.Type"ESystem.Web.Http.Controllers.HttpParameterDescriptor.ParameterType.get*NL
+J
+parameterDescriptor3System.Web.Http.Controllers.HttpParameterDescriptor2ParameterType.getI
+G
+
+ã ã(I
+parameterTypeSystem.Type"__id*
+
+%7System.TypeÀ
+»
+
+å* å(cE
+%8?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"qPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GetOrCreateModelDescription(System.Type)*^\
+Z
+modelGeneratorHPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator* 
+
+parameterTypeSystem.Type¥
+±
+
+å å(cR
+typeDescription?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"__id*IG
+E
+%8?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription¥
+±
+
+ç1 ç(_E
+%9?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"__id*VT
+R
+typeDescription?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription∆
+√
+
+ç ç(_d
+complexTypeDescriptionJPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription"__id*IG
+E
+%9?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription*
+6*‹
+6
+§ §(6¬
+ø
+
+§ §(6
+%10bool""object.operator !=(object, object)*
+"
+object*hf
+d
+complexTypeDescriptionJPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription*
+""*
+7
+8*É
+7
+• •(EÈ
+Ê
+
+• •(F
+%11bool"ePuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.IsBindableWithTypeConverter(System.Type)*B@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions* 
+
+parameterTypeSystem.Type*
+9
+8*∏
+9
+ßF ß(gâ
+Ü
+
+ßF ß(g3
+%12,System.Collections.ObjectModel.Collection<T>"YPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription.Properties.get*hf
+d
+complexTypeDescriptionJPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription◊
+‘
+
+ß6 ß(BJ
+%13CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription"7System.Collections.Generic.ICollection<T>.this[int].get*75
+3
+%12,System.Collections.ObjectModel.Collection<T>*
+""∫
+∑
+
+ß ™(S
+uriParameterCPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription"__id*NL
+J
+%13CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription*
+10*
+10
+»	 »(	*
+11
+1*—
+11
+© ©(C“
+œ
+
+© ©(23
+%14,System.Collections.ObjectModel.Collection<T>"FPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.UriParameters.get*DB
+@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel„
+‡
+
+© ©(D
+%15void"3System.Collections.ObjectModel.Collection<T>.Add(T)*75
+3
+%14,System.Collections.ObjectModel.Collection<T>*WU
+S
+uriParameterCPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription*
+10*ƒ
+8
+¨ ¨(8®
+•
+
+¨ ¨(8
+%16bool""object.operator !=(object, object)*
+"
+object*NL
+J
+parameterDescriptor3System.Web.Http.Controllers.HttpParameterDescriptor*
+""*
+12
+13*¶
+12
+Æ- ±(;â
+Ü
+
+Ø Ø(\J
+%17CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription"ÄPuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.AddParameterDescription(Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel, System.Web.Http.Description.ApiParameterDescription, Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription)*B@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions*DB
+@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel*GE
+C
+apiParameter3System.Web.Http.Description.ApiParameterDescription*VT
+R
+typeDescription?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription∫
+∑
+
+Æ- Ø(\S
+uriParameterCPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription"__id*NL
+J
+%17CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription¿Ω
+
+± ±(;
+%18bool"BSystem.Web.Http.Controllers.HttpParameterDescriptor.IsOptional.get*NL
+J
+parameterDescriptor3System.Web.Http.Controllers.HttpParameterDescriptor2IsOptional.get*
+14
+15*¶
+14
+≥ ≥(oÚ
+Ô
+
+≥ ≥(43
+%19,System.Collections.ObjectModel.Collection<T>"SPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription.Annotations.get*WU
+S
+uriParameterCPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescriptionûõ
+
+≥9 ≥(qI
+%20BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation"BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation≈
+¬
+
+≥= ≥(P
+%21void"XPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation.ParameterAnnotation()*MK
+I
+%20BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation”
+–
+
+≥U ≥(o
+%22string"TPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation.Documentation.set*MK
+I
+%20BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation*
+
+RequiredŸ
+÷
+
+≥ ≥(r
+%23void"3System.Collections.ObjectModel.Collection<T>.Add(T)*75
+3
+%19,System.Collections.ObjectModel.Collection<T>*MK
+I
+%20BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation*
+15*ò
+15
+∂ ∑(0∆√
+
+∂. ∂(N
+%24object"DSystem.Web.Http.Controllers.HttpParameterDescriptor.DefaultValue.get*NL
+J
+parameterDescriptor3System.Web.Http.Controllers.HttpParameterDescriptor2DefaultValue.get?
+=
+
+∂ ∂(N
+defaultValueobject"__id*
+
+%24objects
+q
+
+∑ ∑(0
+%25bool""object.operator !=(object, object)*
+"
+object*
+
+defaultValueobject*
+""*
+16
+1*Ò
+16π π(∂Ú
+Ô
+
+π π(43
+%26,System.Collections.ObjectModel.Collection<T>"SPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription.Annotations.get*WU
+S
+uriParameterCPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescriptionüú
+π9 π(πI
+%27BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation"BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation≈
+¬
+
+π= π(P
+%28void"XPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation.ParameterAnnotation()*MK
+I
+%27BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotationô
+ñ
+πö π(∂'
+%29 System.Globalization.CultureInfo"5System.Globalization.CultureInfo.InvariantCulture.get*&$""
+ System.Globalization.CultureInfo∑
+¥
+π{ π(∑
+%30string"7System.Convert.ToString(object, System.IFormatProvider)*"
+System.Convert*
+
+defaultValueobject*+)
+'
+%29 System.Globalization.CultureInfom
+k
+πe π(∑
+%31string"__concat*#
+
+πe π(x
+Default value is *
+π{ π(∑
+
+%30string◊
+‘
+πU π(∑
+%32string"TPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation.Documentation.set*MK
+I
+%27BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation*
+
+%31string⁄
+◊
+π π(∫
+%33void"3System.Collections.ObjectModel.Collection<T>.Add(T)*75
+3
+%26,System.Collections.ObjectModel.Collection<T>*MK
+I
+%27BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation*
+1*≤
+13
+æ ƒ(X®
+•
+
+æ% æ(@
+%34bool""object.operator ==(object, object)*
+"
+object*NL
+J
+parameterDescriptor3System.Web.Http.Controllers.HttpParameterDescriptor*
+""s
+q
+
+æ æ(A
+%35void"%System.Diagnostics.Debug.Assert(bool)*"
+System.Diagnostics.Debug*
+
+%34bool¥
+±
+
+√< √(vF
+%36?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"qPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GetOrCreateModelDescription(System.Type)*^\
+Z
+modelGeneratorHPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator*
+""∂
+≥
+
+√) √(vS
+modelDescription?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"__id*JH
+F
+%36?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionä
+á
+
+ƒ ƒ(YJ
+%37CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription"ÄPuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.AddParameterDescription(Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel, System.Web.Http.Description.ApiParameterDescription, Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription)*B@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions*DB
+@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel*GE
+C
+apiParameter3System.Web.Http.Description.ApiParameterDescription*WU
+S
+modelDescription?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription*
+1*2
+3
+»	 »(	"!
+
+» »(	
+implicit return:N
+
+˛2 ˛(K@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel:h
+
+˛M ˛(uZ
+modelGeneratorHPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGeneratorB@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions

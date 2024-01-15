@@ -1,0 +1,20 @@
+©
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKeyobject±
+?HelpPageSampleKey(System.Net.Http.Headers.MediaTypeHeaderValue)nPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.HelpPageSampleKey(System.Net.Http.Headers.MediaTypeHeaderValue)À
+LHelpPageSampleKey(System.Net.Http.Headers.MediaTypeHeaderValue, System.Type){Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.HelpPageSampleKey(System.Net.Http.Headers.MediaTypeHeaderValue, System.Type)≤
+HelpPageSampleKey(Puma.Prey.Fox.Areas.HelpPage.SampleDirection, string, string, System.Collections.Generic.IEnumerable<string>)ÆPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.HelpPageSampleKey(Puma.Prey.Fox.Areas.HelpPage.SampleDirection, string, string, System.Collections.Generic.IEnumerable<string>)è
+≠HelpPageSampleKey(System.Net.Http.Headers.MediaTypeHeaderValue, Puma.Prey.Fox.Areas.HelpPage.SampleDirection, string, string, System.Collections.Generic.IEnumerable<string>)‹Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.HelpPageSampleKey(System.Net.Http.Headers.MediaTypeHeaderValue, Puma.Prey.Fox.Areas.HelpPage.SampleDirection, string, string, System.Collections.Generic.IEnumerable<string>)O
+Equals(object)=Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.Equals(object)M
+GetHashCode()<Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.GetHashCode()W
+ControllerName.getAPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ControllerName.getW
+ControllerName.setAPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ControllerName.setO
+ActionName.get=Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ActionName.getO
+ActionName.set=Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ActionName.setM
+MediaType.get<Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.MediaType.getM
+MediaType.set<Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.MediaType.setW
+ParameterNames.getAPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ParameterNames.getW
+ParameterNames.setAPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ParameterNames.setU
+ParameterType.get@Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ParameterType.getU
+ParameterType.set@Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ParameterType.setY
+SampleDirection.getBPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.SampleDirection.getY
+SampleDirection.setBPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.SampleDirection.set

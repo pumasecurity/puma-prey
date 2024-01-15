@@ -1,0 +1,109 @@
+
+ÉPuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.InitializeModelDescriptionGenerator(System.Web.Http.HttpConfiguration)`
+TD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageConfigurationExtensions.cs∫1 ∫(T"0*ı
+0
+º& æ(/©¶
+
+º7 º(\N
+%0HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator"HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator®
+•
+
+º; º(T
+
+%1void"ÖPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.ModelDescriptionGenerator(System.Web.Http.HttpConfiguration)*RP
+N
+%0HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator*/-
++
+config!System.Web.Http.HttpConfiguration≈
+¬
+
+º& º(\Z
+modelGeneratorHPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator"__id*RP
+N
+%0HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator•
+¢
+
+Ω. Ω(=3
+%2-System.Web.Http.Controllers.ServicesContainer".System.Web.Http.HttpConfiguration.Services.get*/-
++
+config!System.Web.Http.HttpConfigurationÑ
+Å
+
+Ω. Ω(N.
+%3(System.Web.Http.Description.IApiExplorer"`System.Web.Http.ServicesExtensions.GetApiExplorer(System.Web.Http.Controllers.ServicesContainer)*(&"$
+"System.Web.Http.ServicesExtensions*75
+3
+%2-System.Web.Http.Controllers.ServicesContainer «
+
+Ω. Ω(^2
+%4,System.Collections.ObjectModel.Collection<T>"<System.Web.Http.Description.IApiExplorer.ApiDescriptions.get*20
+.
+%3(System.Web.Http.Description.IApiExplorer2ApiDescriptions.getÉ
+Ä
+
+Ω' Ω(^4
+apis,System.Collections.ObjectModel.Collection<T>"__id*64
+2
+%4,System.Collections.ObjectModel.Collection<T>æ
+ª
+
+æ$ æ('0
+%5*System.Web.Http.Description.ApiDescription"7System.Collections.Generic.ICollection<T>.this[int].get*86
+4
+apis,System.Collections.ObjectModel.Collection<T>*
+""}
+{
+
+æ ∆(1
+api*System.Web.Http.Description.ApiDescription"__id*42
+0
+%5*System.Web.Http.Description.ApiDescription*
+1*
+1
+»	 »(	*
+2
+3*ƒ
+2
+¿( ¬(d™
+ß
+
+¬ ¬(e
+
+%6bool"ÌPuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.TryGetResourceParameter(System.Web.Http.Description.ApiDescription, System.Web.Http.HttpConfiguration, out System.Web.Http.Description.ApiParameterDescription, out System.Type)*B@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions*53
+1
+api*System.Web.Http.Description.ApiDescription*/-
++
+config!System.Web.Http.HttpConfiguration*OM
+K
+parameterDescription3System.Web.Http.Description.ApiParameterDescription* 
+
+parameterTypeSystem.Type*
+4
+1*‚
+4
+ƒ ƒ(LÀ
+»
+
+ƒ ƒ(ME
+%7?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"qPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GetOrCreateModelDescription(System.Type)*^\
+Z
+modelGeneratorHPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator* 
+
+parameterTypeSystem.Type*
+1*{
+3
+« «(!"j
+
+« «("\
+Z
+modelGeneratorHPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator*2
+5
+»	 »(	"!
+
+» »(	
+implicit return:9
+
+∫U ∫(m+
+config!System.Web.Http.HttpConfigurationB@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions

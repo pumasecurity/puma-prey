@@ -1,0 +1,27 @@
+
+¬Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.SetDocumentationProvider(System.Web.Http.HttpConfiguration, System.Web.Http.Description.IDocumentationProvider)^
+TD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageConfigurationExtensions.cs (3"0*´
+0 (Y£
+ 
+ (3
+%0-System.Web.Http.Controllers.ServicesContainer".System.Web.Http.HttpConfiguration.Services.get*/-
++
+config!System.Web.Http.HttpConfigurationù
+ö
+ (Z
+
+%1void"JSystem.Web.Http.Controllers.ServicesContainer.Replace(System.Type, object)*75
+3
+%0-System.Web.Http.Controllers.ServicesContainer*
+""*OM
+K
+documentationProvider2System.Web.Http.Description.IDocumentationProvider*
+1*.
+1	 (	"
+ (	
+implicit return:7
+4 (Q+
+config!System.Web.Http.HttpConfiguration:W
+S (K
+documentationProvider2System.Web.Http.Description.IDocumentationProviderB@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions

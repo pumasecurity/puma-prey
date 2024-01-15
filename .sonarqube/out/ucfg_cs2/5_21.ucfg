@@ -1,0 +1,78 @@
+
+8Skunk.Global.Application_Start(object, System.EventArgs)=
+3D:\Sources\dotNetLab\puma-prey\Skunk\Global.asax.cs ("0*⁄	
+0 (&Ü
+É
+ (/(
+%0"System.Web.Routing.RouteCollection"(System.Web.Routing.RouteTable.Routes.get*#!"
+System.Web.Routing.RouteTable¶
+£
+ (0
+
+%1void"DSkunk.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)*"
+Skunk.RouteConfig*,*
+(
+%0"System.Web.Routing.RouteCollectionô
+ñ
+  (3.
+%2(System.Web.Optimization.BundleCollection"/System.Web.Optimization.BundleTable.Bundles.get*)'"%
+#System.Web.Optimization.BundleTableµ
+≤
+ (4
+
+%3void"LSkunk.BundleConfig.RegisterBundles(System.Web.Optimization.BundleCollection)*"
+Skunk.BundleConfig*20
+.
+%2(System.Web.Optimization.BundleCollection\Z
+ (&)
+%4#Puma.Prey.Rabbit.EF.RabbitDBContext"#Puma.Prey.Rabbit.EF.RabbitDBContext~
+|
+ ($
+
+%5void"5Puma.Prey.Rabbit.EF.RabbitDBContext.RabbitDBContext()*-+
+)
+%4#Puma.Prey.Rabbit.EF.RabbitDBContextq
+o
+ (&.
+context#Puma.Prey.Rabbit.EF.RabbitDBContext"__id*-+
+)
+%4#Puma.Prey.Rabbit.EF.RabbitDBContextÎ
+Ë
+ (&
+
+%6bool"gPuma.Prey.Rabbit.EF.RabbitDBContextExtensions.AllMigrationsApplied(Puma.Prey.Rabbit.EF.RabbitDBContext)*31"/
+-Puma.Prey.Rabbit.EF.RabbitDBContextExtensions*20
+.
+context#Puma.Prey.Rabbit.EF.RabbitDBContext*
+1
+2*ê
+1 (»≈
+ (A
+%7;Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade"4Microsoft.EntityFrameworkCore.DbContext.Database.get*20
+.
+context#Puma.Prey.Rabbit.EF.RabbitDBContext2Database.get∞
+≠
+ (
+
+%8void"ÖMicrosoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade)*FD"B
+@Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions*EC
+A
+%7;Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade*
+2*˙
+2 (Â
+‚
+ (
+
+%9void"aPuma.Prey.Rabbit.EF.RabbitDBContextExtensions.EnsureSeedData(Puma.Prey.Rabbit.EF.RabbitDBContext)*31"/
+-Puma.Prey.Rabbit.EF.RabbitDBContextExtensions*20
+.
+context#Puma.Prey.Rabbit.EF.RabbitDBContext*
+3*.
+3 ("
+ (
+implicit return:
+ (&
+senderobject:!
+( (3
+eSystem.EventArgsB
+Skunk.Global

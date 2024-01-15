@@ -1,0 +1,94 @@
+
+…Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GenerateCollectionModelDescription(System.Type, System.Type)l
+`D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.csµ+ µ(M"0*Ò
+0
+· ¸(2¹
+¶
+
+·: ·(bE
+%0?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"qPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GetOrCreateModelDescription(System.Type)*NLJ
+HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator*
+
+elementTypeSystem.Type¿
+¼
+
+· ·(b]
+collectionModelDescription?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"__id*IG
+E
+%0?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionº
+·
+
+¸ ¸(2
+
+%1bool""object.operator !=(object, object)*
+"
+object*a_
+]
+collectionModelDescription?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription*
+""*
+1
+2*‚
+1
+º ¾(C«¨
+
+º ¿(O
+%2IPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.CollectionModelDescription"IPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.CollectionModelDescriptionØ
+Õ
+
+º º(5
+
+%3void"fPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.CollectionModelDescription.CollectionModelDescription()*SQ
+O
+%2IPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.CollectionModelDescriptionÛ
+Ø
+
+¼ ¼(B
+%4string"XPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelNameHelper.GetModelName(System.Type)*DB"@
+>Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelNameHelper*
+
+	modelTypeSystem.TypeÎ
+Ë
+
+¼ ¼(B
+%5string"HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription.Name.set*SQ
+O
+%2IPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.CollectionModelDescription*
+
+%4stringä
+á
+
+½ ½()
+%6System.Type"MPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription.ModelType.set*SQ
+O
+%2IPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.CollectionModelDescription*
+
+	modelTypeSystem.Typeð
+í
+
+¾ ¾(CE
+%7?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"`Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.CollectionModelDescription.ElementDescription.set*SQ
+O
+%2IPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.CollectionModelDescription*a_
+]
+collectionModelDescription?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"_
+
+º ¿(Q
+O
+%2IPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.CollectionModelDescription*%
+2
+Â Â("
+
+Â Â(
+""*2
+3
+Ã	 Ã(	"!
+
+Ã Ã(	
+implicit return:&
+
+µN µ(\
+	modelTypeSystem.Type:(
+
+µ^ µ(n
+elementTypeSystem.TypeBLJ
+HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator

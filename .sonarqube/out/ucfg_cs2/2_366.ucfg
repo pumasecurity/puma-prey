@@ -1,0 +1,75 @@
+
+?Puma.Prey.Fox.Areas.HelpPage.Controllers.HelpController.Index()Y
+OD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Controllers\HelpController.cs (!"2*ƒ
+0 (O/-
+ (
+%ViewBagDataAllobject"object0.
+ (
+%ViewBagDataHtmlobject"objectÀ
+½
+, (9'
+%0!System.Web.Http.HttpConfiguration"IPuma.Prey.Fox.Areas.HelpPage.Controllers.HelpController.Configuration.get*=;9
+7Puma.Prey.Fox.Areas.HelpPage.Controllers.HelpControllerŸ
+œ
+, (B3
+%1-System.Web.Http.Controllers.ServicesContainer".System.Web.Http.HttpConfiguration.Services.get*+)
+'
+%0!System.Web.Http.HttpConfiguration–
+“
+, (]8
+%22System.Web.Http.Description.IDocumentationProvider"jSystem.Web.Http.ServicesExtensions.GetDocumentationProvider(System.Web.Http.Controllers.ServicesContainer)*(&"$
+"System.Web.Http.ServicesExtensions*75
+3
+%1-System.Web.Http.Controllers.ServicesContainer—
+”
+ (]
+%3"__mapSet*
+
+%ViewBagDataAllobject*
+DocumentationProvider*<:
+8
+%22System.Web.Http.Description.IDocumentationProviderc
+a
+ (]
+%4"__mapSet*
+
+%ViewBagDataHtmlobject*
+DocumentationProvider*
+""À
+½
+ (%'
+%5!System.Web.Http.HttpConfiguration"IPuma.Prey.Fox.Areas.HelpPage.Controllers.HelpController.Configuration.get*=;9
+7Puma.Prey.Fox.Areas.HelpPage.Controllers.HelpControllerŸ
+œ
+ (.3
+%6-System.Web.Http.Controllers.ServicesContainer".System.Web.Http.HttpConfiguration.Services.get*+)
+'
+%5!System.Web.Http.HttpConfiguration‚
+ÿ
+ (?.
+%7(System.Web.Http.Description.IApiExplorer"`System.Web.Http.ServicesExtensions.GetApiExplorer(System.Web.Http.Controllers.ServicesContainer)*(&"$
+"System.Web.Http.ServicesExtensions*75
+3
+%6-System.Web.Http.Controllers.ServicesContainerÈÅ
+ (O2
+%8,System.Collections.ObjectModel.Collection<T>"<System.Web.Http.Description.IApiExplorer.ApiDescriptions.get*20
+.
+%7(System.Web.Http.Description.IApiExplorer2ApiDescriptions.get¯
+¬
+ (P
+%9System.Web.Mvc.ViewResult"&System.Web.Mvc.Controller.View(object)*
+System.Web.Mvc.Controller*64
+2
+%8,System.Collections.ObjectModel.Collection<T>"-
+ (Q!
+
+%9System.Web.Mvc.ViewResult*.
+1	 (	"
+ (	
+implicit return*5
+2# (#!
+
+ (!
+%10"__entrypoint*
+0B;9
+7Puma.Prey.Fox.Areas.HelpPage.Controllers.HelpController

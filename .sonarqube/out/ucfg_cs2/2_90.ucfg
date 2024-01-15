@@ -1,0 +1,21 @@
+
+KPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.ResourceProperties.getV
+LD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Models\HelpPageApiModel.csB B("0*ú
+0D D(CÞ
+Û
+D0 D(CE
+%0?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"LPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.ResourceDescription.get*:86
+4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModelÐ
+Í
+D D(D)
+%1#System.Collections.Generic.IList<T>"ŽPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.GetParameterDescriptions(Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription)*:8"6
+4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel*IG
+E
+%0?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"7
+D D(E+
+)
+%1#System.Collections.Generic.IList<T>*.
+1E E("
+E E(
+implicit returnB86
+4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel

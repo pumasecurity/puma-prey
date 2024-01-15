@@ -1,0 +1,26 @@
+
+Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey.ProtectedKey(byte[], System.Security.Cryptography.DataProtectionScope)Z
+PD:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\ProtectedKey.csE E("1*
+1I	 I(	*
+0*æ
+0G H(,°
+û
+G G(2Å:
+8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"C
+protectionScope0System.Security.Cryptography.DataProtectionScope"__id*
+""Ö
+Ç
+H H(,T:
+8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"
+protectedKeybyte[]"__id*
+
+protectedKeybyte[]*
+2*.
+2I	 I(	"
+I I(	
+implicit return:"
+E E(0
+protectedKeybyte[]:O
+E2 E(UC
+protectionScope0System.Security.Cryptography.DataProtectionScopeB<:
+8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey

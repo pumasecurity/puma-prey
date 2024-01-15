@@ -1,0 +1,450 @@
+
+éPuma.Prey.Raccoon.Controllers.AccountController.ExternalLoginConfirmation(Puma.Prey.Raccoon.Models.ExternalLoginConfirmationViewModel, string)S
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\AccountController.cs‰( ‰(A"11*·
+0
+Ê Ê(-
+}
+
+Ê Ê(*
+%0$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
+System.Web.Mvc.Controller´®
+
+Ê Ê()
+%1#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
+*
+%0$System.Security.Principal.IPrincipal2Identity.getòï
+
+Ê Ê(-
+
+%2bool"7System.Security.Principal.IIdentity.IsAuthenticated.get*-+
+)
+%1#System.Security.Principal.IIdentity2IsAuthenticated.get*
+1
+2*Å
+1
+Ë Ë(9≥
+∞
+
+Ë Ë(:*
+%3$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
+System.Web.Mvc.Controller*	
+Index*
+
+Manage":
+
+Ë Ë(;,
+*
+%3$System.Web.Mvc.RedirectToRouteResult*¢
+2
+Î Î("Ö
+Ç
+
+Î Î()
+%4#System.Web.Mvc.ModelStateDictionary"(System.Web.Mvc.Controller.ModelState.get*
+System.Web.Mvc.ControllerÄ
+~
+
+Î Î("
+
+%5bool"5System.Collections.Generic.ICollection<T>.IsValid.get*-+
+)
+%4#System.Web.Mvc.ModelStateDictionary*
+3
+4*é
+3
+Ó Ô( «
+ƒ
+
+Ó! Ó(64
+%6.Microsoft.Owin.Security.IAuthenticationManager"IPuma.Prey.Raccoon.Controllers.AccountController.AuthenticationManager.get*531
+/Puma.Prey.Raccoon.Controllers.AccountController∏
+µ
+
+Ó! Ó(R*
+%7$System.Threading.Tasks.Task<TResult>"ÅMicrosoft.Owin.Security.AuthenticationManagerExtensions.GetExternalLoginInfoAsync(Microsoft.Owin.Security.IAuthenticationManager)*=;"9
+7Microsoft.Owin.Security.AuthenticationManagerExtensions*86
+4
+%6.Microsoft.Owin.Security.IAuthenticationManagerX
+V
+
+Ó Ó(R8
+info0Microsoft.AspNet.Identity.Owin.ExternalLoginInfo"__id*
+""ï
+í
+
+Ô Ô( 
+
+%8bool""object.operator ==(object, object)*
+"
+object*<:
+8
+info0Microsoft.AspNet.Identity.Owin.ExternalLoginInfo*
+""*
+5
+6*É
+5
+Ò Ò(6§
+°
+
+Ò Ò(7
+
+%9void"*raccoon/views/account/externalloginfailure*	
+
+%10*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobjectì
+ê
+
+Ò Ò(7
+%11void"raccoon/views/_viewstart*	
+
+%12*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobjectó
+î
+
+Ò Ò(7
+%13void"raccoon/views/shared/_layout*	
+
+%14*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject"
+
+Ò Ò(8
+
+%13void*¬
+6
+Û ı($ig
+
+Û Û(^/
+%15(Puma.Prey.Raccoon.Models.ApplicationUser"(Puma.Prey.Raccoon.Models.ApplicationUserç
+ä
+
+Û Û(.
+%16void":Puma.Prey.Raccoon.Models.ApplicationUser.ApplicationUser()*31
+/
+%15(Puma.Prey.Raccoon.Models.ApplicationUserØ
+¨
+
+Û< Û(G
+%17string"EPuma.Prey.Raccoon.Models.ExternalLoginConfirmationViewModel.Email.get*HF
+D
+model;Puma.Prey.Raccoon.Models.ExternalLoginConfirmationViewModel÷”
+
+Û1 Û(G
+%18string"`Microsoft.AspNet.Identity.EntityFramework.IdentityUser<TKey, TLogin, TRole, TClaim>.UserName.set*31
+/
+%15(Puma.Prey.Raccoon.Models.ApplicationUser*
+
+%17string2UserName.setØ
+¨
+
+ÛQ Û(\
+%19string"EPuma.Prey.Raccoon.Models.ExternalLoginConfirmationViewModel.Email.get*HF
+D
+model;Puma.Prey.Raccoon.Models.ExternalLoginConfirmationViewModel–Õ
+
+ÛI Û(\
+%20string"]Microsoft.AspNet.Identity.EntityFramework.IdentityUser<TKey, TLogin, TRole, TClaim>.Email.set*31
+/
+%15(Puma.Prey.Raccoon.Models.ApplicationUser*
+
+%19string2	Email.set{
+y
+
+Û Û(^0
+user(Puma.Prey.Raccoon.Models.ApplicationUser"__id*31
+/
+%15(Puma.Prey.Raccoon.Models.ApplicationUser∏
+µ
+
+Ù# Ù(./
+%21(Puma.Prey.Raccoon.ApplicationUserManager"?Puma.Prey.Raccoon.Controllers.AccountController.UserManager.get*531
+/Puma.Prey.Raccoon.Controllers.AccountControllerÇˇ
+
+Ù# Ù(@+
+%22$System.Threading.Tasks.Task<TResult>"EMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.CreateAsync(TUser)*31
+/
+%21(Puma.Prey.Raccoon.ApplicationUserManager*42
+0
+user(Puma.Prey.Raccoon.Models.ApplicationUser2CreateAsync(TUser)R
+P
+
+Ù Ù(@2
+result(Microsoft.AspNet.Identity.IdentityResult"__id*
+""å
+â
+
+ı ı($
+%23bool"6Microsoft.AspNet.Identity.IdentityResult.Succeeded.get*64
+2
+result(Microsoft.AspNet.Identity.IdentityResult*
+7
+8*ñ	
+7
+˜ ¯((∏
+µ
+
+˜# ˜(./
+%24(Puma.Prey.Raccoon.ApplicationUserManager"?Puma.Prey.Raccoon.Controllers.AccountController.UserManager.get*531
+/Puma.Prey.Raccoon.Controllers.AccountController∏µ
+
+˜= ˜(D
+%25string"ZMicrosoft.AspNet.Identity.EntityFramework.IdentityUser<TKey, TLogin, TRole, TClaim>.Id.get*42
+0
+user(Puma.Prey.Raccoon.Models.ApplicationUser2Id.getπ
+∂
+
+˜F ˜(P.
+%26'Microsoft.AspNet.Identity.UserLoginInfo":Microsoft.AspNet.Identity.Owin.ExternalLoginInfo.Login.get*<:
+8
+info0Microsoft.AspNet.Identity.Owin.ExternalLoginInfoÁ‰
+
+˜# ˜(Q+
+%27$System.Threading.Tasks.Task<TResult>"oMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.AddLoginAsync(TKey, Microsoft.AspNet.Identity.UserLoginInfo)*31
+/
+%24(Puma.Prey.Raccoon.ApplicationUserManager*
+
+%25string*20
+.
+%26'Microsoft.AspNet.Identity.UserLoginInfo2<AddLoginAsync(TKey, Microsoft.AspNet.Identity.UserLoginInfo)R
+P
+
+˜ ˜(Q2
+result(Microsoft.AspNet.Identity.IdentityResult"__id*
+""å
+â
+
+¯ ¯((
+%28bool"6Microsoft.AspNet.Identity.IdentityResult.Succeeded.get*64
+2
+result(Microsoft.AspNet.Identity.IdentityResult*
+9
+8*Ç
+9
+˙ ˚(8º
+π
+
+˙ ˙(+1
+%29*Puma.Prey.Raccoon.ApplicationSignInManager"APuma.Prey.Raccoon.Controllers.AccountController.SignInManager.get*531
+/Puma.Prey.Raccoon.Controllers.AccountControllerÆ´
+
+˙ ˙(j"
+%30System.Threading.Tasks.Task"XMicrosoft.AspNet.Identity.Owin.SignInManager<TUser, TKey>.SignInAsync(TUser, bool, bool)*53
+1
+%29*Puma.Prey.Raccoon.ApplicationSignInManager*42
+0
+user(Puma.Prey.Raccoon.Models.ApplicationUser*
+""*
+""2SignInAsync(TUser, bool, bool)Ã
+…
+
+˚ ˚(9"
+%31System.Web.Mvc.ActionResult"GPuma.Prey.Raccoon.Controllers.AccountController.RedirectToLocal(string)*531
+/Puma.Prey.Raccoon.Controllers.AccountController*
+
+	returnUrlstring"2
+
+˚ ˚(:$
+"
+%31System.Web.Mvc.ActionResult*á
+8
+˛ ˛( 
+Ì
+
+˛ ˛(!
+%32void"cPuma.Prey.Raccoon.Controllers.AccountController.AddErrors(Microsoft.AspNet.Identity.IdentityResult)*531
+/Puma.Prey.Raccoon.Controllers.AccountController*64
+2
+result(Microsoft.AspNet.Identity.IdentityResult*
+4*·
+
+4
+Å Ç(1/
+
+Å Å(
+%ViewBagDataAllobject"object20
+
+Å Å(
+%ViewBagDataHtmlobject"objecth
+f
+
+Å Å()
+%33"__mapSet*
+
+%ViewBagDataAllobject*
+	ReturnUrl*
+
+	returnUrlstringZ
+X
+
+Å Å()
+%34"__mapSet*
+
+%ViewBagDataHtmlobject*
+	ReturnUrl*
+""„
+‡
+
+Ç Ç(
+%35void"/raccoon/views/account/externalloginconfirmation*	
+
+%36*HF
+D
+model;Puma.Prey.Raccoon.Models.ExternalLoginConfirmationViewModel*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobjectÃ
+…
+
+Ç Ç(
+%37void"raccoon/views/_viewstart*	
+
+%38*HF
+D
+model;Puma.Prey.Raccoon.Models.ExternalLoginConfirmationViewModel*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject–
+Õ
+
+Ç Ç(
+%39void"raccoon/views/shared/_layout*	
+
+%40*HF
+D
+model;Puma.Prey.Raccoon.Models.ExternalLoginConfirmationViewModel*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject"
+
+Ç Ç(
+
+%39void*3
+10
+É	 É(	"!
+
+É É(	
+implicit return*¿
+11
+‰} ‰(}á
+Ñ
+
+‰( ‰(Ah
+D
+model;Puma.Prey.Raccoon.Models.ExternalLoginConfirmationViewModel" 
+<Email>k__BackingFieldstring"__entrypointu
+s
+
+‰( ‰(AW
+D
+model;Puma.Prey.Raccoon.Models.ExternalLoginConfirmationViewModel"
+Emailstring"__entrypoint<
+:
+
+‰( ‰(A
+%41"__entrypoint*
+
+	returnUrlstringv
+t
+
+·	 ·(
+%42"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+	returnUrlstringÉ
+Ä
+
+‚	 ‚(
+%43"
+__annotate*FDB
+@System.Web.Mvc.AllowAnonymousAttribute.AllowAnonymousAttribute()*
+
+	returnUrlstringó
+î
+
+„	 „(!
+%44"
+__annotate*ZXV
+TSystem.Web.Mvc.ValidateAntiForgeryTokenAttribute.ValidateAntiForgeryTokenAttribute()*
+
+	returnUrlstringR
+P
+
+‰l ‰(|
+	returnUrlstring"__annotation*	
+
+%42*	
+
+%43*	
+
+%44*
+0:R
+
+‰B ‰(jD
+model;Puma.Prey.Raccoon.Models.ExternalLoginConfirmationViewModel:!
+
+‰l ‰(|
+	returnUrlstringB31
+/Puma.Prey.Raccoon.Controllers.AccountController

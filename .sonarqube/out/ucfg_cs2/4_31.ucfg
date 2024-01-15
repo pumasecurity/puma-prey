@@ -1,0 +1,40 @@
+
+CPuma.Prey.Common.Cryptography.Random.GenerateCrytpoRandomBytes(int)F
+<D:\Sources\dotNetLab\puma-prey\Common\Cryptography\Random.cs (6"0*Ñ
+0 (" 
+ (,
+%0byte[]"byte[]7
+5
+ (,
+numbersbyte[]"__id*
+
+%0byte[]0.
+# (6
+%1System.Random"System.RandomI
+G
+' (4
+
+%2void"System.Random.Random()*
+
+%1System.RandomD
+B
+ (6
+randomSystem.Random"__id*
+
+%1System.Random€~
+ (%
+
+%3void"System.Random.NextBytes(byte[])*
+
+randomSystem.Random*
+
+numbersbyte[]2NextBytes(byte[])"
+ (
+
+numbersbyte[]*.
+1	 (	"
+ (	
+implicit return:
+7 (@
+bytesintB("&
+$Puma.Prey.Common.Cryptography.Random

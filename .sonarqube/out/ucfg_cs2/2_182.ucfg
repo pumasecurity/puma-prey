@@ -1,0 +1,99 @@
+
+ÖPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.ModelDescriptionGenerator(System.Web.Http.HttpConfiguration)j
+`D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.csY Y(("1*¥
+1b	 b(	|z
+[ =(	9
+%03System.Collections.Generic.Dictionary<TKey, TValue>"3System.Collections.Generic.Dictionary<TKey, TValue>õ
+ò
+	_ (Ö
+
+%1void"@System.Collections.Generic.Dictionary<TKey, TValue>.Dictionary()*=;
+9
+%03System.Collections.Generic.Dictionary<TKey, TValue>Ú
+Ô
+A =(	ùJ
+HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator"O
+AnnotationTextGenerator4System.Collections.Generic.IDictionary<TKey, TValue>"__id*=;
+9
+%03System.Collections.Generic.Dictionary<TKey, TValue>|z
+@N U(	9
+%23System.Collections.Generic.Dictionary<TKey, TValue>"3System.Collections.Generic.Dictionary<TKey, TValue>ö
+ó
+@R @(j
+
+%3void"@System.Collections.Generic.Dictionary<TKey, TValue>.Dictionary()*=;
+9
+%23System.Collections.Generic.Dictionary<TKey, TValue>Û
+
+@3 U(	ûJ
+HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator"P
+DefaultTypeDocumentation4System.Collections.Generic.IDictionary<TKey, TValue>"__id*=;
+9
+%23System.Collections.Generic.Dictionary<TKey, TValue>*
+0*û
+0[ [(Ü
+É
+[ [(
+
+%4bool""object.operator ==(object, object)*
+"
+object*/-
++
+config!System.Web.Http.HttpConfiguration*
+""*
+2
+3*
+2] ](8NL
+] ](9"
+%5System.ArgumentNullException"System.ArgumentNullExceptionã
+à
+] ](/
+
+%6void":System.ArgumentNullException.ArgumentNullException(string)*&$
+"
+%5System.ArgumentNullException*
+
+config*
+4*Û
+3` a(g31
+	`% `(õ
+%7System.Lazy<T>"System.Lazy<T>a
+_
+`) `(J
+
+%8void"#System.Lazy<T>.Lazy(System.Func<T>)*
+
+%7System.Lazy<T>*
+""¶
+£
+	` `(õvJ
+HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator"(
+_documentationProviderSystem.Lazy<T>"__id*
+
+%7System.Lazy<T>s
+q
+aG a(g
+%9System.StringComparer"+System.StringComparer.OrdinalIgnoreCase.get*"
+System.StringComparer}{
+a a(h:
+%103System.Collections.Generic.Dictionary<TKey, TValue>"3System.Collections.Generic.Dictionary<TKey, TValue>Ô
+Ï
+a" a(F
+%11void"rSystem.Collections.Generic.Dictionary<TKey, TValue>.Dictionary(System.Collections.Generic.IEqualityComparer<TKey>)*><
+:
+%103System.Collections.Generic.Dictionary<TKey, TValue>*
+
+%9System.StringComparer∑
+¥
+a a(h:
+%123System.Collections.Generic.Dictionary<TKey, TValue>"\Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GeneratedModels.set*NLJ
+HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator*><
+:
+%103System.Collections.Generic.Dictionary<TKey, TValue>*
+4*.
+4b	 b(	"
+b b(	
+implicit return:7
+Y) Y(A+
+config!System.Web.Http.HttpConfigurationBLJ
+HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator

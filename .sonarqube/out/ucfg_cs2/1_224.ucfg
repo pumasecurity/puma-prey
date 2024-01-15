@@ -1,0 +1,57 @@
+
+4Puma.Prey.Raccoon.Controllers.HuntController.Index()N
+DD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\HuntController.cs$ $(!"4*ã
+0& &(6\Z
+&! &(6)
+%0#Puma.Prey.Rabbit.EF.RabbitDBContext"#Puma.Prey.Rabbit.EF.RabbitDBContext~
+|
+&% &(4
+
+%1void"5Puma.Prey.Rabbit.EF.RabbitDBContext.RabbitDBContext()*-+
+)
+%0#Puma.Prey.Rabbit.EF.RabbitDBContextq
+o
+& &(6.
+context#Puma.Prey.Rabbit.EF.RabbitDBContext"__id*-+
+)
+%0#Puma.Prey.Rabbit.EF.RabbitDBContext*
+1*™
+1( ((E¤
+¡
+( (()2
+%2,Microsoft.EntityFrameworkCore.DbSet<TEntity>"-Puma.Prey.Rabbit.EF.RabbitDBContext.Hunts.get*20
+.
+context#Puma.Prey.Rabbit.EF.RabbitDBContext®
+«
+( ((F&
+%3 System.Linq.IOrderedQueryable<T>"—System.Linq.Queryable.OrderByDescending<TSource, TKey>(System.Linq.IQueryable<TSource>, System.Linq.Expressions.Expression<System.Func<TSource, TKey>>)*"
+System.Linq.Queryable*64
+2
+%2,Microsoft.EntityFrameworkCore.DbSet<TEntity>*
+""Ú
+×
+( ((O(
+%4"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable**(
+&
+%3 System.Linq.IOrderedQueryable<T>¥
+¢
+( ((P
+%5System.Web.Mvc.ViewResult"&System.Web.Mvc.Controller.View(object)*
+System.Web.Mvc.Controller*,*
+(
+%4"System.Collections.Generic.List<T>"-
+( ((Q!
+
+%5System.Web.Mvc.ViewResult*
+2*	 *(	*
+3*.
+3*	 *(	"
+* *(	
+implicit return*4
+4$# $(# 
+
+$ $(!
+%6"__entrypoint*
+0B0.
+,Puma.Prey.Raccoon.Controllers.HuntController

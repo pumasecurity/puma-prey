@@ -1,0 +1,94 @@
+
+@Puma.Prey.Raccoon.Controllers.ManageController.LinkLogin(string)R
+FD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\ManageController.cs² ²(%"2*É
+
+0µ µ(‡r
+p
+
+µC µ(F
+%0System.Web.Mvc.UrlHelper"!System.Web.Mvc.Controller.Url.get*
+System.Web.Mvc.Controller±®
+
+µC µ(l
+%1string"/System.Web.Mvc.UrlHelper.Action(string, string)*" 
+
+%0System.Web.Mvc.UrlHelper*
+LinkLoginCallback*
+
+Manage2Action(string, string)
+}
+
+µn µ(r*
+%2$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
+System.Web.Mvc.Controller«¨
+
+µn µ({)
+%3#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
+*
+%2$System.Security.Principal.IPrincipal2Identity.getÞ
+Û
+µn µ(‡
+%4string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
+,Microsoft.AspNet.Identity.IdentityExtensions*-+
+)
+%3#System.Security.Principal.IIdentity˜•
+µ µ(ˆE
+%5?Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResult"?Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResult‹
+ˆ
+
+µ µ(8
+
+%6void"gPuma.Prey.Raccoon.Controllers.AccountController.ChallengeResult.ChallengeResult(string, string, string)*IG
+E
+%5?Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResult*
+
+providerstring*
+
+%1string*
+
+%4string"V
+µ µ(‰G
+E
+%5?Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResult*2
+1
+¶	 ¶(	"!
+
+¶ ¶(	
+implicit return*¤
+2
+²6 ²(6:
+8
+
+² ²(%
+%7"__entrypoint*
+
+providerstringt
+r
+
+°	 °(
+%8"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+providerstring•
+’
+
+±	 ±(!
+%9"
+__annotate*ZXV
+TSystem.Web.Mvc.ValidateAntiForgeryTokenAttribute.ValidateAntiForgeryTokenAttribute()*
+
+providerstringD
+B
+
+²& ²(5
+providerstring"__annotation*
+
+%8*
+
+%9*
+0: 
+
+²& ²(5
+providerstringB20
+.Puma.Prey.Raccoon.Controllers.ManageController

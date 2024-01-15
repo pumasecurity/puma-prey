@@ -1,0 +1,18 @@
+
+@Puma.Prey.Fox.Models.ApplicationDbContext.ApplicationDbContext()E
+;D:\Sources\dotNetLab\puma-prey\Fox\Models\IdentityModels.cs (#"1*
+1	 (	*
+0*ÿ
+0 (>ê
+ç
+ (?
+
+%0void"bMicrosoft.AspNet.Identity.EntityFramework.IdentityDbContext<TUser>.IdentityDbContext(string, bool)*HFD
+BMicrosoft.AspNet.Identity.EntityFramework.IdentityDbContext<TUser>*
+DefaultConnection*
+""*
+2*.
+2	 (	"
+ (	
+implicit returnB-+
+)Puma.Prey.Fox.Models.ApplicationDbContext

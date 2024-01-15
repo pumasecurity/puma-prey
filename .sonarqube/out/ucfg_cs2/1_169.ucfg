@@ -1,0 +1,48 @@
+
+8Puma.Prey.Raccoon.Controllers.AccountController.LogOff()S
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\AccountController.csâ â(""2*¥
+0
+ã å(3«
+ƒ
+
+ã ã(!4
+%0.Microsoft.Owin.Security.IAuthenticationManager"IPuma.Prey.Raccoon.Controllers.AccountController.AuthenticationManager.get*531
+/Puma.Prey.Raccoon.Controllers.AccountController$
+"
+
+ã* ã(V
+%1"__id*
+""¬ø
+
+ã ã(W
+
+%2void"GMicrosoft.Owin.Security.IAuthenticationManager.SignOut(params string[])*86
+4
+%0.Microsoft.Owin.Security.IAuthenticationManager*
+
+%12SignOut(params string[])±
+Æ
+
+å å(4*
+%3$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
+System.Web.Mvc.Controller*	
+Index*
+
+Home":
+
+å å(5,
+*
+%3$System.Web.Mvc.RedirectToRouteResult*2
+1
+ç	 ç(	"!
+
+ç ç(	
+implicit return*8
+2
+â$ â($"
+ 
+
+â â("
+%4"__entrypoint*
+0B31
+/Puma.Prey.Raccoon.Controllers.AccountController

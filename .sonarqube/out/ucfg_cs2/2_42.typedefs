@@ -1,0 +1,9 @@
+½
+&Puma.Prey.Fox.Models.UserInfoViewModelobjectQ
+UserInfoViewModel():Puma.Prey.Fox.Models.UserInfoViewModel.UserInfoViewModel()=
+	Email.get0Puma.Prey.Fox.Models.UserInfoViewModel.Email.get=
+	Email.set0Puma.Prey.Fox.Models.UserInfoViewModel.Email.setM
+HasRegistered.get8Puma.Prey.Fox.Models.UserInfoViewModel.HasRegistered.getM
+HasRegistered.set8Puma.Prey.Fox.Models.UserInfoViewModel.HasRegistered.setM
+LoginProvider.get8Puma.Prey.Fox.Models.UserInfoViewModel.LoginProvider.getM
+LoginProvider.set8Puma.Prey.Fox.Models.UserInfoViewModel.LoginProvider.set

@@ -1,0 +1,30 @@
+
+Skunk.Hunt.Hunt();
+1D:\Sources\dotNetLab\puma-prey\Skunk\Hunt.aspx.cs
+ 
+("0*Ð
+0 (\Z
+  (5)
+%0#Puma.Prey.Rabbit.EF.RabbitDBContext"#Puma.Prey.Rabbit.EF.RabbitDBContext~
+|
+$ (3
+
+%1void"5Puma.Prey.Rabbit.EF.RabbitDBContext.RabbitDBContext()*-+
+)
+%0#Puma.Prey.Rabbit.EF.RabbitDBContext}
+{
+ (5:
+
+Skunk.Hunt"*
+_db#Puma.Prey.Rabbit.EF.RabbitDBContext"__id*-+
+)
+%0#Puma.Prey.Rabbit.EF.RabbitDBContextC
+A
+
+%2void"System.Web.UI.Page.Page()*
+System.Web.UI.Page"
+
+ (
+implicit returnB
+
+Skunk.Hunt

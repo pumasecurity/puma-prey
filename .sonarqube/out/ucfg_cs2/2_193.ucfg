@@ -1,0 +1,226 @@
+
+∏Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.GenerateSamples(Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel, Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator)`
+TD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageConfigurationExtensions.csÖ Ö(+"0*á
+0
+â% â(^–
+Õ
+
+âG â(^0
+%0*System.Web.Http.Description.ApiDescription"GPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.ApiDescription.get*DB
+@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel¬
+ø
+
+â% â(_:
+%14System.Collections.Generic.IDictionary<TKey, TValue>"rPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.GetSampleRequests(System.Web.Http.Description.ApiDescription)*KI
+G
+sampleGenerator4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*42
+0
+%0*System.Web.Http.Description.ApiDescription†
+ù
+
+â â(!
+%2object"7System.Collections.Generic.ICollection<T>.this[int].get*><
+:
+%14System.Collections.Generic.IDictionary<TKey, TValue>*
+""6
+4
+
+â ç(
+itemobject"__id*
+
+%2object*
+1*
+1
+õ	 õ(	*
+2
+3*»
+
+2
+ã å(@⁄
+◊
+
+ã ã(+:
+%34System.Collections.Generic.IDictionary<TKey, TValue>"GPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.SampleRequests.get*DB
+@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel≈
+¬
+
+ã0 ã(82
+%4,System.Net.Http.Headers.MediaTypeHeaderValue"=System.Collections.Generic.KeyValuePair<TKey, TValue>.Key.get*A?
+=
+item5System.Collections.Generic.KeyValuePair<TKey, TValue>°
+û
+
+ã: ã(D
+%5object"?System.Collections.Generic.KeyValuePair<TKey, TValue>.Value.get*A?
+=
+item5System.Collections.Generic.KeyValuePair<TKey, TValue>ıÚ
+
+ã ã(E
+
+%6void";System.Collections.Generic.ICollection<T>.Add(TKey, TValue)*><
+:
+%34System.Collections.Generic.IDictionary<TKey, TValue>*64
+2
+%4,System.Net.Http.Headers.MediaTypeHeaderValue*
+
+%5object2Add(TKey, TValue)°
+û
+
+å6 å(@
+%7object"?System.Collections.Generic.KeyValuePair<TKey, TValue>.Value.get*A?
+=
+item5System.Collections.Generic.KeyValuePair<TKey, TValue>Ã
+…
+
+å å(A
+
+%8void"íPuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.LogInvalidSampleAsError(Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel, object)*B@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions*DB
+@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel*
+
+%7object*
+1*å
+3
+è% è(_–
+Õ
+
+èH è(_0
+%9*System.Web.Http.Description.ApiDescription"GPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.ApiDescription.get*DB
+@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModelƒ
+¡
+
+è% è(`;
+%104System.Collections.Generic.IDictionary<TKey, TValue>"sPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.GetSampleResponses(System.Web.Http.Description.ApiDescription)*KI
+G
+sampleGenerator4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*42
+0
+%9*System.Web.Http.Description.ApiDescription¢
+ü
+
+è è(!
+%11object"7System.Collections.Generic.ICollection<T>.this[int].get*?=
+;
+%104System.Collections.Generic.IDictionary<TKey, TValue>*
+""7
+5
+
+è ì(
+itemobject"__id*
+
+%11object*
+4*
+4
+õ	 õ(	*
+5
+6*”
+
+5
+ë í(@‹
+Ÿ
+
+ë ë(,;
+%124System.Collections.Generic.IDictionary<TKey, TValue>"HPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.SampleResponses.get*DB
+@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel∆
+√
+
+ë1 ë(93
+%13,System.Net.Http.Headers.MediaTypeHeaderValue"=System.Collections.Generic.KeyValuePair<TKey, TValue>.Key.get*A?
+=
+item5System.Collections.Generic.KeyValuePair<TKey, TValue>¢
+ü
+
+ë; ë(E
+%14object"?System.Collections.Generic.KeyValuePair<TKey, TValue>.Value.get*A?
+=
+item5System.Collections.Generic.KeyValuePair<TKey, TValue>˘ˆ
+
+ë ë(F
+%15void";System.Collections.Generic.ICollection<T>.Add(TKey, TValue)*?=
+;
+%124System.Collections.Generic.IDictionary<TKey, TValue>*75
+3
+%13,System.Net.Http.Headers.MediaTypeHeaderValue*
+
+%14object2Add(TKey, TValue)¢
+ü
+
+í6 í(@
+%16object"?System.Collections.Generic.KeyValuePair<TKey, TValue>.Value.get*A?
+=
+item5System.Collections.Generic.KeyValuePair<TKey, TValue>Œ
+À
+
+í í(A
+%17void"íPuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.LogInvalidSampleAsError(Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel, object)*B@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions*DB
+@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel*
+
+%16object*
+4*
+6
+õ	 õ(	*
+7
+8*›
+7
+ó ô(=“
+œ
+
+ó ó(&3
+%18,System.Collections.ObjectModel.Collection<T>"FPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.ErrorMessages.get*DB
+@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModelï
+í
+
+ó9 ó(S'
+%19 System.Globalization.CultureInfo"3System.Globalization.CultureInfo.CurrentCulture.get*&$""
+ System.Globalization.CultureInfo◊
+‘
+
+ô ô(>
+%20System.Exception"VPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.UnwrapException(System.Exception)*:8"6
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*
+
+eSystem.Exceptionec
+
+ô ô(F
+%21string"System.Exception.Message.get*
+
+%20System.Exception2Message.get¯
+ı
+
+ó+ ô(G
+%22string"5string.Format(System.IFormatProvider, string, object)*
+"
+string*+)
+'
+%19 System.Globalization.CultureInfo*SQO
+MAn exception has occurred while generating the sample. Exception message: {0}*
+
+%21stringù
+ö
+
+ó ô(H
+%23void"3System.Collections.ObjectModel.Collection<T>.Add(T)*75
+3
+%18,System.Collections.ObjectModel.Collection<T>*
+
+%22string*
+8*2
+8
+õ	 õ(	"!
+
+õ õ(	
+implicit return:N
+
+Ö, Ö(E@
+apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel:U
+
+ÖG Ö(nG
+sampleGenerator4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGeneratorB@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions

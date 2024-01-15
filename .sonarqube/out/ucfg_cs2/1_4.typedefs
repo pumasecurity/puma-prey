@@ -1,0 +1,3 @@
+ë
+(Puma.Prey.Raccoon.ApplicationUserManager,Microsoft.AspNet.Identity.UserManager<TUser>2Microsoft.AspNet.Identity.UserManager<TUser, TKey>object˙
+fApplicationUserManager(Microsoft.AspNet.Identity.IUserStore<Puma.Prey.Raccoon.Models.ApplicationUser>)èPuma.Prey.Raccoon.ApplicationUserManager.ApplicationUserManager(Microsoft.AspNet.Identity.IUserStore<Puma.Prey.Raccoon.Models.ApplicationUser>)

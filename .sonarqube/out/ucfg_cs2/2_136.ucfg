@@ -1,0 +1,165 @@
+
+óPuma.Prey.Fox.Providers.ApplicationOAuthProvider.GrantResourceOwnerCredentials(Microsoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContext)R
+HD:\Sources\dotNetLab\puma-prey\Fox\Providers\ApplicationOAuthProvider.cs (:"0*‹
+0 "(–
+Õ
+ ((!
+%0Microsoft.Owin.IOwinContext"FMicrosoft.Owin.Security.Provider.BaseContext<TOptions>.OwinContext.get*VT
+R
+contextGMicrosoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContextà
+Ö
+ (Q*
+%1$Puma.Prey.Fox.ApplicationUserManager"jMicrosoft.AspNet.Identity.Owin.OwinContextExtensions.GetUserManager<TManager>(Microsoft.Owin.IOwinContext)*:8"6
+4Microsoft.AspNet.Identity.Owin.OwinContextExtensions*%#
+!
+%0Microsoft.Owin.IOwinContextw
+u
+ (Q3
+userManager$Puma.Prey.Fox.ApplicationUserManager"__id*.,
+*
+%1$Puma.Prey.Fox.ApplicationUserManager…
+∆
+ 6  (F
+%2string"TMicrosoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContext.UserName.get*VT
+R
+contextGMicrosoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContext…
+∆
+ H  (X
+%3string"TMicrosoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContext.Password.get*VT
+R
+contextGMicrosoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContextˇ¸
+    (Y*
+%4$System.Threading.Tasks.Task<TResult>"LMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.FindAsync(string, string)*75
+3
+userManager$Puma.Prey.Fox.ApplicationUserManager*
+
+%2string*
+
+%3string2FindAsync(string, string)J
+H
+   (Y,
+user$Puma.Prey.Fox.Models.ApplicationUser"__id*
+""á
+Ñ
+" "(
+
+%5bool""object.operator ==(object, object)*
+"
+object*0.
+,
+user$Puma.Prey.Fox.Models.ApplicationUser*
+""*
+1
+2*±
+1$ $(Oç
+ä
+$ $(P
+
+%6void"VMicrosoft.Owin.Security.OAuth.BaseValidatingContext<TOptions>.SetError(string, string)*VT
+R
+contextGMicrosoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContext*
+invalid_grant*-+)
+'The user name or password is incorrect."
+% %(
+""*≠
+2( 0(@"
+ 
+) )(&
+%7"__id*
+""ƒ
+¡
+(( )('*
+%8$System.Threading.Tasks.Task<TResult>"ìPuma.Prey.Fox.Models.ApplicationUser.GenerateUserIdentityAsync(Microsoft.AspNet.Identity.UserManager<Puma.Prey.Fox.Models.ApplicationUser>, string)*0.
+,
+user$Puma.Prey.Fox.Models.ApplicationUser*75
+3
+userManager$Puma.Prey.Fox.ApplicationUserManager*
+
+%7T
+R
+( )('6
+oAuthIdentity%System.Security.Claims.ClaimsIdentity"__id*
+"""
+ 
++ +(3
+%9"__id*
+""≈
+¬
+** +(4+
+%10$System.Threading.Tasks.Task<TResult>"ìPuma.Prey.Fox.Models.ApplicationUser.GenerateUserIdentityAsync(Microsoft.AspNet.Identity.UserManager<Puma.Prey.Fox.Models.ApplicationUser>, string)*0.
+,
+user$Puma.Prey.Fox.Models.ApplicationUser*75
+3
+userManager$Puma.Prey.Fox.ApplicationUserManager*
+
+%9V
+T
+* +(48
+cookiesIdentity%System.Security.Claims.ClaimsIdentity"__id*
+""æª
+-: -(G
+%11string"`Microsoft.AspNet.Identity.EntityFramework.IdentityUser<TKey, TLogin, TRole, TClaim>.UserName.get*0.
+,
+user$Puma.Prey.Fox.Models.ApplicationUser2UserName.get‹
+Ÿ
+-) -(H7
+%120Microsoft.Owin.Security.AuthenticationProperties"IPuma.Prey.Fox.Providers.ApplicationOAuthProvider.CreateProperties(string)*64"2
+0Puma.Prey.Fox.Providers.ApplicationOAuthProvider*
+
+%11stringê
+ç
+- -(H>
+
+properties0Microsoft.Owin.Security.AuthenticationProperties"__id*;9
+7
+%120Microsoft.Owin.Security.AuthenticationPropertiesom
+.! .(T3
+%13,Microsoft.Owin.Security.AuthenticationTicket",Microsoft.Owin.Security.AuthenticationTicket
+Ì
+.% .(9
+%14void"öMicrosoft.Owin.Security.AuthenticationTicket.AuthenticationTicket(System.Security.Claims.ClaimsIdentity, Microsoft.Owin.Security.AuthenticationProperties)*75
+3
+%13,Microsoft.Owin.Security.AuthenticationTicket*:8
+6
+oAuthIdentity%System.Security.Claims.ClaimsIdentity*B@
+>
+
+properties0Microsoft.Owin.Security.AuthenticationPropertiesÑ
+Å
+. .(T6
+ticket,Microsoft.Owin.Security.AuthenticationTicket"__id*75
+3
+%13,Microsoft.Owin.Security.AuthenticationTicket´
+®
+/ /(
+%15bool"{Microsoft.Owin.Security.OAuth.BaseValidatingTicketContext<TOptions>.Validated(Microsoft.Owin.Security.AuthenticationTicket)*VT
+R
+contextGMicrosoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContext*:8
+6
+ticket,Microsoft.Owin.Security.AuthenticationTicketÕ
+ 
+0 0("
+%16Microsoft.Owin.IOwinRequest"BMicrosoft.Owin.Security.Provider.BaseContext<TOptions>.Request.get*VT
+R
+contextGMicrosoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContextèå
+0 0("
+%17Microsoft.Owin.IOwinContext"'Microsoft.Owin.IOwinRequest.Context.get*&$
+"
+%16Microsoft.Owin.IOwinRequest2Context.get∞≠
+0 0()5
+%18.Microsoft.Owin.Security.IAuthenticationManager".Microsoft.Owin.IOwinContext.Authentication.get*&$
+"
+%17Microsoft.Owin.IOwinContext2Authentication.get≤Ø
+0 0(A
+%19void"eMicrosoft.Owin.Security.IAuthenticationManager.SignIn(params System.Security.Claims.ClaimsIdentity[])*97
+5
+%18.Microsoft.Owin.Security.IAuthenticationManager*<:
+8
+cookiesIdentity%System.Security.Claims.ClaimsIdentity26SignIn(params System.Security.Claims.ClaimsIdentity[])*
+3*.
+31 1("
+1 1(
+implicit return:^
+; (lR
+contextGMicrosoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContextB42
+0Puma.Prey.Fox.Providers.ApplicationOAuthProvider

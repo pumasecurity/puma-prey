@@ -1,0 +1,165 @@
+
+•Puma.Prey.Fox.ApplicationUserManager.Create(Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<Puma.Prey.Fox.ApplicationUserManager>, Microsoft.Owin.IOwinContext)H
+>D:\Sources\dotNetLab\puma-prey\Fox\App_Start\IdentityConfig.cs- (3"0*ı
+0 &(.Ä
+˝
+T (w/
+%0)Puma.Prey.Fox.Models.ApplicationDbContext"XMicrosoft.AspNet.Identity.Owin.OwinContextExtensions.Get<T>(Microsoft.Owin.IOwinContext)*:8"6
+4Microsoft.AspNet.Identity.Owin.OwinContextExtensions**(
+&
+contextMicrosoft.Owin.IOwinContextãà
+5 (x@
+%1:Microsoft.AspNet.Identity.EntityFramework.UserStore<TUser>":Microsoft.AspNet.Identity.EntityFramework.UserStore<TUser>¯
+ı
+9 (S
+
+%2void"bMicrosoft.AspNet.Identity.EntityFramework.UserStore<TUser>.UserStore(System.Data.Entity.DbContext)*DB
+@
+%1:Microsoft.AspNet.Identity.EntityFramework.UserStore<TUser>*31
+/
+%0)Puma.Prey.Fox.Models.ApplicationDbContext^\
+ (y*
+%3$Puma.Prey.Fox.ApplicationUserManager"$Puma.Prey.Fox.ApplicationUserManagerô
+ñ
+ (4
+
+%4void"áPuma.Prey.Fox.ApplicationUserManager.ApplicationUserManager(Microsoft.AspNet.Identity.IUserStore<Puma.Prey.Fox.Models.ApplicationUser>)*.,
+*
+%3$Puma.Prey.Fox.ApplicationUserManager*DB
+@
+%1:Microsoft.AspNet.Identity.EntityFramework.UserStore<TUser>s
+q
+ (y/
+manager$Puma.Prey.Fox.ApplicationUserManager"__id*.,
+*
+%3$Puma.Prey.Fox.ApplicationUserManagerrp
+$ (4
+%5.Microsoft.AspNet.Identity.UserValidator<TUser>".Microsoft.AspNet.Identity.UserValidator<TUser>¸
+˘
+( (F
+
+%6void"rMicrosoft.AspNet.Identity.UserValidator<TUser>.UserValidator(Microsoft.AspNet.Identity.UserManager<TUser, string>)*86
+4
+%5.Microsoft.AspNet.Identity.UserValidator<TUser>*31
+/
+manager$Puma.Prey.Fox.ApplicationUserManager∂
+≥
+ (6
+
+%7bool"WMicrosoft.AspNet.Identity.UserValidator<TUser, TKey>.AllowOnlyAlphanumericUserNames.set*86
+4
+%5.Microsoft.AspNet.Identity.UserValidator<TUser>*
+""™
+ß
+ ()
+
+%8bool"KMicrosoft.AspNet.Identity.UserValidator<TUser, TKey>.RequireUniqueEmail.set*86
+4
+%5.Microsoft.AspNet.Identity.UserValidator<TUser>*
+""˘
+ˆ
+ (5
+%9/Microsoft.AspNet.Identity.IIdentityValidator<T>"DMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.UserValidator.set*31
+/
+manager$Puma.Prey.Fox.ApplicationUserManager*86
+4
+%5.Microsoft.AspNet.Identity.UserValidator<TUser>mk
+( $(2
+%10+Microsoft.AspNet.Identity.PasswordValidator"+Microsoft.AspNet.Identity.PasswordValidatorì
+ê
+, (=
+%11void"?Microsoft.AspNet.Identity.PasswordValidator.PasswordValidator()*64
+2
+%10+Microsoft.AspNet.Identity.PasswordValidatorô
+ñ
+ ("
+
+%12int">Microsoft.AspNet.Identity.PasswordValidator.RequiredLength.set*64
+2
+%10+Microsoft.AspNet.Identity.PasswordValidator*2•
+¢
+   (.
+%13bool"GMicrosoft.AspNet.Identity.PasswordValidator.RequireNonLetterOrDigit.set*64
+2
+%10+Microsoft.AspNet.Identity.PasswordValidator*
+""ö
+ó
+! !(#
+%14bool"<Microsoft.AspNet.Identity.PasswordValidator.RequireDigit.set*64
+2
+%10+Microsoft.AspNet.Identity.PasswordValidator*
+""û
+õ
+" "('
+%15bool"@Microsoft.AspNet.Identity.PasswordValidator.RequireLowercase.set*64
+2
+%10+Microsoft.AspNet.Identity.PasswordValidator*
+""û
+õ
+# #('
+%16bool"@Microsoft.AspNet.Identity.PasswordValidator.RequireUppercase.set*64
+2
+%10+Microsoft.AspNet.Identity.PasswordValidator*
+""¸
+˘
+ $(6
+%17/Microsoft.AspNet.Identity.IIdentityValidator<T>"HMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.PasswordValidator.set*31
+/
+manager$Puma.Prey.Fox.ApplicationUserManager*64
+2
+%10+Microsoft.AspNet.Identity.PasswordValidatorÚ
+Ô
+%) %(GE
+%18>Microsoft.Owin.Security.DataProtection.IDataProtectionProvider"SMicrosoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>.DataProtectionProvider.get*GE
+C
+options8Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>∏
+µ
+% %(GX
+dataProtectionProvider>Microsoft.Owin.Security.DataProtection.IDataProtectionProvider"__id*IG
+E
+%18>Microsoft.Owin.Security.DataProtection.IDataProtectionProvider¥
+±
+& &(.
+%19bool""object.operator !=(object, object)*
+"
+object*\Z
+X
+dataProtectionProvider>Microsoft.Owin.Security.DataProtection.IDataProtectionProvider*
+""*
+1
+2*≈
+1	( ((å≥∞
+	(\ ((ç<
+%205Microsoft.Owin.Security.DataProtection.IDataProtector"VMicrosoft.Owin.Security.DataProtection.IDataProtectionProvider.Create(params string[])*\Z
+X
+dataProtectionProvider>Microsoft.Owin.Security.DataProtection.IDataProtectionProvider*
+ASP.NET Identity2Create(params string[])ôñ
+	(, ((éG
+%21@Microsoft.AspNet.Identity.Owin.DataProtectorTokenProvider<TUser>"@Microsoft.AspNet.Identity.Owin.DataProtectorTokenProvider<TUser>æ
+ª
+(0 (([
+%22void"íMicrosoft.AspNet.Identity.Owin.DataProtectorTokenProvider<TUser>.DataProtectorTokenProvider(Microsoft.Owin.Security.DataProtection.IDataProtector)*KI
+G
+%21@Microsoft.AspNet.Identity.Owin.DataProtectorTokenProvider<TUser>*@>
+<
+%205Microsoft.Owin.Security.DataProtection.IDataProtectorú
+ô
+	( ((é@
+%239Microsoft.AspNet.Identity.IUserTokenProvider<TUser, TKey>"HMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.UserTokenProvider.set*31
+/
+manager$Puma.Prey.Fox.ApplicationUserManager*KI
+G
+%21@Microsoft.AspNet.Identity.Owin.DataProtectorTokenProvider<TUser>*
+2*L
+2* *("=
+* *(1
+/
+manager$Puma.Prey.Fox.ApplicationUserManager*.
+3+	 +(	"
++ +(	
+implicit return:O
+4 (jC
+options8Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>:3
+	l (Ä&
+contextMicrosoft.Owin.IOwinContextB("&
+$Puma.Prey.Fox.ApplicationUserManager

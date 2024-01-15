@@ -1,0 +1,273 @@
+
+FPuma.Prey.Raccoon.Controllers.AccountController.SendCode(string, bool)S
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\AccountController.cs°( °(0"4*Ω
+0
+£ §(ª
+∏
+
+£ £(,0
+%0*Puma.Prey.Raccoon.ApplicationSignInManager"APuma.Prey.Raccoon.Controllers.AccountController.SignInManager.get*531
+/Puma.Prey.Raccoon.Controllers.AccountController≈
+¬
+
+£ £(E*
+%1$System.Threading.Tasks.Task<TResult>"RMicrosoft.AspNet.Identity.Owin.SignInManager<TUser, TKey>.GetVerifiedUserIdAsync()*42
+0
+%0*Puma.Prey.Raccoon.ApplicationSignInManager0
+.
+
+£ £(E
+userIdstring"__id*
+""l
+j
+
+§ §(
+
+%2bool""string.operator ==(string, string)*
+"
+string*
+
+userIdstring*
+""*
+1
+2*Ì
+1
+¶ ¶(#ì
+ê
+
+¶ ¶($
+
+%3void"raccoon/views/shared/error*
+
+%4*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobjectë
+é
+
+¶ ¶($
+
+%5void"raccoon/views/_viewstart*
+
+%6*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobjectï
+í
+
+¶ ¶($
+
+%7void"raccoon/views/shared/_layout*
+
+%8*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject"
+
+¶ ¶(%
+
+
+%7void*ƒ
+2
+® ™(y∑
+¥
+
+®$ ®(/.
+%9(Puma.Prey.Raccoon.ApplicationUserManager"?Puma.Prey.Raccoon.Controllers.AccountController.UserManager.get*531
+/Puma.Prey.Raccoon.Controllers.AccountControlleráÑ
+
+®$ ®(W+
+%10$System.Threading.Tasks.Task<TResult>"XMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.GetValidTwoFactorProvidersAsync(TKey)*20
+.
+%9(Puma.Prey.Raccoon.ApplicationUserManager*
+
+userIdstring2%GetValidTwoFactorProvidersAsync(TKey)R
+P
+
+® ®(W2
+userFactors#System.Collections.Generic.IList<T>"__id*
+""¢
+ü
+
+©  ©(u0
+%11)System.Collections.Generic.IEnumerable<T>"System.Linq.Enumerable.Select<TSource, TResult>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, TResult>)*"
+System.Linq.Enumerable*64
+2
+userFactors#System.Collections.Generic.IList<T>*
+""Á
+‰
+
+©  ©(~)
+%12"System.Collections.Generic.List<T>"WSystem.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)*"
+System.Linq.Enumerable*42
+0
+%11)System.Collections.Generic.IEnumerable<T>x
+v
+
+© ©(~3
+factorOptions"System.Collections.Generic.List<T>"__id*-+
+)
+%12"System.Collections.Generic.List<T>mk
+
+™ ™({1
+%13*Puma.Prey.Raccoon.Models.SendCodeViewModel"*Puma.Prey.Raccoon.Models.SendCodeViewModelì
+ê
+
+™ ™(-
+%14void">Puma.Prey.Raccoon.Models.SendCodeViewModel.SendCodeViewModel()*53
+1
+%13*Puma.Prey.Raccoon.Models.SendCodeViewModelÎ
+Ë
+
+™0 ™(I0
+%15)System.Collections.Generic.ICollection<T>"8Puma.Prey.Raccoon.Models.SendCodeViewModel.Providers.set*53
+1
+%13*Puma.Prey.Raccoon.Models.SendCodeViewModel*75
+3
+factorOptions"System.Collections.Generic.List<T>®
+•
+
+™K ™(`
+%16string"8Puma.Prey.Raccoon.Models.SendCodeViewModel.ReturnUrl.set*53
+1
+%13*Puma.Prey.Raccoon.Models.SendCodeViewModel*
+
+	returnUrlstringò
+ï
+
+™b ™(y
+%17bool"9Puma.Prey.Raccoon.Models.SendCodeViewModel.RememberMe.set*53
+1
+%13*Puma.Prey.Raccoon.Models.SendCodeViewModel*
+""ø
+º
+
+™ ™(|
+%18void"raccoon/views/account/sendcode*	
+
+%19*53
+1
+%13*Puma.Prey.Raccoon.Models.SendCodeViewModel*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobjectπ
+∂
+
+™ ™(|
+%20void"raccoon/views/_viewstart*	
+
+%21*53
+1
+%13*Puma.Prey.Raccoon.Models.SendCodeViewModel*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobjectΩ
+∫
+
+™ ™(|
+%22void"raccoon/views/shared/_layout*	
+
+%23*53
+1
+%13*Puma.Prey.Raccoon.Models.SendCodeViewModel*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject"
+
+™ ™(}
+
+%22void*2
+3
+´	 ´(	"!
+
+´ ´(	
+implicit return*†
+4
+°S °(SF
+D
+
+°( °(0
+%24"__entrypoint*
+
+	returnUrlstring*
+""É
+Ä
+
+†	 †(
+%25"
+__annotate*FDB
+@System.Web.Mvc.AllowAnonymousAttribute.AllowAnonymousAttribute()*
+
+	returnUrlstring<
+:
+
+°1 °(A
+	returnUrlstring"__annotation*	
+
+%25*
+0:!
+
+°1 °(A
+	returnUrlstring: 
+
+°C °(R
+
+rememberMeboolB31
+/Puma.Prey.Raccoon.Controllers.AccountController

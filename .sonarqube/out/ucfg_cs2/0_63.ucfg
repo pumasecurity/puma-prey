@@ -1,0 +1,82 @@
+
+Puma.Prey.Common.Cryptography.KeyManagement.KeyManager.WriteKey(byte[], string, System.Security.Cryptography.DataProtectionScope)X
+ND:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyManager.cs (#"0*ê
+0
+‚ ‚(J$
+"
+
+‚; ‚(J
+%0"__id*
+""@>
+
+‚# ‚(K
+%1System.IO.FileStream"System.IO.FileStream™
+–
+
+‚' ‚(1
+
+%2void";System.IO.FileStream.FileStream(string, System.IO.FileMode)*
+
+%1System.IO.FileStream*
+
+keyFilestring*
+
+%0P
+N
+
+‚ ‚(K
+fsSystem.IO.FileStream"__id*
+
+%1System.IO.FileStream*
+1*Œ
+1
+„ ˆ(¸
+µ
+
+„, …(.>
+%38Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"‰Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey.CreateFromPlaintextKey(byte[], System.Security.Cryptography.DataProtectionScope)*><":
+8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*
+
+keybyte[]*
+""£
+ 
+
+„ …(.H
+protectedKey8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"__id*B@
+>
+%38Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyÒ
+Ï
+
+† †(2
+
+%4void"ˆPuma.Prey.Common.Cryptography.KeyManagement.KeyManager.Write(System.IO.Stream, Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey)*<:"8
+6Puma.Prey.Common.Cryptography.KeyManagement.KeyManager*
+
+fsSystem.IO.FileStream*LJ
+H
+protectedKey8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeya_
+
+‡ ‡(
+
+%5void"System.IO.FileStream.Flush()*
+
+fsSystem.IO.FileStream2Flush()][
+
+ˆ ˆ(
+
+%6void"System.IO.Stream.Close()*
+
+fsSystem.IO.FileStream2Close()*
+2*2
+2
+Š	 Š(	"!
+
+Š Š(	
+implicit return:
+$ (.
+keybyte[]:
+0 (>
+keyFilestring:T
+@ (hH
+dpapiProtectionScope0System.Security.Cryptography.DataProtectionScopeB:"8
+6Puma.Prey.Common.Cryptography.KeyManagement.KeyManager

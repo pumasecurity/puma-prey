@@ -1,0 +1,76 @@
+
+VPuma.Prey.Fox.Results.ChallengeResult.ExecuteAsync(System.Threading.CancellationToken)G
+=D:\Sources\dotNetLab\puma-prey\Fox\Results\ChallengeResult.cs) (5"0*¼
+0 ("—
+”
+ ((
+%0"System.Net.Http.HttpRequestMessage"1Puma.Prey.Fox.Results.ChallengeResult.Request.get*+)'
+%Puma.Prey.Fox.Results.ChallengeResultû
+ø
+ ($!
+%1Microsoft.Owin.IOwinContext"cSystem.Net.Http.OwinHttpRequestMessageExtensions.GetOwinContext(System.Net.Http.HttpRequestMessage)*64"2
+0System.Net.Http.OwinHttpRequestMessageExtensions*,*
+(
+%0"System.Net.Http.HttpRequestMessage®«
+ (34
+%2.Microsoft.Owin.Security.IAuthenticationManager".Microsoft.Owin.IOwinContext.Authentication.get*%#
+!
+%1Microsoft.Owin.IOwinContext2Authentication.get€
+~
+> (K
+%3string"7Puma.Prey.Fox.Results.ChallengeResult.LoginProvider.get*+)'
+%Puma.Prey.Fox.Results.ChallengeResultÌÉ
+ (L
+
+%4void"IMicrosoft.Owin.Security.IAuthenticationManager.Challenge(params string[])*86
+4
+%2.Microsoft.Owin.Security.IAuthenticationManager*
+
+%3string2Challenge(params string[])"
+ 
+: (U
+%5"__id*
+""\Z
+" ()
+%6#System.Net.Http.HttpResponseMessage"#System.Net.Http.HttpResponseMessage¦
+£
+& (9
+
+%7void"RSystem.Net.Http.HttpResponseMessage.HttpResponseMessage(System.Net.HttpStatusCode)*-+
+)
+%6#System.Net.Http.HttpResponseMessage*
+
+%5™
+–
+ ((
+%8"System.Net.Http.HttpRequestMessage"1Puma.Prey.Fox.Results.ChallengeResult.Request.get*-+
+)
+%6#System.Net.Http.HttpResponseMessageÌ
+É
+ ((
+%9"System.Net.Http.HttpRequestMessage"6System.Net.Http.HttpResponseMessage.RequestMessage.set*-+
+)
+%6#System.Net.Http.HttpResponseMessage*,*
+(
+%8"System.Net.Http.HttpRequestMessager
+p
+ (/
+response#System.Net.Http.HttpResponseMessage"__id*-+
+)
+%6#System.Net.Http.HttpResponseMessageÌ
+É
+
+ (#+
+%10$System.Threading.Tasks.Task<TResult>"8System.Threading.Tasks.Task.FromResult<TResult>(TResult)*!"
+System.Threading.Tasks.Task*31
+/
+response#System.Net.Http.HttpResponseMessage"9
+ ($-
++
+%10$System.Threading.Tasks.Task<TResult>*.
+1 	  (	"
+   (	
+implicit return:C
+6 (Y7
+cancellationToken"System.Threading.CancellationTokenB)'
+%Puma.Prey.Fox.Results.ChallengeResult

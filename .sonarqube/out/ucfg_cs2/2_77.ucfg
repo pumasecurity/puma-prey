@@ -1,0 +1,66 @@
+
+GPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.HelpPageApiModel()V
+LD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Models\HelpPageApiModel.cs ("1*
+1	 (	*
+0*È
+0 (4nl
+ (B2
+%0,System.Collections.ObjectModel.Collection<T>",System.Collections.ObjectModel.Collection<T>å
+â
+  (@
+
+%1void"9System.Collections.ObjectModel.Collection<T>.Collection()*64
+2
+%0,System.Collections.ObjectModel.Collection<T>˝
+˙
+ (B2
+%2,System.Collections.ObjectModel.Collection<T>"FPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.UriParameters.set*:86
+4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel*64
+2
+%0,System.Collections.ObjectModel.Collection<T>|z
+ (K9
+%33System.Collections.Generic.Dictionary<TKey, TValue>"3System.Collections.Generic.Dictionary<TKey, TValue>ö
+ó
+! (I
+
+%4void"@System.Collections.Generic.Dictionary<TKey, TValue>.Dictionary()*=;
+9
+%33System.Collections.Generic.Dictionary<TKey, TValue>ç
+ä
+ (K:
+%54System.Collections.Generic.IDictionary<TKey, TValue>"GPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.SampleRequests.set*:86
+4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel*=;
+9
+%33System.Collections.Generic.Dictionary<TKey, TValue>|z
+ (L9
+%63System.Collections.Generic.Dictionary<TKey, TValue>"3System.Collections.Generic.Dictionary<TKey, TValue>ö
+ó
+" (J
+
+%7void"@System.Collections.Generic.Dictionary<TKey, TValue>.Dictionary()*=;
+9
+%63System.Collections.Generic.Dictionary<TKey, TValue>é
+ã
+ (L:
+%84System.Collections.Generic.IDictionary<TKey, TValue>"HPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.SampleResponses.set*:86
+4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel*=;
+9
+%63System.Collections.Generic.Dictionary<TKey, TValue>nl
+ (42
+%9,System.Collections.ObjectModel.Collection<T>",System.Collections.ObjectModel.Collection<T>ç
+ä
+  (2
+%10void"9System.Collections.ObjectModel.Collection<T>.Collection()*64
+2
+%9,System.Collections.ObjectModel.Collection<T>˛
+˚
+ (43
+%11,System.Collections.ObjectModel.Collection<T>"FPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.ErrorMessages.set*:86
+4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel*64
+2
+%9,System.Collections.ObjectModel.Collection<T>*
+2*.
+2	 (	"
+ (	
+implicit returnB86
+4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel

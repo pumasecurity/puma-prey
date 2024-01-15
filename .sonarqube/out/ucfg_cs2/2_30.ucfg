@@ -1,0 +1,26 @@
+
+hPuma.Prey.Fox.Controllers.AccountController.RandomOAuthStateGenerator.RandomOAuthStateGenerator()!staticO
+CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.csÙ Ù(6"0*Í
+0
+ì	 ì(	ƒ€
+
+Û; Û(Y;
+%05System.Security.Cryptography.RNGCryptoServiceProvider"5System.Security.Cryptography.RNGCryptoServiceProvider®
+«
+
+Û? Û(W
+
+%1void"PSystem.Security.Cryptography.RNGCryptoServiceProvider.RNGCryptoServiceProvider()*?=
+;
+%05System.Security.Cryptography.RNGCryptoServiceProviderá
+Þ
+
+Û1 Û(YˆG
+EPuma.Prey.Fox.Controllers.AccountController.RandomOAuthStateGenerator"=
+_random2System.Security.Cryptography.RandomNumberGenerator"__id*?=
+;
+%05System.Security.Cryptography.RNGCryptoServiceProvider"!
+
+Ù ì(	
+implicit returnBI"G
+EPuma.Prey.Fox.Controllers.AccountController.RandomOAuthStateGenerator

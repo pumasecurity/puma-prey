@@ -1,0 +1,121 @@
+
+@Puma.Prey.Common.Rest.RestClient.Get<T>(string, params object[])B
+8D:\Sources\dotNetLab\puma-prey\Common\Rest\RestClient.cs
+ 
+("0*¸
+0 (8VT
+ (&
+%0 Puma.Prey.Common.Rest.RestClient" Puma.Prey.Common.Rest.RestClientI
+G
+ (	
+itemT"__id**(
+&
+%0 Puma.Prey.Common.Rest.RestClientXV
+! (8'
+%1!System.Net.Http.WebRequestHandler"!System.Net.Http.WebRequestHandler|
+z
+% (6
+
+%2void"5System.Net.Http.WebRequestHandler.WebRequestHandler()*+)
+'
+%1!System.Net.Http.WebRequestHandlerm
+k
+ (8,
+handler!System.Net.Http.WebRequestHandler"__id*+)
+'
+%1!System.Net.Http.WebRequestHandler*
+1*Í	
+1 (:…
+∆
+ (;=
+%37System.Net.Security.RemoteCertificateValidationCallback"ISystem.Net.Http.WebRequestHandler.ServerCertificateValidationCallback.get*0.
+,
+handler!System.Net.Http.WebRequestHandlerè
+å
+ (m=
+%47System.Net.Security.RemoteCertificateValidationCallback"¥System.Net.Security.RemoteCertificateValidationCallback.operator +(System.Net.Security.RemoteCertificateValidationCallback, System.Net.Security.RemoteCertificateValidationCallback)*=;"9
+7System.Net.Security.RemoteCertificateValidationCallback*A?
+=
+%37System.Net.Security.RemoteCertificateValidationCallback*
+""å
+â
+ (m=
+%57System.Net.Security.RemoteCertificateValidationCallback"ISystem.Net.Http.WebRequestHandler.ServerCertificateValidationCallback.set*0.
+,
+handler!System.Net.Http.WebRequestHandler*A?
+=
+%47System.Net.Security.RemoteCertificateValidationCallbackJH
+$ (; 
+%6System.Net.Http.HttpClient"System.Net.Http.HttpClientº
+π
+( (2
+
+%7void"ISystem.Net.Http.HttpClient.HttpClient(System.Net.Http.HttpMessageHandler)*$"
+ 
+%6System.Net.Http.HttpClient*0.
+,
+handler!System.Net.Http.WebRequestHandler^
+\
+ (;$
+clientSystem.Net.Http.HttpClient"__id*$"
+ 
+%6System.Net.Http.HttpClient*
+2*É
+2 (""
+ 
+J (R
+%8"__id*
+""
+}
+2 (]
+%9string"%string.Format(string, object, object)*
+"
+string*
+
+{0}{1}*
+
+%8*
+
+endpointstring£
+†
+" (^+
+%10$System.Threading.Tasks.Task<TResult>"+System.Net.Http.HttpClient.GetAsync(string)*(&
+$
+clientSystem.Net.Http.HttpClient*
+
+%9string‘
+—
+" ("
+%11System.Threading.Tasks.Task"fSystem.Threading.Tasks.Task<TResult>.ContinueWith(System.Action<System.Threading.Tasks.Task<TResult>>)*/-
++
+%10$System.Threading.Tasks.Task<TResult>*
+""b
+`
+ (&
+requestSystem.Threading.Tasks.Task"__id*&$
+"
+%11System.Threading.Tasks.Taski
+g
+ ("
+%12void""System.Threading.Tasks.Task.Wait()**(
+&
+requestSystem.Threading.Tasks.Task*
+3*
+3"	 "(	*
+4*&
+4! !("
+! !(
+	
+itemT*.
+5"	 "(	"
+" "(	
+implicit return:
+
+ 
+(.
+endpointstring:
+
+0 
+(D
+argsobject[]B$""
+ Puma.Prey.Common.Rest.RestClient

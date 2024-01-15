@@ -1,0 +1,160 @@
+
+4Puma.Prey.Common.Data.DataAccess.HuntIsValid(string)B
+8D:\Sources\dotNetLab\puma-prey\Common\Data\DataAccess.cs (&"0*∂
+0 (iæ
+ª
+( (N=
+%07System.Configuration.ConnectionStringSettingsCollection"?System.Configuration.ConfigurationManager.ConnectionStrings.get*/-"+
+)System.Configuration.ConfigurationManager·
+ﬁ
+( (j3
+%1-System.Configuration.ConnectionStringSettings":System.Collections.Generic.ICollection<T>.this[string].get*A?
+=
+%07System.Configuration.ConnectionStringSettingsCollection*
+PumaPreyConnectionStringò
+ï
+( ({
+%2string"BSystem.Configuration.ConnectionStringSettings.ConnectionString.get*75
+3
+%1-System.Configuration.ConnectionStringSettings\Z
+ (|)
+%3#System.Data.SqlClient.SqlConnection"#System.Data.SqlClient.SqlConnectionï
+í
+ ('
+
+%4void"9System.Data.SqlClient.SqlConnection.SqlConnection(string)*-+
+)
+%3#System.Data.SqlClient.SqlConnection*
+
+%2stringl
+j
+ (|)
+cn#System.Data.SqlClient.SqlConnection"__id*-+
+)
+%3#System.Data.SqlClient.SqlConnection*
+1*
+1#	 #(	*
+2*{
+2 (3d
+b
+ (4
+
+%5bool"int.TryParse(string, out int)*	"
+int*
+
+idstring*
+
+
+cIDint*
+3
+4*!
+3 ("
+ (
+""*Ω	
+4 (,s
+q
+ (
+
+%6void"*System.Data.SqlClient.SqlConnection.Open()*-+
+)
+cn#System.Data.SqlClient.SqlConnection:
+8
+Z (h
+%7string"int.ToString()*
+
+
+cIDintw
+u
+0 (h
+%8string"__concat*5
+0 (W)'
+%select count(*) from Hunt where ID = *
+Z (h
+
+%7stringa
+_
+0 (|
+%9string"__concat*
+0 (h
+
+%8string*
+k (|
+ and Closed = 0XV
+	! (Å'
+%10 System.Data.SqlClient.SqlCommand" System.Data.SqlClient.SqlCommand‚
+ﬂ
+% (/
+%11void"XSystem.Data.SqlClient.SqlCommand.SqlCommand(string, System.Data.SqlClient.SqlConnection)*+)
+'
+%10 System.Data.SqlClient.SqlCommand*
+
+%9string*-+
+)
+cn#System.Data.SqlClient.SqlConnectioni
+g
+	 (Å'
+cmd System.Data.SqlClient.SqlCommand"__id*+)
+'
+%10 System.Data.SqlClient.SqlCommandz
+x
+  (3
+%12object"0System.Data.SqlClient.SqlCommand.ExecuteScalar()*+)
+'
+cmd System.Data.SqlClient.SqlCommandMK
+  (>
+%13string"object.ToString()*
+
+%12object2
+ToString()7
+5
+ (>
+resultstring"__id*
+
+%13stringk
+i
+ (-
+%14bool"int.TryParse(string, out int)*	"
+int*
+
+resultstring*
+
+countint*
+5
+6*
+51 (:*
+7
+6*!
+7 ("
+ (
+""*!
+6 ("
+ (
+""*Õ
+8! !(Bè
+å
+! !("
+%15System.Data.ConnectionState"-System.Data.SqlClient.SqlConnection.State.get*-+
+)
+cn#System.Data.SqlClient.SqlConnection#
+!
+!  !(B
+%16"__id*
+""*
+9
+10*ä
+9!F !(Pu
+s
+!F !(P
+%17void"+System.Data.SqlClient.SqlConnection.Close()*-+
+)
+cn#System.Data.SqlClient.SqlConnection*
+10*
+10#	 #(	*
+11
+11*/
+11#	 #(	"
+# #(	
+implicit return:
+' (0
+idstringB$""
+ Puma.Prey.Common.Data.DataAccess

@@ -1,0 +1,9 @@
+Ï
+)Puma.Prey.Fox.Models.RegisterBindingModelobjectZ
+RegisterBindingModel()@Puma.Prey.Fox.Models.RegisterBindingModel.RegisterBindingModel()@
+	Email.get3Puma.Prey.Fox.Models.RegisterBindingModel.Email.get@
+	Email.set3Puma.Prey.Fox.Models.RegisterBindingModel.Email.setF
+Password.get6Puma.Prey.Fox.Models.RegisterBindingModel.Password.getF
+Password.set6Puma.Prey.Fox.Models.RegisterBindingModel.Password.setT
+ConfirmPassword.get=Puma.Prey.Fox.Models.RegisterBindingModel.ConfirmPassword.getT
+ConfirmPassword.set=Puma.Prey.Fox.Models.RegisterBindingModel.ConfirmPassword.set

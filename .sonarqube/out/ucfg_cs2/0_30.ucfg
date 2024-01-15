@@ -1,0 +1,33 @@
+
+BPuma.Prey.Common.Cryptography.ExtensionMethods.ToHexString(byte[])P
+FD:\Sources\dotNetLab\puma-prey\Common\Cryptography\ExtensionMethods.cs (("0*Ã
+0 (!‰†
+  (8?
+%09System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary"9System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinaryÄ
+Á
+$ (1
+
+%1void"OSystem.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.SoapHexBinary(byte[])*CA
+?
+%09System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary*
+
+bytesbyte[]š
+—
+ (8@
+shb9System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary"__id*CA
+?
+%09System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary§
+¤
+ (!
+%2string"DSystem.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.ToString()*DB
+@
+shb9System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary"
+ ("
+
+%2string*.
+1	 (	"
+ (	
+implicit return:
+) (:
+bytesbyte[]B2"0
+.Puma.Prey.Common.Cryptography.ExtensionMethods

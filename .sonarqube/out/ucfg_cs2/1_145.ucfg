@@ -1,0 +1,192 @@
+
+BPuma.Prey.Raccoon.Controllers.ManageController.LinkLoginCallback()R
+FD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\ManageController.csº( º(9"7*÷
+
+0
+¼ ½(!Å
+Â
+
+¼" ¼(74
+%0.Microsoft.Owin.Security.IAuthenticationManager"HPuma.Prey.Raccoon.Controllers.ManageController.AuthenticationManager.get*420
+.Puma.Prey.Raccoon.Controllers.ManageController$
+"
+
+¼R ¼(Y
+%1"__id*
+""
+}
+
+¼[ ¼(_*
+%2$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
+System.Web.Mvc.Controller«¨
+
+¼[ ¼(h)
+%3#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
+*
+%2$System.Security.Principal.IPrincipal2Identity.getÝ
+Ú
+
+¼[ ¼(t
+%4string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
+,Microsoft.AspNet.Identity.IdentityExtensions*-+
+)
+%3#System.Security.Principal.IIdentityä
+á
+
+¼" ¼(u*
+%5$System.Threading.Tasks.Task<TResult>"‘Microsoft.Owin.Security.AuthenticationManagerExtensions.GetExternalLoginInfoAsync(Microsoft.Owin.Security.IAuthenticationManager, string, string)*=;"9
+7Microsoft.Owin.Security.AuthenticationManagerExtensions*86
+4
+%0.Microsoft.Owin.Security.IAuthenticationManager*
+
+%1*
+
+%4string]
+[
+
+¼ ¼(u=
+	loginInfo0Microsoft.AspNet.Identity.Owin.ExternalLoginInfo"__id*
+""š
+—
+
+½ ½(!
+
+%6bool""object.operator ==(object, object)*
+"
+object*A?
+=
+	loginInfo0Microsoft.AspNet.Identity.Owin.ExternalLoginInfo*
+""*
+1
+2*ª
+1
+¿ ¿(]$
+"
+
+¿H ¿(]
+%7"__id*
+""¶
+³
+
+¿ ¿(`*
+%8$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, object)*
+System.Web.Mvc.Controller*
+ManageLogins*
+""":
+
+¿ ¿(a,
+*
+%8$System.Web.Mvc.RedirectToRouteResult*ñ
+2
+Á Â(#µ
+²
+
+Á Á(*.
+%9(Puma.Prey.Raccoon.ApplicationUserManager">Puma.Prey.Raccoon.Controllers.ManageController.UserManager.get*420
+.Puma.Prey.Raccoon.Controllers.ManageController€
+~
+
+Á9 Á(=+
+%10$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
+System.Web.Mvc.Controller­ª
+
+Á9 Á(F*
+%11#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*/-
++
+%10$System.Security.Principal.IPrincipal2Identity.getß
+Ü
+
+Á9 Á(R
+%12string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
+,Microsoft.AspNet.Identity.IdentityExtensions*.,
+*
+%11#System.Security.Principal.IIdentity¾
+»
+
+ÁT Á(c.
+%13'Microsoft.AspNet.Identity.UserLoginInfo":Microsoft.AspNet.Identity.Owin.ExternalLoginInfo.Login.get*A?
+=
+	loginInfo0Microsoft.AspNet.Identity.Owin.ExternalLoginInfoæã
+
+Á Á(d+
+%14$System.Threading.Tasks.Task<TResult>"oMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.AddLoginAsync(TKey, Microsoft.AspNet.Identity.UserLoginInfo)*20
+.
+%9(Puma.Prey.Raccoon.ApplicationUserManager*
+
+%12string*20
+.
+%13'Microsoft.AspNet.Identity.UserLoginInfo2<AddLoginAsync(TKey, Microsoft.AspNet.Identity.UserLoginInfo)R
+P
+
+Á Á(d2
+result(Microsoft.AspNet.Identity.IdentityResult"__id*
+""Œ
+‰
+
+Â Â(#
+%15bool"6Microsoft.AspNet.Identity.IdentityResult.Succeeded.get*64
+2
+result(Microsoft.AspNet.Identity.IdentityResult*
+3
+4*›
+3
+Â& Â(E¥
+¢
+
+Â& Â(F+
+%19$System.Web.Mvc.RedirectToRouteResult"2System.Web.Mvc.Controller.RedirectToAction(string)*
+System.Web.Mvc.Controller*
+ManageLoginsr
+p
+
+Â& Â(F+
+%17$System.Web.Mvc.RedirectToRouteResult"__id*/-
++
+%19$System.Web.Mvc.RedirectToRouteResulti
+g
+
+Â& Â(F"
+%16System.Web.Mvc.ActionResult"__id*/-
++
+%17$System.Web.Mvc.RedirectToRouteResult*
+5*Ù
+4ÂI Â(&
+$
+Âz Â(
+%20"__id*
+""¸
+µ
+ÂI Â(’+
+%21$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, object)*
+System.Web.Mvc.Controller*
+ManageLogins*
+""s
+q
+ÂI Â(’+
+%18$System.Web.Mvc.RedirectToRouteResult"__id*/-
++
+%21$System.Web.Mvc.RedirectToRouteResultj
+h
+ÂI Â(’"
+%16System.Web.Mvc.ActionResult"__id*/-
++
+%18$System.Web.Mvc.RedirectToRouteResult*
+5*D
+5
+Ã	 Ã(	"3
+Â Â(“$
+"
+%16System.Web.Mvc.ActionResult*2
+6
+Ã	 Ã(	"!
+
+Ã Ã(	
+implicit return*9
+7
+º; º(;#
+!
+
+º( º(9
+%22"__entrypoint*
+0B20
+.Puma.Prey.Raccoon.Controllers.ManageController

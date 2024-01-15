@@ -1,0 +1,198 @@
+
+JPuma.Prey.Raccoon.Controllers.ManageController.RemoveLogin(string, string)P
+FD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\ManageController.csR( R(3"7*Ó
+0T V( ³
+°
+U U(*.
+%0(Puma.Prey.Raccoon.ApplicationUserManager">Puma.Prey.Raccoon.Controllers.ManageController.UserManager.get*420
+.Puma.Prey.Raccoon.Controllers.ManageController}
+{
+U< U(@*
+%1$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
+System.Web.Mvc.Controller©¦
+U< U(I)
+%2#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
+*
+%1$System.Security.Principal.IPrincipal2Identity.getÛ
+Ø
+U< U(U
+%3string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
+,Microsoft.AspNet.Identity.IdentityExtensions*-+
+)
+%2#System.Security.Principal.IIdentityec
+	UW U(„-
+%4'Microsoft.AspNet.Identity.UserLoginInfo"'Microsoft.AspNet.Identity.UserLoginInfoË
+È
+U[ U(h
+
+%5void"EMicrosoft.AspNet.Identity.UserLoginInfo.UserLoginInfo(string, string)*1/
+-
+%4'Microsoft.AspNet.Identity.UserLoginInfo*
+
+loginProviderstring*
+
+providerKeystringèå
+	U U(…*
+%6$System.Threading.Tasks.Task<TResult>"rMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.RemoveLoginAsync(TKey, Microsoft.AspNet.Identity.UserLoginInfo)*20
+.
+%0(Puma.Prey.Raccoon.ApplicationUserManager*
+
+%3string*1/
+-
+%4'Microsoft.AspNet.Identity.UserLoginInfo2?RemoveLoginAsync(TKey, Microsoft.AspNet.Identity.UserLoginInfo)Q
+O
+	U U(…2
+result(Microsoft.AspNet.Identity.IdentityResult"__id*
+""‰
+†
+V V( 
+
+%7bool"6Microsoft.AspNet.Identity.IdentityResult.Succeeded.get*64
+2
+result(Microsoft.AspNet.Identity.IdentityResult*
+1
+2*—	
+1X Y( ³
+°
+X! X(,.
+%8(Puma.Prey.Raccoon.ApplicationUserManager">Puma.Prey.Raccoon.Controllers.ManageController.UserManager.get*420
+.Puma.Prey.Raccoon.Controllers.ManageController}
+{
+X; X(?*
+%9$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
+System.Web.Mvc.Controllerª§
+X; X(H*
+%10#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
+*
+%9$System.Security.Principal.IPrincipal2Identity.getÝ
+Ú
+X; X(T
+%11string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
+,Microsoft.AspNet.Identity.IdentityExtensions*.,
+*
+%10#System.Security.Principal.IIdentityÞÛ
+X! X(U+
+%12$System.Threading.Tasks.Task<TResult>"FMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.FindByIdAsync(TKey)*20
+.
+%8(Puma.Prey.Raccoon.ApplicationUserManager*
+
+%11string2FindByIdAsync(TKey)N
+L
+X X(U0
+user(Puma.Prey.Raccoon.Models.ApplicationUser"__id*
+""Œ
+‰
+Y Y( 
+%13bool""object.operator !=(object, object)*
+"
+object*42
+0
+user(Puma.Prey.Raccoon.Models.ApplicationUser*
+""*
+3
+4*ü
+3[ [(e¸
+µ
+[ [('1
+%14*Puma.Prey.Raccoon.ApplicationSignInManager"@Puma.Prey.Raccoon.Controllers.ManageController.SignInManager.get*420
+.Puma.Prey.Raccoon.Controllers.ManageController¬©
+[ [(f"
+%15System.Threading.Tasks.Task"XMicrosoft.AspNet.Identity.Owin.SignInManager<TUser, TKey>.SignInAsync(TUser, bool, bool)*53
+1
+%14*Puma.Prey.Raccoon.ApplicationSignInManager*42
+0
+user(Puma.Prey.Raccoon.Models.ApplicationUser*
+""*
+""2SignInAsync(TUser, bool, bool)*
+4*u
+4] ](<#
+!
+] ](<
+%16"__id*
+""<
+:
+] ](<
+messageSystem.Nullable<T>"__id*	
+
+%16*
+5*u
+2a a(/#
+!
+a a(/
+%17"__id*
+""<
+:
+a a(/
+messageSystem.Nullable<T>"__id*	
+
+%17*
+5*€
+5c c(Kµ
+²
+c c(N+
+%18$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, object)*
+System.Web.Mvc.Controller*
+ManageLogins*
+"""9
+c c(O-
++
+%18$System.Web.Mvc.RedirectToRouteResult*.
+6d	 d(	"
+d d(	
+implicit return*©
+7R] R(]Y
+W
+R( R(3
+%19"__entrypoint*
+
+loginProviderstring*
+
+providerKeystringx
+v
+P	 P(
+%20"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+loginProviderstring™
+–
+Q	 Q(!
+%21"
+__annotate*ZXV
+TSystem.Web.Mvc.ValidateAntiForgeryTokenAttribute.ValidateAntiForgeryTokenAttribute()*
+
+loginProviderstringI
+G
+R4 R(H
+loginProviderstring"__annotation*	
+
+%20*	
+
+%21v
+t
+P	 P(
+%22"
+__annotate*:86
+4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
+
+providerKeystring—
+”
+Q	 Q(!
+%23"
+__annotate*ZXV
+TSystem.Web.Mvc.ValidateAntiForgeryTokenAttribute.ValidateAntiForgeryTokenAttribute()*
+
+providerKeystringG
+E
+RJ R(\
+providerKeystring"__annotation*	
+
+%22*	
+
+%23*
+0:#
+R4 R(H
+loginProviderstring:!
+RJ R(\
+providerKeystringB20
+.Puma.Prey.Raccoon.Controllers.ManageController

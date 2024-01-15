@@ -1,0 +1,26 @@
+
+­Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleObjects(System.Web.Http.HttpConfiguration, System.Collections.Generic.IDictionary<System.Type, object>)^
+TD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageConfigurationExtensions.cs& &(+"0*î
+0( ((Mº
+·
+( ((/:
+%04Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator"zPuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.GetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration)*B@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions*/-
++
+config!System.Web.Http.HttpConfigurationœ
+™
+( ((M:
+%14System.Collections.Generic.IDictionary<TKey, TValue>"FPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.SampleObjects.set*><
+:
+%04Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*IG
+E
+sampleObjects4System.Collections.Generic.IDictionary<TKey, TValue>*
+1*.
+1)	 )(	"
+) )(	
+implicit return:7
+&, &(I+
+config!System.Web.Http.HttpConfiguration:Q
+&K &(rE
+sampleObjects4System.Collections.Generic.IDictionary<TKey, TValue>B@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions

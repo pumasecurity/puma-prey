@@ -1,0 +1,330 @@
+
+!raccoon/views/manage/managelogins"0*†	
+0 8(#´
+±
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml (2
+%0"__mapSet*
+
+ViewBagDataAllobject*	
+Title*!
+Manage your external logins™
+–
+O
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml (
+%1dynamic"__mapGet*
+
+ViewBagDataHtmlobject*	
+Title
+}
+O
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml (
+
+%2void"!razor_sink*
+
+%1dynamic¡
+ž
+O
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml	 	(2
+%3dynamic"__mapGet*
+
+ViewBagDataHtmlobject*
+StatusMessage
+}
+O
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml	 	(2
+
+%4void"!razor_sink*
+
+%3dynamicÏÌ
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml (b 
+%5System.Web.HttpContextBase"&System.Web.Mvc.WebViewPage.Context.get* 
+System.Web.Mvc.WebViewPage2Context.get£
+ 
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml (b;
+loginProviders)System.Collections.Generic.IEnumerable<T>"__id*
+""*
+1
+2*
+1= C(*
+3*ë
+2I I()€
+ý
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml (*)
+%6#System.Collections.Generic.IList<T>"@Puma.Prey.Raccoon.Models.ManageLoginsViewModel.CurrentLogins.get*;9
+7
+Model.Puma.Prey.Raccoon.Models.ManageLoginsViewModelÐÍ
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml (*	
+%7int"3System.Collections.Generic.ICollection<T>.Count.get*-+
+)
+%6#System.Collections.Generic.IList<T>2	Count.get*
+4
+5*Õ
+4O R(@€
+ý
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml (A)
+%8#System.Collections.Generic.IList<T>"@Puma.Prey.Raccoon.Models.ManageLoginsViewModel.CurrentLogins.get*;9
+7
+Model.Puma.Prey.Raccoon.Models.ManageLoginsViewModel÷
+ô
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml (A-
+%9'Microsoft.AspNet.Identity.UserLoginInfo"7System.Collections.Generic.ICollection<T>.this[int].get*-+
+)
+%8#System.Collections.Generic.IList<T>*
+""Ã
+À
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml (A2
+account'Microsoft.AspNet.Identity.UserLoginInfo"__id*1/
+-
+%9'Microsoft.AspNet.Identity.UserLoginInfo*
+6*
+6
+ˆ	 ˆ(	*
+7
+8*š
+7X c(=Ø
+Õ
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml (;
+%10string"9Microsoft.AspNet.Identity.UserLoginInfo.LoginProvider.get*64
+2
+account'Microsoft.AspNet.Identity.UserLoginInfo¦
+£
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml    (>
+%11dynamic"__mapGet*
+
+ViewBagDataAllobject*
+ShowRemoveButton*
+9
+10*¼
+9e+ e(Q×
+Ô
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml"$ "(S(
+%12!System.Web.Mvc.HtmlHelper<TModel>"+System.Web.Mvc.WebViewPage<TModel>.Html.get*(&$
+"System.Web.Mvc.WebViewPage<TModel>Ì
+É
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml"$ "(S"
+%13System.Web.Mvc.Html.MvcForm"WSystem.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper, string, string)*(&"$
+"System.Web.Mvc.Html.FormExtensions*,*
+(
+%12!System.Web.Mvc.HtmlHelper<TModel>*
+RemoveLogin*
+
+Manage*
+11*‹
+11	n# “(T×
+Ô
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml$( $(@(
+%14!System.Web.Mvc.HtmlHelper<TModel>"+System.Web.Mvc.WebViewPage<TModel>.Html.get*(&$
+"System.Web.Mvc.WebViewPage<TModel>×
+Ô
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml$( $(@#
+%15System.Web.Mvc.MvcHtmlString",System.Web.Mvc.HtmlHelper.AntiForgeryToken()*,*
+(
+%14!System.Web.Mvc.HtmlHelper<TModel>™
+–
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml$( $(@
+%16void"!razor_sink*'%
+#
+%15System.Web.Mvc.MvcHtmlString×
+Ô
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml&, &(`(
+%17!System.Web.Mvc.HtmlHelper<TModel>"+System.Web.Mvc.WebViewPage<TModel>.Html.get*(&$
+"System.Web.Mvc.WebViewPage<TModel>Ø
+Õ
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml&, &(`
+%18string"9Microsoft.AspNet.Identity.UserLoginInfo.LoginProvider.get*64
+2
+account'Microsoft.AspNet.Identity.UserLoginInfoÓ
+Ð
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml&, &(`#
+%19System.Web.Mvc.MvcHtmlString"USystem.Web.Mvc.Html.InputExtensions.Hidden(System.Web.Mvc.HtmlHelper, string, object)*)'"%
+#System.Web.Mvc.Html.InputExtensions*,*
+(
+%17!System.Web.Mvc.HtmlHelper<TModel>*
+loginProvider*
+
+%18string™
+–
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml&, &(`
+%20void"!razor_sink*'%
+#
+%19System.Web.Mvc.MvcHtmlString×
+Ô
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml', '(\(
+%21!System.Web.Mvc.HtmlHelper<TModel>"+System.Web.Mvc.WebViewPage<TModel>.Html.get*(&$
+"System.Web.Mvc.WebViewPage<TModel>Ö
+Ó
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml', '(\
+%22string"7Microsoft.AspNet.Identity.UserLoginInfo.ProviderKey.get*64
+2
+account'Microsoft.AspNet.Identity.UserLoginInfoÑ
+Î
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml', '(\#
+%23System.Web.Mvc.MvcHtmlString"USystem.Web.Mvc.Html.InputExtensions.Hidden(System.Web.Mvc.HtmlHelper, string, object)*)'"%
+#System.Web.Mvc.Html.InputExtensions*,*
+(
+%21!System.Web.Mvc.HtmlHelper<TModel>*
+providerKey*
+
+%22string™
+–
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml', '(\
+%24void"!razor_sink*'%
+#
+%23System.Web.Mvc.MvcHtmlStringÙ
+Ö
+R
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml(, ((­
+%25string"9Microsoft.AspNet.Identity.UserLoginInfo.LoginProvider.get*64
+2
+account'Microsoft.AspNet.Identity.UserLoginInfo*
+12*
+10
+ž Ÿ(&*
+12*
+12
+§ §(a*
+6*
+8
+¯ ¯(O*
+5*ï
+5
+³ ³('ÿ
+ü
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml6 6((*
+%26#System.Collections.Generic.IList<T>">Puma.Prey.Raccoon.Models.ManageLoginsViewModel.OtherLogins.get*;9
+7
+Model.Puma.Prey.Raccoon.Models.ManageLoginsViewModelÒÏ
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml6 6((
+
+%27int"3System.Collections.Generic.ICollection<T>.Count.get*.,
+*
+%26#System.Collections.Generic.IList<T>2	Count.get*
+13
+3*½
+13
+µ µ(7×
+Ô
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml8 8(9(
+%28!System.Web.Mvc.HtmlHelper<TModel>"+System.Web.Mvc.WebViewPage<TModel>.Html.get*(&$
+"System.Web.Mvc.WebViewPage<TModel>Ê
+Ç
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml8 8(9"
+%29System.Web.Mvc.Html.MvcForm"WSystem.Web.Mvc.Html.FormExtensions.BeginForm(System.Web.Mvc.HtmlHelper, string, string)*(&"$
+"System.Web.Mvc.Html.FormExtensions*,*
+(
+%28!System.Web.Mvc.HtmlHelper<TModel>*
+	LinkLogin*
+
+Manage*
+14*Ã
+
+14
+¾ Æ(N×
+Ô
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml: :(((
+%30!System.Web.Mvc.HtmlHelper<TModel>"+System.Web.Mvc.WebViewPage<TModel>.Html.get*(&$
+"System.Web.Mvc.WebViewPage<TModel>×
+Ô
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml: :((#
+%31System.Web.Mvc.MvcHtmlString",System.Web.Mvc.HtmlHelper.AntiForgeryToken()*,*
+(
+%30!System.Web.Mvc.HtmlHelper<TModel>™
+–
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml: :((
+%32void"!razor_sink*'%
+#
+%31System.Web.Mvc.MvcHtmlStringÿ
+ü
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml= =(O*
+%33#System.Collections.Generic.IList<T>">Puma.Prey.Raccoon.Models.ManageLoginsViewModel.OtherLogins.get*;9
+7
+Model.Puma.Prey.Raccoon.Models.ManageLoginsViewModelƒ
+€
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml= =(O8
+%341Microsoft.Owin.Security.AuthenticationDescription"7System.Collections.Generic.ICollection<T>.this[int].get*.,
+*
+%33#System.Collections.Generic.IList<T>*
+""Ò
+Ï
+Q
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml= =(O6
+p1Microsoft.Owin.Security.AuthenticationDescription"__id*<:
+8
+%341Microsoft.Owin.Security.AuthenticationDescription*
+15*
+15
+ˆ	 ˆ(	*
+16
+17*Ç
+16
+Ì ö((ì
+é
+R
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml? ?(Ú
+%35string"HMicrosoft.Owin.Security.AuthenticationDescription.AuthenticationType.get*:8
+6
+p1Microsoft.Owin.Security.AuthenticationDescriptionì
+é
+R
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml? ?(Ú
+%36string"HMicrosoft.Owin.Security.AuthenticationDescription.AuthenticationType.get*:8
+6
+p1Microsoft.Owin.Security.AuthenticationDescriptioná
+Þ
+R
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml? ?(Ú
+%37string"=Microsoft.Owin.Security.AuthenticationDescription.Caption.get*:8
+6
+p1Microsoft.Owin.Security.AuthenticationDescriptionì
+é
+R
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Views\Manage\ManageLogins.cshtml? ?(Ú
+%38string"HMicrosoft.Owin.Security.AuthenticationDescription.AuthenticationType.get*:8
+6
+p1Microsoft.Owin.Security.AuthenticationDescription*
+15*
+17
+þ þ(M*
+3*&
+3
+ˆ	 ˆ(	"
+implicit return:97
+Model.Puma.Prey.Raccoon.Models.ManageLoginsViewModel:
+ViewBagDataAllobject:
+ViewBagDataHtmlobject:
+TempDataAllobject:
+TempDataHtmlobject:
+HttpContextItemsAllobject: 
+HttpContextItemsHtmlobjectB 

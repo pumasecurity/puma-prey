@@ -1,0 +1,8 @@
+ù
+(Puma.Prey.Fox.Controllers.HuntControllerSystem.Web.Http.ApiControllerobject7
+Get().Puma.Prey.Fox.Controllers.HuntController.Get()=
+Get(int)1Puma.Prey.Fox.Controllers.HuntController.Get(int)E
+Post(string)5Puma.Prey.Fox.Controllers.HuntController.Post(string)M
+Put(int, string)9Puma.Prey.Fox.Controllers.HuntController.Put(int, string)I
+Delete(string)7Puma.Prey.Fox.Controllers.HuntController.Delete(string)M
+HuntController()9Puma.Prey.Fox.Controllers.HuntController.HuntController()

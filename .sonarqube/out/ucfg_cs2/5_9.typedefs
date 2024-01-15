@@ -1,0 +1,10 @@
+Ë
+Skunk.ViewSwitcherSystem.Web.UI.UserControlSystem.Web.UI.TemplateControlSystem.Web.UI.Controlobject]
+#Page_Load(object, System.EventArgs)6Skunk.ViewSwitcher.Page_Load(object, System.EventArgs)3
+ViewSwitcher()!Skunk.ViewSwitcher.ViewSwitcher()5
+CurrentView.get"Skunk.ViewSwitcher.CurrentView.get5
+CurrentView.set"Skunk.ViewSwitcher.CurrentView.set9
+AlternateView.get$Skunk.ViewSwitcher.AlternateView.get9
+AlternateView.set$Skunk.ViewSwitcher.AlternateView.set1
+SwitchUrl.get Skunk.ViewSwitcher.SwitchUrl.get1
+SwitchUrl.set Skunk.ViewSwitcher.SwitchUrl.set

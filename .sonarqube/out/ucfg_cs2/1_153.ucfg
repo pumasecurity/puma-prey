@@ -1,0 +1,80 @@
+
+=Puma.Prey.Raccoon.Controllers.HuntController.GenerateReport()N
+DD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\HuntController.csV V(*"2*æ
+0Y \(f}
+{
+Y# Y('*
+%0$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
+System.Web.Mvc.Controller©¦
+Y# Y(0)
+%1#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
+*
+%0$System.Security.Principal.IPrincipal2Identity.getÛ
+Ø
+Y# Y(<
+%2string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
+,Microsoft.AspNet.Identity.IdentityExtensions*-+
+)
+%1#System.Security.Principal.IIdentity,*
+Y Y(=
+%3System.Guid"System.Guid[
+Y
+Y Y("
+
+%4void"System.Guid.Guid(string)*
+
+%3System.Guid*
+
+%2string@
+>
+Y Y(=
+userIdSystem.Guid"__id*
+
+%3System.Guid¢
+Ÿ
+Z Z(@
+%5Puma.Prey.Common.Report":Puma.Prey.Common.Report.GetReportFromProvider(System.Guid)*"
+Puma.Prey.Common.Report*
+
+userIdSystem.GuidX
+V
+Z Z(@!
+reportPuma.Prey.Common.Report"__id*!
+
+%5Puma.Prey.Common.Reportc
+a
+\? \(J
+%6string" Puma.Prey.Common.Report.Name.get*%#
+!
+reportPuma.Prey.Common.Reportc
+a
+\& \(J
+%7string"__concat*!
+\& \(<
+C:\share\reports\*
+\? \(J
+
+%6stringPN
+\ \(g#
+%8System.Web.Mvc.FilePathResult"System.Web.Mvc.FilePathResult²
+¯
+\ \(%
+
+%9void"<System.Web.Mvc.FilePathResult.FilePathResult(string, string)*'%
+#
+%8System.Web.Mvc.FilePathResult*
+
+%7string*
+application/octet-stream"1
+\ \(h%
+#
+%8System.Web.Mvc.FilePathResult*.
+1]	 ](	"
+] ](	
+implicit return*5
+2V, V(,!
+
+V V(*
+%10"__entrypoint*
+0B0.
+,Puma.Prey.Raccoon.Controllers.HuntController

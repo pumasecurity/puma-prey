@@ -1,0 +1,242 @@
+
+HPuma.Prey.Raccoon.Controllers.ManageController.VerifyPhoneNumber(string)R
+FD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\ManageController.cs¥( ¥(9"5*¹	
+0
+§ ©(&µ
+²
+
+§ §((.
+%0(Puma.Prey.Raccoon.ApplicationUserManager">Puma.Prey.Raccoon.Controllers.ManageController.UserManager.get*420
+.Puma.Prey.Raccoon.Controllers.ManageController
+}
+
+§M §(Q*
+%1$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
+System.Web.Mvc.Controller«¨
+
+§M §(Z)
+%2#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
+*
+%1$System.Security.Principal.IPrincipal2Identity.getÝ
+Ú
+
+§M §(f
+%3string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
+,Microsoft.AspNet.Identity.IdentityExtensions*-+
+)
+%2#System.Security.Principal.IIdentityµ²
+
+§ §(t*
+%4$System.Threading.Tasks.Task<TResult>"dMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.GenerateChangePhoneNumberTokenAsync(TKey, string)*20
+.
+%0(Puma.Prey.Raccoon.ApplicationUserManager*
+
+%3string*
+
+phoneNumberstring21GenerateChangePhoneNumberTokenAsync(TKey, string).
+,
+
+§ §(t
+codestring"__id*
+""q
+o
+
+© ©(&
+
+%5bool""string.operator ==(string, string)*
+"
+string*
+
+phoneNumberstring*
+""*
+1
+2*
+1
+©) ©(5”
+‘
+
+©) ©(6
+
+%9void"raccoon/views/shared/error*	
+
+%10*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject“
+
+
+©) ©(6
+%11void"raccoon/views/_viewstart*	
+
+%12*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobject—
+”
+
+©) ©(6
+%13void"raccoon/views/shared/_layout*	
+
+%14*
+	{unknown}*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobjectF
+D
+
+©) ©(6
+%7System.Web.Mvc.ViewResult"__id*
+
+%13void\
+Z
+
+©) ©(6!
+%6System.Web.Mvc.ActionResult"__id*#!
+
+%7System.Web.Mvc.ViewResult*
+3*Ž
+2
+©9 ©(x}
+
+©> ©(z:
+%153Puma.Prey.Raccoon.Models.VerifyPhoneNumberViewModel"3Puma.Prey.Raccoon.Models.VerifyPhoneNumberViewModel®
+«
+
+©B ©(\
+%16void"PPuma.Prey.Raccoon.Models.VerifyPhoneNumberViewModel.VerifyPhoneNumberViewModel()*><
+:
+%153Puma.Prey.Raccoon.Models.VerifyPhoneNumberViewModel¾
+»
+
+©_ ©(x
+%17string"CPuma.Prey.Raccoon.Models.VerifyPhoneNumberViewModel.PhoneNumber.set*><
+:
+%153Puma.Prey.Raccoon.Models.VerifyPhoneNumberViewModel*
+
+phoneNumberstringÐ
+Í
+
+©9 ©({
+%18void"&raccoon/views/manage/verifyphonenumber*	
+
+%19*><
+:
+%153Puma.Prey.Raccoon.Models.VerifyPhoneNumberViewModel*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobjectÂ
+¿
+
+©9 ©({
+%20void"raccoon/views/_viewstart*	
+
+%21*><
+:
+%153Puma.Prey.Raccoon.Models.VerifyPhoneNumberViewModel*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobjectÆ
+Ã
+
+©9 ©({
+%22void"raccoon/views/shared/_layout*	
+
+%23*><
+:
+%153Puma.Prey.Raccoon.Models.VerifyPhoneNumberViewModel*
+
+%ViewBagDataAllobject*
+
+%ViewBagDataHtmlobject*
+
+%TempDataAllobject*
+
+%TempDataHtmlobject*" 
+
+%HttpContextItemsAllobject*#!
+
+%HttpContextItemsHtmlobjectF
+D
+
+©9 ©({
+%8System.Web.Mvc.ViewResult"__id*
+
+%22void\
+Z
+
+©9 ©({!
+%6System.Web.Mvc.ActionResult"__id*#!
+
+%8System.Web.Mvc.ViewResult*
+3*B
+3
+ª	 ª(	"1
+
+© ©(|#
+!
+%6System.Web.Mvc.ActionResult*2
+4
+ª	 ª(	"!
+
+ª ª(	
+implicit return*T
+5
+¥M ¥(M>
+<
+
+¥( ¥(9
+%24"__entrypoint*
+
+phoneNumberstring*
+0:#
+
+¥: ¥(L
+phoneNumberstringB20
+.Puma.Prey.Raccoon.Controllers.ManageController

@@ -1,0 +1,18 @@
+
+5Puma.Prey.Fox.Startup.Configuration(Owin.IAppBuilder)7
+-D:\Sources\dotNetLab\puma-prey\Fox\Startup.cs (!"0*Ÿ
+0 (Š
+‡
+ (
+
+%0void"5Puma.Prey.Fox.Startup.ConfigureAuth(Owin.IAppBuilder)*
+Puma.Prey.Fox.Startup*
+
+appOwin.IAppBuilder*
+1*.
+1	 (	"
+ (	
+implicit return:#
+" (1
+appOwin.IAppBuilderB
+Puma.Prey.Fox.Startup

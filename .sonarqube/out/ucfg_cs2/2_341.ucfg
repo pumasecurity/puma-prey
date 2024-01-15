@@ -1,0 +1,76 @@
+
+SPuma.Prey.Fox.Controllers.AccountController.RandomOAuthStateGenerator.Generate(int)O
+CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.csÝ! Ý()"0*I
+0
+ß á(50
+.
+
+ß ß()
+bitsPerByteint"__id*2*
+1
+2*§
+1
+ã ã(qHF
+
+ã ã(r
+%0System.ArgumentException"System.ArgumentExceptionÆ
+Ã
+
+ã ã(/
+
+%1void":System.ArgumentException.ArgumentException(string, string)*" 
+
+%0System.ArgumentException*31/
+-strengthInBits must be evenly divisible by 8.*
+strengthInBits*
+3*ú
+2
+æ ê(<6
+4
+
+æ æ(B
+strengthInBytesint"__id*
+""$"
+
+è è(7
+%2byte[]"byte[]6
+4
+
+è è(7
+databyte[]"__id*
+
+%2byte[]à
+Ý
+
+é é(8
+%32System.Security.Cryptography.RandomNumberGenerator"__id*Ž‹*ˆG
+EPuma.Prey.Fox.Controllers.AccountController.RandomOAuthStateGenerator"=
+_random2System.Security.Cryptography.RandomNumberGeneratorÄÁ
+
+é é(&
+
+%4void"CSystem.Security.Cryptography.RandomNumberGenerator.GetBytes(byte[])*<:
+8
+%32System.Security.Cryptography.RandomNumberGenerator*
+
+databyte[]2GetBytes(byte[])Š
+‡
+
+ê ê(=
+%5string"3System.Web.HttpServerUtility.UrlTokenEncode(byte[])*" "
+System.Web.HttpServerUtility*
+
+databyte[]"
+
+ê ê(>
+
+%5string*2
+3
+ë ë("!
+
+ë ë(
+implicit return:#
+
+Ý* Ý(<
+strengthInBitsintBI"G
+EPuma.Prey.Fox.Controllers.AccountController.RandomOAuthStateGenerator

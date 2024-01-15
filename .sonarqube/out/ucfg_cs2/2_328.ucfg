@@ -1,0 +1,62 @@
+
+VPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.UnwrapException(System.Exception)i
+]D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cså" å(1"0*Ú
+0
+ç è(*O
+M
+
+ç4 ç(S
+%0System.Exception"__id*!
+
+	exceptionSystem.Exceptiona
+_
+
+ç ç(S/
+aggregateExceptionSystem.AggregateException"__id*
+
+%0System.ExceptionŒ
+‰
+
+è è(*
+
+%1bool""object.operator !=(object, object)*
+"
+object*31
+/
+aggregateExceptionSystem.AggregateException*
+""*
+1
+2*¶
+1
+ê ê(BŠ
+‡
+
+ê ê(3
+%2System.AggregateException"#System.AggregateException.Flatten()*31
+/
+aggregateExceptionSystem.AggregateExceptionp
+n
+
+ê ê(B
+%3System.Exception"#System.Exception.InnerException.get*#!
+
+%2System.AggregateException"&
+
+ê ê(C
+
+%3System.Exception*>
+2
+ì ì("-
+
+ì ì(
+
+	exceptionSystem.Exception*2
+3
+í	 í(	"!
+
+í í(	
+implicit return:+
+
+å2 å(E
+	exceptionSystem.ExceptionB8"6
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator

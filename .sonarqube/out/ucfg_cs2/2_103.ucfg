@@ -1,0 +1,133 @@
+
+{Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetDocumentation(System.Web.Http.Controllers.HttpParameterDescriptor)W
+MD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\XmlDocumentationProvider.cs2 2(."0*¥
+04- 5(4Ÿ
+œ
+	4L 4(ƒ9
+%03System.Web.Http.Controllers.HttpParameterDescriptor"__id*NL
+J
+parameterDescriptor3System.Web.Http.Controllers.HttpParameterDescriptor±
+®
+	4- 4(ƒ\
+reflectedParameterDescriptor<System.Web.Http.Controllers.ReflectedHttpParameterDescriptor"__id*=;
+9
+%03System.Web.Http.Controllers.HttpParameterDescriptor·
+´
+5 5(4
+
+%1bool""object.operator !=(object, object)*
+"
+object*`^
+\
+reflectedParameterDescriptor<System.Web.Http.Controllers.ReflectedHttpParameterDescriptor*
+""*
+1
+2*©
+17 8(&ñ
+î
+7: 7(g6
+%20System.Web.Http.Controllers.HttpActionDescriptor"HSystem.Web.Http.Controllers.HttpParameterDescriptor.ActionDescriptor.get*`^
+\
+reflectedParameterDescriptor<System.Web.Http.Controllers.ReflectedHttpParameterDescriptor¤
+¡
+7, 7(h%
+%3System.Xml.XPath.XPathNavigator"uPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetMethodNode(System.Web.Http.Controllers.HttpActionDescriptor)*;97
+5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider*:8
+6
+%20System.Web.Http.Controllers.HttpActionDescriptorl
+j
+7 7(h-
+
+methodNodeSystem.Xml.XPath.XPathNavigator"__id*)'
+%
+%3System.Xml.XPath.XPathNavigatorˆ
+…
+8 8(&
+
+%4bool""object.operator !=(object, object)*
+"
+object*1/
+-
+
+methodNodeSystem.Xml.XPath.XPathNavigator*
+""*
+3
+2*ÿ	
+3: <(-æ
+ã
+:+ :(U%
+%5System.Reflection.ParameterInfo"NSystem.Web.Http.Controllers.ReflectedHttpParameterDescriptor.ParameterInfo.get*`^
+\
+reflectedParameterDescriptor<System.Web.Http.Controllers.ReflectedHttpParameterDescriptoryw
+:+ :(Z
+%6string"(System.Reflection.ParameterInfo.Name.get*)'
+%
+%5System.Reflection.ParameterInfo2Name.get=
+;
+: :(Z
+parameterNamestring"__id*
+
+%6string”
+‘
+;] ;(y&
+%7 System.Globalization.CultureInfo"5System.Globalization.CultureInfo.InvariantCulture.get*&$""
+ System.Globalization.CultureInfo#
+!
+	;{ ;(Ž
+%8"__id*
+""´
+±
+	;O ;(ž
+%9string"5string.Format(System.IFormatProvider, string, object)*
+"
+string**(
+&
+%7 System.Globalization.CultureInfo*
+
+%8*
+
+parameterNamestringÏÌ
+	;3 ;(Ÿ&
+%10System.Xml.XPath.XPathNavigator"8System.Xml.XPath.XPathNavigator.SelectSingleNode(string)*1/
+-
+
+methodNodeSystem.Xml.XPath.XPathNavigator*
+
+%9string2SelectSingleNode(string)q
+o
+	;# ;(Ÿ0
+parameterNodeSystem.Xml.XPath.XPathNavigator"__id**(
+&
+%10System.Xml.XPath.XPathNavigatorŒ
+‰
+< <(-
+%11bool""object.operator !=(object, object)*
+"
+object*42
+0
+parameterNodeSystem.Xml.XPath.XPathNavigator*
+""*
+4
+2*ï
+4> >(9ƒ€
+> >(2
+%12string"$System.Xml.XPath.XPathItem.Value.get*42
+0
+parameterNodeSystem.Xml.XPath.XPathNavigator2	Value.get=
+;
+> >(9
+%13string"string.Trim()*
+
+%12string"
+> >(:
+
+%13string*!
+2C C("
+C C(
+""*.
+5D	 D(	"
+D D(	
+implicit return:V
+2/ 2(ZJ
+parameterDescriptor3System.Web.Http.Controllers.HttpParameterDescriptorB97
+5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider

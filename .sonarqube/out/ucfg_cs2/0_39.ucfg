@@ -1,0 +1,120 @@
+
+NPuma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache.this[string].get_
+UD:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\ProtectedKeyCache.cs ("0*v
+0 (4_
+]
+ (5
+
+%0bool"string.IsNullOrEmpty(string)*
+"
+string*
+
+keyFileNamestring*
+1
+2*·
+1 (=FD
+ (>
+%1System.ArgumentException"System.ArgumentExceptionÑ
+Å
+ (/
+
+%2void"2System.ArgumentException.ArgumentException(string)*" 
+
+%1System.ArgumentException*
+keyFileName*
+3*ü
+21 (#’
+“
+$ (.9
+%33System.Collections.Generic.Dictionary<TKey, TValue>"__id*ÑÅ*?
+=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache"<
+cache3System.Collections.Generic.Dictionary<TKey, TValue>é
+ã
+ (.:
+obj3System.Collections.Generic.Dictionary<TKey, TValue>"__id*=;
+9
+%33System.Collections.Generic.Dictionary<TKey, TValue>°
+û
+ (/
+
+%4void"&System.Threading.Monitor.Enter(object)*"
+System.Threading.Monitor*><
+:
+obj3System.Collections.Generic.Dictionary<TKey, TValue>*
+4*†
+4 (@’
+“
+ ((9
+%53System.Collections.Generic.Dictionary<TKey, TValue>"__id*ÑÅ*?
+=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache"<
+cache3System.Collections.Generic.Dictionary<TKey, TValue>∞
+≠
+ (A
+
+%6bool";System.Collections.Generic.ICollection<T>.ContainsKey(TKey)*=;
+9
+%53System.Collections.Generic.Dictionary<TKey, TValue>*
+
+keyFileNamestring*
+5
+6*Ü
+5D (Z÷
+”
+D (N:
+%103System.Collections.Generic.Dictionary<TKey, TValue>"__id*ÑÅ*?
+=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache"<
+cache3System.Collections.Generic.Dictionary<TKey, TValue>„
+‡
+D ([?
+%118Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"8System.Collections.Generic.ICollection<T>.this[TKey].get*><
+:
+%103System.Collections.Generic.Dictionary<TKey, TValue>*
+
+keyFileNamestringò
+ï
+D ([>
+%88Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"__id*CA
+?
+%118Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyó
+î
+D ([>
+%78Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"__id*B@
+>
+%88Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*
+7*î
+6^ (b"
+ 
+^ (b
+%9"__id*
+""\
+Z
+^ (b>
+%78Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"__id*
+
+%9*
+7*∞
+7 (cõ
+ò
+ (cB
+result8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"__id*B@
+>
+%78Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*
+8*π
+8# #($°
+û
+# #(%
+%12void"%System.Threading.Monitor.Exit(object)*"
+System.Threading.Monitor*><
+:
+obj3System.Collections.Generic.Dictionary<TKey, TValue>*
+9
+3*_
+9% %("P
+% %(D
+B
+result8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*.
+3& &("
+& &(
+implicit return:
+keyFileNamestringBA?
+=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache

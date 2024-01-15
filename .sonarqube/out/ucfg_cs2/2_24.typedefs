@@ -1,0 +1,23 @@
+“
++Puma.Prey.Fox.Controllers.AccountControllerSystem.Web.Http.ApiControllerobjectV
+AccountController()?Puma.Prey.Fox.Controllers.AccountController.AccountController()“
+êAccountController(Puma.Prey.Fox.ApplicationUserManager, Microsoft.Owin.Security.ISecureDataFormat<Microsoft.Owin.Security.AuthenticationTicket>)ºPuma.Prey.Fox.Controllers.AccountController.AccountController(Puma.Prey.Fox.ApplicationUserManager, Microsoft.Owin.Security.ISecureDataFormat<Microsoft.Owin.Security.AuthenticationTicket>)J
+GetUserInfo()9Puma.Prey.Fox.Controllers.AccountController.GetUserInfo()@
+Logout()4Puma.Prey.Fox.Controllers.AccountController.Logout()f
+GetManageInfo(string, bool)GPuma.Prey.Fox.Controllers.AccountController.GetManageInfo(string, bool)Æ
+?ChangePassword(Puma.Prey.Fox.Models.ChangePasswordBindingModel)kPuma.Prey.Fox.Controllers.AccountController.ChangePassword(Puma.Prey.Fox.Models.ChangePasswordBindingModel)¢
+9SetPassword(Puma.Prey.Fox.Models.SetPasswordBindingModel)ePuma.Prey.Fox.Controllers.AccountController.SetPassword(Puma.Prey.Fox.Models.SetPasswordBindingModel)∂
+CAddExternalLogin(Puma.Prey.Fox.Models.AddExternalLoginBindingModel)oPuma.Prey.Fox.Controllers.AccountController.AddExternalLogin(Puma.Prey.Fox.Models.AddExternalLoginBindingModel)¢
+9RemoveLogin(Puma.Prey.Fox.Models.RemoveLoginBindingModel)ePuma.Prey.Fox.Controllers.AccountController.RemoveLogin(Puma.Prey.Fox.Models.RemoveLoginBindingModel)p
+ GetExternalLogin(string, string)LPuma.Prey.Fox.Controllers.AccountController.GetExternalLogin(string, string)n
+GetExternalLogins(string, bool)KPuma.Prey.Fox.Controllers.AccountController.GetExternalLogins(string, bool)ñ
+3Register(Puma.Prey.Fox.Models.RegisterBindingModel)_Puma.Prey.Fox.Controllers.AccountController.Register(Puma.Prey.Fox.Models.RegisterBindingModel)∂
+CRegisterExternal(Puma.Prey.Fox.Models.RegisterExternalBindingModel)oPuma.Prey.Fox.Controllers.AccountController.RegisterExternal(Puma.Prey.Fox.Models.RegisterExternalBindingModel)J
+Dispose(bool)9Puma.Prey.Fox.Controllers.AccountController.Dispose(bool)†
+8GetErrorResult(Microsoft.AspNet.Identity.IdentityResult)dPuma.Prey.Fox.Controllers.AccountController.GetErrorResult(Microsoft.AspNet.Identity.IdentityResult)N
+UserManager.get;Puma.Prey.Fox.Controllers.AccountController.UserManager.getN
+UserManager.set;Puma.Prey.Fox.Controllers.AccountController.UserManager.setZ
+AccessTokenFormat.getAPuma.Prey.Fox.Controllers.AccountController.AccessTokenFormat.getZ
+AccessTokenFormat.setAPuma.Prey.Fox.Controllers.AccountController.AccessTokenFormat.setT
+Authentication.get>Puma.Prey.Fox.Controllers.AccountController.Authentication.getT
+Authentication.set>Puma.Prey.Fox.Controllers.AccountController.Authentication.set

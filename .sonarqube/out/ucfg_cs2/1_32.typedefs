@@ -1,0 +1,11 @@
+
+,Puma.Prey.Raccoon.Controllers.HuntControllerSystem.Web.Mvc.ControllerSystem.Web.Mvc.ControllerBaseobjectQ
+HuntController()=Puma.Prey.Raccoon.Controllers.HuntController.HuntController()°
+8HuntController(Puma.Prey.Raccoon.ApplicationUserManager)ePuma.Prey.Raccoon.Controllers.HuntController.HuntController(Puma.Prey.Raccoon.ApplicationUserManager)?
+Index()4Puma.Prey.Raccoon.Controllers.HuntController.Index()I
+Contest(int)9Puma.Prey.Raccoon.Controllers.HuntController.Contest(int)E
+
+Enter(int)7Puma.Prey.Raccoon.Controllers.HuntController.Enter(int)ç
+.Enter(int, Puma.Prey.Raccoon.Models.HuntModel)[Puma.Prey.Raccoon.Controllers.HuntController.Enter(int, Puma.Prey.Raccoon.Models.HuntModel)Q
+Download(string)=Puma.Prey.Raccoon.Controllers.HuntController.Download(string)Q
+GenerateReport()=Puma.Prey.Raccoon.Controllers.HuntController.GenerateReport()

@@ -1,0 +1,72 @@
+
+NPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetTypeNode(System.Type)Y
+MD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\XmlDocumentationProvider.cs‚ ‚(*"0*Ÿ	
+0
+„ †(GÃ
+À
+
+„( „(9
+%0string"NPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetTypeName(System.Type)*;9"7
+5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider*
+
+typeSystem.TypeD
+B
+
+„ „(9
+controllerTypeNamestring"__id*
+
+%0string–
+“
+
+…4 …(P&
+%1 System.Globalization.CultureInfo"5System.Globalization.CultureInfo.InvariantCulture.get*&$""
+ System.Globalization.CultureInfo$
+"
+
+…R …(`
+%2"__id*
+""º
+·
+
+…& …(u
+%3string"5string.Format(System.IFormatProvider, string, object)*
+"
+string**(
+&
+%1 System.Globalization.CultureInfo*
+
+%2* 
+
+controllerTypeNamestringB
+@
+
+… …(u
+selectExpressionstring"__id*
+
+%3string²
+¯
+
+† †(%%
+%4System.Xml.XPath.XPathNavigator"__id*tr*p7
+5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider"5
+_documentNavigatorSystem.Xml.XPath.XPathNavigatorÕÒ
+
+† †(H%
+%5System.Xml.XPath.XPathNavigator"8System.Xml.XPath.XPathNavigator.SelectSingleNode(string)*)'
+%
+%4System.Xml.XPath.XPathNavigator*
+
+selectExpressionstring2SelectSingleNode(string)"5
+
+† †(I'
+%
+%5System.Xml.XPath.XPathNavigator*2
+1
+‡	 ‡(	"!
+
+‡ ‡(	
+implicit return:!
+
+‚+ ‚(4
+typeSystem.TypeB97
+5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider

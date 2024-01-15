@@ -1,0 +1,55 @@
+
+7Puma.Prey.Fox.Areas.HelpPage.ImageSample.Equals(object)[
+QD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\ImageSample.cs (#"0*≤
+0 ( 3
+1
+  (2
+%0object"__id*
+
+objobjectW
+U
+ (21
+other(Puma.Prey.Fox.Areas.HelpPage.ImageSample"__id*
+
+%0objectå
+â
+ ( 
+
+%1bool""object.operator !=(object, object)*
+"
+object*53
+1
+other(Puma.Prey.Fox.Areas.HelpPage.ImageSample*
+""*
+1
+2*á
+1$ (4|
+z
+$ ('
+%2string"0Puma.Prey.Fox.Areas.HelpPage.ImageSample.Src.get*.,*
+(Puma.Prey.Fox.Areas.HelpPage.ImageSampleÑ
+Å
++ (4
+%3string"0Puma.Prey.Fox.Areas.HelpPage.ImageSample.Src.get*53
+1
+other(Puma.Prey.Fox.Areas.HelpPage.ImageSamplen
+l
+$ (4
+
+%4bool""string.operator ==(string, string)*
+"
+string*
+
+%2string*
+
+%3string*
+2*(
+2	 (	"
+ (5
+	{unknown}*.
+3	 (	"
+ (	
+implicit return:
+$ (.
+objobjectB,*
+(Puma.Prey.Fox.Areas.HelpPage.ImageSample

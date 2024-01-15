@@ -1,0 +1,33 @@
+
+€Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetResponseDocumentation(System.Web.Http.Controllers.HttpActionDescriptor)W
+MD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\XmlDocumentationProvider.csF F(."0*Õ
+0H I(4²
+¯
+H( H(G%
+%0System.Xml.XPath.XPathNavigator"uPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetMethodNode(System.Web.Http.Controllers.HttpActionDescriptor)*;97
+5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider*HF
+D
+actionDescriptor0System.Web.Http.Controllers.HttpActionDescriptorl
+j
+H H(G-
+
+methodNodeSystem.Xml.XPath.XPathNavigator"__id*)'
+%
+%0System.Xml.XPath.XPathNavigator†
+ƒ
+I I(5
+%1string"jPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetTagValue(System.Xml.XPath.XPathNavigator, string)*;9"7
+5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider*1/
+-
+
+methodNodeSystem.Xml.XPath.XPathNavigator*	
+returns"
+I I(6
+
+%1string*.
+1J	 J(	"
+J J(	
+implicit return:P
+F/ F(TD
+actionDescriptor0System.Web.Http.Controllers.HttpActionDescriptorB97
+5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider

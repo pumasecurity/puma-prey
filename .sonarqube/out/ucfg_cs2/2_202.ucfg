@@ -1,0 +1,57 @@
+
+;Puma.Prey.Fox.Controllers.AccountController.UserManager.getM
+CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.cs* *("0*¢
+0, ,(#ª
+§
+, ,(#*
+%3$Puma.Prey.Fox.ApplicationUserManager"__id*ig*e-
++Puma.Prey.Fox.Controllers.AccountController"4
+_userManager$Puma.Prey.Fox.ApplicationUserManagern
+l
+, ,(#*
+%1$Puma.Prey.Fox.ApplicationUserManager"__id*.,
+*
+%3$Puma.Prey.Fox.ApplicationUserManagern
+l
+, ,(#*
+%0$Puma.Prey.Fox.ApplicationUserManager"__id*.,
+*
+%1$Puma.Prey.Fox.ApplicationUserManager*
+1
+2*…
+1,' ,(h‡
+„
+,' ,(.(
+%4"System.Net.Http.HttpRequestMessage")System.Web.Http.ApiController.Request.get*#!
+System.Web.Http.ApiControllerû
+ø
+,' ,(?!
+%5Microsoft.Owin.IOwinContext"cSystem.Net.Http.OwinHttpRequestMessageExtensions.GetOwinContext(System.Net.Http.HttpRequestMessage)*64"2
+0System.Net.Http.OwinHttpRequestMessageExtensions*,*
+(
+%4"System.Net.Http.HttpRequestMessageˆ
+…
+,' ,(h*
+%6$Puma.Prey.Fox.ApplicationUserManager"jMicrosoft.AspNet.Identity.Owin.OwinContextExtensions.GetUserManager<TManager>(Microsoft.Owin.IOwinContext)*:8"6
+4Microsoft.AspNet.Identity.Owin.OwinContextExtensions*%#
+!
+%5Microsoft.Owin.IOwinContextn
+l
+,' ,(h*
+%2$Puma.Prey.Fox.ApplicationUserManager"__id*.,
+*
+%6$Puma.Prey.Fox.ApplicationUserManagern
+l
+,' ,(h*
+%0$Puma.Prey.Fox.ApplicationUserManager"__id*.,
+*
+%2$Puma.Prey.Fox.ApplicationUserManager*
+2*G
+2- -("8
+, ,(i,
+*
+%0$Puma.Prey.Fox.ApplicationUserManager*.
+3- -("
+- -(
+implicit returnB/-
++Puma.Prey.Fox.Controllers.AccountController

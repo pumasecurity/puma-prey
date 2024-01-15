@@ -1,0 +1,7 @@
+∞	
+0Puma.Prey.Fox.Providers.ApplicationOAuthProvider>Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProviderobjectu
+ ApplicationOAuthProvider(string)QPuma.Prey.Fox.Providers.ApplicationOAuthProvider.ApplicationOAuthProvider(string)Ç
+fGrantResourceOwnerCredentials(Microsoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContext)óPuma.Prey.Fox.Providers.ApplicationOAuthProvider.GrantResourceOwnerCredentials(Microsoft.Owin.Security.OAuth.OAuthGrantResourceOwnerCredentialsContext)¡
+FTokenEndpoint(Microsoft.Owin.Security.OAuth.OAuthTokenEndpointContext)wPuma.Prey.Fox.Providers.ApplicationOAuthProvider.TokenEndpoint(Microsoft.Owin.Security.OAuth.OAuthTokenEndpointContext)˛
+dValidateClientAuthentication(Microsoft.Owin.Security.OAuth.OAuthValidateClientAuthenticationContext)ïPuma.Prey.Fox.Providers.ApplicationOAuthProvider.ValidateClientAuthentication(Microsoft.Owin.Security.OAuth.OAuthValidateClientAuthenticationContext)Ú
+^ValidateClientRedirectUri(Microsoft.Owin.Security.OAuth.OAuthValidateClientRedirectUriContext)èPuma.Prey.Fox.Providers.ApplicationOAuthProvider.ValidateClientRedirectUri(Microsoft.Owin.Security.OAuth.OAuthValidateClientRedirectUriContext)

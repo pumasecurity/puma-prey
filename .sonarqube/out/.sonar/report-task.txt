@@ -1,0 +1,7 @@
+organization=minchansike
+projectKey=MinChanSike_puma-prey
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.44909
+dashboardUrl=https://sonarcloud.io/dashboard?id=MinChanSike_puma-prey
+ceTaskId=AYn4THp-PRityZJIFxuT
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYn4THp-PRityZJIFxuT

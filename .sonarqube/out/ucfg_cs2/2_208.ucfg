@@ -1,0 +1,150 @@
+
+zPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GetMemberName(System.Reflection.MemberInfo, bool)l
+`D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.csÕ Õ(+"0*©
+0
+œ" –($¸
+˘
+
+œ1 œ(c+
+%0%Newtonsoft.Json.JsonPropertyAttribute"_System.Reflection.CustomAttributeExtensions.GetCustomAttribute<T>(System.Reflection.MemberInfo)*1/"-
++System.Reflection.CustomAttributeExtensions**(
+&
+memberSystem.Reflection.MemberInfo|
+z
+
+œ" œ(c5
+jsonProperty%Newtonsoft.Json.JsonPropertyAttribute"__id*/-
++
+%0%Newtonsoft.Json.JsonPropertyAttributeí
+è
+
+– –($
+
+%1bool""object.operator !=(object, object)*
+"
+object*97
+5
+jsonProperty%Newtonsoft.Json.JsonPropertyAttribute*
+""*
+1
+2*Ñ
+1
+–( –(Wê
+ç
+
+–> –(W
+%2string"6Newtonsoft.Json.JsonPropertyAttribute.PropertyName.get*97
+5
+jsonProperty%Newtonsoft.Json.JsonPropertyAttributeX
+V
+
+–) –(X
+
+%3bool"string.IsNullOrEmpty(string)*
+"
+string*
+
+%2string*
+3
+2*¿
+3
+“ “(0ê
+ç
+
+“ “(0
+%4string"6Newtonsoft.Json.JsonPropertyAttribute.PropertyName.get*97
+5
+jsonProperty%Newtonsoft.Json.JsonPropertyAttribute"
+
+“ “(1
+
+%4string*
+2
+’ ’((*
+4
+5*”
+4
+◊$ ÿ(&á
+Ñ
+
+◊1 ◊(a6
+%50System.Runtime.Serialization.DataMemberAttribute"_System.Reflection.CustomAttributeExtensions.GetCustomAttribute<T>(System.Reflection.MemberInfo)*1/"-
++System.Reflection.CustomAttributeExtensions**(
+&
+memberSystem.Reflection.MemberInfoë
+é
+
+◊$ ◊(a>
+
+dataMember0System.Runtime.Serialization.DataMemberAttribute"__id*:8
+6
+%50System.Runtime.Serialization.DataMemberAttributeõ
+ò
+
+ÿ ÿ(&
+
+%6bool""object.operator !=(object, object)*
+"
+object*B@
+>
+
+dataMember0System.Runtime.Serialization.DataMemberAttribute*
+""*
+6
+5*ê
+6
+ÿ* ÿ(Oú
+ô
+
+ÿ@ ÿ(O
+%7string"9System.Runtime.Serialization.DataMemberAttribute.Name.get*B@
+>
+
+dataMember0System.Runtime.Serialization.DataMemberAttributeX
+V
+
+ÿ+ ÿ(P
+
+%8bool"string.IsNullOrEmpty(string)*
+"
+string*
+
+%7string*
+7
+5*Ã
+7
+⁄ ⁄(*ú
+ô
+
+⁄ ⁄(*
+%9string"9System.Runtime.Serialization.DataMemberAttribute.Name.get*B@
+>
+
+dataMember0System.Runtime.Serialization.DataMemberAttribute"
+
+⁄ ⁄(+
+
+%9string*™
+5
+ﬁ ﬁ(zx
+
+ﬁ ﬁ(
+%10string"%System.Reflection.MemberInfo.Name.get**(
+&
+memberSystem.Reflection.MemberInfo2Name.get"
+
+ﬁ ﬁ(
+
+%10string*2
+8
+ﬂ	 ﬂ(	"!
+
+ﬂ ﬂ(	
+implicit return:4
+
+Õ, Õ(=&
+memberSystem.Reflection.MemberInfo:.
+
+Õ? Õ(\ 
+hasDataContractAttributeboolBL"J
+HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator

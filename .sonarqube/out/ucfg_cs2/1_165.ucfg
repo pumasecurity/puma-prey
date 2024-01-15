@@ -1,0 +1,57 @@
+
+?Puma.Prey.Raccoon.Controllers.AccountController.UserManager.getQ
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\AccountController.cs- -("0*¾
+0/ /(#¶
+³
+/ /(#.
+%3(Puma.Prey.Raccoon.ApplicationUserManager"__id*qo*m1
+/Puma.Prey.Raccoon.Controllers.AccountController"8
+_userManager(Puma.Prey.Raccoon.ApplicationUserManagerv
+t
+/ /(#.
+%1(Puma.Prey.Raccoon.ApplicationUserManager"__id*20
+.
+%3(Puma.Prey.Raccoon.ApplicationUserManagerv
+t
+/ /(#.
+%0(Puma.Prey.Raccoon.ApplicationUserManager"__id*20
+.
+%1(Puma.Prey.Raccoon.ApplicationUserManager*
+1
+2*ã
+1/' /(lz
+x
+/' /(2 
+%4System.Web.HttpContextBase")System.Web.Mvc.Controller.HttpContext.get*
+System.Web.Mvc.ControllerÓ
+Ð
+/' /(C!
+%5Microsoft.Owin.IOwinContext"OSystem.Web.HttpContextBaseExtensions.GetOwinContext(System.Web.HttpContextBase)**("&
+$System.Web.HttpContextBaseExtensions*$"
+ 
+%4System.Web.HttpContextBaseŒ
+‰
+/' /(l.
+%6(Puma.Prey.Raccoon.ApplicationUserManager"jMicrosoft.AspNet.Identity.Owin.OwinContextExtensions.GetUserManager<TManager>(Microsoft.Owin.IOwinContext)*:8"6
+4Microsoft.AspNet.Identity.Owin.OwinContextExtensions*%#
+!
+%5Microsoft.Owin.IOwinContextv
+t
+/' /(l.
+%2(Puma.Prey.Raccoon.ApplicationUserManager"__id*20
+.
+%6(Puma.Prey.Raccoon.ApplicationUserManagerv
+t
+/' /(l.
+%0(Puma.Prey.Raccoon.ApplicationUserManager"__id*20
+.
+%2(Puma.Prey.Raccoon.ApplicationUserManager*
+2*K
+20 0("<
+/ /(m0
+.
+%0(Puma.Prey.Raccoon.ApplicationUserManager*.
+30 0("
+0 0(
+implicit returnB31
+/Puma.Prey.Raccoon.Controllers.AccountController

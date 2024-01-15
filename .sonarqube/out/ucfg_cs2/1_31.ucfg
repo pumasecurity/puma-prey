@@ -1,0 +1,20 @@
+
+èPuma.Prey.Raccoon.ApplicationUserManager.ApplicationUserManager(Microsoft.AspNet.Identity.IUserStore<Puma.Prey.Raccoon.Models.ApplicationUser>)L
+BD:\Sources\dotNetLab\puma-prey\Raccoon\App_Start\IdentityConfig.cs& &(%"1*
+1)	 )(	*
+0*É
+0' '(Ó
+Î
+' '(
+
+%0void"eMicrosoft.AspNet.Identity.UserManager<TUser>.UserManager(Microsoft.AspNet.Identity.IUserStore<TUser>)*20.
+,Microsoft.AspNet.Identity.UserManager<TUser>*86
+4
+store+Microsoft.AspNet.Identity.IUserStore<TUser>*
+2*.
+2)	 )(	"
+) )(	
+implicit return:@
+&& &(G4
+store+Microsoft.AspNet.Identity.IUserStore<TUser>B,*
+(Puma.Prey.Raccoon.ApplicationUserManager

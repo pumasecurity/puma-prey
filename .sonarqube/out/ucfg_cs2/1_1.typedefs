@@ -1,0 +1,5 @@
+‘
+Puma.Prey.Raccoon.Startupobject\
+ConfigureAuth(Owin.IAppBuilder)9Puma.Prey.Raccoon.Startup.ConfigureAuth(Owin.IAppBuilder)\
+Configuration(Owin.IAppBuilder)9Puma.Prey.Raccoon.Startup.Configuration(Owin.IAppBuilder)0
+	Startup()#Puma.Prey.Raccoon.Startup.Startup()

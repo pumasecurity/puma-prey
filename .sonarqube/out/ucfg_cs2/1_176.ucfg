@@ -1,0 +1,49 @@
+
+gPuma.Prey.Raccoon.Controllers.AccountController.ChallengeResult.ChallengeResult(string, string, string)S
+GD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\AccountController.csË Ë(""1*‘
+1
+Ð Ð({
+y
+
+%0void">System.Web.Mvc.HttpUnauthorizedResult.HttpUnauthorizedResult()*+)'
+%System.Web.Mvc.HttpUnauthorizedResult*
+0*‚
+0
+Í Ï(Ï
+Ì
+
+Í Í((
+%1string"QPuma.Prey.Raccoon.Controllers.AccountController.ChallengeResult.LoginProvider.set*ECA
+?Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResult*
+
+providerstringÐ
+Í
+
+Î Î()
+%2string"OPuma.Prey.Raccoon.Controllers.AccountController.ChallengeResult.RedirectUri.set*ECA
+?Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResult*
+
+redirectUristringÆ
+Ã
+
+Ï Ï(
+%3string"JPuma.Prey.Raccoon.Controllers.AccountController.ChallengeResult.UserId.set*ECA
+?Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResult*
+
+userIdstring*
+2*2
+2
+Ð Ð("!
+
+Ð Ð(
+implicit return: 
+
+Ë# Ë(2
+providerstring:#
+
+Ë4 Ë(F
+redirectUristring:
+
+ËH Ë(U
+userIdstringBCA
+?Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResult

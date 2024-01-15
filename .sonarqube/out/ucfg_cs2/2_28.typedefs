@@ -1,0 +1,20 @@
+˘
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGeneratorobjectk
+HelpPageSampleGenerator()NPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.HelpPageSampleGenerator()≥
+=GetSampleRequests(System.Web.Http.Description.ApiDescription)rPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.GetSampleRequests(System.Web.Http.Description.ApiDescription)µ
+>GetSampleResponses(System.Web.Http.Description.ApiDescription)sPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.GetSampleResponses(System.Web.Http.Description.ApiDescription)Ä
+cGetSample(System.Web.Http.Description.ApiDescription, Puma.Prey.Fox.Areas.HelpPage.SampleDirection)òPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.GetSample(System.Web.Http.Description.ApiDescription, Puma.Prey.Fox.Areas.HelpPage.SampleDirection)â
+ÁGetActionSample(string, string, System.Collections.Generic.IEnumerable<string>, System.Type, System.Net.Http.Formatting.MediaTypeFormatter, System.Net.Http.Headers.MediaTypeHeaderValue, Puma.Prey.Fox.Areas.HelpPage.SampleDirection)úPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.GetActionSample(string, string, System.Collections.Generic.IEnumerable<string>, System.Type, System.Net.Http.Formatting.MediaTypeFormatter, System.Net.Http.Headers.MediaTypeHeaderValue, Puma.Prey.Fox.Areas.HelpPage.SampleDirection)q
+GetSampleObject(System.Type)QPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.GetSampleObject(System.Type)À
+IResolveHttpRequestMessageType(System.Web.Http.Description.ApiDescription)~Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.ResolveHttpRequestMessageType(System.Web.Http.Description.ApiDescription)¡
+ÉResolveType(System.Web.Http.Description.ApiDescription, string, string, System.Collections.Generic.IEnumerable<string>, Puma.Prey.Fox.Areas.HelpPage.SampleDirection, out System.Collections.ObjectModel.Collection<System.Net.Http.Formatting.MediaTypeFormatter>)∏Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.ResolveType(System.Web.Http.Description.ApiDescription, string, string, System.Collections.Generic.IEnumerable<string>, Puma.Prey.Fox.Areas.HelpPage.SampleDirection, out System.Collections.ObjectModel.Collection<System.Net.Http.Formatting.MediaTypeFormatter>)›
+ëWriteSampleObjectUsingFormatter(System.Net.Http.Formatting.MediaTypeFormatter, object, System.Type, System.Net.Http.Headers.MediaTypeHeaderValue)∆Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.WriteSampleObjectUsingFormatter(System.Net.Http.Formatting.MediaTypeFormatter, object, System.Type, System.Net.Http.Headers.MediaTypeHeaderValue)Ω
+ÅGetAllActionSamples(string, string, System.Collections.Generic.IEnumerable<string>, Puma.Prey.Fox.Areas.HelpPage.SampleDirection)∂Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.GetAllActionSamples(string, string, System.Collections.Generic.IEnumerable<string>, Puma.Prey.Fox.Areas.HelpPage.SampleDirection)m
+ActualHttpMessageTypes.getOPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.ActualHttpMessageTypes.getm
+ActualHttpMessageTypes.setOPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.ActualHttpMessageTypes.set[
+ActionSamples.getFPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.ActionSamples.get[
+ActionSamples.setFPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.ActionSamples.set[
+SampleObjects.getFPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.SampleObjects.get[
+SampleObjects.setFPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.SampleObjects.setk
+SampleObjectFactories.getNPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.SampleObjectFactories.getk
+SampleObjectFactories.setNPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.SampleObjectFactories.set

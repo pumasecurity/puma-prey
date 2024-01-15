@@ -1,0 +1,41 @@
+
+ïPuma.Prey.Common.Cryptography.KeyManagement.KeyManager.ArchiveKey(System.IO.Stream, Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey, string)X
+ND:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyManager.cs (%"0*€
+0 (Dçä
+# (8A
+%0;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter";Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriterØ
+¨
+' (6
+
+%1void"MPuma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.KeyReaderWriter()*EC
+A
+%0;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriterü
+ú
+ (8C
+	keyWriter6Puma.Prey.Common.Cryptography.KeyManagement.IKeyWriter"__id*EC
+A
+%0;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter‚ﬂ
+ (E
+
+%2void"íPuma.Prey.Common.Cryptography.KeyManagement.IKeyWriter.Archive(System.IO.Stream, Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey, string)*GE
+C
+	keyWriter6Puma.Prey.Common.Cryptography.KeyManagement.IKeyWriter*$"
+ 
+outputStreamSystem.IO.Stream*LJ
+H
+keyToArchive8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*
+
+
+passphrasestring2[Archive(System.IO.Stream, Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey, string)*
+1*.
+1	 (	"
+ (	
+implicit return:,
+& (9 
+outputStreamSystem.IO.Stream:T
+; (TH
+keyToArchive8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey: 
+V (g
+
+passphrasestringB:"8
+6Puma.Prey.Common.Cryptography.KeyManagement.KeyManager

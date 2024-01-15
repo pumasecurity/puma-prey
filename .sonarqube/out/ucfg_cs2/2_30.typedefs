@@ -1,0 +1,9 @@
+Ž
+*Puma.Prey.Fox.Areas.HelpPage.InvalidSampleobjectY
+InvalidSample(string)@Puma.Prey.Fox.Areas.HelpPage.InvalidSample.InvalidSample(string)K
+Equals(object)9Puma.Prey.Fox.Areas.HelpPage.InvalidSample.Equals(object)I
+GetHashCode()8Puma.Prey.Fox.Areas.HelpPage.InvalidSample.GetHashCode()C
+
+ToString()5Puma.Prey.Fox.Areas.HelpPage.InvalidSample.ToString()O
+ErrorMessage.get;Puma.Prey.Fox.Areas.HelpPage.InvalidSample.ErrorMessage.getO
+ErrorMessage.set;Puma.Prey.Fox.Areas.HelpPage.InvalidSample.ErrorMessage.set

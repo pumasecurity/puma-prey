@@ -1,0 +1,29 @@
+
+LPuma.Prey.Common.Cryptography.ExtensionMethods.GetBytesFromHexString(string)P
+FD:\Sources\dotNetLab\puma-prey\Common\Cryptography\ExtensionMethods.cs (2"0*ã
+0 (ñ
+î
+  (>?
+%09System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary"GSystem.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.Parse(string)*?=";
+9System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary*
+
+	hexStringstringš
+—
+ (>@
+shb9System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary"__id*CA
+?
+%09System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary¦
+£
+ (
+%1byte[]"CSystem.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.Value.get*DB
+@
+shb9System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary"
+ (
+
+%1byte[]*.
+1	 (	"
+ (	
+implicit return:
+3 (H
+	hexStringstringB2"0
+.Puma.Prey.Common.Cryptography.ExtensionMethods

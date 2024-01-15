@@ -1,0 +1,6 @@
+³
+(Puma.Prey.Raccoon.Models.ApplicationUser6Microsoft.AspNet.Identity.EntityFramework.IdentityUserSMicrosoft.AspNet.Identity.EntityFramework.IdentityUser<TKey, TLogin, TRole, TClaim>object‚
+jGenerateUserIdentityAsync(Microsoft.AspNet.Identity.UserManager<Puma.Prey.Raccoon.Models.ApplicationUser>)“Puma.Prey.Raccoon.Models.ApplicationUser.GenerateUserIdentityAsync(Microsoft.AspNet.Identity.UserManager<Puma.Prey.Raccoon.Models.ApplicationUser>)O
+ApplicationUser():Puma.Prey.Raccoon.Models.ApplicationUser.ApplicationUser()M
+DomainUserId.get9Puma.Prey.Raccoon.Models.ApplicationUser.DomainUserId.getM
+DomainUserId.set9Puma.Prey.Raccoon.Models.ApplicationUser.DomainUserId.set

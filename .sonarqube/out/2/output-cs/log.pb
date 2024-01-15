@@ -1,0 +1,1 @@
+Roslyn version: 2.8.0.0Language version: CSharp7!Concurrent execution: enabled‡‚File 'D:\Sources\dotNetLab\puma-prey\Fox\obj\Debug\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs' was recognized as generated

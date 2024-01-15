@@ -1,0 +1,38 @@
+
+|Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.GetModelDescriptionGenerator(System.Web.Http.HttpConfiguration)`
+TD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageConfigurationExtensions.csÌ0 Ì(L"0*å
+0
+Î Ð(@º
+·
+
+Î. Î(?F
+%0@System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>"0System.Web.Http.HttpConfiguration.Properties.get*/-
++
+config!System.Web.Http.HttpConfigurationÒ
+Ï
+
+Î. Ð(A
+%1object"SSystem.Collections.Generic.ICollection<T>.GetOrAdd(TKey, System.Func<TKey, TValue>)*JH
+F
+%0@System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>*
+""*
+"",
+*
+
+Î Ð(A
+%2"__id*
+
+%1object"
+
+Î Ð(B
+
+%2*2
+1
+Ñ	 Ñ(	"!
+
+Ñ Ñ(	
+implicit return:9
+
+ÌM Ì(j+
+config!System.Web.Http.HttpConfigurationB@">
+<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions

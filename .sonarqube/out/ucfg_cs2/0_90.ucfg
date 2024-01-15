@@ -1,0 +1,36 @@
+
+=Puma.Prey.Common.Validation.Validator.IsValidFileName(string)G
+=D:\Sources\dotNetLab\puma-prey\Common\Validation\Validator.cs (*"0*™
+0 ("^\
+ (:*
+%0$System.Text.RegularExpressions.Regex"$System.Text.RegularExpressions.Regexõ
+ò
+ (
+
+%1void"2System.Text.RegularExpressions.Regex.Regex(string)*.,
+*
+%0$System.Text.RegularExpressions.Regex*
+[A-Za-z0-9]+\.[a-z]{3}m
+k
+ (:)
+r$System.Text.RegularExpressions.Regex"__id*.,
+*
+%0$System.Text.RegularExpressions.Regexì
+ê
+ (#
+
+%2bool"4System.Text.RegularExpressions.Regex.IsMatch(string)*-+
+)
+r$System.Text.RegularExpressions.Regex*
+
+inputstring"
+ ($
+
+
+%2bool*.
+1	 (	"
+ (	
+implicit return:
++ (7
+inputstringB)"'
+%Puma.Prey.Common.Validation.Validator

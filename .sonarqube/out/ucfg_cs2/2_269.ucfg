@@ -1,0 +1,123 @@
+
+‘Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator.SetPublicProperties(System.Type, object, System.Collections.Generic.Dictionary<System.Type, object>)a
+UD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\ObjectGenerator.csó ó(/"0*Í
+0
+õ ÷(8$
+"
+
+õ; õ(N
+%0"__id*
+""$
+"
+
+õQ õ(f
+%1"__id*
+""ÄÁ
+
+õ( õ(g&
+%2 System.Reflection.PropertyInfo[]"9System.Type.GetProperties(System.Reflection.BindingFlags)*
+
+typeSystem.Type*
+""2-GetProperties(System.Reflection.BindingFlags)p
+n
+
+õ õ(g.
+
+properties System.Reflection.PropertyInfo[]"__id**(
+&
+%2 System.Reflection.PropertyInfo[]pn
+
+ö. ö(C2
+%3,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator",Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator“
+
+
+ö2 ö(A
+
+%4void">Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator.ObjectGenerator()*64
+2
+%3,Puma.Prey.Fox.Areas.HelpPage.ObjectGeneratorŽ
+‹
+
+ö ö(C?
+objectGenerator,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator"__id*64
+2
+%3,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator¬
+©
+
+÷" ÷(*$
+%5System.Reflection.PropertyInfo"7System.Collections.Generic.ICollection<T>.this[int].get*20
+.
+
+properties System.Reflection.PropertyInfo[]*
+""j
+h
+
+÷ þ(*
+propertySystem.Reflection.PropertyInfo"__id*(&
+$
+%5System.Reflection.PropertyInfo*
+1*
+1
+ÿ	 ÿ(	*
+2
+3* 
+2
+ù ù(%†ƒ
+
+ù ù(%
+
+%6bool"+System.Reflection.PropertyInfo.CanWrite.get*.,
+*
+propertySystem.Reflection.PropertyInfo2CanWrite.get*
+4
+1*³
+4
+û ü(>•’
+
+ûJ û(_
+%7System.Type"/System.Reflection.PropertyInfo.PropertyType.get*.,
+*
+propertySystem.Reflection.PropertyInfo2PropertyType.getÔ
+Ñ
+
+û+ û(y
+%8object"„Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator.GenerateObject(System.Type, System.Collections.Generic.Dictionary<System.Type, object>)*CA
+?
+objectGenerator,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator*
+
+%7System.Type*RP
+N
+createdObjectReferences3System.Collections.Generic.Dictionary<TKey, TValue>?
+=
+
+û û(y
+propertyValueobject"__id*
+
+%8objectìé
+
+ü ü(?
+
+%9void"ASystem.Reflection.PropertyInfo.SetValue(object, object, object[])*.,
+*
+propertySystem.Reflection.PropertyInfo*
+
+objobject*
+
+propertyValueobject*
+""2"SetValue(object, object, object[])*
+1*2
+3
+ÿ	 ÿ(	"!
+
+ÿ ÿ(	
+implicit return:!
+
+ó0 ó(9
+typeSystem.Type:
+
+ó; ó(E
+objobject:\
+
+óG ó(wN
+createdObjectReferences3System.Collections.Generic.Dictionary<TKey, TValue>B0".
+,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator

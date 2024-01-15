@@ -1,0 +1,157 @@
+
+®Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.HelpPageSampleKey(Puma.Prey.Fox.Areas.HelpPage.SampleDirection, string, string, System.Collections.Generic.IEnumerable<string>)a
+WD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs5 5( "1*
+1L	 L(	*
+0*‚
+07 7(Hk
+i
+7 7(I
+
+%0bool"*System.Enum.IsDefined(System.Type, object)*"
+System.Enum*
+""*
+""*
+2
+3*¢
+29 9(w"
+ 
+9J 9(^
+%1"__id*
+""zx
+9 9(x8
+%22System.ComponentModel.InvalidEnumArgumentException"2System.ComponentModel.InvalidEnumArgumentExceptioní
+ê
+9 9(6
+
+%3void"iSystem.ComponentModel.InvalidEnumArgumentException.InvalidEnumArgumentException(string, int, System.Type)*<:
+8
+%22System.ComponentModel.InvalidEnumArgumentException*
+sampleDirection*
+
+%1*
+""*
+4*‰
+3; ;(&r
+p
+; ;(&
+
+%4bool""string.operator ==(string, string)*
+"
+string*
+
+controllerNamestring*
+""*
+5
+6*ø
+5= =(@NL
+= =(A"
+%5System.ArgumentNullException"System.ArgumentNullException“
+
+= =(/
+
+%6void":System.ArgumentNullException.ArgumentNullException(string)*&$
+"
+%5System.ArgumentNullException*
+controllerName*
+4*…
+6? ?("n
+l
+? ?("
+
+%7bool""string.operator ==(string, string)*
+"
+string*
+
+
+actionNamestring*
+""*
+7
+8*ô
+7A A(<NL
+A A(="
+%8System.ArgumentNullException"System.ArgumentNullException
+Œ
+A A(/
+
+%9void":System.ArgumentNullException.ArgumentNullException(string)*&$
+"
+%8System.ArgumentNullException*
+
+actionName*
+4*°
+8C C(&—
+”
+C C(&
+%10bool""object.operator ==(object, object)*
+"
+object*?=
+;
+parameterNames)System.Collections.Generic.IEnumerable<T>*
+""*
+9
+10*û
+9E E(@OM
+E E(A#
+%11System.ArgumentNullException"System.ArgumentNullException•
+’
+E E(/
+%12void":System.ArgumentNullException.ArgumentNullException(string)*'%
+#
+%11System.ArgumentNullException*
+parameterNames*
+4*¦
+
+10H K(-³
+°
+H H(+
+%13string"APuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ControllerName.set*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*
+
+controllerNamestring«
+¨
+I I(#
+%14string"=Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ActionName.set*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*
+
+
+actionNamestringt
+r
+JA J(a
+%15System.StringComparer"+System.StringComparer.OrdinalIgnoreCase.get*"
+System.StringComparera_
+J J(b,
+%16%System.Collections.Generic.HashSet<T>"%System.Collections.Generic.HashSet<T>»
+¸
+J! J(0
+%17void"‰System.Collections.Generic.HashSet<T>.HashSet(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEqualityComparer<T>)*0.
+,
+%16%System.Collections.Generic.HashSet<T>*?=
+;
+parameterNames)System.Collections.Generic.IEnumerable<T>* 
+
+%15System.StringCompareræ
+ã
+J J(b,
+%18%System.Collections.Generic.HashSet<T>"APuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ParameterNames.set*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*0.
+,
+%16%System.Collections.Generic.HashSet<T>¬
+©
+K K(-
+%19System.Nullable<T>"BPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.SampleDirection.set*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*
+""*
+4*.
+4L	 L(	"
+L L(	
+implicit return:K
+5! 5(@?
+sampleDirection,Puma.Prey.Fox.Areas.HelpPage.SampleDirection:$
+5B 5(W
+controllerNamestring: 
+5Y 5(j
+
+actionNamestring:H
+	5l 5(Ž;
+parameterNames)System.Collections.Generic.IEnumerable<T>B20
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey

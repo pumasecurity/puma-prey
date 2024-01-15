@@ -1,0 +1,37 @@
+
+IPuma.Prey.Fox.Providers.ApplicationOAuthProvider.CreateProperties(string)R
+HD:\Sources\dotNetLab\puma-prey\Fox\Providers\ApplicationOAuthProvider.csW) W(9"0*ó
+0Y ](+|z
+Y& \(9
+%03System.Collections.Generic.Dictionary<TKey, TValue>"3System.Collections.Generic.Dictionary<TKey, TValue>ö
+ó
+Y* Y(D
+
+%1void"@System.Collections.Generic.Dictionary<TKey, TValue>.Dictionary()*=;
+9
+%03System.Collections.Generic.Dictionary<TKey, TValue>ê
+ç
+Y \(<
+data4System.Collections.Generic.IDictionary<TKey, TValue>"__id*=;
+9
+%03System.Collections.Generic.Dictionary<TKey, TValue>vt
+]
+ ](,6
+%20Microsoft.Owin.Security.AuthenticationProperties"0Microsoft.Owin.Security.AuthenticationPropertiesõ
+ò
+] ](&
+
+%3void"ÅMicrosoft.Owin.Security.AuthenticationProperties.AuthenticationProperties(System.Collections.Generic.IDictionary<string, string>)*:8
+6
+%20Microsoft.Owin.Security.AuthenticationProperties*@>
+<
+data4System.Collections.Generic.IDictionary<TKey, TValue>"D
+] ](-8
+6
+%20Microsoft.Owin.Security.AuthenticationProperties*.
+1^ ^("
+^ ^(
+implicit return:
+W: W(I
+userNamestringB4"2
+0Puma.Prey.Fox.Providers.ApplicationOAuthProvider

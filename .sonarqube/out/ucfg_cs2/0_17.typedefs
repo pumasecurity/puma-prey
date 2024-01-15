@@ -1,0 +1,8 @@
+ß
+8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyobjectS
+Unprotect()DPuma.Prey.Common.Cryptography.KeyManagement.ProtectedKey.Unprotect()É
+FProtectedKey(byte[], System.Security.Cryptography.DataProtectionScope)Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey.ProtectedKey(byte[], System.Security.Cryptography.DataProtectionScope)]
+EncryptedKey.getIPuma.Prey.Common.Cryptography.KeyManagement.ProtectedKey.EncryptedKey.get]
+EncryptedKey.setIPuma.Prey.Common.Cryptography.KeyManagement.ProtectedKey.EncryptedKey.set]
+DecryptedKey.getIPuma.Prey.Common.Cryptography.KeyManagement.ProtectedKey.DecryptedKey.get]
+DecryptedKey.setIPuma.Prey.Common.Cryptography.KeyManagement.ProtectedKey.DecryptedKey.set

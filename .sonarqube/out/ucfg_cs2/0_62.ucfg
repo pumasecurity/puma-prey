@@ -1,0 +1,32 @@
+
+xPuma.Prey.Common.Cryptography.KeyManagement.KeyManager.ReadKey(string, System.Security.Cryptography.DataProtectionScope)X
+ND:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyManager.csx x($"0*˜
+0{ |(#£
+ 
+{ {(M>
+%08Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"uPuma.Prey.Common.Cryptography.KeyManagement.KeyManager.Read(string, System.Security.Cryptography.DataProtectionScope)*<:"8
+6Puma.Prey.Common.Cryptography.KeyManagement.KeyManager*
+
+keyFilestring*
+""˜
+•
+{ {(M?
+key8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"__id*B@
+>
+%08Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey«
+¨
+| |(#
+%1byte[]"IPuma.Prey.Common.Cryptography.KeyManagement.ProtectedKey.DecryptedKey.get*CA
+?
+key8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"
+| |($
+
+%1byte[]*.
+1}	 }(	"
+} }(	
+implicit return:
+x% x(3
+keyFilestring:T
+x5 x(]H
+dpapiProtectionScope0System.Security.Cryptography.DataProtectionScopeB:"8
+6Puma.Prey.Common.Cryptography.KeyManagement.KeyManager

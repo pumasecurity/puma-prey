@@ -1,0 +1,34 @@
+
+\Puma.Prey.Fox.Results.ChallengeResult.ChallengeResult(string, System.Web.Http.ApiController)G
+=D:\Sources\dotNetLab\puma-prey\Fox\Results\ChallengeResult.cs ("1*
+1	 (	*
+0*ë
+0 ((û
+õ
+ ()
+%0string"7Puma.Prey.Fox.Results.ChallengeResult.LoginProvider.set*+)'
+%Puma.Prey.Fox.Results.ChallengeResult*
+
+loginProviderstringì
+ê
+ (((
+%1"System.Net.Http.HttpRequestMessage")System.Web.Http.ApiController.Request.get*/-
++
+
+controllerSystem.Web.Http.ApiController≈
+¬
+ (((
+%2"System.Net.Http.HttpRequestMessage"1Puma.Prey.Fox.Results.ChallengeResult.Request.set*+)'
+%Puma.Prey.Fox.Results.ChallengeResult*,*
+(
+%1"System.Net.Http.HttpRequestMessage*
+2*.
+2	 (	"
+ (	
+implicit return:#
+ (3
+loginProviderstring:7
+5 (M+
+
+controllerSystem.Web.Http.ApiControllerB)'
+%Puma.Prey.Fox.Results.ChallengeResult

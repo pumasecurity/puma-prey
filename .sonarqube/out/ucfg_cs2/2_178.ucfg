@@ -1,0 +1,31 @@
+
+;Puma.Prey.Fox.Controllers.ValuesController.Put(int, string)L
+BD:\Sources\dotNetLab\puma-prey\Fox\Controllers\ValuesController.cs ("1*.
+0!	 !(	"
+! !(	
+implicit return*ü
+17 (7?
+=
+ (
+%0"__entrypoint*
+""*
+
+valuestringp
+n
+! ()
+%1"
+__annotate*;97
+5System.Web.Http.FromBodyAttribute.FromBodyAttribute()*
+
+valuestring5
+3
+  (6
+valuestring"__annotation*
+
+%1*
+0:
+ (	
+idint:
+  (6
+valuestringB.,
+*Puma.Prey.Fox.Controllers.ValuesController

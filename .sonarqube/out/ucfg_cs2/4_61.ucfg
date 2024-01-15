@@ -1,0 +1,95 @@
+
+mPuma.Prey.Common.Cryptography.Encryption.DecryptRSA(byte[], System.Security.Cryptography.RSAParameters, bool)L
+@D:\Sources\dotNetLab\puma-prey\Common\Cryptography\Encryption.csù ù('"0*
+0
+π	 π(	*
+1
+2*‚
+1
+° £(TÉÄ
+
+£6 £(T;
+%05System.Security.Cryptography.RSACryptoServiceProvider"5System.Security.Cryptography.RSACryptoServiceProviderÆ
+´
+
+£: £(R
+
+%1void"PSystem.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider()*?=
+;
+%05System.Security.Cryptography.RSACryptoServiceProviderî
+ë
+
+£0 £(T<
+RSA5System.Security.Cryptography.RSACryptoServiceProvider"__id*?=
+;
+%05System.Security.Cryptography.RSACryptoServiceProvider*
+3*Ω
+3
+ß ¨(Lè
+å
+
+ß ß(4
+
+%2void"rSystem.Security.Cryptography.RSACryptoServiceProvider.ImportParameters(System.Security.Cryptography.RSAParameters)*@>
+<
+RSA5System.Security.Cryptography.RSACryptoServiceProvider*<:
+8
+
+RSAKeyInfo*System.Security.Cryptography.RSAParameters”
+–
+
+¨$ ¨(M
+%3byte[]"KSystem.Security.Cryptography.RSACryptoServiceProvider.Decrypt(byte[], bool)*@>
+<
+RSA5System.Security.Cryptography.RSACryptoServiceProvider*
+
+DataToDecryptbyte[]*
+""?
+=
+
+¨ ¨(M
+decryptedDatabyte[]"__id*
+
+%3byte[]*
+4*8
+4
+Æ Æ($"'
+
+Æ Æ(%
+
+decryptedDatabyte[]*í
+2
+¥ ∂(ÑÅ
+
+¥" ¥(.
+%4string"System.Exception.ToString()*<:
+8
+e3System.Security.Cryptography.CryptographicException2
+ToString()d
+b
+
+¥ ¥(/
+
+%5void" System.Console.WriteLine(string)*"
+System.Console*
+
+%4string"
+
+∂ ∂(
+""*2
+5
+π	 π(	"!
+
+π π(	
+implicit return:%
+
+ù( ù(<
+DataToDecryptbyte[]:F
+
+ù> ù(V8
+
+RSAKeyInfo*System.Security.Cryptography.RSAParameters:#
+
+ùX ù(j
+DoOAEPPaddingboolB,"*
+(Puma.Prey.Common.Cryptography.Encryption

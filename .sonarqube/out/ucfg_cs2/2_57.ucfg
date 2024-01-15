@@ -1,0 +1,33 @@
+
+ZPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription.ParameterDescription()e
+[D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\ModelDescriptions\ParameterDescription.cs (#"1*
+1	 (	*
+0*­
+0
+ 
+(?nl
+
+ 
+(?2
+%0,System.Collections.ObjectModel.Collection<T>",System.Collections.ObjectModel.Collection<T>Œ
+‰
+
+ 
+(=
+
+%1void"9System.Collections.ObjectModel.Collection<T>.Collection()*64
+2
+%0,System.Collections.ObjectModel.Collection<T>™
+–
+
+ 
+(?2
+%2,System.Collections.ObjectModel.Collection<T>"SPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription.Annotations.set*IGE
+CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription*64
+2
+%0,System.Collections.ObjectModel.Collection<T>*
+2*.
+2	 (	"
+ (	
+implicit returnBGE
+CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription

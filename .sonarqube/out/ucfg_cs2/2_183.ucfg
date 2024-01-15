@@ -1,0 +1,113 @@
+
+QPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.GetSampleObject(System.Type)i
+]D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs² ²(-"0*ä
+0
+´ ¶(AÏ
+Ì
+
+¶ ¶(:
+%04System.Collections.Generic.IDictionary<TKey, TValue>"FPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.SampleObjects.get*:86
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGeneratorøõ
+
+¶ ¶(B
+
+%1bool"GSystem.Collections.Generic.ICollection<T>.TryGetValue(TKey, out TValue)*><
+:
+%04System.Collections.Generic.IDictionary<TKey, TValue>*
+
+typeSystem.Type*
+
+sampleObjectobject2TryGetValue(TKey, out TValue)*
+1
+2*ì
+1
+¹P ¹(eÆ
+Ã
+
+¹P ¹(e)
+%2#System.Collections.Generic.IList<T>"NPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.SampleObjectFactories.get*:86
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator¥
+¢
+
+¹E ¹(L"
+%3System.Func<T1, T2, TResult>"7System.Collections.Generic.ICollection<T>.this[int].get*-+
+)
+%2#System.Collections.Generic.IList<T>*
+""e
+c
+
+¹ Ì('
+factorySystem.Func<T1, T2, TResult>"__id*&$
+"
+%3System.Func<T1, T2, TResult>*
+3*
+3
+Ð	 Ð(	*
+4
+2*¥
+4
+» »('‹
+ˆ
+
+» »('
+
+%4bool"’System.Func<Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator, System.Type, object>.operator ==(System.Func<Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator, System.Type, object>, System.Func<Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator, System.Type, object>)*" "
+System.Func<T1, T2, TResult>*+)
+'
+factorySystem.Func<T1, T2, TResult>*
+""*
+5
+6*
+5
+Ð	 Ð(	*
+3*‘
+6
+Â Ã(0Ã
+À
+
+Â' Â(:
+%5object"+System.Func<T1, T2, TResult>.Invoke(T1, T2)*" 
+System.Func<T1, T2, TResult>*:86
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*
+
+typeSystem.Type>
+<
+
+Â Â(:
+sampleObjectobject"__id*
+
+%5objectr
+p
+
+Ã Ã(0
+
+%6bool""object.operator !=(object, object)*
+"
+object*
+
+sampleObjectobject*
+""*
+7
+8*
+7
+Ð	 Ð(	*
+2*
+8
+Ð	 Ð(	*
+3
+3*7
+2
+Ï Ï("&
+
+Ï Ï( 
+
+sampleObjectobject*2
+9
+Ð	 Ð(	"!
+
+Ð Ð(	
+implicit return:!
+
+². ²(7
+typeSystem.TypeB86
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator

@@ -1,0 +1,45 @@
+
+`Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.ValidateKeyVersion(System.IO.Stream)_
+SD:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyReaderWriter.cs• •('"0*¸
+0
+— ˜(ë
+è
+
+— —(A
+
+%0uint"_Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.ReadVersionNumber(System.IO.Stream)*A?=
+;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter**(
+&
+protectedKeyStreamSystem.IO.Stream1
+/
+
+— —(A
+numuint"__id*
+
+
+%0uint*
+1
+2*š
+1
+š š(LXV
+
+š š(M&
+%1 System.InvalidOperationException" System.InvalidOperationException©
+¦
+
+š š(3
+
+%2void"BSystem.InvalidOperationException.InvalidOperationException(string)**(
+&
+%1 System.InvalidOperationException*
+Key version is invalid*
+2*2
+2
+œ	 œ(	"!
+
+œ œ(	
+implicit return:4
+
+•( •(A&
+protectedKeyStreamSystem.IO.StreamB?=
+;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter

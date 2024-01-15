@@ -1,0 +1,28 @@
+
+)Puma.Prey.Common.Logging.Log.Info(string)>
+4D:\Sources\dotNetLab\puma-prey\Common\Logging\Log.cs
+ 
+("0*Õ
+0 (_
+]
+ (
+%0NLog.Logger"__id*86*4
+Puma.Prey.Common.Logging.Log"
+logNLog.Logger`
+^
+ (
+
+%1void"NLog.Logger.Info(string)*
+
+%0NLog.Logger*
+
+messagestring*
+1*.
+1	 (	"
+ (	
+implicit return:
+
+  
+(.
+messagestringB "
+Puma.Prey.Common.Logging.Log

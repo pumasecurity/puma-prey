@@ -1,0 +1,24 @@
+
+rPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.GetSampleRequests(System.Web.Http.Description.ApiDescription)g
+]D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.csE9 E(J"0*Ä
+0G G(9"
+ 
+G" G(9
+%0"__id*
+""ÆÃ
+G G(::
+%14System.Collections.Generic.IDictionary<TKey, TValue>"˜Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.GetSample(System.Web.Http.Description.ApiDescription, Puma.Prey.Fox.Areas.HelpPage.SampleDirection)*:86
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*53
+1
+api*System.Web.Http.Description.ApiDescription*
+
+%02cGetSample(System.Web.Http.Description.ApiDescription, Puma.Prey.Fox.Areas.HelpPage.SampleDirection)"H
+G G(;<
+:
+%14System.Collections.Generic.IDictionary<TKey, TValue>*.
+1H	 H(	"
+H H(	
+implicit return:=
+EK E(]1
+api*System.Web.Http.Description.ApiDescriptionB86
+4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator

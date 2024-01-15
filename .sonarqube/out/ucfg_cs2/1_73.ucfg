@@ -1,0 +1,37 @@
+
+±Puma.Prey.Raccoon.ApplicationSignInManager.Create(Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<Puma.Prey.Raccoon.ApplicationSignInManager>, Microsoft.Owin.IOwinContext)L
+BD:\Sources\dotNetLab\puma-prey\Raccoon\App_Start\IdentityConfig.csh/ h(5"0*ã
+0j j(x‘
+Ž
+j0 j(`.
+%0(Puma.Prey.Raccoon.ApplicationUserManager"jMicrosoft.AspNet.Identity.Owin.OwinContextExtensions.GetUserManager<TManager>(Microsoft.Owin.IOwinContext)*:8"6
+4Microsoft.AspNet.Identity.Owin.OwinContextExtensions**(
+&
+contextMicrosoft.Owin.IOwinContext³°
+jb j(x4
+%1.Microsoft.Owin.Security.IAuthenticationManager".Microsoft.Owin.IOwinContext.Authentication.get**(
+&
+contextMicrosoft.Owin.IOwinContext2Authentication.getjh
+j j(y0
+%2*Puma.Prey.Raccoon.ApplicationSignInManager"*Puma.Prey.Raccoon.ApplicationSignInManagerÝ
+Ú
+j j(/
+
+%3void"Puma.Prey.Raccoon.ApplicationSignInManager.ApplicationSignInManager(Puma.Prey.Raccoon.ApplicationUserManager, Microsoft.Owin.Security.IAuthenticationManager)*42
+0
+%2*Puma.Prey.Raccoon.ApplicationSignInManager*20
+.
+%0(Puma.Prey.Raccoon.ApplicationUserManager*86
+4
+%1.Microsoft.Owin.Security.IAuthenticationManager">
+j j(z2
+0
+%2*Puma.Prey.Raccoon.ApplicationSignInManager*.
+1k	 k(	"
+k k(	
+implicit return:O
+h6 h(nC
+options8Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>:3
+	hp h(„&
+contextMicrosoft.Owin.IOwinContextB.",
+*Puma.Prey.Raccoon.ApplicationSignInManager

@@ -1,0 +1,32 @@
+
+>Puma.Prey.Fox.Controllers.AccountController.Authentication.getO
+CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.cs‡ ‡("0*”
+0
+‡ ‡(@‰
+†
+
+‡ ‡( (
+%0"System.Net.Http.HttpRequestMessage")System.Web.Http.ApiController.Request.get*#!
+System.Web.Http.ApiControllerý
+ú
+
+‡ ‡(1!
+%1Microsoft.Owin.IOwinContext"cSystem.Net.Http.OwinHttpRequestMessageExtensions.GetOwinContext(System.Net.Http.HttpRequestMessage)*64"2
+0System.Net.Http.OwinHttpRequestMessageExtensions*,*
+(
+%0"System.Net.Http.HttpRequestMessage°­
+
+‡ ‡(@4
+%2.Microsoft.Owin.Security.IAuthenticationManager".Microsoft.Owin.IOwinContext.Authentication.get*%#
+!
+%1Microsoft.Owin.IOwinContext2Authentication.get"D
+
+‡ ‡(A6
+4
+%2.Microsoft.Owin.Security.IAuthenticationManager*2
+1
+‡C ‡(C"!
+
+‡B ‡(C
+implicit returnB/-
++Puma.Prey.Fox.Controllers.AccountController

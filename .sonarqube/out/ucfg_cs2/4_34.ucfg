@@ -1,0 +1,27 @@
+
+.Puma.Prey.Common.Report.GetReport(System.Guid)@
+6D:\Sources\dotNetLab\puma-prey\Common\Report\Report.cs (&"0*²
+0 (:I
+G
+* (<
+%0"__concat*
+, (3	
+report/*
+3 (;
+""ª
+§
+ (=
+%1Puma.Prey.Common.Report"@Puma.Prey.Common.Rest.RestClient.Get<T>(string, params object[])*&$""
+ Puma.Prey.Common.Rest.RestClient*
+
+%0*
+"""+
+ (>
+
+%1Puma.Prey.Common.Report*.
+1	 (	"
+ (	
+implicit return:!
+' (2
+userIdSystem.GuidB"
+Puma.Prey.Common.Report

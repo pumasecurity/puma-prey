@@ -1,0 +1,258 @@
+
+=Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.Equals(object)c
+WD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\HelpPageSampleKey.csÖ Ö(#"0*Ã
+0
+á à( 5
+3
+
+á) á(A
+%0object"__id*
+
+objobjectb
+`
+
+á á(A:
+otherKey.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey"__id*
+
+%0objectó
+î
+
+à à( 
+
+%1bool""object.operator ==(object, object)*
+"
+object*><
+:
+otherKey.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*
+""*
+1
+2*%
+1
+ä ä("
+
+ä ä(
+""*ã
+2
+ç ç(lñ
+ì
+
+ç! ç(/
+%2string"APuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ControllerName.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey†
+ù
+
+ç1 ç(H
+%3string"APuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ControllerName.get*><
+:
+otherKey.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey$
+"
+
+çJ ç(l
+%4"__id*
+""è
+å
+
+ç ç(m
+
+%5bool"6string.Equals(string, string, System.StringComparison)*
+"
+string*
+
+%2string*
+
+%3string*
+
+%4*
+3
+4*Ä
+3
+é é(aí
+è
+
+é é((
+%6string"=Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ActionName.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKeyú
+ô
+
+é* é(=
+%7string"=Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ActionName.get*><
+:
+otherKey.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey$
+"
+
+é? é(a
+%8"__id*
+""è
+å
+
+é é(b
+
+%9bool"6string.Equals(string, string, System.StringComparison)*
+"
+string*
+
+%6string*
+
+%7string*
+
+%8*
+4*
+4
+ì	 ì(	*
+5
+6*⁄
+5
+è è(0∏
+µ
+
+è è(3
+%10,System.Net.Http.Headers.MediaTypeHeaderValue"<Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.MediaType.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey¬
+ø
+
+è è(03
+%11,System.Net.Http.Headers.MediaTypeHeaderValue"<Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.MediaType.get*><
+:
+otherKey.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey¿
+Ω
+
+è è(0
+%12bool""object.operator ==(object, object)*
+"
+object*75
+3
+%10,System.Net.Http.Headers.MediaTypeHeaderValue*75
+3
+%11,System.Net.Http.Headers.MediaTypeHeaderValue*
+7
+8*Á
+8
+è5 è(F∏
+µ
+
+è5 è(>3
+%13,System.Net.Http.Headers.MediaTypeHeaderValue"<Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.MediaType.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKeyë
+é
+
+è5 è(F
+%14bool""object.operator !=(object, object)*
+"
+object*75
+3
+%13,System.Net.Http.Headers.MediaTypeHeaderValue*
+""*
+9
+10*Û
+9
+èJ è(m∏
+µ
+
+èJ è(S3
+%15,System.Net.Http.Headers.MediaTypeHeaderValue"<Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.MediaType.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey¬
+ø
+
+è[ è(m3
+%16,System.Net.Http.Headers.MediaTypeHeaderValue"<Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.MediaType.get*><
+:
+otherKey.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey€ÿ
+
+èJ è(n
+%17bool";System.Net.Http.Headers.MediaTypeHeaderValue.Equals(object)*75
+3
+%15,System.Net.Http.Headers.MediaTypeHeaderValue*75
+3
+%16,System.Net.Http.Headers.MediaTypeHeaderValue2Equals(object)*
+10*
+10
+ì	 ì(	*
+7*
+7
+ì	 ì(	*
+6*
+6
+ì	 ì(	*
+11
+12*Ò
+11
+ê ê(7õ
+ò
+
+ê ê(
+%18System.Type"@Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ParameterType.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey•
+¢
+
+ê! ê(7
+%19System.Type"@Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ParameterType.get*><
+:
+otherKey.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKeyí
+è
+
+ê ê(7
+%20bool"1System.Type.operator ==(System.Type, System.Type)*"
+System.Type*
+
+%18System.Type*
+
+%19System.Type*
+12*
+12
+ì	 ì(	*
+13
+14*Ó
+13
+ë ë(;§
+°
+
+ë ë(
+%21System.Nullable<T>"BPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.SampleDirection.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKeyÆ
+´
+
+ë# ë(;
+%22System.Nullable<T>"BPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.SampleDirection.get*><
+:
+otherKey.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*
+14*
+14
+ì	 ì(	*
+15
+16*ı
+15
+í í(@∂
+≥
+
+í í(,
+%23%System.Collections.Generic.HashSet<T>"APuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ParameterNames.get*420
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey¿
+Ω
+
+í) í(@,
+%24%System.Collections.Generic.HashSet<T>"APuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ParameterNames.get*><
+:
+otherKey.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey‡
+›
+
+í í(A
+%25bool"^System.Collections.Generic.ICollection<T>.SetEquals(System.Collections.Generic.IEnumerable<T>)*0.
+,
+%23%System.Collections.Generic.HashSet<T>*0.
+,
+%24%System.Collections.Generic.HashSet<T>*
+16*-
+16
+ì	 ì(	"
+
+ç í(B
+	{unknown}*3
+17
+ì	 ì(	"!
+
+ì ì(	
+implicit return:
+
+Ö$ Ö(.
+objobjectB20
+.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey

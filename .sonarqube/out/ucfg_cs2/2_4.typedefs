@@ -1,0 +1,3 @@
+Å
+$Puma.Prey.Fox.ApplicationUserManager,Microsoft.AspNet.Identity.UserManager<TUser>2Microsoft.AspNet.Identity.UserManager<TUser, TKey>objectÓ
+bApplicationUserManager(Microsoft.AspNet.Identity.IUserStore<Puma.Prey.Fox.Models.ApplicationUser>)áPuma.Prey.Fox.ApplicationUserManager.ApplicationUserManager(Microsoft.AspNet.Identity.IUserStore<Puma.Prey.Fox.Models.ApplicationUser>)

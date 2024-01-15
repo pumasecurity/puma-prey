@@ -1,0 +1,43 @@
+
+zPuma.Prey.Common.Cryptography.Encryption.Decrypt(byte[], string, System.Security.Cryptography.DataProtectionScope, byte[])J
+@D:\Sources\dotNetLab\puma-prey\Common\Cryptography\Encryption.csU U($"0*¬
+0X Y(.ô
+ñ
+X X(J
+%0byte[]"xPuma.Prey.Common.Cryptography.KeyManagement.KeyManager.ReadKey(string, System.Security.Cryptography.DataProtectionScope)*<:"8
+6Puma.Prey.Common.Cryptography.KeyManagement.KeyManager*
+
+keyFilestring*
+""3
+1
+X X(J
+keybyte[]"__id*
+
+%0byte[]Ô
+Ñ
+Y Y(/
+%1string"HPuma.Prey.Common.Cryptography.Encryption.Decrypt(byte[], byte[], byte[])*.,"*
+(Puma.Prey.Common.Cryptography.Encryption*
+
+
+cipherTextbyte[]*
+
+keybyte[]*
+
+ivbyte[]"
+Y Y(0
+
+%1string*.
+1Z	 Z(	"
+Z Z(	
+implicit return: 
+U% U(6
+
+cipherTextbyte[]:
+U8 U(F
+keyFilestring:T
+UH U(pH
+dpapiProtectionScope0System.Security.Cryptography.DataProtectionScope:
+Ur U({
+ivbyte[]B,"*
+(Puma.Prey.Common.Cryptography.Encryption
