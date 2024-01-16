@@ -1,11 +1,0 @@
-”
-5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProviderobject2System.Web.Http.Description.IDocumentationProviderJPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.IModelDocumentationProviderz
- XmlDocumentationProvider(string)VPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.XmlDocumentationProvider(string)Æ
-FGetDocumentation(System.Web.Http.Controllers.HttpControllerDescriptor)|Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetDocumentation(System.Web.Http.Controllers.HttpControllerDescriptor)¾
-BGetDocumentation(System.Web.Http.Controllers.HttpActionDescriptor)xPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetDocumentation(System.Web.Http.Controllers.HttpActionDescriptor)Ä
-EGetDocumentation(System.Web.Http.Controllers.HttpParameterDescriptor){Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetDocumentation(System.Web.Http.Controllers.HttpParameterDescriptor)Ï
-JGetResponseDocumentation(System.Web.Http.Controllers.HttpActionDescriptor)€Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetResponseDocumentation(System.Web.Http.Controllers.HttpActionDescriptor)–
-.GetDocumentation(System.Reflection.MemberInfo)dPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetDocumentation(System.Reflection.MemberInfo)t
-GetDocumentation(System.Type)SPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetDocumentation(System.Type)¸
-?GetMethodNode(System.Web.Http.Controllers.HttpActionDescriptor)uPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetMethodNode(System.Web.Http.Controllers.HttpActionDescriptor)j
-GetTypeNode(System.Type)NPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetTypeNode(System.Type)

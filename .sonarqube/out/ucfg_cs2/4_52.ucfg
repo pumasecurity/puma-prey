@@ -1,26 +1,0 @@
-
-‰Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey.CreateFromEncryptedKey(byte[], System.Security.Cryptography.DataProtectionScope)Z
-PD:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\ProtectedKey.cs6# 6(9"0*ì
-08 8(E‡„
-8 8(F>
-%08Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey„
-
-8 8(#
-
-%1void"Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey.ProtectedKey(byte[], System.Security.Cryptography.DataProtectionScope)*B@
->
-%08Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*
-
-encryptedKeybyte[]*
-"""L
-8 8(G@
->
-%08Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*.
-19	 9(	"
-9 9(	
-implicit return:"
-6: 6(M
-encryptedKeybyte[]:S
-6O 6(vG
-dataProtectionScope0System.Security.Cryptography.DataProtectionScopeB<":
-8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey

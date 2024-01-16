@@ -1,27 +1,0 @@
-
-HPuma.Prey.Fox.Areas.HelpPage.Controllers.HelpController.HelpController()Y
-OD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Controllers\HelpController.cs ("3*
-1	 (	*
-0* 
-0 (4˜
-•
- (4'
-%0!System.Web.Http.HttpConfiguration"5System.Web.Http.GlobalConfiguration.Configuration.get*)'"%
-#System.Web.Http.GlobalConfigurationð
-í
- (5
-
-%1void"iPuma.Prey.Fox.Areas.HelpPage.Controllers.HelpController.HelpController(System.Web.Http.HttpConfiguration)*=;9
-7Puma.Prey.Fox.Areas.HelpPage.Controllers.HelpController*+)
-'
-%0!System.Web.Http.HttpConfiguration*
-2*.
-2	 (	"
- (	
-implicit return*4
-3 ( 
-
- (
-%2"__entrypoint*
-1B;9
-7Puma.Prey.Fox.Areas.HelpPage.Controllers.HelpController

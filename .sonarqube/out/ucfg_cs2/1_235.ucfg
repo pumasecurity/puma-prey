@@ -1,252 +1,0 @@
-
-dPuma.Prey.Raccoon.Controllers.AccountController.Register(Puma.Prey.Raccoon.Models.RegisterViewModel)S
-GD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\AccountController.csó( ó(0"6*¢
-0
-ô ô("Ö
-Ç
-
-ô ô()
-%0#System.Web.Mvc.ModelStateDictionary"(System.Web.Mvc.Controller.ModelState.get*
-System.Web.Mvc.ControllerÄ
-~
-
-ô ô("
-
-%1bool"5System.Collections.Generic.ICollection<T>.IsValid.get*-+
-)
-%0#System.Web.Mvc.ModelStateDictionary*
-1
-2*§
-1
-õ ù($hf
-
-õ õ(^.
-%2(Puma.Prey.Raccoon.Models.ApplicationUser"(Puma.Prey.Raccoon.Models.ApplicationUserã
-à
-
-õ õ(.
-
-%3void":Puma.Prey.Raccoon.Models.ApplicationUser.ApplicationUser()*20
-.
-%2(Puma.Prey.Raccoon.Models.ApplicationUserå
-â
-
-õ< õ(G
-%4string"4Puma.Prey.Raccoon.Models.RegisterViewModel.Email.get*75
-3
-model*Puma.Prey.Raccoon.Models.RegisterViewModel”–
-
-õ1 õ(G
-%5string"`Microsoft.AspNet.Identity.EntityFramework.IdentityUser<TKey, TLogin, TRole, TClaim>.UserName.set*20
-.
-%2(Puma.Prey.Raccoon.Models.ApplicationUser*
-
-%4string2UserName.setå
-â
-
-õQ õ(\
-%6string"4Puma.Prey.Raccoon.Models.RegisterViewModel.Email.get*75
-3
-model*Puma.Prey.Raccoon.Models.RegisterViewModelÕ 
-
-õI õ(\
-%7string"]Microsoft.AspNet.Identity.EntityFramework.IdentityUser<TKey, TLogin, TRole, TClaim>.Email.set*20
-.
-%2(Puma.Prey.Raccoon.Models.ApplicationUser*
-
-%6string2	Email.setz
-x
-
-õ õ(^0
-user(Puma.Prey.Raccoon.Models.ApplicationUser"__id*20
-.
-%2(Puma.Prey.Raccoon.Models.ApplicationUser∑
-¥
-
-ú# ú(..
-%8(Puma.Prey.Raccoon.ApplicationUserManager"?Puma.Prey.Raccoon.Controllers.AccountController.UserManager.get*531
-/Puma.Prey.Raccoon.Controllers.AccountControllerè
-å
-
-úA ú(O
-%9string"7Puma.Prey.Raccoon.Models.RegisterViewModel.Password.get*75
-3
-model*Puma.Prey.Raccoon.Models.RegisterViewModel£†
-
-ú# ú(P+
-%10$System.Threading.Tasks.Task<TResult>"MMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.CreateAsync(TUser, string)*20
-.
-%8(Puma.Prey.Raccoon.ApplicationUserManager*42
-0
-user(Puma.Prey.Raccoon.Models.ApplicationUser*
-
-%9string2CreateAsync(TUser, string)R
-P
-
-ú ú(P2
-result(Microsoft.AspNet.Identity.IdentityResult"__id*
-""å
-â
-
-ù ù($
-%11bool"6Microsoft.AspNet.Identity.IdentityResult.Succeeded.get*64
-2
-result(Microsoft.AspNet.Identity.IdentityResult*
-3
-4*Ò
-3
-ü ß(;º
-π
-
-ü ü('1
-%12*Puma.Prey.Raccoon.ApplicationSignInManager"APuma.Prey.Raccoon.Controllers.AccountController.SignInManager.get*531
-/Puma.Prey.Raccoon.Controllers.AccountControllerÆ´
-
-ü ü(d"
-%13System.Threading.Tasks.Task"XMicrosoft.AspNet.Identity.Owin.SignInManager<TUser, TKey>.SignInAsync(TUser, bool, bool)*53
-1
-%12*Puma.Prey.Raccoon.ApplicationSignInManager*42
-0
-user(Puma.Prey.Raccoon.Models.ApplicationUser*
-""*
-""2SignInAsync(TUser, bool, bool)≤
-Ø
-
-ß ß(<+
-%14$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
-System.Web.Mvc.Controller*	
-Index*
-
-Home";
-
-ß ß(=-
-+
-%14$System.Web.Mvc.RedirectToRouteResult*á
-4
-© ©( 
-Ì
-
-© ©(!
-%15void"cPuma.Prey.Raccoon.Controllers.AccountController.AddErrors(Microsoft.AspNet.Identity.IdentityResult)*531
-/Puma.Prey.Raccoon.Controllers.AccountController*64
-2
-result(Microsoft.AspNet.Identity.IdentityResult*
-2*
-2
-≠ ≠(¡
-æ
-
-≠ ≠(
-%16void"raccoon/views/account/register*	
-
-%17*75
-3
-model*Puma.Prey.Raccoon.Models.RegisterViewModel*
-
-%ViewBagDataAllobject*
-
-%ViewBagDataHtmlobject*
-
-%TempDataAllobject*
-
-%TempDataHtmlobject*" 
-
-%HttpContextItemsAllobject*#!
-
-%HttpContextItemsHtmlobjectª
-∏
-
-≠ ≠(
-%18void"raccoon/views/_viewstart*	
-
-%19*75
-3
-model*Puma.Prey.Raccoon.Models.RegisterViewModel*
-
-%ViewBagDataAllobject*
-
-%ViewBagDataHtmlobject*
-
-%TempDataAllobject*
-
-%TempDataHtmlobject*" 
-
-%HttpContextItemsAllobject*#!
-
-%HttpContextItemsHtmlobjectø
-º
-
-≠ ≠(
-%20void"raccoon/views/shared/_layout*	
-
-%21*75
-3
-model*Puma.Prey.Raccoon.Models.RegisterViewModel*
-
-%ViewBagDataAllobject*
-
-%ViewBagDataHtmlobject*
-
-%TempDataAllobject*
-
-%TempDataHtmlobject*" 
-
-%HttpContextItemsAllobject*#!
-
-%HttpContextItemsHtmlobject"
-
-≠ ≠(
-
-%20void*2
-5
-Æ	 Æ(	"!
-
-Æ Æ(	
-implicit return*Í
-6
-óI ó(Iu
-s
-
-ó( ó(0W
-3
-model*Puma.Prey.Raccoon.Models.RegisterViewModel" 
-<Email>k__BackingFieldstring"__entrypointd
-b
-
-ó( ó(0F
-3
-model*Puma.Prey.Raccoon.Models.RegisterViewModel"
-Emailstring"__entrypointx
-v
-
-ó( ó(0Z
-3
-model*Puma.Prey.Raccoon.Models.RegisterViewModel"#
-<Password>k__BackingFieldstring"__entrypointg
-e
-
-ó( ó(0I
-3
-model*Puma.Prey.Raccoon.Models.RegisterViewModel"
-Passwordstring"__entrypoint
-}
-
-ó( ó(0a
-3
-model*Puma.Prey.Raccoon.Models.RegisterViewModel"*
- <ConfirmPassword>k__BackingFieldstring"__entrypointn
-l
-
-ó( ó(0P
-3
-model*Puma.Prey.Raccoon.Models.RegisterViewModel"
-ConfirmPasswordstring"__entrypoint#
-!
-
-ó( ó(0
-%22"__entrypoint*
-0:A
-
-ó1 ó(H3
-model*Puma.Prey.Raccoon.Models.RegisterViewModelB31
-/Puma.Prey.Raccoon.Controllers.AccountController

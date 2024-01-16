@@ -1,28 +1,0 @@
-
-7Puma.Prey.Fox.Controllers.ValuesController.Post(string)L
-BD:\Sources\dotNetLab\puma-prey\Fox\Controllers\ValuesController.cs ("1*.
-0	 (	"
- (	
-implicit return*ò
-10 (05
-3
- (
-%0"__entrypoint*
-
-valuestringp
-n
- ("
-%1"
-__annotate*;97
-5System.Web.Http.FromBodyAttribute.FromBodyAttribute()*
-
-valuestring5
-3
- (/
-valuestring"__annotation*
-
-%1*
-0:
- (/
-valuestringB.,
-*Puma.Prey.Fox.Controllers.ValuesController

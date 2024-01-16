@@ -1,33 +1,0 @@
-
-°Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.SetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration, Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator)`
-TD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageConfigurationExtensions.cs¿ ¿(5"0*Ö
-0
-Á Ä()º
-·
-
-Á Á(F
-%0@System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>"0System.Web.Http.HttpConfiguration.Properties.get*/-
-+
-config!System.Web.Http.HttpConfiguration‚
-ÿ
-
-Á Ä(*
-%1object"ySystem.Collections.Generic.ICollection<T>.AddOrUpdate(TKey, System.Func<TKey, TValue>, System.Func<TKey, TValue, TValue>)*JH
-F
-%0@System.Collections.Concurrent.ConcurrentDictionary<TKey, TValue>*
-""*
-""*
-""*
-1*2
-1
-Å	 Å(	"!
-
-Å Å(	
-implicit return:9
-
-¿6 ¿(S+
-config!System.Web.Http.HttpConfiguration:U
-
-¿U ¿(|G
-sampleGenerator4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGeneratorB@">
-<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions

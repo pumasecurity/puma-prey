@@ -1,144 +1,0 @@
-
-dPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetDocumentation(System.Reflection.MemberInfo)W
-MD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\XmlDocumentationProvider.csL L(&"0*ƒ
-0N O(Fî
-ë
-N. N(J&
-%0 System.Globalization.CultureInfo"5System.Globalization.CultureInfo.InvariantCulture.get*&$""
- System.Globalization.CultureInfoèå
-Nc N(w
-%1System.Type".System.Reflection.MemberInfo.DeclaringType.get**(
-&
-memberSystem.Reflection.MemberInfo2DeclaringType.getø
-º
-NW N(x
-%2string"NPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetTypeName(System.Type)*;9"7
-5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider*
-
-%1System.Typexv
-	Nz N(Ö
-%3string"%System.Reflection.MemberInfo.Name.get**(
-&
-memberSystem.Reflection.MemberInfo2Name.get»
-≈
-	N  N(Ü
-%4string"=string.Format(System.IFormatProvider, string, object, object)*
-"
-string**(
-&
-%0 System.Globalization.CultureInfo*	
-{0}.{1}*
-
-%2string*
-
-%3string;
-9
-	N N(Ü
-
-memberNamestring"__id*
-
-%4stringõò
-O  O(1#
-%5System.Reflection.MemberTypes"+System.Reflection.MemberInfo.MemberType.get**(
-&
-memberSystem.Reflection.MemberInfo2MemberType.get"
- 
-O5 O(F
-%6"__id*
-""*
-1
-2*ò
-1OI O(X#
-!
-OI O(X
-%10"__id*
-""+
-)
-OI O(X
-%8string"__id*	
-
-%102
-0
-OI O(X
-%7string"__id*
-
-%8string*
-3*ò
-2O[ O(m#
-!
-O[ O(m
-%11"__id*
-""+
-)
-O[ O(m
-%9string"__id*	
-
-%112
-0
-O[ O(m
-%7string"__id*
-
-%9string*
-3*è
-
-3O R(6:
-8
-O O(m
-
-expressionstring"__id*
-
-%7stringï
-í
-P4 P(P'
-%12 System.Globalization.CultureInfo"5System.Globalization.CultureInfo.InvariantCulture.get*&$""
- System.Globalization.CultureInfo¬
-ø
-P& P(i
-%13string"5string.Format(System.IFormatProvider, string, object)*
-"
-string*+)
-'
-%12 System.Globalization.CultureInfo*
-
-
-expressionstring*
-
-
-memberNamestringA
-?
-P P(i
-selectExpressionstring"__id*
-
-%13string±
-Æ
-Q* Q(<&
-%14System.Xml.XPath.XPathNavigator"__id*tr*p7
-5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider"5
-_documentNavigatorSystem.Xml.XPath.XPathNavigator’“
-Q* Q(_&
-%15System.Xml.XPath.XPathNavigator"8System.Xml.XPath.XPathNavigator.SelectSingleNode(string)**(
-&
-%14System.Xml.XPath.XPathNavigator*
-
-selectExpressionstring2SelectSingleNode(string)o
-m
-Q Q(_/
-propertyNodeSystem.Xml.XPath.XPathNavigator"__id**(
-&
-%15System.Xml.XPath.XPathNavigatorâ
-Ü
-R R(7
-%16string"jPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetTagValue(System.Xml.XPath.XPathNavigator, string)*;9"7
-5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider*31
-/
-propertyNodeSystem.Xml.XPath.XPathNavigator*	
-summary"
-R R(8
-
-%16string*.
-4S	 S(	"
-S S(	
-implicit return:2
-L' L(8&
-memberSystem.Reflection.MemberInfoB97
-5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider

@@ -1,67 +1,0 @@
-
-9Puma.Prey.Fox.Controllers.AccountController.Dispose(bool)O
-CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.csø  ø('"0*
-0
-ú ú(*
-1
-2*Ğ
-1
-ú ú(1¬
-©
-
-ú ú()*
-%0$Puma.Prey.Fox.ApplicationUserManager"__id*ig*e-
-+Puma.Prey.Fox.Controllers.AccountController"4
-_userManager$Puma.Prey.Fox.ApplicationUserManager‡
-„
-
-ú ú(1
-
-%1bool""object.operator !=(object, object)*
-"
-object*.,
-*
-%0$Puma.Prey.Fox.ApplicationUserManager*
-""*
-3
-2*Ø
-3
-ü ı(#¬
-©
-
-ü ü(*
-%2$Puma.Prey.Fox.ApplicationUserManager"__id*ig*e-
-+Puma.Prey.Fox.Controllers.AccountController"4
-_userManager$Puma.Prey.Fox.ApplicationUserManager‰
-†
-
-ü ü(&
-
-%3void"<Microsoft.AspNet.Identity.UserManager<TUser, TKey>.Dispose()*.,
-*
-%2$Puma.Prey.Fox.ApplicationUserManager†
-ƒ
-
-ı ı(#e-
-+Puma.Prey.Fox.Controllers.AccountController"4
-_userManager$Puma.Prey.Fox.ApplicationUserManager"__id*
-""*
-2*«
-2
-€ €("”‘
-
-€ €(#
-
-%4void"+System.Web.Http.ApiController.Dispose(bool)*1/-
-+Puma.Prey.Fox.Controllers.AccountController*
-""2Dispose(bool)*
-4*2
-4
-	 (	"!
-
- (	
-implicit return:
-
-ø( ø(6
-	disposingboolB/-
-+Puma.Prey.Fox.Controllers.AccountController

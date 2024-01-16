@@ -1,7 +1,0 @@
-ï
--Puma.Prey.Raccoon.Models.SetPasswordViewModelobject^
-SetPasswordViewModel()DPuma.Prey.Raccoon.Models.SetPasswordViewModel.SetPasswordViewModel()P
-NewPassword.get=Puma.Prey.Raccoon.Models.SetPasswordViewModel.NewPassword.getP
-NewPassword.set=Puma.Prey.Raccoon.Models.SetPasswordViewModel.NewPassword.setX
-ConfirmPassword.getAPuma.Prey.Raccoon.Models.SetPasswordViewModel.ConfirmPassword.getX
-ConfirmPassword.setAPuma.Prey.Raccoon.Models.SetPasswordViewModel.ConfirmPassword.set

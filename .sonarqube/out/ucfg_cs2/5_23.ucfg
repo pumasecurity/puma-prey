@@ -1,41 +1,0 @@
-
-1Skunk.Contact.Page_Load(object, System.EventArgs)>
-4D:\Sources\dotNetLab\puma-prey\Skunk\Contact.aspx.cs ("0*‘
-0 ('d
-b
- (%
-%0System.Web.HttpRequest"System.Web.UI.Page.Request.get*
-System.Web.UI.Pageu
-s
- (1
-%1string"'System.Web.HttpRequest.this[string].get* 
-
-%0System.Web.HttpRequest*
-
-fileName8
-6
- (1
-fileNamestring"__id*
-
-%1stringf
-d
- (
-%2System.Web.HttpResponse"System.Web.UI.Page.Response.get*
-System.Web.UI.Page~
-|
- ((
-
-%3void")System.Web.HttpResponse.WriteFile(string)*!
-
-%2System.Web.HttpResponse*
-
-fileNamestring*
-1*.
-1 ("
- (
-implicit return:
- ((
-senderobject:!
-* (5
-eSystem.EventArgsB
-Skunk.Contact

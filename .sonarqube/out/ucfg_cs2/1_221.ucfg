@@ -1,74 +1,0 @@
-
-4Puma.Prey.Raccoon.Controllers.HomeController.Index()N
-DD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\HomeController.cs (!"2*·
-0 (è
-å
- (
-
-%0void"raccoon/views/home/index*
-
-%1*
-	{unknown}*
-
-%ViewBagDataAllobject*
-
-%ViewBagDataHtmlobject*
-
-%TempDataAllobject*
-
-%TempDataHtmlobject*" 
-
-%HttpContextItemsAllobject*#!
-
-%HttpContextItemsHtmlobjectè
-å
- (
-
-%2void"raccoon/views/_viewstart*
-
-%3*
-	{unknown}*
-
-%ViewBagDataAllobject*
-
-%ViewBagDataHtmlobject*
-
-%TempDataAllobject*
-
-%TempDataHtmlobject*" 
-
-%HttpContextItemsAllobject*#!
-
-%HttpContextItemsHtmlobjectì
-ê
- (
-
-%4void"raccoon/views/shared/_layout*
-
-%5*
-	{unknown}*
-
-%ViewBagDataAllobject*
-
-%ViewBagDataHtmlobject*
-
-%TempDataAllobject*
-
-%TempDataHtmlobject*" 
-
-%HttpContextItemsAllobject*#!
-
-%HttpContextItemsHtmlobject"
- (
-
-
-%4void*.
-1	 (	"
- (	
-implicit return*4
-2# (# 
-
- (!
-%6"__entrypoint*
-0B0.
-,Puma.Prey.Raccoon.Controllers.HomeController

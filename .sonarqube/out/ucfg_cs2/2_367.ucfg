@@ -1,80 +1,0 @@
-
-CPuma.Prey.Fox.Areas.HelpPage.Controllers.HelpController.Api(string)Y
-OD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\Controllers\HelpController.cs! !("5*p
-0# #(+Y
-W
-# #(,
-
-%0bool"string.IsNullOrEmpty(string)*
-"
-string*
-
-apiIdstring*
-1
-2*Ý
-1%! &($À
-½
-%, %(9'
-%1!System.Web.Http.HttpConfiguration"IPuma.Prey.Fox.Areas.HelpPage.Controllers.HelpController.Configuration.get*=;9
-7Puma.Prey.Fox.Areas.HelpPage.Controllers.HelpControllerÌ
-É
-%, %(T:
-%24Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel"{Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.GetHelpPageApiModel(System.Web.Http.HttpConfiguration, string)*B@">
-<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions*+)
-'
-%1!System.Web.Http.HttpConfiguration*
-
-apiIdstring•
-’
-%! %(T@
-apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel"__id*><
-:
-%24Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel›
-˜
-& &($
-
-%3bool""object.operator !=(object, object)*
-"
-object*DB
-@
-apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel*
-""*
-3
-2*ü
-3( (((½
-º
-( (()
-%4System.Web.Mvc.ViewResult"&System.Web.Mvc.Controller.View(object)*
-System.Web.Mvc.Controller*DB
-@
-apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel"-
-( ((*!
-
-%4System.Web.Mvc.ViewResult*ã
-2, ,(%"
- 
-, ,(%
-%5"__id*
-""€
-~
-, ,(&
-%6System.Web.Mvc.ViewResult"&System.Web.Mvc.Controller.View(string)*
-System.Web.Mvc.Controller*
-
-%5"-
-, ,('!
-
-%6System.Web.Mvc.ViewResult*.
-4-	 -(	"
-- -(	
-implicit return*I
-5!- !(-5
-3
-! !(
-%7"__entrypoint*
-
-apiIdstring*
-0:
-!  !(,
-apiIdstringB;9
-7Puma.Prey.Fox.Areas.HelpPage.Controllers.HelpController

@@ -1,9 +1,0 @@
-¯
-/Puma.Prey.Fox.Models.ChangePasswordBindingModelobjectl
-ChangePasswordBindingModel()LPuma.Prey.Fox.Models.ChangePasswordBindingModel.ChangePasswordBindingModel()R
-OldPassword.get?Puma.Prey.Fox.Models.ChangePasswordBindingModel.OldPassword.getR
-OldPassword.set?Puma.Prey.Fox.Models.ChangePasswordBindingModel.OldPassword.setR
-NewPassword.get?Puma.Prey.Fox.Models.ChangePasswordBindingModel.NewPassword.getR
-NewPassword.set?Puma.Prey.Fox.Models.ChangePasswordBindingModel.NewPassword.setZ
-ConfirmPassword.getCPuma.Prey.Fox.Models.ChangePasswordBindingModel.ConfirmPassword.getZ
-ConfirmPassword.setCPuma.Prey.Fox.Models.ChangePasswordBindingModel.ConfirmPassword.set

@@ -1,31 +1,0 @@
-
-SPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetDocumentation(System.Type)W
-MD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\XmlDocumentationProvider.csU U(&"0*˘
-0W X(2⁄
-◊
-W& W(7%
-%0System.Xml.XPath.XPathNavigator"NPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetTypeNode(System.Type)*;97
-5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider*
-
-typeSystem.Typej
-h
-W W(7+
-typeNodeSystem.Xml.XPath.XPathNavigator"__id*)'
-%
-%0System.Xml.XPath.XPathNavigatorÑ
-Å
-X X(3
-%1string"jPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetTagValue(System.Xml.XPath.XPathNavigator, string)*;9"7
-5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider*/-
-+
-typeNodeSystem.Xml.XPath.XPathNavigator*	
-summary"
-X X(4
-
-%1string*.
-1Y	 Y(	"
-Y Y(	
-implicit return:
-U' U(0
-typeSystem.TypeB97
-5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider

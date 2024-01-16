@@ -1,127 +1,0 @@
-
-ØPuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.GenerateResourceDescription(Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel, Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator)`
-TD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageConfigurationExtensions.csú ú(7"0*å
-0
-ü  ý(5Ð
-Í
-
-ü+ ü(B0
-%3*System.Web.Http.Description.ApiDescription"GPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.ApiDescription.get*DB
-@
-apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModelÀ
-½
-
-ü+ ü(V5
-%4/System.Web.Http.Description.ResponseDescription"BSystem.Web.Http.Description.ApiDescription.ResponseDescription.get*42
-0
-%3*System.Web.Http.Description.ApiDescription
-Š
-
-ü  ü(V;
-response/System.Web.Http.Description.ResponseDescription"__id*97
-5
-%4/System.Web.Http.Description.ResponseDescription¥
-¢
-
-ý  ý(5
-%5System.Type"@System.Web.Http.Description.ResponseDescription.ResponseType.get*?=
-;
-response/System.Web.Http.Description.ResponseDescription>
-<
-
-ý  ý(5
-%1System.Type"__id*
-
-%5System.Type>
-<
-
-ý  ý(5
-%0System.Type"__id*
-
-%1System.Type*
-1
-2*¼
-1
-ý9 ý(N¥
-¢
-
-ý9 ý(N
-%6System.Type"@System.Web.Http.Description.ResponseDescription.DeclaredType.get*?=
-;
-response/System.Web.Http.Description.ResponseDescription>
-<
-
-ý9 ý(N
-%2System.Type"__id*
-
-%6System.Type>
-<
-
-ý9 ý(N
-%0System.Type"__id*
-
-%2System.Type*
-2*ð
-2
-ý þ($H
-F
-
-ý ý(N
-responseTypeSystem.Type"__id*
-
-%0System.TypeŒ
-‰
-
-þ þ($
-
-%7bool"1System.Type.operator !=(System.Type, System.Type)*"
-System.Type*
-
-responseTypeSystem.Type*
-""*
-3
-4*¦
-3
-þ( þ(DŒ
-‰
-
-þ( þ(D
-
-%8bool"1System.Type.operator !=(System.Type, System.Type)*"
-System.Type*
-
-responseTypeSystem.Type*
-""*
-5
-4*š
-5
-€ €(fÊ
-Ç
-
-€/ €(gE
-%9?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"qPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GetOrCreateModelDescription(System.Type)*^\
-Z
-modelGeneratorHPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator*
-
-responseTypeSystem.Type¶
-³
-
-€ €(gF
-%10?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"LPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.ResourceDescription.set*DB
-@
-apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel*IG
-E
-%9?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription*
-4*2
-4
-‚	 ‚(	"!
-
-‚ ‚(	
-implicit return:N
-
-ú8 ú(Q@
-apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel:h
-
-úS ú({Z
-modelGeneratorHPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGeneratorB@">
-<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions

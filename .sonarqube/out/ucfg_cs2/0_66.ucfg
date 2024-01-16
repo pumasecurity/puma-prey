@@ -1,35 +1,0 @@
-
-„Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.Read(System.IO.Stream, System.Security.Cryptography.DataProtectionScope)]
-SD:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyReaderWriter.cs ( "0*í
-0 (qê
-ç
- (7
-
-%0void"`Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.ValidateKeyVersion(System.IO.Stream)*A?=
-;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter**(
-&
-protectedKeyStreamSystem.IO.Streamê
-ç
-7 (`
-%1byte[]"^Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.ReadEncryptedKey(System.IO.Stream)*A?=
-;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter**(
-&
-protectedKeyStreamSystem.IO.Streamµ
-²
- (r>
-%28Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"‰Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey.CreateFromEncryptedKey(byte[], System.Security.Cryptography.DataProtectionScope)*><":
-8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*
-
-%1byte[]*
-"""L
- (s@
->
-%28Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*.
-1	 (	"
- (	
-implicit return:2
-! (:&
-protectedKeyStreamSystem.IO.Stream:O
-< (_C
-protectionScope0System.Security.Cryptography.DataProtectionScopeB?=
-;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter

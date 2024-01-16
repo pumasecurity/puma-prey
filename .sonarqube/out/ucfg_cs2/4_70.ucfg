@@ -1,36 +1,0 @@
-
-ˆPuma.Prey.Common.Cryptography.KeyManagement.KeyManager.Write(System.IO.Stream, byte[], System.Security.Cryptography.DataProtectionScope)X
-ND:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyManager.csf f( "0*¿
-0h i(.¿
-¼
-h h(f>
-%08Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"‰Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey.CreateFromEncryptedKey(byte[], System.Security.Cryptography.DataProtectionScope)*><":
-8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*
-
-encryptedKeybyte[]*
-""˜
-•
-h h(f?
-key8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"__id*B@
->
-%08Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyÍ
-Ê
-i i(/
-
-%1void"ˆPuma.Prey.Common.Cryptography.KeyManagement.KeyManager.Write(System.IO.Stream, Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey)*<:"8
-6Puma.Prey.Common.Cryptography.KeyManagement.KeyManager*$"
- 
-outputStreamSystem.IO.Stream*CA
-?
-key8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*
-1*.
-1j	 j(	"
-j j(	
-implicit return:,
-f! f(4 
-outputStreamSystem.IO.Stream:"
-f6 f(I
-encryptedKeybyte[]:T
-fK f(sH
-dpapiProtectionScope0System.Security.Cryptography.DataProtectionScopeB:"8
-6Puma.Prey.Common.Cryptography.KeyManagement.KeyManager

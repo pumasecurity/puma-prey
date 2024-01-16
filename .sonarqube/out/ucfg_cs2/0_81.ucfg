@@ -1,43 +1,0 @@
-
-ÄPuma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.ProtectKey(byte[], System.Security.Cryptography.DataProtectionScope)_
-SD:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyReaderWriter.csÆ Æ('"0*Í
-0
-∞ ≤(¡
-æ
-
-∞" ∞(d>
-%08Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"âPuma.Prey.Common.Cryptography.KeyManagement.ProtectedKey.CreateFromPlaintextKey(byte[], System.Security.Cryptography.DataProtectionScope)*><":
-8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*
-
-decryptedKeybyte[]*
-""ù
-ö
-
-∞ ∞(dB
-result8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"__id*B@
->
-%08Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey†
-ù
-
-± ±(.
-
-%1void":Puma.Prey.Common.Cryptography.Utility.ZeroOutBytes(byte[])*+)"'
-%Puma.Prey.Common.Cryptography.Utility*
-
-decryptedKeybyte[]"R
-
-≤ ≤(D
-B
-result8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*2
-1
-≥	 ≥(	"!
-
-≥ ≥(	
-implicit return:$
-
-Æ( Æ(;
-decryptedKeybyte[]:Q
-
-Æ= Æ(`C
-protectionScope0System.Security.Cryptography.DataProtectionScopeB?=
-;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter

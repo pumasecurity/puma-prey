@@ -1,45 +1,0 @@
-
-’Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.DefaultSampleObjectFactory(Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator, System.Type)i
-]D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.csð ð(8"0*Ž
-0
-ó ô(6pn
-
-ó. ó(C2
-%0,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator",Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator“
-
-
-ó2 ó(A
-
-%1void">Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator.ObjectGenerator()*64
-2
-%0,Puma.Prey.Fox.Areas.HelpPage.ObjectGeneratorŽ
-‹
-
-ó ó(C?
-objectGenerator,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator"__id*64
-2
-%0,Puma.Prey.Fox.Areas.HelpPage.ObjectGeneratorÅ
-Â
-
-ô ô(7
-%2object"HPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.GenerateObject(System.Type)*CA
-?
-objectGenerator,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator*
-
-typeSystem.Type"
-
-ô ô(8
-
-%2object*2
-1
-õ	 õ(	"!
-
-õ õ(	
-implicit return:U
-
-ð9 ð(`G
-sampleGenerator4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator:!
-
-ðb ð(k
-typeSystem.TypeB8"6
-4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator

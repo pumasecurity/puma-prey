@@ -1,72 +1,0 @@
-
-FPuma.Prey.Fox.WebApiConfig.Register(System.Web.Http.HttpConfiguration)F
-<D:\Sources\dotNetLab\puma-prey\Fox\App_Start\WebApiConfig.cs (#"0*
-0 (<÷
-ô
- (6
-
-%0void"tSystem.Web.Http.OwinHttpConfigurationExtensions.SuppressDefaultHostAuthentication(System.Web.Http.HttpConfiguration)*53"1
-/System.Web.Http.OwinHttpConfigurationExtensions*/-
-+
-config!System.Web.Http.HttpConfiguration¡
-ž
- (2
-%1,System.Web.Http.Filters.HttpFilterCollection"-System.Web.Http.HttpConfiguration.Filters.get*/-
-+
-config!System.Web.Http.HttpConfiguration"
- 
-< (\
-%2"__id*
-""fd
- (].
-%3(System.Web.Http.HostAuthenticationFilter"(System.Web.Http.HostAuthenticationFilter¢
-Ÿ
-# (;
-
-%4void"ISystem.Web.Http.HostAuthenticationFilter.HostAuthenticationFilter(string)*20
-.
-%3(System.Web.Http.HostAuthenticationFilter*
-
-%2Ø
-Õ
- (^
-
-%5void"QSystem.Web.Http.Filters.HttpFilterCollection.Add(System.Web.Http.Filters.IFilter)*64
-2
-%1,System.Web.Http.Filters.HttpFilterCollection*20
-.
-%3(System.Web.Http.HostAuthenticationFilterä
-á
- (+
-
-%6void"eSystem.Web.Http.HttpConfigurationExtensions.MapHttpAttributeRoutes(System.Web.Http.HttpConfiguration)*1/"-
-+System.Web.Http.HttpConfigurationExtensions*/-
-+
-config!System.Web.Http.HttpConfiguration—
-”
- ()
-%7#System.Web.Http.HttpRouteCollection",System.Web.Http.HttpConfiguration.Routes.get*/-
-+
-config!System.Web.Http.HttpConfiguration
-Š
-% (<$
-%8System.Web.Http.RouteParameter"__id*RP*N 
-System.Web.Http.RouteParameter"*
-OptionalSystem.Web.Http.RouteParameterÍ
-Ê
- ((
-%9"System.Web.Http.Routing.IHttpRoute"wSystem.Web.Http.HttpRouteCollectionExtensions.MapHttpRoute(System.Web.Http.HttpRouteCollection, string, string, object)*31"/
--System.Web.Http.HttpRouteCollectionExtensions*-+
-)
-%7#System.Web.Http.HttpRouteCollection*
-
-DefaultApi*
-api/{controller}/{id}*
-""*
-1*.
-1	 (	"
- (	
-implicit return:7
-$ (<+
-config!System.Web.Http.HttpConfigurationB"
-Puma.Prey.Fox.WebApiConfig

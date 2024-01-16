@@ -1,88 +1,0 @@
-
-?Puma.Prey.Raccoon.Controllers.ManageController.HasPhoneNumber()R
-FD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\ManageController.csî î(#"0*ª
-
-0
-ğ ñ(µ
-²
-
-ğ ğ(".
-%0(Puma.Prey.Raccoon.ApplicationUserManager">Puma.Prey.Raccoon.Controllers.ManageController.UserManager.get*420
-.Puma.Prey.Raccoon.Controllers.ManageController
-}
-
-ğ, ğ(0*
-%1$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
-System.Web.Mvc.Controller«¨
-
-ğ, ğ(9)
-%2#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
-*
-%1$System.Security.Principal.IPrincipal2Identity.getİ
-Ú
-
-ğ, ğ(E
-%3string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
-,Microsoft.AspNet.Identity.IdentityExtensions*-+
-)
-%2#System.Security.Principal.IIdentity½
-º
-
-ğ ğ(F.
-%4(Puma.Prey.Raccoon.Models.ApplicationUser"Microsoft.AspNet.Identity.UserManagerExtensions.FindById<TUser, TKey>(Microsoft.AspNet.Identity.UserManager<TUser, TKey>, TKey)*53"1
-/Microsoft.AspNet.Identity.UserManagerExtensions*20
-.
-%0(Puma.Prey.Raccoon.ApplicationUserManager*
-
-%3stringz
-x
-
-ğ ğ(F0
-user(Puma.Prey.Raccoon.Models.ApplicationUser"__id*20
-.
-%4(Puma.Prey.Raccoon.Models.ApplicationUser
-Š
-
-ñ ñ(
-
-%5bool""object.operator !=(object, object)*
-"
-object*42
-0
-user(Puma.Prey.Raccoon.Models.ApplicationUser*
-""*
-1
-2*á
-1
-ó ó(/ÉÆ
-
-ó ó('
-%6string"cMicrosoft.AspNet.Identity.EntityFramework.IdentityUser<TKey, TLogin, TRole, TClaim>.PhoneNumber.get*42
-0
-user(Puma.Prey.Raccoon.Models.ApplicationUser2PhoneNumber.geth
-f
-
-ó ó(/
-
-%7bool""string.operator !=(string, string)*
-"
-string*
-
-%6string*
-"""
-
-ó ó(0
-
-
-%7bool*%
-2
-õ õ("
-
-õ õ(
-""*2
-3
-ö	 ö(	"!
-
-ö ö(	
-implicit returnB20
-.Puma.Prey.Raccoon.Controllers.ManageController

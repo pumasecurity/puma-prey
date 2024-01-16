@@ -1,57 +1,0 @@
-
-êPuma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.GenerateArchivalKey(System.Security.Cryptography.SymmetricAlgorithm, string, byte[])_
-SD:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyReaderWriter.csû û(*"0*ò
-0
-† °(Vvt
-
-†4 †(\5
-%0/System.Security.Cryptography.Rfc2898DeriveBytes"/System.Security.Cryptography.Rfc2898DeriveBytesÿ
-’
-
-†8 †(J
-
-%1void"RSystem.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(string, byte[])*97
-5
-%0/System.Security.Cryptography.Rfc2898DeriveBytes*
-
-
-passphrasestring*
-
-saltbyte[]ó
-î
-
-† †(\E
-rfc2898DeriveBytes/System.Security.Cryptography.Rfc2898DeriveBytes"__id*97
-5
-%0/System.Security.Cryptography.Rfc2898DeriveBytes∏µ
-
-°/ °(R	
-%2int";System.Security.Cryptography.SymmetricAlgorithm.KeySize.get*RP
-N
-archivalEncryptionAlgorithm/System.Security.Cryptography.SymmetricAlgorithm2KeySize.get¿Ω
-
-° °(W
-%3byte[]"=System.Security.Cryptography.Rfc2898DeriveBytes.GetBytes(int)*IG
-E
-rfc2898DeriveBytes/System.Security.Cryptography.Rfc2898DeriveBytes*
-""2GetBytes(int)"
-
-° °(X
-
-%3byte[]*2
-1
-¢	 ¢(	"!
-
-¢ ¢(	
-implicit return:\
-
-û+ û(YN
-archivalEncryptionAlgorithm/System.Security.Cryptography.SymmetricAlgorithm:"
-
-û[ û(l
-
-passphrasestring:
-
-ûn û(y
-saltbyte[]B?=
-;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter

@@ -1,75 +1,0 @@
-
-iPuma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.EncryptKeyForArchival(byte[], string, byte[])]
-SD:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyReaderWriter.cst t(,"0*Ó
-0v y(`nl
-v. v(C2
-%0,System.Security.Cryptography.RijndaelManaged",System.Security.Cryptography.RijndaelManagedë
-é
-v2 v(A
-
-%1void">System.Security.Cryptography.RijndaelManaged.RijndaelManaged()*64
-2
-%0,System.Security.Cryptography.RijndaelManagedå
-â
-v v(C?
-rijndaelManaged,System.Security.Cryptography.RijndaelManaged"__id*64
-2
-%0,System.Security.Cryptography.RijndaelManaged‰
-·
-w w(W
-%2byte[]"êPuma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.GenerateArchivalKey(System.Security.Cryptography.SymmetricAlgorithm, string, byte[])*A?=
-;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter*CA
-?
-rijndaelManaged,System.Security.Cryptography.RijndaelManaged*
-
-
-passphrasestring*
-
-saltbyte[]6
-4
-w w(W
-rgbKeybyte[]"__id*
-
-%2byte[]´®
-x$ x(=	
-%3int"=System.Security.Cryptography.SymmetricAlgorithm.BlockSize.get*CA
-?
-rijndaelManaged,System.Security.Cryptography.RijndaelManaged2BlockSize.get" 
-x x(B
-%4byte[]"byte[]5
-3
-x x(B
-rgbIVbyte[]"__id*
-
-%4byte[]Ä
-˝
-y% y(S3
-%5-System.Security.Cryptography.ICryptoTransform"LSystem.Security.Cryptography.RijndaelManaged.CreateEncryptor(byte[], byte[])*CA
-?
-rijndaelManaged,System.Security.Cryptography.RijndaelManaged*
-
-rgbKeybyte[]*
-
-rgbIVbyte[]Ñ
-Å
-y y(a
-%6byte[]"fPuma.Prey.Common.Cryptography.Utility.Transform(System.Security.Cryptography.ICryptoTransform, byte[])*+)"'
-%Puma.Prey.Common.Cryptography.Utility*75
-3
-%5-System.Security.Cryptography.ICryptoTransform*
-
-keyToExportbyte[]"
-y y(b
-
-%6byte[]*.
-1z	 z(	"
-z z(	
-implicit return:!
-t- t(?
-keyToExportbyte[]: 
-tA t(R
-
-passphrasestring:
-tT t(_
-saltbyte[]B?=
-;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter

@@ -1,38 +1,0 @@
-
-7Puma.Prey.Raccoon.Controllers.HuntController.Enter(int)N
-DD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\HuntController.cs2 2(!"2*ª
-04 5(ZX
-4 4('(
-%0"Puma.Prey.Raccoon.Models.HuntModel""Puma.Prey.Raccoon.Models.HuntModelv
-t
-4 4(%
-
-%1void".Puma.Prey.Raccoon.Models.HuntModel.HuntModel()*,*
-(
-%0"Puma.Prey.Raccoon.Models.HuntModelm
-k
-4 4('+
-model"Puma.Prey.Raccoon.Models.HuntModel"__id*,*
-(
-%0"Puma.Prey.Raccoon.Models.HuntModel¨
-¥
-5 5(
-%2System.Web.Mvc.ViewResult"&System.Web.Mvc.Controller.View(object)*
-System.Web.Mvc.Controller*/-
-+
-model"Puma.Prey.Raccoon.Models.HuntModel"-
-5 5(!
-
-%2System.Web.Mvc.ViewResult*.
-16	 6(	"
-6 6(	
-implicit return*>
-22) 2()*
-(
-2 2(!
-%3"__entrypoint*
-""*
-0:
-2" 2((	
-idintB0.
-,Puma.Prey.Raccoon.Controllers.HuntController

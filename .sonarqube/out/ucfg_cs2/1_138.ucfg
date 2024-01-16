@@ -1,174 +1,0 @@
-
-.Puma.Prey.Raccoon.HuntUtil.HuntIsValid(string)<
-2D:\Sources\dotNetLab\puma-prey\Raccoon\HuntUtil.cs (&"0*∂
-0 (=\Z
- (/)
-%0#Puma.Prey.Rabbit.EF.RabbitDBContext"#Puma.Prey.Rabbit.EF.RabbitDBContext~
-|
- (-
-
-%1void"5Puma.Prey.Rabbit.EF.RabbitDBContext.RabbitDBContext()*-+
-)
-%0#Puma.Prey.Rabbit.EF.RabbitDBContextq
-o
- (/.
-context#Puma.Prey.Rabbit.EF.RabbitDBContext"__id*-+
-)
-%0#Puma.Prey.Rabbit.EF.RabbitDBContextL
-J
-+ (=
-%2"__id*20
-.
-context#Puma.Prey.Rabbit.EF.RabbitDBContextûõ
-* (GA
-%3;Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade"4Microsoft.EntityFrameworkCore.DbContext.Database.get*
-
-%22Database.get”
-–
-* (Y%
-%4System.Data.Common.DbConnection"çMicrosoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.GetDbConnection(Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade)*FD"B
-@Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions*EC
-A
-%3;Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacadeíè
-* (j
-%5string"4System.Data.Common.DbConnection.ConnectionString.get*)'
-%
-%4System.Data.Common.DbConnection2ConnectionString.getb`
- (k,
-%6&Microsoft.Data.Sqlite.SqliteConnection"&Microsoft.Data.Sqlite.SqliteConnectionû
-õ
- ()
-
-%7void"?Microsoft.Data.Sqlite.SqliteConnection.SqliteConnection(string)*0.
-,
-%6&Microsoft.Data.Sqlite.SqliteConnection*
-
-%5stringr
-p
- (k,
-cn&Microsoft.Data.Sqlite.SqliteConnection"__id*0.
-,
-%6&Microsoft.Data.Sqlite.SqliteConnection*
-1*
-1'	 '(	*
-2*{
-2 (/d
-b
- (0
-
-%8bool"int.TryParse(string, out int)*	"
-int*
-
-idstring*
-
-
-hIdint*
-3
-4*!
-39 (>"
-2 (?
-""*ä
-
-4 (4Å
- (
-
-%9void"-Microsoft.Data.Sqlite.SqliteConnection.Open()*0.
-,
-cn&Microsoft.Data.Sqlite.SqliteConnection2Open();
-9
-Z (h
-%10string"int.ToString()*
-
-
-hIdint}
-{
-, (h
-%11string"__concat*9
-, (W-+
-)select count(*) from Contests where ID = *
-Z (h
-
-%10stringc
-a
-, (|
-%12string"__concat*
-, (h
-
-%11string*
-k (|
- and Closed = 0^\
-	 (Å*
-%13#Microsoft.Data.Sqlite.SqliteCommand"#Microsoft.Data.Sqlite.SqliteCommandÚ
-Ô
- (+
-%14void"aMicrosoft.Data.Sqlite.SqliteCommand.SqliteCommand(string, Microsoft.Data.Sqlite.SqliteConnection)*.,
-*
-%13#Microsoft.Data.Sqlite.SqliteCommand*
-
-%12string*0.
-,
-cn&Microsoft.Data.Sqlite.SqliteConnectiono
-m
-	 (Å*
-cmd#Microsoft.Data.Sqlite.SqliteCommand"__id*.,
-*
-%13#Microsoft.Data.Sqlite.SqliteCommandíè
-  (3
-%15object"3Microsoft.Data.Sqlite.SqliteCommand.ExecuteScalar()*.,
-*
-cmd#Microsoft.Data.Sqlite.SqliteCommand2ExecuteScalar()MK
-  (>
-%16string"object.ToString()*
-
-%15object2
-ToString()7
-5
- (>
-resultstring"__id*
-
-%16stringk
-i
- (5
-%17bool"int.TryParse(string, out int)*	"
-int*
-
-resultstring*
-
-countint*
-5
-6*
-59 (B*
-7
-6*!
-7 ("
- (
-""*!
-6! !("
-! !(
-""*ﬁ
-8% %(B†ù
-% %("
-%18System.Data.ConnectionState"0Microsoft.Data.Sqlite.SqliteConnection.State.get*0.
-,
-cn&Microsoft.Data.Sqlite.SqliteConnection2	State.get#
-!
-%  %(B
-%19"__id*
-""*
-9
-10*õ
-9%F %(PÖÇ
-%F %(P
-%20void".Microsoft.Data.Sqlite.SqliteConnection.Close()*0.
-,
-cn&Microsoft.Data.Sqlite.SqliteConnection2Close()*
-10*
-10'	 '(	*
-11
-11*/
-11'	 '(	"
-' '(	
-implicit return:
-' (0
-idstringB"
-Puma.Prey.Raccoon.HuntUtil

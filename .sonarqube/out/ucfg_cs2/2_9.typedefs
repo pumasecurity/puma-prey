@@ -1,8 +1,0 @@
-…
-*Puma.Prey.Fox.Controllers.ValuesControllerSystem.Web.Http.ApiControllerobject9
-Get()0Puma.Prey.Fox.Controllers.ValuesController.Get()?
-Get(int)3Puma.Prey.Fox.Controllers.ValuesController.Get(int)G
-Post(string)7Puma.Prey.Fox.Controllers.ValuesController.Post(string)O
-Put(int, string);Puma.Prey.Fox.Controllers.ValuesController.Put(int, string)E
-Delete(int)6Puma.Prey.Fox.Controllers.ValuesController.Delete(int)S
-ValuesController()=Puma.Prey.Fox.Controllers.ValuesController.ValuesController()

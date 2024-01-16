@@ -1,353 +1,0 @@
-
-òPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.GetSample(System.Web.Http.Description.ApiDescription, Puma.Prey.Fox.Areas.HelpPage.SampleDirection)g
-]D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.csZA Z(J"0*§
-0\ \(å
-â
-\ \(
-
-%0bool""object.operator ==(object, object)*
-"
-object*53
-1
-api*System.Web.Http.Description.ApiDescription*
-""*
-1
-2*Ì
-1^ ^(5NL
-^ ^(6"
-%1System.ArgumentNullException"System.ArgumentNullExceptionà
-Ö
-^ ^(/
-
-%2void":System.ArgumentNullException.ArgumentNullException(string)*&$
-"
-%1System.ArgumentNullException*	
-api*
-3*⁄
-2` i(6Ω
-∫
-`$ `(86
-%30System.Web.Http.Controllers.HttpActionDescriptor"?System.Web.Http.Description.ApiDescription.ActionDescriptor.get*53
-1
-api*System.Web.Http.Description.ApiDescription–
-Õ
-`$ `(M:
-%44System.Web.Http.Controllers.HttpControllerDescriptor"ISystem.Web.Http.Controllers.HttpActionDescriptor.ControllerDescriptor.get*:8
-6
-%30System.Web.Http.Controllers.HttpActionDescriptor§
-°
-`$ `(\
-%5string"GSystem.Web.Http.Controllers.HttpControllerDescriptor.ControllerName.get*><
-:
-%44System.Web.Http.Controllers.HttpControllerDescriptor>
-<
-` `(\
-controllerNamestring"__id*
-
-%5stringΩ
-∫
-a  a(46
-%60System.Web.Http.Controllers.HttpActionDescriptor"?System.Web.Http.Description.ApiDescription.ActionDescriptor.get*53
-1
-api*System.Web.Http.Description.ApiDescription®•
-a  a(?
-%7string"?System.Web.Http.Controllers.HttpActionDescriptor.ActionName.get*:8
-6
-%60System.Web.Http.Controllers.HttpActionDescriptor2ActionName.get:
-8
-a a(?
-
-actionNamestring"__id*
-
-%7stringæ
-ª
-b1 b(J2
-%8,System.Collections.ObjectModel.Collection<T>"DSystem.Web.Http.Description.ApiDescription.ParameterDescriptions.get*53
-1
-api*System.Web.Http.Description.ApiDescriptionü
-ú
-b1 b(^/
-%9)System.Collections.Generic.IEnumerable<T>"System.Linq.Enumerable.Select<TSource, TResult>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, TResult>)*"
-System.Linq.Enumerable*64
-2
-%8,System.Collections.ObjectModel.Collection<T>*
-""Ö
-Ç
-b  b(^;
-parameterNames)System.Collections.Generic.IEnumerable<T>"__id*31
-/
-%9)System.Collections.Generic.IEnumerable<T>òï
-d d(u
-%10System.Type"∏Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.ResolveType(System.Web.Http.Description.ApiDescription, string, string, System.Collections.Generic.IEnumerable<string>, Puma.Prey.Fox.Areas.HelpPage.SampleDirection, out System.Collections.ObjectModel.Collection<System.Net.Http.Formatting.MediaTypeFormatter>)*:86
-4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*53
-1
-api*System.Web.Http.Description.ApiDescription*
-
-controllerNamestring*
-
-
-actionNamestring*?=
-;
-parameterNames)System.Collections.Generic.IEnumerable<T>*
-""*><
-:
-
-formatters,System.Collections.ObjectModel.Collection<T>2ÉResolveType(System.Web.Http.Description.ApiDescription, string, string, System.Collections.Generic.IEnumerable<string>, Puma.Prey.Fox.Areas.HelpPage.SampleDirection, out System.Collections.ObjectModel.Collection<System.Net.Http.Formatting.MediaTypeFormatter>)?
-=
-d d(u
-typeSystem.Type"__id*
-
-%10System.Type}{
-e e(H:
-%113System.Collections.Generic.Dictionary<TKey, TValue>"3System.Collections.Generic.Dictionary<TKey, TValue>ú
-ô
-e e(F
-%12void"@System.Collections.Generic.Dictionary<TKey, TValue>.Dictionary()*><
-:
-%113System.Collections.Generic.Dictionary<TKey, TValue>ì
-ê
-e e(H>
-samples3System.Collections.Generic.Dictionary<TKey, TValue>"__id*><
-:
-%113System.Collections.Generic.Dictionary<TKey, TValue>∑
-¥
-h  h(p0
-%13)System.Collections.Generic.IEnumerable<T>"∂Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.GetAllActionSamples(string, string, System.Collections.Generic.IEnumerable<string>, Puma.Prey.Fox.Areas.HelpPage.SampleDirection)*:86
-4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*
-
-controllerNamestring*
-
-
-actionNamestring*?=
-;
-parameterNames)System.Collections.Generic.IEnumerable<T>*
-""Ö
-Ç
-h h(p:
-actionSamples)System.Collections.Generic.IEnumerable<T>"__id*42
-0
-%13)System.Collections.Generic.IEnumerable<T>¢
-ü
-i i(%
-%14	__unknown"7System.Collections.Generic.ICollection<T>.this[int].get*><
-:
-actionSamples)System.Collections.Generic.IEnumerable<T>*
-""C
-A
-i l(
-actionSample	__unknown"__id*
-
-%14	__unknown*
-4*
-4
-à	 à(	*
-5
-6*ı
-5k k(]Œ
-À
-k k(,5
-%15.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey"=System.Collections.Generic.KeyValuePair<TKey, TValue>.Key.get*IG
-E
-actionSample5System.Collections.Generic.KeyValuePair<TKey, TValue>ª
-∏
-k k(63
-%16,System.Net.Http.Headers.MediaTypeHeaderValue"<Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.MediaType.get*97
-5
-%15.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey®
-•
-kK k(]
-%17object"?System.Collections.Generic.KeyValuePair<TKey, TValue>.Value.get*IG
-E
-actionSample5System.Collections.Generic.KeyValuePair<TKey, TValue>º
-π
-k8 k(^
-%18object"OPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.WrapSampleIfString(object)*:8"6
-4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*
-
-%17objectÁ
-‰
-k k(_
-%19void";System.Collections.Generic.ICollection<T>.Add(TKey, TValue)*B@
->
-samples3System.Collections.Generic.Dictionary<TKey, TValue>*75
-3
-%16,System.Net.Http.Headers.MediaTypeHeaderValue*
-
-%18object*
-4*õ
-6p p(É
-Ä
-p p(
-%20bool"1System.Type.operator !=(System.Type, System.Type)*"
-System.Type*
-
-typeSystem.Type*
-""*
-7
-8*ü
-7p  p(RáÑ
-p! p(S
-%21bool")System.Type.IsAssignableFrom(System.Type)*
-""*
-
-typeSystem.Type2IsAssignableFrom(System.Type)*
-9
-8*ç
-9r s(4‚ﬂ
-r& r(;
-%22object"QPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.GetSampleObject(System.Type)*:86
-4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*
-
-typeSystem.Type2GetSampleObject(System.Type)=
-;
-r r(;
-sampleObjectobject"__id*
-
-%22object∆
-√
-s s(&4
-%23-System.Net.Http.Formatting.MediaTypeFormatter"7System.Collections.Generic.ICollection<T>.this[int].get*><
-:
-
-formatters,System.Collections.ObjectModel.Collection<T>*
-""ä
-á
-	s Ñ(:
-	formatter-System.Net.Http.Formatting.MediaTypeFormatter"__id*86
-4
-%23-System.Net.Http.Formatting.MediaTypeFormatter*
-10*
-10
-à	 à(	*
-11
-8*¨
-11u? u(\…
-∆
-u? u(\3
-%24,System.Collections.ObjectModel.Collection<T>"ESystem.Net.Http.Formatting.MediaTypeFormatter.SupportedMediaTypes.get*><
-:
-	formatter-System.Net.Http.Formatting.MediaTypeFormatteræ
-ª
-u2 u(;3
-%25,System.Net.Http.Headers.MediaTypeHeaderValue"7System.Collections.Generic.ICollection<T>.this[int].get*75
-3
-%24,System.Collections.ObjectModel.Collection<T>*
-""à
-Ö
-	u É(9
-	mediaType,System.Net.Http.Headers.MediaTypeHeaderValue"__id*75
-3
-%25,System.Net.Http.Headers.MediaTypeHeaderValue*
-12*
-12
-à	 à(	*
-13
-10*ı
-13w w(:⁄
-◊
-w w(;
-%26bool";System.Collections.Generic.ICollection<T>.ContainsKey(TKey)*B@
->
-samples3System.Collections.Generic.Dictionary<TKey, TValue>*=;
-9
-	mediaType,System.Net.Http.Headers.MediaTypeHeaderValue*
-14
-12*ø
-14y# |(.˝˙
-	y, y(î
-%27object"úPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.GetActionSample(string, string, System.Collections.Generic.IEnumerable<string>, System.Type, System.Net.Http.Formatting.MediaTypeFormatter, System.Net.Http.Headers.MediaTypeHeaderValue, Puma.Prey.Fox.Areas.HelpPage.SampleDirection)*:86
-4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*
-
-controllerNamestring*
-
-
-actionNamestring*?=
-;
-parameterNames)System.Collections.Generic.IEnumerable<T>*
-
-typeSystem.Type*><
-:
-	formatter-System.Net.Http.Formatting.MediaTypeFormatter*=;
-9
-	mediaType,System.Net.Http.Headers.MediaTypeHeaderValue*
-""2ÁGetActionSample(string, string, System.Collections.Generic.IEnumerable<string>, System.Type, System.Net.Http.Formatting.MediaTypeFormatter, System.Net.Http.Headers.MediaTypeHeaderValue, Puma.Prey.Fox.Areas.HelpPage.SampleDirection)8
-6
-	y# y(î
-sampleobject"__id*
-
-%27objectk
-i
-|  |(.
-%28bool""object.operator ==(object, object)*
-"
-object*
-
-sampleobject*
-""*
-15
-16*ã
-15|2 |(Fq
-o
-|2 |(F
-%29bool""object.operator !=(object, object)*
-"
-object*
-
-sampleObjectobject*
-""*
-17
-16*π
-17~  ~(qÈÊ
-~) ~(r
-%30object"∆Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.WriteSampleObjectUsingFormatter(System.Net.Http.Formatting.MediaTypeFormatter, object, System.Type, System.Net.Http.Headers.MediaTypeHeaderValue)*:86
-4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*><
-:
-	formatter-System.Net.Http.Formatting.MediaTypeFormatter*
-
-sampleObjectobject*
-
-typeSystem.Type*=;
-9
-	mediaType,System.Net.Http.Headers.MediaTypeHeaderValue2ëWriteSampleObjectUsingFormatter(System.Net.Http.Formatting.MediaTypeFormatter, object, System.Type, System.Net.Http.Headers.MediaTypeHeaderValue)7
-5
-~  ~(r
-sampleobject"__id*
-
-%30object*
-16*Ã
-16
-Å Å(L¡
-æ
-
-Å3 Å(M
-%31object"OPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.WrapSampleIfString(object)*:8"6
-4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*
-
-sampleobjectÔ
-Ï
-
-Å Å(N
-%32void";System.Collections.Generic.ICollection<T>.Add(TKey, TValue)*B@
->
-samples3System.Collections.Generic.Dictionary<TKey, TValue>*=;
-9
-	mediaType,System.Net.Http.Headers.MediaTypeHeaderValue*
-
-%31object*
-12*_
-8
-á á("N
-
-á á(@
->
-samples3System.Collections.Generic.Dictionary<TKey, TValue>*2
-3
-à	 à(	"!
-
-à à(	
-implicit return:=
-ZK Z(]1
-api*System.Web.Http.Description.ApiDescription:K
-Z_ Z(~?
-sampleDirection,Puma.Prey.Fox.Areas.HelpPage.SampleDirectionB86
-4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator

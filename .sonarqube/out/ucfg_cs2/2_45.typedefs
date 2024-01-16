@@ -1,4 +1,0 @@
-‘
-$Puma.Prey.Fox.Models.ApplicationUser6Microsoft.AspNet.Identity.EntityFramework.IdentityUserSMicrosoft.AspNet.Identity.EntityFramework.IdentityUser<TKey, TLogin, TRole, TClaim>object†
-nGenerateUserIdentityAsync(Microsoft.AspNet.Identity.UserManager<Puma.Prey.Fox.Models.ApplicationUser>, string)“Puma.Prey.Fox.Models.ApplicationUser.GenerateUserIdentityAsync(Microsoft.AspNet.Identity.UserManager<Puma.Prey.Fox.Models.ApplicationUser>, string)K
-ApplicationUser()6Puma.Prey.Fox.Models.ApplicationUser.ApplicationUser()

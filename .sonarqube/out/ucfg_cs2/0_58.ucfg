@@ -1,35 +1,0 @@
-
-àPuma.Prey.Common.Cryptography.KeyManagement.KeyManager.Write(System.IO.Stream, Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey)X
-ND:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyManager.csr r( "0*§
-0t u(-çä
-t# t(8A
-%0;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter";Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriterØ
-¨
-t' t(6
-
-%1void"MPuma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.KeyReaderWriter()*EC
-A
-%0;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriterü
-ú
-t t(8C
-	keyWriter6Puma.Prey.Common.Cryptography.KeyManagement.IKeyWriter"__id*EC
-A
-%0;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter´®
-u u(.
-
-%2void"àPuma.Prey.Common.Cryptography.KeyManagement.IKeyWriter.Write(System.IO.Stream, Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey)*GE
-C
-	keyWriter6Puma.Prey.Common.Cryptography.KeyManagement.IKeyWriter*$"
- 
-outputStreamSystem.IO.Stream*CA
-?
-key8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey2QWrite(System.IO.Stream, Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey)*
-1*.
-1v	 v(	"
-v v(	
-implicit return:,
-r! r(4 
-outputStreamSystem.IO.Stream:K
-r6 r(F?
-key8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyB:"8
-6Puma.Prey.Common.Cryptography.KeyManagement.KeyManager

@@ -1,154 +1,0 @@
-
-5Puma.Prey.Fox.Startup.ConfigureAuth(Owin.IAppBuilder)F
-<D:\Sources\dotNetLab\puma-prey\Fox\App_Start\Startup.Auth.cs (!"0*¼$
-0 /(1Â
-¿
- (A
-%0Owin.IAppBuilder"SOwin.AppBuilderExtensions.CreatePerOwinContext<T>(Owin.IAppBuilder, System.Func<T>)*"
-Owin.AppBuilderExtensions*
-
-appOwin.IAppBuilder*
-""š
-—
- ([
-%1Owin.IAppBuilder"ªOwin.AppBuilderExtensions.CreatePerOwinContext<T>(Owin.IAppBuilder, System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>)*"
-Owin.AppBuilderExtensions*
-
-appOwin.IAppBuilder*
-""Š
-( (IA
-%2;Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions";Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions»
-¸
-, (G
-
-%3void"YMicrosoft.Owin.Security.Cookies.CookieAuthenticationOptions.CookieAuthenticationOptions()*EC
-A
-%2;Microsoft.Owin.Security.Cookies.CookieAuthenticationOptionsÁ
-¾
- (J
-%4Owin.IAppBuilder"ŠOwin.CookieAuthenticationExtensions.UseCookieAuthentication(Owin.IAppBuilder, Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions)*)'"%
-#Owin.CookieAuthenticationExtensions*
-
-appOwin.IAppBuilder*EC
-A
-%2;Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions"
- 
- (  (Q
-%5"__id*
-""®
-«
-   (R
-
-%6void"KOwin.AppBuilderExtensions.UseExternalSignInCookie(Owin.IAppBuilder, string)*"
-Owin.AppBuilderExtensions*
-
-appOwin.IAppBuilder*
-
-%5m
-k
-# #(#
-%7string"(Puma.Prey.Fox.Startup.PublicClientId.set*"
-Puma.Prey.Fox.Startup*
-
-self‘Ž
-$ ,(C
-%8=Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions"=Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptionsÃ
-À
-$ $(>
-
-%9void"_Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions.OAuthAuthorizationServerOptions()*GE
-C
-%8=Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptionsIG
-&$ &(< 
-%10Microsoft.Owin.PathString"Microsoft.Owin.PathString{
-y
-&( &(2
-%11void",Microsoft.Owin.PathString.PathString(string)*$"
- 
-%10Microsoft.Owin.PathString*
-
-/Tokenó
-ð
-& &(< 
-%12Microsoft.Owin.PathString"SMicrosoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions.TokenEndpointPath.set*GE
-C
-%8=Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions*$"
- 
-%10Microsoft.Owin.PathStringb
-`
-'8 '(F
-%13string"(Puma.Prey.Fox.Startup.PublicClientId.get*"
-Puma.Prey.Fox.Startupwu
-' '(G7
-%140Puma.Prey.Fox.Providers.ApplicationOAuthProvider"0Puma.Prey.Fox.Providers.ApplicationOAuthProvider½
-º
-' '(7
-%15void"QPuma.Prey.Fox.Providers.ApplicationOAuthProvider.ApplicationOAuthProvider(string)*;9
-7
-%140Puma.Prey.Fox.Providers.ApplicationOAuthProvider*
-
-%13string§
-¤
-' '(GF
-%16?Microsoft.Owin.Security.OAuth.IOAuthAuthorizationServerProvider"JMicrosoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions.Provider.set*GE
-C
-%8=Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions*;9
-7
-%140Puma.Prey.Fox.Providers.ApplicationOAuthProviderIG
-(( ((T 
-%17Microsoft.Owin.PathString"Microsoft.Owin.PathString
-
-(, ((6
-%18void",Microsoft.Owin.PathString.PathString(string)*$"
- 
-%17Microsoft.Owin.PathString* 
-/api/Account/ExternalLogin÷
-ô
-( ((T 
-%19Microsoft.Owin.PathString"WMicrosoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions.AuthorizeEndpointPath.set*GE
-C
-%8=Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions*$"
- 
-%17Microsoft.Owin.PathStringe
-c
-), )(A
-%20System.TimeSpan" System.TimeSpan.FromDays(double)*"
-System.TimeSpan*2ç
-ä
-) )(A
-%21System.TimeSpan"[Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions.AccessTokenExpireTimeSpan.set*GE
-C
-%8=Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions*
-
-%20System.TimeSpanÂ
-¿
-+ +((
-%22bool"SMicrosoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions.AllowInsecureHttp.set*GE
-C
-%8=Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions*
-""á
-Þ
-$ ,(D
-%23=Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions"&Puma.Prey.Fox.Startup.OAuthOptions.set*"
-Puma.Prey.Fox.Startup*GE
-C
-%8=Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions˜
-•
-/% /(1D
-%24=Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions"&Puma.Prey.Fox.Startup.OAuthOptions.get*"
-Puma.Prey.Fox.Startup£
- 
-/ /(2
-%25void"Owin.AppBuilderExtensions.UseOAuthBearerTokens(Owin.IAppBuilder, Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions)*"
-Owin.AppBuilderExtensions*
-
-appOwin.IAppBuilder*HF
-D
-%24=Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerOptions*
-1*.
-1C	 C(	"
-C C(	
-implicit return:#
-" (1
-appOwin.IAppBuilderB
-Puma.Prey.Fox.Startup

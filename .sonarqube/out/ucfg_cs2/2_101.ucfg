@@ -1,67 +1,0 @@
-
-ÇPuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleRequest(System.Web.Http.HttpConfiguration, object, System.Net.Http.Headers.MediaTypeHeaderValue, string, string, params string[])^
-TD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageConfigurationExtensions.csA A(+"0*
-0	C C(¯º
-·
-C C(/:
-%04Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator"zPuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.GetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration)*B@">
-<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions*/-
-+
-config!System.Web.Http.HttpConfigurationÑ
-Î
-C C(=:
-%14System.Collections.Generic.IDictionary<TKey, TValue>"FPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.ActionSamples.get*><
-:
-%04Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator"
- 
-Cc C(z
-%2"__id*
-""sq
-	CB C(§4
-%3.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey".Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKeyÓ
-Ð
-CF C(W
-
-%4void"ÜPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.HelpPageSampleKey(System.Net.Http.Headers.MediaTypeHeaderValue, Puma.Prey.Fox.Areas.HelpPage.SampleDirection, string, string, System.Collections.Generic.IEnumerable<string>)*86
-4
-%3.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*=;
-9
-	mediaType,System.Net.Http.Headers.MediaTypeHeaderValue*
-
-%2*
-
-controllerNamestring*
-
-
-actionNamestring*
-
-parameterNamesstring[]ú÷
-	C C(°
-
-%5void";System.Collections.Generic.ICollection<T>.Add(TKey, TValue)*><
-:
-%14System.Collections.Generic.IDictionary<TKey, TValue>*86
-4
-%3.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*
-
-sampleobject2Add(TKey, TValue)*
-1*.
-1D	 D(	"
-D D(	
-implicit return:7
-A, A(I+
-config!System.Web.Http.HttpConfiguration:
-AK A(X
-sampleobject:E
-AZ A(x9
-	mediaType,System.Net.Http.Headers.MediaTypeHeaderValue:%
-	Az A(
-controllerNamestring:"
-
-A‘ A(¢
-
-actionNamestring:(
-
-A¤ A(Â
-parameterNamesstring[]B@">
-<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions

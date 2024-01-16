@@ -1,155 +1,0 @@
-
-.Skunk.Hunt.Page_Load(object, System.EventArgs);
-1D:\Sources\dotNetLab\puma-prey\Skunk\Hunt.aspx.cs ("0*£
-0 (©
-¶
- ("
-%0Puma.Prey.Rabbit.Models.Hunt"OSystem.Linq.Queryable.SingleOrDefault<TSource>(System.Linq.IQueryable<TSource>)*"
-System.Linq.Queryable*
-""`
-^
- ($
-huntPuma.Prey.Rabbit.Models.Hunt"__id*&$
-"
-%0Puma.Prey.Rabbit.Models.Hunt~
-|
- (
-
-%1bool""object.operator !=(object, object)*
-"
-object*(&
-$
-huntPuma.Prey.Rabbit.Models.Hunt*
-""*
-1
-2*ç
-1 (&Ä
-~
- (%
-%2System.Web.UI.WebControls.Label"__id*EC*A
-
-Skunk.Hunt"1
-lblProductNameSystem.Web.UI.WebControls.Labelk
-i
- (#
-%3string"%Puma.Prey.Rabbit.Models.Hunt.Name.get*(&
-$
-huntPuma.Prey.Rabbit.Models.Huntåâ
- (#
-%4string"(System.Web.UI.WebControls.Label.Text.set*)'
-%
-%2System.Web.UI.WebControls.Label*
-
-%3string2Text.setz
-x
- (%
-%5System.Web.UI.WebControls.Label"__id*?=*;
-
-Skunk.Hunt"+
-lblPriceSystem.Web.UI.WebControls.Labell
-j
- (
-%6double"&Puma.Prey.Rabbit.Models.Hunt.Price.get*(&
-$
-huntPuma.Prey.Rabbit.Models.HuntN
-L
- (,
-%7string"double.ToString(string)*
-
-%6double*
-Cåâ
- (,
-%8string"(System.Web.UI.WebControls.Label.Text.set*)'
-%
-%5System.Web.UI.WebControls.Label*
-
-%7string2Text.setz
-x
- (%
-%9System.Web.UI.WebControls.Label"__id*?=*;
-
-Skunk.Hunt"+
-lDetailsSystem.Web.UI.WebControls.Labels
-q
-' (7
-%10string",Puma.Prey.Rabbit.Models.Hunt.Description.get*(&
-$
-huntPuma.Prey.Rabbit.Models.Huntò
-ï
- (8
-%11string"9Microsoft.Security.Application.Encoder.HtmlEncode(string)*,*"(
-&Microsoft.Security.Application.Encoder*
-
-%10stringéã
- (8
-%12string"(System.Web.UI.WebControls.Label.Text.set*)'
-%
-%9System.Web.UI.WebControls.Label*
-
-%11string2Text.setÅ
-
- (
-*
-%13#System.Web.UI.WebControls.HyperLink"__id*A?*=
-
-Skunk.Hunt"-
-hlRate#System.Web.UI.WebControls.HyperLinkus
-1 (8
-
-%14int")Puma.Prey.Rabbit.Models.BaseEntity.Id.get*(&
-$
-huntPuma.Prey.Rabbit.Models.Hunt2Id.get;
-9
-1 (C
-%15string"int.ToString()*
-
-
-%14intg
-e
- (C
-%16string"__concat*#
- (.
-~/Hunts/Feedback?p=*
-1 (C
-
-%15stringî
-ë
- (C
-%17string"3System.Web.UI.WebControls.HyperLink.NavigateUrl.set*.,
-*
-%13#System.Web.UI.WebControls.HyperLink*
-
-%16stringá
-Ñ
- (,
-%18%System.Web.UI.WebControls.HiddenField"__id*DB*@
-
-Skunk.Hunt"0
-hProdID%System.Web.UI.WebControls.HiddenFieldus
- (
-
-%19int")Puma.Prey.Rabbit.Models.BaseEntity.Id.get*(&
-$
-huntPuma.Prey.Rabbit.Models.Hunt2Id.get;
-9
- (&
-%20string"int.ToString()*
-
-
-%19intùö
- (&
-%21string"/System.Web.UI.WebControls.HiddenField.Value.set*0.
-,
-%18%System.Web.UI.WebControls.HiddenField*
-
-%20string2	Value.set*
-2*.
-2 ("
- (
-implicit return:
- ((
-senderobject:!
-* (5
-eSystem.EventArgsB
-
-Skunk.Hunt

@@ -1,42 +1,0 @@
-
-ePuma.Prey.Raccoon.Controllers.HuntController.HuntController(Puma.Prey.Raccoon.ApplicationUserManager)N
-DD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\HuntController.cs ("3*k
-1"	 "(	W
-U
-
-%0void"&System.Web.Mvc.Controller.Controller()*
-System.Web.Mvc.Controller*
-0*ì
-0  !(º
-π
-   (&j.
-,Puma.Prey.Raccoon.Controllers.HuntController"8
-_userManager(Puma.Prey.Raccoon.ApplicationUserManager"__id*;9
-7
-userManager(Puma.Prey.Raccoon.ApplicationUserManagerJH
-! !( 
-%1Puma.Prey.Common.Data.Ldap"Puma.Prey.Common.Data.Ldapa
-_
-! !(
-
-%2void"!Puma.Prey.Common.Data.Ldap.Ldap()*$"
- 
-%1Puma.Prey.Common.Data.Ldapê
-ç
-! !(U.
-,Puma.Prey.Raccoon.Controllers.HuntController"#
-_ldapPuma.Prey.Common.Data.Ldap"__id*$"
- 
-%1Puma.Prey.Common.Data.Ldap*
-2*.
-2"	 "(	"
-" "(	
-implicit return*4
-3A (A 
-
- (
-%3"__entrypoint*
-1:C
- (@7
-userManager(Puma.Prey.Raccoon.ApplicationUserManagerB0.
-,Puma.Prey.Raccoon.Controllers.HuntController

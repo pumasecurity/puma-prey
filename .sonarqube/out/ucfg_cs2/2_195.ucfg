@@ -1,150 +1,0 @@
-
-ÌPuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.TryGetResourceParameter(System.Web.Http.Description.ApiDescription, System.Web.Http.HttpConfiguration, out System.Web.Http.Description.ApiParameterDescription, out System.Type)`
-TD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageConfigurationExtensions.csù ù(3"0*ﬁ
-0
-ü £(,À
-»
-
-ü# ü(G2
-%0,System.Collections.ObjectModel.Collection<T>"DSystem.Web.Http.Description.ApiDescription.ParameterDescriptions.get*@>
-<
-apiDescription*System.Web.Http.Description.ApiDescriptionß
-§
-
-ü# °(y9
-%13System.Web.Http.Description.ApiParameterDescription"{System.Linq.Enumerable.FirstOrDefault<TSource>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, bool>)*"
-System.Linq.Enumerable*64
-2
-%0,System.Collections.ObjectModel.Collection<T>*
-""°
-û
-
-ü °(yK
-parameterDescription3System.Web.Http.Description.ApiParameterDescription"__id*=;
-9
-%13System.Web.Http.Description.ApiParameterDescription®
-•
-
-£ £(,
-
-%2bool""object.operator ==(object, object)*
-"
-object*OM
-K
-parameterDescription3System.Web.Http.Description.ApiParameterDescription*
-""*
-1
-2*b
-1
-• ¶(;
-9
-
-• •(#
-resourceTypeSystem.Type"__id*
-"""
-
-¶ ¶(
-""*ô
-2
-© ´(:Ë
-Â
-
-© ©(C9
-%33System.Web.Http.Controllers.HttpParameterDescriptor"KSystem.Web.Http.Description.ApiParameterDescription.ParameterDescriptor.get*OM
-K
-parameterDescription3System.Web.Http.Description.ApiParameterDescriptionª∏
-
-© ©(Q
-%4System.Type"ESystem.Web.Http.Controllers.HttpParameterDescriptor.ParameterType.get*=;
-9
-%33System.Web.Http.Controllers.HttpParameterDescriptor2ParameterType.getH
-F
-
-© ©(Q
-resourceTypeSystem.Type"__id*
-
-%4System.Typeå
-â
-
-´ ´(:
-
-%5bool"1System.Type.operator ==(System.Type, System.Type)*"
-System.Type*
-
-resourceTypeSystem.Type*
-""*
-3
-4*Ω
-3
-≠( Æ([º
-π
-
-≠: ≠(]:
-%64Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator"zPuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.GetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration)*B@">
-<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions*/-
-+
-config!System.Web.Http.HttpConfigurationû
-õ
-
-≠( ≠(]G
-sampleGenerator4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator"__id*><
-:
-%64Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator¸˘
-
-Æ Æ(\
-%7System.Type"~Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.ResolveHttpRequestMessageType(System.Web.Http.Description.ApiDescription)*KI
-G
-sampleGenerator4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator*@>
-<
-apiDescription*System.Web.Http.Description.ApiDescription2IResolveHttpRequestMessageType(System.Web.Http.Description.ApiDescription)H
-F
-
-Æ Æ(\
-resourceTypeSystem.Type"__id*
-
-%7System.Type*
-4*¶
-4
-± ±($å
-â
-
-± ±($
-
-%8bool"1System.Type.operator ==(System.Type, System.Type)*"
-System.Type*
-
-resourceTypeSystem.Type*
-""*
-5
-6*í
-5
-≥ ¥(k
-i
-
-≥ ≥(+K
-parameterDescription3System.Web.Http.Description.ApiParameterDescription"__id*
-"""
-
-¥ ¥(
-""*%
-6
-∑ ∑("
-
-∑ ∑(
-""*2
-7
-∏	 ∏(	"!
-
-∏ ∏(	
-implicit return:J
-
-ù4 ù(Q<
-apiDescription*System.Web.Http.Description.ApiDescription:9
-
-ùS ù(k+
-config!System.Web.Http.HttpConfiguration:\
-ùm ù(ùK
-parameterDescription3System.Web.Http.Description.ApiParameterDescription:-
-ùü ù(¥
-resourceTypeSystem.TypeB@">
-<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions

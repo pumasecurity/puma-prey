@@ -1,44 +1,0 @@
-
-ïPuma.Prey.Fox.Providers.ApplicationOAuthProvider.ValidateClientAuthentication(Microsoft.Owin.Security.OAuth.OAuthValidateClientAuthenticationContext)R
-HD:\Sources\dotNetLab\puma-prey\Fox\Providers\ApplicationOAuthProvider.cs= =(3"0*∫
-0@ @(∫
-∑
-@ @(
-%0string"FMicrosoft.Owin.Security.OAuth.BaseValidatingClientContext.ClientId.get*US
-Q
-contextFMicrosoft.Owin.Security.OAuth.OAuthValidateClientAuthenticationContextf
-d
-@ @(
-
-%1bool""string.operator ==(string, string)*
-"
-string*
-
-%0string*
-""*
-1
-2*›
-1B B(»≈
-B B(
-
-%2bool"IMicrosoft.Owin.Security.OAuth.BaseValidatingContext<TOptions>.Validated()*US
-Q
-contextFMicrosoft.Owin.Security.OAuth.OAuthValidateClientAuthenticationContext2Validated()*
-2*Í
-2E
- E(&†
-ù
-E
- E('*
-%3$System.Threading.Tasks.Task<TResult>"8System.Threading.Tasks.Task.FromResult<TResult>(TResult)*!"
-System.Threading.Tasks.Task*
-"""8
-E E((,
-*
-%3$System.Threading.Tasks.Task<TResult>*.
-3F F("
-F F(
-implicit return:]
-=4 =(dQ
-contextFMicrosoft.Owin.Security.OAuth.OAuthValidateClientAuthenticationContextB42
-0Puma.Prey.Fox.Providers.ApplicationOAuthProvider

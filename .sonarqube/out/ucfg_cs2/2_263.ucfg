@@ -1,364 +1,0 @@
-
-oPuma.Prey.Fox.Controllers.AccountController.AddExternalLogin(Puma.Prey.Fox.Models.AddExternalLoginBindingModel)O
-CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.csû- û(="14*«
-0
-† †(#õ
-ò
-
-† †(7
-%01System.Web.Http.ModelBinding.ModelStateDictionary",System.Web.Http.ApiController.ModelState.get*#!
-System.Web.Http.ApiControllerè
-å
-
-† †(#
-
-%1bool"5System.Collections.Generic.ICollection<T>.IsValid.get*;9
-7
-%01System.Web.Http.ModelBinding.ModelStateDictionary*
-1
-2*ª
-1
-¢ ¢(,õ
-ò
-
-¢" ¢(,7
-%21System.Web.Http.ModelBinding.ModelStateDictionary",System.Web.Http.ApiController.ModelState.get*#!
-System.Web.Http.ApiControllerƒ¡
-
-¢ ¢(-5
-%3/System.Web.Http.Results.InvalidModelStateResult"[System.Web.Http.ApiController.BadRequest(System.Web.Http.ModelBinding.ModelStateDictionary)*#!
-System.Web.Http.ApiController*;9
-7
-%21System.Web.Http.ModelBinding.ModelStateDictionary2=BadRequest(System.Web.Http.ModelBinding.ModelStateDictionary)"E
-
-¢ ¢(.7
-5
-%3/System.Web.Http.Results.InvalidModelStateResult*≤
-
-2
-• ©(∏
-µ
-
-• •(4
-%4.Microsoft.Owin.Security.IAuthenticationManager">Puma.Prey.Fox.Controllers.AccountController.Authentication.get*1/-
-+Puma.Prey.Fox.Controllers.AccountController$
-"
-
-•# •(L
-%5"__id*
-""¬ø
-
-• •(M
-
-%6void"GMicrosoft.Owin.Security.IAuthenticationManager.SignOut(params string[])*86
-4
-%4.Microsoft.Owin.Security.IAuthenticationManager*
-
-%52SignOut(params string[])Ω
-∫
-
-ß* ß(;6
-%70Microsoft.Owin.Security.ISecureDataFormat<TData>"APuma.Prey.Fox.Controllers.AccountController.AccessTokenFormat.get*1/-
-+Puma.Prey.Fox.Controllers.AccountController®
-•
-
-ßF ß(_
-%8string"IPuma.Prey.Fox.Models.AddExternalLoginBindingModel.ExternalAccessToken.get*><
-:
-model1Puma.Prey.Fox.Models.AddExternalLoginBindingModelËÂ
-
-ß* ß(`2
-%9,Microsoft.Owin.Security.AuthenticationTicket"BMicrosoft.Owin.Security.ISecureDataFormat<TData>.Unprotect(string)*:8
-6
-%70Microsoft.Owin.Security.ISecureDataFormat<TData>*
-
-%8string2Unprotect(string)Ö
-Ç
-
-ß! ß(`6
-ticket,Microsoft.Owin.Security.AuthenticationTicket"__id*64
-2
-%9,Microsoft.Owin.Security.AuthenticationTicketî
-ë
-
-© ©(
-%10bool""object.operator ==(object, object)*
-"
-object*:8
-6
-ticket,Microsoft.Owin.Security.AuthenticationTicket*
-""*
-3
-4*€
-4
-©" ©(9¥
-±
-
-©" ©(1,
-%11%System.Security.Claims.ClaimsIdentity"9Microsoft.Owin.Security.AuthenticationTicket.Identity.get*:8
-6
-ticket,Microsoft.Owin.Security.AuthenticationTicketä
-á
-
-©" ©(9
-%12bool""object.operator ==(object, object)*
-"
-object*0.
-,
-%11%System.Security.Claims.ClaimsIdentity*
-""*
-3
-5*Û
-5
-©> ©(W¡
-æ
-
-©> ©(O7
-%130Microsoft.Owin.Security.AuthenticationProperties";Microsoft.Owin.Security.AuthenticationTicket.Properties.get*:8
-6
-ticket,Microsoft.Owin.Security.AuthenticationTicketï
-í
-
-©> ©(W
-%14bool""object.operator !=(object, object)*
-"
-object*;9
-7
-%130Microsoft.Owin.Security.AuthenticationProperties*
-""*
-6
-7*„
-6
-™ ™(8¡
-æ
-
-™ ™($7
-%150Microsoft.Owin.Security.AuthenticationProperties";Microsoft.Owin.Security.AuthenticationTicket.Properties.get*:8
-6
-ticket,Microsoft.Owin.Security.AuthenticationTicket®
-•
-
-™ ™(/
-%16System.Nullable<T>"?Microsoft.Owin.Security.AuthenticationProperties.ExpiresUtc.get*;9
-7
-%150Microsoft.Owin.Security.AuthenticationProperties[
-Y
-
-™ ™(8
-%17bool"System.Nullable<T>.HasValue.get*
-
-%16System.Nullable<T>*
-8
-7*Æ
-8
-´ ´(M¡
-æ
-
-´ ´($7
-%180Microsoft.Owin.Security.AuthenticationProperties";Microsoft.Owin.Security.AuthenticationTicket.Properties.get*:8
-6
-ticket,Microsoft.Owin.Security.AuthenticationTicket®
-•
-
-´ ´(/
-%19System.Nullable<T>"?Microsoft.Owin.Security.AuthenticationProperties.ExpiresUtc.get*;9
-7
-%180Microsoft.Owin.Security.AuthenticationPropertiesi
-g
-
-´ ´(5
-%20System.DateTimeOffset"System.Nullable<T>.Value.get*
-
-%19System.Nullable<T>k
-i
-
-´8 ´(M
-%21System.DateTimeOffset" System.DateTimeOffset.UtcNow.get*"
-System.DateTimeOffsetÕ
- 
-
-´ ´(M
-%22bool"NSystem.DateTimeOffset.operator <(System.DateTimeOffset, System.DateTimeOffset)*"
-System.DateTimeOffset* 
-
-%20System.DateTimeOffset* 
-
-%21System.DateTimeOffset*
-3
-7*µ
-3
-≠ ≠(;÷”
-
-≠ ≠(<;
-%234System.Web.Http.Results.BadRequestErrorMessageResult"0System.Web.Http.ApiController.BadRequest(string)*#!
-System.Web.Http.ApiController*
-External login failure.2BadRequest(string)"K
-
-≠ ≠(==
-;
-%234System.Web.Http.Results.BadRequestErrorMessageResult*
-7
-∞ ≤($¥
-±
-
-∞L ∞([,
-%24%System.Security.Claims.ClaimsIdentity"9Microsoft.Owin.Security.AuthenticationTicket.Identity.get*:8
-6
-ticket,Microsoft.Owin.Security.AuthenticationTicketø
-º
-
-∞- ∞(\D
-%25=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData"qPuma.Prey.Fox.Controllers.AccountController.ExternalLoginData.FromIdentity(System.Security.Claims.ClaimsIdentity)*CA"?
-=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData*0.
-,
-%24%System.Security.Claims.ClaimsIdentityÆ
-´
-
-∞ ∞(\M
-externalData=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData"__id*HF
-D
-%25=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData´
-®
-
-≤ ≤($
-%26bool""object.operator ==(object, object)*
-"
-object*QO
-M
-externalData=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData*
-""*
-9
-10*◊
-9
-¥ ¥(]¯ı
-
-¥ ¥(^;
-%274System.Web.Http.Results.BadRequestErrorMessageResult"0System.Web.Http.ApiController.BadRequest(string)*#!
-System.Web.Http.ApiController*?=;
-9The external login is already associated with an account.2BadRequest(string)"K
-
-¥ ¥(_=
-;
-%274System.Web.Http.Results.BadRequestErrorMessageResult*·
-10
-∑ ∫(!¨
-©
-
-∑* ∑(5+
-%28$Puma.Prey.Fox.ApplicationUserManager";Puma.Prey.Fox.Controllers.AccountController.UserManager.get*1/-
-+Puma.Prey.Fox.Controllers.AccountControllerâ
-Ü
-
-∑D ∑(H+
-%29$System.Security.Principal.IPrincipal"&System.Web.Http.ApiController.User.get*#!
-System.Web.Http.ApiController≠™
-
-∑D ∑(Q*
-%30#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*/-
-+
-%29$System.Security.Principal.IPrincipal2Identity.getﬂ
-‹
-
-∑D ∑(]
-%31string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
-,Microsoft.AspNet.Identity.IdentityExtensions*.,
-*
-%30#System.Security.Principal.IIdentity¬
-ø
-
-∏" ∏(<
-%32string"OPuma.Prey.Fox.Controllers.AccountController.ExternalLoginData.LoginProvider.get*QO
-M
-externalData=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData¿
-Ω
-
-∏> ∏(V
-%33string"MPuma.Prey.Fox.Controllers.AccountController.ExternalLoginData.ProviderKey.get*QO
-M
-externalData=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginDatage
-
-∏ ∏(W.
-%34'Microsoft.AspNet.Identity.UserLoginInfo"'Microsoft.AspNet.Identity.UserLoginInfoΩ
-∫
-
-∏ ∏(!
-%35void"EMicrosoft.AspNet.Identity.UserLoginInfo.UserLoginInfo(string, string)*20
-.
-%34'Microsoft.AspNet.Identity.UserLoginInfo*
-
-%32string*
-
-%33string„‡
-
-∑* ∏(X+
-%36$System.Threading.Tasks.Task<TResult>"oMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.AddLoginAsync(TKey, Microsoft.AspNet.Identity.UserLoginInfo)*/-
-+
-%28$Puma.Prey.Fox.ApplicationUserManager*
-
-%31string*20
-.
-%34'Microsoft.AspNet.Identity.UserLoginInfo2<AddLoginAsync(TKey, Microsoft.AspNet.Identity.UserLoginInfo)R
-P
-
-∑ ∏(X2
-result(Microsoft.AspNet.Identity.IdentityResult"__id*
-""å
-â
-
-∫ ∫(!
-%37bool"6Microsoft.AspNet.Identity.IdentityResult.Succeeded.get*64
-2
-result(Microsoft.AspNet.Identity.IdentityResult*
-11
-12*◊
-11
-º º(,ä
-á
-
-º º(-(
-%38!System.Web.Http.IHttpActionResult"dPuma.Prey.Fox.Controllers.AccountController.GetErrorResult(Microsoft.AspNet.Identity.IdentityResult)*1/-
-+Puma.Prey.Fox.Controllers.AccountController*64
-2
-result(Microsoft.AspNet.Identity.IdentityResult"8
-
-º º(.*
-(
-%38!System.Web.Http.IHttpActionResult*”
-12
-ø ø(áÑ
-
-ø ø('
-%39 System.Web.Http.Results.OkResult""System.Web.Http.ApiController.Ok()*#!
-System.Web.Http.ApiController2Ok()"7
-
-ø ø()
-'
-%39 System.Web.Http.Results.OkResult*3
-13
-¿	 ¿(	"!
-
-¿ ¿(	
-implicit return*√
-14
-ûa û(aã
-à
-
-û- û(=l
-:
-model1Puma.Prey.Fox.Models.AddExternalLoginBindingModel".
-$<ExternalAccessToken>k__BackingFieldstring"__entrypointy
-w
-
-û- û(=[
-:
-model1Puma.Prey.Fox.Models.AddExternalLoginBindingModel"
-ExternalAccessTokenstring"__entrypoint#
-!
-
-û- û(=
-%40"__entrypoint*
-0:H
-
-û> û(`:
-model1Puma.Prey.Fox.Models.AddExternalLoginBindingModelB/-
-+Puma.Prey.Fox.Controllers.AccountController

@@ -1,24 +1,0 @@
-
-QPuma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache.ProtectedKeyCache()_
-UD:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\ProtectedKeyCache.cs
- 
-("0*Ÿ
-0N N(|z
-B (h9
-%03System.Collections.Generic.Dictionary<TKey, TValue>"3System.Collections.Generic.Dictionary<TKey, TValue>š
-—
-F (f
-
-%1void"@System.Collections.Generic.Dictionary<TKey, TValue>.Dictionary()*=;
-9
-%03System.Collections.Generic.Dictionary<TKey, TValue>Ó
-Ð
-: (h?
-=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache"<
-cache3System.Collections.Generic.Dictionary<TKey, TValue>"__id*=;
-9
-%03System.Collections.Generic.Dictionary<TKey, TValue>"
-
- N(
-implicit returnBA?
-=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache

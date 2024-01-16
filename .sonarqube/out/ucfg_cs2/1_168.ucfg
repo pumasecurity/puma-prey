@@ -1,126 +1,0 @@
-
-MPuma.Prey.Raccoon.Controllers.AccountController.ExternalLogin(string, string)S
-GD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\AccountController.csò ò()"2*º
-0
-õ õ({r
-p
-
-õ1 õ(4
-%0System.Web.Mvc.UrlHelper"!System.Web.Mvc.Controller.Url.get*
-System.Web.Mvc.Controller–Õ
-
-õ1 õ(~
-%1string"7System.Web.Mvc.UrlHelper.Action(string, string, object)*" 
-
-%0System.Web.Mvc.UrlHelper*
-ExternalLoginCallback*	
-Account*
-""2Action(string, string, object)óî
-
-õ õ(E
-%2?Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResult"?Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResultÒ
-Ó
-
-õ õ(&
-
-%3void"_Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResult.ChallengeResult(string, string)*IG
-E
-%2?Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResult*
-
-providerstring*
-
-%1string"V
-õ õ(ÄG
-E
-%2?Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResult*2
-1
-ú	 ú(	"!
-
-ú ú(	
-implicit return*±
-2
-òL ò(LS
-Q
-
-ò ò()
-%4"__entrypoint*
-
-providerstring*
-
-	returnUrlstringt
-r
-
-ï	 ï(
-%5"
-__annotate*:86
-4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
-
-providerstringÄ
-~
-
-ñ	 ñ(
-%6"
-__annotate*FDB
-@System.Web.Mvc.AllowAnonymousAttribute.AllowAnonymousAttribute()*
-
-providerstringï
-í
-
-ó	 ó(!
-%7"
-__annotate*ZXV
-TSystem.Web.Mvc.ValidateAntiForgeryTokenAttribute.ValidateAntiForgeryTokenAttribute()*
-
-providerstringN
-L
-
-ò* ò(9
-providerstring"__annotation*
-
-%5*
-
-%6*
-
-%7u
-s
-
-ï	 ï(
-%8"
-__annotate*:86
-4System.Web.Mvc.HttpPostAttribute.HttpPostAttribute()*
-
-	returnUrlstringÅ
-
-
-ñ	 ñ(
-%9"
-__annotate*FDB
-@System.Web.Mvc.AllowAnonymousAttribute.AllowAnonymousAttribute()*
-
-	returnUrlstringó
-î
-
-ó	 ó(!
-%10"
-__annotate*ZXV
-TSystem.Web.Mvc.ValidateAntiForgeryTokenAttribute.ValidateAntiForgeryTokenAttribute()*
-
-	returnUrlstringP
-N
-
-ò; ò(K
-	returnUrlstring"__annotation*
-
-%8*
-
-%9*	
-
-%10*
-0: 
-
-ò* ò(9
-providerstring:!
-
-ò; ò(K
-	returnUrlstringB31
-/Puma.Prey.Raccoon.Controllers.AccountController

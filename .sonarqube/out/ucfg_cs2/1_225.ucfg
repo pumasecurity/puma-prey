@@ -1,97 +1,0 @@
-
-[Puma.Prey.Raccoon.Controllers.HuntController.Enter(int, Puma.Prey.Raccoon.Models.HuntModel)N
-DD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\HuntController.cs: :(!"5*›
-0< <("ƒ
-€
-< <()
-%0#System.Web.Mvc.ModelStateDictionary"(System.Web.Mvc.Controller.ModelState.get*
-System.Web.Mvc.Controller~
-|
-< <("
-
-%1bool"5System.Collections.Generic.ICollection<T>.IsValid.get*-+
-)
-%0#System.Web.Mvc.ModelStateDictionary*
-1
-2*«
-1@ @(H/-
-@ @(
-%ViewBagDataAllobject"object0.
-@ @(
-%ViewBagDataHtmlobject"objectv
-t
-@@ @(H
-%2string")Puma.Prey.Raccoon.Models.HuntModel.Id.get*/-
-+
-model"Puma.Prey.Raccoon.Models.HuntModel|
-z
-@+ @(I
-
-%3bool".Puma.Prey.Raccoon.HuntUtil.HuntIsValid(string)* "
-Puma.Prey.Raccoon.HuntUtil*
-
-%2string_
-]
-@ @(I
-%4"__mapSet*
-
-%ViewBagDataAllobject*
-HuntAccepted*
-
-
-%3boolZ
-X
-@ @(I
-%5"__mapSet*
-
-%ViewBagDataHtmlobject*
-HuntAccepted*
-""*
-3
-2*
-3D D(*
-4*ç
-2I I(¨
-¥
-I I(
-%6System.Web.Mvc.ViewResult"&System.Web.Mvc.Controller.View(object)*
-System.Web.Mvc.Controller*/-
-+
-model"Puma.Prey.Raccoon.Models.HuntModel"-
-I I(!
-
-%6System.Web.Mvc.ViewResult*.
-4J	 J(	"
-J J(	
-implicit return*È
-5:: :(:h
-f
-: :(!L
-+
-model"Puma.Prey.Raccoon.Models.HuntModel"
-<Id>k__BackingFieldstring"__entrypointW
-U
-: :(!;
-+
-model"Puma.Prey.Raccoon.Models.HuntModel"
-Idstring"__entrypointj
-h
-: :(!N
-+
-model"Puma.Prey.Raccoon.Models.HuntModel"
-<Name>k__BackingFieldstring"__entrypointY
-W
-: :(!=
-+
-model"Puma.Prey.Raccoon.Models.HuntModel"
-Namestring"__entrypoint*
-(
-: :(!
-%7"__entrypoint*
-""*
-0:
-:" :((	
-idint:7
-:* :(9+
-model"Puma.Prey.Raccoon.Models.HuntModelB0.
-,Puma.Prey.Raccoon.Controllers.HuntController

@@ -1,24 +1,0 @@
-
-ùPuma.Prey.Raccoon.ApplicationSignInManager.ApplicationSignInManager(Puma.Prey.Raccoon.ApplicationUserManager, Microsoft.Owin.Security.IAuthenticationManager)L
-BD:\Sources\dotNetLab\puma-prey\Raccoon\App_Start\IdentityConfig.cs^ ^('"1*
-1a	 a(	*
-0*ß
-0_ _(5í
-è
-_ _(6
-
-%0void"´Microsoft.AspNet.Identity.Owin.SignInManager<TUser, TKey>.SignInManager(Microsoft.AspNet.Identity.UserManager<TUser, TKey>, Microsoft.Owin.Security.IAuthenticationManager)*?=;
-9Microsoft.AspNet.Identity.Owin.SignInManager<TUser, TKey>*;9
-7
-userManager(Puma.Prey.Raccoon.ApplicationUserManager*KI
-G
-authenticationManager.Microsoft.Owin.Security.IAuthenticationManager*
-2*.
-2a	 a(	"
-a a(	
-implicit return:C
-^( ^(J7
-userManager(Puma.Prey.Raccoon.ApplicationUserManager:S
-^L ^(xG
-authenticationManager.Microsoft.Owin.Security.IAuthenticationManagerB.,
-*Puma.Prey.Raccoon.ApplicationSignInManager

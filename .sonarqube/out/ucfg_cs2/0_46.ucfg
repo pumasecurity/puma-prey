@@ -1,49 +1,0 @@
-
-EPuma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache.Clear()_
-UD:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\ProtectedKeyCache.csA A("0*ü
-0C- D(*’
-“
-D  D(*9
-%03System.Collections.Generic.Dictionary<TKey, TValue>"__id*ÑÅ*?
-=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache"<
-cache3System.Collections.Generic.Dictionary<TKey, TValue>é
-ã
-D D(*:
-obj3System.Collections.Generic.Dictionary<TKey, TValue>"__id*=;
-9
-%03System.Collections.Generic.Dictionary<TKey, TValue>°
-û
-D D(+
-
-%1void"&System.Threading.Monitor.Enter(object)*"
-System.Threading.Monitor*><
-:
-obj3System.Collections.Generic.Dictionary<TKey, TValue>*
-1*¯
-1G G("’
-“
-G G(9
-%23System.Collections.Generic.Dictionary<TKey, TValue>"__id*ÑÅ*?
-=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache"<
-cache3System.Collections.Generic.Dictionary<TKey, TValue>ã
-à
-G G("
-
-%3void"1System.Collections.Generic.ICollection<T>.Clear()*=;
-9
-%23System.Collections.Generic.Dictionary<TKey, TValue>*
-2*∏
-2K K( †
-ù
-K K(!
-
-%4void"%System.Threading.Monitor.Exit(object)*"
-System.Threading.Monitor*><
-:
-obj3System.Collections.Generic.Dictionary<TKey, TValue>*
-3
-3*.
-3M	 M(	"
-M M(	
-implicit returnBA?
-=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache

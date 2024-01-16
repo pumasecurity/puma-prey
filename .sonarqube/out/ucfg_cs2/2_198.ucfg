@@ -1,18 +1,0 @@
-
-?Puma.Prey.Fox.Controllers.AccountController.AccountController()M
-CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.cs ( "2*v
-1	 (	b
-`
-
-%0void"-System.Web.Http.ApiController.ApiController()*#!
-System.Web.Http.ApiController*
-0*.
-0	 (	"
- (	
-implicit return*4
-2" (" 
-
- ( 
-%1"__entrypoint*
-1B/-
-+Puma.Prey.Fox.Controllers.AccountController

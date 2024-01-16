@@ -1,113 +1,0 @@
-
-çPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.SetPublicFields(System.Type, object, System.Collections.Generic.Dictionary<System.Type, object>)a
-UD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\ObjectGenerator.csÅ Å(+"0*•
-0
-É Ö(.$
-"
-
-É0 É(C
-%0"__id*
-""$
-"
-
-ÉF É([
-%1"__id*
-""π∂
-
-É! É(\#
-%2System.Reflection.FieldInfo[]"5System.Type.GetFields(System.Reflection.BindingFlags)*
-
-typeSystem.Type*
-""2)GetFields(System.Reflection.BindingFlags)f
-d
-
-É É(\'
-fieldsSystem.Reflection.FieldInfo[]"__id*'%
-#
-%2System.Reflection.FieldInfo[]pn
-
-Ñ. Ñ(C2
-%3,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator",Puma.Prey.Fox.Areas.HelpPage.ObjectGeneratorì
-ê
-
-Ñ2 Ñ(A
-
-%4void">Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator.ObjectGenerator()*64
-2
-%3,Puma.Prey.Fox.Areas.HelpPage.ObjectGeneratoré
-ã
-
-Ñ Ñ(C?
-objectGenerator,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator"__id*64
-2
-%3,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator¢
-ü
-
-Ö Ö($!
-%5System.Reflection.FieldInfo"7System.Collections.Generic.ICollection<T>.this[int].get*+)
-'
-fieldsSystem.Reflection.FieldInfo[]*
-""a
-_
-
-Ö â($
-fieldSystem.Reflection.FieldInfo"__id*%#
-!
-%5System.Reflection.FieldInfo*
-1*
-1
-ä	 ä(	*
-2
-3*›
-2
-á à(.ÜÉ
-
-áC á(R
-%6System.Type")System.Reflection.FieldInfo.FieldType.get*(&
-$
-fieldSystem.Reflection.FieldInfo2FieldType.get‘
-—
-
-á$ á(l
-%7object"ÑPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.GenerateObject(System.Type, System.Collections.Generic.Dictionary<System.Type, object>)*CA
-?
-objectGenerator,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator*
-
-%6System.Type*RP
-N
-createdObjectReferences3System.Collections.Generic.Dictionary<TKey, TValue><
-:
-
-á á(l
-
-fieldValueobject"__id*
-
-%7object®
-•
-
-à à(/
-
-%8void"4System.Reflection.FieldInfo.SetValue(object, object)*(&
-$
-fieldSystem.Reflection.FieldInfo*
-
-objobject*
-
-
-fieldValueobject*
-1*2
-3
-ä	 ä(	"!
-
-ä ä(	
-implicit return:!
-
-Å, Å(5
-typeSystem.Type:
-
-Å7 Å(A
-objobject:\
-
-ÅC Å(sN
-createdObjectReferences3System.Collections.Generic.Dictionary<TKey, TValue>B0".
-,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator

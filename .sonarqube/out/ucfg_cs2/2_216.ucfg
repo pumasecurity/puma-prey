@@ -1,253 +1,0 @@
-
-GPuma.Prey.Fox.Controllers.AccountController.GetManageInfo(string, bool)M
-CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.csO/ O(<"9*©	
-0Q S(©
-¶
-Q& Q(1*
-%0$Puma.Prey.Fox.ApplicationUserManager";Puma.Prey.Fox.Controllers.AccountController.UserManager.get*1/-
-+Puma.Prey.Fox.Controllers.AccountControllerÜ
-É
-Q@ Q(D*
-%1$System.Security.Principal.IPrincipal"&System.Web.Http.ApiController.User.get*#!
-System.Web.Http.ApiController©¶
-Q@ Q(M)
-%2#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
-*
-%1$System.Security.Principal.IPrincipal2Identity.get€
-ÿ
-Q@ Q(Y
-%3string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
-,Microsoft.AspNet.Identity.IdentityExtensions*-+
-)
-%2#System.Security.Principal.IIdentityÿ’
-Q& Q(Z*
-%4$System.Threading.Tasks.Task<TResult>"FMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.FindByIdAsync(TKey)*.,
-*
-%0$Puma.Prey.Fox.ApplicationUserManager*
-
-%3string2FindByIdAsync(TKey)\
-Z
-Q Q(Z>
-user6Microsoft.AspNet.Identity.EntityFramework.IdentityUser"__id*
-""ô
-ñ
-S S(
-
-%5bool""object.operator ==(object, object)*
-"
-object*B@
->
-user6Microsoft.AspNet.Identity.EntityFramework.IdentityUser*
-""*
-1
-2*!
-1U U("
-U U(
-""*∏
-2X) Z(CZX
-X2 X(T(
-%6"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>q
-o
-X6 X(R
-
-%7void")System.Collections.Generic.List<T>.List()*,*
-(
-%6"System.Collections.Generic.List<T>n
-l
-X) X(T,
-logins"System.Collections.Generic.List<T>"__id*,*
-(
-%6"System.Collections.Generic.List<T>ÓÎ
-Z8 Z(C/
-%8)System.Collections.Generic.ICollection<T>"^Microsoft.AspNet.Identity.EntityFramework.IdentityUser<TKey, TLogin, TRole, TClaim>.Logins.get*B@
->
-user6Microsoft.AspNet.Identity.EntityFramework.IdentityUser2
-Logins.get»
-≈
-Z' Z(4A
-%9;Microsoft.AspNet.Identity.EntityFramework.IdentityUserLogin"7System.Collections.Generic.ICollection<T>.this[int].get*31
-/
-%8)System.Collections.Generic.ICollection<T>*
-""®
-•
-Z a(L
-linkedAccount;Microsoft.AspNet.Identity.EntityFramework.IdentityUserLogin"__id*EC
-A
-%9;Microsoft.AspNet.Identity.EntityFramework.IdentityUserLogin*
-3*
-3s	 s(	*
-4
-5*”	
-4\ _(;mk
-\ `(2
-%10+Puma.Prey.Fox.Models.UserLoginInfoViewModel"+Puma.Prey.Fox.Models.UserLoginInfoViewModelò
-ï
-\ \(5
-%11void"DPuma.Prey.Fox.Models.UserLoginInfoViewModel.UserLoginInfoViewModel()*64
-2
-%10+Puma.Prey.Fox.Models.UserLoginInfoViewModel÷”
-^$ ^(?
-%12string"SMicrosoft.AspNet.Identity.EntityFramework.IdentityUserLogin<TKey>.LoginProvider.get*PN
-L
-linkedAccount;Microsoft.AspNet.Identity.EntityFramework.IdentityUserLogin2LoginProvider.get¶
-£
-^ ^(?
-%13string"=Puma.Prey.Fox.Models.UserLoginInfoViewModel.LoginProvider.set*64
-2
-%10+Puma.Prey.Fox.Models.UserLoginInfoViewModel*
-
-%12string“œ
-_" _(;
-%14string"QMicrosoft.AspNet.Identity.EntityFramework.IdentityUserLogin<TKey>.ProviderKey.get*PN
-L
-linkedAccount;Microsoft.AspNet.Identity.EntityFramework.IdentityUserLogin2ProviderKey.get§
-°
-_ _(;
-%15string";Puma.Prey.Fox.Models.UserLoginInfoViewModel.ProviderKey.set*64
-2
-%10+Puma.Prey.Fox.Models.UserLoginInfoViewModel*
-
-%14string∂
-≥
-\ `(
-%16void"0System.Collections.Generic.ICollection<T>.Add(T)*0.
-,
-logins"System.Collections.Generic.List<T>*64
-2
-%10+Puma.Prey.Fox.Models.UserLoginInfoViewModel*
-3*⁄
-5c c()ÿ’
-c c(!
-%17string"dMicrosoft.AspNet.Identity.EntityFramework.IdentityUser<TKey, TLogin, TRole, TClaim>.PasswordHash.get*B@
->
-user6Microsoft.AspNet.Identity.EntityFramework.IdentityUser2PasswordHash.geth
-f
-c c()
-%18bool""string.operator !=(string, string)*
-"
-string*
-
-%17string*
-""*
-6
-7*ï
-6e h(/mk
-e i(2
-%19+Puma.Prey.Fox.Models.UserLoginInfoViewModel"+Puma.Prey.Fox.Models.UserLoginInfoViewModelò
-ï
-e e(5
-%20void"DPuma.Prey.Fox.Models.UserLoginInfoViewModel.UserLoginInfoViewModel()*64
-2
-%19+Puma.Prey.Fox.Models.UserLoginInfoViewModel#
-!
-g$ g(6
-%21"__id*
-""û
-õ
-g g(6
-%22string"=Puma.Prey.Fox.Models.UserLoginInfoViewModel.LoginProvider.set*64
-2
-%19+Puma.Prey.Fox.Models.UserLoginInfoViewModel*	
-
-%21–Õ
-h" h(/
-%23string"`Microsoft.AspNet.Identity.EntityFramework.IdentityUser<TKey, TLogin, TRole, TClaim>.UserName.get*B@
->
-user6Microsoft.AspNet.Identity.EntityFramework.IdentityUser2UserName.get§
-°
-h h(/
-%24string";Puma.Prey.Fox.Models.UserLoginInfoViewModel.ProviderKey.set*64
-2
-%19+Puma.Prey.Fox.Models.UserLoginInfoViewModel*
-
-%23string∂
-≥
-e i(
-%25void"0System.Collections.Generic.ICollection<T>.Add(T)*0.
-,
-logins"System.Collections.Generic.List<T>*64
-2
-%19+Puma.Prey.Fox.Models.UserLoginInfoViewModel*
-7*Ø
-7l q(Sge
-l r(/
-%26(Puma.Prey.Fox.Models.ManageInfoViewModel"(Puma.Prey.Fox.Models.ManageInfoViewModelè
-å
-l l(*
-%27void">Puma.Prey.Fox.Models.ManageInfoViewModel.ManageInfoViewModel()*31
-/
-%26(Puma.Prey.Fox.Models.ManageInfoViewModel#
-!
-n% n(7
-%28"__id*
-""ù
-ö
-n n(7
-%29string"?Puma.Prey.Fox.Models.ManageInfoViewModel.LocalLoginProvider.set*31
-/
-%26(Puma.Prey.Fox.Models.ManageInfoViewModel*	
-
-%28–Õ
-o o(%
-%30string"`Microsoft.AspNet.Identity.EntityFramework.IdentityUser<TKey, TLogin, TRole, TClaim>.UserName.get*B@
->
-user6Microsoft.AspNet.Identity.EntityFramework.IdentityUser2UserName.getò
-ï
-o o(%
-%31string"2Puma.Prey.Fox.Models.ManageInfoViewModel.Email.set*31
-/
-%26(Puma.Prey.Fox.Models.ManageInfoViewModel*
-
-%30string€
-ÿ
-p p(0
-%32)System.Collections.Generic.IEnumerable<T>"3Puma.Prey.Fox.Models.ManageInfoViewModel.Logins.set*31
-/
-%26(Puma.Prey.Fox.Models.ManageInfoViewModel*0.
-,
-logins"System.Collections.Generic.List<T>‚
-ﬂ
-q) q(T0
-%33)System.Collections.Generic.IEnumerable<T>"KPuma.Prey.Fox.Controllers.AccountController.GetExternalLogins(string, bool)*1/-
-+Puma.Prey.Fox.Controllers.AccountController*
-
-	returnUrlstring*
-""Ô
-Ï
-q q(T0
-%34)System.Collections.Generic.IEnumerable<T>"CPuma.Prey.Fox.Models.ManageInfoViewModel.ExternalLoginProviders.set*31
-/
-%26(Puma.Prey.Fox.Models.ManageInfoViewModel*42
-0
-%33)System.Collections.Generic.IEnumerable<T>"=
-l r(1
-/
-%26(Puma.Prey.Fox.Models.ManageInfoViewModel*.
-8s	 s(	"
-s s(	
-implicit return*ã
-9Oj O(jD
-B
-O/ O(<
-%35"__entrypoint*
-
-	returnUrlstring*
-""u
-s
-N	 N(
-%36"
-__annotate*;97
-5System.Web.Http.RouteAttribute.RouteAttribute(string)*
-
-	returnUrlstring:
-8
-O= O(M
-	returnUrlstring"__annotation*	
-
-%36*
-0:
-O= O(M
-	returnUrlstring:!
-OO O(i
-generateStateboolB/-
-+Puma.Prey.Fox.Controllers.AccountController

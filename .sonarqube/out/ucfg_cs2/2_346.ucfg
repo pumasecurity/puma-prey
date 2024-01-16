@@ -1,201 +1,0 @@
-
-qPuma.Prey.Fox.Controllers.AccountController.ExternalLoginData.FromIdentity(System.Security.Claims.ClaimsIdentity)O
-CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.cs¼, ¼(8"0*¨
-0
-¾ ¾($Ž
-‹
-
-¾ ¾($
-
-%0bool""object.operator ==(object, object)*
-"
-object*53
-1
-identity%System.Security.Claims.ClaimsIdentity*
-""*
-1
-2*%
-1
-À À("
-
-À À( 
-""*€
-2
-Ã Å(,$
-"
-
-Ã< Ã(U
-%1"__id*
-""À½
-
-Ã) Ã(V"
-%2System.Security.Claims.Claim"7System.Security.Claims.ClaimsIdentity.FindFirst(string)*53
-1
-identity%System.Security.Claims.ClaimsIdentity*
-
-%12FindFirst(string)n
-l
-
-Ã Ã(V0
-providerKeyClaimSystem.Security.Claims.Claim"__id*&$
-"
-%2System.Security.Claims.Claim
-Š
-
-Å Å(,
-
-%3bool""object.operator ==(object, object)*
-"
-object*42
-0
-providerKeyClaimSystem.Security.Claims.Claim*
-""*
-3
-4*î
-4
-Å0 Å(\{
-y
-
-ÅE Å(\
-%4string"'System.Security.Claims.Claim.Issuer.get*42
-0
-providerKeyClaimSystem.Security.Claims.ClaimX
-V
-
-Å0 Å(]
-
-%5bool"string.IsNullOrEmpty(string)*
-"
-string*
-
-%4string*
-3
-5*í
-5
-Æ Æ(Bz
-x
-
-Æ, Æ(B
-%6string"&System.Security.Claims.Claim.Value.get*42
-0
-providerKeyClaimSystem.Security.Claims.ClaimX
-V
-
-Æ Æ(C
-
-%7bool"string.IsNullOrEmpty(string)*
-"
-string*
-
-%6string*
-3
-6*%
-3
-È È("
-
-È È( 
-""*¥
-6
-Ë Ë(K{
-y
-
-Ë Ë(+
-%8string"'System.Security.Claims.Claim.Issuer.get*42
-0
-providerKeyClaimSystem.Security.Claims.Claim$
-"
-
-Ë/ Ë(K
-%9"__id*
-""i
-g
-
-Ë Ë(K
-%10bool""string.operator ==(string, string)*
-"
-string*
-
-%8string*
-
-%9*
-7
-8*%
-7
-Í Í("
-
-Í Í( 
-""*Ã
-8
-Ð Ô(F”‘
-
-Ð Õ(D
-%11=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData"=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData¹
-¶
-
-Ð Ð(,
-%12void"QPuma.Prey.Fox.Controllers.AccountController.ExternalLoginData.ExternalLoginData()*HF
-D
-%11=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData|
-z
-
-Ò$ Ò(;
-%13string"'System.Security.Claims.Claim.Issuer.get*42
-0
-providerKeyClaimSystem.Security.Claims.ClaimÌ
-É
-
-Ò Ò(;
-%14string"OPuma.Prey.Fox.Controllers.AccountController.ExternalLoginData.LoginProvider.set*HF
-D
-%11=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData*
-
-%13string{
-y
-
-Ó" Ó(8
-%15string"&System.Security.Claims.Claim.Value.get*42
-0
-providerKeyClaimSystem.Security.Claims.ClaimÊ
-Ç
-
-Ó Ó(8
-%16string"MPuma.Prey.Fox.Controllers.AccountController.ExternalLoginData.ProviderKey.set*HF
-D
-%11=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData*
-
-%15string%
-#
-
-Ô7 Ô(F
-%17"__id*
-""€
-ý
-
-Ô Ô(G
-%18string"jMicrosoft.AspNet.Identity.IdentityExtensions.FindFirstValue(System.Security.Claims.ClaimsIdentity, string)*20".
-,Microsoft.AspNet.Identity.IdentityExtensions*53
-1
-identity%System.Security.Claims.ClaimsIdentity*	
-
-%17Ç
-Ä
-
-Ô Ô(G
-%19string"JPuma.Prey.Fox.Controllers.AccountController.ExternalLoginData.UserName.set*HF
-D
-%11=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData*
-
-%18string"T
-
-Ð Õ(F
-D
-%11=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData*2
-9
-Ö Ö("!
-
-Ö Ö(
-implicit return:?
-
-¼9 ¼(P1
-identity%System.Security.Claims.ClaimsIdentityBA"?
-=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData

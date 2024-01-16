@@ -1,46 +1,0 @@
-
-@Puma.Prey.Fox.Areas.HelpPage.InvalidSample.InvalidSample(string)]
-SD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\InvalidSample.cs
- 
-("1*
-1	 (	*
-0*‡
-0 ($p
-n
- ($
-
-%0bool""string.operator ==(string, string)*
-"
-string*
-
-errorMessagestring*
-""*
-2
-3*ö
-2 (>NL
- (?"
-%1System.ArgumentNullException"System.ArgumentNullException‘
-Ž
- (/
-
-%2void":System.ArgumentNullException.ArgumentNullException(string)*&$
-"
-%1System.ArgumentNullException*
-errorMessage*
-4*»
-3 ('¦
-£
- ('
-%3string";Puma.Prey.Fox.Areas.HelpPage.InvalidSample.ErrorMessage.set*0.,
-*Puma.Prey.Fox.Areas.HelpPage.InvalidSample*
-
-errorMessagestring*
-4*.
-4	 (	"
- (	
-implicit return:"
-
- 
-(0
-errorMessagestringB.,
-*Puma.Prey.Fox.Areas.HelpPage.InvalidSample

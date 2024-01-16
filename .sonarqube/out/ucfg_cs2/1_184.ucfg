@@ -1,149 +1,0 @@
-
-9Puma.Prey.Raccoon.Startup.ConfigureAuth(Owin.IAppBuilder)J
-@D:\Sources\dotNetLab\puma-prey\Raccoon\App_Start\Startup.Auth.cs (!"0*°!
-0 .(k¬
-ø
- (A
-%0Owin.IAppBuilder"SOwin.AppBuilderExtensions.CreatePerOwinContext<T>(Owin.IAppBuilder, System.Func<T>)*"
-Owin.AppBuilderExtensions*
-
-appOwin.IAppBuilder*
-""ö
-ó
- ([
-%1Owin.IAppBuilder"™Owin.AppBuilderExtensions.CreatePerOwinContext<T>(Owin.IAppBuilder, System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>)*"
-Owin.AppBuilderExtensions*
-
-appOwin.IAppBuilder*
-""ö
-ó
- (_
-%2Owin.IAppBuilder"™Owin.AppBuilderExtensions.CreatePerOwinContext<T>(Owin.IAppBuilder, System.Func<Microsoft.AspNet.Identity.Owin.IdentityFactoryOptions<T>, Microsoft.Owin.IOwinContext, T>)*"
-Owin.AppBuilderExtensions*
-
-appOwin.IAppBuilder*
-""çä
-( %(A
-%3;Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions";Microsoft.Owin.Security.Cookies.CookieAuthenticationOptionsª
-∏
-, (G
-
-%4void"YMicrosoft.Owin.Security.Cookies.CookieAuthenticationOptions.CookieAuthenticationOptions()*EC
-A
-%3;Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions"
- 
-% (Q
-%5"__id*
-""≤
-Ø
- (Q
-%6string"DMicrosoft.Owin.Security.AuthenticationOptions.AuthenticationType.set*EC
-A
-%3;Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions*
-
-%5HF
- (<
-%7Microsoft.Owin.PathString"Microsoft.Owin.PathStringÅ
-
-  (*
-
-%8void",Microsoft.Owin.PathString.PathString(string)*#!
-
-%7Microsoft.Owin.PathString*
-/Account/LoginÂ
-‚
- (<
-%9Microsoft.Owin.PathString"IMicrosoft.Owin.Security.Cookies.CookieAuthenticationOptions.LoginPath.set*EC
-A
-%3;Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions*#!
-
-%7Microsoft.Owin.PathStringêç
- $(C
-%10<Microsoft.Owin.Security.Cookies.CookieAuthenticationProvider"<Microsoft.Owin.Security.Cookies.CookieAuthenticationProvider¿
-Ω
- (;
-%11void"[Microsoft.Owin.Security.Cookies.CookieAuthenticationProvider.CookieAuthenticationProvider()*GE
-C
-%10<Microsoft.Owin.Security.Cookies.CookieAuthenticationProviderh
-f
-"* "(B
-%12System.TimeSpan"#System.TimeSpan.FromMinutes(double)*"
-System.TimeSpan*2ﬂ
-‹
-!) #(g
-%13System.Func<T, TResult>"ÃMicrosoft.AspNet.Identity.Owin.SecurityStampValidator.OnValidateIdentity<TManager, TUser>(System.TimeSpan, System.Func<TManager, TUser, System.Threading.Tasks.Task<System.Security.Claims.ClaimsIdentity>>)*;9"7
-5Microsoft.AspNet.Identity.Owin.SecurityStampValidator*
-
-%12System.TimeSpan*
-""Ô
-Ï
-! #(g
-%14System.Func<T, TResult>"SMicrosoft.Owin.Security.Cookies.CookieAuthenticationProvider.OnValidateIdentity.set*GE
-C
-%10<Microsoft.Owin.Security.Cookies.CookieAuthenticationProvider*" 
-
-%13System.Func<T, TResult>≠
-™
- $(D
-%15=Microsoft.Owin.Security.Cookies.ICookieAuthenticationProvider"HMicrosoft.Owin.Security.Cookies.CookieAuthenticationOptions.Provider.set*EC
-A
-%3;Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions*GE
-C
-%10<Microsoft.Owin.Security.Cookies.CookieAuthenticationProvider¬
-ø
- %(
-%16Owin.IAppBuilder"äOwin.CookieAuthenticationExtensions.UseCookieAuthentication(Owin.IAppBuilder, Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions)*)'"%
-#Owin.CookieAuthenticationExtensions*
-
-appOwin.IAppBuilder*EC
-A
-%3;Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions#
-!
-&( &(Q
-%17"__id*
-""∞
-≠
-& &(R
-%18void"KOwin.AppBuilderExtensions.UseExternalSignInCookie(Owin.IAppBuilder, string)*"
-Owin.AppBuilderExtensions*
-
-appOwin.IAppBuilder*	
-
-%17#
-!
-)) )(S
-%19"__id*
-""h
-f
-)U )(l
-%20System.TimeSpan"#System.TimeSpan.FromMinutes(double)*"
-System.TimeSpan*2ﬁ
-€
-) )(m
-%21void"]Owin.AppBuilderExtensions.UseTwoFactorSignInCookie(Owin.IAppBuilder, string, System.TimeSpan)*"
-Owin.AppBuilderExtensions*
-
-appOwin.IAppBuilder*	
-
-%19*
-
-%20System.TimeSpan#
-!
-.2 .(k
-%22"__id*
-""∫
-∑
-. .(l
-%23void"UOwin.AppBuilderExtensions.UseTwoFactorRememberBrowserCookie(Owin.IAppBuilder, string)*"
-Owin.AppBuilderExtensions*
-
-appOwin.IAppBuilder*	
-
-%22*
-1*.
-1B	 B(	"
-B B(	
-implicit return:#
-" (1
-appOwin.IAppBuilderB
-Puma.Prey.Raccoon.Startup

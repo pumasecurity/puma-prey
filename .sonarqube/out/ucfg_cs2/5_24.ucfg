@@ -1,200 +1,0 @@
-
-6Skunk.ViewSwitcher.Page_Load(object, System.EventArgs)C
-9D:\Sources\dotNetLab\puma-prey\Skunk\ViewSwitcher.ascx.cs ( "0*≈
-0 ("wu
-[ (b
-%0System.Web.HttpContext"!System.Web.UI.Control.Context.get*
-System.Web.UI.Control2Context.getPN
-D (c#
-%1System.Web.HttpContextWrapper"System.Web.HttpContextWrapperÆ
-´
-H (Z
-
-%2void"HSystem.Web.HttpContextWrapper.HttpContextWrapper(System.Web.HttpContext)*'%
-#
-%1System.Web.HttpContextWrapper* 
-
-%0System.Web.HttpContext˚
-¯
- (d
-
-%3bool"lMicrosoft.AspNet.FriendlyUrls.Resolvers.WebFormsFriendlyUrlResolver.IsMobileView(System.Web.HttpContextBase)*IG"E
-CMicrosoft.AspNet.FriendlyUrls.Resolvers.WebFormsFriendlyUrlResolver*'%
-#
-%1System.Web.HttpContextWrapper4
-2
- (d
-isMobilebool"__id*
-
-
-%3bool*
-1
-2*f
-1% (-&
-$
-% (-
-%5"__id*
-
-Mobile*
-(
-% (-
-%4string"__id*
-
-%5*
-3*g
-20 (9'
-%
-0 (9
-%6"__id*	
-Desktop*
-(
-0 (9
-%4string"__id*
-
-%6*
-3*Å
-3 ($j
-h
- (9
-%7string""Skunk.ViewSwitcher.CurrentView.set*
-Skunk.ViewSwitcher*
-
-%4string*
-4
-5*g
-4' (0'
-%
-' (0
-%9"__id*	
-Desktop*
-(
-' (0
-%8string"__id*
-
-%9*
-6*h
-53 (;'
-%
-3 (;
-%10"__id*
-
-Mobile+
-)
-3 (;
-%8string"__id*	
-
-%10*
-6*¶
-6  ('m
-k
- (;
-%11string"$Skunk.ViewSwitcher.AlternateView.set*
-Skunk.ViewSwitcher*
-
-%8stringW
-U
- (F
-switchViewRouteNamestring"__id*$" 
-AspNet.FriendlyUrls.SwitchViewá
-Ñ
-" (3)
-%12"System.Web.Routing.RouteCollection"(System.Web.Routing.RouteTable.Routes.get*#!"
-System.Web.Routing.RouteTable¿
-Ω
-" (H#
-%13System.Web.Routing.RouteBase":System.Collections.Generic.ICollection<T>.this[string].get*-+
-)
-%12"System.Web.Routing.RouteCollection*!
-
-switchViewRouteNamestringl
-j
- (H/
-switchViewRouteSystem.Web.Routing.RouteBase"__id*'%
-#
-%13System.Web.Routing.RouteBaseã
-à
-   ('
-%14bool""object.operator ==(object, object)*
-"
-object*31
-/
-switchViewRouteSystem.Web.Routing.RouteBase*
-""*
-7
-8*ê
-7# #($mk
-# #($
-%15bool"!System.Web.UI.Control.Visible.set*
-Skunk.ViewSwitcher*
-""2Visible.set"
-$ $(
-""*ı
-8& (([
-Y
-&D &(Q
-%16string"$Skunk.ViewSwitcher.AlternateView.get*
-Skunk.ViewSwitcherô
-ñ
-& &(w
-%17string"1System.Web.UI.Control.GetRouteUrl(string, object)*
-System.Web.UI.Control*!
-
-switchViewRouteNamestring*
-""4
-2
-& &(w
-urlstring"__id*
-
-%17strings
-q
-'9 '(@
-%18System.Web.HttpRequest"%System.Web.UI.UserControl.Request.get*
-System.Web.UI.UserControla
-_
-'9 '(G
-%19string"!System.Web.HttpRequest.RawUrl.get*!
-
-%18System.Web.HttpRequestv
-t
-'# '(H
-%20string"(System.Web.HttpUtility.UrlEncode(string)*"
-System.Web.HttpUtility*
-
-%19string_
-]
-' '(H
-%21string"__concat*
-' '( 
-?ReturnUrl=*
-'# '(H
-
-%20string_
-]
-' '(H
-%22string"__concat*
-' '(
-
-urlstring*
-' '(H
-
-%21string4
-2
-' '(H
-urlstring"__id*
-
-%22stringj
-h
-( ((
-%23string" Skunk.ViewSwitcher.SwitchUrl.set*
-Skunk.ViewSwitcher*
-
-urlstring*
-9*.
-9)	 )(	"
-) )(	
-implicit return:
-! (.
-senderobject:!
-0 (;
-eSystem.EventArgsB
-Skunk.ViewSwitcher

@@ -1,124 +1,0 @@
-
-NPuma.Prey.Raccoon.Controllers.ManageController.EnableTwoFactorAuthentication()R
-FD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\ManageController.csâ( â(E"4*ˆ
-0
-ã ç(µ
-≤
-
-ã ã(.
-%0(Puma.Prey.Raccoon.ApplicationUserManager">Puma.Prey.Raccoon.Controllers.ManageController.UserManager.get*420
-.Puma.Prey.Raccoon.Controllers.ManageController
-}
-
-ã7 ã(;*
-%1$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
-System.Web.Mvc.Controller´®
-
-ã7 ã(D)
-%2#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
-*
-%1$System.Security.Principal.IPrincipal2Identity.get›
-⁄
-
-ã7 ã(P
-%3string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
-,Microsoft.AspNet.Identity.IdentityExtensions*-+
-)
-%2#System.Security.Principal.IIdentityäá
-
-ã ã(W*
-%4$System.Threading.Tasks.Task<TResult>"WMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.SetTwoFactorEnabledAsync(TKey, bool)*20
-.
-%0(Puma.Prey.Raccoon.ApplicationUserManager*
-
-%3string*
-""2$SetTwoFactorEnabledAsync(TKey, bool)µ
-≤
-
-å å((.
-%5(Puma.Prey.Raccoon.ApplicationUserManager">Puma.Prey.Raccoon.Controllers.ManageController.UserManager.get*420
-.Puma.Prey.Raccoon.Controllers.ManageController
-}
-
-å7 å(;*
-%6$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
-System.Web.Mvc.Controller´®
-
-å7 å(D)
-%7#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
-*
-%6$System.Security.Principal.IPrincipal2Identity.get›
-⁄
-
-å7 å(P
-%8string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
-,Microsoft.AspNet.Identity.IdentityExtensions*-+
-)
-%7#System.Security.Principal.IIdentityﬁ€
-
-å å(Q*
-%9$System.Threading.Tasks.Task<TResult>"FMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.FindByIdAsync(TKey)*20
-.
-%5(Puma.Prey.Raccoon.ApplicationUserManager*
-
-%8string2FindByIdAsync(TKey)P
-N
-
-å å(Q0
-user(Puma.Prey.Raccoon.Models.ApplicationUser"__id*
-""é
-ã
-
-ç ç(
-%10bool""object.operator !=(object, object)*
-"
-object*42
-0
-user(Puma.Prey.Raccoon.Models.ApplicationUser*
-""*
-1
-2*Ç
-1
-è è(a∫
-∑
-
-è è(#1
-%11*Puma.Prey.Raccoon.ApplicationSignInManager"@Puma.Prey.Raccoon.Controllers.ManageController.SignInManager.get*420
-.Puma.Prey.Raccoon.Controllers.ManageControllerÆ´
-
-è è(b"
-%12System.Threading.Tasks.Task"XMicrosoft.AspNet.Identity.Owin.SignInManager<TUser, TKey>.SignInAsync(TUser, bool, bool)*53
-1
-%11*Puma.Prey.Raccoon.ApplicationSignInManager*42
-0
-user(Puma.Prey.Raccoon.Models.ApplicationUser*
-""*
-""2SignInAsync(TUser, bool, bool)*
-2*É
-2
-ë ë(5¥
-±
-
-ë ë(6+
-%13$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, string)*
-System.Web.Mvc.Controller*	
-Index*
-
-Manage";
-
-ë ë(7-
-+
-%13$System.Web.Mvc.RedirectToRouteResult*2
-3
-í	 í(	"!
-
-í í(	
-implicit return*9
-4
-âG â(G#
-!
-
-â( â(E
-%14"__entrypoint*
-0B20
-.Puma.Prey.Raccoon.Controllers.ManageController

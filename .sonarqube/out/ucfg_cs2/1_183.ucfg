@@ -1,126 +1,0 @@
-
-oPuma.Prey.Raccoon.Controllers.AccountController.ChallengeResult.ExecuteResult(System.Web.Mvc.ControllerContext)S
-GD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\AccountController.csÖ! Ö(."0*Æ
-0
-Ø Ù("xv
-
-Ø! Ø([6
-%00Microsoft.Owin.Security.AuthenticationProperties"0Microsoft.Owin.Security.AuthenticationProperties¤
-¡
-
-Ø% Ø(=
-
-%1void"KMicrosoft.Owin.Security.AuthenticationProperties.AuthenticationProperties()*:8
-6
-%00Microsoft.Owin.Security.AuthenticationPropertiesª
-§
-
-ØN Ø(Y
-%2string"OPuma.Prey.Raccoon.Controllers.AccountController.ChallengeResult.RedirectUri.get*:8
-6
-%00Microsoft.Owin.Security.AuthenticationProperties­
-ª
-
-Ø@ Ø(Y
-%3string"@Microsoft.Owin.Security.AuthenticationProperties.RedirectUri.set*:8
-6
-%00Microsoft.Owin.Security.AuthenticationProperties*
-
-%2string‘
-Ž
-
-Ø Ø([>
-
-properties0Microsoft.Owin.Security.AuthenticationProperties"__id*:8
-6
-%00Microsoft.Owin.Security.AuthenticationProperties°
-­
-
-Ù Ù(
-%4string"JPuma.Prey.Raccoon.Controllers.AccountController.ChallengeResult.UserId.get*ECA
-?Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResulth
-f
-
-Ù Ù("
-
-%5bool""string.operator !=(string, string)*
-"
-string*
-
-%4string*
-""*
-1
-2*†
-1
-Û Û(;Ð
-Í
-
-Û Û():
-%64System.Collections.Generic.IDictionary<TKey, TValue>"?Microsoft.Owin.Security.AuthenticationProperties.Dictionary.get*B@
->
-
-properties0Microsoft.Owin.Security.AuthenticationProperties$
-"
-
-Û* Û(1
-%7"__id*
-""°
-­
-
-Û5 Û(;
-%8string"JPuma.Prey.Raccoon.Controllers.AccountController.ChallengeResult.UserId.get*ECA
-?Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResultÃÀ
-
-Û Û(;
-%9string"8System.Collections.Generic.ICollection<T>.this[TKey].set*><
-:
-%64System.Collections.Generic.IDictionary<TKey, TValue>*
-
-%7*
-
-%8string2this[TKey].set*
-2*ƒ	
-2
-Ý Ý(g¦£
-
-Ý Ý(#!
-%10System.Web.HttpContextBase"0System.Web.Mvc.ControllerContext.HttpContext.get*/-
-+
-context System.Web.Mvc.ControllerContext2HttpContext.get×
-Ô
-
-Ý Ý(4"
-%11Microsoft.Owin.IOwinContext"OSystem.Web.HttpContextBaseExtensions.GetOwinContext(System.Web.HttpContextBase)**("&
-$System.Web.HttpContextBaseExtensions*%#
-!
-%10System.Web.HttpContextBase²¯
-
-Ý Ý(C5
-%12.Microsoft.Owin.Security.IAuthenticationManager".Microsoft.Owin.IOwinContext.Authentication.get*&$
-"
-%11Microsoft.Owin.IOwinContext2Authentication.get¸
-µ
-
-ÝZ Ý(g
-%13string"QPuma.Prey.Raccoon.Controllers.AccountController.ChallengeResult.LoginProvider.get*ECA
-?Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResultùö
-
-Ý Ý(h
-%14void"{Microsoft.Owin.Security.IAuthenticationManager.Challenge(Microsoft.Owin.Security.AuthenticationProperties, params string[])*97
-5
-%12.Microsoft.Owin.Security.IAuthenticationManager*B@
->
-
-properties0Microsoft.Owin.Security.AuthenticationProperties*
-
-%13string2LChallenge(Microsoft.Owin.Security.AuthenticationProperties, params string[])*
-3*2
-3
-Þ Þ("!
-
-Þ Þ(
-implicit return:9
-
-Ö/ Ö(H+
-context System.Web.Mvc.ControllerContextBCA
-?Puma.Prey.Raccoon.Controllers.AccountController.ChallengeResult

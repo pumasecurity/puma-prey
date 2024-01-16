@@ -1,34 +1,0 @@
-
-Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.Restore(System.IO.Stream, string, System.Security.Cryptography.DataProtectionScope)]
-SD:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyReaderWriter.cs( ((#"0*“
-0* *(`ƒ
-€
-*# *(O
-%0byte[]"]Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.Restore(System.IO.Stream, string)*A?=
-;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter**(
-&
-protectedKeyStreamSystem.IO.Stream*
-
-
-passphrasestring¯
-¬
-* *(a>
-%18Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey"€Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.ProtectKey(byte[], System.Security.Cryptography.DataProtectionScope)*A?=
-;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter*
-
-%0byte[]*
-"""L
-* *(b@
->
-%18Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey*.
-1+	 +(	"
-+ +(	
-implicit return:2
-($ ((=&
-protectedKeyStreamSystem.IO.Stream: 
-(? ((P
-
-passphrasestring:O
-(R ((uC
-protectionScope0System.Security.Cryptography.DataProtectionScopeB?=
-;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter

@@ -1,278 +1,0 @@
-
-ÄPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.ShouldDisplayMember(System.Reflection.MemberInfo, bool)l
-`D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs· ·(/"0*ﬂ
-0
-„  È(A˙
-˜
-
-„- „(])
-%0#Newtonsoft.Json.JsonIgnoreAttribute"_System.Reflection.CustomAttributeExtensions.GetCustomAttribute<T>(System.Reflection.MemberInfo)*1/"-
-+System.Reflection.CustomAttributeExtensions**(
-&
-memberSystem.Reflection.MemberInfov
-t
-
-„  „(]1
-
-jsonIgnore#Newtonsoft.Json.JsonIgnoreAttribute"__id*-+
-)
-%0#Newtonsoft.Json.JsonIgnoreAttributeÇ
-ˇ
-
-‰+ ‰(Z1
-%1+System.Xml.Serialization.XmlIgnoreAttribute"_System.Reflection.CustomAttributeExtensions.GetCustomAttribute<T>(System.Reflection.MemberInfo)*1/"-
-+System.Reflection.CustomAttributeExtensions**(
-&
-memberSystem.Reflection.MemberInfoÜ
-É
-
-‰ ‰(Z8
-	xmlIgnore+System.Xml.Serialization.XmlIgnoreAttribute"__id*53
-1
-%1+System.Xml.Serialization.XmlIgnoreAttributeç
-ä
-
-Â9 Â(o<
-%26System.Runtime.Serialization.IgnoreDataMemberAttribute"_System.Reflection.CustomAttributeExtensions.GetCustomAttribute<T>(System.Reflection.MemberInfo)*1/"-
-+System.Reflection.CustomAttributeExtensions**(
-&
-memberSystem.Reflection.MemberInfo£
-†
-
-Â& Â(oJ
-ignoreDataMember6System.Runtime.Serialization.IgnoreDataMemberAttribute"__id*@>
-<
-%26System.Runtime.Serialization.IgnoreDataMemberAttributeÙ
-Ò
-
-Ê3 Ê(f#
-%3System.NonSerializedAttribute"_System.Reflection.CustomAttributeExtensions.GetCustomAttribute<T>(System.Reflection.MemberInfo)*1/"-
-+System.Reflection.CustomAttributeExtensions**(
-&
-memberSystem.Reflection.MemberInfom
-k
-
-Ê# Ê(f.
-nonSerializedSystem.NonSerializedAttribute"__id*'%
-#
-%3System.NonSerializedAttributeè
-å
-
-Á> Á(w>
-%48System.Web.Http.Description.ApiExplorerSettingsAttribute"_System.Reflection.CustomAttributeExtensions.GetCustomAttribute<T>(System.Reflection.MemberInfo)*1/"-
-+System.Reflection.CustomAttributeExtensions**(
-&
-memberSystem.Reflection.MemberInfo©
-¶
-
-Á) Á(wN
-apiExplorerSetting8System.Web.Http.Description.ApiExplorerSettingsAttribute"__id*B@
->
-%48System.Web.Http.Description.ApiExplorerSettingsAttributeëé
-
-È& È(:
-%5System.Type".System.Reflection.MemberInfo.DeclaringType.get**(
-&
-memberSystem.Reflection.MemberInfo2DeclaringType.getUS
-
-È& È(A
-
-%6bool"System.Type.IsEnum.get*
-
-%5System.Type2
-IsEnum.get*
-1
-2*ú
-1
-Í Í(Hà
-Ö
-
-Í Í(@7
-%100System.Runtime.Serialization.EnumMemberAttribute"_System.Reflection.CustomAttributeExtensions.GetCustomAttribute<T>(System.Reflection.MemberInfo)*1/"-
-+System.Reflection.CustomAttributeExtensions**(
-&
-memberSystem.Reflection.MemberInfoï
-í
-
-Í Í(H
-%11bool""object.operator !=(object, object)*
-"
-object*;9
-7
-%100System.Runtime.Serialization.EnumMemberAttribute*
-""1
-/
-
-Í Í(H
-
-%8bool"__id*
-
-%11bool0
-.
-
-Í Í(H
-
-%7bool"__id*
-
-
-%8bool*
-3*ú
-2
-Î Î(Hà
-Ö
-
-Î Î(@7
-%120System.Runtime.Serialization.DataMemberAttribute"_System.Reflection.CustomAttributeExtensions.GetCustomAttribute<T>(System.Reflection.MemberInfo)*1/"-
-+System.Reflection.CustomAttributeExtensions**(
-&
-memberSystem.Reflection.MemberInfoï
-í
-
-Î Î(H
-%13bool""object.operator !=(object, object)*
-"
-object*;9
-7
-%120System.Runtime.Serialization.DataMemberAttribute*
-""1
-/
-
-Î Î(H
-
-%9bool"__id*
-
-%13bool0
-.
-
-Î Î(H
-
-%7bool"__id*
-
-
-%9bool*
-3*Î
-3
-È Ù(%@
->
-
-È Î(H
-hasMemberAttributebool"__id*
-
-
-%7boolè
-å
-
-Ù Ù(%
-%14bool""object.operator ==(object, object)*
-"
-object*53
-1
-
-jsonIgnore#Newtonsoft.Json.JsonIgnoreAttribute*
-""*
-4
-5*≠
-4
-ı ı(!ñ
-ì
-
-ı ı(!
-%15bool""object.operator ==(object, object)*
-"
-object*<:
-8
-	xmlIgnore+System.Xml.Serialization.XmlIgnoreAttribute*
-""*
-5*
-5
-˙	 ˙(	*
-6
-7*ø
-6
-ˆ ˆ((®
-•
-
-ˆ ˆ((
-%16bool""object.operator ==(object, object)*
-"
-object*NL
-J
-ignoreDataMember6System.Runtime.Serialization.IgnoreDataMemberAttribute*
-""*
-7*
-7
-˙	 ˙(	*
-8
-9*£
-8
-˜ ˜(%å
-â
-
-˜ ˜(%
-%17bool""object.operator ==(object, object)*
-"
-object*20
-.
-nonSerializedSystem.NonSerializedAttribute*
-""*
-9*
-9
-˙	 ˙(	*
-10
-11*…
-10
-¯ ¯(+¨
-©
-
-¯ ¯(+
-%18bool""object.operator ==(object, object)*
-"
-object*RP
-N
-apiExplorerSetting8System.Web.Http.Description.ApiExplorerSettingsAttribute*
-""*
-12
-13*—
-13
-¯/ ¯(L∏
-µ
-
-¯0 ¯(L
-%19bool"FSystem.Web.Http.Description.ApiExplorerSettingsAttribute.IgnoreApi.get*RP
-N
-apiExplorerSetting8System.Web.Http.Description.ApiExplorerSettingsAttribute*
-12*
-12
-˙	 ˙(	*
-11*
-11
-˙	 ˙(	*
-14
-15*
-14
-˘ ˘(**
-16
-17*
-17
-˘. ˘(@*
-16*
-16
-˙	 ˙(	*
-15*-
-15
-˙	 ˙(	"
-
-Ù ˘(B
-	{unknown}*3
-18
-˙	 ˙(	"!
-
-˙ ˙(	
-implicit return:4
-
-·0 ·(A&
-memberSystem.Reflection.MemberInfo:.
-
-·C ·(` 
-hasDataContractAttributeboolBL"J
-HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator

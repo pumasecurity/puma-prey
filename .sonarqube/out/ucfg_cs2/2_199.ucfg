@@ -1,38 +1,0 @@
-
-¼Puma.Prey.Fox.Controllers.AccountController.AccountController(Puma.Prey.Fox.ApplicationUserManager, Microsoft.Owin.Security.ISecureDataFormat<Microsoft.Owin.Security.AuthenticationTicket>)M
-CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.cs! !( "3*v
-1&	 &(	b
-`
-
-%0void"-System.Web.Http.ApiController.ApiController()*#!
-System.Web.Http.ApiController*
-0*€
-0$ %(1â
-ß
-$ $(%*
-%1$Puma.Prey.Fox.ApplicationUserManager";Puma.Prey.Fox.Controllers.AccountController.UserManager.set*1/-
-+Puma.Prey.Fox.Controllers.AccountController*75
-3
-userManager$Puma.Prey.Fox.ApplicationUserManager†
-ƒ
-% %(16
-%20Microsoft.Owin.Security.ISecureDataFormat<TData>"APuma.Prey.Fox.Controllers.AccountController.AccessTokenFormat.set*1/-
-+Puma.Prey.Fox.Controllers.AccountController*IG
-E
-accessTokenFormat0Microsoft.Owin.Security.ISecureDataFormat<TData>*
-2*.
-2&	 &(	"
-& &(	
-implicit return*
-3"F "(Fk
-i
-! !( 
-%3"__entrypoint*IG
-E
-accessTokenFormat0Microsoft.Owin.Security.ISecureDataFormat<TData>*
-1:?
-!! !(C3
-userManager$Puma.Prey.Fox.ApplicationUserManager:Q
-" "(EE
-accessTokenFormat0Microsoft.Owin.Security.ISecureDataFormat<TData>B/-
-+Puma.Prey.Fox.Controllers.AccountController

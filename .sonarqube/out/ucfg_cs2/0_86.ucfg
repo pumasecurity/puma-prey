@@ -1,19 +1,0 @@
-
-CPuma.Prey.Common.Validation.Validator.ValidateNameWhiteList(string)G
-=D:\Sources\dotNetLab\puma-prey\Common\Validation\Validator.cs (2"0*ä
-0 (/RP
- (/$
-%0System.NotImplementedException"System.NotImplementedException|
-z
- (-
-
-%1void"8System.NotImplementedException.NotImplementedException()*(&
-$
-%0System.NotImplementedException*
-1*.
-1	 (	"
- (	
-implicit return:
-3 (?
-inputstringB)"'
-%Puma.Prey.Common.Validation.Validator

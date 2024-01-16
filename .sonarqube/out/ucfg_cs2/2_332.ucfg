@@ -1,47 +1,0 @@
-
-IPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.TryFormatXml(string)i
-]D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.csá á(*"0*
-0
-ì	 ì(	*
-1
-2*å
-1
-ã å(%ç
-ä
-
-ã  ã(4
-%0System.Xml.Linq.XDocument"'System.Xml.Linq.XDocument.Parse(string)*"
-System.Xml.Linq.XDocument*
-
-strstring[
-Y
-
-ã ã(4 
-xmlSystem.Xml.Linq.XDocument"__id*#!
-
-%0System.Xml.Linq.XDocumentpn
-
-å å(%
-%1string" System.Xml.Linq.XNode.ToString()*$"
- 
-xmlSystem.Xml.Linq.XDocument2
-ToString()"
-
-å å(&
-
-%1string*.
-2
-ë ë("
-
-ë ë(
-
-strstring*2
-3
-ì	 ì(	"!
-
-ì ì(	
-implicit return:
-
-á+ á(5
-strstringB8"6
-4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator

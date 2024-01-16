@@ -1,51 +1,0 @@
-
-{Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.HelpPageSampleKey(System.Net.Http.Headers.MediaTypeHeaderValue, System.Type)a
-WD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs# #( "1*
-1,	 ,(	*
-0*ö
-0$ &(˛
-˚
-$ $(
-
-%0void"nPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.HelpPageSampleKey(System.Net.Http.Headers.MediaTypeHeaderValue)*420
-.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*=;
-9
-	mediaType,System.Net.Http.Headers.MediaTypeHeaderValueÅ
-
-& &(
-
-%1bool"1System.Type.operator ==(System.Type, System.Type)*"
-System.Type*
-
-typeSystem.Type*
-""*
-2
-3*Ó
-2( ((6NL
-( ((7"
-%2System.ArgumentNullException"System.ArgumentNullExceptionâ
-Ü
-( ((/
-
-%3void":System.ArgumentNullException.ArgumentNullException(string)*&$
-"
-%2System.ArgumentNullException*
-
-type*
-4*∆
-3+ +( ±
-Æ
-+ +( 
-%4System.Type"@Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.ParameterType.set*420
-.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*
-
-typeSystem.Type*
-4*.
-4,	 ,(	"
-, ,(	
-implicit return:E
-#! #(?9
-	mediaType,System.Net.Http.Headers.MediaTypeHeaderValue:
-#A #(J
-typeSystem.TypeB20
-.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey

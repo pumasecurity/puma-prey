@@ -1,18 +1,0 @@
-
-9Puma.Prey.Raccoon.Startup.Configuration(Owin.IAppBuilder);
-1D:\Sources\dotNetLab\puma-prey\Raccoon\Startup.cs	 	(!"0*ß
-0 (í
-è
- (
-
-%0void"9Puma.Prey.Raccoon.Startup.ConfigureAuth(Owin.IAppBuilder)*
-Puma.Prey.Raccoon.Startup*
-
-appOwin.IAppBuilder*
-1*.
-1	 (	"
- (	
-implicit return:#
-	" 	(1
-appOwin.IAppBuilderB
-Puma.Prey.Raccoon.Startup

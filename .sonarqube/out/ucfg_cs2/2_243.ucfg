@@ -1,37 +1,0 @@
-
-bPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription.EnumTypeModelDescription()i
-_D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs ('"1*¿
-1	 (	ª
-§
-
-%0void"RPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription.ModelDescription()*ECA
-?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription*
-0*°
-0
- 
-(;nl
-
- 
-(;2
-%1,System.Collections.ObjectModel.Collection<T>",System.Collections.ObjectModel.Collection<T>Œ
-‰
-
- 
-(9
-
-%2void"9System.Collections.ObjectModel.Collection<T>.Collection()*64
-2
-%1,System.Collections.ObjectModel.Collection<T>œ
-™
-
- 
-(;2
-%3,System.Collections.ObjectModel.Collection<T>"RPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription.Values.set*MKI
-GPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription*64
-2
-%1,System.Collections.ObjectModel.Collection<T>*
-2*.
-2	 (	"
- (	
-implicit returnBKI
-GPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription

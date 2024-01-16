@@ -1,28 +1,0 @@
-
-“Puma.Prey.Raccoon.Models.ApplicationUser.GenerateUserIdentityAsync(Microsoft.AspNet.Identity.UserManager<Puma.Prey.Raccoon.Models.ApplicationUser>)I
-?D:\Sources\dotNetLab\puma-prey\Raccoon\Models\IdentityModels.cs* (C"0*ù
-0 ("
- 
-G (s
-%0"__id*
-""«¨
-% (t*
-%1$System.Threading.Tasks.Task<TResult>"UMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.CreateIdentityAsync(TUser, string)*;9
-7
-manager,Microsoft.AspNet.Identity.UserManager<TUser>*.,*
-(Puma.Prey.Raccoon.Models.ApplicationUser*
-
-%02"CreateIdentityAsync(TUser, string)S
-Q
- (t5
-userIdentity%System.Security.Claims.ClaimsIdentity"__id*
-"""C
- ( 7
-5
-userIdentity%System.Security.Claims.ClaimsIdentity*.
-1	 (	"
- (	
-implicit return:C
-D (h7
-manager,Microsoft.AspNet.Identity.UserManager<TUser>B,*
-(Puma.Prey.Raccoon.Models.ApplicationUser

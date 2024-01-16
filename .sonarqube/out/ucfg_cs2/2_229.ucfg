@@ -1,182 +1,0 @@
-
-øPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GenerateAnnotations(System.Reflection.MemberInfo, Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription)l
-`D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.csã ã(("0*Õ
-0
-ç& ê(6\Z
-
-ç4 ç(S(
-%0"System.Collections.Generic.List<T>""System.Collections.Generic.List<T>s
-q
-
-ç8 ç(Q
-
-%1void")System.Collections.Generic.List<T>.List()*,*
-(
-%0"System.Collections.Generic.List<T>u
-s
-
-ç& ç(S1
-annotations"System.Collections.Generic.List<T>"__id*,*
-(
-%0"System.Collections.Generic.List<T>Ä
-˝
-
-è0 è(N/
-%2)System.Collections.Generic.IEnumerable<T>"]System.Reflection.CustomAttributeExtensions.GetCustomAttributes(System.Reflection.MemberInfo)*1/"-
-+System.Reflection.CustomAttributeExtensions*,*
-(
-propertySystem.Reflection.MemberInfoÉ
-Ä
-
-è# è(N7
-
-attributes)System.Collections.Generic.IEnumerable<T>"__id*31
-/
-%2)System.Collections.Generic.IEnumerable<T>†
-ù
-
-ê ê((
-%3	__unknown"7System.Collections.Generic.ICollection<T>.this[int].get*;9
-7
-
-attributes)System.Collections.Generic.IEnumerable<T>*
-""A
-?
-
-ê ú(
-	attribute	__unknown"__id*
-
-%3	__unknown*
-1*
-1
-≥	 ≥(	*
-2
-3*Ù
-2
-í% ì(^˜
-Ù
-
-ì ì(+:
-%44System.Collections.Generic.IDictionary<TKey, TValue>"__id*£†*ùJ
-HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator"O
-AnnotationTextGenerator4System.Collections.Generic.IDictionary<TKey, TValue>V
-T
-
-ì8 ì(K
-%5System.Type"object.GetType()*!
-
-	attributeSystem.AttributeàÖ
-
-ì ì(_
-
-%6bool"GSystem.Collections.Generic.ICollection<T>.TryGetValue(TKey, out TValue)*><
-:
-%44System.Collections.Generic.IDictionary<TKey, TValue>*
-
-%5System.Type*,*
-(
-textGeneratorSystem.Func<T, TResult>2TryGetValue(TKey, out TValue)*
-4
-1*•	
-4
-ï ô(Cùö
-
-ñ ö(H
-%7BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation"BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation√
-¿
-
-ñ ñ(/
-
-%8void"XPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation.ParameterAnnotation()*LJ
-H
-%7BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotationÙ
-Ò
-
-ò ò(;
-%9System.Attribute"ZPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation.AnnotationAttribute.set*LJ
-H
-%7BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation*!
-
-	attributeSystem.AttributeÉ
-Ä
-
-ô, ô(D
-%10string"!System.Func<T, TResult>.Invoke(T)*
-System.Func<T, TResult>*!
-
-	attributeSystem.Attribute’
-“
-
-ô ô(D
-%11string"TPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation.Documentation.set*LJ
-H
-%7BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation*
-
-%10string”
-–
-
-ï ö(
-%12void"0System.Collections.Generic.ICollection<T>.Add(T)*53
-1
-annotations"System.Collections.Generic.List<T>*LJ
-H
-%7BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation*
-1* 
-3
-ü Ø(B£
-†
-
-ü ≠(
-%13void"DSystem.Collections.Generic.ICollection<T>.Sort(System.Comparison<T>)*53
-1
-annotations"System.Collections.Generic.List<T>*
-""‘
-—
-
-Ø) Ø(3I
-%14BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation"7System.Collections.Generic.ICollection<T>.this[int].get*53
-1
-annotations"System.Collections.Generic.List<T>*
-""∂
-≥
-
-Ø ≤(P
-
-annotationBPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation"__id*MK
-I
-%14BPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation*
-5*
-5
-≥	 ≥(	*
-6
-7*Ì
-6
-± ±(8Û
-
-
-± ±()3
-%15,System.Collections.ObjectModel.Collection<T>"SPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription.Annotations.get*XV
-T
-propertyModelCPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription‡
-›
-
-± ±(9
-%16void"3System.Collections.ObjectModel.Collection<T>.Add(T)*75
-3
-%15,System.Collections.ObjectModel.Collection<T>*TR
-P
-
-annotationBPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterAnnotation*
-5*2
-7
-≥	 ≥(	"!
-
-≥ ≥(	
-implicit return:6
-
-ã) ã(<(
-propertySystem.Reflection.MemberInfo:b
-
-ã> ã(`T
-propertyModelCPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescriptionBLJ
-HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator

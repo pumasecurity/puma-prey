@@ -1,57 +1,0 @@
-
-@Puma.Prey.Raccoon.Controllers.ManageController.SignInManager.getP
-FD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\ManageController.cs ("0*Ë
-0! !(%»
-¸
-! !(%0
-%3*Puma.Prey.Raccoon.ApplicationSignInManager"__id*tr*p0
-.Puma.Prey.Raccoon.Controllers.ManageController"<
-_signInManager*Puma.Prey.Raccoon.ApplicationSignInManagerz
-x
-! !(%0
-%1*Puma.Prey.Raccoon.ApplicationSignInManager"__id*42
-0
-%3*Puma.Prey.Raccoon.ApplicationSignInManagerz
-x
-! !(%0
-%0*Puma.Prey.Raccoon.ApplicationSignInManager"__id*42
-0
-%1*Puma.Prey.Raccoon.ApplicationSignInManager*
-1
-2*Û
-1!) !(ez
-x
-!) !(4 
-%4System.Web.HttpContextBase")System.Web.Mvc.Controller.HttpContext.get*
-System.Web.Mvc.ControllerÓ
-Ð
-!) !(E!
-%5Microsoft.Owin.IOwinContext"OSystem.Web.HttpContextBaseExtensions.GetOwinContext(System.Web.HttpContextBase)**("&
-$System.Web.HttpContextBaseExtensions*$"
- 
-%4System.Web.HttpContextBaseü
-ù
-!) !(e0
-%6*Puma.Prey.Raccoon.ApplicationSignInManager"XMicrosoft.AspNet.Identity.Owin.OwinContextExtensions.Get<T>(Microsoft.Owin.IOwinContext)*:8"6
-4Microsoft.AspNet.Identity.Owin.OwinContextExtensions*%#
-!
-%5Microsoft.Owin.IOwinContextz
-x
-!) !(e0
-%2*Puma.Prey.Raccoon.ApplicationSignInManager"__id*42
-0
-%6*Puma.Prey.Raccoon.ApplicationSignInManagerz
-x
-!) !(e0
-%0*Puma.Prey.Raccoon.ApplicationSignInManager"__id*42
-0
-%2*Puma.Prey.Raccoon.ApplicationSignInManager*
-2*M
-2" "(">
-! !(f2
-0
-%0*Puma.Prey.Raccoon.ApplicationSignInManager*.
-3" "("
-" "(
-implicit returnB20
-.Puma.Prey.Raccoon.Controllers.ManageController

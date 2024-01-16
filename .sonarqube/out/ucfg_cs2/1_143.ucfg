@@ -1,162 +1,0 @@
-
-BPuma.Prey.Raccoon.Controllers.ManageController.RemovePhoneNumber()R
-FD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\ManageController.cs…( …(9"6*«	
-0
-À Ã(!µ
-≤
-
-À À(*.
-%0(Puma.Prey.Raccoon.ApplicationUserManager">Puma.Prey.Raccoon.Controllers.ManageController.UserManager.get*420
-.Puma.Prey.Raccoon.Controllers.ManageController
-}
-
-À? À(C*
-%1$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
-System.Web.Mvc.Controller´®
-
-À? À(L)
-%2#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
-*
-%1$System.Security.Principal.IPrincipal2Identity.get›
-⁄
-
-À? À(X
-%3string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
-,Microsoft.AspNet.Identity.IdentityExtensions*-+
-)
-%2#System.Security.Principal.IIdentityÑÅ
-
-À À(_*
-%4$System.Threading.Tasks.Task<TResult>"TMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.SetPhoneNumberAsync(TKey, string)*20
-.
-%0(Puma.Prey.Raccoon.ApplicationUserManager*
-
-%3string*
-""2!SetPhoneNumberAsync(TKey, string)R
-P
-
-À À(_2
-result(Microsoft.AspNet.Identity.IdentityResult"__id*
-""ã
-à
-
-Ã Ã(!
-
-%5bool"6Microsoft.AspNet.Identity.IdentityResult.Succeeded.get*64
-2
-result(Microsoft.AspNet.Identity.IdentityResult*
-1
-2*£
-1
-Œ Œ(V$
-"
-
-ŒA Œ(V
-%6"__id*
-""Ø
-¨
-
-Œ Œ(Y*
-%7$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, object)*
-System.Web.Mvc.Controller*	
-Index*
-""":
-
-Œ Œ(Z,
-*
-%7$System.Web.Mvc.RedirectToRouteResult*ß	
-2
-– —(µ
-≤
-
-– –((.
-%8(Puma.Prey.Raccoon.ApplicationUserManager">Puma.Prey.Raccoon.Controllers.ManageController.UserManager.get*420
-.Puma.Prey.Raccoon.Controllers.ManageController
-}
-
-–7 –(;*
-%9$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
-System.Web.Mvc.Controller¨©
-
-–7 –(D*
-%10#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
-*
-%9$System.Security.Principal.IPrincipal2Identity.getﬂ
-‹
-
-–7 –(P
-%11string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
-,Microsoft.AspNet.Identity.IdentityExtensions*.,
-*
-%10#System.Security.Principal.IIdentity‡›
-
-– –(Q+
-%12$System.Threading.Tasks.Task<TResult>"FMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.FindByIdAsync(TKey)*20
-.
-%8(Puma.Prey.Raccoon.ApplicationUserManager*
-
-%11string2FindByIdAsync(TKey)P
-N
-
-– –(Q0
-user(Puma.Prey.Raccoon.Models.ApplicationUser"__id*
-""é
-ã
-
-— —(
-%13bool""object.operator !=(object, object)*
-"
-object*42
-0
-user(Puma.Prey.Raccoon.Models.ApplicationUser*
-""*
-3
-4*Ç
-3
-” ”(a∫
-∑
-
-” ”(#1
-%14*Puma.Prey.Raccoon.ApplicationSignInManager"@Puma.Prey.Raccoon.Controllers.ManageController.SignInManager.get*420
-.Puma.Prey.Raccoon.Controllers.ManageControllerÆ´
-
-” ”(b"
-%15System.Threading.Tasks.Task"XMicrosoft.AspNet.Identity.Owin.SignInManager<TUser, TKey>.SignInAsync(TUser, bool, bool)*53
-1
-%14*Puma.Prey.Raccoon.ApplicationSignInManager*42
-0
-user(Puma.Prey.Raccoon.Models.ApplicationUser*
-""*
-""2SignInAsync(TUser, bool, bool)*
-4*¶
-4
-’ ’(_%
-#
-
-’= ’(_
-%16"__id*
-""∞
-≠
-
-’ ’(b+
-%17$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, object)*
-System.Web.Mvc.Controller*	
-Index*
-""";
-
-’ ’(c-
-+
-%17$System.Web.Mvc.RedirectToRouteResult*2
-5
-÷	 ÷(	"!
-
-÷ ÷(	
-implicit return*9
-6
-…; …(;#
-!
-
-…( …(9
-%18"__entrypoint*
-0B20
-.Puma.Prey.Raccoon.Controllers.ManageController

@@ -1,26 +1,0 @@
-
-DPuma.Prey.Common.Validation.NameAttribute.FormatErrorMessage(string)V
-LD:\Sources\dotNetLab\puma-prey\Common\Validation\Attributes\NameAttribute.cs   (1"0*´
-0" "(5"
- 
-"! "(/
-%0"__id*
-""e
-c
-" "(6
-%1string"string.Format(string, object)*
-"
-string*
-
-%0*
-
-namestring"
-" "(7
-
-%1string*.
-1#	 #(	"
-# #(	
-implicit return:
- 2  (=
-namestringB-+
-)Puma.Prey.Common.Validation.NameAttribute

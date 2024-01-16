@@ -1,85 +1,0 @@
-
-uPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetMethodNode(System.Web.Http.Controllers.HttpActionDescriptor)W
-MD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\XmlDocumentationProvider.cs[ [(,"0*‹
-0]* ^(1•
-’
-]F ](w6
-%00System.Web.Http.Controllers.HttpActionDescriptor"__id*HF
-D
-actionDescriptor0System.Web.Http.Controllers.HttpActionDescriptor§
-¤
-]* ](wV
-reflectedActionDescriptor9System.Web.Http.Controllers.ReflectedHttpActionDescriptor"__id*:8
-6
-%00System.Web.Http.Controllers.HttpActionDescriptor±
-®
-^ ^(1
-
-%1bool""object.operator !=(object, object)*
-"
-object*ZX
-V
-reflectedActionDescriptor9System.Web.Http.Controllers.ReflectedHttpActionDescriptor*
-""*
-1
-2*·
-
-1` a(K”
-‘
-`8 `(T&
-%2 System.Globalization.CultureInfo"5System.Globalization.CultureInfo.InvariantCulture.get*&$""
- System.Globalization.CultureInfo"
- 
-`V `(f
-%3"__id*
-""Ø
-Õ
-	`v `(š"
-%4System.Reflection.MethodInfo"HSystem.Web.Http.Controllers.ReflectedHttpActionDescriptor.MethodInfo.get*ZX
-V
-reflectedActionDescriptor9System.Web.Http.Controllers.ReflectedHttpActionDescriptorä
-á
-	`h `(›
-%5string"aPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetMemberName(System.Reflection.MethodInfo)*;9"7
-5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider*&$
-"
-%4System.Reflection.MethodInfo©
-¦
-	`* `(œ
-%6string"5string.Format(System.IFormatProvider, string, object)*
-"
-string**(
-&
-%2 System.Globalization.CultureInfo*
-
-%3*
-
-%5stringA
-?
-	` `(œ
-selectExpressionstring"__id*
-
-%6string°
-­
-a a()%
-%7System.Xml.XPath.XPathNavigator"__id*tr*p7
-5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider"5
-_documentNavigatorSystem.Xml.XPath.XPathNavigatorÓÐ
-a a(L%
-%8System.Xml.XPath.XPathNavigator"8System.Xml.XPath.XPathNavigator.SelectSingleNode(string)*)'
-%
-%7System.Xml.XPath.XPathNavigator*
-
-selectExpressionstring2SelectSingleNode(string)"3
-a a(M'
-%
-%8System.Xml.XPath.XPathNavigator*!
-2d d("
-d d(
-""*.
-3e	 e(	"
-e e(	
-implicit return:P
-[- [(RD
-actionDescriptor0System.Web.Http.Controllers.HttpActionDescriptorB97
-5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider

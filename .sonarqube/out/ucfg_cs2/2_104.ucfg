@@ -1,49 +1,0 @@
-
-³Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.SetSampleForType(System.Web.Http.HttpConfiguration, object, System.Net.Http.Headers.MediaTypeHeaderValue, System.Type)^
-TD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageConfigurationExtensions.css s(+"0*¾	
-0u u(pº
-·
-u u(/:
-%04Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator"zPuma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.GetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration)*B@">
-<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions*/-
-+
-config!System.Web.Http.HttpConfigurationÑ
-Î
-u u(=:
-%14System.Collections.Generic.IDictionary<TKey, TValue>"FPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.ActionSamples.get*><
-:
-%04Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGeneratorrp
-uB u(h4
-%2.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey".Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey¨
-¥
-uF u(W
-
-%3void"{Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey.HelpPageSampleKey(System.Net.Http.Headers.MediaTypeHeaderValue, System.Type)*86
-4
-%2.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*=;
-9
-	mediaType,System.Net.Http.Headers.MediaTypeHeaderValue*
-
-typeSystem.Typeùö
-u u(q
-
-%4void";System.Collections.Generic.ICollection<T>.Add(TKey, TValue)*><
-:
-%14System.Collections.Generic.IDictionary<TKey, TValue>*86
-4
-%2.Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleKey*
-
-sampleobject2Add(TKey, TValue)*
-1*.
-1v	 v(	"
-v v(	
-implicit return:7
-s, s(I+
-config!System.Web.Http.HttpConfiguration:
-sK s(X
-sampleobject:E
-sZ s(x9
-	mediaType,System.Net.Http.Headers.MediaTypeHeaderValue: 
-	sz s(ƒ
-typeSystem.TypeB@">
-<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions

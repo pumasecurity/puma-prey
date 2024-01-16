@@ -1,72 +1,0 @@
-
-wPuma.Prey.Fox.Providers.ApplicationOAuthProvider.TokenEndpoint(Microsoft.Owin.Security.OAuth.OAuthTokenEndpointContext)R
-HD:\Sources\dotNetLab\puma-prey\Fox\Providers\ApplicationOAuthProvider.cs3 3($"0*é
-055 5(R’
-“
-55 5(G6
-%00Microsoft.Owin.Security.AuthenticationProperties"FMicrosoft.Owin.Security.OAuth.OAuthTokenEndpointContext.Properties.get*FD
-B
-context7Microsoft.Owin.Security.OAuth.OAuthTokenEndpointContext∆
-√
-55 5(R:
-%14System.Collections.Generic.IDictionary<TKey, TValue>"?Microsoft.Owin.Security.AuthenticationProperties.Dictionary.get*:8
-6
-%00Microsoft.Owin.Security.AuthenticationPropertiesû
-õ
-5) 5(1
-%2string"7System.Collections.Generic.ICollection<T>.this[int].get*><
-:
-%14System.Collections.Generic.IDictionary<TKey, TValue>*
-""8
-6
-5 8(
-propertystring"__id*
-
-%2string*
-1*
-1; ;(*
-2
-3*ö
-27 7(IÎ
-Ë
-7 7((:
-%34System.Collections.Generic.IDictionary<TKey, TValue>"XMicrosoft.Owin.Security.OAuth.OAuthTokenEndpointContext.AdditionalResponseParameters.get*FD
-B
-context7Microsoft.Owin.Security.OAuth.OAuthTokenEndpointContext°
-û
-7- 7(9
-%4string"=System.Collections.Generic.KeyValuePair<TKey, TValue>.Key.get*EC
-A
-property5System.Collections.Generic.KeyValuePair<TKey, TValue>£
-†
-7; 7(I
-%5string"?System.Collections.Generic.KeyValuePair<TKey, TValue>.Value.get*EC
-A
-property5System.Collections.Generic.KeyValuePair<TKey, TValue>Õ 
-7 7(J
-
-%6void";System.Collections.Generic.ICollection<T>.Add(TKey, TValue)*><
-:
-%34System.Collections.Generic.IDictionary<TKey, TValue>*
-
-%4string*
-
-%5string2Add(TKey, TValue)*
-1*Í
-3:
- :(&†
-ù
-:
- :('*
-%7$System.Threading.Tasks.Task<TResult>"8System.Threading.Tasks.Task.FromResult<TResult>(TResult)*!"
-System.Threading.Tasks.Task*
-"""8
-: :((,
-*
-%7$System.Threading.Tasks.Task<TResult>*.
-4; ;("
-; ;(
-implicit return:N
-3% 3(FB
-context7Microsoft.Owin.Security.OAuth.OAuthTokenEndpointContextB42
-0Puma.Prey.Fox.Providers.ApplicationOAuthProvider

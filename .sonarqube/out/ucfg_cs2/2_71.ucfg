@@ -1,48 +1,0 @@
-
-QPuma.Prey.Fox.Providers.ApplicationOAuthProvider.ApplicationOAuthProvider(string)R
-HD:\Sources\dotNetLab\puma-prey\Fox\Providers\ApplicationOAuthProvider.cs	 (!"1*Õ
-1 (∏
-µ
-
-%0void"aMicrosoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider.OAuthAuthorizationServerProvider()*DB@
->Microsoft.Owin.Security.OAuth.OAuthAuthorizationServerProvider*
-0*â
-0 (r
-p
- (
-
-%1bool""string.operator !=(string, string)*
-"
-string*
-
-publicClientIdstring*
-""*
-2
-3*ñ
-2 ($Å
-
- ($O2
-0Puma.Prey.Fox.Providers.ApplicationOAuthProvider"
-_publicClientIdstring"__id*
-
-publicClientIdstring*
-4*¯
-3
- (4NL
-
- (5"
-%2System.ArgumentNullException"System.ArgumentNullExceptionì
-ê
- (#
-
-%3void":System.ArgumentNullException.ArgumentNullException(string)*&$
-"
-%2System.ArgumentNullException*
-publicClientId*
-4*.
-4 ("
- (
-implicit return:$
-" (7
-publicClientIdstringB42
-0Puma.Prey.Fox.Providers.ApplicationOAuthProvider

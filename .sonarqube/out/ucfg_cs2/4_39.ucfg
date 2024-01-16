@@ -1,28 +1,0 @@
-
-)Puma.Prey.Common.Report.GetReport(string)@
-6D:\Sources\dotNetLab\puma-prey\Common\Report\Report.cs( ((&"0*Í
-0* *(9\
-Z
-** *(;
-%0string"__concat*
-*, *(3	
-report/*
-*3 *(:
-
-lanIdstring²
-¯
-* *(<
-%1Puma.Prey.Common.Report"@Puma.Prey.Common.Rest.RestClient.Get<T>(string, params object[])*&$""
- Puma.Prey.Common.Rest.RestClient*
-
-%0string*
-"""+
-* *(=
-
-%1Puma.Prey.Common.Report*.
-1+	 +(	"
-+ +(	
-implicit return:
-(' ((3
-lanIdstringB"
-Puma.Prey.Common.Report

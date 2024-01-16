@@ -1,64 +1,0 @@
-
-°Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.IsFormatSupported(Puma.Prey.Fox.Areas.HelpPage.SampleDirection, System.Net.Http.Formatting.MediaTypeFormatter, System.Type)i
-]D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs• •(-"0*
-0
-— —(#*
-1*
-1
-— —(#*
-2
-3*„
-2
-š š(5ÖÓ
-
-š š(6
-
-%0bool"FSystem.Net.Http.Formatting.MediaTypeFormatter.CanReadType(System.Type)*><
-:
-	formatter-System.Net.Http.Formatting.MediaTypeFormatter*
-
-typeSystem.Type2CanReadType(System.Type)"
-
-š š(7
-
-
-%0bool*
-3
-— —(#*
-4
-5*†
-4
-œ œ(6ØÕ
-
-œ œ(7
-
-%1bool"GSystem.Net.Http.Formatting.MediaTypeFormatter.CanWriteType(System.Type)*><
-:
-	formatter-System.Net.Http.Formatting.MediaTypeFormatter*
-
-typeSystem.Type2CanWriteType(System.Type)"
-
-œ œ(8
-
-
-%1bool*%
-5
-ž ž("
-
-ž ž(
-""*2
-6
-Ÿ	 Ÿ(	"!
-
-Ÿ Ÿ(	
-implicit return:M
-
-•. •(M?
-sampleDirection,Puma.Prey.Fox.Areas.HelpPage.SampleDirection:H
-
-•O •(k:
-	formatter-System.Net.Http.Formatting.MediaTypeFormatter:!
-
-•m •(v
-typeSystem.TypeB8"6
-4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator

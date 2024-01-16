@@ -1,45 +1,0 @@
-
-9Puma.Prey.Raccoon.Controllers.HuntController.Contest(int)N
-DD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\HuntController.cs, ,(#"2*á
-0. /(a
-_
-.; .(X
-%0string"string.Format(string, object)*
-"
-string*
-
-hunt/{0}*
-""·
-´
-. .(Y"
-%1Puma.Prey.Rabbit.Models.Hunt"@Puma.Prey.Common.Rest.RestClient.Get<T>(string, params object[])*&$""
- Puma.Prey.Common.Rest.RestClient*
-
-%0string*
-""a
-_
-. .(Y%
-modelPuma.Prey.Rabbit.Models.Hunt"__id*&$
-"
-%1Puma.Prey.Rabbit.Models.Hunt¢
-Ÿ
-/ /(
-%2System.Web.Mvc.ViewResult"&System.Web.Mvc.Controller.View(object)*
-System.Web.Mvc.Controller*)'
-%
-modelPuma.Prey.Rabbit.Models.Hunt"-
-/ /(!
-
-%2System.Web.Mvc.ViewResult*.
-10	 0(	"
-0 0(	
-implicit return*>
-2,+ ,(+*
-(
-, ,(#
-%3"__entrypoint*
-""*
-0:
-,$ ,(*	
-idintB0.
-,Puma.Prey.Raccoon.Controllers.HuntController

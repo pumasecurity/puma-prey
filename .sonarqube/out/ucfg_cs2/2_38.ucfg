@@ -1,35 +1,0 @@
-
-WPuma.Prey.Fox.FilterConfig.RegisterGlobalFilters(System.Web.Mvc.GlobalFilterCollection)F
-<D:\Sources\dotNetLab\puma-prey\Fox\App_Start\FilterConfig.cs (0"0*«
-0
- 
-(2\Z
-
- 
-(2)
-%0#System.Web.Mvc.HandleErrorAttribute"#System.Web.Mvc.HandleErrorAttribute„
-
-
- 
-(0
-
-%1void":System.Web.Mvc.HandleErrorAttribute.HandleErrorAttribute()*-+
-)
-%0#System.Web.Mvc.HandleErrorAttribute±
-®
-
- 
-(3
-
-%2void"1System.Web.Mvc.GlobalFilterCollection.Add(object)*42
-0
-filters%System.Web.Mvc.GlobalFilterCollection*-+
-)
-%0#System.Web.Mvc.HandleErrorAttribute*
-1*.
-1	 (	"
- (	
-implicit return:<
-1 (O0
-filters%System.Web.Mvc.GlobalFilterCollectionB"
-Puma.Prey.Fox.FilterConfig

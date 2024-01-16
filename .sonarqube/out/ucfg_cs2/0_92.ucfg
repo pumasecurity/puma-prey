@@ -1,216 +1,0 @@
-
-APuma.Prey.Common.Cryptography.KeyManagement.KeyServer.GetKey(int)W
-MD:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyServer.cs (#"0*ë
-0 (&B
-@
- ()$
-requestSystem.Net.HttpWebRequest"__id*
-""D
-B
- (+&
-responseSystem.Net.HttpWebResponse"__id*
-""3
-1
- (
-sSystem.IO.Stream"__id*
-"">
-<
- (& 
-readerSystem.IO.StreamReader"__id*
-""*
-1*
-11	 1(	*
-2
-3*æ
-2 (~
-|
-0 (j
-%0string"string.Format(string, object)*
-"
-string*+)'
-%http://keys.pumaprey.org/retrieve/{0}*
-""~
-|
- (k
-%1System.Net.WebRequest"$System.Net.WebRequest.Create(string)*"
-System.Net.WebRequest*
-
-%0stringP
-N
- (}
-%2System.Net.WebRequest"__id*
-
-%1System.Net.WebRequestY
-W
- (}$
-requestSystem.Net.HttpWebRequest"__id*
-
-%2System.Net.WebRequestc
-a
-W (d
-%3System.Text.Encoding"System.Text.Encoding.UTF8.get*"
-System.Text.Encodingäá
-W (
-%4byte[]"%System.Text.Encoding.GetBytes(string)*
-
-%3System.Text.Encoding*
-bobby:tables052GetBytes(string)j
-h
-	@ (Ä
-%5string"%System.Convert.ToBase64String(byte[])*"
-System.Convert*
-
-%4byte[]k
-i
-	% (Å
-%6string"string.Format(string, object)*
-"
-string*
-	Basic {0}*
-
-%5string<
-:
-	 (Å
-basicHeaderstring"__id*
-
-%6stringëé
- ($
-%7System.Net.WebHeaderCollection"%System.Net.HttpWebRequest.Headers.get*(&
-$
-requestSystem.Net.HttpWebRequest2Headers.get«ƒ
- (A
-
-%8void"=System.Collections.Generic.ICollection<T>.Add(string, string)*(&
-$
-%7System.Net.WebHeaderCollection*
-Authorization*
-
-basicHeaderstring2Add(string, string)çä
- (0
-%9System.Net.WebResponse"'System.Net.HttpWebRequest.GetResponse()*(&
-$
-requestSystem.Net.HttpWebRequest2GetResponse()S
-Q
- (C
-%10System.Net.WebResponse"__id* 
-
-%9System.Net.WebResponse]
-[
- (C&
-responseSystem.Net.HttpWebResponse"__id*!
-
-%10System.Net.WebResponseóî
- (0
-%11System.IO.Stream".System.Net.HttpWebResponse.GetResponseStream()**(
-&
-responseSystem.Net.HttpWebResponse2GetResponseStream()F
-D
- (0
-sSystem.IO.Stream"__id*
-
-%11System.IO.StreamCA
- (,
-%12System.IO.StreamReader"System.IO.StreamReaderè
-å
- ()
-%13void"5System.IO.StreamReader.StreamReader(System.IO.Stream)*!
-
-%12System.IO.StreamReader*
-
-sSystem.IO.StreamW
-U
- (, 
-readerSystem.IO.StreamReader"__id*!
-
-%12System.IO.StreamReaderrp
- (/
-%14string""System.IO.StreamReader.ReadToEnd()*$"
- 
-readerSystem.IO.StreamReader2ReadToEnd()4
-2
- (/
-keystring"__id*
-
-%14string"
- (
-
-keystring*
-3! !(*
-4*ñ
-4% %(#
-}
-% %(#
-%15bool""object.operator !=(object, object)*
-"
-object*(&
-$
-requestSystem.Net.HttpWebRequest*
-""*
-5
-6*V
-5& &("B
-@
-& &("$
-requestSystem.Net.HttpWebRequest"__id*
-""*
-6*ô
-6( (($Å
-
-( (($
-%16bool""object.operator !=(object, object)*
-"
-object**(
-&
-responseSystem.Net.HttpWebResponse*
-""*
-7
-8*Ü
-7) )($rp
-) )($
-%17void""System.Net.HttpWebResponse.Close()**(
-&
-responseSystem.Net.HttpWebResponse2Close()*
-8*à
-8+ +(p
-n
-+ +(
-%18bool""object.operator !=(object, object)*
-"
-object*
-
-sSystem.IO.Stream*
-""*
-9
-10*l
-9, ,(WU
-, ,(
-%19void"System.IO.Stream.Close()*
-
-sSystem.IO.Stream2Close()*
-10*ï
-10. .("{
-y
-. .("
-%20bool""object.operator !=(object, object)*
-"
-object*$"
- 
-readerSystem.IO.StreamReader*
-""*
-11
-12*~
-11/ /("hf
-/ /("
-%21void"System.IO.StreamReader.Close()*$"
- 
-readerSystem.IO.StreamReader2Close()*
-12*
-121	 1(	*
-13
-13*/
-131	 1(	"
-1 1(	
-implicit return:
-$ (*	
-idintB9"7
-5Puma.Prey.Common.Cryptography.KeyManagement.KeyServer

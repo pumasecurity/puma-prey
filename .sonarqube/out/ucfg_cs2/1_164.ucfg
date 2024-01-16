@@ -1,36 +1,0 @@
-
-—Puma.Prey.Raccoon.Controllers.AccountController.AccountController(Puma.Prey.Raccoon.ApplicationUserManager, Puma.Prey.Raccoon.ApplicationSignInManager)Q
-GD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\AccountController.cs ( "3*k
-1	 (	W
-U
-
-%0void"&System.Web.Mvc.Controller.Controller()*
-System.Web.Mvc.Controller*
-0*„
-0 ()ò
-ï
- (%.
-%1(Puma.Prey.Raccoon.ApplicationUserManager"?Puma.Prey.Raccoon.Controllers.AccountController.UserManager.set*531
-/Puma.Prey.Raccoon.Controllers.AccountController*;9
-7
-userManager(Puma.Prey.Raccoon.ApplicationUserManagerú
-÷
- ()0
-%2*Puma.Prey.Raccoon.ApplicationSignInManager"APuma.Prey.Raccoon.Controllers.AccountController.SignInManager.set*531
-/Puma.Prey.Raccoon.Controllers.AccountController*?=
-;
-signInManager*Puma.Prey.Raccoon.ApplicationSignInManager*
-2*.
-2	 (	"
- (	
-implicit return*4
-3m (m 
-
- ( 
-%3"__entrypoint*
-1:C
-! (C7
-userManager(Puma.Prey.Raccoon.ApplicationUserManager:G
-E (k;
-signInManager*Puma.Prey.Raccoon.ApplicationSignInManagerB31
-/Puma.Prey.Raccoon.Controllers.AccountController

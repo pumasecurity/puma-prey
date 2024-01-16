@@ -23,3 +23,6 @@ ASP.NET 4.6 Web API services project for testing the Puma Scan rules engine.
 
 ### Rabbit
 Database tier with ADO, LINQ, and EF context classes for querying data using the main .NET data access frameworks.
+
+Testing with SonarCloud
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=MinChanSike_puma-prey)](https://sonarcloud.io/summary/new_code?id=MinChanSike_puma-prey)

@@ -1,106 +1,0 @@
-
-hPuma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.DecryptKeyForRestore(string, byte[], byte[])_
-SD:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyReaderWriter.cs§ §(+"0*ﬂ
-0
-¶ ´(pn
-
-¶. ¶(C2
-%0,System.Security.Cryptography.RijndaelManaged",System.Security.Cryptography.RijndaelManagedì
-ê
-
-¶2 ¶(A
-
-%1void">System.Security.Cryptography.RijndaelManaged.RijndaelManaged()*64
-2
-%0,System.Security.Cryptography.RijndaelManagedé
-ã
-
-¶ ¶(C?
-rijndaelManaged,System.Security.Cryptography.RijndaelManaged"__id*64
-2
-%0,System.Security.Cryptography.RijndaelManagedÊ
-„
-
-ß ß(V
-%2byte[]"êPuma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.GenerateArchivalKey(System.Security.Cryptography.SymmetricAlgorithm, string, byte[])*A?=
-;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter*CA
-?
-rijndaelManaged,System.Security.Cryptography.RijndaelManaged*
-
-
-passphrasestring*
-
-saltbyte[]7
-5
-
-ß ß(V
-arraybyte[]"__id*
-
-%2byte[]≠™
-
-®$ ®(=	
-%3int"=System.Security.Cryptography.SymmetricAlgorithm.BlockSize.get*CA
-?
-rijndaelManaged,System.Security.Cryptography.RijndaelManaged2BlockSize.get$"
-
-® ®(B
-%4byte[]"byte[]7
-5
-
-® ®(B
-rgbIVbyte[]"__id*
-
-%4byte[]Å
-˛
-
-©. ©([3
-%5-System.Security.Cryptography.ICryptoTransform"LSystem.Security.Cryptography.RijndaelManaged.CreateDecryptor(byte[], byte[])*CA
-?
-rijndaelManaged,System.Security.Cryptography.RijndaelManaged*
-
-arraybyte[]*
-
-rgbIVbyte[]á
-Ñ
-
-© ©(j
-%6byte[]"fPuma.Prey.Common.Cryptography.Utility.Transform(System.Security.Cryptography.ICryptoTransform, byte[])*+)"'
-%Puma.Prey.Common.Cryptography.Utility*75
-3
-%5-System.Security.Cryptography.ICryptoTransform*
-
-encryptedKeybyte[]8
-6
-
-© ©(j
-resultbyte[]"__id*
-
-%6byte[]ô
-ñ
-
-™ ™('
-
-%7void":Puma.Prey.Common.Cryptography.Utility.ZeroOutBytes(byte[])*+)"'
-%Puma.Prey.Common.Cryptography.Utility*
-
-arraybyte[]" 
-
-´ ´(
-
-resultbyte[]*2
-1
-¨	 ¨(	"!
-
-¨ ¨(	
-implicit return:"
-
-§, §(=
-
-passphrasestring:$
-
-§? §(R
-encryptedKeybyte[]:
-
-§T §(_
-saltbyte[]B?=
-;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter

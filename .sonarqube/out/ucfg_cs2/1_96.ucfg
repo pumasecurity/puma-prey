@@ -1,33 +1,0 @@
-
-PPuma.Prey.Raccoon.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)I
-?D:\Sources\dotNetLab\puma-prey\Raccoon\App_Start\RouteConfig.cs ()"0*×
-0 (aÿ
-ü
- (<
-
-%0void"`System.Web.Mvc.RouteCollectionExtensions.IgnoreRoute(System.Web.Routing.RouteCollection, string)*.,"*
-(System.Web.Mvc.RouteCollectionExtensions*0.
-,
-routes"System.Web.Routing.RouteCollection* 
-{resource}.axd/{*pathInfo}„
-
-L (a!
-%1System.Web.Mvc.UrlParameter"__id*LJ*H
-System.Web.Mvc.UrlParameter"'
-OptionalSystem.Web.Mvc.UrlParameter¹
-¶
- (
-%2System.Web.Routing.Route"mSystem.Web.Mvc.RouteCollectionExtensions.MapRoute(System.Web.Routing.RouteCollection, string, string, object)*.,"*
-(System.Web.Mvc.RouteCollectionExtensions*0.
-,
-routes"System.Web.Routing.RouteCollection*	
-Default* 
-{controller}/{action}/{id}*
-""*
-1*.
-1	 (	"
- (	
-implicit return:8
-* (@,
-routes"System.Web.Routing.RouteCollectionB!"
-Puma.Prey.Raccoon.RouteConfig

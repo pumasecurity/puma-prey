@@ -1,55 +1,0 @@
-
-9Puma.Prey.Fox.Areas.HelpPage.InvalidSample.Equals(object)]
-SD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\InvalidSample.cs (#"0*¶
-0 ( 3
-1
-" (6
-%0object"__id*
-
-objobjectY
-W
- (63
-other*Puma.Prey.Fox.Areas.HelpPage.InvalidSample"__id*
-
-%0objectŽ
-‹
- ( 
-
-%1bool""object.operator !=(object, object)*
-"
-object*75
-3
-other*Puma.Prey.Fox.Areas.HelpPage.InvalidSample*
-""*
-1
-2*£
-1$ (FŠ
-‡
-$ (0
-%2string";Puma.Prey.Fox.Areas.HelpPage.InvalidSample.ErrorMessage.get*0.,
-*Puma.Prey.Fox.Areas.HelpPage.InvalidSample‘
-Ž
-4 (F
-%3string";Puma.Prey.Fox.Areas.HelpPage.InvalidSample.ErrorMessage.get*75
-3
-other*Puma.Prey.Fox.Areas.HelpPage.InvalidSamplen
-l
-$ (F
-
-%4bool""string.operator ==(string, string)*
-"
-string*
-
-%2string*
-
-%3string*
-2*(
-2	 (	"
- (G
-	{unknown}*.
-3	 (	"
- (	
-implicit return:
-$ (.
-objobjectB.,
-*Puma.Prey.Fox.Areas.HelpPage.InvalidSample

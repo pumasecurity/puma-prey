@@ -1,67 +1,0 @@
-
-jPuma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider.GetTagValue(System.Xml.XPath.XPathNavigator, string)W
-MD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\XmlDocumentationProvider.cst t()"0*†
-0v v("à
-Ö
-v v("
-
-%0bool""object.operator !=(object, object)*
-"
-object*1/
--
-
-parentNodeSystem.Xml.XPath.XPathNavigator*
-""*
-1
-2*÷
-1x y( “œ
-x& x(J%
-%1System.Xml.XPath.XPathNavigator"8System.Xml.XPath.XPathNavigator.SelectSingleNode(string)*1/
--
-
-parentNodeSystem.Xml.XPath.XPathNavigator*
-
-tagNamestring2SelectSingleNode(string)f
-d
-x x(J'
-nodeSystem.Xml.XPath.XPathNavigator"__id*)'
-%
-%1System.Xml.XPath.XPathNavigatorÅ
-
-y y( 
-
-%2bool""object.operator !=(object, object)*
-"
-object*+)
-'
-nodeSystem.Xml.XPath.XPathNavigator*
-""*
-3
-2*‡
-3{ {(,xv
-{ {(%
-%3string"$System.Xml.XPath.XPathItem.Value.get*+)
-'
-nodeSystem.Xml.XPath.XPathNavigator2	Value.get;
-9
-{ {(,
-%4string"string.Trim()*
-
-%3string"
-{ {(-
-
-%4string*!
-2 ("
- (
-""*2
-4
-Ä	 Ä(	"!
-
-Ä Ä(	
-implicit return:9
-t* t(C-
-
-parentNodeSystem.Xml.XPath.XPathNavigator:
-tE t(S
-tagNamestringB9"7
-5Puma.Prey.Fox.Areas.HelpPage.XmlDocumentationProvider

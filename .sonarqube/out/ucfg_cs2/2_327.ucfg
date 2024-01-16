@@ -1,188 +1,0 @@
-
-_Puma.Prey.Fox.Controllers.AccountController.Register(Puma.Prey.Fox.Models.RegisterBindingModel)O
-CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.csƒ- ƒ(5"6*«
-0
-∆ ∆(#õ
-ò
-
-∆ ∆(7
-%01System.Web.Http.ModelBinding.ModelStateDictionary",System.Web.Http.ApiController.ModelState.get*#!
-System.Web.Http.ApiControllerè
-å
-
-∆ ∆(#
-
-%1bool"5System.Collections.Generic.ICollection<T>.IsValid.get*;9
-7
-%01System.Web.Http.ModelBinding.ModelStateDictionary*
-1
-2*ª
-1
-» »(,õ
-ò
-
-»" »(,7
-%21System.Web.Http.ModelBinding.ModelStateDictionary",System.Web.Http.ApiController.ModelState.get*#!
-System.Web.Http.ApiControllerƒ¡
-
-» »(-5
-%3/System.Web.Http.Results.InvalidModelStateResult"[System.Web.Http.ApiController.BadRequest(System.Web.Http.ModelBinding.ModelStateDictionary)*#!
-System.Web.Http.ApiController*;9
-7
-%21System.Web.Http.ModelBinding.ModelStateDictionary2=BadRequest(System.Web.Http.ModelBinding.ModelStateDictionary)"E
-
-» »(.7
-5
-%3/System.Web.Http.Results.InvalidModelStateResult*Ó
-2
-À œ(!`^
-
-À À(\*
-%4$Puma.Prey.Fox.Models.ApplicationUser"$Puma.Prey.Fox.Models.ApplicationUserÉ
-Ä
-
-À À(*
-
-%5void"6Puma.Prey.Fox.Models.ApplicationUser.ApplicationUser()*.,
-*
-%4$Puma.Prey.Fox.Models.ApplicationUserä
-á
-
-À: À(E
-%6string"3Puma.Prey.Fox.Models.RegisterBindingModel.Email.get*64
-2
-model)Puma.Prey.Fox.Models.RegisterBindingModelœÃ
-
-À/ À(E
-%7string"`Microsoft.AspNet.Identity.EntityFramework.IdentityUser<TKey, TLogin, TRole, TClaim>.UserName.set*.,
-*
-%4$Puma.Prey.Fox.Models.ApplicationUser*
-
-%6string2UserName.setä
-á
-
-ÀO À(Z
-%8string"3Puma.Prey.Fox.Models.RegisterBindingModel.Email.get*64
-2
-model)Puma.Prey.Fox.Models.RegisterBindingModel…∆
-
-ÀG À(Z
-%9string"]Microsoft.AspNet.Identity.EntityFramework.IdentityUser<TKey, TLogin, TRole, TClaim>.Email.set*.,
-*
-%4$Puma.Prey.Fox.Models.ApplicationUser*
-
-%8string2	Email.setr
-p
-
-À À(\,
-user$Puma.Prey.Fox.Models.ApplicationUser"__id*.,
-*
-%4$Puma.Prey.Fox.Models.ApplicationUser¨
-©
-
-Õ* Õ(5+
-%10$Puma.Prey.Fox.ApplicationUserManager";Puma.Prey.Fox.Controllers.AccountController.UserManager.get*1/-
-+Puma.Prey.Fox.Controllers.AccountControlleré
-ã
-
-ÕH Õ(V
-%11string"6Puma.Prey.Fox.Models.RegisterBindingModel.Password.get*64
-2
-model)Puma.Prey.Fox.Models.RegisterBindingModelùö
-
-Õ* Õ(W+
-%12$System.Threading.Tasks.Task<TResult>"MMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.CreateAsync(TUser, string)*/-
-+
-%10$Puma.Prey.Fox.ApplicationUserManager*0.
-,
-user$Puma.Prey.Fox.Models.ApplicationUser*
-
-%11string2CreateAsync(TUser, string)R
-P
-
-Õ Õ(W2
-result(Microsoft.AspNet.Identity.IdentityResult"__id*
-""å
-â
-
-œ œ(!
-%13bool"6Microsoft.AspNet.Identity.IdentityResult.Succeeded.get*64
-2
-result(Microsoft.AspNet.Identity.IdentityResult*
-3
-4*÷
-3
-— —(,ä
-á
-
-— —(-(
-%14!System.Web.Http.IHttpActionResult"dPuma.Prey.Fox.Controllers.AccountController.GetErrorResult(Microsoft.AspNet.Identity.IdentityResult)*1/-
-+Puma.Prey.Fox.Controllers.AccountController*64
-2
-result(Microsoft.AspNet.Identity.IdentityResult"8
-
-— —(.*
-(
-%14!System.Web.Http.IHttpActionResult*“
-4
-‘ ‘(áÑ
-
-‘ ‘('
-%15 System.Web.Http.Results.OkResult""System.Web.Http.ApiController.Ok()*#!
-System.Web.Http.ApiController2Ok()"7
-
-‘ ‘()
-'
-%15 System.Web.Http.Results.OkResult*2
-5
-’	 ’(	"!
-
-’ ’(	
-implicit return*‰
-6
-ƒQ ƒ(Qt
-r
-
-ƒ- ƒ(5V
-2
-model)Puma.Prey.Fox.Models.RegisterBindingModel" 
-<Email>k__BackingFieldstring"__entrypointc
-a
-
-ƒ- ƒ(5E
-2
-model)Puma.Prey.Fox.Models.RegisterBindingModel"
-Emailstring"__entrypointw
-u
-
-ƒ- ƒ(5Y
-2
-model)Puma.Prey.Fox.Models.RegisterBindingModel"#
-<Password>k__BackingFieldstring"__entrypointf
-d
-
-ƒ- ƒ(5H
-2
-model)Puma.Prey.Fox.Models.RegisterBindingModel"
-Passwordstring"__entrypoint~
-|
-
-ƒ- ƒ(5`
-2
-model)Puma.Prey.Fox.Models.RegisterBindingModel"*
- <ConfirmPassword>k__BackingFieldstring"__entrypointm
-k
-
-ƒ- ƒ(5O
-2
-model)Puma.Prey.Fox.Models.RegisterBindingModel"
-ConfirmPasswordstring"__entrypoint#
-!
-
-ƒ- ƒ(5
-%16"__entrypoint*
-0:@
-
-ƒ6 ƒ(P2
-model)Puma.Prey.Fox.Models.RegisterBindingModelB/-
-+Puma.Prey.Fox.Controllers.AccountController

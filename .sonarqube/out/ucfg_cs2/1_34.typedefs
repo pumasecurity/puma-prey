@@ -1,30 +1,0 @@
-©
-.Puma.Prey.Raccoon.Controllers.ManageControllerSystem.Web.Mvc.ControllerSystem.Web.Mvc.ControllerBaseobjectW
-ManageController()APuma.Prey.Raccoon.Controllers.ManageController.ManageController()€
-fManageController(Puma.Prey.Raccoon.ApplicationUserManager, Puma.Prey.Raccoon.ApplicationSignInManager)•Puma.Prey.Raccoon.Controllers.ManageController.ManageController(Puma.Prey.Raccoon.ApplicationUserManager, Puma.Prey.Raccoon.ApplicationSignInManager)¿
-FIndex(Puma.Prey.Raccoon.Controllers.ManageController.ManageMessageId?)uPuma.Prey.Raccoon.Controllers.ManageController.Index(Puma.Prey.Raccoon.Controllers.ManageController.ManageMessageId?)i
-RemoveLogin(string, string)JPuma.Prey.Raccoon.Controllers.ManageController.RemoveLogin(string, string)S
-AddPhoneNumber()?Puma.Prey.Raccoon.Controllers.ManageController.AddPhoneNumber()³
-@AddPhoneNumber(Puma.Prey.Raccoon.Models.AddPhoneNumberViewModel)oPuma.Prey.Raccoon.Controllers.ManageController.AddPhoneNumber(Puma.Prey.Raccoon.Models.AddPhoneNumberViewModel)q
-EnableTwoFactorAuthentication()NPuma.Prey.Raccoon.Controllers.ManageController.EnableTwoFactorAuthentication()s
- DisableTwoFactorAuthentication()OPuma.Prey.Raccoon.Controllers.ManageController.DisableTwoFactorAuthentication()e
-VerifyPhoneNumber(string)HPuma.Prey.Raccoon.Controllers.ManageController.VerifyPhoneNumber(string)¿
-FVerifyPhoneNumber(Puma.Prey.Raccoon.Models.VerifyPhoneNumberViewModel)uPuma.Prey.Raccoon.Controllers.ManageController.VerifyPhoneNumber(Puma.Prey.Raccoon.Models.VerifyPhoneNumberViewModel)Y
-RemovePhoneNumber()BPuma.Prey.Raccoon.Controllers.ManageController.RemovePhoneNumber()S
-ChangePassword()?Puma.Prey.Raccoon.Controllers.ManageController.ChangePassword()³
-@ChangePassword(Puma.Prey.Raccoon.Models.ChangePasswordViewModel)oPuma.Prey.Raccoon.Controllers.ManageController.ChangePassword(Puma.Prey.Raccoon.Models.ChangePasswordViewModel)M
-SetPassword()<Puma.Prey.Raccoon.Controllers.ManageController.SetPassword()§
-:SetPassword(Puma.Prey.Raccoon.Models.SetPasswordViewModel)iPuma.Prey.Raccoon.Controllers.ManageController.SetPassword(Puma.Prey.Raccoon.Models.SetPasswordViewModel)Í
-MManageLogins(Puma.Prey.Raccoon.Controllers.ManageController.ManageMessageId?)|Puma.Prey.Raccoon.Controllers.ManageController.ManageLogins(Puma.Prey.Raccoon.Controllers.ManageController.ManageMessageId?)U
-LinkLogin(string)@Puma.Prey.Raccoon.Controllers.ManageController.LinkLogin(string)Y
-LinkLoginCallback()BPuma.Prey.Raccoon.Controllers.ManageController.LinkLoginCallback()M
-Dispose(bool)<Puma.Prey.Raccoon.Controllers.ManageController.Dispose(bool)™
-3AddErrors(Microsoft.AspNet.Identity.IdentityResult)bPuma.Prey.Raccoon.Controllers.ManageController.AddErrors(Microsoft.AspNet.Identity.IdentityResult)M
-HasPassword()<Puma.Prey.Raccoon.Controllers.ManageController.HasPassword()S
-HasPhoneNumber()?Puma.Prey.Raccoon.Controllers.ManageController.HasPhoneNumber()U
-SignInManager.get@Puma.Prey.Raccoon.Controllers.ManageController.SignInManager.getU
-SignInManager.set@Puma.Prey.Raccoon.Controllers.ManageController.SignInManager.setQ
-UserManager.get>Puma.Prey.Raccoon.Controllers.ManageController.UserManager.getQ
-UserManager.set>Puma.Prey.Raccoon.Controllers.ManageController.UserManager.sete
-AuthenticationManager.getHPuma.Prey.Raccoon.Controllers.ManageController.AuthenticationManager.gete
-AuthenticationManager.setHPuma.Prey.Raccoon.Controllers.ManageController.AuthenticationManager.set

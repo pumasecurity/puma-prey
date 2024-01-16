@@ -1,7 +1,0 @@
-ï
-.Puma.Prey.Raccoon.Models.ManageLoginsViewModelobjecta
-ManageLoginsViewModel()FPuma.Prey.Raccoon.Models.ManageLoginsViewModel.ManageLoginsViewModel()U
-CurrentLogins.get@Puma.Prey.Raccoon.Models.ManageLoginsViewModel.CurrentLogins.getU
-CurrentLogins.set@Puma.Prey.Raccoon.Models.ManageLoginsViewModel.CurrentLogins.setQ
-OtherLogins.get>Puma.Prey.Raccoon.Models.ManageLoginsViewModel.OtherLogins.getQ
-OtherLogins.set>Puma.Prey.Raccoon.Models.ManageLoginsViewModel.OtherLogins.set

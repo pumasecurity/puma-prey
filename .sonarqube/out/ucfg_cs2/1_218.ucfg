@@ -1,271 +1,0 @@
-
-iPuma.Prey.Raccoon.Controllers.ManageController.SetPassword(Puma.Prey.Raccoon.Models.SetPasswordViewModel)R
-FD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\ManageController.csÇ( Ç(3"8*¢
-0
-Ñ Ñ("Ö
-Ç
-
-Ñ Ñ()
-%0#System.Web.Mvc.ModelStateDictionary"(System.Web.Mvc.Controller.ModelState.get*
-System.Web.Mvc.ControllerÄ
-~
-
-Ñ Ñ("
-
-%1bool"5System.Collections.Generic.ICollection<T>.IsValid.get*-+
-)
-%0#System.Web.Mvc.ModelStateDictionary*
-1
-2*‰
-
-1
-Ü á($µ
-≤
-
-Ü# Ü(..
-%2(Puma.Prey.Raccoon.ApplicationUserManager">Puma.Prey.Raccoon.Controllers.ManageController.UserManager.get*420
-.Puma.Prey.Raccoon.Controllers.ManageController
-}
-
-Ü@ Ü(D*
-%3$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
-System.Web.Mvc.Controller´®
-
-Ü@ Ü(M)
-%4#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
-*
-%3$System.Security.Principal.IPrincipal2Identity.get›
-⁄
-
-Ü@ Ü(Y
-%5string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
-,Microsoft.AspNet.Identity.IdentityExtensions*-+
-)
-%4#System.Security.Principal.IIdentityò
-ï
-
-Ü[ Ü(l
-%6string"=Puma.Prey.Raccoon.Models.SetPasswordViewModel.NewPassword.get*:8
-6
-model-Puma.Prey.Raccoon.Models.SetPasswordViewModelÜÉ
-
-Ü# Ü(m*
-%7$System.Threading.Tasks.Task<TResult>"QMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.AddPasswordAsync(TKey, string)*20
-.
-%2(Puma.Prey.Raccoon.ApplicationUserManager*
-
-%5string*
-
-%6string2AddPasswordAsync(TKey, string)R
-P
-
-Ü Ü(m2
-result(Microsoft.AspNet.Identity.IdentityResult"__id*
-""ã
-à
-
-á á($
-
-%8bool"6Microsoft.AspNet.Identity.IdentityResult.Succeeded.get*64
-2
-result(Microsoft.AspNet.Identity.IdentityResult*
-3
-4*™	
-3
-â ä($µ
-≤
-
-â% â(0.
-%9(Puma.Prey.Raccoon.ApplicationUserManager">Puma.Prey.Raccoon.Controllers.ManageController.UserManager.get*420
-.Puma.Prey.Raccoon.Controllers.ManageControllerÄ
-~
-
-â? â(C+
-%10$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
-System.Web.Mvc.Controller≠™
-
-â? â(L*
-%11#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*/-
-+
-%10$System.Security.Principal.IPrincipal2Identity.getﬂ
-‹
-
-â? â(X
-%12string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
-,Microsoft.AspNet.Identity.IdentityExtensions*.,
-*
-%11#System.Security.Principal.IIdentity‡›
-
-â% â(Y+
-%13$System.Threading.Tasks.Task<TResult>"FMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.FindByIdAsync(TKey)*20
-.
-%9(Puma.Prey.Raccoon.ApplicationUserManager*
-
-%12string2FindByIdAsync(TKey)P
-N
-
-â â(Y0
-user(Puma.Prey.Raccoon.Models.ApplicationUser"__id*
-""é
-ã
-
-ä ä($
-%14bool""object.operator !=(object, object)*
-"
-object*42
-0
-user(Puma.Prey.Raccoon.Models.ApplicationUser*
-""*
-5
-6*Ç
-5
-å å(i∫
-∑
-
-å å(+1
-%15*Puma.Prey.Raccoon.ApplicationSignInManager"@Puma.Prey.Raccoon.Controllers.ManageController.SignInManager.get*420
-.Puma.Prey.Raccoon.Controllers.ManageControllerÆ´
-
-å å(j"
-%16System.Threading.Tasks.Task"XMicrosoft.AspNet.Identity.Owin.SignInManager<TUser, TKey>.SignInAsync(TUser, bool, bool)*53
-1
-%15*Puma.Prey.Raccoon.ApplicationSignInManager*42
-0
-user(Puma.Prey.Raccoon.Models.ApplicationUser*
-""*
-""2SignInAsync(TUser, bool, bool)*
-6*¶
-6
-é é(g%
-#
-
-éE é(g
-%17"__id*
-""∞
-≠
-
-é é(j+
-%18$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, object)*
-System.Web.Mvc.Controller*	
-Index*
-""";
-
-é é(k-
-+
-%18$System.Web.Mvc.RedirectToRouteResult*Ö
-4
-ê ê( Ó
-Î
-
-ê ê(!
-%19void"bPuma.Prey.Raccoon.Controllers.ManageController.AddErrors(Microsoft.AspNet.Identity.IdentityResult)*420
-.Puma.Prey.Raccoon.Controllers.ManageController*64
-2
-result(Microsoft.AspNet.Identity.IdentityResult*
-2*˚
-2
-î î(∆
-√
-
-î î(
-%20void" raccoon/views/manage/setpassword*	
-
-%21*:8
-6
-model-Puma.Prey.Raccoon.Models.SetPasswordViewModel*
-
-%ViewBagDataAllobject*
-
-%ViewBagDataHtmlobject*
-
-%TempDataAllobject*
-
-%TempDataHtmlobject*" 
-
-%HttpContextItemsAllobject*#!
-
-%HttpContextItemsHtmlobjectæ
-ª
-
-î î(
-%22void"raccoon/views/_viewstart*	
-
-%23*:8
-6
-model-Puma.Prey.Raccoon.Models.SetPasswordViewModel*
-
-%ViewBagDataAllobject*
-
-%ViewBagDataHtmlobject*
-
-%TempDataAllobject*
-
-%TempDataHtmlobject*" 
-
-%HttpContextItemsAllobject*#!
-
-%HttpContextItemsHtmlobject¬
-ø
-
-î î(
-%24void"raccoon/views/shared/_layout*	
-
-%25*:8
-6
-model-Puma.Prey.Raccoon.Models.SetPasswordViewModel*
-
-%ViewBagDataAllobject*
-
-%ViewBagDataHtmlobject*
-
-%TempDataAllobject*
-
-%TempDataHtmlobject*" 
-
-%HttpContextItemsAllobject*#!
-
-%HttpContextItemsHtmlobject"
-
-î î(
-
-%24void*2
-7
-ï	 ï(	"!
-
-ï ï(	
-implicit return*°
-8
-ÇO Ç(O~
-|
-
-Ç( Ç(3`
-6
-model-Puma.Prey.Raccoon.Models.SetPasswordViewModel"&
-<NewPassword>k__BackingFieldstring"__entrypointm
-k
-
-Ç( Ç(3O
-6
-model-Puma.Prey.Raccoon.Models.SetPasswordViewModel"
-NewPasswordstring"__entrypointÉ
-Ä
-
-Ç( Ç(3d
-6
-model-Puma.Prey.Raccoon.Models.SetPasswordViewModel"*
- <ConfirmPassword>k__BackingFieldstring"__entrypointq
-o
-
-Ç( Ç(3S
-6
-model-Puma.Prey.Raccoon.Models.SetPasswordViewModel"
-ConfirmPasswordstring"__entrypoint#
-!
-
-Ç( Ç(3
-%26"__entrypoint*
-0:D
-
-Ç4 Ç(N6
-model-Puma.Prey.Raccoon.Models.SetPasswordViewModelB20
-.Puma.Prey.Raccoon.Controllers.ManageController

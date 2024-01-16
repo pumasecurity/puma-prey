@@ -1,57 +1,0 @@
-
-JPuma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator.TryFormatJson(string)i
-]D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.csø ø(+"0*
-0
-„	 „(	*
-1
-2*Ö
-1
-ü ý(RŠ
-‡
-
-ü$ ü(F
-%0object"5Newtonsoft.Json.JsonConvert.DeserializeObject(string)*!"
-Newtonsoft.Json.JsonConvert*
-
-strstring<
-:
-
-ü ü(F
-
-parsedJsonobject"__id*
-
-%0object$
-"
-
-ý? ý(R
-%1"__id*
-""µ
-²
-
-ý ý(S
-%2string"ONewtonsoft.Json.JsonConvert.SerializeObject(object, Newtonsoft.Json.Formatting)*!"
-Newtonsoft.Json.JsonConvert*
-
-
-parsedJsonobject*
-
-%1"
-
-ý ý(T
-
-%2string*.
-2
-‚ ‚("
-
-‚ ‚(
-
-strstring*2
-3
-„	 „(	"!
-
-„ „(	
-implicit return:
-
-ø, ø(6
-strstringB8"6
-4Puma.Prey.Fox.Areas.HelpPage.HelpPageSampleGenerator

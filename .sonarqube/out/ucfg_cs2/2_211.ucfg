@@ -1,101 +1,0 @@
-
-9Puma.Prey.Fox.Controllers.AccountController.GetUserInfo()M
-CD:\Sources\dotNetLab\puma-prey\Fox\Controllers\AccountController.cs9! 9(,"4*Å
-0; A(-Ü
-É
-;M ;(Q*
-%0$System.Security.Principal.IPrincipal"&System.Web.Http.ApiController.User.get*#!
-System.Web.Http.ApiController©¶
-;M ;(Z)
-%1#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
-*
-%0$System.Security.Principal.IPrincipal2Identity.getl
-j
-;M ;(l)
-%2#System.Security.Principal.IIdentity"__id*-+
-)
-%1#System.Security.Principal.IIdentityπ
-∂
-;. ;(mC
-%3=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData"qPuma.Prey.Fox.Controllers.AccountController.ExternalLoginData.FromIdentity(System.Security.Claims.ClaimsIdentity)*CA"?
-=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData*-+
-)
-%2#System.Security.Principal.IIdentity¨
-©
-; ;(mN
-externalLogin=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData"__id*GE
-C
-%3=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginDatab`
-= B(,
-%4&Puma.Prey.Fox.Models.UserInfoViewModel"&Puma.Prey.Fox.Models.UserInfoViewModelá
-Ñ
-= =((
-
-%5void":Puma.Prey.Fox.Models.UserInfoViewModel.UserInfoViewModel()*0.
-,
-%4&Puma.Prey.Fox.Models.UserInfoViewModelÜ
-É
-? ?(*
-%6$System.Security.Principal.IPrincipal"&System.Web.Http.ApiController.User.get*#!
-System.Web.Http.ApiController©¶
-? ?(%)
-%7#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
-*
-%6$System.Security.Principal.IPrincipal2Identity.get›
-⁄
-? ?(3
-%8string"]Microsoft.AspNet.Identity.IdentityExtensions.GetUserName(System.Security.Principal.IIdentity)*20".
-,Microsoft.AspNet.Identity.IdentityExtensions*-+
-)
-%7#System.Security.Principal.IIdentityë
-é
-? ?(3
-%9string"0Puma.Prey.Fox.Models.UserInfoViewModel.Email.set*0.
-,
-%4&Puma.Prey.Fox.Models.UserInfoViewModel*
-
-%8string™
-ß
-@  @(5
-%10bool""object.operator ==(object, object)*
-"
-object*RP
-N
-externalLogin=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData*
-""ó
-î
-@ @(5
-%11bool"8Puma.Prey.Fox.Models.UserInfoViewModel.HasRegistered.set*0.
-,
-%4&Puma.Prey.Fox.Models.UserInfoViewModel*
-
-%10bool*
-1
-2*÷
-2A. A(<¡
-æ
-A/ A(<
-%12string"OPuma.Prey.Fox.Controllers.AccountController.ExternalLoginData.LoginProvider.get*RP
-N
-externalLogin=Puma.Prey.Fox.Controllers.AccountController.ExternalLoginData*
-1*Á
-1> A(<õ
-ò
-A A(<
-%13string"8Puma.Prey.Fox.Models.UserInfoViewModel.LoginProvider.set*0.
-,
-%4&Puma.Prey.Fox.Models.UserInfoViewModel*
-
-%12string":
-= B(.
-,
-%4&Puma.Prey.Fox.Models.UserInfoViewModel*.
-3C	 C(	"
-C C(	
-implicit return*5
-49. 9(.!
-
-9! 9(,
-%14"__entrypoint*
-0B/-
-+Puma.Prey.Fox.Controllers.AccountController

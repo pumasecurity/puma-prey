@@ -1,32 +1,0 @@
-
-HPuma.Prey.Raccoon.Controllers.ManageController.AuthenticationManager.getR
-FD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\ManageController.csÖ Ö("0*Þ
-0
-Ø Ø(B|
-z
-
-Ø Ø(" 
-%0System.Web.HttpContextBase")System.Web.Mvc.Controller.HttpContext.get*
-System.Web.Mvc.ControllerÕ
-Ò
-
-Ø Ø(3!
-%1Microsoft.Owin.IOwinContext"OSystem.Web.HttpContextBaseExtensions.GetOwinContext(System.Web.HttpContextBase)**("&
-$System.Web.HttpContextBaseExtensions*$"
- 
-%0System.Web.HttpContextBase°­
-
-Ø Ø(B4
-%2.Microsoft.Owin.Security.IAuthenticationManager".Microsoft.Owin.IOwinContext.Authentication.get*%#
-!
-%1Microsoft.Owin.IOwinContext2Authentication.get"D
-
-Ø Ø(C6
-4
-%2.Microsoft.Owin.Security.IAuthenticationManager*2
-1
-Ù Ù("!
-
-Ù Ù(
-implicit returnB20
-.Puma.Prey.Raccoon.Controllers.ManageController

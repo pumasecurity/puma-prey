@@ -1,58 +1,0 @@
-
-ïPuma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.GetEncryptedKey(Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey, string, byte[])]
-SD:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyReaderWriter.cs` `(&"0*ä
-0b c(∑
-¥
-b" b(>
-%0byte[]"IPuma.Prey.Common.Cryptography.KeyManagement.ProtectedKey.DecryptedKey.get*OM
-K
-keyToBeArchived8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey<
-:
-b b(>
-decryptedKeybyte[]"__id*
-
-%0byte[]*
-1*‡
-1f f(Rì
-ê
-f f(S
-%1byte[]"iPuma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter.EncryptKeyForArchival(byte[], string, byte[])*A?=
-;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter*
-
-decryptedKeybyte[]*
-
-
-passphrasestring*
-
-saltbyte[]6
-4
-f f(S
-resultbyte[]"__id*
-
-%1byte[]*
-2*∂
-2j j(1û
-õ
-j j(2
-
-%2void":Puma.Prey.Common.Cryptography.Utility.ZeroOutBytes(byte[])*+)"'
-%Puma.Prey.Common.Cryptography.Utility*
-
-decryptedKeybyte[]*
-3
-4*-
-3l l("
-l l(
-
-resultbyte[]*.
-4m	 m(	"
-m m(	
-implicit return:W
-`' `(CK
-keyToBeArchived8Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKey: 
-`E `(V
-
-passphrasestring:
-`X `(c
-saltbyte[]B?=
-;Puma.Prey.Common.Cryptography.KeyManagement.KeyReaderWriter

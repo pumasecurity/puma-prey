@@ -1,35 +1,0 @@
-
-hPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription.ComplexTypeModelDescription()l
-bD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs (*"1*¿
-1
-	 
-(	ª
-§
-
-%0void"RPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription.ModelDescription()*ECA
-?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription*
-0*º
-0	 	(?nl
-	 	(?2
-%1,System.Collections.ObjectModel.Collection<T>",System.Collections.ObjectModel.Collection<T>Œ
-‰
-	 	(=
-
-%2void"9System.Collections.ObjectModel.Collection<T>.Collection()*64
-2
-%1,System.Collections.ObjectModel.Collection<T>¦
-£
-	 	(?2
-%3,System.Collections.ObjectModel.Collection<T>"YPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription.Properties.set*PNL
-JPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription*64
-2
-%1,System.Collections.ObjectModel.Collection<T>*
-2*.
-2
-	 
-(	"
-
- 
-(	
-implicit returnBNL
-JPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription

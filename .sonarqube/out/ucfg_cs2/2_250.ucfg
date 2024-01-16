@@ -1,55 +1,0 @@
-
-1Puma.Prey.Fox.Controllers.HuntController.Get(int)J
-@D:\Sources\dotNetLab\puma-prey\Fox\Controllers\HuntController.cs$ $("4*§
-0& ((6B
-@
-& &($
-huntPuma.Prey.Rabbit.Models.Hunt"__id*
-""\Z
-(! ((6)
-%0#Puma.Prey.Rabbit.EF.RabbitDBContext"#Puma.Prey.Rabbit.EF.RabbitDBContext~
-|
-(% ((4
-
-%1void"5Puma.Prey.Rabbit.EF.RabbitDBContext.RabbitDBContext()*-+
-)
-%0#Puma.Prey.Rabbit.EF.RabbitDBContextq
-o
-( ((6.
-context#Puma.Prey.Rabbit.EF.RabbitDBContext"__id*-+
-)
-%0#Puma.Prey.Rabbit.EF.RabbitDBContext*
-1*÷
-1* -()<
-:
-* ,( 
-qSystem.Linq.IQueryable<T>"__id*
-""Â
-¿
-- -()"
-%2Puma.Prey.Rabbit.Models.Hunt"NSystem.Linq.Queryable.FirstOrDefault<TSource>(System.Linq.IQueryable<TSource>)*"
-System.Linq.Queryable*" 
-
-qSystem.Linq.IQueryable<T>`
-^
-- -()$
-huntPuma.Prey.Rabbit.Models.Hunt"__id*&$
-"
-%2Puma.Prey.Rabbit.Models.Hunt*
-2*A
-20 0("2
-0 0(&
-$
-huntPuma.Prey.Rabbit.Models.Hunt*.
-31	 1(	"
-1 1(	
-implicit return*>
-4$ $(*
-(
-$ $(
-%3"__entrypoint*
-""*
-0:
-$ $(	
-idintB,*
-(Puma.Prey.Fox.Controllers.HuntController

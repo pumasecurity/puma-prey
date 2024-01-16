@@ -1,47 +1,0 @@
-
-:Puma.Prey.Fox.Areas.HelpPage.TextSample.TextSample(string)Z
-PD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\TextSample.cs
- 
-("1*
-1	 (	*
-0*
-0 (h
-f
- (
-
-%0bool""string.operator ==(string, string)*
-"
-string*
-
-textstring*
-""*
-2
-3*Ó
-2 (6NL
- (7"
-%1System.ArgumentNullException"System.ArgumentNullExceptionâ
-Ü
- (/
-
-%2void":System.ArgumentNullException.ArgumentNullException(string)*&$
-"
-%1System.ArgumentNullException*
-
-text*
-4*•
-3 (ê
-ç
- (
-%3string"0Puma.Prey.Fox.Areas.HelpPage.TextSample.Text.set*-+)
-'Puma.Prey.Fox.Areas.HelpPage.TextSample*
-
-textstring*
-4*.
-4	 (	"
- (	
-implicit return:
-
- 
-(%
-textstringB+)
-'Puma.Prey.Fox.Areas.HelpPage.TextSample

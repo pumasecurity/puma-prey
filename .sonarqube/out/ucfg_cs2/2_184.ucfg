@@ -1,300 +1,0 @@
-
-ÑPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.GenerateObject(System.Type, System.Collections.Generic.Dictionary<System.Type, object>)_
-UD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\SampleGeneration\ObjectGenerator.cs' '(%"0*ˇ
-0+ +(DÁ
-‰
-+ +(E
-
-%0bool"ePuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.SimpleTypeObjectGenerator.CanGenerateObject(System.Type)*LJ"H
-FPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.SimpleTypeObjectGenerator*
-
-typeSystem.Type*
-1
-2*î
-1- -(D˚
-¯
-- -(0L
-%1FPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.SimpleTypeObjectGenerator"__id*óî*ë.
-,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator"_
-SimpleObjectGeneratorFPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.SimpleTypeObjectGeneratorÍ
-Á
-- -(E
-%2object"bPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.SimpleTypeObjectGenerator.GenerateObject(System.Type)*PN
-L
-%1FPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.SimpleTypeObjectGenerator*
-
-typeSystem.Type"
-- -(F
-
-%2object*a
-20 0( J
-H
-0 0( 
-
-%3bool"System.Type.IsArray.get*
-
-typeSystem.Type*
-3
-4*°
-32 2(]"
- 
-2/ 2(D
-%4"__id*
-""—
-Œ
-2 2(^
-%5object"àPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.GenerateArray(System.Type, int, System.Collections.Generic.Dictionary<System.Type, object>)*20".
-,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator*
-
-typeSystem.Type*
-
-%4*RP
-N
-createdObjectReferences3System.Collections.Generic.Dictionary<TKey, TValue>"
-2 2(_
-
-%5object*z
-45 5(&ca
-5 5(&
-
-%6bool"System.Type.IsGenericType.get*
-
-typeSystem.Type2IsGenericType.get*
-5
-6*ß
-57 7(c"
- 
-75 7(J
-%7"__id*
-""◊
-‘
-7 7(d
-%8object"éPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.GenerateGenericType(System.Type, int, System.Collections.Generic.Dictionary<System.Type, object>)*20".
-,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator*
-
-typeSystem.Type*
-
-%7*RP
-N
-createdObjectReferences3System.Collections.Generic.Dictionary<TKey, TValue>"
-7 7(e
-
-%8object*ô
-6: :(/Å
-
-: :(/
-
-%9bool"1System.Type.operator ==(System.Type, System.Type)*"
-System.Type*
-
-typeSystem.Type*
-""*
-7
-8*õ
-7< <(o#
-!
-<A <(V
-%10"__id*
-""…
-∆
-< <(p
-%11object"çPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.GenerateDictionary(System.Type, int, System.Collections.Generic.Dictionary<System.Type, object>)*20".
-,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator*
-""*	
-
-%10*RP
-N
-createdObjectReferences3System.Collections.Generic.Dictionary<TKey, TValue>"
-< <(q
-
-%11object*†
-8? ?(=áÑ
-? ?(>
-%12bool")System.Type.IsAssignableFrom(System.Type)*
-""*
-
-typeSystem.Type2IsAssignableFrom(System.Type)*
-9
-10*™
-9A A(b#
-!
-A4 A(I
-%13"__id*
-""ÿ
-’
-A A(c
-%14object"çPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.GenerateDictionary(System.Type, int, System.Collections.Generic.Dictionary<System.Type, object>)*20".
-,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator*
-
-typeSystem.Type*	
-
-%13*RP
-N
-createdObjectReferences3System.Collections.Generic.Dictionary<TKey, TValue>"
-A A(d
-
-%14object*û
-10D D()É
-Ä
-D D()
-%15bool"1System.Type.operator ==(System.Type, System.Type)*"
-System.Type*
-
-typeSystem.Type*
-""*
-11
-12*û
-12E E(/É
-Ä
-E E(/
-%16bool"1System.Type.operator ==(System.Type, System.Type)*"
-System.Type*
-
-typeSystem.Type*
-""*
-11
-13*û
-13F F(/É
-Ä
-F F(/
-%17bool"1System.Type.operator ==(System.Type, System.Type)*"
-System.Type*
-
-typeSystem.Type*
-""*
-11
-14*ú
-11H H(o#
-!
-HA H(V
-%18"__id*
-""…
-∆
-H H(p
-%19object"çPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.GenerateCollection(System.Type, int, System.Collections.Generic.Dictionary<System.Type, object>)*20".
-,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator*
-""*	
-
-%18*RP
-N
-createdObjectReferences3System.Collections.Generic.Dictionary<TKey, TValue>"
-H H(q
-
-%19object*¢
-14K K(7áÑ
-K K(8
-%20bool")System.Type.IsAssignableFrom(System.Type)*
-""*
-
-typeSystem.Type2IsAssignableFrom(System.Type)*
-15
-16*´
-15M M(b#
-!
-M4 M(I
-%21"__id*
-""ÿ
-’
-M M(c
-%22object"çPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.GenerateCollection(System.Type, int, System.Collections.Generic.Dictionary<System.Type, object>)*20".
-,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator*
-
-typeSystem.Type*	
-
-%21*RP
-N
-createdObjectReferences3System.Collections.Generic.Dictionary<TKey, TValue>"
-M M(d
-
-%22object*û
-16P P(.É
-Ä
-P P(.
-%23bool"1System.Type.operator ==(System.Type, System.Type)*"
-System.Type*
-
-typeSystem.Type*
-""*
-17
-18*™
-17R R(a#
-!
-R3 R(H
-%24"__id*
-""◊
-‘
-R R(b
-%25object"åPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.GenerateQueryable(System.Type, int, System.Collections.Generic.Dictionary<System.Type, object>)*20".
-,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator*
-
-typeSystem.Type*	
-
-%24*RP
-N
-createdObjectReferences3System.Collections.Generic.Dictionary<TKey, TValue>"
-R R(c
-
-%25object*p
-18U U(VT
-U U(
-%26bool"System.Type.IsEnum.get*
-
-typeSystem.Type2
-IsEnum.get*
-19
-20*ﬂ
-19W W(,±
-Æ
-W W(-
-%27object"FPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.GenerateEnum(System.Type)*20".
-,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator*
-
-typeSystem.Type"
-W W(.
-
-%27object*f
-20Z Z(!L
-J
-Z Z(!
-%28bool"System.Type.IsPublic.get*
-
-typeSystem.Type*
-21
-22*l
-22Z% Z(8R
-P
-Z% Z(8
-%29bool"System.Type.IsNestedPublic.get*
-
-typeSystem.Type*
-21
-23*˘
-21\ \(NÀ
-»
-\ \(O
-%30object"ãPuma.Prey.Fox.Areas.HelpPage.ObjectGenerator.GenerateComplexObject(System.Type, System.Collections.Generic.Dictionary<System.Type, object>)*20".
-,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator*
-
-typeSystem.Type*RP
-N
-createdObjectReferences3System.Collections.Generic.Dictionary<TKey, TValue>"
-\ \(P
-
-%30object*
-23f	 f(	*
-24
-25*"
-24b b("
-b b(
-""*"
-25e e("
-e e(
-""*/
-26f	 f(	"
-f f(	
-implicit return:
-'& '(/
-typeSystem.Type:Z
-'1 '(aN
-createdObjectReferences3System.Collections.Generic.Dictionary<TKey, TValue>B0.
-,Puma.Prey.Fox.Areas.HelpPage.ObjectGenerator

@@ -1,271 +1,0 @@
-
-vPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GenerateEnumTypeModelDescription(System.Type)l
-`D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.csä) ä(I"0*∏
-0
-å% ì(eß§
-
-å7 ë(M
-%0GPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription"GPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription“
-œ
-
-å; å(S
-
-%1void"bPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription.EnumTypeModelDescription()*QO
-M
-%0GPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription€
-ÿ
-
-é é(>
-%2string"XPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelNameHelper.GetModelName(System.Type)*DB"@
->Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelNameHelper*
-
-	modelTypeSystem.TypeÃ
-…
-
-é é(>
-%3string"HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription.Name.set*QO
-M
-%0GPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription*
-
-%2string‚
-ﬂ
-
-è è(%
-%4System.Type"MPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription.ModelType.set*QO
-M
-%0GPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription*
-
-	modelTypeSystem.Type˝
-˙
-
-ê  ê(E
-%5string"pPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.CreateDefaultDocumentation(System.Type)*NLJ
-HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator*
-
-	modelTypeSystem.Type’
-“
-
-ê ê(E
-%6string"QPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription.Documentation.set*QO
-M
-%0GPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription*
-
-%5stringƒ
-¡
-
-å% ë(Z
-enumDescriptionGPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription"__id*QO
-M
-%0GPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription˚
-¯
-
-í, í(a8
-%72System.Runtime.Serialization.DataContractAttribute"_System.Reflection.CustomAttributeExtensions.GetCustomAttribute<T>(System.Reflection.MemberInfo)*1/"-
-+System.Reflection.CustomAttributeExtensions*
-
-	modelTypeSystem.Typeï
-í
-
-í, í(i
-
-%8bool""object.operator !=(object, object)*
-"
-object*<:
-8
-%72System.Runtime.Serialization.DataContractAttribute*
-""F
-D
-
-í í(i 
-hasDataContractAttributebool"__id*
-
-
-%8bool$
-"
-
-ì< ì(O
-%9"__id*
-""%
-#
-
-ìR ì(e
-%10"__id*
-""øº
-
-ì( ì(f$
-%11System.Reflection.FieldInfo[]"5System.Type.GetFields(System.Reflection.BindingFlags)*
-
-	modelTypeSystem.Type*
-""2)GetFields(System.Reflection.BindingFlags)†
-ù
-
-ì ì($"
-%12System.Reflection.FieldInfo"7System.Collections.Generic.ICollection<T>.this[int].get*(&
-$
-%11System.Reflection.FieldInfo[]*
-""b
-`
-
-ì ¢($
-fieldSystem.Reflection.FieldInfo"__id*&$
-"
-%12System.Reflection.FieldInfo*
-1*
-1
-¶	 ¶(	*
-2
-3*Ÿ
-2
-ï ï(Gø
-º
-
-ï ï(H
-%13bool"ÄPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.ShouldDisplayMember(System.Reflection.MemberInfo, bool)*NL"J
-HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator*(&
-$
-fieldSystem.Reflection.FieldInfo*$"
- 
-hasDataContractAttributebool*
-4
-1*è
-4
-ó) ú(5†ù
-
-ó5 õ(J
-%14CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumValueDescription"CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumValueDescription»
-≈
-
-ó9 ó(M
-%15void"ZPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumValueDescription.EnumValueDescription()*NL
-J
-%14CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumValueDescriptionxv
-
-ô ô()
-%16string"%System.Reflection.MemberInfo.Name.get*(&
-$
-fieldSystem.Reflection.FieldInfo2Name.getœ
-Ã
-
-ô ô()
-%17string"LPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumValueDescription.Name.set*NL
-J
-%14CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumValueDescription*
-
-%16stringíè
-
-ö  ö(;
-%18object"1System.Reflection.FieldInfo.GetRawConstantValue()*(&
-$
-fieldSystem.Reflection.FieldInfo2GetRawConstantValue()OM
-
-ö  ö(F
-%19string"object.ToString()*
-
-%18object2
-ToString()–
-Õ
-
-ö ö(F
-%20string"MPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumValueDescription.Value.set*NL
-J
-%14CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumValueDescription*
-
-%19string∑
-¥
-
-ó) õ(P
-	enumValueCPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumValueDescription"__id*NL
-J
-%14CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumValueDescriptionñ
-ì
-
-ú ú(-Q
-%21JPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider"bPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.DocumentationProvider.get*NLJ
-HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGeneratorØ
-¨
-
-ú ú(5
-%22bool""object.operator !=(object, object)*
-"
-object*US
-Q
-%21JPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider*
-""*
-5
-6*€
-5
-û û(^ñ
-ì
-
-û2 û(GQ
-%23JPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider"bPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.DocumentationProvider.get*NLJ
-HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator «
-
-û2 û(_
-%24string"yPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider.GetDocumentation(System.Reflection.MemberInfo)*US
-Q
-%23JPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider*(&
-$
-fieldSystem.Reflection.FieldInfo2.GetDocumentation(System.Reflection.MemberInfo)ﬁ
-€
-
-û û(_
-%25string"UPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumValueDescription.Documentation.set*TR
-P
-	enumValueCPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumValueDescription*
-
-%24string*
-6*Ú
-6
-† †(8¯
-ı
-
-† †(*3
-%26,System.Collections.ObjectModel.Collection<T>"RPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription.Values.get*^\
-Z
-enumDescriptionGPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription‡
-›
-
-† †(9
-%27void"3System.Collections.ObjectModel.Collection<T>.Add(T)*75
-3
-%26,System.Collections.ObjectModel.Collection<T>*TR
-P
-	enumValueCPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumValueDescription*
-1*—
-3
-£ •("˘
-ˆ
-
-£ £(:
-%283System.Collections.Generic.Dictionary<TKey, TValue>"\Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.GeneratedModels.get*NLJ
-HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator»
-≈
-
-£  £(4
-%29string"HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription.Name.get*^\
-Z
-enumDescriptionGPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescriptionå
-â
-
-£ £(F
-%30void";System.Collections.Generic.ICollection<T>.Add(TKey, TValue)*><
-:
-%283System.Collections.Generic.Dictionary<TKey, TValue>*
-
-%29string*^\
-Z
-enumDescriptionGPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription"j
-
-• •(#\
-Z
-enumDescriptionGPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription*2
-7
-¶	 ¶(	"!
-
-¶ ¶(	
-implicit return:&
-
-äJ ä(X
-	modelTypeSystem.TypeBLJ
-HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator

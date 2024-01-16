@@ -1,84 +1,0 @@
-
-pPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.CreateDefaultDocumentation(System.Type)l
-`D:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs¸ ¸(1"0*é
-0
-˛ ˇ(L¯
-ı
-
-ˇ ˇ((:
-%04System.Collections.Generic.IDictionary<TKey, TValue>"__id*§°*ûJ
-HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator"P
-DefaultTypeDocumentation4System.Collections.Generic.IDictionary<TKey, TValue>˘ˆ
-
-ˇ ˇ(M
-
-%1bool"GSystem.Collections.Generic.ICollection<T>.TryGetValue(TKey, out TValue)*><
-:
-%04System.Collections.Generic.IDictionary<TKey, TValue>*
-
-typeSystem.Type*
-
-documentationstring2TryGetValue(TKey, out TValue)*
-1
-2*8
-1
-Å Å($"'
-
-Å Å(%
-
-documentationstring*ﬂ
-2
-É É(-ï
-í
-
-É É(%P
-%2JPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider"bPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.DocumentationProvider.get*NLJ
-HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator≠
-™
-
-É É(-
-
-%3bool""object.operator !=(object, object)*
-"
-object*TR
-P
-%2JPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider*
-""*
-3
-4*Ö
-3
-Ö Ö(Kï
-í
-
-Ö  Ö(5P
-%4JPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider"bPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.DocumentationProvider.get*NLJ
-HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGeneratorïí
-
-Ö  Ö(L
-%5string"hPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider.GetDocumentation(System.Type)*TR
-P
-%4JPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider*
-
-typeSystem.Type2GetDocumentation(System.Type)?
-=
-
-Ö Ö(L
-documentationstring"__id*
-
-%5string*
-4*8
-4
-à à( "'
-
-à à(!
-
-documentationstring*2
-5
-â	 â(	"!
-
-â â(	
-implicit return:!
-
-¸2 ¸(;
-typeSystem.TypeBLJ
-HPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator

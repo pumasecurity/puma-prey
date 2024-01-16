@@ -1,118 +1,0 @@
-
-LSkunk.BundleConfig.RegisterBundles(System.Web.Optimization.BundleCollection)H
->D:\Sources\dotNetLab\puma-prey\Skunk\App_Start\BundleConfig.cs ($"0*è
-0 *('^\
- (7*
-%0$System.Web.Optimization.ScriptBundle"$System.Web.Optimization.ScriptBundle†
-ù
- (
-
-%1void"9System.Web.Optimization.ScriptBundle.ScriptBundle(string)*.,
-*
-%0$System.Web.Optimization.ScriptBundle*
-~/bundles/WebFormsJsÚÔ
- (($
-%2System.Web.Optimization.Bundle"7System.Web.Optimization.Bundle.Include(params string[])*.,
-*
-%0$System.Web.Optimization.ScriptBundle*$" 
-~/Scripts/WebForms/WebForms.js*+)'
-%~/Scripts/WebForms/WebUIValidation.js*)'%
-#~/Scripts/WebForms/MenuStandards.js*!
-~/Scripts/WebForms/Focus.js*$" 
-~/Scripts/WebForms/GridView.js*'%#
-!~/Scripts/WebForms/DetailsView.js*$" 
-~/Scripts/WebForms/TreeView.js*$" 
-~/Scripts/WebForms/WebParts.js2Include(params string[]) 
-«
- ()
-
-%3void"LSystem.Web.Optimization.BundleCollection.Add(System.Web.Optimization.Bundle)*75
-3
-bundles(System.Web.Optimization.BundleCollection*(&
-$
-%2System.Web.Optimization.Bundle^\
- (5*
-%4$System.Web.Optimization.ScriptBundle"$System.Web.Optimization.ScriptBundleû
-õ
- (
-
-%5void"9System.Web.Optimization.ScriptBundle.ScriptBundle(string)*.,
-*
-%4$System.Web.Optimization.ScriptBundle*
-~/bundles/MsAjaxJsûõ
- (:$
-%6System.Web.Optimization.Bundle"7System.Web.Optimization.Bundle.Include(params string[])*.,
-*
-%4$System.Web.Optimization.ScriptBundle*0.,
-*~/Scripts/WebForms/MsAjax/MicrosoftAjax.js*CA?
-=~/Scripts/WebForms/MsAjax/MicrosoftAjaxApplicationServices.js*531
-/~/Scripts/WebForms/MsAjax/MicrosoftAjaxTimer.js*864
-2~/Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js2Include(params string[]) 
-«
- (;
-
-%7void"LSystem.Web.Optimization.BundleCollection.Add(System.Web.Optimization.Bundle)*75
-3
-bundles(System.Web.Optimization.BundleCollection*(&
-$
-%6System.Web.Optimization.Bundle^\
-" "(6*
-%8$System.Web.Optimization.ScriptBundle"$System.Web.Optimization.ScriptBundleü
-ú
-" "(
-
-%9void"9System.Web.Optimization.ScriptBundle.ScriptBundle(string)*.,
-*
-%8$System.Web.Optimization.ScriptBundle*
-~/bundles/modernizrÆ´
-" #(%
-%10System.Web.Optimization.Bundle"_System.Web.Optimization.Bundle.Include(string, params System.Web.Optimization.IItemTransform[])*.,
-*
-%8$System.Web.Optimization.ScriptBundle*
-~/Scripts/modernizr-**
-""2@Include(string, params System.Web.Optimization.IItemTransform[])Ã
-…
-" #( 
-%11void"LSystem.Web.Optimization.BundleCollection.Add(System.Web.Optimization.Bundle)*75
-3
-bundles(System.Web.Optimization.BundleCollection*)'
-%
-%10System.Web.Optimization.Bundleì
-ê
-% %(&*
-%12#System.Web.UI.ScriptResourceMapping"5System.Web.UI.ScriptManager.ScriptResourceMapping.get*!"
-System.Web.UI.ScriptManagerca
-' +(-
-%13&System.Web.UI.ScriptResourceDefinition"&System.Web.UI.ScriptResourceDefinitionê
-ç
-' '( 
-%14void"ASystem.Web.UI.ScriptResourceDefinition.ScriptResourceDefinition()*1/
--
-%13&System.Web.UI.ScriptResourceDefinition†
-ù
-) )(&
-%15string"/System.Web.UI.ScriptResourceDefinition.Path.set*1/
--
-%13&System.Web.UI.ScriptResourceDefinition*
-~/Scripts/respond.min.js°
-û
-* *('
-%16string"4System.Web.UI.ScriptResourceDefinition.DebugPath.set*1/
--
-%13&System.Web.UI.ScriptResourceDefinition*
-~/Scripts/respond.jsÔ
-Ï
-% +(
-%17void"aSystem.Web.UI.ScriptResourceMapping.AddDefinition(string, System.Web.UI.ScriptResourceDefinition)*.,
-*
-%12#System.Web.UI.ScriptResourceMapping*	
-respond*1/
--
-%13&System.Web.UI.ScriptResourceDefinition*
-1*.
-1, ,("
-, ,(
-implicit return:?
-% (=3
-bundles(System.Web.Optimization.BundleCollectionB"
-Skunk.BundleConfig

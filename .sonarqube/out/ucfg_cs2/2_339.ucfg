@@ -1,59 +1,0 @@
-
-7Puma.Prey.Fox.Controllers.HuntController.Delete(string)J
-@D:\Sources\dotNetLab\puma-prey\Fox\Controllers\HuntController.cs> >("3*ã
-0@ @(6\Z
-@! @(6)
-%0#Puma.Prey.Rabbit.EF.RabbitDBContext"#Puma.Prey.Rabbit.EF.RabbitDBContext~
-|
-@% @(4
-
-%1void"5Puma.Prey.Rabbit.EF.RabbitDBContext.RabbitDBContext()*-+
-)
-%0#Puma.Prey.Rabbit.EF.RabbitDBContextq
-o
-@ @(6.
-context#Puma.Prey.Rabbit.EF.RabbitDBContext"__id*-+
-)
-%0#Puma.Prey.Rabbit.EF.RabbitDBContext*
-1*§
-1B C(4€
-~
-B B(O
-%2string"string.Format(string, object)*
-"
-string*%#!
-DELETE FROM Hunt WHERE Id = {0}*
-
-idstring1
-/
-B B(O
-qstring"__id*
-
-%2stringÈÅ
-C C( A
-%3;Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade"4Microsoft.EntityFrameworkCore.DbContext.Database.get*20
-.
-context#Puma.Prey.Rabbit.EF.RabbitDBContext2Database.get‘
-Ž
-C C(5	
-%4int"ÌMicrosoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlCommand(Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade, Microsoft.EntityFrameworkCore.RawSqlString, params object[])*FD"B
-@Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions*EC
-A
-%3;Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade*
-
-qstring*
-""*
-2*.
-2E	 E(	"
-E E(	
-implicit return*F
-3>% >(%2
-0
-> >(
-%5"__entrypoint*
-
-idstring*
-0:
-> >($
-idstringB,*
-(Puma.Prey.Fox.Controllers.HuntController

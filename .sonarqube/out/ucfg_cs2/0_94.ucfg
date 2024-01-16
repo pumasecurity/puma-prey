@@ -1,63 +1,0 @@
-
-rPuma.Prey.Common.Validation.NameAttribute.IsValid(object, System.ComponentModel.DataAnnotations.ValidationContext)V
-LD:\Sources\dotNetLab\puma-prey\Common\Validation\Attributes\NameAttribute.cs, (3"0*€
-0 (i
-g
- (
-
-%0bool""object.operator !=(object, object)*
-"
-object*
-
-valueobject*
-""*
-1
-2*D
-1 (-
-+
- ($
-isValidbool"__id*
-""*
-3
-2*œ
-3 (_¶
-³
-B (_
-%1string"GSystem.ComponentModel.DataAnnotations.ValidationContext.DisplayName.get*PN
-L
-validationContext7System.ComponentModel.DataAnnotations.ValidationContextÀ½
-/ (`
-%2string"DPuma.Prey.Common.Validation.NameAttribute.FormatErrorMessage(string)*/-+
-)Puma.Prey.Common.Validation.NameAttribute*
-
-%1string2FormatErrorMessage(string)ƒ€
- (a<
-%36System.ComponentModel.DataAnnotations.ValidationResult"6System.ComponentModel.DataAnnotations.ValidationResult¾
-»
- (.
-
-%4void"OSystem.ComponentModel.DataAnnotations.ValidationResult.ValidationResult(string)*@>
-<
-%36System.ComponentModel.DataAnnotations.ValidationResult*
-
-%2string"J
- (b>
-<
-%36System.ComponentModel.DataAnnotations.ValidationResult*±
-2 (+Õ
-Ò
- (+<
-%56System.ComponentModel.DataAnnotations.ValidationResult"__id**}8
-6System.ComponentModel.DataAnnotations.ValidationResult"A
-Success6System.ComponentModel.DataAnnotations.ValidationResult"J
- (,>
-<
-%56System.ComponentModel.DataAnnotations.ValidationResult*.
-4	 (	"
- (	
-implicit return:
-4 (@
-valueobject:X
-B (eL
-validationContext7System.ComponentModel.DataAnnotations.ValidationContextB-+
-)Puma.Prey.Common.Validation.NameAttribute

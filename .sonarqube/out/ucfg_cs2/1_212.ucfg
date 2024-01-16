@@ -1,235 +1,0 @@
-
-oPuma.Prey.Raccoon.Controllers.ManageController.AddPhoneNumber(Puma.Prey.Raccoon.Models.AddPhoneNumberViewModel)P
-FD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\ManageController.csq( q(6"6*›
-0s s(#ƒ
-€
-s s()
-%0#System.Web.Mvc.ModelStateDictionary"(System.Web.Mvc.Controller.ModelState.get*
-System.Web.Mvc.Controller~
-|
-s s(#
-
-%1bool"5System.Collections.Generic.ICollection<T>.IsValid.get*-+
-)
-%0#System.Web.Mvc.ModelStateDictionary*
-1
-2*ö
-1u u(!È
-Å
-u u("
-
-%2void"#raccoon/views/manage/addphonenumber*
-
-%3*=;
-9
-model0Puma.Prey.Raccoon.Models.AddPhoneNumberViewModel*
-
-%ViewBagDataAllobject*
-
-%ViewBagDataHtmlobject*
-
-%TempDataAllobject*
-
-%TempDataHtmlobject*" 
-
-%HttpContextItemsAllobject*#!
-
-%HttpContextItemsHtmlobject½
-º
-u u("
-
-%4void"raccoon/views/_viewstart*
-
-%5*=;
-9
-model0Puma.Prey.Raccoon.Models.AddPhoneNumberViewModel*
-
-%ViewBagDataAllobject*
-
-%ViewBagDataHtmlobject*
-
-%TempDataAllobject*
-
-%TempDataHtmlobject*" 
-
-%HttpContextItemsAllobject*#!
-
-%HttpContextItemsHtmlobjectÁ
-¾
-u u("
-
-%6void"raccoon/views/shared/_layout*
-
-%7*=;
-9
-model0Puma.Prey.Raccoon.Models.AddPhoneNumberViewModel*
-
-%ViewBagDataAllobject*
-
-%ViewBagDataHtmlobject*
-
-%TempDataAllobject*
-
-%TempDataHtmlobject*" 
-
-%HttpContextItemsAllobject*#!
-
-%HttpContextItemsHtmlobject"
-u u(#
-
-
-%6void*à
-2x y(.³
-°
-x x((.
-%8(Puma.Prey.Raccoon.ApplicationUserManager">Puma.Prey.Raccoon.Controllers.ManageController.UserManager.get*420
-.Puma.Prey.Raccoon.Controllers.ManageController}
-{
-xM x(Q*
-%9$System.Security.Principal.IPrincipal""System.Web.Mvc.Controller.User.get*
-System.Web.Mvc.Controllerª§
-xM x(Z*
-%10#System.Security.Principal.IIdentity"1System.Security.Principal.IPrincipal.Identity.get*.,
-*
-%9$System.Security.Principal.IPrincipal2Identity.getÝ
-Ú
-xM x(f
-%11string"[Microsoft.AspNet.Identity.IdentityExtensions.GetUserId(System.Security.Principal.IIdentity)*20".
-,Microsoft.AspNet.Identity.IdentityExtensions*.,
-*
-%10#System.Security.Principal.IIdentity˜
-•
-xh x(t
-%12string";Puma.Prey.Raccoon.Models.AddPhoneNumberViewModel.Number.get*=;
-9
-model0Puma.Prey.Raccoon.Models.AddPhoneNumberViewModel­ª
-x x(u+
-%13$System.Threading.Tasks.Task<TResult>"dMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.GenerateChangePhoneNumberTokenAsync(TKey, string)*20
-.
-%8(Puma.Prey.Raccoon.ApplicationUserManager*
-
-%11string*
-
-%12string21GenerateChangePhoneNumberTokenAsync(TKey, string),
-*
-x x(u
-codestring"__id*
-""´
-±
-y y(/
-%14(Puma.Prey.Raccoon.ApplicationUserManager">Puma.Prey.Raccoon.Controllers.ManageController.UserManager.get*420
-.Puma.Prey.Raccoon.Controllers.ManageController¿
-¼
-y y(&8
-%151Microsoft.AspNet.Identity.IIdentityMessageService"AMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.SmsService.get*31
-/
-%14(Puma.Prey.Raccoon.ApplicationUserManager”
-‘
-y y(.
-%16bool""object.operator !=(object, object)*
-"
-object*<:
-8
-%151Microsoft.AspNet.Identity.IIdentityMessageService*
-""*
-3
-4*º
-3	{ €(>ig
-{ (0
-%17)Microsoft.AspNet.Identity.IdentityMessage")Microsoft.AspNet.Identity.IdentityMessage
-Š
-{" {(1
-%18void";Microsoft.AspNet.Identity.IdentityMessage.IdentityMessage()*42
-0
-%17)Microsoft.AspNet.Identity.IdentityMessage˜
-•
-}" }(.
-%19string";Puma.Prey.Raccoon.Models.AddPhoneNumberViewModel.Number.get*=;
-9
-model0Puma.Prey.Raccoon.Models.AddPhoneNumberViewModel±®
-} }(.
-%20string"9Microsoft.AspNet.Identity.IdentityMessage.Destination.set*42
-0
-%17)Microsoft.AspNet.Identity.IdentityMessage*
-
-%19string2Destination.setl
-j
-~ ~(;
-%21string"__concat*'
-~ ~(4
-Your security code is: *
-~7 ~(;
-
-codestring£ 
-~ ~(;
-%22string"2Microsoft.AspNet.Identity.IdentityMessage.Body.set*42
-0
-%17)Microsoft.AspNet.Identity.IdentityMessage*
-
-%21string2Body.set~
-|
-{ (4
-message)Microsoft.AspNet.Identity.IdentityMessage"__id*42
-0
-%17)Microsoft.AspNet.Identity.IdentityMessage¶
-³
-
-€ €(!/
-%23(Puma.Prey.Raccoon.ApplicationUserManager">Puma.Prey.Raccoon.Controllers.ManageController.UserManager.get*420
-.Puma.Prey.Raccoon.Controllers.ManageControllerÁ
-¾
-
-€ €(,8
-%241Microsoft.AspNet.Identity.IIdentityMessageService"AMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.SmsService.get*31
-/
-%23(Puma.Prey.Raccoon.ApplicationUserManagerÉÆ
-
-€ €(?"
-%25System.Threading.Tasks.Task"fMicrosoft.AspNet.Identity.IIdentityMessageService.SendAsync(Microsoft.AspNet.Identity.IdentityMessage)*<:
-8
-%241Microsoft.AspNet.Identity.IIdentityMessageService*86
-4
-message)Microsoft.AspNet.Identity.IdentityMessage24SendAsync(Microsoft.AspNet.Identity.IdentityMessage)*
-4*¨
-4
-‚ ‚(Yš
-—
-
-‚M ‚(Y
-%26string";Puma.Prey.Raccoon.Models.AddPhoneNumberViewModel.Number.get*=;
-9
-model0Puma.Prey.Raccoon.Models.AddPhoneNumberViewModel¼
-¹
-
-‚ ‚(\+
-%27$System.Web.Mvc.RedirectToRouteResult":System.Web.Mvc.Controller.RedirectToAction(string, object)*
-System.Web.Mvc.Controller*
-VerifyPhoneNumber*
-""";
-
-‚ ‚(]-
-+
-%27$System.Web.Mvc.RedirectToRouteResult*2
-5
-ƒ	 ƒ(	"!
-
-ƒ ƒ(	
-implicit return*œ
-6qU q(Uz
-x
-q( q(6^
-9
-model0Puma.Prey.Raccoon.Models.AddPhoneNumberViewModel"!
-<Number>k__BackingFieldstring"__entrypointi
-g
-q( q(6M
-9
-model0Puma.Prey.Raccoon.Models.AddPhoneNumberViewModel"
-Numberstring"__entrypoint!
-
-q( q(6
-%28"__entrypoint*
-0:E
-q7 q(T9
-model0Puma.Prey.Raccoon.Models.AddPhoneNumberViewModelB20
-.Puma.Prey.Raccoon.Controllers.ManageController

@@ -1,20 +1,0 @@
-
-CPuma.Prey.Common.Cryptography.KeyManagement.KeyManager.ClearCache()X
-ND:\Sources\dotNetLab\puma-prey\Common\Cryptography\KeyManagement\KeyManager.cs (%"0*¤
-0! !($ã
-à
-! !(C
-%0=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache"__id*ˆ…*‚8
-6Puma.Prey.Common.Cryptography.KeyManagement.KeyManager"F
-cache=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache©
-¦
-! !($
-
-%1void"EPuma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache.Clear()*GE
-C
-%0=Puma.Prey.Common.Cryptography.KeyManagement.ProtectedKeyCache*
-1*.
-1"	 "(	"
-" "(	
-implicit returnB:"8
-6Puma.Prey.Common.Cryptography.KeyManagement.KeyManager

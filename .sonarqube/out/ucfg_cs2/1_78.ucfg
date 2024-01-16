@@ -1,121 +1,0 @@
-
-XPuma.Prey.Raccoon.BundleConfig.RegisterBundles(System.Web.Optimization.BundleCollection)J
-@D:\Sources\dotNetLab\puma-prey\Raccoon\App_Start\BundleConfig.cs	 	(*"0*¡
-0 (*^\
- (<*
-%0$System.Web.Optimization.ScriptBundle"$System.Web.Optimization.ScriptBundleœ
-™
- ((
-
-%1void"9System.Web.Optimization.ScriptBundle.ScriptBundle(string)*.,
-*
-%0$System.Web.Optimization.ScriptBundle*
-~/bundles/jqueryµ²
- (8$
-%2System.Web.Optimization.Bundle"_System.Web.Optimization.Bundle.Include(string, params System.Web.Optimization.IItemTransform[])*.,
-*
-%0$System.Web.Optimization.ScriptBundle*#!
-~/Scripts/jquery-{version}.js*
-""2@Include(string, params System.Web.Optimization.IItemTransform[])Ê
-Ç
- (9
-
-%3void"LSystem.Web.Optimization.BundleCollection.Add(System.Web.Optimization.Bundle)*75
-3
-bundles(System.Web.Optimization.BundleCollection*(&
-$
-%2System.Web.Optimization.Bundle^\
- (?*
-%4$System.Web.Optimization.ScriptBundle"$System.Web.Optimization.ScriptBundleŸ
-œ
- ((
-
-%5void"9System.Web.Optimization.ScriptBundle.ScriptBundle(string)*.,
-*
-%4$System.Web.Optimization.ScriptBundle*
-~/bundles/jqueryval²¯
- (5$
-%6System.Web.Optimization.Bundle"_System.Web.Optimization.Bundle.Include(string, params System.Web.Optimization.IItemTransform[])*.,
-*
-%4$System.Web.Optimization.ScriptBundle* 
-~/Scripts/jquery.validate**
-""2@Include(string, params System.Web.Optimization.IItemTransform[])Ê
-Ç
- (6
-
-%7void"LSystem.Web.Optimization.BundleCollection.Add(System.Web.Optimization.Bundle)*75
-3
-bundles(System.Web.Optimization.BundleCollection*(&
-$
-%6System.Web.Optimization.Bundle^\
- (?*
-%8$System.Web.Optimization.ScriptBundle"$System.Web.Optimization.ScriptBundleŸ
-œ
- ((
-
-%9void"9System.Web.Optimization.ScriptBundle.ScriptBundle(string)*.,
-*
-%8$System.Web.Optimization.ScriptBundle*
-~/bundles/modernizr®«
- (0%
-%10System.Web.Optimization.Bundle"_System.Web.Optimization.Bundle.Include(string, params System.Web.Optimization.IItemTransform[])*.,
-*
-%8$System.Web.Optimization.ScriptBundle*
-~/Scripts/modernizr-**
-""2@Include(string, params System.Web.Optimization.IItemTransform[])Ì
-É
- (1
-%11void"LSystem.Web.Optimization.BundleCollection.Add(System.Web.Optimization.Bundle)*75
-3
-bundles(System.Web.Optimization.BundleCollection*)'
-%
-%10System.Web.Optimization.Bundle_]
- (?+
-%12$System.Web.Optimization.ScriptBundle"$System.Web.Optimization.ScriptBundle¡
-ž
- ((
-%13void"9System.Web.Optimization.ScriptBundle.ScriptBundle(string)*/-
-+
-%12$System.Web.Optimization.ScriptBundle*
-~/bundles/bootstrapòï
- (-%
-%14System.Web.Optimization.Bundle"7System.Web.Optimization.Bundle.Include(params string[])*/-
-+
-%12$System.Web.Optimization.ScriptBundle*
-~/Scripts/bootstrap.js*
-~/Scripts/respond.js2Include(params string[])Ì
-É
- (.
-%15void"LSystem.Web.Optimization.BundleCollection.Add(System.Web.Optimization.Bundle)*75
-3
-bundles(System.Web.Optimization.BundleCollection*)'
-%
-%14System.Web.Optimization.Bundle][
- (8*
-%16#System.Web.Optimization.StyleBundle"#System.Web.Optimization.StyleBundle˜
-•
- ('
-%17void"7System.Web.Optimization.StyleBundle.StyleBundle(string)*.,
-*
-%16#System.Web.Optimization.StyleBundle*
-~/Content/cssðí
- (+%
-%18System.Web.Optimization.Bundle"7System.Web.Optimization.Bundle.Include(params string[])*.,
-*
-%16#System.Web.Optimization.StyleBundle*
-~/Content/bootstrap.css*
-~/Content/site.css2Include(params string[])Ì
-É
- (,
-%19void"LSystem.Web.Optimization.BundleCollection.Add(System.Web.Optimization.Bundle)*75
-3
-bundles(System.Web.Optimization.BundleCollection*)'
-%
-%18System.Web.Optimization.Bundle*
-1*.
-1	 (	"
- (	
-implicit return:?
-	+ 	(C3
-bundles(System.Web.Optimization.BundleCollectionB"" 
-Puma.Prey.Raccoon.BundleConfig

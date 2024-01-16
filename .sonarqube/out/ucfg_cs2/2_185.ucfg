@@ -1,91 +1,0 @@
-
-€Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions.AddParameterDescription(Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel, System.Web.Http.Description.ApiParameterDescription, Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription)`
-TD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageConfigurationExtensions.csÔ, Ô(C"0*Â
-0
-×! ß('Ÿœ
-
-×8 Ü(I
-%0CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription"CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescriptionÆ
-Ã
-
-×< ×(P
-
-%1void"ZPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription.ParameterDescription()*MK
-I
-%0CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription¤
-¡
-
-Ù Ù((
-%2string"<System.Web.Http.Description.ApiParameterDescription.Name.get*GE
-C
-apiParameter3System.Web.Http.Description.ApiParameterDescriptionÌ
-É
-
-Ù Ù((
-%3string"LPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription.Name.set*MK
-I
-%0CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription*
-
-%2string­
-ª
-
-Ú  Ú(:
-%4string"ESystem.Web.Http.Description.ApiParameterDescription.Documentation.get*GE
-C
-apiParameter3System.Web.Http.Description.ApiParameterDescriptionÕ
-Ò
-
-Ú Ú(:
-%5string"UPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription.Documentation.set*MK
-I
-%0CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription*
-
-%4stringÖ
-Ó
-
-Û Û(1E
-%6?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescription"WPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription.TypeDescription.set*MK
-I
-%0CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription*VT
-R
-typeDescription?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionÁ
-¾
-
-×! Ü([
-parameterDescriptionCPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription"__id*MK
-I
-%0CPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescriptionÑ
-Î
-
-Þ Þ("2
-%7,System.Collections.ObjectModel.Collection<T>"FPuma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel.UriParameters.get*DB
-@
-apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModelé
-æ
-
-Þ Þ(<
-
-%8void"3System.Collections.ObjectModel.Collection<T>.Add(T)*64
-2
-%7,System.Collections.ObjectModel.Collection<T>*_]
-[
-parameterDescriptionCPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription"k
-
-ß ß((]
-[
-parameterDescriptionCPuma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ParameterDescription*2
-1
-à	 à(	"!
-
-à à(	
-implicit return:N
-
-ÔD Ô(]@
-apiModel4Puma.Prey.Fox.Areas.HelpPage.Models.HelpPageApiModel:Q
-
-Õ Õ(0C
-apiParameter3System.Web.Http.Description.ApiParameterDescription:`
-
-Õ2 Õ(RR
-typeDescription?Puma.Prey.Fox.Areas.HelpPage.ModelDescriptions.ModelDescriptionB@">
-<Puma.Prey.Fox.Areas.HelpPage.HelpPageConfigurationExtensions

@@ -1,35 +1,0 @@
-
-jPuma.Prey.Fox.Areas.HelpPage.HelpPageAreaRegistration.RegisterArea(System.Web.Mvc.AreaRegistrationContext)W
-MD:\Sources\dotNetLab\puma-prey\Fox\Areas\HelpPage\HelpPageAreaRegistration.cs ()"0*¯
-0 (EÑ
-Å
-E (Z!
-%0System.Web.Mvc.UrlParameter"__id*LJ*H
-System.Web.Mvc.UrlParameter"'
-OptionalSystem.Web.Mvc.UrlParameterÏ
-È
- (]
-%1System.Web.Routing.Route"GSystem.Web.Mvc.AreaRegistrationContext.MapRoute(string, string, object)*53
-1
-context&System.Web.Mvc.AreaRegistrationContext*
-HelpPage_Default*
-Help/{action}/{apiId}*
-""ò
-ï
-$ (E'
-%2!System.Web.Http.HttpConfiguration"5System.Web.Http.GlobalConfiguration.Configuration.get*)'"%
-#System.Web.Http.GlobalConfiguration“
-œ
- (F
-
-%3void"WPuma.Prey.Fox.Areas.HelpPage.HelpPageConfig.Register(System.Web.Http.HttpConfiguration)*1/"-
-+Puma.Prey.Fox.Areas.HelpPage.HelpPageConfig*+)
-'
-%2!System.Web.Http.HttpConfiguration*
-1*.
-1	 (	"
- (	
-implicit return:=
-* (I1
-context&System.Web.Mvc.AreaRegistrationContextB97
-5Puma.Prey.Fox.Areas.HelpPage.HelpPageAreaRegistration

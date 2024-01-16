@@ -1,67 +1,0 @@
-
-<Puma.Prey.Raccoon.Controllers.ManageController.Dispose(bool)R
-FD:\Sources\dotNetLab\puma-prey\Raccoon\Controllers\ManageController.cs≈  ≈('"0*
-0
-« «(*
-1
-2*ﬂ
-1
-« «(1∑
-¥
-
-« «().
-%0(Puma.Prey.Raccoon.ApplicationUserManager"__id*pn*l0
-.Puma.Prey.Raccoon.Controllers.ManageController"8
-_userManager(Puma.Prey.Raccoon.ApplicationUserManagerã
-à
-
-« «(1
-
-%1bool""object.operator !=(object, object)*
-"
-object*20
-.
-%0(Puma.Prey.Raccoon.ApplicationUserManager*
-""*
-3
-2*Ó
-3
-…  (#∑
-¥
-
-… …(.
-%2(Puma.Prey.Raccoon.ApplicationUserManager"__id*pn*l0
-.Puma.Prey.Raccoon.Controllers.ManageController"8
-_userManager(Puma.Prey.Raccoon.ApplicationUserManagerç
-ä
-
-… …(&
-
-%3void"<Microsoft.AspNet.Identity.UserManager<TUser, TKey>.Dispose()*20
-.
-%2(Puma.Prey.Raccoon.ApplicationUserManagerç
-ä
-
-   (#l0
-.Puma.Prey.Raccoon.Controllers.ManageController"8
-_userManager(Puma.Prey.Raccoon.ApplicationUserManager"__id*
-""*
-2*™
-2
-Õ Õ("ìê
-
-Õ Õ(#
-
-%4void"'System.Web.Mvc.Controller.Dispose(bool)*420
-.Puma.Prey.Raccoon.Controllers.ManageController*
-""2Dispose(bool)*
-4*2
-4
-Œ	 Œ(	"!
-
-Œ Œ(	
-implicit return:
-
-≈( ≈(6
-	disposingboolB20
-.Puma.Prey.Raccoon.Controllers.ManageController

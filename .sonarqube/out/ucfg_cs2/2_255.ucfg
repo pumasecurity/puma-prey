@@ -1,26 +1,0 @@
-
-“Puma.Prey.Fox.Models.ApplicationUser.GenerateUserIdentityAsync(Microsoft.AspNet.Identity.UserManager<Puma.Prey.Fox.Models.ApplicationUser>, string)E
-;D:\Sources\dotNetLab\puma-prey\Fox\Models\IdentityModels.cs* (C"0*é
-0 (¿¼
-% (Z*
-%0$System.Threading.Tasks.Task<TResult>"UMicrosoft.AspNet.Identity.UserManager<TUser, TKey>.CreateIdentityAsync(TUser, string)*;9
-7
-manager,Microsoft.AspNet.Identity.UserManager<TUser>**(&
-$Puma.Prey.Fox.Models.ApplicationUser* 
-
-authenticationTypestring2"CreateIdentityAsync(TUser, string)S
-Q
- (Z5
-userIdentity%System.Security.Claims.ClaimsIdentity"__id*
-"""C
- ( 7
-5
-userIdentity%System.Security.Claims.ClaimsIdentity*.
-1	 (	"
- (	
-implicit return:C
-D (h7
-manager,Microsoft.AspNet.Identity.UserManager<TUser>:)
-	j (ƒ
-authenticationTypestringB(&
-$Puma.Prey.Fox.Models.ApplicationUser

@@ -1,94 +1,0 @@
-
-mPuma.Prey.Common.Cryptography.Encryption.EncryptRSA(byte[], System.Security.Cryptography.RSAParameters, bool)L
-@D:\Sources\dotNetLab\puma-prey\Common\Cryptography\Encryption.cs‚ ‚('"0*
-0
-›	 ›(	*
-1
-2*â
-1
-† ˆ(Tƒ€
-
-ˆ6 ˆ(T;
-%05System.Security.Cryptography.RSACryptoServiceProvider"5System.Security.Cryptography.RSACryptoServiceProvider®
-«
-
-ˆ: ˆ(R
-
-%1void"PSystem.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider()*?=
-;
-%05System.Security.Cryptography.RSACryptoServiceProvider”
-‘
-
-ˆ0 ˆ(T<
-RSA5System.Security.Cryptography.RSACryptoServiceProvider"__id*?=
-;
-%05System.Security.Cryptography.RSACryptoServiceProvider*
-3*½
-3
-‹ Ž(L
-Œ
-
-‹ ‹(4
-
-%2void"rSystem.Security.Cryptography.RSACryptoServiceProvider.ImportParameters(System.Security.Cryptography.RSAParameters)*@>
-<
-RSA5System.Security.Cryptography.RSACryptoServiceProvider*<:
-8
-
-RSAKeyInfo*System.Security.Cryptography.RSAParametersÓ
-Ð
-
-Ž$ Ž(M
-%3byte[]"KSystem.Security.Cryptography.RSACryptoServiceProvider.Encrypt(byte[], bool)*@>
-<
-RSA5System.Security.Cryptography.RSACryptoServiceProvider*
-
-DataToEncryptbyte[]*
-""?
-=
-
-Ž Ž(M
-encryptedDatabyte[]"__id*
-
-%3byte[]*
-4*8
-4
- ($"'
-
- (%
-
-encryptedDatabyte[]*”
-2
-– ˜(†ƒ
-
-–" –(+
-%4string"System.Exception.Message.get*<:
-8
-e3System.Security.Cryptography.CryptographicException2Message.getd
-b
-
-– –(,
-
-%5void" System.Console.WriteLine(string)*"
-System.Console*
-
-%4string"
-
-˜ ˜(
-""*2
-5
-›	 ›(	"!
-
-› ›(	
-implicit return:%
-
-‚( ‚(<
-DataToEncryptbyte[]:F
-
-‚> ‚(V8
-
-RSAKeyInfo*System.Security.Cryptography.RSAParameters:#
-
-‚X ‚(j
-DoOAEPPaddingboolB,"*
-(Puma.Prey.Common.Cryptography.Encryption
