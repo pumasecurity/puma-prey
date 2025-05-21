@@ -29,9 +29,9 @@ pipeline {
     stage('Test') {
       steps {
         powershell """
-          pumascan scan -p ${env.SOLUTION} -s ./.pumafile -o ./pumascan -f msbuild,json,html
+          pumascan scan -p ${env.SOLUTION} -s ./.pumafile -o ./pumascan -f sarif,json,html
         """
-        recordIssues(tools: [msBuild(pattern: 'pumascan.msbuild')])
+        recordIssues(tools: [sarif(pattern: 'pumascan.sarif')])
         archiveArtifacts "pumascan*"
       }
     }
