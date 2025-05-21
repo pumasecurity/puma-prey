@@ -1,15 +1,12 @@
 {
-  "Version": "1.4.3",
-  "LogLevel": "Error",
+  "Version": "1.4.5",
+  "LogLevel": "Info",
   "GeneralSettings": {
     "DataflowAnalysisEnabled": true,
-    "DataflowAnalysisEngineVersion": "1.0",
+    "DataflowAnalysisEngineVersion": "2.0",
     "DataflowAnalysisReportIndeterminates": false,
     "DataflowAnalysisNodeMaxDepth": 9,
     "ProductionConfigurationTransform": "Release"
-  },
-  "ExperimentalSettings": {
-    "EnableJavascriptRules": true
   },
   "RuleOptions": [
     {
@@ -287,7 +284,7 @@
     },
     {
       "Id": "SEC0039",
-      "Name": "Open Source Security",
+      "Name": "Vulnerable Package Reference",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
@@ -513,6 +510,48 @@
         "^[Ii][Vv]$",
         "^[Pp][Aa][Ss][Ss][Ww][Oo][Rr][Dd]$"
       ]
+    },
+    {
+      "Id": "SEC1000",
+      "Name": "JavaScript Injection: Unsafe Eval",
+      "RiskRating": "High",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC1001",
+      "Name": "JavaScript Injection: setTimeout",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC1002",
+      "Name": "JavaScript Injection: setInterval",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC1003",
+      "Name": "JavaScript: Raw Write InnerHtml",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC1004",
+      "Name": "React: Dangerously Set Inner HTML",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
+    },
+    {
+      "Id": "SEC1005",
+      "Name": "Angular: Bypass Security Trust",
+      "RiskRating": "Medium",
+      "Severity": "Warning",
+      "Enabled": true
     }
   ],
   "Exceptions": [
@@ -529,6 +568,48 @@
       "ApprovedBy": "Eric Johnson",
       "Reason": "Sensitive data is not stored in the ViewState object.",
       "Timestamp": "2018-10-25T22:27:58.6444584Z"
+    },
+    {
+      "RuleIds": [
+        "SEC0025"
+      ],
+      "Path": "C:\\Users\\ejohnson\\source\\puma\\puma-prey\\Common\\Cryptography\\Encryption.cs",
+      "StartLine": "48",
+      "EndLine": "48",
+      "Pattern": "",
+      "Expires": null,
+      "Checksum": "",
+      "ApprovedBy": "DESKTOP-DIRDB2S\\ejohnson",
+      "Reason": "",
+      "Timestamp": "2022-02-03T21:40:00.76985+00:00"
+    },
+    {
+      "RuleIds": [
+        "SEC0019"
+      ],
+      "Path": "C:\\Users\\ejohnson\\source\\puma\\puma-prey\\Raccoon\\Controllers\\HuntController.cs",
+      "StartLine": "49",
+      "EndLine": "49",
+      "Pattern": "",
+      "Expires": null,
+      "Checksum": "",
+      "ApprovedBy": "DESKTOP-DIRDB2S\\ejohnson",
+      "Reason": "",
+      "Timestamp": "2022-02-03T21:44:49.9664348+00:00"
+    },
+    {
+      "RuleIds": [
+        "SEC0039"
+      ],
+      "Path": "C:\\Users\\ejohnson\\source\\puma\\puma-prey\\Skunk\\packages.config",
+      "StartLine": "8",
+      "EndLine": "8",
+      "Pattern": "",
+      "Expires": null,
+      "Checksum": "",
+      "ApprovedBy": "DESKTOP-DIRDB2S\\ejohnson",
+      "Reason": "",
+      "Timestamp": "2022-02-03T21:47:10.776086+00:00"
     }
   ],
   "CustomTaintedSources": [

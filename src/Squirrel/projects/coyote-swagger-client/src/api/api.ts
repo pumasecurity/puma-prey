@@ -1,0 +1,11 @@
+export * from './animal.service';
+import { AnimalService } from './animal.service';
+export * from './safaris.service';
+import { SafarisService } from './safaris.service';
+export * from './token.service';
+import { TokenService } from './token.service';
+export * from './user.service';
+import { UserService } from './user.service';
+export * from './weatherForecast.service';
+import { WeatherForecastService } from './weatherForecast.service';
+export const APIS = [AnimalService, SafarisService, TokenService, UserService, WeatherForecastService];

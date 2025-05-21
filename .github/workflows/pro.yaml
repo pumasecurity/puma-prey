@@ -1,0 +1,57 @@
+name: Puma Scan Professional
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: read # read gh actions
+  contents: read # read access to the repo
+  security-events: write # write access to advanced security
+
+env:
+  SOLUTION: "./PumaPrey.sln"
+  CONFIGURATION: "Release"
+
+jobs:
+  build:
+    name: Build Puma Prey
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Initialization
+        shell: powershell
+        run: |
+          # Check MSBuild version
+          $MSBuildPath = & "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe" -latest -requires Microsoft.Component.MSBuild -find "MSBuild\**\Bin\MSBuild.exe" | Select-Object -first 1
+          $MSBuildVersion = & $MSBuildPath -Version
+          Write-Host "MSBuild version: "
+          Write-Host "$MSBuildVersion"
+          # Check nuget version
+          Write-Host "Nuget version: "
+          nuget help
+          # Check puma scan pro version
+          New-Item ./tools -Type Directory
+          [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+          $ProgressPreference = 'SilentlyContinue'
+          Invoke-WebRequest "${{ secrets.PUMA_SCAN_INSTALLER_PACKAGE }}" -OutFile "./tools/puma-scan-server-edition.zip"
+          Expand-Archive -Path ./tools/puma-scan-server-edition.zip -DestinationPath ./tools/pumascan -Force
+          ./tools/pumascan/PumaScan.exe --version
+      - name: Build
+        shell: powershell
+        run: |
+          $MSBuildPath = & "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe" -latest -requires Microsoft.Component.MSBuild -find "MSBuild\**\Bin\MSBuild.exe" | Select-Object -first 1  
+          nuget restore ${{ env.SOLUTION }}
+          & $MSBuildPath ${{ env.SOLUTION }} /p:Configuration=${{ env.CONFIGURATION }}
+      - name: Run Puma Scan
+        shell: powershell
+        run: |
+          ./tools/pumascan/PumaScan.exe scan -p "${{ env.SOLUTION }}" -s "./.pumafile" -o "./pumascan/results" -f "sarif,json,html" --license ${{ secrets.PUMA_SCAN_LICENSE }}
+      - name: Publish Puma Scan Results
+        uses: actions/upload-artifact@v2
+        with:
+          name: PumaScan
+          path: ./pumascan/
+      - name: Publish SARIF Results
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: ./pumascan/results.sarif

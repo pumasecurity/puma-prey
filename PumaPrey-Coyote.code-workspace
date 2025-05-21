@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "src/Coyote"
+		},
+		{
+			"path": "test/Coyote.Tests"
+		},
+		{
+			"path": "src/Rabbit"
+		}
+	]
+}

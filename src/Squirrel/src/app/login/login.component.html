@@ -1,0 +1,38 @@
+<div class="form-signin">
+    <h1>Sign In</h1>
+    <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="email" class="form-control" id="username"
+               required
+               [(ngModel)]="model.username" name="username"
+               #username="ngModel">
+        <div *ngIf="username.invalid && (username.dirty || username.touched)"
+             class="alert">
+
+          <div *ngIf="username.errors?.['required']">
+            Username is required.
+          </div>
+          <div *ngIf="username.errors?.['email']">
+            Username must be an email.
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password"
+               required
+               [(ngModel)]="model.password" name="password"
+               #password="ngModel">
+        <div *ngIf="password.invalid && (password.dirty || password.touched)"
+             class="alert">
+
+          <div *ngIf="password.errors?.['required']">
+            Password is required.
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-success" [disabled]="!loginForm.form.valid">Sign In</button>
+    </form>
+  
+</div>

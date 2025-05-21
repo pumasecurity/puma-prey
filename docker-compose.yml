@@ -1,0 +1,29 @@
+version: '3.4'
+
+volumes:
+  datafiles:
+
+services:
+  database:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    volumes: 
+      - datafiles:/var/lib/mysql
+      #- ./sql-scripts/setup.sql:/docker-entrypoint-initdb.d/01.sql
+    environment: 
+      MYSQL_RANDOM_ROOT_PASSWORD: 1
+      MYSQL_USER: pumauser
+      MYSQL_PASSWORD: PumaPrey123!
+      MYSQL_DATABASE: pumaprey
+    restart: always   
+
+  coyote:
+    depends_on:
+      - databases
+    image: ${DOCKER_REGISTRY-}coyote
+    ports:
+      - "80:80"
+    build:
+      context: .
+      dockerfile: Coyote/Dockerfile           
