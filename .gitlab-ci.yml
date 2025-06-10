@@ -1,0 +1,9 @@
+include:
+  - ".gitlab/pipelines/common.yml"
+  - ".gitlab/pipelines/merge_request.yml"
+
+stages:
+  - initialize
+  - test
+  - build
+  - deploy

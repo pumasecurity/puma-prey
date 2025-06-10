@@ -1,0 +1,13 @@
+puma:
+  stage: test
+  extends: .puma
+  variables:
+    RESULTS_DIR: ./ci-tests
+    RESULTS: pumascan
+  script:
+    - dotnet restore ./src/Coyote/Coyote.csproj
+    - pumascan scan --projects ./src/Coyote/Coyote.csproj --format json,html,sarif --output $RESULTS_DIR/$RESULTS --settings ./.pumafile
+  artifacts:
+    when: always
+    paths:
+      - $RESULTS_DIR/*
