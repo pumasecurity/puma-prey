@@ -1,6 +1,6 @@
 include:
   - ".gitlab/pipelines/common.yml"
-  - ".gitlab/pipelines/merge_request.yml"
+  - ".gitlab/pipelines/mr.yml"
 
 stages:
   - initialize
