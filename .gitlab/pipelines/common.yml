@@ -2,6 +2,3 @@
   image: ghcr.io/pumasecurity/puma-scan-pro:1.6.2-net8-linux-x64
   rules:
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-  id_tokens:
-    PUMA_AUTH_TOKEN:
-      aud: "https://portal.pumascan.com"
