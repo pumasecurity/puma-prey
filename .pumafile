@@ -1,5 +1,5 @@
 {
-  "Version": "1.4.5",
+  "Version": "1.6.0",
   "LogLevel": "Info",
   "GeneralSettings": {
     "DataflowAnalysisEnabled": true,
@@ -354,7 +354,7 @@
     },
     {
       "Id": "SEC0110",
-      "Name": "Unvalidated Web Forms Redirect",
+      "Name": "Unvalidated Redirect",
       "RiskRating": "High",
       "Severity": "Warning",
       "Enabled": true
@@ -581,7 +581,7 @@
       "Checksum": "",
       "ApprovedBy": "DESKTOP-DIRDB2S\\ejohnson",
       "Reason": "",
-      "Timestamp": "2022-02-03T21:40:00.76985+00:00"
+      "Timestamp": "2022-02-03T15:40:00.76985-06:00"
     },
     {
       "RuleIds": [
@@ -595,7 +595,7 @@
       "Checksum": "",
       "ApprovedBy": "DESKTOP-DIRDB2S\\ejohnson",
       "Reason": "",
-      "Timestamp": "2022-02-03T21:44:49.9664348+00:00"
+      "Timestamp": "2022-02-03T15:44:49.9664348-06:00"
     },
     {
       "RuleIds": [
@@ -609,7 +609,7 @@
       "Checksum": "",
       "ApprovedBy": "DESKTOP-DIRDB2S\\ejohnson",
       "Reason": "",
-      "Timestamp": "2022-02-03T21:47:10.776086+00:00"
+      "Timestamp": "2022-02-03T15:47:10.776086-06:00"
     }
   ],
   "CustomTaintedSources": [
