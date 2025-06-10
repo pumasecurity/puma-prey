@@ -5,6 +5,3 @@
   id_tokens:
     PUMA_AUTH_TOKEN:
       aud: "https://portal.pumascan.com"
-default:
-  before_script:
-    - export PUMA_LICENSE=$(base64 -d <<< $PUMA_LICENSE_ENCODED)

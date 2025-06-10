@@ -6,7 +6,7 @@ puma:
     RESULTS: pumascan
   script:
     - dotnet restore ./src/Coyote/Coyote.csproj
-    - pumascan scan --projects ./src/Coyote/Coyote.csproj --format json,html,sarif --output $RESULTS_DIR/$RESULTS --settings ./.pumafile
+    - pumascan scan --projects ./src/Coyote/Coyote.csproj --license $(base64 -d <<< $PUMA_LICENSE_ENCODED) --format json,html,sarif --output $RESULTS_DIR/$RESULTS --settings ./.pumafile
   artifacts:
     when: always
     paths:
