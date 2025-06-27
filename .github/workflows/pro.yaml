@@ -25,7 +25,7 @@ jobs:
           output-formats: "json,html,sarif"
           output-file: "./security-analysis/puma-scan"
           settings-paths: "./.pumafile"
-          threshold-high: "2"
+          threshold-high: "0"
 
       - name: Publish Puma Scan Results
         uses: actions/upload-artifact@v4
