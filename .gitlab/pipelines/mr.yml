@@ -1,5 +1,5 @@
 include:
-  - component: $CI_SERVER_FQDN/$CI_PROJECT_PATH/puma-scan-pro@$CI_COMMIT_SHA
+  - component: $CI_SERVER_FQDN/$CI_PROJECT_PATH/puma-scan-pro@1.6.2
     inputs:
       mr-pipeline-enabled: false
       default-pipeline-enabled: true
