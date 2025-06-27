@@ -1,5 +1,4 @@
 include:
-  - ".gitlab/pipelines/common.yml"
   - ".gitlab/pipelines/mr.yml"
 
 stages:

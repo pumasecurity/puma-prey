@@ -1,17 +1,11 @@
-puma:
-  stage: test
-  extends: .puma
-  id_tokens:
-    PUMA_AUTH_TOKEN:
-      aud: "https://portal.pumascan.com"
-  variables:
-    RESULTS_DIR: ./ci-tests
-    RESULTS: pumascan
-  script:
-    - dotnet restore ./src/Coyote/Coyote.csproj # Restore project dependencies
-    - export PUMA_LICENSE=$(base64 -d <<< $PUMA_LICENSE_ENCODED) # Decode the base64 encoded license variable
-    - pumascan scan --projects ./src/Coyote/Coyote.csproj --format json,html,sarif --output $RESULTS_DIR/$RESULTS --settings ./.pumafile
-  artifacts:
-    when: always
-    paths:
-      - $RESULTS_DIR/*
+include:
+  - component: $CI_SERVER_FQDN/$CI_PROJECT_PATH/puma-scan-pro@$CI_COMMIT_SHA
+    inputs:
+      mr-pipeline-enabled: false
+      default-pipeline-enabled: true
+      license-encoded: $PUMA_LICENSE_ENCODED
+      stage: test
+      project-paths: "./src/Coyote/Coyote.csproj"
+      output-formats: "json,html,sarif,msbuild"
+      output-file: "./ci-tests/pumascan"
+      settings-paths: "./.pumafile"
