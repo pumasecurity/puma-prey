@@ -1,5 +1,5 @@
 include:
-  - component: $gitlab.com/pumasecurity/ci-components/puma-scan-pro@1.6.2
+  - component: gitlab.com/pumasecurity/ci-components/puma-scan-pro@1.6.2
     inputs:
       mr-pipeline-enabled: false
       default-pipeline-enabled: true
