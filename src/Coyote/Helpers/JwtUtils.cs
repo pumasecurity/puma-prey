@@ -83,9 +83,8 @@ namespace Coyote.Helpers
         public RefreshToken GenerateRefreshToken(string ipAddress)
         {
             // generate token that is valid for 7 days
-            using var rngCryptoServiceProvider = new RNGCryptoServiceProvider();
             var randomBytes = new byte[64];
-            rngCryptoServiceProvider.GetBytes(randomBytes);
+            RandomNumberGenerator.Fill(randomBytes);
             var refreshToken = new RefreshToken
             {
                 Token = Convert.ToBase64String(randomBytes),

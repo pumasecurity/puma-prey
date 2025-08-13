@@ -5,6 +5,7 @@ using Coyote.Services.Interface;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +19,7 @@ using Puma.Prey.Rabbit.Models;
 using System;
 using System.Globalization;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Coyote
@@ -82,7 +84,7 @@ namespace Coyote
                     {
                         if (context.Exception.GetType() == typeof(SecurityTokenExpiredException))
                         {
-                            context.Response.Headers.Add("IS-TOKEN-EXPIRED", "true");
+                            context.Response.Headers.Append("IS-TOKEN-EXPIRED", "true");
                         }
                         return Task.CompletedTask;
                     }
@@ -95,7 +97,7 @@ namespace Coyote
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IAnimalService, AnimalService>();
 
-            services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.IgnoreNullValues = true);
+            services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull);
 
             // configure strongly typed settings object
             services.Configure<JWTOptions>(Configuration.GetSection("JWT"));
