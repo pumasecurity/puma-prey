@@ -1,0 +1,96 @@
+name: dotnet test
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  id-token: write # write jwt token
+  actions: read # read gh actions
+  contents: read # read access to the repo
+  security-events: write # write access to advanced security
+  checks: write
+  pull-requests: write
+
+jobs:
+  run:
+    name: run
+    runs-on: ubuntu-latest
+    env:
+      TEST_DIRECTORY: "${{ github.workspace }}/test/Coyote.Tests"
+      TEST_FILE: "dotnet-test.trx"
+    steps:
+      - uses: actions/checkout@v4.1.1
+
+      - name: setup .NET 8.x
+        uses: actions/setup-dotnet@v4.0.0
+        with:
+          dotnet-version: 8.x
+
+      - name: dotnet test
+        id: dotnet-test
+        shell: bash
+        run: |
+          /bin/bash ./build/dotnet-test.sh ${{ env.TEST_DIRECTORY }} ${{ env.TEST_FILE }}
+
+      - name: publish
+        id: tests
+        uses: dorny/test-reporter@v1.8.0
+        with:
+          name: "dotnet"
+          path: "${{ env.TEST_DIRECTORY }}/TestResults/${{ env.TEST_FILE }}"
+          reporter: "dotnet-trx"
+          fail-on-error: false
+          fail-on-empty: false
+
+      - name: archive
+        uses: actions/upload-artifact@v4.3.1
+        with:
+          name: dotnet-test
+          path: "${{ env.TEST_DIRECTORY }}/TestResults/${{ env.TEST_FILE }}"
+
+    outputs:
+      conclusion: ${{ steps.tests.outputs.conclusion }}
+      passed: ${{ steps.tests.outputs.passed }}
+      failed: ${{ steps.tests.outputs.failed }}
+      url: ${{ steps.tests.outputs.url_html }}
+      reaction: ${{ steps.tests.outputs.failed > 0 && 'eyes' || 'rocket' }}
+
+  check:
+    name: dotnet test
+    runs-on: ubuntu-latest
+    if: ${{ always() }}
+    needs: [run]
+    steps:
+      - run: |
+          echo "dotnet test status: ${{ needs.run.outputs.conclusion }}"
+          exit ${{ needs.run.outputs.failed }}
+
+  comment:
+    runs-on: ubuntu-latest
+    name: comment
+    needs: [run]
+    steps:
+      - name: find comment
+        uses: peter-evans/find-comment@v3.0.0
+        id: find-comment
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: "github-actions[bot]"
+          body-includes: dotnet test results
+      - name: set comment
+        uses: peter-evans/create-or-update-comment@v3.0.0
+        id: create-replace-comment
+        with:
+          comment-id: ${{ steps.find-comment.outputs.comment-id }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ## dotnet test results
+            | Status | Pass | Fail | 
+            |--------- | ----- |----|
+            | ${{ needs.run.outputs.conclusion }}| :white_check_mark: ${{ needs.run.outputs.passed }} | :x: ${{ needs.run.outputs.failed }} |
+
+            [View Test Results](${{ needs.run.outputs.url }})
+          reactions: ${{ needs.run.outputs.reaction }}
+          edit-mode: replace
