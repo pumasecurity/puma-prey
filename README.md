@@ -1,8 +1,8 @@
 # Puma Prey
 
-Puma Prey contains vulnerable .NET applications, which provide a target for secure coding challenges, CTFs, and testing the Puma Scan analyzers.
+Puma Prey contains vulnerable .NET applications, which provide a target for running secure coding challenges, CTFs, and testing the Puma Scan analyzers.
 
-This project contains Web Forms, MVC5, and Core web applications that communicate with web services and data layer applications.
+Several CI pipeline examples are also included to show how to run Puma Scan in automated workflows.
 
 ## Projects
 

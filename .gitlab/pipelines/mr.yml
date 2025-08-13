@@ -1,0 +1,9 @@
+include:
+  - component: gitlab.com/pumasecurity/ci-components/puma-scan-pro@1.6.2
+    inputs:
+      license-encoded: $PUMA_LICENSE_ENCODED
+      stage: test
+      project-paths: "./src/Coyote/Coyote.csproj"
+      output-formats: "json,html,sarif,msbuild"
+      output-file: "./ci-tests/pumascan"
+      settings-paths: "./.pumafile"

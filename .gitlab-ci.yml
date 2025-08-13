@@ -1,0 +1,8 @@
+include:
+  - ".gitlab/pipelines/mr.yml"
+
+stages:
+  - initialize
+  - test
+  - build
+  - deploy
