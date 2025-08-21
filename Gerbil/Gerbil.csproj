@@ -6,4 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+	<PropertyGroup>
+		<UseAppHost>false</UseAppHost>
+	</PropertyGroup>
 </Project>
