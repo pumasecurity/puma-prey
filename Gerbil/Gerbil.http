@@ -1,0 +1,6 @@
+@Gerbil_HostAddress = http://localhost:5087
+
+GET {{Gerbil_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
