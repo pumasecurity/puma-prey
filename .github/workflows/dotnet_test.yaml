@@ -6,10 +6,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  id-token: write # write jwt token
-  actions: read # read gh actions
-  contents: read # read access to the repo
-  security-events: write # write access to advanced security
+  actions: read
+  contents: read
   checks: write
   pull-requests: write
 
@@ -21,12 +19,14 @@ jobs:
       TEST_DIRECTORY: "${{ github.workspace }}/test/Coyote.Tests"
       TEST_FILE: "dotnet-test.trx"
     steps:
-      - uses: actions/checkout@v4.1.1
-
-      - name: setup .NET 8.x
-        uses: actions/setup-dotnet@v4.0.0
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
-          dotnet-version: 8.x
+          persist-credentials: false
+
+      - name: setup .NET 10.x
+        uses: actions/setup-dotnet@baa11fbfe1d6520db94683bd5c7a3818018e4309 # v5.1.0
+        with:
+          dotnet-version: 10.x
 
       - name: dotnet test
         id: dotnet-test
@@ -36,7 +36,7 @@ jobs:
 
       - name: publish
         id: tests
-        uses: dorny/test-reporter@v1.8.0
+        uses: dorny/test-reporter@a6ddd83ac95ff4586f5d3aceeb314d9a1841db95 # v3.0.0
         with:
           name: "dotnet"
           path: "${{ env.TEST_DIRECTORY }}/TestResults/${{ env.TEST_FILE }}"
@@ -44,11 +44,32 @@ jobs:
           fail-on-error: false
           fail-on-empty: false
 
+      - name: coverage report
+        uses: danielpalme/ReportGenerator-GitHub-Action@cf6fe1b38ed5becc89ffe056c1f240825993be5b # v5.5.4
+        with:
+          reports: "${{ env.TEST_DIRECTORY }}/TestResults/*/coverage.cobertura.xml"
+          targetdir: "${{ env.TEST_DIRECTORY }}/TestResults/coverage"
+          reporttypes: "MarkdownSummaryGithub"
+
+      - name: coverage summary
+        run: cat "${{ env.TEST_DIRECTORY }}/TestResults/coverage/SummaryGithub.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: save coverage markdown
+        id: coverage
+        run: |
+          {
+            echo 'markdown<<COVERAGE_EOF'
+            cat "${{ env.TEST_DIRECTORY }}/TestResults/coverage/SummaryGithub.md"
+            echo 'COVERAGE_EOF'
+          } >> "$GITHUB_OUTPUT"
+
       - name: archive
-        uses: actions/upload-artifact@v4.3.1
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: dotnet-test
-          path: "${{ env.TEST_DIRECTORY }}/TestResults/${{ env.TEST_FILE }}"
+          path: |
+            ${{ env.TEST_DIRECTORY }}/TestResults/${{ env.TEST_FILE }}
+            ${{ env.TEST_DIRECTORY }}/TestResults/*/coverage.cobertura.xml
 
     outputs:
       conclusion: ${{ steps.tests.outputs.conclusion }}
@@ -56,6 +77,7 @@ jobs:
       failed: ${{ steps.tests.outputs.failed }}
       url: ${{ steps.tests.outputs.url_html }}
       reaction: ${{ steps.tests.outputs.failed > 0 && 'eyes' || 'rocket' }}
+      coverage: ${{ steps.coverage.outputs.markdown }}
 
   check:
     name: dotnet test
@@ -65,32 +87,44 @@ jobs:
     steps:
       - run: |
           echo "dotnet test status: ${{ needs.run.outputs.conclusion }}"
-          exit ${{ needs.run.outputs.failed }}
+          failed="${{ needs.run.outputs.failed }}"
+          if [ "${failed:-0}" -gt 0 ] 2>/dev/null; then
+            echo "::error::${failed} test(s) failed"
+            exit 1
+          fi
 
   comment:
     runs-on: ubuntu-latest
     name: comment
+    if: ${{ github.event_name == 'pull_request' }}
     needs: [run]
     steps:
       - name: find comment
-        uses: peter-evans/find-comment@v3.0.0
+        uses: peter-evans/find-comment@b30e6a3c0ed37e7c023ccd3f1db5c6c0b0c23aad # v4.0.0
         id: find-comment
         with:
           issue-number: ${{ github.event.pull_request.number }}
           comment-author: "github-actions[bot]"
           body-includes: dotnet test results
       - name: set comment
-        uses: peter-evans/create-or-update-comment@v3.0.0
+        uses: peter-evans/create-or-update-comment@e8674b075228eee787fea43ef493e45ece1004c9 # v5.0.0
         id: create-replace-comment
         with:
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
           issue-number: ${{ github.event.pull_request.number }}
           body: |
             ## dotnet test results
-            | Status | Pass | Fail | 
+            | Status | Pass | Fail |
             |--------- | ----- |----|
             | ${{ needs.run.outputs.conclusion }}| :white_check_mark: ${{ needs.run.outputs.passed }} | :x: ${{ needs.run.outputs.failed }} |
 
             [View Test Results](${{ needs.run.outputs.url }})
+
+            <details>
+            <summary>Code Coverage</summary>
+
+            ${{ needs.run.outputs.coverage }}
+
+            </details>
           reactions: ${{ needs.run.outputs.reaction }}
           edit-mode: replace
