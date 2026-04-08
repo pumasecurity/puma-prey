@@ -26,8 +26,11 @@ namespace Coyote
                 try
                 {
                     var context = services.GetRequiredService<RabbitDBContext>();
-                    if (context.Database.GetPendingMigrations().Any())
-                        context.Database.Migrate();
+                    if (!context.Database.IsInMemory())
+                    {
+                        if (context.Database.GetPendingMigrations().Any())
+                            context.Database.Migrate();
+                    }
                     context.Seed(services);
                     // TODO: add out of band hook
                     //context.Database.ExecuteSqlRaw()
@@ -47,13 +50,21 @@ namespace Coyote
             var host = Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>()
-                    .ConfigureKestrel(kestrelOptions =>
+                    webBuilder.UseStartup<Startup>();
+                    if (string.IsNullOrEmpty(
+                        Environment.GetEnvironmentVariable(
+                            "ASPNETCORE_URLS")))
                     {
-                        kestrelOptions.Listen(IPAddress.Any, 8443,
-                         listenOptions => { listenOptions.UseHttps(); });
-                    })
-                    .UseUrls("https://*:8443");
+                        webBuilder.ConfigureKestrel(kestrelOptions =>
+                        {
+                            kestrelOptions.Listen(IPAddress.Any, 8443,
+                             listenOptions =>
+                             {
+                                 listenOptions.UseHttps();
+                             });
+                        })
+                        .UseUrls("https://*:8443");
+                    }
                 });
 
             return host;
