@@ -37,5 +37,10 @@ namespace Coyote.Tests.Core.Functional
             var response = await httpClient.PostAsJsonAsync($"{baseEndpoint}", request);
             return response;
         }
+
+        public static Task<HttpResponseMessage> GetUserByMemberIdRaw(this HttpClient httpClient, int memberId)
+        {
+            return httpClient.GetAsync($"{baseEndpoint}/{memberId}");
+        }
     }
 }

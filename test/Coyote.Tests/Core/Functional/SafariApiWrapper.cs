@@ -37,5 +37,20 @@ namespace Coyote.Tests.Core.Functional
 
             return safaris;
         }
+
+        public static Task<HttpResponseMessage> GetSafariRaw(this HttpClient httpClient, int id)
+        {
+            return httpClient.GetAsync($"{baseEndpoint}/{id}");
+        }
+
+        public static Task<HttpResponseMessage> DeleteSafari(this HttpClient httpClient, int id)
+        {
+            return httpClient.DeleteAsync($"{baseEndpoint}/{id}");
+        }
+
+        public static Task<HttpResponseMessage> PostSafari(this HttpClient httpClient, SafariRequest request)
+        {
+            return httpClient.PostAsJsonAsync(baseEndpoint, request);
+        }
     }
 }

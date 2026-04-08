@@ -21,5 +21,10 @@ namespace Coyote.Tests.Core.Functional
             var response = await httpClient.PostAsJsonAsync($"{baseEndpoint}", request);
             return response;
         }
+
+        public static Task<HttpResponseMessage> GetAnimal(this HttpClient httpClient, int id)
+        {
+            return httpClient.GetAsync($"{baseEndpoint}/{id}");
+        }
     }
 }
