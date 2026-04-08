@@ -2,8 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpResponse } from '@angular/common/http';
 import { TokenService, AuthenticateRequest, Configuration } from 'projects/coyote-swagger-client/src';
-import { map } from 'rxjs/operators';
-import { isNull } from '@angular/compiler/src/output/output_ast';
+import { map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
