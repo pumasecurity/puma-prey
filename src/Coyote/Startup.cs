@@ -13,10 +13,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
 using Puma.Prey.Rabbit.Context;
 using Puma.Prey.Rabbit.Models;
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 using System.Text.Json.Serialization;
@@ -43,7 +44,7 @@ namespace Coyote
                     options.UseInMemoryDatabase(databaseName: $"InMemoryDb-{Guid.NewGuid()}"), ServiceLifetime.Singleton, ServiceLifetime.Singleton);  //TODO valid scoping
             else
                 services.AddDbContext<RabbitDBContext>(options =>
-                    options.UseMySql(Configuration.GetConnectionString("DefaultConnection"), ServerVersion.AutoDetect(Configuration.GetConnectionString("DefaultConnection"))));
+                    options.UseMySQL(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentityCore<PumaUser>(options =>
             {
@@ -114,18 +115,11 @@ namespace Coyote
                     In = ParameterLocation.Header,
                     Description = "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer 12345abcdef\"",
                 });
-                swagger.AddSecurityRequirement(new OpenApiSecurityRequirement
+                swagger.AddSecurityRequirement(doc => new OpenApiSecurityRequirement
                 {
                     {
-                          new OpenApiSecurityScheme
-                            {
-                                Reference = new OpenApiReference
-                                {
-                                    Type = ReferenceType.SecurityScheme,
-                                    Id = "Bearer"
-                                }
-                            },
-                            new string[] {}
+                          new OpenApiSecuritySchemeReference("Bearer", doc),
+                          new List<string>()
                     }
                 });
             });
