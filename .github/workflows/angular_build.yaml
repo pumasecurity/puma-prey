@@ -35,3 +35,6 @@ jobs:
 
       - name: ng build
         run: npx ng build
+
+      - name: ng test
+        run: npx ng test Squirrel --watch=false --browsers=ChromeHeadless

@@ -128,7 +128,6 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/coyote-swagger-client/src/test.ts",
             "tsConfig": "projects/coyote-swagger-client/tsconfig.spec.json",
             "karmaConfig": "projects/coyote-swagger-client/karma.conf.js"
           }
