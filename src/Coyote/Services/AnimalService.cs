@@ -22,6 +22,7 @@ namespace Coyote.Services
             var animals = new Animal()
             {
                 SafariId = safariId,
+                Name = animalName,
                 Species = species,
                 Weight = weight,
                 Color = color,

@@ -34,6 +34,14 @@ steps:
     outputFilename: '/PumaResults/pumaprey'
     verboseMode: false
 
+- task: PumaSecurity.PumaScanProfessional-AzureDevOps-Dev.puma-scan-pro-build-task-dev.puma-scan-pro-build-task-dev@1
+  displayName: 'Puma Scan Professional - DEV'
+  inputs:
+    projectPath: 'PumaPrey.sln'
+    settingsFilename: '.pumafile'
+    scanResultsFormat: 'html,json,sarif'
+    outputFilename: '/PumaResults/pumaprey-dev'
+    verboseMode: false
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: PumaScan SARIF to CodeAnalysisLogs'

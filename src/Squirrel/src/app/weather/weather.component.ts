@@ -4,6 +4,7 @@ import { Configuration, WeatherForecast, WeatherForecastService } from 'projects
 import { AuthenticationService } from '../_services/auth.service';
 
 @Component({
+  standalone: false,
   selector: 'app-weather',
   templateUrl: './weather.component.html',
   styleUrls: ['./weather.component.css']
