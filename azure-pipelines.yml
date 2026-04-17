@@ -49,24 +49,6 @@ steps:
     PathtoPublish: '/PumaResults/pumaprey.sarif'
     ArtifactName: CodeAnalysisLogs
 
-- task: dependency-check-build-task@5
-  displayName: 'Dependency Check Analysis'
-  inputs:
-    projectName: '$(repositoryname)'
-    scanPath: '$(Build.StagingDirectory)/**/*.csproj'
-    format: 'SARIF'
-    reportsDirectory: '$(Build.StagingDirectory)/depcheck'
-    enableExperimental: true
-    additionalArguments: '--scan "$(Build.SourcesDirectory)\**\packages.config"'
-    dependencyCheckVersion: '6.1.2'
-    enableVerbose: false
-
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: Dependency Check SARIF to CodeAnalysisLogs'
-  inputs:
-    PathtoPublish: '$(Build.StagingDirectory)/depcheck/dependency-check-report.sarif'
-    ArtifactName: CodeAnalysisLogs
-
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
